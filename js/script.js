@@ -270,7 +270,7 @@ function getPlaceInitial(name) {
     const initial =
         [...name].find(
             character =>
-                /[\\p{L}\\p{N}]/u.test(character)
+                /[\p{L}\p{N}]/u.test(character)
         );
 
     return (
@@ -285,7 +285,7 @@ function getPlaceHostname(url) {
     try {
 
         return new URL(url).hostname
-            .replace(/^www\\./i, "");
+            .replace(/^www\./i, "");
 
     } catch {
 
@@ -559,7 +559,7 @@ addSiteButton.addEventListener("click", () => {
         return;
     }
 
-    if (!/^https?:\\/\\//i.test(url)) {
+    if (!/^https?:\/\//i.test(url)) {
         url = `https://${url}`;
     }
 
