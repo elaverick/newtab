@@ -2012,15 +2012,6 @@ body.places-modal-open {
 }
 
 
-.places-editor-primary {
-    display:
-        flex;
-
-    gap:
-        8px;
-}
-
-
 .places-dialog-button {
     min-width:
         82px;
@@ -2131,12 +2122,7 @@ body.places-modal-open {
     }
 
 
-    .places-editor-primary .places-dialog-button {
-        flex:
-            1;
-    }
-
-
+    
     .places-dialog-footer .places-dialog-button {
         width:
             100%;
