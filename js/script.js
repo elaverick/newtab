@@ -1126,14 +1126,11 @@ const searchEngines = {
     Google:
         "https://www.google.com/search?q=",
 
-    Bing:
-        "https://www.bing.com/search?q=",
+    ChatGPT:
+        "https://chatgpt.com/?q=",
 
     DuckDuckGo:
-        "https://duckduckgo.com/?q=",
-
-    Brave:
-        "https://search.brave.com/search?q="
+        "https://duckduckgo.com/?q="
 
 };
 
@@ -1169,10 +1166,16 @@ searchForm.addEventListener("submit", event => {
     const baseUrl =
         searchEngines[selectedProvider];
 
+    const queryString =
+        encodeURIComponent(query);
 
     window.location.href =
-        baseUrl +
-        encodeURIComponent(query);
+        selectedProvider === "ChatGPT"
+            ? baseUrl +
+              queryString +
+              "&hints=search"
+            : baseUrl +
+              queryString;
 
 });
 
