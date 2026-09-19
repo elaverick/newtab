@@ -1317,7 +1317,13 @@ body.settings-modal-open {
 
 
 .settings-dialog {
-    position: relative;
+    position: absolute;
+
+    top:
+        50%;
+
+    left:
+        50%;
 
     width:
         min(620px, calc(100% - 28px));
@@ -1326,7 +1332,10 @@ body.settings-modal-open {
         calc(100vh - 40px);
 
     margin:
-        20px auto;
+        0;
+
+    transform:
+        translate(-50%, -50%);
 
     overflow:
         auto;
@@ -1462,7 +1471,7 @@ body.settings-modal-open {
 }
 
 
-.settings-group:first-of-type {
+.settings-dialog-description + .settings-group {
     margin-top:
         0;
 
@@ -1628,6 +1637,9 @@ body.settings-modal-open {
 .settings-switch-row {
     display:
         flex;
+
+    cursor:
+        pointer;
 
     align-items:
         center;
@@ -1946,8 +1958,70 @@ body.settings-modal-open {
 
 .settings-engine-default input,
 .settings-engine-enabled input {
+    appearance:
+        none;
+
+    width:
+        10px;
+
+    height:
+        10px;
+
     margin:
         0;
+
+    border:
+        1px solid var(--line-strong);
+
+    background:
+        transparent;
+
+    flex:
+        0 0 auto;
+}
+
+.settings-engine-default input {
+    border-radius:
+        50%;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+}
+
+.settings-engine-default input:checked::after {
+    content:
+        "";
+
+    width:
+        4px;
+
+    height:
+        4px;
+
+    border-radius:
+        50%;
+
+    background:
+        var(--text);
+}
+
+.settings-engine-enabled input {
+    border-radius:
+        2px;
+}
+
+.settings-engine-enabled input:checked {
+    background:
+        var(--text);
+
+    border-color:
+        var(--text);
+
+    box-shadow:
+        inset 0 0 0 2px var(--surface);
 }
 
 
@@ -2173,8 +2247,11 @@ body.settings-modal-open {
 @media (max-width: 520px) {
 
     .settings-dialog {
-        margin:
-            12px auto;
+        width:
+            calc(100% - 24px);
+
+        max-height:
+            calc(100vh - 24px);
 
         padding:
             18px;
