@@ -653,6 +653,13 @@ providerOptions.forEach(option => {
         providerMark.textContent =
             option.dataset.mark;
 
+        document.getElementById(
+            "searchInput"
+        ).placeholder =
+            option.dataset.provider === "ChatGPT"
+                ? "Ask ChatGPT..."
+                : "Search the web...";
+
 
         providerOptions.forEach(item => {
 
