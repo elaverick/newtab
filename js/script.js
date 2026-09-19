@@ -118,6 +118,501 @@ applyTheme();
 
 
 /* ================================================================
+   PLACES
+   ================================================================ */
+
+const PLACES_STORAGE_KEY =
+    "newtab-places";
+
+const DEFAULT_PLACES = [
+
+    {
+        name: "GitHub",
+        url: "https://github.com",
+        enabled: true
+    },
+
+    {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com",
+        enabled: true
+    },
+
+    {
+        name: "Reddit",
+        url: "https://www.reddit.com",
+        enabled: true
+    },
+
+    {
+        name: "Amazon",
+        url: "https://www.amazon.co.uk",
+        enabled: true
+    },
+
+    {
+        name: "News",
+        url: "https://news.google.com",
+        enabled: true
+    }
+];
+
+const siteGrid =
+    document.getElementById("siteGrid");
+
+const placesEdit =
+    document.getElementById("placesEdit");
+
+const placesModal =
+    document.getElementById("placesModal");
+
+const placesOptions =
+    document.getElementById("placesOptions");
+
+const placesClose =
+    document.getElementById("placesClose");
+
+const placesCancel =
+    document.getElementById("placesCancel");
+
+const placesSave =
+    document.getElementById("placesSave");
+
+const addSiteButton =
+    document.getElementById("addSiteButton");
+
+const newSiteName =
+    document.getElementById("newSiteName");
+
+const newSiteUrl =
+    document.getElementById("newSiteUrl");
+
+
+let places =
+    loadPlaces();
+
+let editingPlaces = [];
+
+
+function normalisePlace(place) {
+
+    if (!place || typeof place !== "object") {
+        return null;
+    }
+
+    const name =
+        String(place.name ?? "").trim();
+
+    const url =
+        String(place.url ?? "").trim();
+
+    if (!name || !url) {
+        return null;
+    }
+
+    return {
+        name,
+        url,
+        enabled: place.enabled !== false
+    };
+}
+
+
+function loadPlaces() {
+
+    try {
+
+        const saved =
+            JSON.parse(
+                localStorage.getItem(
+                    PLACES_STORAGE_KEY
+                )
+            );
+
+        if (Array.isArray(saved)) {
+
+            const normalised =
+                saved
+                    .map(normalisePlace)
+                    .filter(Boolean);
+
+            if (normalised.length) {
+                return normalised;
+            }
+
+        }
+
+    } catch (error) {
+
+        console.warn(
+            "Unable to load saved Places:",
+            error
+        );
+
+    }
+
+    return DEFAULT_PLACES.map(place => ({ ...place }));
+}
+
+
+function savePlaces() {
+
+    localStorage.setItem(
+        PLACES_STORAGE_KEY,
+        JSON.stringify(places)
+    );
+
+}
+
+
+function getPlaceInitial(name) {
+
+    const initial =
+        [...name].find(
+            character =>
+                /[\\p{L}\\p{N}]/u.test(character)
+        );
+
+    return (
+        initial ??
+        "?"
+    ).toUpperCase();
+}
+
+
+function getPlaceHostname(url) {
+
+    try {
+
+        return new URL(url).hostname
+            .replace(/^www\\./i, "");
+
+    } catch {
+
+        return url;
+
+    }
+}
+
+
+function createPlaceElement(place, index) {
+
+    const link =
+        document.createElement("a");
+
+    link.className =
+        "site";
+
+    link.href =
+        place.url;
+
+    link.target =
+        "_blank";
+
+    link.rel =
+        "noopener noreferrer";
+
+
+    const siteIndex =
+        document.createElement("span");
+
+    siteIndex.className =
+        "site-index";
+
+    siteIndex.textContent =
+        String(index + 1).padStart(2, "0");
+
+
+    const siteIcon =
+        document.createElement("span");
+
+    siteIcon.className =
+        "site-icon";
+
+    siteIcon.textContent =
+        getPlaceInitial(place.name);
+
+
+    const siteInfo =
+        document.createElement("span");
+
+    siteInfo.className =
+        "site-info";
+
+
+    const siteName =
+        document.createElement("span");
+
+    siteName.className =
+        "site-name";
+
+    siteName.textContent =
+        place.name;
+
+
+    const siteUrl =
+        document.createElement("span");
+
+    siteUrl.className =
+        "site-url";
+
+    siteUrl.textContent =
+        getPlaceHostname(place.url);
+
+
+    siteInfo.appendChild(siteName);
+    siteInfo.appendChild(siteUrl);
+
+    link.appendChild(siteIndex);
+    link.appendChild(siteIcon);
+    link.appendChild(siteInfo);
+
+    return link;
+}
+
+
+function renderPlaces() {
+
+    const visiblePlaces =
+        places.filter(place => place.enabled);
+
+    const fragment =
+        document.createDocumentFragment();
+
+    visiblePlaces.forEach((place, index) => {
+
+        fragment.appendChild(
+            createPlaceElement(place, index)
+        );
+
+    });
+
+    siteGrid.replaceChildren(fragment);
+}
+
+
+function renderPlaceOptions() {
+
+    placesOptions.replaceChildren();
+
+    editingPlaces.forEach((place, index) => {
+
+        const row =
+            document.createElement("label");
+
+        row.className =
+            "places-option";
+
+
+        const checkbox =
+            document.createElement("input");
+
+        checkbox.type =
+            "checkbox";
+
+        checkbox.checked =
+            place.enabled;
+
+        checkbox.addEventListener("change", () => {
+
+            editingPlaces[index].enabled =
+                checkbox.checked;
+
+        });
+
+
+        const icon =
+            document.createElement("span");
+
+        icon.className =
+            "places-option-icon";
+
+        icon.textContent =
+            getPlaceInitial(place.name);
+
+
+        const info =
+            document.createElement("span");
+
+        info.className =
+            "places-option-info";
+
+
+        const name =
+            document.createElement("span");
+
+        name.className =
+            "places-option-name";
+
+        name.textContent =
+            place.name;
+
+
+        const url =
+            document.createElement("span");
+
+        url.className =
+            "places-option-url";
+
+        url.textContent =
+            getPlaceHostname(place.url);
+
+
+        const remove =
+            document.createElement("button");
+
+        remove.className =
+            "places-option-remove";
+
+        remove.type =
+            "button";
+
+        remove.textContent =
+            "×";
+
+        remove.setAttribute(
+            "aria-label",
+            `Remove ${place.name}`
+        );
+
+        remove.addEventListener("click", event => {
+
+            event.preventDefault();
+            event.stopPropagation();
+
+            editingPlaces.splice(index, 1);
+            renderPlaceOptions();
+
+        });
+
+
+        info.appendChild(name);
+        info.appendChild(url);
+
+        row.appendChild(checkbox);
+        row.appendChild(icon);
+        row.appendChild(info);
+        row.appendChild(remove);
+
+        placesOptions.appendChild(row);
+
+    });
+}
+
+
+function openPlaces() {
+
+    editingPlaces =
+        places.map(place => ({ ...place }));
+
+    renderPlaceOptions();
+
+    newSiteName.value = "";
+    newSiteUrl.value = "";
+
+    placesModal.hidden =
+        false;
+
+    document.body.classList.add("places-modal-open");
+
+    window.setTimeout(() => {
+        newSiteName.focus();
+    }, 0);
+}
+
+
+function closePlaces() {
+
+    placesModal.hidden =
+        true;
+
+    document.body.classList.remove("places-modal-open");
+}
+
+
+placesEdit.addEventListener("click", openPlaces);
+placesClose.addEventListener("click", closePlaces);
+placesCancel.addEventListener("click", closePlaces);
+
+
+placesSave.addEventListener("click", () => {
+
+    if (!editingPlaces.length) {
+        return;
+    }
+
+    places =
+        editingPlaces.map(place => ({ ...place }));
+
+    savePlaces();
+    renderPlaces();
+    closePlaces();
+
+});
+
+
+addSiteButton.addEventListener("click", () => {
+
+    const name =
+        newSiteName.value.trim();
+
+    let url =
+        newSiteUrl.value.trim();
+
+    if (!name || !url) {
+        return;
+    }
+
+    if (!/^https?:\\/\\//i.test(url)) {
+        url = `https://${url}`;
+    }
+
+    try {
+        new URL(url);
+    } catch {
+        return;
+    }
+
+    editingPlaces.push({
+        name,
+        url,
+        enabled: true
+    });
+
+    renderPlaceOptions();
+
+    newSiteName.value = "";
+    newSiteUrl.value = "";
+    newSiteName.focus();
+
+});
+
+
+placesModal.addEventListener("click", event => {
+
+    if (event.target.matches("[data-places-close]")) {
+        closePlaces();
+    }
+
+});
+
+
+document.addEventListener("keydown", event => {
+
+    if (
+        event.key === "Escape" &&
+        !placesModal.hidden
+    ) {
+        closePlaces();
+    }
+
+});
+
+
+renderPlaces();
+
+
+/* ================================================================
    SEARCH PROVIDER
    ================================================================ */
 
