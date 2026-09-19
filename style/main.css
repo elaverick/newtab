@@ -285,10 +285,10 @@ a {
 
 
 /* ================================================================
-   THEME TOGGLE
+   SETTINGS BUTTON
 ================================================================ */
 
-.theme-toggle {
+.settings-button {
 
     width:
         28px;
@@ -319,7 +319,7 @@ a {
         border-color 150ms ease;
 }
 
-.theme-toggle:hover {
+.settings-button:hover {
 
     color:
         var(--text);
@@ -1291,6 +1291,947 @@ a {
         uppercase;
 }
 
+
+
+/* ================================================================
+   SETTINGS DIALOG
+================================================================ */
+
+body.settings-modal-open {
+    overflow: hidden;
+}
+
+
+.settings-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 220;
+}
+
+
+.settings-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(20, 25, 30, 0.38);
+}
+
+
+.settings-dialog {
+    position: relative;
+
+    width:
+        min(620px, calc(100% - 28px));
+
+    max-height:
+        calc(100vh - 40px);
+
+    margin:
+        20px auto;
+
+    overflow:
+        auto;
+
+    padding:
+        26px;
+
+    border:
+        1px solid var(--line-strong);
+
+    background:
+        var(--surface);
+
+    box-shadow:
+        0 24px 70px rgba(20,25,30,0.18);
+}
+
+
+.settings-dialog-header {
+    display:
+        flex;
+
+    align-items:
+        flex-start;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+}
+
+
+.settings-dialog-kicker {
+    display:
+        block;
+
+    margin-bottom:
+        8px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        0.16em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.settings-dialog-title {
+    margin:
+        0;
+
+    font-family:
+        var(--font-display);
+
+    font-size:
+        24px;
+
+    font-weight:
+        normal;
+}
+
+
+.settings-dialog-close {
+    width:
+        28px;
+
+    height:
+        28px;
+
+    flex:
+        0 0 auto;
+
+    padding:
+        0;
+
+    border:
+        1px solid var(--line);
+
+    background:
+        transparent;
+
+    color:
+        var(--muted);
+
+    font-size:
+        16px;
+
+    line-height:
+        1;
+}
+
+
+.settings-dialog-close:hover {
+    color:
+        var(--text);
+
+    border-color:
+        var(--line-strong);
+}
+
+
+.settings-dialog-description {
+    margin:
+        12px 0 24px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        9px;
+
+    line-height:
+        1.7;
+}
+
+
+.settings-group {
+    margin-top:
+        22px;
+
+    padding-top:
+        20px;
+
+    border-top:
+        1px solid var(--line);
+}
+
+
+.settings-group:first-of-type {
+    margin-top:
+        0;
+
+    padding-top:
+        0;
+
+    border-top:
+        0;
+}
+
+
+.settings-group-header {
+    display:
+        flex;
+
+    align-items:
+        baseline;
+
+    justify-content:
+        space-between;
+
+    gap:
+        16px;
+
+    margin-bottom:
+        12px;
+}
+
+
+.settings-group-kicker {
+    color:
+        var(--muted);
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        0.14em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.settings-group-description {
+    color:
+        var(--faint);
+
+    font-size:
+        8px;
+
+    text-align:
+        right;
+}
+
+
+.settings-theme-options {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap:
+        8px;
+}
+
+
+.settings-theme-option {
+    position:
+        relative;
+
+    min-width:
+        0;
+
+    cursor:
+        pointer;
+}
+
+
+.settings-theme-option input {
+    position:
+        absolute;
+
+    opacity:
+        0;
+
+    pointer-events:
+        none;
+}
+
+
+.settings-theme-option-body {
+    display:
+        block;
+
+    min-height:
+        62px;
+
+    padding:
+        12px;
+
+    border:
+        1px solid var(--line);
+
+    background:
+        transparent;
+
+    transition:
+        background 150ms ease,
+        border-color 150ms ease;
+}
+
+
+.settings-theme-option:hover .settings-theme-option-body {
+    border-color:
+        var(--line-strong);
+}
+
+
+.settings-theme-option input:checked + .settings-theme-option-body {
+    background:
+        var(--surface-subtle);
+
+    border-color:
+        var(--line-strong);
+}
+
+
+.settings-theme-option-title {
+    display:
+        block;
+
+    font-family:
+        var(--font-display);
+
+    font-size:
+        12px;
+}
+
+
+.settings-theme-option-detail {
+    display:
+        block;
+
+    margin-top:
+        6px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        0.06em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.settings-switch-row {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    min-height:
+        52px;
+
+    padding:
+        12px;
+
+    border:
+        1px solid var(--line);
+}
+
+
+.settings-switch-copy {
+    min-width:
+        0;
+}
+
+
+.settings-switch-title {
+    display:
+        block;
+
+    font-family:
+        var(--font-display);
+
+    font-size:
+        11px;
+}
+
+
+.settings-switch-detail {
+    display:
+        block;
+
+    margin-top:
+        5px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        8px;
+}
+
+
+.settings-switch {
+    position:
+        relative;
+
+    width:
+        40px;
+
+    height:
+        20px;
+
+    flex:
+        0 0 auto;
+}
+
+
+.settings-switch input {
+    position:
+        absolute;
+
+    opacity:
+        0;
+
+    pointer-events:
+        none;
+}
+
+
+.settings-switch-track {
+    display:
+        block;
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    border:
+        1px solid var(--line-strong);
+
+    background:
+        transparent;
+
+    transition:
+        background 150ms ease,
+        border-color 150ms ease;
+}
+
+
+.settings-switch-thumb {
+    position:
+        absolute;
+
+    top:
+        4px;
+
+    left:
+        4px;
+
+    width:
+        10px;
+
+    height:
+        10px;
+
+    border:
+        1px solid var(--muted);
+
+    background:
+        var(--surface);
+
+    transition:
+        transform 150ms ease;
+}
+
+
+.settings-switch input:checked + .settings-switch-track .settings-switch-thumb {
+    transform:
+        translateX(20px);
+
+    background:
+        var(--text);
+
+    border-color:
+        var(--text);
+}
+
+
+.settings-switch input:focus-visible + .settings-switch-track,
+.settings-theme-option input:focus-visible + .settings-theme-option-body,
+.settings-engine-default input:focus-visible,
+.settings-engine-enabled input:focus-visible,
+.settings-placeholder-field input:focus-visible {
+    outline:
+        1px solid var(--line-strong);
+
+    outline-offset:
+        2px;
+}
+
+
+.settings-engine-list {
+    border:
+        1px solid var(--line);
+}
+
+
+.settings-engine-row {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        18px;
+
+    min-height:
+        60px;
+
+    padding:
+        10px 12px;
+
+    border-bottom:
+        1px solid var(--line);
+}
+
+
+.settings-engine-row:last-child {
+    border-bottom:
+        0;
+}
+
+
+.settings-engine-info {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+
+    min-width:
+        0;
+}
+
+
+.settings-engine-mark {
+    width:
+        28px;
+
+    height:
+        28px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    flex:
+        0 0 auto;
+
+    border:
+        1px solid var(--line);
+
+    background:
+        var(--surface-subtle);
+
+    font-family:
+        var(--font-display);
+
+    font-size:
+        11px;
+}
+
+
+.settings-engine-copy {
+    min-width:
+        0;
+}
+
+
+.settings-engine-name,
+.settings-engine-url {
+    display:
+        block;
+
+    overflow:
+        hidden;
+
+    white-space:
+        nowrap;
+
+    text-overflow:
+        ellipsis;
+}
+
+
+.settings-engine-name {
+    font-family:
+        var(--font-display);
+
+    font-size:
+        11px;
+}
+
+
+.settings-engine-url {
+    margin-top:
+        4px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        8px;
+}
+
+
+.settings-engine-controls {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        16px;
+
+    flex:
+        0 0 auto;
+}
+
+
+.settings-engine-default,
+.settings-engine-enabled {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        6px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        8px;
+
+    white-space:
+        nowrap;
+}
+
+
+.settings-engine-default input,
+.settings-engine-enabled input {
+    margin:
+        0;
+}
+
+
+.settings-details {
+    margin-top:
+        10px;
+
+    border:
+        1px solid var(--line);
+}
+
+
+.settings-details summary {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    padding:
+        12px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        0.12em;
+
+    list-style:
+        none;
+
+    cursor:
+        pointer;
+}
+
+
+.settings-details summary::-webkit-details-marker {
+    display:
+        none;
+}
+
+
+.settings-details summary::after {
+    content:
+        "+";
+
+    color:
+        var(--faint);
+
+    font-size:
+        12px;
+
+    line-height:
+        1;
+}
+
+
+.settings-details[open] summary::after {
+    content:
+        "−";
+}
+
+
+.settings-placeholder-list {
+    display:
+        grid;
+
+    gap:
+        10px;
+
+    padding:
+        0 12px 12px;
+}
+
+
+.settings-placeholder-field {
+    display:
+        grid;
+
+    grid-template-columns:
+        115px minmax(0, 1fr);
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+}
+
+
+.settings-placeholder-field > span {
+    color:
+        var(--muted);
+
+    font-size:
+        8px;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        0.08em;
+}
+
+
+.settings-placeholder-field input {
+    width:
+        100%;
+
+    height:
+        34px;
+
+    min-width:
+        0;
+
+    padding:
+        0 9px;
+
+    border:
+        1px solid var(--line);
+
+    outline:
+        0;
+
+    background:
+        transparent;
+
+    color:
+        var(--text);
+
+    font-size:
+        9px;
+}
+
+
+.settings-placeholder-field input::placeholder {
+    color:
+        var(--faint);
+
+    opacity:
+        1;
+}
+
+
+.settings-placeholder-field input:focus {
+    border-color:
+        var(--line-strong);
+}
+
+
+.settings-dialog-footer {
+    display:
+        flex;
+
+    justify-content:
+        flex-end;
+
+    margin-top:
+        22px;
+
+    padding-top:
+        18px;
+
+    border-top:
+        1px solid var(--line);
+}
+
+
+.settings-dialog-button {
+    min-width:
+        82px;
+
+    height:
+        35px;
+
+    padding:
+        0 12px;
+
+    border:
+        1px solid var(--line);
+
+    background:
+        transparent;
+
+    color:
+        var(--muted);
+
+    font-size:
+        9px;
+
+    letter-spacing:
+        0.06em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.settings-dialog-button:hover {
+    color:
+        var(--text);
+
+    border-color:
+        var(--line-strong);
+}
+
+
+.settings-dialog-button.primary {
+    background:
+        var(--surface-subtle);
+
+    color:
+        var(--text);
+}
+
+
+@media (max-width: 520px) {
+
+    .settings-dialog {
+        margin:
+            12px auto;
+
+        padding:
+            18px;
+    }
+
+
+    .settings-theme-options {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .settings-group-header {
+        display:
+            block;
+    }
+
+
+    .settings-group-description {
+        display:
+            block;
+
+        margin-top:
+            6px;
+
+        text-align:
+            left;
+    }
+
+
+    .settings-engine-row {
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+
+        gap:
+            10px;
+    }
+
+
+    .settings-engine-controls {
+        width:
+            100%;
+
+        justify-content:
+            space-between;
+    }
+
+
+    .settings-placeholder-field {
+        grid-template-columns:
+            1fr;
+    }
+
+}
 
 /* ================================================================
    MOBILE
