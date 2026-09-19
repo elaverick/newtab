@@ -1,0 +1,50 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "New Tab Articles",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+            "title",
+            "source",
+            "extract",
+            "image",
+            "link",
+            "category",
+            "published"
+        ],
+        "properties": {
+            "title": {
+                "type": "string",
+                "minLength": 1
+            },
+            "source": {
+                "type": "string",
+                "minLength": 1
+            },
+            "extract": {
+                "type": "string",
+                "minLength": 1
+            },
+            "image": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "link": {
+                "type": "string",
+                "format": "uri"
+            },
+            "category": {
+                "type": "string",
+                "minLength": 1
+            },
+            "published": {
+                "type": "string",
+                "format": "date-time"
+            }
+        }
+    }
+}
