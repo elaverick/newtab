@@ -1511,6 +1511,8 @@ applySelectedProvider(
     selectedProvider
 );
 
+searchInput.focus();
+
 
 /* ================================================================
    WEATHER
