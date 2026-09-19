@@ -239,8 +239,10 @@
 
             <button
                 class="section-action"
+                id="placesEdit"
                 type="button"
-                aria-label="Add site"
+                aria-label="Choose sites"
+                title="Choose sites"
             >
                 +
             </button>
@@ -249,220 +251,124 @@
         </div>
 
 
-        <div class="site-grid">
+        <div
+            class="site-grid"
+            id="siteGrid"
+        ></div>
 
 
-            <a
-                href="#"
-                class="site"
+        <div
+            class="places-modal"
+            id="placesModal"
+            hidden
+        >
+
+            <div
+                class="places-modal-backdrop"
+                data-places-close
+            ></div>
+
+            <div
+                class="places-dialog"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="placesDialogTitle"
             >
 
-                <span class="site-index">
-                    01
-                </span>
+                <div class="places-dialog-header">
 
-                <span class="site-icon">
-                    G
-                </span>
+                    <div>
 
-                <span class="site-info">
+                        <span class="places-dialog-kicker">
+                            02 / PLACES
+                        </span>
 
-                    <span class="site-name">
-                        GitHub
-                    </span>
+                        <h3
+                            class="places-dialog-title"
+                            id="placesDialogTitle"
+                        >
+                            Choose sites
+                        </h3>
 
-                    <span class="site-url">
-                        github.com
-                    </span>
+                    </div>
 
-                </span>
+                    <button
+                        class="places-dialog-close"
+                        id="placesClose"
+                        type="button"
+                        aria-label="Close"
+                    >
+                        ×
+                    </button>
 
-                <button
-                    class="site-remove"
-                    type="button"
-                    aria-label="Remove GitHub"
-                >
-                    ×
-                </button>
+                </div>
 
-            </a>
+                <p class="places-dialog-description">
+                    Select the sites you want to show on the page.
+                </p>
 
+                <div
+                    class="places-options"
+                    id="placesOptions"
+                ></div>
 
-            <a
-                href="#"
-                class="site"
-            >
+                <div class="places-add">
 
-                <span class="site-index">
-                    02
-                </span>
+                    <div class="places-add-heading">
+                        Add a site
+                    </div>
 
-                <span class="site-icon">
-                    L
-                </span>
+                    <div class="places-add-fields">
 
-                <span class="site-info">
+                        <input
+                            id="newSiteName"
+                            type="text"
+                            placeholder="Name"
+                            autocomplete="off"
+                        >
 
-                    <span class="site-name">
-                        LinkedIn
-                    </span>
+                        <input
+                            id="newSiteUrl"
+                            type="url"
+                            placeholder="https://example.com"
+                            autocomplete="off"
+                        >
 
-                    <span class="site-url">
-                        linkedin.com
-                    </span>
+                        <button
+                            class="places-add-button"
+                            id="addSiteButton"
+                            type="button"
+                        >
+                            +
+                        </button>
 
-                </span>
+                    </div>
 
-                <button
-                    class="site-remove"
-                    type="button"
-                    aria-label="Remove LinkedIn"
-                >
-                    ×
-                </button>
+                </div>
 
-            </a>
+                <div class="places-dialog-footer">
 
+                    <button
+                        class="places-dialog-button"
+                        id="placesCancel"
+                        type="button"
+                    >
+                        Cancel
+                    </button>
 
-            <a
-                href="#"
-                class="site"
-            >
+                    <button
+                        class="places-dialog-button primary"
+                        id="placesSave"
+                        type="button"
+                    >
+                        Save
+                    </button>
 
-                <span class="site-index">
-                    03
-                </span>
+                </div>
 
-                <span class="site-icon">
-                    R
-                </span>
-
-                <span class="site-info">
-
-                    <span class="site-name">
-                        Reddit
-                    </span>
-
-                    <span class="site-url">
-                        reddit.com
-                    </span>
-
-                </span>
-
-                <button
-                    class="site-remove"
-                    type="button"
-                    aria-label="Remove Reddit"
-                >
-                    ×
-                </button>
-
-            </a>
-
-
-            <a
-                href="#"
-                class="site"
-            >
-
-                <span class="site-index">
-                    04
-                </span>
-
-                <span class="site-icon">
-                    A
-                </span>
-
-                <span class="site-info">
-
-                    <span class="site-name">
-                        Amazon
-                    </span>
-
-                    <span class="site-url">
-                        amazon.co.uk
-                    </span>
-
-                </span>
-
-                <button
-                    class="site-remove"
-                    type="button"
-                    aria-label="Remove Amazon"
-                >
-                    ×
-                </button>
-
-            </a>
-
-
-            <a
-                href="#"
-                class="site"
-            >
-
-                <span class="site-index">
-                    05
-                </span>
-
-                <span class="site-icon">
-                    N
-                </span>
-
-                <span class="site-info">
-
-                    <span class="site-name">
-                        News
-                    </span>
-
-                    <span class="site-url">
-                        news.example.com
-                    </span>
-
-                </span>
-
-                <button
-                    class="site-remove"
-                    type="button"
-                    aria-label="Remove News"
-                >
-                    ×
-                </button>
-
-            </a>
-
-
-            <a
-                href="#"
-                class="site"
-            >
-
-                <span class="site-index">
-                    06
-                </span>
-
-                <span class="site-icon">
-                    +
-                </span>
-
-                <span class="site-info">
-
-                    <span class="site-name">
-                        Add site
-                    </span>
-
-                    <span class="site-url">
-                        Create shortcut
-                    </span>
-
-                </span>
-
-            </a>
-
+            </div>
 
         </div>
-
-    </section>
 
 
 
