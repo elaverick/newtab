@@ -1552,256 +1552,593 @@ body.places-modal-open {
 .places-modal-backdrop {
     position: absolute;
     inset: 0;
-    background: rgba(20, 25, 30, 0.38);
+
+    background:
+        rgba(20, 25, 30, 0.38);
 }
 
 
 .places-dialog {
     position: relative;
-    width: min(520px, calc(100% - 28px));
-    max-height: calc(100vh - 40px);
-    margin: 20px auto;
-    overflow: auto;
-    padding: 24px;
-    border: 1px solid var(--line-strong);
-    background: var(--surface);
-    box-shadow: 0 24px 70px rgba(20, 25, 30, 0.18);
+
+    width:
+        min(540px, calc(100% - 28px));
+
+    max-height:
+        calc(100vh - 40px);
+
+    margin:
+        20px auto;
+
+    overflow:
+        auto;
+
+    padding:
+        24px;
+
+    border:
+        1px solid var(--line-strong);
+
+    background:
+        var(--surface);
+
+    box-shadow:
+        0 24px 70px rgba(20,25,30,0.18);
 }
 
 
 .places-dialog-header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 20px;
+    display:
+        flex;
+
+    align-items:
+        flex-start;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
 }
 
 
 .places-dialog-kicker {
-    display: block;
-    margin-bottom: 8px;
-    color: var(--muted);
-    font-size: 8px;
-    letter-spacing: 0.16em;
+    display:
+        block;
+
+    margin-bottom:
+        8px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        0.16em;
+
+    text-transform:
+        uppercase;
 }
 
 
 .places-dialog-title {
-    margin: 0;
-    font-family: var(--font-display);
-    font-size: 22px;
-    font-weight: normal;
+    margin:
+        0;
+
+    font-family:
+        var(--font-display);
+
+    font-size:
+        22px;
+
+    font-weight:
+        normal;
 }
 
 
 .places-dialog-close {
-    width: 28px;
-    height: 28px;
-    flex: 0 0 auto;
-    padding: 0;
-    border: 1px solid var(--line);
-    background: transparent;
-    color: var(--muted);
-    font-size: 16px;
-    line-height: 1;
+    width:
+        28px;
+
+    height:
+        28px;
+
+    flex:
+        0 0 auto;
+
+    padding:
+        0;
+
+    border:
+        1px solid var(--line);
+
+    background:
+        transparent;
+
+    color:
+        var(--muted);
+
+    font-size:
+        16px;
+
+    line-height:
+        1;
 }
 
+
 .places-dialog-close:hover {
-    color: var(--text);
-    border-color: var(--line-strong);
+    color:
+        var(--text);
+
+    border-color:
+        var(--line-strong);
 }
 
 
 .places-dialog-description {
-    margin: 12px 0 18px;
-    color: var(--muted);
-    font-size: 9px;
-    line-height: 1.7;
+    margin:
+        12px 0 18px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        9px;
+
+    line-height:
+        1.7;
 }
 
 
-.places-options {
-    border-top: 1px solid var(--line);
-    border-left: 1px solid var(--line);
+.places-list {
+    border:
+        1px solid var(--line);
 }
 
 
-.places-option {
-    display: flex;
-    align-items: center;
-    gap: 11px;
-    min-height: 58px;
-    padding: 10px 11px;
-    border-right: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-    cursor: pointer;
-}
+.places-list-item {
+    display:
+        flex;
 
-.places-option:hover {
-    background: var(--surface-subtle);
-}
+    align-items:
+        center;
 
+    width:
+        100%;
 
-.places-option input {
-    width: 14px;
-    height: 14px;
-    margin: 0;
-    accent-color: var(--text);
-}
+    min-height:
+        58px;
 
+    padding:
+        10px 11px;
 
-.places-option-icon {
-    width: 27px;
-    height: 27px;
-    display: grid;
-    place-items: center;
-    flex: 0 0 auto;
-    border: 1px solid var(--line);
-    background: var(--surface-subtle);
-    font-family: var(--font-display);
-    font-size: 11px;
-}
+    border:
+        0;
 
+    border-bottom:
+        1px solid var(--line);
 
-.places-option-info {
-    min-width: 0;
-    flex: 1;
+    background:
+        transparent;
+
+    color:
+        var(--text);
+
+    text-align:
+        left;
+
+    cursor:
+        pointer;
 }
 
 
-.places-option-name,
-.places-option-url {
-    display: block;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.places-option-name {
-    font-family: var(--font-display);
-    font-size: 11px;
-}
-
-.places-option-url {
-    margin-top: 4px;
-    color: var(--muted);
-    font-size: 8px;
+.places-list-item:last-child {
+    border-bottom:
+        0;
 }
 
 
-.places-option-remove {
-    width: 22px;
-    height: 22px;
-    flex: 0 0 auto;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    color: var(--faint);
-    font-size: 14px;
-}
-
-.places-option-remove:hover {
-    color: var(--text);
+.places-list-item:hover,
+.places-list-item.active {
+    background:
+        var(--surface-subtle);
 }
 
 
-.places-add {
-    margin-top: 18px;
-    padding-top: 16px;
-    border-top: 1px solid var(--line);
+.places-list-index {
+    width:
+        24px;
+
+    flex:
+        0 0 auto;
+
+    color:
+        var(--faint);
+
+    font-size:
+        8px;
 }
 
 
-.places-add-heading {
-    margin-bottom: 9px;
-    color: var(--muted);
-    font-size: 8px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+.places-list-icon {
+    width:
+        27px;
+
+    height:
+        27px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    flex:
+        0 0 auto;
+
+    margin-right:
+        11px;
+
+    border:
+        1px solid var(--line);
+
+    background:
+        var(--surface-subtle);
+
+    font-family:
+        var(--font-display);
+
+    font-size:
+        11px;
 }
 
 
-.places-add-fields {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr 34px;
-    gap: 8px;
+.places-list-info {
+    min-width:
+        0;
+
+    flex:
+        1;
 }
 
 
-.places-add-fields input {
-    min-width: 0;
-    height: 35px;
-    padding: 0 10px;
-    border: 1px solid var(--line);
-    outline: 0;
-    background: transparent;
-    color: var(--text);
-    font-size: 9px;
-}
+.places-list-name,
+.places-list-url {
+    display:
+        block;
 
-.places-add-fields input:focus {
-    border-color: var(--line-strong);
-}
+    overflow:
+        hidden;
 
+    white-space:
+        nowrap;
 
-.places-add-button {
-    height: 35px;
-    padding: 0;
-    border: 1px solid var(--line);
-    background: transparent;
-    color: var(--muted);
-    font-size: 15px;
-}
-
-.places-add-button:hover {
-    color: var(--text);
-    border-color: var(--line-strong);
+    text-overflow:
+        ellipsis;
 }
 
 
-.places-dialog-footer {
-    display: flex;
-    justify-content: flex-end;
-    gap: 8px;
-    margin-top: 20px;
+.places-list-name {
+    font-family:
+        var(--font-display);
+
+    font-size:
+        11px;
+}
+
+
+.places-list-url {
+    margin-top:
+        4px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        8px;
+}
+
+
+.places-empty {
+    margin:
+        0;
+
+    padding:
+        18px 12px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        9px;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        0.08em;
+}
+
+
+.places-editor {
+    margin-top:
+        18px;
+
+    padding-top:
+        18px;
+
+    border-top:
+        1px solid var(--line);
+}
+
+
+.places-editor-header {
+    display:
+        flex;
+
+    align-items:
+        baseline;
+
+    justify-content:
+        space-between;
+
+    gap:
+        12px;
+
+    margin-bottom:
+        11px;
+}
+
+
+.places-editor-kicker {
+    color:
+        var(--muted);
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        0.14em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.places-editor-status {
+    color:
+        var(--muted);
+
+    font-size:
+        8px;
+
+    text-align:
+        right;
+}
+
+
+.places-editor-fields {
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1.5fr;
+
+    gap:
+        9px;
+}
+
+
+.places-field {
+    display:
+        block;
+}
+
+
+.places-field > span {
+    display:
+        block;
+
+    margin-bottom:
+        6px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        0.1em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.places-field input {
+    width:
+        100%;
+
+    height:
+        36px;
+
+    min-width:
+        0;
+
+    padding:
+        0 10px;
+
+    border:
+        1px solid var(--line);
+
+    outline:
+        0;
+
+    background:
+        transparent;
+
+    color:
+        var(--text);
+
+    font-size:
+        9px;
+}
+
+
+.places-field input:focus {
+    border-color:
+        var(--line-strong);
+}
+
+
+.places-editor-actions {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        10px;
+
+    margin-top:
+        12px;
+}
+
+
+.places-editor-primary {
+    display:
+        flex;
+
+    gap:
+        8px;
 }
 
 
 .places-dialog-button {
-    min-width: 82px;
-    height: 35px;
-    padding: 0 12px;
-    border: 1px solid var(--line);
-    background: transparent;
-    color: var(--muted);
-    font-size: 9px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    min-width:
+        82px;
+
+    height:
+        35px;
+
+    padding:
+        0 12px;
+
+    border:
+        1px solid var(--line);
+
+    background:
+        transparent;
+
+    color:
+        var(--muted);
+
+    font-size:
+        9px;
+
+    letter-spacing:
+        0.06em;
+
+    text-transform:
+        uppercase;
 }
+
 
 .places-dialog-button:hover {
-    color: var(--text);
-    border-color: var(--line-strong);
+    color:
+        var(--text);
+
+    border-color:
+        var(--line-strong);
 }
 
+
 .places-dialog-button.primary {
-    background: var(--surface-subtle);
-    color: var(--text);
+    background:
+        var(--surface-subtle);
+
+    color:
+        var(--text);
+}
+
+
+.places-dialog-button.danger {
+    color:
+        var(--muted);
+}
+
+
+.places-dialog-button.danger:hover {
+    color:
+        var(--text);
+}
+
+
+.places-dialog-footer {
+    display:
+        flex;
+
+    justify-content:
+        flex-end;
+
+    margin-top:
+        18px;
+
+    padding-top:
+        18px;
+
+    border-top:
+        1px solid var(--line);
 }
 
 
 @media (max-width: 520px) {
 
     .places-dialog {
-        margin: 12px auto;
-        padding: 18px;
+        margin:
+            12px auto;
+
+        padding:
+            18px;
     }
 
-    .places-add-fields {
-        grid-template-columns: 1fr;
+
+    .places-editor-fields {
+        grid-template-columns:
+            1fr;
     }
 
-    .places-add-button {
-        width: 100%;
+
+    .places-editor-actions {
+        align-items:
+            stretch;
+
+        flex-direction:
+            column-reverse;
+    }
+
+
+    .places-editor-primary {
+        width:
+            100%;
+    }
+
+
+    .places-editor-primary .places-dialog-button {
+        flex:
+            1;
+    }
+
+
+    .places-dialog-footer .places-dialog-button {
+        width:
+            100%;
     }
 }
