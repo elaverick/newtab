@@ -3109,6 +3109,9 @@ const refreshArticles =
 
 let articles = [];
 
+let placeholderAssignments =
+    new Map();
+
 let articleLoadSequence = 0;
 
 let displayArticles = [];
@@ -3120,6 +3123,19 @@ let renderedArticleCount = 0;
 let isLoadingArticles = false;
 
 let articleObserver = null;
+
+
+function getArticlePlaceholderIdentity(
+    article
+) {
+
+    return [
+        article?.category ?? "",
+        article?.link ?? "",
+        article?.title ?? ""
+    ].join("|");
+
+}
 
 
 function prepareArticles() {
@@ -3164,6 +3180,46 @@ function prepareArticles() {
             });
 
     });
+
+
+    placeholderAssignments =
+        new Map();
+
+
+    groups.forEach(
+        entries => {
+
+            const assignmentOrder =
+                [...entries].sort(
+                    (a, b) =>
+                        hashPlaceholderValue(
+                            getArticlePlaceholderIdentity(
+                                a.article
+                            )
+                        ) -
+                        hashPlaceholderValue(
+                            getArticlePlaceholderIdentity(
+                                b.article
+                            )
+                        )
+                );
+
+
+            assignmentOrder.forEach(
+                (entry, position) => {
+
+                    placeholderAssignments.set(
+                        getArticlePlaceholderIdentity(
+                            entry.article
+                        ),
+                        (position % 12) + 1
+                    );
+
+                }
+            );
+
+        }
+    );
 
 
     categoryCounts =
@@ -3329,17 +3385,22 @@ function getArticlePlaceholderUrl(article) {
     }
 
 
-    const seed =
+    const identity =
+        getArticlePlaceholderIdentity(
+            article
+        );
+
+    const fallbackSeed =
         hashPlaceholderValue(
-            [
-                category,
-                article?.link ?? "",
-                article?.title ?? ""
-            ].join("|")
+            identity
         );
 
     const variant =
-        (seed % 12) + 1;
+        placeholderAssignments.get(
+            identity
+        ) ??
+        ((fallbackSeed % 12) + 1);
+
 
     return (
         "images/" +
@@ -3381,6 +3442,10 @@ function showStaticArticlePlaceholder(
 
     image.alt =
         "";
+
+    image.classList.remove(
+        "article-source-image"
+    );
 
     image.hidden =
         false;
@@ -3462,6 +3527,10 @@ function renderArticle(article, index) {
 
         image.alt =
             article.title ?? "";
+
+        image.classList.add(
+            "article-source-image"
+        );
 
         image.hidden =
             false;
