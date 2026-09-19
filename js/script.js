@@ -1201,8 +1201,13 @@ const articleTemplate =
 const articleSentinel =
     document.getElementById("articleSentinel");
 
+const refreshArticles =
+    document.getElementById("refreshArticles");
+
 
 let articles = [];
+
+let articleLoadSequence = 0;
 
 let displayArticles = [];
 
@@ -1384,6 +1389,9 @@ function renderArticle(article, index) {
     const description =
         item.querySelector(".article-description");
 
+    const source =
+        item.querySelector(".article-source");
+
 
     number.textContent =
         String(index + 1).padStart(3, "0");
@@ -1393,6 +1401,9 @@ function renderArticle(article, index) {
 
     description.textContent =
         article.extract ?? "";
+
+    source.textContent =
+        article.source ?? "";
 
     link.href =
         article.link ?? "#";
@@ -1532,13 +1543,40 @@ function renderNextArticles() {
 
 async function loadArticles() {
 
+    const loadSequence =
+        ++articleLoadSequence;
+
+
+    if (articleObserver) {
+
+        articleObserver.disconnect();
+
+        articleObserver =
+            null;
+
+    }
+
+
+    articleSentinel.hidden =
+        false;
+
+    articleGrid.replaceChildren();
+
+    renderedArticleCount =
+        0;
+
+    isLoadingArticles =
+        false;
+
+
     try {
 
         const response =
             await fetch(
-                "articles.json",
+                "articles.json?refresh=" +
+                Date.now(),
                 {
-                    cache: "no-cache"
+                    cache: "no-store"
                 }
             );
 
@@ -1554,6 +1592,13 @@ async function loadArticles() {
         const data =
             await response.json();
 
+        if (
+            loadSequence !==
+            articleLoadSequence
+        ) {
+            return;
+        }
+
 
         if (!Array.isArray(data)) {
 
@@ -1566,10 +1611,6 @@ async function loadArticles() {
 
         articles =
             data;
-
-        renderedArticleCount =
-            0;
-
 
         prepareArticles();
 
@@ -1619,6 +1660,14 @@ async function loadArticles() {
 
     } catch (error) {
 
+        if (
+            loadSequence !==
+            articleLoadSequence
+        ) {
+            return;
+        }
+
+
         console.error(
             "Failed to load articles:",
             error
@@ -1629,7 +1678,9 @@ async function loadArticles() {
 
 
         const message =
-            document.createElement("p");
+            document.createElement(
+                "p"
+            );
 
         message.className =
             "article-error";
@@ -1650,4 +1701,7 @@ async function loadArticles() {
 }
 
 
-loadArticles();
+refreshArticles.addEventListener(
+    "click",
+    loadArticles
+);
