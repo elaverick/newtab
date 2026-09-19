@@ -187,40 +187,52 @@ The categories are editorial rather than technical. You can change them, add new
 
 ## Use as a Chrome New Tab page
 
-The GitHub Pages site is a normal static website. Chrome does not let an ordinary website replace the built-in New Tab page, so this repository includes a tiny Manifest V3 extension that uses Chrome's supported `chrome_url_overrides.newtab` mechanism and redirects the new tab to the GitHub Pages site.
+The GitHub Pages site is a normal static website. Chrome does not let an ordinary website replace the built-in New Tab page, so the repository includes a tiny Manifest V3 extension that uses Chrome's supported `chrome_url_overrides.newtab` mechanism.
 
-The extension is deliberately separate from the website itself. This means the site remains a normal static GitHub Pages deployment, while the extension only handles the browser integration.
+The extension is deliberately separate from the website. It does not contain a copy of the site; it only redirects Chrome's New Tab page to the configured GitHub Pages URL.
 
-### Install locally
-
-For personal use, the extension can be loaded unpacked:
+### Install the extension locally
 
 1. Make sure your GitHub Pages site is working.
-2. Open `extension/redirect.js`.
-3. Set `LIMINAL_NEW_TAB_URL` to your GitHub Pages URL.
-4. In Chrome, open `chrome://extensions`.
-5. Enable **Developer mode**.
-6. Click **Load unpacked**.
-7. Select the repository's `extension` folder.
+2. Open `extension/redirect.js` in a text editor.
+3. Set `LIMINAL_NEW_TAB_URL` to the URL of your GitHub Pages site. For example:
 
-Chrome will then use the extension's override whenever a new tab is opened.
+```js
+const LIMINAL_NEW_TAB_URL =
+    "https://elaverick.github.io/newtab/";
+```
 
-The extension uses `window.location.replace()`, so the temporary override page is replaced rather than leaving a redirect page in the browser history.
+4. Save the file.
+5. Open `chrome://extensions` in Chrome.
+6. Enable **Developer mode**.
+7. Click **Load unpacked**.
+8. Select the repository's `extension` folder.
+
+Chrome will now use the extension whenever a new tab is opened.
+
+The extension's New Tab page contains no application UI of its own. It immediately uses `window.location.replace()` to send the tab to the configured GitHub Pages URL.
+
+### Updating the extension
+
+Because the extension loads the website from GitHub Pages, changes to the website do not require the extension to be rebuilt.
+
+When you change `extension/redirect.js`, return to `chrome://extensions` and click **Reload** on the Liminal New Tab extension.
 
 ### Forking
 
-A fork only needs one change to use its own GitHub Pages site:
+A fork only needs to change the URL in `extension/redirect.js`:
 
 ```js
 const LIMINAL_NEW_TAB_URL =
     "https://your-user.github.io/your-repository/";
 ```
 
-The extension does not contain a copy of the website. It always opens the configured GitHub Pages URL, so updates to the website and `articles.json` are available without repackaging the extension.
+The rest of the extension can remain unchanged.
 
-For a published extension, the same `extension/` directory can be packaged and submitted separately from the website.
+The extension is intended for personal or local unpacked use. Publishing an extension to the Chrome Web Store is a separate distribution step and is subject to Google's current extension policies.
 
 ---
+
 
 ## Building your own version
 
