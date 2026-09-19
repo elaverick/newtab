@@ -8,15 +8,113 @@
    THEME
    ================================================================ */
 
+const USE_SYSTEM_THEME =
+    true;
+
+const THEME_OVERRIDE_KEY =
+    "newtab-theme-override";
+
 const themeToggle =
     document.getElementById("themeToggle");
+
+const systemTheme =
+    window.matchMedia("(prefers-color-scheme: dark)");
+
+
+function getSystemTheme() {
+
+    return systemTheme.matches
+        ? "dark"
+        : "light";
+
+}
+
+
+function getThemeOverride() {
+
+    if (!USE_SYSTEM_THEME) {
+        return null;
+    }
+
+    const override =
+        localStorage.getItem(
+            THEME_OVERRIDE_KEY
+        );
+
+    return override === "light" || override === "dark"
+        ? override
+        : null;
+
+}
+
+
+function applyTheme() {
+
+    const override =
+        getThemeOverride();
+
+    const theme =
+        override ??
+        (USE_SYSTEM_THEME
+            ? getSystemTheme()
+            : "light");
+
+    document.body.classList.toggle(
+        "theme-dark",
+        theme === "dark"
+    );
+
+    document.body.classList.toggle(
+        "theme-light",
+        theme === "light"
+    );
+
+}
 
 
 themeToggle.addEventListener("click", () => {
 
-    document.body.classList.toggle("dark");
+    const currentTheme =
+        document.body.classList.contains("theme-dark")
+            ? "dark"
+            : "light";
+
+    const nextTheme =
+        currentTheme === "dark"
+            ? "light"
+            : "dark";
+
+    localStorage.setItem(
+        THEME_OVERRIDE_KEY,
+        nextTheme
+    );
+
+    applyTheme();
 
 });
+
+
+if (USE_SYSTEM_THEME) {
+
+    systemTheme.addEventListener(
+        "change",
+        () => {
+
+            if (
+                !getThemeOverride()
+            ) {
+
+                applyTheme();
+
+            }
+
+        }
+    );
+
+}
+
+
+applyTheme();
 
 
 /* ================================================================
@@ -135,12 +233,33 @@ function updateClock() {
 }
 
 
-updateClock();
+function startClock() {
 
-setInterval(
-    updateClock,
-    30000
-);
+    updateClock();
+
+    const now =
+        new Date();
+
+    const millisecondsUntilNextMinute =
+        (60 - now.getSeconds()) * 1000 -
+        now.getMilliseconds();
+
+
+    window.setTimeout(() => {
+
+        updateClock();
+
+        window.setInterval(
+            updateClock,
+            60000
+        );
+
+    }, millisecondsUntilNextMinute);
+
+}
+
+
+startClock();
 
 
 /* ================================================================
