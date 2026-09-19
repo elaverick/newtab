@@ -1,39 +1,120 @@
 [
   {
-    "title": "Even McLaren Is Building an SUV Now",
-    "source": "Autoweek",
-    "extract": "McLaren has confirmed its first SUV as part of a £500 million UK investment programme that will expand production and bring powertrain development in-house. The high-performance SUV is intended to broaden McLaren's range while retaining a hybrid focus.",
+    "title": "Ferrari to bring Universo experience exhibition to India",
+    "source": "Autocar India",
+    "extract": "Ferrari is bringing its Universo Ferrari exhibition to India for the first time, with historic and current cars, a racing display and the Hypersail project. The exhibition will run in New Delhi from October 17 to November 1.",
     "image": null,
-    "link": "https://www.autoweek.com/news/a73782106/mclaren-is-building-an-suv-now/",
+    "link": "https://www.autocarindia.com/car-news-amp/ferrari-to-bring-universo-experience-exhibition-to-india-440808",
     "category": "Automotive",
-    "published": "2026-09-18T01:49:00-04:00"
+    "published": "2026-09-19T00:00:00+05:30"
   },
   {
-    "title": "Ferrari's Universo Experience Exhibition To Open In New Delhi",
-    "source": "NDTV",
-    "extract": "Ferrari’s Universo exhibition will make its Indian debut at Yashobhoomi in New Delhi from October 17 to November 1. The exhibition will present Ferrari’s heritage, racing history, classic cars and technology.",
-    "image": null,
-    "link": "https://www.ndtv.com/auto/ferraris-universo-experience-exhibition-to-open-in-new-delhi-12068733",
+    "title": "WATCH: Lando’s MCL-HY test unboxed",
+    "source": "McLaren Racing",
+    "extract": "McLaren has released a behind-the-scenes look at Lando Norris testing its 2027 World Endurance Championship hypercar. Norris completed 38 laps of Portimão in the MCL-HY prototype during the team's fifth track test.",
+    "image": "https://images.ctfassets.net/gy95mqeyjg28/3KoojBE98KLnp0t3XIa4QJ/cce2dd625dbaae8896755ff957b6ec08/2526_youtube_unboxed_landohypercar.jpg?fm=webp&q=75&w=3840",
+    "link": "https://www.mclaren.com/racing/formula-1/2026/lando-hypercar-test-unboxed/",
     "category": "Automotive",
-    "published": "2026-09-19T16:56:00+05:30"
+    "published": "2026-09-19T15:00:00Z"
+  },
+  {
+    "title": "Garage 59 McLaren Wins Race 1 At Zandvoort",
+    "source": "dailysportscar",
+    "extract": "Garage 59 took its first outright GT World Challenge Europe victory of 2026 at Zandvoort with the #58 McLaren GT3 Evo. The race also produced a Ferrari 296 GT3 Evo podium and strong class results for BMW and Aston Martin.",
+    "image": "https://www.dailysportscar.com/wp-content/uploads/2026/09/58-0RL22711.jpg",
+    "link": "https://www.dailysportscar.com/2026/09/19/garage-59-mclaren-wins-race-1-at-zandvoort.html",
+    "category": "Automotive",
+    "published": "2026-09-19T14:49:00Z"
+  },
+  {
+    "title": "Aston Martin to unveil final upgrade for AMR26 car at Baku Grand Prix",
+    "source": "Report.az",
+    "extract": "Aston Martin plans one final AMR26 upgrade at the Azerbaijan Grand Prix before switching its resources to the 2027 car. The final package is focused on reducing weight after a larger development programme earlier in the season.",
+    "image": "https://images.report.az/2026/09/19/UBhRHznbzC3dK4S6pS8Ph0NJnevN0hG6qWUP4lzn_1200.jpg",
+    "link": "https://report.az/en/formula-1/aston-martin-to-unveil-final-upgrade-for-amr26-car-at-baku-grand-prix",
+    "category": "Automotive",
+    "published": "2026-09-19T12:41:00Z"
+  },
+  {
+    "title": "Fernando Alonso reveals 'shock' after finding out Aston Martin truth",
+    "source": "GPFans",
+    "extract": "Fernando Alonso has described his surprise at how far Aston Martin was off the pace at the start of the 2026 season. He also discussed the team's response, including its major upgrade programme and continued work with Honda.",
+    "image": null,
+    "link": "https://www.gpfans.com/en/f1-news/1090456/f1-fernando-alonso-aston-martin-truth-shock-season-pedro-de-la-rosa/",
+    "category": "Automotive",
+    "published": "2026-09-19T08:16:00Z"
+  },
+  {
+    "title": "Why the Toyota Prius could be more influential than the McLaren F1",
+    "source": "Autocar",
+    "extract": "An Autocar feature considers the long-term influence of the Toyota Prius alongside the McLaren F1, examining how different kinds of engineering and design can shape the wider car industry.",
+    "image": null,
+    "link": "https://www.autocar.co.uk/opinion/new-cars/mclaren-f1-or-toyota-prius-what-are-20th-centurys-most-influential-cars",
+    "category": "Automotive",
+    "published": "2026-09-19T00:00:00Z"
+  },
+  {
+    "title": "Intel Xe Driver For Linux 7.4 Adds vRAM Health Check, Degraded Memory Handling",
+    "source": "Phoronix",
+    "extract": "Intel's Xe kernel graphics driver is gaining vRAM health checking and memory-page offlining in Linux 7.4 development. The work is intended to detect faulty video memory and prevent degraded pages from being reused.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Intel-Xe-vRAM-Health-Check",
+    "category": "Technology",
+    "published": "2026-09-19T10:24:00Z"
+  },
+  {
+    "title": "Ubuntu 26.10 Switches To The Linux 7.3 Kernel",
+    "source": "Phoronix",
+    "extract": "Ubuntu 26.10 is switching its target kernel from Linux 7.2 to Linux 7.3, keeping the October release aligned with newer upstream hardware support and kernel capabilities.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Ubuntu-26.10-With-Linux-7.3",
+    "category": "Technology",
+    "published": "2026-09-19T00:50:00Z"
+  },
+  {
+    "title": "GNOME OS Turns To Zswap To Deal With OOM Issues, Progress On Geary Email Client Fork",
+    "source": "Phoronix",
+    "extract": "GNOME OS is enabling zswap by default to improve responsiveness on memory-constrained systems. The same update covers Convey, a GNOME mail-client fork that adds Microsoft 365 support and GTK4 improvements.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/GNOME-OS-Goes-Zswap",
+    "category": "Technology",
+    "published": "2026-09-19T10:38:00Z"
+  },
+  {
+    "title": "Intel suspends bug bounty program that paid up to $100,000 per flaw — new Intigriti disclosure program offers no rewards",
+    "source": "Tom's Hardware",
+    "extract": "Intel appears to have suspended its long-running vulnerability bounty programme, which previously paid up to $100,000 for qualifying reports. Its replacement disclosure programme currently offers no rewards.",
+    "image": "https://cdn.mos.cms.futurecdn.net/CkDCueH65AEMZMenj8tnEF.jpg",
+    "link": "https://www.tomshardware.com/tech-industry/cyber-security/intel-suspends-bug-bounty-program-that-paid-up-to-usd100-000-per-flaw-new-intigriti-disclosure-program-offers-no-rewards",
+    "category": "Technology",
+    "published": "2026-09-19T00:00:00Z"
+  },
+  {
+    "title": "Researchers create DNA computer that performs 100-bit calculations without electricity",
+    "source": "Tom's Hardware",
+    "extract": "Researchers at Maynooth University have built a molecular computer using self-assembling DNA strands. The system has executed several mathematical programs, including calculations involving 100-bit values, using chemical reactions rather than electrical switching.",
+    "image": "https://cdn.mos.cms.futurecdn.net/xfUTVPaJbVFgXjAsVg6PN.jpg",
+    "link": "https://www.tomshardware.com/tech-industry/researchers-create-dna-computer-that-performs-100-bit-calculations-without-electricity-uses-self-assembling-strands-to-perform-computing",
+    "category": "Technology",
+    "published": "2026-09-19T00:00:00Z"
   },
   {
     "title": "Linux Kernel Build Times Ready To Be Significantly Reduced With Latest Patches",
     "source": "Phoronix",
-    "extract": "A new revision of Linux kernel build optimisations could cut incremental build times by around 70% and no-op builds by roughly three quarters. The work targets single-threaded bottlenecks across the kernel build system and has shown gains on AMD and Apple Silicon systems.",
+    "extract": "New Linux kernel build-system patches could substantially reduce incremental and no-op build times by addressing single-threaded bottlenecks in the kernel build process.",
     "image": null,
     "link": "https://www.phoronix.com/news/Linux-Kbuild-Faster-v3",
     "category": "Technology",
-    "published": "2026-09-18T06:26:00-04:00"
+    "published": "2026-09-18T10:26:00Z"
   },
   {
     "title": "Google's \"Painful To Maintain\" Binder C Linux Driver Being Removed In Favor Of Rust",
     "source": "Phoronix",
-    "extract": "Google is preparing to remove the long-standing C implementation of Android's Binder IPC driver from the Linux kernel in favour of its Rust rewrite. The Rust implementation has reached feature parity and is reported to match or exceed the C driver's performance.",
+    "extract": "Google is preparing to remove Android's long-standing C implementation of the Binder IPC driver from the Linux kernel in favour of its Rust rewrite. The Rust implementation has reached feature parity and is reported to match or exceed the C driver's performance.",
     "image": null,
     "link": "https://www.phoronix.com/news/Google-Binder-C-Goodbye",
     "category": "Technology",
-    "published": "2026-09-18T12:26:00-04:00"
+    "published": "2026-09-18T16:26:00Z"
   },
   {
     "title": "CISA Flags Three Actively Exploited Linux Kernel Flaws, Orders Federal Patch by Sunday",
@@ -42,15 +123,114 @@
     "image": null,
     "link": "https://www.techtimes.com/articles/327741/20260919/cisa-flags-three-actively-exploited-linux-kernel-flaws-orders-federal-patch-sunday.htm",
     "category": "Technology",
-    "published": "2026-09-19T07:59:00-04:00"
+    "published": "2026-09-19T11:59:00Z"
+  },
+  {
+    "title": "Type-N-Fire Type-In Packs Arcade Action Into 3K",
+    "source": "The Oasis BBS",
+    "extract": "A C64 Appreciation Society video revisits Type-N-Fire, a 3K Commodore 64 type-in game from 1989. The piece examines its compact BASIC code, custom characters, machine-language routines and checksum protection.",
+    "image": null,
+    "link": "https://theoasisbbs.com/type-n-fire-type-in-packs-arcade-action-into-3k/",
+    "category": "Retro Computing",
+    "published": "2026-09-18T00:00:00Z"
+  },
+  {
+    "title": "Heartbeat Soundtracker C64 Brings Sample Tracking to the Ultimate",
+    "source": "The Oasis BBS",
+    "extract": "A new video explores Heartbeat Soundtracker C64, a music-creation package that uses the Commodore 64 Ultimate's extra memory and FPGA resources to bring multichannel sampled tracker playback to Commodore hardware.",
+    "image": null,
+    "link": "https://theoasisbbs.com/heartbeat-soundtracker-c64-brings-sample-tracking-to-the-ultimate/",
+    "category": "Retro Computing",
+    "published": "2026-09-18T00:00:00Z"
+  },
+  {
+    "title": "Visual Assembler 2.4.3 Adds SID Effects and Safer D64 Editing",
+    "source": "The Oasis BBS",
+    "extract": "Visual Assembler 2.4.3 adds tracker effects and song ordering to its SID editor, alongside a safer D64 workflow with private working copies and automatic backups. The open-source development environment supports C64 projects and VICE testing.",
+    "image": null,
+    "link": "https://theoasisbbs.com/visual-assembler-2-4-3-adds-sid-effects-and-safer-d64-editing/",
+    "category": "Retro Computing",
+    "published": "2026-09-18T00:00:00Z"
+  },
+  {
+    "title": "C64 Game Creator Beta Nears Release for ARM-Based Macs",
+    "source": "The Oasis BBS",
+    "extract": "Sassoft is preparing a beta of its Commodore 64 Game Creator for ARM-based Macs, with early access planned for supporters and feedback feeding into development.",
+    "image": null,
+    "link": "https://theoasisbbs.com/c64-game-creator-beta-nears-release-for-arm-based-macs/",
+    "category": "Retro Computing",
+    "published": "2026-09-18T00:00:00Z"
+  },
+  {
+    "title": "Kalevala RPG Release Brings Finnish Folklore to Commodore Systems",
+    "source": "The Oasis BBS",
+    "extract": "A new RPG drawing on Finnish folklore has been released for Commodore systems, adding a fresh homebrew adventure to the modern software library for classic hardware.",
+    "image": null,
+    "link": "https://theoasisbbs.com/kalevala-rpg-release-brings-finnish-folklore-to-commodore-systems/",
+    "category": "Retro Computing",
+    "published": "2026-09-18T00:00:00Z"
+  },
+  {
+    "title": "QAE: Amiga as a service (AAS)",
+    "source": "New Retro Gaming",
+    "extract": "A new Amiga-as-a-service experiment combines headless Amiga emulation with a WebSocket protocol and streamed desktop video. The project is designed to run multiple emulator instances server-side and is being prepared for a future WebAssembly build.",
+    "image": null,
+    "link": "https://retromodsblog.wordpress.com/2026/09/18/qae-amiga-as-a-service-aas/",
+    "category": "Retro Computing Projects",
+    "published": "2026-09-18T00:00:00Z"
+  },
+  {
+    "title": "CHROMABLAST Amiga Shooter Enters Playable Beta",
+    "source": "The Oasis BBS",
+    "extract": "GuruVision has released a playable beta of CHROMABLAST, a new vertical shooter targeting OCS, ECS and AGA Amiga systems.",
+    "image": null,
+    "link": "https://theoasisbbs.com/chromablast-amiga-shooter-enters-playable-beta/",
+    "category": "Retro Computing Projects",
+    "published": "2026-09-18T00:00:00Z"
+  },
+  {
+    "title": "Video Game Color Cycling Animates Static Images",
+    "source": "The Oasis BBS",
+    "extract": "A new retro-computing experiment uses classic palette and colour-cycling techniques to animate otherwise static images, revisiting a distinctive trick from the era of limited graphics hardware.",
+    "image": null,
+    "link": "https://theoasisbbs.com/video-game-color-cycling-animates-static-images/",
+    "category": "Retro Computing Projects",
+    "published": "2026-09-18T00:00:00Z"
+  },
+  {
+    "title": "Elite 0x10 Brings Classic Space Trading to the Commander X16",
+    "source": "The Oasis BBS",
+    "extract": "Elite 0x10 is a fan project bringing the landmark 1984 space-trading game to the Commander X16. The project is targeting a 2026 completion and adapts the classic concept to modern retro hardware.",
+    "image": null,
+    "link": "https://theoasisbbs.com/elite-0x10-brings-classic-space-trading-to-the-commander-x16/",
+    "category": "Retro Computing Projects",
+    "published": "2026-09-18T00:00:00Z"
   },
   {
     "title": "Vixen Gameboy Demake - October 2023 Prototype",
     "source": "Newgrounds",
-    "extract": "A developer has published an archived Game Boy prototype of Vixen, a homebrew demake inspired by the 1988 ZX Spectrum and Commodore 64 game. The prototype helped inspire a later completed Game Boy Color port.",
+    "extract": "An archived Game Boy prototype of Vixen has been published, documenting an early demake inspired by the 1988 ZX Spectrum and Commodore 64 game. The prototype helped lead to a later Game Boy Color port.",
     "image": null,
     "link": "https://www.newgrounds.com/portal/view/1052409",
     "category": "Retro Computing Projects",
-    "published": "2026-09-18T09:17:00-04:00"
+    "published": "2026-09-18T13:17:00Z"
+  },
+  {
+    "title": "The Shel Talmy Recordings",
+    "source": "The Second Disc",
+    "extract": "A newly released collection gathers 21 recordings David Bowie made with producer Shel Talmy in 1965, including ten previously unreleased tracks and newly remastered material.",
+    "image": null,
+    "link": "https://theseconddisc.com/release/the-shel-talmy-recordings/",
+    "category": "Music",
+    "published": "2026-09-18T00:00:00Z"
+  },
+  {
+    "title": "The Week’s Best Albums: Neil Young & The Chrome Hearts, Rhiannon Giddens, and more",
+    "source": "Qobuz Magazine",
+    "extract": "Qobuz's weekly new-album feature includes David Bowie's The Shel Talmy Recordings, released on September 18 with previously unheard material from his early career.",
+    "image": null,
+    "link": "https://www.qobuz.com/us-en/magazine/story/2026/09/18/the-weeks-best-albums-neil-young-the-chrome-hearts-rhiannon-giddens-and-more/",
+    "category": "Music",
+    "published": "2026-09-18T00:00:00Z"
   }
 ]
