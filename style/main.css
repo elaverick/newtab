@@ -42,7 +42,7 @@
    DARK LIMINAL
 ================================================================ */
 
-body.dark {
+body.theme-dark {
 
     /*
      * Deep, desaturated blue rather than black.
@@ -70,6 +70,37 @@ body.dark {
     --placeholder: #232d36;
 
     --placeholder-text: #626f79;
+}
+
+
+/* ================================================================
+   SYSTEM THEME
+================================================================ */
+
+@media (prefers-color-scheme: dark) {
+
+    body:not(.theme-light) {
+
+        --background: #111820;
+
+        --surface: #171f28;
+
+        --surface-subtle: #202a34;
+
+        --text: #d9dedf;
+
+        --muted: #89949d;
+
+        --faint: #59656f;
+
+        --line: #303b45;
+
+        --line-strong: #4a5863;
+
+        --placeholder: #232d36;
+
+        --placeholder-text: #626f79;
+    }
 }
 
 
