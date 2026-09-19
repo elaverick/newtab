@@ -1505,3 +1505,277 @@ a {
     height: 1px;
     margin-top: 1px;
 }
+
+
+/* ================================================================
+   PLACES DIALOG
+================================================================ */
+
+body.places-modal-open {
+    overflow: hidden;
+}
+
+
+.places-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+}
+
+
+.places-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(20, 25, 30, 0.38);
+}
+
+
+.places-dialog {
+    position: relative;
+    width: min(520px, calc(100% - 28px));
+    max-height: calc(100vh - 40px);
+    margin: 20px auto;
+    overflow: auto;
+    padding: 24px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+    box-shadow: 0 24px 70px rgba(20, 25, 30, 0.18);
+}
+
+
+.places-dialog-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.places-dialog-kicker {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--muted);
+    font-size: 8px;
+    letter-spacing: 0.16em;
+}
+
+
+.places-dialog-title {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: normal;
+}
+
+
+.places-dialog-close {
+    width: 28px;
+    height: 28px;
+    flex: 0 0 auto;
+    padding: 0;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1;
+}
+
+.places-dialog-close:hover {
+    color: var(--text);
+    border-color: var(--line-strong);
+}
+
+
+.places-dialog-description {
+    margin: 12px 0 18px;
+    color: var(--muted);
+    font-size: 9px;
+    line-height: 1.7;
+}
+
+
+.places-options {
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+
+
+.places-option {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    min-height: 58px;
+    padding: 10px 11px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    cursor: pointer;
+}
+
+.places-option:hover {
+    background: var(--surface-subtle);
+}
+
+
+.places-option input {
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    accent-color: var(--text);
+}
+
+
+.places-option-icon {
+    width: 27px;
+    height: 27px;
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+    border: 1px solid var(--line);
+    background: var(--surface-subtle);
+    font-family: var(--font-display);
+    font-size: 11px;
+}
+
+
+.places-option-info {
+    min-width: 0;
+    flex: 1;
+}
+
+
+.places-option-name,
+.places-option-url {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.places-option-name {
+    font-family: var(--font-display);
+    font-size: 11px;
+}
+
+.places-option-url {
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 8px;
+}
+
+
+.places-option-remove {
+    width: 22px;
+    height: 22px;
+    flex: 0 0 auto;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--faint);
+    font-size: 14px;
+}
+
+.places-option-remove:hover {
+    color: var(--text);
+}
+
+
+.places-add {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+}
+
+
+.places-add-heading {
+    margin-bottom: 9px;
+    color: var(--muted);
+    font-size: 8px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+
+.places-add-fields {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 34px;
+    gap: 8px;
+}
+
+
+.places-add-fields input {
+    min-width: 0;
+    height: 35px;
+    padding: 0 10px;
+    border: 1px solid var(--line);
+    outline: 0;
+    background: transparent;
+    color: var(--text);
+    font-size: 9px;
+}
+
+.places-add-fields input:focus {
+    border-color: var(--line-strong);
+}
+
+
+.places-add-button {
+    height: 35px;
+    padding: 0;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.places-add-button:hover {
+    color: var(--text);
+    border-color: var(--line-strong);
+}
+
+
+.places-dialog-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+
+.places-dialog-button {
+    min-width: 82px;
+    height: 35px;
+    padding: 0 12px;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--muted);
+    font-size: 9px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.places-dialog-button:hover {
+    color: var(--text);
+    border-color: var(--line-strong);
+}
+
+.places-dialog-button.primary {
+    background: var(--surface-subtle);
+    color: var(--text);
+}
+
+
+@media (max-width: 520px) {
+
+    .places-dialog {
+        margin: 12px auto;
+        padding: 18px;
+    }
+
+    .places-add-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .places-add-button {
+        width: 100%;
+    }
+}
