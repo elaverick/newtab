@@ -185,6 +185,55 @@ The categories are editorial rather than technical. You can change them, add new
 
 ---
 
+## Use as a Chrome New Tab page
+
+The GitHub Pages site is a normal static website. Chrome does not let an ordinary website replace the built-in New Tab page, so the repository includes a tiny Manifest V3 extension that uses Chrome's supported `chrome_url_overrides.newtab` mechanism.
+
+The extension is deliberately separate from the website. It does not contain a copy of the site; it only redirects Chrome's New Tab page to the configured GitHub Pages URL.
+
+### Install the extension locally
+
+1. Make sure your GitHub Pages site is working.
+2. Open `extension/redirect.js` in a text editor.
+3. Set `LIMINAL_NEW_TAB_URL` to the URL of your GitHub Pages site. For example:
+
+```js
+const LIMINAL_NEW_TAB_URL =
+    "https://elaverick.github.io/newtab/";
+```
+
+4. Save the file.
+5. Open `chrome://extensions` in Chrome.
+6. Enable **Developer mode**.
+7. Click **Load unpacked**.
+8. Select the repository's `extension` folder.
+
+Chrome will now use the extension whenever a new tab is opened.
+
+The extension's New Tab page contains no application UI of its own. It immediately uses `window.location.replace()` to send the tab to the configured GitHub Pages URL.
+
+### Updating the extension
+
+Because the extension loads the website from GitHub Pages, changes to the website do not require the extension to be rebuilt.
+
+When you change `extension/redirect.js`, return to `chrome://extensions` and click **Reload** on the Liminal New Tab extension.
+
+### Forking
+
+A fork only needs to change the URL in `extension/redirect.js`:
+
+```js
+const LIMINAL_NEW_TAB_URL =
+    "https://your-user.github.io/your-repository/";
+```
+
+The rest of the extension can remain unchanged.
+
+The extension is intended for personal or local unpacked use. Publishing an extension to the Chrome Web Store is a separate distribution step and is subject to Google's current extension policies.
+
+---
+
+
 ## Building your own version
 
 The easiest route is:
