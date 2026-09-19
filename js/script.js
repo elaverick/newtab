@@ -185,9 +185,6 @@ const siteUrlInput =
 const removeSiteButton =
     document.getElementById("removeSiteButton");
 
-const newSiteButton =
-    document.getElementById("newSiteButton");
-
 const saveSiteButton =
     document.getElementById("saveSiteButton");
 
@@ -198,10 +195,8 @@ let places =
 let editingIndex =
     null;
 
-let nameLookupSequence =
-    0;
-
-let nameLookupTimer = null;
+let nameLookupTimer =
+    null;
 
 
 function normalisePlace(place) {
@@ -260,7 +255,9 @@ function loadPlaces() {
 
     }
 
-    return DEFAULT_PLACES.map(place => ({ ...place }));
+    return DEFAULT_PLACES.map(
+        place => ({ ...place })
+    );
 }
 
 
@@ -305,22 +302,89 @@ function getPlaceHostname(url) {
 }
 
 
-function getNameFromUrl(url) {
+function getPlaceNameFromUrl(url) {
 
-    const hostname =
-        getPlaceHostname(url)
-            .split(".")[0]
-            .replace(/[-_]+/g, " ")
-            .trim();
+    let hostname = "";
 
-    if (!hostname) {
+    try {
+
+        hostname =
+            new URL(url).hostname
+                .replace(/^www\./i, "");
+
+    } catch {
+
+        return "";
+
+    }
+
+
+    const parts =
+        hostname
+            .split(".")
+            .filter(Boolean);
+
+
+    if (!parts.length) {
         return "";
     }
 
-    return hostname.replace(
-        /\b\w/g,
-        character => character.toUpperCase()
-    );
+
+    const multiPartDomains =
+        new Set([
+            "co.uk",
+            "org.uk",
+            "ac.uk",
+            "gov.uk",
+            "com.au",
+            "net.au",
+            "org.au",
+            "co.nz",
+            "co.za",
+            "com.br",
+            "com.cn",
+            "com.sg",
+            "co.jp"
+        ]);
+
+
+    let name = "";
+
+    if (
+        parts.length >= 3 &&
+        multiPartDomains.has(
+            parts.slice(-2).join(".")
+        )
+    ) {
+
+        name =
+            parts[parts.length - 3];
+
+    } else if (parts.length >= 2) {
+
+        name =
+            parts[parts.length - 2];
+
+    } else {
+
+        name =
+            parts[0];
+
+    }
+
+
+    name =
+        name
+            .replace(/[-_]+/g, " ")
+            .trim()
+            .toLowerCase();
+
+
+    return name
+        ? name.charAt(0).toUpperCase() +
+          name.slice(1)
+        : "";
+
 }
 
 
@@ -334,8 +398,10 @@ function normaliseSiteUrl(url) {
     }
 
     if (!/^https?:\/\//i.test(value)) {
+
         value =
             `https://${value}`;
+
     }
 
     try {
@@ -347,151 +413,6 @@ function normaliseSiteUrl(url) {
         return "";
 
     }
-
-}
-
-
-async function fetchPageName(url, sequence) {
-
-    placesEditorStatus.textContent =
-        "Looking up page name...";
-
-    placesEditorStatus.hidden =
-        false;
-
-    try {
-
-        const response =
-            await fetch(
-                "https://r.jina.ai/" +
-                url,
-                {
-                    headers: {
-                        Accept:
-                            "application/json"
-                    },
-                    cache: "no-store"
-                }
-            );
-
-        if (!response.ok) {
-            throw new Error(
-                `Page lookup failed: ${response.status}`
-            );
-        }
-
-        const data =
-            await response.json();
-
-        const title =
-            String(
-                data.title ?? ""
-            ).trim();
-
-        if (
-            sequence !== nameLookupSequence ||
-            siteNameInput.value.trim() ||
-            !title
-        ) {
-            return;
-        }
-
-        siteNameInput.value =
-            title;
-
-        placesEditorStatus.textContent =
-            "Page name found.";
-
-    } catch (error) {
-
-        if (sequence !== nameLookupSequence) {
-            return;
-        }
-
-        const fallback =
-            getNameFromUrl(url);
-
-        if (
-            !siteNameInput.value.trim() &&
-            fallback
-        ) {
-            siteNameInput.value =
-                fallback;
-
-            placesEditorStatus.textContent =
-                "Name suggested from URL.";
-
-        } else {
-
-            placesEditorStatus.hidden =
-                true;
-
-        }
-
-        console.warn(
-            "Unable to fetch page name:",
-            error
-        );
-
-    }
-
-}
-
-
-function requestPageName() {
-
-    if (siteNameInput.value.trim()) {
-        return;
-    }
-
-    const url =
-        normaliseSiteUrl(
-            siteUrlInput.value
-        );
-
-    if (!url) {
-
-        placesEditorStatus.hidden =
-            true;
-
-        return;
-
-    }
-
-    let hostname = "";
-
-    try {
-
-        hostname =
-            new URL(url).hostname;
-
-    } catch {
-
-        return;
-
-    }
-
-    if (
-        !hostname ||
-        hostname === "www." ||
-        hostname.endsWith(".") ||
-        !hostname.includes(".")
-    ) {
-
-        placesEditorStatus.hidden =
-            true;
-
-        return;
-
-    }
-
-    const sequence =
-        ++nameLookupSequence;
-
-    fetchPageName(
-        url,
-        sequence
-    );
 
 }
 
@@ -743,9 +664,6 @@ function setEditorMode(index) {
     editingIndex =
         index;
 
-    nameLookupSequence +=
-        1;
-
     window.clearTimeout(
         nameLookupTimer
     );
@@ -841,9 +759,6 @@ function closePlaces() {
         "places-modal-open"
     );
 
-    nameLookupSequence +=
-        1;
-
     window.clearTimeout(
         nameLookupTimer
     );
@@ -864,19 +779,6 @@ placesClose.addEventListener(
 placesDone.addEventListener(
     "click",
     closePlaces
-);
-
-newSiteButton.addEventListener(
-    "click",
-    () => {
-
-        setEditorMode(
-            null
-        );
-
-        siteUrlInput.focus();
-
-    }
 );
 
 
@@ -908,18 +810,43 @@ saveSiteButton.addEventListener(
     "click",
     () => {
 
-        const name =
-            siteNameInput.value.trim();
+        const rawUrl =
+            siteUrlInput.value.trim();
 
         const url =
             normaliseSiteUrl(
-                siteUrlInput.value
+                rawUrl
             );
 
-        if (!name || !url) {
+        if (!url) {
 
             placesEditorStatus.textContent =
-                "Enter a name and valid URL.";
+                "Enter a valid URL.";
+
+            placesEditorStatus.hidden =
+                false;
+
+            return;
+
+        }
+
+
+        let name =
+            siteNameInput.value.trim();
+
+        if (!name) {
+
+            name =
+                getPlaceNameFromUrl(
+                    url
+                );
+
+        }
+
+        if (!name) {
+
+            placesEditorStatus.textContent =
+                "Unable to determine a site name.";
 
             placesEditorStatus.hidden =
                 false;
@@ -993,25 +920,43 @@ siteUrlInput.addEventListener(
         }
 
 
-        nameLookupTimer =
-            window.setTimeout(
-                requestPageName,
-                700
+        const name =
+            getPlaceNameFromUrl(
+                url
             );
 
-    }
-);
+        if (!name) {
 
+            placesEditorStatus.hidden =
+                true;
 
-siteUrlInput.addEventListener(
-    "blur",
-    () => {
+            return;
 
-        if (
-            !siteNameInput.value.trim()
-        ) {
-            requestPageName();
         }
+
+
+        nameLookupTimer =
+            window.setTimeout(
+                () => {
+
+                    if (
+                        !siteNameInput.value.trim()
+                    ) {
+
+                        siteNameInput.value =
+                            name;
+
+                        placesEditorStatus.textContent =
+                            "Name from URL.";
+
+                        placesEditorStatus.hidden =
+                            false;
+
+                    }
+
+                },
+                250
+            );
 
     }
 );
