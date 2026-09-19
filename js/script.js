@@ -993,25 +993,9 @@ siteUrlInput.addEventListener(
         }
 
 
-        const sequence =
-            ++nameLookupSequence;
-
-        placesEditorStatus.textContent =
-            "Looking up page name...";
-
-        placesEditorStatus.hidden =
-            false;
-
         nameLookupTimer =
             window.setTimeout(
-                () => {
-
-                    fetchPageName(
-                        url,
-                        sequence
-                    );
-
-                },
+                requestPageName,
                 700
             );
 
