@@ -3268,6 +3268,150 @@ function renderCategoryMarker(category) {
 }
 
 
+function hashPlaceholderValue(value) {
+
+    let hash =
+        2166136261;
+
+    for (const character of String(value)) {
+
+        hash ^=
+            character.charCodeAt(0);
+
+        hash =
+            Math.imul(
+                hash,
+                16777619
+            );
+
+    }
+
+    return hash >>> 0;
+
+}
+
+
+function slugifyCategory(category) {
+
+    return String(
+        category ?? ""
+    )
+        .trim()
+        .toLowerCase()
+        .replace(
+            /[^a-z0-9]+/g,
+            "-"
+        )
+        .replace(
+            /^-+|-+$/g,
+            "");
+
+}
+
+
+function getArticlePlaceholderUrl(article) {
+
+    const category =
+        String(
+            article?.category ??
+            ""
+        ).trim();
+
+    const slug =
+        slugifyCategory(
+            category
+        );
+
+    if (!slug) {
+
+        return null;
+
+    }
+
+
+    const seed =
+        hashPlaceholderValue(
+            [
+                category,
+                article?.link ?? "",
+                article?.title ?? ""
+            ].join("|")
+        );
+
+    const variant =
+        (seed % 12) + 1;
+
+    return (
+        "images/" +
+        slug +
+        "/" +
+        String(variant).padStart(2, "0") +
+        ".png"
+    );
+
+}
+
+
+function showStaticArticlePlaceholder(
+    image,
+    imagePlaceholder,
+    article
+) {
+
+    const placeholderUrl =
+        getArticlePlaceholderUrl(
+            article
+        );
+
+    if (!placeholderUrl) {
+
+        image.hidden =
+            true;
+
+        imagePlaceholder.textContent =
+            "IMAGE";
+
+        imagePlaceholder.hidden =
+            false;
+
+        return;
+
+    }
+
+
+    image.alt =
+        "";
+
+    image.hidden =
+        false;
+
+    imagePlaceholder.hidden =
+        true;
+
+    image.src =
+        placeholderUrl;
+
+
+    image.addEventListener(
+        "error",
+        () => {
+
+            image.hidden =
+                true;
+
+            imagePlaceholder.textContent =
+                "IMAGE";
+
+            imagePlaceholder.hidden =
+                false;
+
+        },
+        { once: true }
+    );
+
+}
+
+
 function renderArticle(article, index) {
 
     const item =
@@ -3319,34 +3463,40 @@ function renderArticle(article, index) {
         image.alt =
             article.title ?? "";
 
+        image.hidden =
+            false;
+
+        imagePlaceholder.hidden =
+            true;
+
         image.addEventListener(
             "error",
             () => {
 
-                image.hidden =
-                    true;
-
-                imagePlaceholder.hidden =
-                    false;
+                showStaticArticlePlaceholder(
+                    image,
+                    imagePlaceholder,
+                    article
+                );
 
             },
             { once: true }
         );
 
-        imagePlaceholder.hidden =
-            true;
-
     } else {
 
-        image.hidden =
-            true;
+        showStaticArticlePlaceholder(
+            image,
+            imagePlaceholder,
+            article
+        );
 
     }
 
 
     return item;
-}
 
+}
 
 function renderNextArticles() {
 
