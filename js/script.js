@@ -484,17 +484,6 @@ function renderArticle(article, index) {
 }
 
 
-function getRemainingArticles() {
-
-    return articleGroups
-        .flatMap(
-            group =>
-                group.articles
-                    .slice(group.renderedCount)
-        );
-
-}
-
 
 function renderNextArticles() {
 
