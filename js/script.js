@@ -458,6 +458,33 @@ function requestPageName() {
 
     }
 
+    let hostname = "";
+
+    try {
+
+        hostname =
+            new URL(url).hostname;
+
+    } catch {
+
+        return;
+
+    }
+
+    if (
+        !hostname ||
+        hostname === "www." ||
+        hostname.endsWith(".") ||
+        !hostname.includes(".")
+    ) {
+
+        placesEditorStatus.hidden =
+            true;
+
+        return;
+
+    }
+
     const sequence =
         ++nameLookupSequence;
 
