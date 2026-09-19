@@ -63,6 +63,16 @@
 
         <div class="topbar-right">
 
+            <span
+                class="weather"
+                id="weather"
+                title="Local weather"
+                aria-label="Local weather"
+                hidden
+            >
+                •
+            </span>
+
             <span id="clock">
                 14:23
             </span>
@@ -72,13 +82,13 @@
             </span>
 
             <button
-                class="theme-toggle"
-                id="themeToggle"
+                class="settings-button"
+                id="settingsButton"
                 type="button"
-                aria-label="Toggle light and dark mode"
-                title="Toggle light and dark mode"
+                aria-label="Settings"
+                title="Settings"
             >
-                ◐
+                ⚙
             </button>
 
         </div>
@@ -143,45 +153,7 @@
                 <div
                     class="provider-menu"
                     id="providerMenu"
-                >
-
-                    <button
-                        class="provider-option active"
-                        data-provider="Google"
-                        data-mark="G"
-                        type="button"
-                    >
-                        Google
-                    </button>
-
-                    <button
-                        class="provider-option"
-                        data-provider="Bing"
-                        data-mark="B"
-                        type="button"
-                    >
-                        Bing
-                    </button>
-
-                    <button
-                        class="provider-option"
-                        data-provider="DuckDuckGo"
-                        data-mark="D"
-                        type="button"
-                    >
-                        DuckDuckGo
-                    </button>
-
-                    <button
-                        class="provider-option"
-                        data-provider="Brave"
-                        data-mark="B"
-                        type="button"
-                    >
-                        Brave
-                    </button>
-
-                </div>
+                ></div>
 
             </div>
 
@@ -239,8 +211,10 @@
 
             <button
                 class="section-action"
+                id="placesEdit"
                 type="button"
-                aria-label="Add site"
+                aria-label="Choose sites"
+                title="Choose sites"
             >
                 +
             </button>
@@ -249,221 +223,494 @@
         </div>
 
 
-        <div class="site-grid">
+        <div
+            class="site-grid"
+            id="siteGrid"
+        ></div>
 
 
-            <a
-                href="#"
-                class="site"
+        <div
+            class="places-modal"
+            id="placesModal"
+            hidden
+        >
+
+            <div
+                class="places-modal-backdrop"
+                data-places-close
+            ></div>
+
+            <div
+                class="places-dialog"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="placesDialogTitle"
             >
 
-                <span class="site-index">
-                    01
-                </span>
+                <div class="places-dialog-header">
 
-                <span class="site-icon">
-                    G
-                </span>
+                    <div>
 
-                <span class="site-info">
+                        <span class="places-dialog-kicker">
+                            02 / PLACES
+                        </span>
 
-                    <span class="site-name">
-                        GitHub
-                    </span>
+                        <h3
+                            class="places-dialog-title"
+                            id="placesDialogTitle"
+                        >
+                            Manage places
+                        </h3>
 
-                    <span class="site-url">
-                        github.com
-                    </span>
+                    </div>
 
-                </span>
+                    <button
+                        class="places-dialog-close"
+                        id="placesClose"
+                        type="button"
+                        aria-label="Close"
+                    >
+                        ×
+                    </button>
 
-                <button
-                    class="site-remove"
-                    type="button"
-                    aria-label="Remove GitHub"
-                >
-                    ×
-                </button>
+                </div>
 
-            </a>
+                <p class="places-dialog-description">
+                    Choose a site to edit, or add a new one below.
+                </p>
 
+                <div
+                    class="places-list"
+                    id="placesList"
+                ></div>
 
-            <a
-                href="#"
-                class="site"
-            >
+                <div class="places-editor">
 
-                <span class="site-index">
-                    02
-                </span>
+                    <div class="places-editor-header">
 
-                <span class="site-icon">
-                    L
-                </span>
+                        <span
+                            class="places-editor-kicker"
+                            id="placesEditorKicker"
+                        >
+                            ADD SITE
+                        </span>
 
-                <span class="site-info">
+                        <span
+                            class="places-editor-status"
+                            id="placesEditorStatus"
+                            aria-live="polite"
+                            hidden
+                        ></span>
 
-                    <span class="site-name">
-                        LinkedIn
-                    </span>
+                    </div>
 
-                    <span class="site-url">
-                        linkedin.com
-                    </span>
+                    <div class="places-editor-fields">
 
-                </span>
+                        <label class="places-field">
 
-                <button
-                    class="site-remove"
-                    type="button"
-                    aria-label="Remove LinkedIn"
-                >
-                    ×
-                </button>
+                            <span>
+                                Name
+                            </span>
 
-            </a>
+                            <input
+                                id="siteNameInput"
+                                type="text"
+                                placeholder="Site name"
+                                autocomplete="off"
+                            >
 
+                        </label>
 
-            <a
-                href="#"
-                class="site"
-            >
+                        <label class="places-field">
 
-                <span class="site-index">
-                    03
-                </span>
+                            <span>
+                                URL
+                            </span>
 
-                <span class="site-icon">
-                    R
-                </span>
+                            <input
+                                id="siteUrlInput"
+                                type="url"
+                                placeholder="https://example.com"
+                                autocomplete="off"
+                            >
 
-                <span class="site-info">
+                        </label>
 
-                    <span class="site-name">
-                        Reddit
-                    </span>
+                    </div>
 
-                    <span class="site-url">
-                        reddit.com
-                    </span>
+                    <div class="places-editor-actions">
 
-                </span>
+                        <button
+                            class="places-dialog-button danger"
+                            id="removeSiteButton"
+                            type="button"
+                            hidden
+                        >
+                            Remove
+                        </button>
 
-                <button
-                    class="site-remove"
-                    type="button"
-                    aria-label="Remove Reddit"
-                >
-                    ×
-                </button>
+                        <div class="places-editor-primary">
 
-            </a>
+                            <button
+                                class="places-dialog-button primary"
+                                id="saveSiteButton"
+                                type="button"
+                            >
+                                Add site
+                            </button>
 
+                        </div>
 
-            <a
-                href="#"
-                class="site"
-            >
+                    </div>
 
-                <span class="site-index">
-                    04
-                </span>
+                </div>
 
-                <span class="site-icon">
-                    A
-                </span>
+                <div class="places-dialog-footer">
 
-                <span class="site-info">
+                    <button
+                        class="places-dialog-button primary"
+                        id="placesDone"
+                        type="button"
+                    >
+                        Done
+                    </button>
 
-                    <span class="site-name">
-                        Amazon
-                    </span>
+                </div>
 
-                    <span class="site-url">
-                        amazon.co.uk
-                    </span>
-
-                </span>
-
-                <button
-                    class="site-remove"
-                    type="button"
-                    aria-label="Remove Amazon"
-                >
-                    ×
-                </button>
-
-            </a>
-
-
-            <a
-                href="#"
-                class="site"
-            >
-
-                <span class="site-index">
-                    05
-                </span>
-
-                <span class="site-icon">
-                    N
-                </span>
-
-                <span class="site-info">
-
-                    <span class="site-name">
-                        News
-                    </span>
-
-                    <span class="site-url">
-                        news.example.com
-                    </span>
-
-                </span>
-
-                <button
-                    class="site-remove"
-                    type="button"
-                    aria-label="Remove News"
-                >
-                    ×
-                </button>
-
-            </a>
-
-
-            <a
-                href="#"
-                class="site"
-            >
-
-                <span class="site-index">
-                    06
-                </span>
-
-                <span class="site-icon">
-                    +
-                </span>
-
-                <span class="site-info">
-
-                    <span class="site-name">
-                        Add site
-                    </span>
-
-                    <span class="site-url">
-                        Create shortcut
-                    </span>
-
-                </span>
-
-            </a>
-
+            </div>
 
         </div>
 
     </section>
 
+
+    <div
+        class="settings-modal"
+        id="settingsModal"
+        hidden
+    >
+
+        <div
+            class="settings-modal-backdrop"
+            data-settings-close
+        ></div>
+
+        <div
+            class="settings-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="settingsDialogTitle"
+        >
+
+            <div class="settings-dialog-header">
+
+                <div>
+
+                    <span class="settings-dialog-kicker">
+                        00 / SETTINGS
+                    </span>
+
+                    <h3
+                        class="settings-dialog-title"
+                        id="settingsDialogTitle"
+                    >
+                        Settings
+                    </h3>
+
+                </div>
+
+                <button
+                    class="settings-dialog-close"
+                    id="settingsClose"
+                    type="button"
+                    aria-label="Close settings"
+                >
+                    ×
+                </button>
+
+            </div>
+
+            <p class="settings-dialog-description">
+                Configure how the index behaves.
+            </p>
+
+            <div class="settings-group">
+
+                <div class="settings-group-header">
+
+                    <span class="settings-group-kicker">
+                        APPEARANCE
+                    </span>
+
+                    <span class="settings-group-description">
+                        Choose how the page is lit.
+                    </span>
+
+                </div>
+
+                <div
+                    class="settings-theme-options"
+                    role="radiogroup"
+                    aria-label="Theme"
+                >
+
+                    <label class="settings-theme-option">
+
+                        <input
+                            type="radio"
+                            name="theme"
+                            id="themeSystem"
+                            value="system"
+                        >
+
+                        <span class="settings-theme-option-body">
+
+                            <span class="settings-theme-option-title">
+                                System
+                            </span>
+
+                            <span class="settings-theme-option-detail">
+                                Follow device
+                            </span>
+
+                        </span>
+
+                    </label>
+
+                    <label class="settings-theme-option">
+
+                        <input
+                            type="radio"
+                            name="theme"
+                            id="themeLight"
+                            value="light"
+                        >
+
+                        <span class="settings-theme-option-body">
+
+                            <span class="settings-theme-option-title">
+                                Light
+                            </span>
+
+                            <span class="settings-theme-option-detail">
+                                Always light
+                            </span>
+
+                        </span>
+
+                    </label>
+
+                    <label class="settings-theme-option">
+
+                        <input
+                            type="radio"
+                            name="theme"
+                            id="themeDark"
+                            value="dark"
+                        >
+
+                        <span class="settings-theme-option-body">
+
+                            <span class="settings-theme-option-title">
+                                Dark
+                            </span>
+
+                            <span class="settings-theme-option-detail">
+                                Always dark
+                            </span>
+
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+            <div class="settings-group">
+
+                <div class="settings-group-header">
+
+                    <span class="settings-group-kicker">
+                        LOCAL WEATHER
+                    </span>
+
+                    <span class="settings-group-description">
+                        Uses your location only when enabled.
+                    </span>
+
+                </div>
+
+                <label class="settings-switch-row">
+
+                    <span class="settings-switch-copy">
+
+                        <span class="settings-switch-title">
+                            Show weather
+                        </span>
+
+                        <span class="settings-switch-detail">
+                            Local conditions in the top bar.
+                        </span>
+
+                    </span>
+
+                    <span class="settings-switch">
+
+                        <input
+                            type="checkbox"
+                            id="weatherToggleSetting"
+                        >
+
+                        <span class="settings-switch-track">
+                            <span class="settings-switch-thumb"></span>
+                        </span>
+
+                    </span>
+
+                </label>
+
+            </div>
+
+            <div class="settings-group">
+
+                <div class="settings-group-header">
+
+                    <span class="settings-group-kicker">
+                        SEARCH ENGINES
+                    </span>
+
+                    <span class="settings-group-description">
+                        Choose which engines appear and which one starts selected.
+                    </span>
+
+                </div>
+
+                <div
+                    class="settings-engine-list"
+                    id="searchEngineSettings"
+                ></div>
+
+                <button
+                    class="settings-add-engine-button"
+                    id="addSearchEngineButton"
+                    type="button"
+                >
+                    + ADD SEARCH ENGINE
+                </button>
+
+                <div
+                    class="settings-engine-editor"
+                    id="searchEngineEditor"
+                    hidden
+                >
+
+                    <div class="settings-engine-editor-header">
+
+                        <span class="settings-engine-editor-kicker">
+                            NEW SEARCH ENGINE
+                        </span>
+
+                        <button
+                            class="settings-engine-editor-close"
+                            id="cancelSearchEngineButton"
+                            type="button"
+                            aria-label="Cancel adding search engine"
+                            title="Cancel"
+                        >
+                            ×
+                        </button>
+
+                    </div>
+
+                    <div class="settings-engine-editor-fields">
+
+                        <label class="settings-engine-field">
+
+                            <span>
+                                Name
+                            </span>
+
+                            <input
+                                id="searchEngineNameInput"
+                                type="text"
+                                placeholder="Search engine or AI agent"
+                                autocomplete="off"
+                            >
+
+                        </label>
+
+                        <label class="settings-engine-field">
+
+                            <span>
+                                Search URL
+                            </span>
+
+                            <input
+                                id="searchEngineUrlInput"
+                                type="url"
+                                placeholder="https://example.com/search?q={query}"
+                                autocomplete="off"
+                            >
+
+                        </label>
+
+                        <label class="settings-engine-field">
+
+                            <span>
+                                Placeholder
+                            </span>
+
+                            <input
+                                id="searchEnginePlaceholderInput"
+                                type="text"
+                                placeholder="Search the web..."
+                                autocomplete="off"
+                            >
+
+                        </label>
+
+                    </div>
+
+                    <p
+                        class="settings-engine-editor-help"
+                        id="searchEngineEditorStatus"
+                        aria-live="polite"
+                    >
+                        Use {query} where the search text should be inserted.
+                    </p>
+
+                    <div class="settings-engine-editor-actions">
+
+                        <button
+                            class="settings-dialog-button primary"
+                            id="saveSearchEngineButton"
+                            type="button"
+                        >
+                            Add engine
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="settings-dialog-footer">
+
+                <button
+                    class="settings-dialog-button primary"
+                    id="settingsDone"
+                    type="button"
+                >
+                    Done
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
 
 
     <!-- ============================================================
@@ -495,8 +742,10 @@
 
             <button
                 class="section-action"
+                id="refreshArticles"
                 type="button"
                 aria-label="Refresh articles"
+                title="Refresh articles"
             >
                 ↻
             </button>
@@ -558,8 +807,7 @@
 
                         <div class="article-footer">
 
-                            <span>
-                                SOURCE
+                            <span class="article-source">
                             </span>
 
                         </div>
