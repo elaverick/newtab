@@ -246,3 +246,165 @@ searchForm.addEventListener("submit", event => {
         encodeURIComponent(query);
 
 });
+
+/* ================================================================
+   ARTICLES
+   ================================================================ */
+
+const articleGrid =
+    document.getElementById("articleGrid");
+
+const articleTemplate =
+    document.getElementById("articleTemplate");
+
+
+async function loadArticles() {
+
+    try {
+
+        const response =
+            await fetch("../articles.json", {
+                cache: "no-cache"
+            });
+
+        if (!response.ok) {
+
+            throw new Error(
+                `Unable to load articles.json: ${response.status}`
+            );
+
+        }
+
+        const articles =
+            await response.json();
+
+
+        if (!Array.isArray(articles)) {
+
+            throw new Error(
+                "articles.json must contain an array"
+            );
+
+        }
+
+
+        const fragment =
+            document.createDocumentFragment();
+
+
+        articles.forEach((article, index) => {
+
+            if (!article || typeof article !== "object") {
+                return;
+            }
+
+
+            const item =
+                articleTemplate.content.cloneNode(true);
+
+
+            const link =
+                item.querySelector(".article-link");
+
+            const image =
+                item.querySelector(".article-image-content");
+
+            const imagePlaceholder =
+                item.querySelector(".article-image-placeholder");
+
+            const number =
+                item.querySelector(".article-number");
+
+            const title =
+                item.querySelector(".article-title");
+
+            const description =
+                item.querySelector(".article-description");
+
+
+            number.textContent =
+                String(index + 1).padStart(3, "0");
+
+            title.textContent =
+                article.title ?? "";
+
+            description.textContent =
+                article.extract ?? "";
+
+            link.href =
+                article.link ?? "#";
+
+
+            if (article.image) {
+
+                image.src =
+                    article.image;
+
+                image.alt =
+                    article.title ?? "";
+
+                image.addEventListener(
+                    "error",
+                    () => {
+
+                        image.hidden =
+                            true;
+
+                        imagePlaceholder.hidden =
+                            false;
+
+                    },
+                    { once: true }
+                );
+
+                imagePlaceholder.hidden =
+                    true;
+
+            } else {
+
+                image.hidden =
+                    true;
+
+            }
+
+
+            fragment.appendChild(item);
+
+        });
+
+
+        articleGrid.replaceChildren(
+            fragment
+        );
+
+
+    } catch (error) {
+
+        console.error(
+            "Failed to load articles:",
+            error
+        );
+
+
+        articleGrid.replaceChildren();
+
+
+        const message =
+            document.createElement("p");
+
+        message.className =
+            "article-error";
+
+        message.textContent =
+            "Unable to load articles.";
+
+        articleGrid.appendChild(
+            message
+        );
+
+    }
+
+}
+
+
+loadArticles();
