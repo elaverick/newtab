@@ -695,6 +695,212 @@ document.addEventListener("click", event => {
 
 
 /* ================================================================
+   WEATHER
+   ================================================================ */
+
+const weather =
+    document.getElementById("weather");
+
+const WEATHER_REFRESH_INTERVAL =
+    15 * 60 * 1000;
+
+
+function getWeatherSymbol(code, isDay) {
+
+    if (code === 0) {
+        return isDay ? "☀" : "☾";
+    }
+
+    if (code === 1) {
+        return isDay ? "◔" : "☽";
+    }
+
+    if (code === 2) {
+        return "⛅";
+    }
+
+    if (code === 3) {
+        return "☁";
+    }
+
+    if (code === 45 || code === 48) {
+        return "≋";
+    }
+
+    if (code >= 51 && code <= 57) {
+        return "≋";
+    }
+
+    if (code >= 61 && code <= 67) {
+        return "☂";
+    }
+
+    if (code >= 71 && code <= 77) {
+        return "❄";
+    }
+
+    if (code >= 80 && code <= 82) {
+        return "☂";
+    }
+
+    if (code === 85 || code === 86) {
+        return "❄";
+    }
+
+    if (code >= 95 && code <= 99) {
+        return "ϟ";
+    }
+
+    return "•";
+}
+
+
+function describeWeather(code) {
+
+    const descriptions = {
+        0: "Clear sky",
+        1: "Mainly clear",
+        2: "Partly cloudy",
+        3: "Overcast",
+        45: "Fog",
+        48: "Rime fog",
+        51: "Light drizzle",
+        53: "Drizzle",
+        55: "Heavy drizzle",
+        56: "Light freezing drizzle",
+        57: "Freezing drizzle",
+        61: "Light rain",
+        63: "Rain",
+        65: "Heavy rain",
+        66: "Light freezing rain",
+        67: "Freezing rain",
+        71: "Light snow",
+        73: "Snow",
+        75: "Heavy snow",
+        77: "Snow grains",
+        80: "Light showers",
+        81: "Showers",
+        82: "Heavy showers",
+        85: "Light snow showers",
+        86: "Heavy snow showers",
+        95: "Thunderstorm",
+        96: "Thunderstorm with hail",
+        99: "Thunderstorm with heavy hail"
+    };
+
+    return descriptions[code] ?? "Weather unavailable";
+}
+
+
+async function updateWeather() {
+
+    if (
+        !navigator.geolocation ||
+        !window.isSecureContext
+    ) {
+        weather.hidden = true;
+        return;
+    }
+
+
+    try {
+
+        const position =
+            await new Promise((resolve, reject) => {
+
+                navigator.geolocation.getCurrentPosition(
+                    resolve,
+                    reject,
+                    {
+                        enableHighAccuracy: false,
+                        maximumAge: 15 * 60 * 1000,
+                        timeout: 10000
+                    }
+                );
+
+            });
+
+
+        const latitude =
+            position.coords.latitude;
+
+        const longitude =
+            position.coords.longitude;
+
+        const params =
+            new URLSearchParams({
+                latitude: String(latitude),
+                longitude: String(longitude),
+                current: "weather_code,is_day",
+                timezone: "auto"
+            });
+
+        const response =
+            await fetch(
+                "https://api.open-meteo.com/v1/forecast?" +
+                params.toString(),
+                {
+                    cache: "no-store"
+                }
+            );
+
+        if (!response.ok) {
+            throw new Error(
+                "Weather request failed: " +
+                response.status
+            );
+        }
+
+        const data =
+            await response.json();
+
+        const code =
+            Number(data.current?.weather_code);
+
+        const isDay =
+            Number(data.current?.is_day) === 1;
+
+        if (!Number.isFinite(code)) {
+            throw new Error(
+                "Weather code missing from response."
+            );
+        }
+
+        weather.textContent =
+            getWeatherSymbol(code, isDay);
+
+        weather.title =
+            describeWeather(code);
+
+        weather.setAttribute(
+            "aria-label",
+            describeWeather(code)
+        );
+
+        weather.hidden = false;
+
+    } catch (error) {
+
+        console.warn(
+            "Unable to load local weather:",
+            error
+        );
+
+        weather.hidden = true;
+
+    }
+}
+
+
+updateWeather();
+
+window.setInterval(
+    updateWeather,
+    WEATHER_REFRESH_INTERVAL
+);
+
+
+/* ================================================================
    CLOCK
    ================================================================ */
 
