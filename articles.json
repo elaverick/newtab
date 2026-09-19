@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Example article headline",
+        "extract": "A short description or extract from the article goes here.",
+        "image": "images/example-1.jpg",
+        "link": "https://example.com/article-1"
+    },
+    {
+        "title": "Another article headline",
+        "extract": "Another short extract describing what the article is about.",
+        "image": "images/example-2.jpg",
+        "link": "https://example.com/article-2"
+    },
+    {
+        "title": "A third article",
+        "extract": "This demonstrates that the number of articles isn't hard-coded.",
+        "image": "images/example-3.jpg",
+        "link": "https://example.com/article-3"
+    }
+]

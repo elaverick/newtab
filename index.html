@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>New Tab</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Special+Elite&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style/main.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+    <!-- ============================================================
+         TOP BAR
+         ============================================================ -->
+
+    <header class="topbar">
+
+        <div class="topbar-left">
+
+            <div class="logo">
+                N/01
+            </div>
+
+            <div class="location">
+                PERSONAL INDEX
+            </div>
+
+        </div>
+
+
+        <div class="topbar-right">
+
+            <span id="clock">
+                14:23
+            </span>
+
+            <span id="date">
+                19.09.26
+            </span>
+
+            <button
+                class="theme-toggle"
+                id="themeToggle"
+                type="button"
+                aria-label="Toggle light and dark mode"
+                title="Toggle light and dark mode"
+            >
+                ◐
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ============================================================
+         SEARCH
+         ============================================================ -->
+
+    <section class="hero">
+
+        <div class="hero-kicker">
+            01 / SEARCH
+        </div>
+
+        <h1 class="hero-title">
+            Search
+        </h1>
+
+
+        <form
+            class="search"
+            id="searchForm"
+        >
+
+
+            <div class="provider-wrapper">
+
+
+                <button
+                    class="search-provider"
+                    id="providerButton"
+                    type="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                >
+
+                    <span
+                        class="search-provider-mark"
+                        id="providerMark"
+                    >
+                        G
+                    </span>
+
+                    <span
+                        class="provider-name"
+                        id="providerName"
+                    >
+                        Google
+                    </span>
+
+                    <span class="search-provider-arrow">
+                        ↓
+                    </span>
+
+                </button>
+
+
+                <div
+                    class="provider-menu"
+                    id="providerMenu"
+                >
+
+                    <button
+                        class="provider-option active"
+                        data-provider="Google"
+                        data-mark="G"
+                        type="button"
+                    >
+                        Google
+                    </button>
+
+                    <button
+                        class="provider-option"
+                        data-provider="Bing"
+                        data-mark="B"
+                        type="button"
+                    >
+                        Bing
+                    </button>
+
+                    <button
+                        class="provider-option"
+                        data-provider="DuckDuckGo"
+                        data-mark="D"
+                        type="button"
+                    >
+                        DuckDuckGo
+                    </button>
+
+                    <button
+                        class="provider-option"
+                        data-provider="Brave"
+                        data-mark="B"
+                        type="button"
+                    >
+                        Brave
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <input
+                id="searchInput"
+                type="search"
+                placeholder="Search the web..."
+                autocomplete="off"
+                aria-label="Search the web"
+            >
+
+
+            <button
+                class="search-submit"
+                type="submit"
+                aria-label="Search"
+            >
+                →
+            </button>
+
+
+        </form>
+
+    </section>
+
+
+
+    <!-- ============================================================
+         FREQUENT SITES
+         ============================================================ -->
+
+    <section class="section">
+
+
+        <div class="section-header">
+
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    02
+                </span>
+
+                <h2 class="section-title">
+                    Places
+                </h2>
+
+                <p class="section-description">
+                    Frequently visited
+                </p>
+
+            </div>
+
+
+            <button
+                class="section-action"
+                type="button"
+                aria-label="Add site"
+            >
+                +
+            </button>
+
+
+        </div>
+
+
+        <div class="site-grid">
+
+
+            <a
+                href="#"
+                class="site"
+            >
+
+                <span class="site-index">
+                    01
+                </span>
+
+                <span class="site-icon">
+                    G
+                </span>
+
+                <span class="site-info">
+
+                    <span class="site-name">
+                        GitHub
+                    </span>
+
+                    <span class="site-url">
+                        github.com
+                    </span>
+
+                </span>
+
+                <button
+                    class="site-remove"
+                    type="button"
+                    aria-label="Remove GitHub"
+                >
+                    ×
+                </button>
+
+            </a>
+
+
+            <a
+                href="#"
+                class="site"
+            >
+
+                <span class="site-index">
+                    02
+                </span>
+
+                <span class="site-icon">
+                    L
+                </span>
+
+                <span class="site-info">
+
+                    <span class="site-name">
+                        LinkedIn
+                    </span>
+
+                    <span class="site-url">
+                        linkedin.com
+                    </span>
+
+                </span>
+
+                <button
+                    class="site-remove"
+                    type="button"
+                    aria-label="Remove LinkedIn"
+                >
+                    ×
+                </button>
+
+            </a>
+
+
+            <a
+                href="#"
+                class="site"
+            >
+
+                <span class="site-index">
+                    03
+                </span>
+
+                <span class="site-icon">
+                    R
+                </span>
+
+                <span class="site-info">
+
+                    <span class="site-name">
+                        Reddit
+                    </span>
+
+                    <span class="site-url">
+                        reddit.com
+                    </span>
+
+                </span>
+
+                <button
+                    class="site-remove"
+                    type="button"
+                    aria-label="Remove Reddit"
+                >
+                    ×
+                </button>
+
+            </a>
+
+
+            <a
+                href="#"
+                class="site"
+            >
+
+                <span class="site-index">
+                    04
+                </span>
+
+                <span class="site-icon">
+                    A
+                </span>
+
+                <span class="site-info">
+
+                    <span class="site-name">
+                        Amazon
+                    </span>
+
+                    <span class="site-url">
+                        amazon.co.uk
+                    </span>
+
+                </span>
+
+                <button
+                    class="site-remove"
+                    type="button"
+                    aria-label="Remove Amazon"
+                >
+                    ×
+                </button>
+
+            </a>
+
+
+            <a
+                href="#"
+                class="site"
+            >
+
+                <span class="site-index">
+                    05
+                </span>
+
+                <span class="site-icon">
+                    N
+                </span>
+
+                <span class="site-info">
+
+                    <span class="site-name">
+                        News
+                    </span>
+
+                    <span class="site-url">
+                        news.example.com
+                    </span>
+
+                </span>
+
+                <button
+                    class="site-remove"
+                    type="button"
+                    aria-label="Remove News"
+                >
+                    ×
+                </button>
+
+            </a>
+
+
+            <a
+                href="#"
+                class="site"
+            >
+
+                <span class="site-index">
+                    06
+                </span>
+
+                <span class="site-icon">
+                    +
+                </span>
+
+                <span class="site-info">
+
+                    <span class="site-name">
+                        Add site
+                    </span>
+
+                    <span class="site-url">
+                        Create shortcut
+                    </span>
+
+                </span>
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ============================================================
+         NEWS
+         ============================================================ -->
+
+    <section class="section">
+
+
+        <div class="section-header">
+
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    03
+                </span>
+
+                <h2 class="section-title">
+                    Elsewhere
+                </h2>
+
+                <p class="section-description">
+                    Things worth noticing
+                </p>
+
+            </div>
+
+
+            <button
+                class="section-action"
+                type="button"
+                aria-label="Refresh articles"
+            >
+                ↻
+            </button>
+
+
+        </div>
+
+
+        <div class="article-grid">
+
+
+            <!-- ARTICLE TEMPLATE -->
+
+            <article class="article">
+
+                <div class="article-image">
+                    IMAGE
+                </div>
+
+                <div class="article-meta">
+
+                    <span>
+                        STORY
+                    </span>
+
+                    <span class="article-number">
+                        001
+                    </span>
+
+                </div>
+
+                <div class="article-content">
+
+                    <h3 class="article-title">
+                        Placeholder article headline
+                    </h3>
+
+                    <p class="article-description">
+                        Placeholder description for an article
+                        that will eventually be supplied by
+                        the news feed.
+                    </p>
+
+                    <div class="article-footer">
+
+                        <span>
+                            SOURCE
+                        </span>
+
+                        <span>
+                            02 HOURS
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ARTICLE TEMPLATE -->
+
+            <article class="article">
+
+                <div class="article-image">
+                    IMAGE
+                </div>
+
+                <div class="article-meta">
+
+                    <span>
+                        STORY
+                    </span>
+
+                    <span class="article-number">
+                        002
+                    </span>
+
+                </div>
+
+                <div class="article-content">
+
+                    <h3 class="article-title">
+                        Placeholder article headline
+                    </h3>
+
+                    <p class="article-description">
+                        Placeholder description for an article
+                        that will eventually be supplied by
+                        the news feed.
+                    </p>
+
+                    <div class="article-footer">
+
+                        <span>
+                            SOURCE
+                        </span>
+
+                        <span>
+                            04 HOURS
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ARTICLE TEMPLATE -->
+
+            <article class="article">
+
+                <div class="article-image">
+                    IMAGE
+                </div>
+
+                <div class="article-meta">
+
+                    <span>
+                        STORY
+                    </span>
+
+                    <span class="article-number">
+                        003
+                    </span>
+
+                </div>
+
+                <div class="article-content">
+
+                    <h3 class="article-title">
+                        Placeholder article headline
+                    </h3>
+
+                    <p class="article-description">
+                        Placeholder description for an article
+                        that will eventually be supplied by
+                        the news feed.
+                    </p>
+
+                    <div class="article-footer">
+
+                        <span>
+                            SOURCE
+                        </span>
+
+                        <span>
+                            05 HOURS
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ARTICLE TEMPLATE -->
+
+            <article class="article">
+
+                <div class="article-image">
+                    IMAGE
+                </div>
+
+                <div class="article-meta">
+
+                    <span>
+                        STORY
+                    </span>
+
+                    <span class="article-number">
+                        004
+                    </span>
+
+                </div>
+
+                <div class="article-content">
+
+                    <h3 class="article-title">
+                        Placeholder article headline
+                    </h3>
+
+                    <p class="article-description">
+                        Placeholder description for an article
+                        that will eventually be supplied by
+                        the news feed.
+                    </p>
+
+                    <div class="article-footer">
+
+                        <span>
+                            SOURCE
+                        </span>
+
+                        <span>
+                            06 HOURS
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ARTICLE TEMPLATE -->
+
+            <article class="article">
+
+                <div class="article-image">
+                    IMAGE
+                </div>
+
+                <div class="article-meta">
+
+                    <span>
+                        STORY
+                    </span>
+
+                    <span class="article-number">
+                        005
+                    </span>
+
+                </div>
+
+                <div class="article-content">
+
+                    <h3 class="article-title">
+                        Placeholder article headline
+                    </h3>
+
+                    <p class="article-description">
+                        Placeholder description for an article
+                        that will eventually be supplied by
+                        the news feed.
+                    </p>
+
+                    <div class="article-footer">
+
+                        <span>
+                            SOURCE
+                        </span>
+
+                        <span>
+                            YESTERDAY
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ARTICLE TEMPLATE -->
+
+            <article class="article">
+
+                <div class="article-image">
+                    IMAGE
+                </div>
+
+                <div class="article-meta">
+
+                    <span>
+                        STORY
+                    </span>
+
+                    <span class="article-number">
+                        006
+                    </span>
+
+                </div>
+
+                <div class="article-content">
+
+                    <h3 class="article-title">
+                        Placeholder article headline
+                    </h3>
+
+                    <p class="article-description">
+                        Placeholder description for an article
+                        that will eventually be supplied by
+                        the news feed.
+                    </p>
+
+                    <div class="article-footer">
+
+                        <span>
+                            SOURCE
+                        </span>
+
+                        <span>
+                            YESTERDAY
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+
+    <div class="divider">
+        END OF INDEX
+    </div>
+
+
+    <footer class="footer">
+
+        <span>
+            PERSONAL NEW TAB
+        </span>
+
+        <span>
+            N/01
+        </span>
+
+    </footer>
+
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
