@@ -8,14 +8,11 @@
    THEME
    ================================================================ */
 
-const USE_SYSTEM_THEME =
-    true;
+const THEME_STORAGE_KEY =
+    "newtab-theme";
 
-const THEME_OVERRIDE_KEY =
+const LEGACY_THEME_STORAGE_KEY =
     "newtab-theme-override";
-
-const themeToggle =
-    document.getElementById("themeToggle");
 
 const systemTheme =
     window.matchMedia("(prefers-color-scheme: dark)");
@@ -30,34 +27,75 @@ function getSystemTheme() {
 }
 
 
-function getThemeOverride() {
+function getThemePreference() {
 
-    if (!USE_SYSTEM_THEME) {
-        return null;
-    }
-
-    const override =
+    const saved =
         localStorage.getItem(
-            THEME_OVERRIDE_KEY
+            THEME_STORAGE_KEY
         );
 
-    return override === "light" || override === "dark"
-        ? override
-        : null;
+    if (
+        saved === "system" ||
+        saved === "light" ||
+        saved === "dark"
+    ) {
+
+        return saved;
+
+    }
+
+
+    const legacy =
+        localStorage.getItem(
+            LEGACY_THEME_STORAGE_KEY
+        );
+
+    if (
+        legacy === "light" ||
+        legacy === "dark"
+    ) {
+
+        return legacy;
+
+    }
+
+
+    return "system";
+
+}
+
+
+function setThemePreference(preference) {
+
+    if (
+        preference !== "system" &&
+        preference !== "light" &&
+        preference !== "dark"
+    ) {
+
+        return;
+
+    }
+
+    localStorage.setItem(
+        THEME_STORAGE_KEY,
+        preference
+    );
+
+    applyTheme();
 
 }
 
 
 function applyTheme() {
 
-    const override =
-        getThemeOverride();
+    const preference =
+        getThemePreference();
 
     const theme =
-        override ??
-        (USE_SYSTEM_THEME
+        preference === "system"
             ? getSystemTheme()
-            : "light");
+            : preference;
 
     document.body.classList.toggle(
         "theme-dark",
@@ -72,46 +110,20 @@ function applyTheme() {
 }
 
 
-themeToggle.addEventListener("click", () => {
+systemTheme.addEventListener(
+    "change",
+    () => {
 
-    const currentTheme =
-        document.body.classList.contains("theme-dark")
-            ? "dark"
-            : "light";
+        if (
+            getThemePreference() === "system"
+        ) {
 
-    const nextTheme =
-        currentTheme === "dark"
-            ? "light"
-            : "dark";
-
-    localStorage.setItem(
-        THEME_OVERRIDE_KEY,
-        nextTheme
-    );
-
-    applyTheme();
-
-});
-
-
-if (USE_SYSTEM_THEME) {
-
-    systemTheme.addEventListener(
-        "change",
-        () => {
-
-            if (
-                !getThemeOverride()
-            ) {
-
-                applyTheme();
-
-            }
+            applyTheme();
 
         }
-    );
 
-}
+    }
+);
 
 
 applyTheme();
@@ -194,10 +206,6 @@ let places =
 
 let editingIndex =
     null;
-
-let nameLookupTimer =
-    null;
-
 
 function normalisePlace(place) {
 
@@ -664,11 +672,6 @@ function setEditorMode(index) {
     editingIndex =
         index;
 
-    window.clearTimeout(
-        nameLookupTimer
-    );
-
-
     if (index === null) {
 
         placesEditorKicker.textContent =
@@ -757,10 +760,6 @@ function closePlaces() {
 
     document.body.classList.remove(
         "places-modal-open"
-    );
-
-    window.clearTimeout(
-        nameLookupTimer
     );
 
 }
@@ -976,6 +975,144 @@ renderPlaces();
    SEARCH PROVIDER
    ================================================================ */
 
+const SEARCH_SETTINGS_KEY =
+    "newtab-search-settings";
+
+const SEARCH_ENGINE_DEFINITIONS = {
+
+    Google: {
+        name: "Google",
+        mark: "G",
+        url: "https://www.google.com/search?q=",
+        placeholder: "Search the web..."
+    },
+
+    ChatGPT: {
+        name: "ChatGPT",
+        mark: "C",
+        url: "https://chatgpt.com/?q=",
+        placeholder: "Ask ChatGPT..."
+    },
+
+    DuckDuckGo: {
+        name: "DuckDuckGo",
+        mark: "D",
+        url: "https://duckduckgo.com/?q=",
+        placeholder: "Search the web..."
+    }
+
+};
+
+
+const SEARCH_ENGINE_IDS =
+    Object.keys(
+        SEARCH_ENGINE_DEFINITIONS
+    );
+
+
+function getDefaultSearchSettings() {
+
+    return {
+        enabled: [...SEARCH_ENGINE_IDS],
+        defaultProvider: "Google",
+        placeholders: {}
+    };
+
+}
+
+
+function loadSearchSettings() {
+
+    try {
+
+        const saved =
+            JSON.parse(
+                localStorage.getItem(
+                    SEARCH_SETTINGS_KEY
+                )
+            );
+
+        if (
+            saved &&
+            typeof saved === "object"
+        ) {
+
+            const enabled =
+                Array.isArray(saved.enabled)
+                    ? saved.enabled.filter(
+                        id =>
+                            SEARCH_ENGINE_IDS.includes(id)
+                    )
+                    : [...SEARCH_ENGINE_IDS];
+
+            if (!enabled.length) {
+                enabled.push("Google");
+            }
+
+            const defaultProvider =
+                enabled.includes(
+                    saved.defaultProvider
+                )
+                    ? saved.defaultProvider
+                    : enabled[0];
+
+            const placeholders =
+                saved.placeholders &&
+                typeof saved.placeholders === "object"
+                    ? Object.fromEntries(
+                        SEARCH_ENGINE_IDS
+                            .filter(
+                                id =>
+                                    typeof saved.placeholders[id] === "string" &&
+                                    saved.placeholders[id].trim()
+                            )
+                            .map(
+                                id => [
+                                    id,
+                                    saved.placeholders[id].trim()
+                                ]
+                            )
+                    )
+                    : {};
+
+            return {
+                enabled,
+                defaultProvider,
+                placeholders
+            };
+
+        }
+
+    } catch (error) {
+
+        console.warn(
+            "Unable to load search settings:",
+            error
+        );
+
+    }
+
+    return getDefaultSearchSettings();
+
+}
+
+
+function saveSearchSettings() {
+
+    localStorage.setItem(
+        SEARCH_SETTINGS_KEY,
+        JSON.stringify(
+            searchSettings
+        )
+    );
+
+}
+
+
+let searchSettings =
+    loadSearchSettings();
+
+
 const providerButton =
     document.getElementById("providerButton");
 
@@ -988,72 +1125,153 @@ const providerName =
 const providerMark =
     document.getElementById("providerMark");
 
-const providerOptions =
-    document.querySelectorAll(".provider-option");
+const searchInput =
+    document.getElementById("searchInput");
 
 
-providerButton.addEventListener("click", event => {
+let selectedProvider =
+    searchSettings.defaultProvider;
 
-    event.stopPropagation();
 
-    const isOpen =
-        providerMenu.classList.toggle("open");
+function getSearchEnginePlaceholder(provider) {
 
-    providerButton.setAttribute(
-        "aria-expanded",
-        isOpen
+    return (
+        searchSettings.placeholders[provider] ??
+        SEARCH_ENGINE_DEFINITIONS[provider].placeholder
     );
 
-});
+}
 
 
-providerOptions.forEach(option => {
+function applySelectedProvider(provider) {
 
-    option.addEventListener("click", () => {
+    if (
+        !searchSettings.enabled.includes(provider)
+    ) {
 
-        providerName.textContent =
-            option.dataset.provider;
+        provider =
+            searchSettings.defaultProvider;
 
-        providerMark.textContent =
-            option.dataset.mark;
+    }
 
-        document.getElementById(
-            "searchInput"
-        ).placeholder =
-            option.dataset.provider === "ChatGPT"
-                ? "Ask ChatGPT..."
-                : "Search the web...";
+    selectedProvider =
+        provider;
+
+    const definition =
+        SEARCH_ENGINE_DEFINITIONS[
+            selectedProvider
+        ];
+
+    providerName.textContent =
+        definition.name;
+
+    providerMark.textContent =
+        definition.mark;
+
+    searchInput.placeholder =
+        getSearchEnginePlaceholder(
+            selectedProvider
+        );
+
+    searchInput.setAttribute(
+        "aria-label",
+        getSearchEnginePlaceholder(
+            selectedProvider
+        )
+    );
+
+}
 
 
-        providerOptions.forEach(item => {
+function renderProviderMenu() {
 
-            item.classList.remove("active");
+    providerMenu.replaceChildren();
 
-        });
+    searchSettings.enabled.forEach(
+        provider => {
+
+            const definition =
+                SEARCH_ENGINE_DEFINITIONS[
+                    provider
+                ];
+
+            const option =
+                document.createElement(
+                    "button"
+                );
+
+            option.className =
+                "provider-option";
+
+            option.type =
+                "button";
+
+            option.dataset.provider =
+                provider;
+
+            option.dataset.mark =
+                definition.mark;
+
+            option.textContent =
+                definition.name;
+
+            option.classList.toggle(
+                "active",
+                provider === selectedProvider
+            );
+
+            providerMenu.appendChild(
+                option
+            );
+
+        }
+    );
+
+}
 
 
-        option.classList.add("active");
+providerButton.addEventListener(
+    "click",
+    event => {
 
-        providerMenu.classList.remove("open");
+        event.stopPropagation();
+
+        const isOpen =
+            providerMenu.classList.toggle(
+                "open"
+            );
 
         providerButton.setAttribute(
             "aria-expanded",
-            "false"
+            isOpen
         );
 
-    });
+    }
+);
 
-});
 
+providerMenu.addEventListener(
+    "click",
+    event => {
 
-document.addEventListener("click", event => {
+        const option =
+            event.target.closest(
+                ".provider-option"
+            );
 
-    if (
-        !providerMenu.contains(event.target) &&
-        !providerButton.contains(event.target)
-    ) {
+        if (!option) {
+            return;
+        }
 
-        providerMenu.classList.remove("open");
+        applySelectedProvider(
+            option.dataset.provider
+        );
+
+        renderProviderMenu();
+
+        providerMenu.classList.remove(
+            "open"
+        );
 
         providerButton.setAttribute(
             "aria-expanded",
@@ -1061,8 +1279,37 @@ document.addEventListener("click", event => {
         );
 
     }
+);
 
-});
+
+document.addEventListener(
+    "click",
+    event => {
+
+        if (
+            !providerMenu.contains(event.target) &&
+            !providerButton.contains(event.target)
+        ) {
+
+            providerMenu.classList.remove(
+                "open"
+            );
+
+            providerButton.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        }
+
+    }
+);
+
+
+renderProviderMenu();
+applySelectedProvider(
+    selectedProvider
+);
 
 
 /* ================================================================
@@ -1071,6 +1318,9 @@ document.addEventListener("click", event => {
 
 const weather =
     document.getElementById("weather");
+
+const WEATHER_SETTINGS_KEY =
+    "newtab-weather-enabled";
 
 const WEATHER_REFRESH_INTERVAL =
     15 * 60 * 1000;
@@ -1274,14 +1524,19 @@ function describeWeather(code) {
 }
 
 
+
 async function updateWeather() {
 
     if (
+        !getWeatherEnabled() ||
         !navigator.geolocation ||
         !window.isSecureContext
     ) {
+
         weather.hidden = true;
+
         return;
+
     }
 
 
@@ -1301,6 +1556,15 @@ async function updateWeather() {
                 );
 
             });
+
+
+        if (!getWeatherEnabled()) {
+
+            weather.hidden = true;
+
+            return;
+
+        }
 
 
         const latitude =
@@ -1327,14 +1591,24 @@ async function updateWeather() {
             );
 
         if (!response.ok) {
+
             throw new Error(
                 "Weather request failed: " +
                 response.status
             );
+
         }
 
         const data =
             await response.json();
+
+        if (!getWeatherEnabled()) {
+
+            weather.hidden = true;
+
+            return;
+
+        }
 
         const code =
             Number(data.current?.weather_code);
@@ -1343,13 +1617,18 @@ async function updateWeather() {
             Number(data.current?.is_day) === 1;
 
         if (!Number.isFinite(code)) {
+
             throw new Error(
                 "Weather code missing from response."
             );
+
         }
 
         weather.replaceChildren(
-            createWeatherIcon(code, isDay)
+            createWeatherIcon(
+                code,
+                isDay
+            )
         );
 
         weather.title =
@@ -1373,14 +1652,707 @@ async function updateWeather() {
         weather.hidden = true;
 
     }
+
 }
 
 
-updateWeather();
+function getWeatherEnabled() {
+
+    const saved =
+        localStorage.getItem(
+            WEATHER_SETTINGS_KEY
+        );
+
+    return (
+        saved === null
+            ? true
+            : saved === "true"
+    );
+
+}
+
+
+function setWeatherEnabled(enabled) {
+
+    localStorage.setItem(
+        WEATHER_SETTINGS_KEY,
+        String(Boolean(enabled))
+    );
+
+    if (!enabled) {
+
+        weather.hidden = true;
+
+        return;
+
+    }
+
+    updateWeather();
+
+}
+
+
+function initialiseWeather() {
+
+    weather.hidden =
+        !getWeatherEnabled();
+
+    if (
+        getWeatherEnabled()
+    ) {
+
+        updateWeather();
+
+    }
+
+}
+
+
+initialiseWeather();
 
 window.setInterval(
-    updateWeather,
+    () => {
+
+        if (
+            getWeatherEnabled()
+        ) {
+
+            updateWeather();
+
+        }
+
+    },
     WEATHER_REFRESH_INTERVAL
+);
+
+
+/* ================================================================
+   SETTINGS
+   ================================================================ */
+
+const settingsButton =
+    document.getElementById("settingsButton");
+
+const settingsModal =
+    document.getElementById("settingsModal");
+
+const settingsClose =
+    document.getElementById("settingsClose");
+
+const settingsDone =
+    document.getElementById("settingsDone");
+
+const themeSystem =
+    document.getElementById("themeSystem");
+
+const themeLight =
+    document.getElementById("themeLight");
+
+const themeDark =
+    document.getElementById("themeDark");
+
+const weatherToggleSetting =
+    document.getElementById("weatherToggleSetting");
+
+const searchEngineSettings =
+    document.getElementById("searchEngineSettings");
+
+const searchPlaceholderSettings =
+    document.getElementById("searchPlaceholderSettings");
+
+
+function syncThemeSettings() {
+
+    const preference =
+        getThemePreference();
+
+    themeSystem.checked =
+        preference === "system";
+
+    themeLight.checked =
+        preference === "light";
+
+    themeDark.checked =
+        preference === "dark";
+
+}
+
+
+function syncWeatherSettings() {
+
+    weatherToggleSetting.checked =
+        getWeatherEnabled();
+
+}
+
+
+function renderSearchSettings() {
+
+    searchEngineSettings.replaceChildren();
+
+    searchSettings.enabled =
+        searchSettings.enabled.filter(
+            id =>
+                SEARCH_ENGINE_IDS.includes(id)
+        );
+
+    if (!searchSettings.enabled.length) {
+        searchSettings.enabled.push("Google");
+    }
+
+    if (
+        !searchSettings.enabled.includes(
+            searchSettings.defaultProvider
+        )
+    ) {
+
+        searchSettings.defaultProvider =
+            searchSettings.enabled[0];
+
+        saveSearchSettings();
+
+    }
+
+
+    const enabledCount =
+        searchSettings.enabled.length;
+
+
+    SEARCH_ENGINE_IDS.forEach(
+        provider => {
+
+            const definition =
+                SEARCH_ENGINE_DEFINITIONS[
+                    provider
+                ];
+
+            const row =
+                document.createElement(
+                    "div"
+                );
+
+            row.className =
+                "settings-engine-row";
+
+
+            const engineInfo =
+                document.createElement(
+                    "span"
+                );
+
+            engineInfo.className =
+                "settings-engine-info";
+
+
+            const mark =
+                document.createElement(
+                    "span"
+                );
+
+            mark.className =
+                "settings-engine-mark";
+
+            mark.textContent =
+                definition.mark;
+
+
+            const copy =
+                document.createElement(
+                    "span"
+                );
+
+            copy.className =
+                "settings-engine-copy";
+
+
+            const name =
+                document.createElement(
+                    "span"
+                );
+
+            name.className =
+                "settings-engine-name";
+
+            name.textContent =
+                definition.name;
+
+
+            const url =
+                document.createElement(
+                    "span"
+                );
+
+            url.className =
+                "settings-engine-url";
+
+            url.textContent =
+                new URL(
+                    definition.url
+                ).hostname;
+
+
+            copy.appendChild(
+                name
+            );
+
+            copy.appendChild(
+                url
+            );
+
+            engineInfo.appendChild(
+                mark
+            );
+
+            engineInfo.appendChild(
+                copy
+            );
+
+
+            const controls =
+                document.createElement(
+                    "span"
+                );
+
+            controls.className =
+                "settings-engine-controls";
+
+
+            const defaultLabel =
+                document.createElement(
+                    "label"
+                );
+
+            defaultLabel.className =
+                "settings-engine-default";
+
+
+            const defaultRadio =
+                document.createElement(
+                    "input"
+                );
+
+            defaultRadio.type =
+                "radio";
+
+            defaultRadio.name =
+                "default-search-engine";
+
+            defaultRadio.value =
+                provider;
+
+            defaultRadio.checked =
+                searchSettings.defaultProvider === provider;
+
+            defaultRadio.disabled =
+                !searchSettings.enabled.includes(
+                    provider
+                );
+
+            defaultRadio.addEventListener(
+                "change",
+                () => {
+
+                    if (
+                        !defaultRadio.checked
+                    ) {
+                        return;
+                    }
+
+                    searchSettings.defaultProvider =
+                        provider;
+
+                    saveSearchSettings();
+
+                    applySelectedProvider(
+                        provider
+                    );
+
+                    renderProviderMenu();
+
+                    renderSearchSettings();
+
+                }
+            );
+
+
+            const defaultText =
+                document.createElement(
+                    "span"
+                );
+
+            defaultText.textContent =
+                "Default";
+
+
+            defaultLabel.appendChild(
+                defaultRadio
+            );
+
+            defaultLabel.appendChild(
+                defaultText
+            );
+
+
+            const enabledLabel =
+                document.createElement(
+                    "label"
+                );
+
+            enabledLabel.className =
+                "settings-engine-enabled";
+
+
+            const enabledCheckbox =
+                document.createElement(
+                    "input"
+                );
+
+            enabledCheckbox.type =
+                "checkbox";
+
+            enabledCheckbox.checked =
+                searchSettings.enabled.includes(
+                    provider
+                );
+
+            enabledCheckbox.addEventListener(
+                "change",
+                () => {
+
+                    if (
+                        !enabledCheckbox.checked &&
+                        enabledCount === 1
+                    ) {
+
+                        enabledCheckbox.checked =
+                            true;
+
+                        return;
+
+                    }
+
+
+                    if (
+                        enabledCheckbox.checked
+                    ) {
+
+                        if (
+                            !searchSettings.enabled.includes(
+                                provider
+                            )
+                        ) {
+
+                            searchSettings.enabled.push(
+                                provider
+                            );
+
+                        }
+
+                    } else {
+
+                        searchSettings.enabled =
+                            searchSettings.enabled.filter(
+                                id =>
+                                    id !== provider
+                            );
+
+                    }
+
+
+                    if (
+                        searchSettings.defaultProvider === provider &&
+                        !enabledCheckbox.checked
+                    ) {
+
+                        searchSettings.defaultProvider =
+                            searchSettings.enabled[0];
+
+                    }
+
+
+                    saveSearchSettings();
+
+                    if (
+                        !searchSettings.enabled.includes(
+                            selectedProvider
+                        )
+                    ) {
+
+                        applySelectedProvider(
+                            searchSettings.defaultProvider
+                        );
+
+                    }
+
+
+                    renderProviderMenu();
+                    renderSearchSettings();
+
+                }
+            );
+
+
+            const enabledText =
+                document.createElement(
+                    "span"
+                );
+
+            enabledText.textContent =
+                "Show";
+
+
+            enabledLabel.appendChild(
+                enabledCheckbox
+            );
+
+            enabledLabel.appendChild(
+                enabledText
+            );
+
+
+            controls.appendChild(
+                defaultLabel
+            );
+
+            controls.appendChild(
+                enabledLabel
+            );
+
+
+            row.appendChild(
+                engineInfo
+            );
+
+            row.appendChild(
+                controls
+            );
+
+            searchEngineSettings.appendChild(
+                row
+            );
+
+        }
+    );
+
+
+    searchPlaceholderSettings.replaceChildren();
+
+    SEARCH_ENGINE_IDS.forEach(
+        provider => {
+
+            const definition =
+                SEARCH_ENGINE_DEFINITIONS[
+                    provider
+                ];
+
+            const label =
+                document.createElement(
+                    "label"
+                );
+
+            label.className =
+                "settings-placeholder-field";
+
+
+            const title =
+                document.createElement(
+                    "span"
+                );
+
+            title.textContent =
+                definition.name;
+
+
+            const input =
+                document.createElement(
+                    "input"
+                );
+
+            input.type =
+                "text";
+
+            input.value =
+                searchSettings.placeholders[provider] ?? "";
+
+            input.placeholder =
+                definition.placeholder;
+
+            input.autocomplete =
+                "off";
+
+            input.addEventListener(
+                "change",
+                () => {
+
+                    const value =
+                        input.value.trim();
+
+                    if (value) {
+
+                        searchSettings.placeholders[provider] =
+                            value;
+
+                    } else {
+
+                        delete searchSettings.placeholders[
+                            provider
+                        ];
+
+                    }
+
+                    saveSearchSettings();
+
+                    if (
+                        selectedProvider === provider
+                    ) {
+
+                        applySelectedProvider(
+                            selectedProvider
+                        );
+
+                    }
+
+                }
+            );
+
+
+            label.appendChild(
+                title
+            );
+
+            label.appendChild(
+                input
+            );
+
+            searchPlaceholderSettings.appendChild(
+                label
+            );
+
+        }
+    );
+
+}
+
+
+function openSettings() {
+
+    syncThemeSettings();
+    syncWeatherSettings();
+    renderSearchSettings();
+
+    settingsModal.hidden =
+        false;
+
+    document.body.classList.add(
+        "settings-modal-open"
+    );
+
+    window.setTimeout(
+        () => {
+            themeSystem.focus();
+        },
+        0
+    );
+
+}
+
+
+function closeSettings() {
+
+    settingsModal.hidden =
+        true;
+
+    document.body.classList.remove(
+        "settings-modal-open"
+    );
+
+}
+
+
+settingsButton.addEventListener(
+    "click",
+    openSettings
+);
+
+settingsClose.addEventListener(
+    "click",
+    closeSettings
+);
+
+settingsDone.addEventListener(
+    "click",
+    closeSettings
+);
+
+
+settingsModal.addEventListener(
+    "click",
+    event => {
+
+        if (
+            event.target.matches(
+                "[data-settings-close]"
+            )
+        ) {
+
+            closeSettings();
+
+        }
+
+    }
+);
+
+
+[themeSystem, themeLight, themeDark].forEach(
+    control => {
+
+        control.addEventListener(
+            "change",
+            () => {
+
+                if (
+                    control.checked
+                ) {
+
+                    setThemePreference(
+                        control.value
+                    );
+
+                }
+
+            }
+        );
+
+    }
+);
+
+
+weatherToggleSetting.addEventListener(
+    "change",
+    () => {
+
+        setWeatherEnabled(
+            weatherToggleSetting.checked
+        );
+
+    }
+);
+
+
+document.addEventListener(
+    "keydown",
+    event => {
+
+        if (
+            event.key === "Escape" &&
+            !settingsModal.hidden
+        ) {
+
+            closeSettings();
+
+        }
+
+    }
 );
 
 
