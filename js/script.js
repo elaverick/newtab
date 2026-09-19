@@ -537,10 +537,6 @@ placesCancel.addEventListener("click", closePlaces);
 
 placesSave.addEventListener("click", () => {
 
-    if (!editingPlaces.length) {
-        return;
-    }
-
     places =
         editingPlaces.map(place => ({ ...place }));
 
