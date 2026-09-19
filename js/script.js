@@ -1705,3 +1705,6 @@ refreshArticles.addEventListener(
     "click",
     loadArticles
 );
+
+
+loadArticles();
