@@ -2759,10 +2759,10 @@ body.settings-modal-open {
 .article-image-content.article-source-image {
 
     filter:
-        sepia(0.14)
-        saturate(0.62)
-        contrast(0.94)
-        brightness(0.96);
+        sepia(0.28)
+        saturate(0.48)
+        contrast(0.90)
+        brightness(0.93);
 
     transition:
         filter 160ms ease;
@@ -2772,10 +2772,10 @@ body.settings-modal-open {
 .article:hover .article-image-content.article-source-image {
 
     filter:
-        sepia(0.12)
-        saturate(0.66)
-        contrast(0.96)
-        brightness(0.98);
+        sepia(0.24)
+        saturate(0.52)
+        contrast(0.93)
+        brightness(0.95);
 }
 
 
