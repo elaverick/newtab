@@ -136,7 +136,36 @@ It should not use unrelated site logos.
 
 When an appropriate image genuinely cannot be obtained, `image` can be `null`.
 
-The webpage already has a fallback treatment for articles without usable images.
+The webpage then selects a static liminal placeholder from a matching category folder.
+
+The optional placeholder library uses this structure:
+
+```text
+images/
+├── automotive/
+├── technology/
+├── retro-computing/
+├── retro-computing-projects/
+└── music/
+```
+
+Each category folder is designed to contain twelve PNGs named `01.png` through `12.png`.
+
+The frontend converts the article category into a folder name and assigns placeholder images deterministically from the twelve-image pool. Within the current feed, articles in the same category are assigned distinct images before the pool wraps, so the normal six-article category does not repeat an image. The assignment is repeatable for the same feed and does not depend on browser randomness.
+
+This also makes the system straightforward to fork: create a folder whose name matches the frontend's category slug and add twelve PNG files named `01.png` to `12.png`. No JavaScript change is required for a new category.
+
+### Colour grading
+
+Images supplied by news articles are still used directly, but the frontend applies a subtle CSS colour grade to them:
+
+- reduced saturation
+- a slight sepia tint
+- slightly softened contrast and brightness
+
+This helps photographs from unrelated publications sit more naturally within the site's liminal palette without changing or re-hosting the source image. Static placeholder images are already colour graded and are not subjected to the same filter.
+
+If a category has no matching image folder, or a selected placeholder cannot be loaded, the original `IMAGE` fallback is shown.
 
 ---
 
@@ -568,6 +597,12 @@ This separation makes the project easier to fork and maintain.
 ├── articles.json
 ├── articles.schema.json
 ├── index.html
+├── images/                         # optional static liminal placeholders
+│   ├── automotive/
+│   ├── technology/
+│   ├── retro-computing/
+│   ├── retro-computing-projects/
+│   └── music/
 ├── js/
 │   └── script.js
 └── style/

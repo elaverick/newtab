@@ -3109,6 +3109,9 @@ const refreshArticles =
 
 let articles = [];
 
+let placeholderAssignments =
+    new Map();
+
 let articleLoadSequence = 0;
 
 let displayArticles = [];
@@ -3120,6 +3123,19 @@ let renderedArticleCount = 0;
 let isLoadingArticles = false;
 
 let articleObserver = null;
+
+
+function getArticlePlaceholderIdentity(
+    article
+) {
+
+    return [
+        article?.category ?? "",
+        article?.link ?? "",
+        article?.title ?? ""
+    ].join("|");
+
+}
 
 
 function prepareArticles() {
@@ -3164,6 +3180,46 @@ function prepareArticles() {
             });
 
     });
+
+
+    placeholderAssignments =
+        new Map();
+
+
+    groups.forEach(
+        entries => {
+
+            const assignmentOrder =
+                [...entries].sort(
+                    (a, b) =>
+                        hashPlaceholderValue(
+                            getArticlePlaceholderIdentity(
+                                a.article
+                            )
+                        ) -
+                        hashPlaceholderValue(
+                            getArticlePlaceholderIdentity(
+                                b.article
+                            )
+                        )
+                );
+
+
+            assignmentOrder.forEach(
+                (entry, position) => {
+
+                    placeholderAssignments.set(
+                        getArticlePlaceholderIdentity(
+                            entry.article
+                        ),
+                        (position % 12) + 1
+                    );
+
+                }
+            );
+
+        }
+    );
 
 
     categoryCounts =
@@ -3268,6 +3324,159 @@ function renderCategoryMarker(category) {
 }
 
 
+function hashPlaceholderValue(value) {
+
+    let hash =
+        2166136261;
+
+    for (const character of String(value)) {
+
+        hash ^=
+            character.charCodeAt(0);
+
+        hash =
+            Math.imul(
+                hash,
+                16777619
+            );
+
+    }
+
+    return hash >>> 0;
+
+}
+
+
+function slugifyCategory(category) {
+
+    return String(
+        category ?? ""
+    )
+        .trim()
+        .toLowerCase()
+        .replace(
+            /[^a-z0-9]+/g,
+            "-"
+        )
+        .replace(
+            /^-+|-+$/g,
+            "");
+
+}
+
+
+function getArticlePlaceholderUrl(article) {
+
+    const category =
+        String(
+            article?.category ??
+            ""
+        ).trim();
+
+    const slug =
+        slugifyCategory(
+            category
+        );
+
+    if (!slug) {
+
+        return null;
+
+    }
+
+
+    const identity =
+        getArticlePlaceholderIdentity(
+            article
+        );
+
+    const fallbackSeed =
+        hashPlaceholderValue(
+            identity
+        );
+
+    const variant =
+        placeholderAssignments.get(
+            identity
+        ) ??
+        ((fallbackSeed % 12) + 1);
+
+
+    return (
+        "images/" +
+        slug +
+        "/" +
+        String(variant).padStart(2, "0") +
+        ".png"
+    );
+
+}
+
+
+function showStaticArticlePlaceholder(
+    image,
+    imagePlaceholder,
+    article
+) {
+
+    const placeholderUrl =
+        getArticlePlaceholderUrl(
+            article
+        );
+
+    if (!placeholderUrl) {
+
+        image.hidden =
+            true;
+
+        imagePlaceholder.textContent =
+            "IMAGE";
+
+        imagePlaceholder.hidden =
+            false;
+
+        return;
+
+    }
+
+
+    image.alt =
+        "";
+
+    image.classList.remove(
+        "article-source-image"
+    );
+
+    image.hidden =
+        false;
+
+    imagePlaceholder.hidden =
+        true;
+
+    image.src =
+        placeholderUrl;
+
+
+    image.addEventListener(
+        "error",
+        () => {
+
+            image.hidden =
+                true;
+
+            imagePlaceholder.textContent =
+                "IMAGE";
+
+            imagePlaceholder.hidden =
+                false;
+
+        },
+        { once: true }
+    );
+
+}
+
+
 function renderArticle(article, index) {
 
     const item =
@@ -3319,34 +3528,44 @@ function renderArticle(article, index) {
         image.alt =
             article.title ?? "";
 
+        image.classList.add(
+            "article-source-image"
+        );
+
+        image.hidden =
+            false;
+
+        imagePlaceholder.hidden =
+            true;
+
         image.addEventListener(
             "error",
             () => {
 
-                image.hidden =
-                    true;
-
-                imagePlaceholder.hidden =
-                    false;
+                showStaticArticlePlaceholder(
+                    image,
+                    imagePlaceholder,
+                    article
+                );
 
             },
             { once: true }
         );
 
-        imagePlaceholder.hidden =
-            true;
-
     } else {
 
-        image.hidden =
-            true;
+        showStaticArticlePlaceholder(
+            image,
+            imagePlaceholder,
+            article
+        );
 
     }
 
 
     return item;
-}
 
+}
 
 function renderNextArticles() {
 
