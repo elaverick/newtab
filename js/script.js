@@ -128,32 +128,27 @@ const DEFAULT_PLACES = [
 
     {
         name: "GitHub",
-        url: "https://github.com",
-        enabled: true
+        url: "https://github.com"
     },
 
     {
         name: "LinkedIn",
-        url: "https://www.linkedin.com",
-        enabled: true
+        url: "https://www.linkedin.com"
     },
 
     {
         name: "Reddit",
-        url: "https://www.reddit.com",
-        enabled: true
+        url: "https://www.reddit.com"
     },
 
     {
         name: "Amazon",
-        url: "https://www.amazon.co.uk",
-        enabled: true
+        url: "https://www.amazon.co.uk"
     },
 
     {
         name: "News",
-        url: "https://news.google.com",
-        enabled: true
+        url: "https://news.google.com"
     }
 ];
 
@@ -166,32 +161,47 @@ const placesEdit =
 const placesModal =
     document.getElementById("placesModal");
 
-const placesOptions =
-    document.getElementById("placesOptions");
+const placesList =
+    document.getElementById("placesList");
 
 const placesClose =
     document.getElementById("placesClose");
 
-const placesCancel =
-    document.getElementById("placesCancel");
+const placesDone =
+    document.getElementById("placesDone");
 
-const placesSave =
-    document.getElementById("placesSave");
+const placesEditorKicker =
+    document.getElementById("placesEditorKicker");
 
-const addSiteButton =
-    document.getElementById("addSiteButton");
+const placesEditorStatus =
+    document.getElementById("placesEditorStatus");
 
-const newSiteName =
-    document.getElementById("newSiteName");
+const siteNameInput =
+    document.getElementById("siteNameInput");
 
-const newSiteUrl =
-    document.getElementById("newSiteUrl");
+const siteUrlInput =
+    document.getElementById("siteUrlInput");
+
+const removeSiteButton =
+    document.getElementById("removeSiteButton");
+
+const newSiteButton =
+    document.getElementById("newSiteButton");
+
+const saveSiteButton =
+    document.getElementById("saveSiteButton");
 
 
 let places =
     loadPlaces();
 
-let editingPlaces = [];
+let editingIndex =
+    null;
+
+let nameLookupSequence =
+    0;
+
+let nameLookupTimer = null;
 
 
 function normalisePlace(place) {
@@ -212,8 +222,7 @@ function normalisePlace(place) {
 
     return {
         name,
-        url,
-        enabled: place.enabled !== false
+        url
     };
 }
 
@@ -292,6 +301,196 @@ function getPlaceHostname(url) {
         return url;
 
     }
+
+}
+
+
+function getNameFromUrl(url) {
+
+    const hostname =
+        getPlaceHostname(url)
+            .split(".")[0]
+            .replace(/[-_]+/g, " ")
+            .trim();
+
+    if (!hostname) {
+        return "";
+    }
+
+    return hostname.replace(
+        /\b\w/g,
+        character => character.toUpperCase()
+    );
+}
+
+
+function normaliseSiteUrl(url) {
+
+    let value =
+        url.trim();
+
+    if (!value) {
+        return "";
+    }
+
+    if (!/^https?:\/\//i.test(value)) {
+        value =
+            `https://${value}`;
+    }
+
+    try {
+
+        return new URL(value).href;
+
+    } catch {
+
+        return "";
+
+    }
+
+}
+
+
+async function fetchPageName(url, sequence) {
+
+    placesEditorStatus.textContent =
+        "Looking up page name...";
+
+    placesEditorStatus.hidden =
+        false;
+
+    try {
+
+        const response =
+            await fetch(
+                "https://r.jina.ai/" +
+                url,
+                {
+                    headers: {
+                        Accept:
+                            "application/json"
+                    },
+                    cache: "no-store"
+                }
+            );
+
+        if (!response.ok) {
+            throw new Error(
+                `Page lookup failed: ${response.status}`
+            );
+        }
+
+        const data =
+            await response.json();
+
+        const title =
+            String(
+                data.title ?? ""
+            ).trim();
+
+        if (
+            sequence !== nameLookupSequence ||
+            siteNameInput.value.trim() ||
+            !title
+        ) {
+            return;
+        }
+
+        siteNameInput.value =
+            title;
+
+        placesEditorStatus.textContent =
+            "Page name found.";
+
+    } catch (error) {
+
+        if (sequence !== nameLookupSequence) {
+            return;
+        }
+
+        const fallback =
+            getNameFromUrl(url);
+
+        if (
+            !siteNameInput.value.trim() &&
+            fallback
+        ) {
+            siteNameInput.value =
+                fallback;
+
+            placesEditorStatus.textContent =
+                "Name suggested from URL.";
+
+        } else {
+
+            placesEditorStatus.hidden =
+                true;
+
+        }
+
+        console.warn(
+            "Unable to fetch page name:",
+            error
+        );
+
+    }
+
+}
+
+
+function requestPageName() {
+
+    if (siteNameInput.value.trim()) {
+        return;
+    }
+
+    const url =
+        normaliseSiteUrl(
+            siteUrlInput.value
+        );
+
+    if (!url) {
+
+        placesEditorStatus.hidden =
+            true;
+
+        return;
+
+    }
+
+    const sequence =
+        ++nameLookupSequence;
+
+    fetchPageName(
+        url,
+        sequence
+    );
+
+}
+
+
+function renderPlaces() {
+
+    const fragment =
+        document.createDocumentFragment();
+
+    places.forEach(
+        (place, index) => {
+
+            fragment.appendChild(
+                createPlaceElement(
+                    place,
+                    index
+                )
+            );
+
+        }
+    );
+
+    siteGrid.replaceChildren(
+        fragment
+    );
+
 }
 
 
@@ -360,164 +559,249 @@ function createPlaceElement(place, index) {
         getPlaceHostname(place.url);
 
 
-    siteInfo.appendChild(siteName);
-    siteInfo.appendChild(siteUrl);
+    siteInfo.appendChild(
+        siteName
+    );
 
-    link.appendChild(siteIndex);
-    link.appendChild(siteIcon);
-    link.appendChild(siteInfo);
+    siteInfo.appendChild(
+        siteUrl
+    );
+
+
+    link.appendChild(
+        siteIndex
+    );
+
+    link.appendChild(
+        siteIcon
+    );
+
+    link.appendChild(
+        siteInfo
+    );
 
     return link;
+
 }
 
 
-function renderPlaces() {
+function renderPlaceList() {
 
-    const visiblePlaces =
-        places.filter(place => place.enabled);
+    placesList.replaceChildren();
 
-    const fragment =
-        document.createDocumentFragment();
+    if (!places.length) {
 
-    visiblePlaces.forEach((place, index) => {
+        const empty =
+            document.createElement("p");
 
-        fragment.appendChild(
-            createPlaceElement(place, index)
+        empty.className =
+            "places-empty";
+
+        empty.textContent =
+            "No places configured yet.";
+
+        placesList.appendChild(
+            empty
         );
 
-    });
+        return;
 
-    siteGrid.replaceChildren(fragment);
+    }
+
+
+    places.forEach(
+        (place, index) => {
+
+            const button =
+                document.createElement("button");
+
+            button.className =
+                "places-list-item";
+
+            button.type =
+                "button";
+
+            button.classList.toggle(
+                "active",
+                editingIndex === index
+            );
+
+
+            const indexLabel =
+                document.createElement("span");
+
+            indexLabel.className =
+                "places-list-index";
+
+            indexLabel.textContent =
+                String(index + 1).padStart(2, "0");
+
+
+            const icon =
+                document.createElement("span");
+
+            icon.className =
+                "places-list-icon";
+
+            icon.textContent =
+                getPlaceInitial(place.name);
+
+
+            const info =
+                document.createElement("span");
+
+            info.className =
+                "places-list-info";
+
+
+            const name =
+                document.createElement("span");
+
+            name.className =
+                "places-list-name";
+
+            name.textContent =
+                place.name;
+
+
+            const url =
+                document.createElement("span");
+
+            url.className =
+                "places-list-url";
+
+            url.textContent =
+                getPlaceHostname(place.url);
+
+
+            info.appendChild(
+                name
+            );
+
+            info.appendChild(
+                url
+            );
+
+
+            button.appendChild(
+                indexLabel
+            );
+
+            button.appendChild(
+                icon
+            );
+
+            button.appendChild(
+                info
+            );
+
+
+            button.addEventListener(
+                "click",
+                () => selectPlace(index)
+            );
+
+            placesList.appendChild(
+                button
+            );
+
+        }
+    );
+
 }
 
 
-function renderPlaceOptions() {
+function setEditorMode(index) {
 
-    placesOptions.replaceChildren();
+    editingIndex =
+        index;
 
-    editingPlaces.forEach((place, index) => {
+    nameLookupSequence +=
+        1;
 
-        const row =
-            document.createElement("label");
-
-        row.className =
-            "places-option";
-
-
-        const checkbox =
-            document.createElement("input");
-
-        checkbox.type =
-            "checkbox";
-
-        checkbox.checked =
-            place.enabled;
-
-        checkbox.addEventListener("change", () => {
-
-            editingPlaces[index].enabled =
-                checkbox.checked;
-
-        });
+    window.clearTimeout(
+        nameLookupTimer
+    );
 
 
-        const icon =
-            document.createElement("span");
+    if (index === null) {
 
-        icon.className =
-            "places-option-icon";
+        placesEditorKicker.textContent =
+            "ADD SITE";
 
-        icon.textContent =
-            getPlaceInitial(place.name);
+        siteNameInput.value =
+            "";
 
+        siteUrlInput.value =
+            "";
 
-        const info =
-            document.createElement("span");
+        placesEditorStatus.hidden =
+            true;
 
-        info.className =
-            "places-option-info";
+        removeSiteButton.hidden =
+            true;
 
+        saveSiteButton.textContent =
+            "Add site";
 
-        const name =
-            document.createElement("span");
+    } else {
 
-        name.className =
-            "places-option-name";
+        const place =
+            places[index];
 
-        name.textContent =
+        placesEditorKicker.textContent =
+            "EDIT SITE";
+
+        siteNameInput.value =
             place.name;
 
+        siteUrlInput.value =
+            place.url;
 
-        const url =
-            document.createElement("span");
+        placesEditorStatus.hidden =
+            true;
 
-        url.className =
-            "places-option-url";
+        removeSiteButton.hidden =
+            false;
 
-        url.textContent =
-            getPlaceHostname(place.url);
+        saveSiteButton.textContent =
+            "Save changes";
 
+    }
 
-        const remove =
-            document.createElement("button");
+    renderPlaceList();
 
-        remove.className =
-            "places-option-remove";
-
-        remove.type =
-            "button";
-
-        remove.textContent =
-            "×";
-
-        remove.setAttribute(
-            "aria-label",
-            `Remove ${place.name}`
-        );
-
-        remove.addEventListener("click", event => {
-
-            event.preventDefault();
-            event.stopPropagation();
-
-            editingPlaces.splice(index, 1);
-            renderPlaceOptions();
-
-        });
+}
 
 
-        info.appendChild(name);
-        info.appendChild(url);
+function selectPlace(index) {
 
-        row.appendChild(checkbox);
-        row.appendChild(icon);
-        row.appendChild(info);
-        row.appendChild(remove);
+    setEditorMode(
+        index
+    );
 
-        placesOptions.appendChild(row);
+    siteNameInput.focus();
 
-    });
 }
 
 
 function openPlaces() {
 
-    editingPlaces =
-        places.map(place => ({ ...place }));
-
-    renderPlaceOptions();
-
-    newSiteName.value = "";
-    newSiteUrl.value = "";
+    setEditorMode(
+        null
+    );
 
     placesModal.hidden =
         false;
 
-    document.body.classList.add("places-modal-open");
+    document.body.classList.add(
+        "places-modal-open"
+    );
 
     window.setTimeout(() => {
-        newSiteName.focus();
+        siteUrlInput.focus();
     }, 0);
+
 }
 
 
@@ -526,83 +810,235 @@ function closePlaces() {
     placesModal.hidden =
         true;
 
-    document.body.classList.remove("places-modal-open");
+    document.body.classList.remove(
+        "places-modal-open"
+    );
+
+    nameLookupSequence +=
+        1;
+
+    window.clearTimeout(
+        nameLookupTimer
+    );
+
 }
 
 
-placesEdit.addEventListener("click", openPlaces);
-placesClose.addEventListener("click", closePlaces);
-placesCancel.addEventListener("click", closePlaces);
+placesEdit.addEventListener(
+    "click",
+    openPlaces
+);
 
+placesClose.addEventListener(
+    "click",
+    closePlaces
+);
 
-placesSave.addEventListener("click", () => {
+placesDone.addEventListener(
+    "click",
+    closePlaces
+);
 
-    places =
-        editingPlaces.map(place => ({ ...place }));
+newSiteButton.addEventListener(
+    "click",
+    () => {
 
-    savePlaces();
-    renderPlaces();
-    closePlaces();
+        setEditorMode(
+            null
+        );
 
-});
+        siteUrlInput.focus();
 
-
-addSiteButton.addEventListener("click", () => {
-
-    const name =
-        newSiteName.value.trim();
-
-    let url =
-        newSiteUrl.value.trim();
-
-    if (!name || !url) {
-        return;
     }
+);
 
-    if (!/^https?:\/\//i.test(url)) {
-        url = `https://${url}`;
+
+removeSiteButton.addEventListener(
+    "click",
+    () => {
+
+        if (editingIndex === null) {
+            return;
+        }
+
+        places.splice(
+            editingIndex,
+            1
+        );
+
+        savePlaces();
+        renderPlaces();
+
+        setEditorMode(
+            null
+        );
+
     }
+);
 
-    try {
-        new URL(url);
-    } catch {
-        return;
+
+saveSiteButton.addEventListener(
+    "click",
+    () => {
+
+        const name =
+            siteNameInput.value.trim();
+
+        const url =
+            normaliseSiteUrl(
+                siteUrlInput.value
+            );
+
+        if (!name || !url) {
+
+            placesEditorStatus.textContent =
+                "Enter a name and valid URL.";
+
+            placesEditorStatus.hidden =
+                false;
+
+            return;
+
+        }
+
+
+        const site = {
+            name,
+            url
+        };
+
+
+        if (editingIndex === null) {
+
+            places.push(
+                site
+            );
+
+        } else {
+
+            places[editingIndex] =
+                site;
+
+        }
+
+
+        savePlaces();
+        renderPlaces();
+
+        setEditorMode(
+            null
+        );
+
     }
-
-    editingPlaces.push({
-        name,
-        url,
-        enabled: true
-    });
-
-    renderPlaceOptions();
-
-    newSiteName.value = "";
-    newSiteUrl.value = "";
-    newSiteName.focus();
-
-});
+);
 
 
-placesModal.addEventListener("click", event => {
+siteUrlInput.addEventListener(
+    "input",
+    () => {
 
-    if (event.target.matches("[data-places-close]")) {
-        closePlaces();
+        window.clearTimeout(
+            nameLookupTimer
+        );
+
+        if (siteNameInput.value.trim()) {
+
+            placesEditorStatus.hidden =
+                true;
+
+            return;
+
+        }
+
+
+        const url =
+            normaliseSiteUrl(
+                siteUrlInput.value
+            );
+
+        if (!url) {
+
+            placesEditorStatus.hidden =
+                true;
+
+            return;
+
+        }
+
+
+        const sequence =
+            ++nameLookupSequence;
+
+        placesEditorStatus.textContent =
+            "Looking up page name...";
+
+        placesEditorStatus.hidden =
+            false;
+
+        nameLookupTimer =
+            window.setTimeout(
+                () => {
+
+                    fetchPageName(
+                        url,
+                        sequence
+                    );
+
+                },
+                700
+            );
+
     }
+);
 
-});
 
+siteUrlInput.addEventListener(
+    "blur",
+    () => {
 
-document.addEventListener("keydown", event => {
+        if (
+            !siteNameInput.value.trim()
+        ) {
+            requestPageName();
+        }
 
-    if (
-        event.key === "Escape" &&
-        !placesModal.hidden
-    ) {
-        closePlaces();
     }
+);
 
-});
+
+placesModal.addEventListener(
+    "click",
+    event => {
+
+        if (
+            event.target.matches(
+                "[data-places-close]"
+            )
+        ) {
+
+            closePlaces();
+
+        }
+
+    }
+);
+
+
+document.addEventListener(
+    "keydown",
+    event => {
+
+        if (
+            event.key === "Escape" &&
+            !placesModal.hidden
+        ) {
+
+            closePlaces();
+
+        }
+
+    }
+);
 
 
 renderPlaces();
