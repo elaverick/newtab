@@ -888,20 +888,13 @@ saveSiteButton.addEventListener(
 
 
 siteUrlInput.addEventListener(
-    "input",
+    "blur",
     () => {
 
-        window.clearTimeout(
-            nameLookupTimer
-        );
-
-        if (siteNameInput.value.trim()) {
-
-            placesEditorStatus.hidden =
-                true;
-
+        if (
+            siteNameInput.value.trim()
+        ) {
             return;
-
         }
 
 
@@ -911,12 +904,7 @@ siteUrlInput.addEventListener(
             );
 
         if (!url) {
-
-            placesEditorStatus.hidden =
-                true;
-
             return;
-
         }
 
 
@@ -926,40 +914,24 @@ siteUrlInput.addEventListener(
             );
 
         if (!name) {
-
-            placesEditorStatus.hidden =
-                true;
-
             return;
-
         }
 
 
-        nameLookupTimer =
-            window.setTimeout(
-                () => {
+        siteNameInput.value =
+            name;
 
-                    if (
-                        !siteNameInput.value.trim()
-                    ) {
+        placesEditorStatus.textContent =
+            "Name from URL.";
 
-                        siteNameInput.value =
-                            name;
-
-                        placesEditorStatus.textContent =
-                            "Name from URL.";
-
-                        placesEditorStatus.hidden =
-                            false;
-
-                    }
-
-                },
-                250
-            );
+        placesEditorStatus.hidden =
+            false;
 
     }
 );
+
+
+
 
 
 placesModal.addEventListener(
