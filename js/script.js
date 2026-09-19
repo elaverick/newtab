@@ -265,7 +265,9 @@ const articleSentinel =
 
 let articles = [];
 
-let articleGroups = [];
+let displayArticles = [];
+
+let categoryCounts = new Map();
 
 let renderedArticleCount = 0;
 
@@ -274,7 +276,7 @@ let isLoadingArticles = false;
 let articleObserver = null;
 
 
-function createCategoryGroups() {
+function prepareArticles() {
 
     const groups =
         new Map();
@@ -301,10 +303,7 @@ function createCategoryGroups() {
 
             groups.set(
                 category,
-                {
-                    name: category,
-                    articles: []
-                }
+                []
             );
 
         }
@@ -312,101 +311,114 @@ function createCategoryGroups() {
 
         groups
             .get(category)
-            .articles
             .push({
                 article,
-                index
+                index,
+                category
             });
 
     });
 
 
-    articleGroups =
-        Array.from(groups.values())
+    categoryCounts =
+        new Map(
+            Array.from(
+                groups.entries()
+            ).map(
+                ([category, entries]) =>
+                    [
+                        category,
+                        entries.length
+                    ]
+            )
+        );
+
+
+    displayArticles =
+        Array.from(
+            groups.entries()
+        )
             .sort(
-                (a, b) =>
-                    a.name.localeCompare(
-                        b.name,
+                ([a], [b]) =>
+                    a.localeCompare(
+                        b,
                         undefined,
                         {
                             sensitivity: "base"
                         }
                     )
+            )
+            .flatMap(
+                ([, entries]) =>
+                    entries
             );
 
 }
 
 
-function createCategoryLayout() {
+function renderCategoryMarker(category) {
 
-    articleGrid.replaceChildren();
+    const marker =
+        document.createElement("div");
 
-
-    articleGroups.forEach(group => {
-
-        const section =
-            document.createElement("section");
-
-        section.className =
-            "article-category";
+    marker.className =
+        "article-category-marker";
 
 
-        const header =
-            document.createElement("div");
+    const leftRule =
+        document.createElement("span");
 
-        header.className =
-            "article-category-header";
-
-
-        const title =
-            document.createElement("h3");
-
-        title.className =
-            "article-category-title";
-
-        title.textContent =
-            group.name;
+    leftRule.className =
+        "article-category-rule";
 
 
-        const count =
-            document.createElement("span");
+    const label =
+        document.createElement("span");
 
-        count.className =
-            "article-category-count";
+    label.className =
+        "article-category-label";
 
-        count.textContent =
-            String(
-                group.articles.length
-            ).padStart(2, "0");
+    label.textContent =
+        category;
 
 
-        header.appendChild(title);
-        header.appendChild(count);
+    const count =
+        document.createElement("span");
+
+    count.className =
+        "article-category-count";
+
+    count.textContent =
+        String(
+            categoryCounts.get(category)
+        ).padStart(2, "0");
 
 
-        const grid =
-            document.createElement("div");
+    const rightRule =
+        document.createElement("span");
 
-        grid.className =
-            "article-category-grid";
-
-        grid.dataset.category =
-            group.name;
+    rightRule.className =
+        "article-category-rule";
 
 
-        section.appendChild(header);
-        section.appendChild(grid);
+    marker.appendChild(
+        leftRule
+    );
 
-        articleGrid.appendChild(section);
+    marker.appendChild(
+        label
+    );
 
-        group.element =
-            grid;
+    marker.appendChild(
+        count
+    );
 
-        group.renderedCount =
-            0;
+    marker.appendChild(
+        rightRule
+    );
 
-    });
 
+    return marker;
 }
 
 
@@ -484,12 +496,11 @@ function renderArticle(article, index) {
 }
 
 
-
 function renderNextArticles() {
 
     if (
         isLoadingArticles ||
-        renderedArticleCount >= articles.length
+        renderedArticleCount >= displayArticles.length
     ) {
         return;
     }
@@ -498,82 +509,75 @@ function renderNextArticles() {
     isLoadingArticles = true;
 
 
-    let remaining =
-        ARTICLES_PER_LOAD;
+    const start =
+        renderedArticleCount;
 
-
-    articleGroups.forEach(group => {
-
-        if (remaining <= 0) {
-            return;
-        }
-
-
-        const available =
-            group.articles.length -
-            group.renderedCount;
-
-
-        if (available <= 0) {
-            return;
-        }
-
-
-        const count =
-            Math.min(
-                available,
-                remaining
-            );
-
-
-        const fragment =
-            document.createDocumentFragment();
-
-
-        for (
-            let offset = 0;
-            offset < count;
-            offset += 1
-        ) {
-
-            const entry =
-                group.articles[
-                    group.renderedCount + offset
-                ];
-
-
-            fragment.appendChild(
-                renderArticle(
-                    entry.article,
-                    entry.index
-                )
-            );
-
-        }
-
-
-        group.element.appendChild(
-            fragment
+    const end =
+        Math.min(
+            start + ARTICLES_PER_LOAD,
+            displayArticles.length
         );
 
 
-        group.renderedCount +=
-            count;
+    const fragment =
+        document.createDocumentFragment();
 
-        renderedArticleCount +=
-            count;
 
-        remaining -=
-            count;
+    let lastCategory =
+        start > 0
+            ? displayArticles[start - 1].category
+            : null;
 
-    });
 
+    for (
+        let index = start;
+        index < end;
+        index += 1
+    ) {
+
+        const entry =
+            displayArticles[index];
+
+
+        if (
+            entry.category !== lastCategory
+        ) {
+
+            fragment.appendChild(
+                renderCategoryMarker(
+                    entry.category
+                )
+            );
+
+            lastCategory =
+                entry.category;
+
+        }
+
+
+        fragment.appendChild(
+            renderArticle(
+                entry.article,
+                index
+            )
+        );
+
+    }
+
+
+    articleGrid.appendChild(
+        fragment
+    );
+
+
+    renderedArticleCount =
+        end;
 
     isLoadingArticles = false;
 
 
     if (
-        renderedArticleCount >= articles.length &&
+        renderedArticleCount >= displayArticles.length &&
         articleObserver
     ) {
 
@@ -628,15 +632,15 @@ async function loadArticles() {
             0;
 
 
-        createCategoryGroups();
+        prepareArticles();
 
-        createCategoryLayout();
+        articleGrid.replaceChildren();
 
         renderNextArticles();
 
 
         if (
-            renderedArticleCount < articles.length
+            renderedArticleCount < displayArticles.length
         ) {
 
             articleObserver =
