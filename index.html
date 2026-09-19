@@ -288,7 +288,7 @@
                             class="places-dialog-title"
                             id="placesDialogTitle"
                         >
-                            Choose sites
+                            Manage places
                         </h3>
 
                     </div>
@@ -305,43 +305,98 @@
                 </div>
 
                 <p class="places-dialog-description">
-                    Select the sites you want to show on the page.
+                    Choose a site to edit, or add a new one below.
                 </p>
 
                 <div
-                    class="places-options"
-                    id="placesOptions"
+                    class="places-list"
+                    id="placesList"
                 ></div>
 
-                <div class="places-add">
+                <div class="places-editor">
 
-                    <div class="places-add-heading">
-                        Add a site
+                    <div class="places-editor-header">
+
+                        <span
+                            class="places-editor-kicker"
+                            id="placesEditorKicker"
+                        >
+                            ADD SITE
+                        </span>
+
+                        <span
+                            class="places-editor-status"
+                            id="placesEditorStatus"
+                            aria-live="polite"
+                            hidden
+                        ></span>
+
                     </div>
 
-                    <div class="places-add-fields">
+                    <div class="places-editor-fields">
 
-                        <input
-                            id="newSiteName"
-                            type="text"
-                            placeholder="Name"
-                            autocomplete="off"
-                        >
+                        <label class="places-field">
 
-                        <input
-                            id="newSiteUrl"
-                            type="url"
-                            placeholder="https://example.com"
-                            autocomplete="off"
-                        >
+                            <span>
+                                Name
+                            </span>
+
+                            <input
+                                id="siteNameInput"
+                                type="text"
+                                placeholder="Site name"
+                                autocomplete="off"
+                            >
+
+                        </label>
+
+                        <label class="places-field">
+
+                            <span>
+                                URL
+                            </span>
+
+                            <input
+                                id="siteUrlInput"
+                                type="url"
+                                placeholder="https://example.com"
+                                autocomplete="off"
+                            >
+
+                        </label>
+
+                    </div>
+
+                    <div class="places-editor-actions">
 
                         <button
-                            class="places-add-button"
-                            id="addSiteButton"
+                            class="places-dialog-button danger"
+                            id="removeSiteButton"
                             type="button"
+                            hidden
                         >
-                            +
+                            Remove
                         </button>
+
+                        <div class="places-editor-primary">
+
+                            <button
+                                class="places-dialog-button"
+                                id="newSiteButton"
+                                type="button"
+                            >
+                                New site
+                            </button>
+
+                            <button
+                                class="places-dialog-button primary"
+                                id="saveSiteButton"
+                                type="button"
+                            >
+                                Add site
+                            </button>
+
+                        </div>
 
                     </div>
 
@@ -350,19 +405,11 @@
                 <div class="places-dialog-footer">
 
                     <button
-                        class="places-dialog-button"
-                        id="placesCancel"
-                        type="button"
-                    >
-                        Cancel
-                    </button>
-
-                    <button
                         class="places-dialog-button primary"
-                        id="placesSave"
+                        id="placesDone"
                         type="button"
                     >
-                        Save
+                        Done
                     </button>
 
                 </div>
@@ -370,7 +417,6 @@
             </div>
 
         </div>
-
 
 
     <!-- ============================================================
