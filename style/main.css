@@ -927,6 +927,53 @@ a {
 
 
 /* ================================================================
+   ARTICLE CATEGORY MARKERS
+================================================================ */
+
+.article-category-marker {
+    grid-column: 1 / -1;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 10px 0 0;
+
+    color: var(--faint);
+
+    font-size: 8px;
+
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.article-category-rule {
+    flex: 1;
+
+    height: 1px;
+
+    background: var(--line);
+}
+
+.article-category-label {
+    font-family: var(--font-display);
+
+    color: var(--muted);
+
+    white-space: nowrap;
+}
+
+.article-category-count {
+    color: var(--faint);
+
+    font-size: 7px;
+    letter-spacing: 0.08em;
+}
+
+
+
+/* ================================================================
    ARTICLES
 ================================================================ */
 

@@ -265,9 +265,161 @@ const articleSentinel =
 
 let articles = [];
 
+let displayArticles = [];
+
+let categoryCounts = new Map();
+
 let renderedArticleCount = 0;
 
 let isLoadingArticles = false;
+
+let articleObserver = null;
+
+
+function prepareArticles() {
+
+    const groups =
+        new Map();
+
+
+    articles.forEach((article, index) => {
+
+        if (
+            !article ||
+            typeof article !== "object"
+        ) {
+            return;
+        }
+
+
+        const category =
+            String(
+                article.category ?? "Uncategorised"
+            ).trim() ||
+            "Uncategorised";
+
+
+        if (!groups.has(category)) {
+
+            groups.set(
+                category,
+                []
+            );
+
+        }
+
+
+        groups
+            .get(category)
+            .push({
+                article,
+                index,
+                category
+            });
+
+    });
+
+
+    categoryCounts =
+        new Map(
+            Array.from(
+                groups.entries()
+            ).map(
+                ([category, entries]) =>
+                    [
+                        category,
+                        entries.length
+                    ]
+            )
+        );
+
+
+    displayArticles =
+        Array.from(
+            groups.entries()
+        )
+            .sort(
+                ([a], [b]) =>
+                    a.localeCompare(
+                        b,
+                        undefined,
+                        {
+                            sensitivity: "base"
+                        }
+                    )
+            )
+            .flatMap(
+                ([, entries]) =>
+                    entries
+            );
+
+}
+
+
+function renderCategoryMarker(category) {
+
+    const marker =
+        document.createElement("div");
+
+    marker.className =
+        "article-category-marker";
+
+
+    const leftRule =
+        document.createElement("span");
+
+    leftRule.className =
+        "article-category-rule";
+
+
+    const label =
+        document.createElement("span");
+
+    label.className =
+        "article-category-label";
+
+    label.textContent =
+        category;
+
+
+    const count =
+        document.createElement("span");
+
+    count.className =
+        "article-category-count";
+
+    count.textContent =
+        String(
+            categoryCounts.get(category)
+        ).padStart(2, "0");
+
+
+    const rightRule =
+        document.createElement("span");
+
+    rightRule.className =
+        "article-category-rule";
+
+
+    marker.appendChild(
+        leftRule
+    );
+
+    marker.appendChild(
+        label
+    );
+
+    marker.appendChild(
+        count
+    );
+
+    marker.appendChild(
+        rightRule
+    );
+
+
+    return marker;
+}
 
 
 function renderArticle(article, index) {
@@ -348,7 +500,7 @@ function renderNextArticles() {
 
     if (
         isLoadingArticles ||
-        renderedArticleCount >= articles.length
+        renderedArticleCount >= displayArticles.length
     ) {
         return;
     }
@@ -363,7 +515,7 @@ function renderNextArticles() {
     const end =
         Math.min(
             start + ARTICLES_PER_LOAD,
-            articles.length
+            displayArticles.length
         );
 
 
@@ -371,25 +523,46 @@ function renderNextArticles() {
         document.createDocumentFragment();
 
 
-    articles
-        .slice(start, end)
-        .forEach((article, index) => {
+    let lastCategory =
+        start > 0
+            ? displayArticles[start - 1].category
+            : null;
 
-            if (
-                !article ||
-                typeof article !== "object"
-            ) {
-                return;
-            }
+
+    for (
+        let index = start;
+        index < end;
+        index += 1
+    ) {
+
+        const entry =
+            displayArticles[index];
+
+
+        if (
+            entry.category !== lastCategory
+        ) {
 
             fragment.appendChild(
-                renderArticle(
-                    article,
-                    start + index
+                renderCategoryMarker(
+                    entry.category
                 )
             );
 
-        });
+            lastCategory =
+                entry.category;
+
+        }
+
+
+        fragment.appendChild(
+            renderArticle(
+                entry.article,
+                index
+            )
+        );
+
+    }
 
 
     articleGrid.appendChild(
@@ -404,36 +577,18 @@ function renderNextArticles() {
 
 
     if (
-        renderedArticleCount >= articles.length &&
+        renderedArticleCount >= displayArticles.length &&
         articleObserver
     ) {
 
         articleObserver.disconnect();
 
+        articleSentinel.hidden =
+            true;
+
     }
 
 }
-
-
-const articleObserver =
-    new IntersectionObserver(
-        entries => {
-
-            if (
-                entries.some(
-                    entry => entry.isIntersecting
-                )
-            ) {
-
-                renderNextArticles();
-
-            }
-
-        },
-        {
-            rootMargin: "400px 0px"
-        }
-    );
 
 
 async function loadArticles() {
@@ -476,18 +631,49 @@ async function loadArticles() {
         renderedArticleCount =
             0;
 
+
+        prepareArticles();
+
         articleGrid.replaceChildren();
 
         renderNextArticles();
 
 
         if (
-            renderedArticleCount < articles.length
+            renderedArticleCount < displayArticles.length
         ) {
+
+            articleObserver =
+                new IntersectionObserver(
+                    entries => {
+
+                        if (
+                            entries.some(
+                                entry =>
+                                    entry.isIntersecting
+                            )
+                        ) {
+
+                            renderNextArticles();
+
+                        }
+
+                    },
+                    {
+                        rootMargin:
+                            "400px 0px"
+                    }
+                );
+
 
             articleObserver.observe(
                 articleSentinel
             );
+
+        } else {
+
+            articleSentinel.hidden =
+                true;
 
         }
 
@@ -515,6 +701,10 @@ async function loadArticles() {
         articleGrid.appendChild(
             message
         );
+
+
+        articleSentinel.hidden =
+            true;
 
     }
 
