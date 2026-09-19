@@ -1371,6 +1371,16 @@ a {
     }
 
 
+    .article-category-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            35px;
+    }
+
+
     .article-image {
 
         height:
