@@ -136,7 +136,26 @@ It should not use unrelated site logos.
 
 When an appropriate image genuinely cannot be obtained, `image` can be `null`.
 
-The webpage already has a fallback treatment for articles without usable images.
+The webpage then selects a static liminal placeholder from the matching category folder.
+
+Placeholder images live under:
+
+```text
+images/
+├── automotive/
+├── technology/
+├── retro-computing/
+├── retro-computing-projects/
+└── music/
+```
+
+Each category currently contains twelve PNGs named `01.png` through `12.png`.
+
+The frontend converts the article category into a folder name and uses a deterministic hash of the category, article URL and title to select one of the twelve images. The same article therefore keeps the same placeholder image across page loads while different articles naturally receive different images.
+
+This also makes the system straightforward to fork: create a folder whose name matches the frontend's category slug and add twelve PNG files named `01.png` to `12.png`. No JavaScript change is required for a new category.
+
+If a category has no matching image folder, or a selected placeholder cannot be loaded, the original `IMAGE` fallback is shown.
 
 ---
 
@@ -568,6 +587,12 @@ This separation makes the project easier to fork and maintain.
 ├── articles.json
 ├── articles.schema.json
 ├── index.html
+├── images/
+│   ├── automotive/
+│   ├── technology/
+│   ├── retro-computing/
+│   ├── retro-computing-projects/
+│   └── music/
 ├── js/
 │   └── script.js
 └── style/
