@@ -591,18 +591,108 @@
                     id="searchEngineSettings"
                 ></div>
 
-                <details class="settings-details">
+                <button
+                    class="settings-add-engine-button"
+                    id="addSearchEngineButton"
+                    type="button"
+                >
+                    + ADD SEARCH ENGINE
+                </button>
 
-                    <summary>
-                        CUSTOMISE PLACEHOLDER TEXT
-                    </summary>
+                <div
+                    class="settings-engine-editor"
+                    id="searchEngineEditor"
+                    hidden
+                >
 
-                    <div
-                        class="settings-placeholder-list"
-                        id="searchPlaceholderSettings"
-                    ></div>
+                    <div class="settings-engine-editor-header">
 
-                </details>
+                        <span class="settings-engine-editor-kicker">
+                            NEW SEARCH ENGINE
+                        </span>
+
+                        <button
+                            class="settings-engine-editor-close"
+                            id="cancelSearchEngineButton"
+                            type="button"
+                            aria-label="Cancel adding search engine"
+                            title="Cancel"
+                        >
+                            ×
+                        </button>
+
+                    </div>
+
+                    <div class="settings-engine-editor-fields">
+
+                        <label class="settings-engine-field">
+
+                            <span>
+                                Name
+                            </span>
+
+                            <input
+                                id="searchEngineNameInput"
+                                type="text"
+                                placeholder="Search engine or AI agent"
+                                autocomplete="off"
+                            >
+
+                        </label>
+
+                        <label class="settings-engine-field">
+
+                            <span>
+                                Search URL
+                            </span>
+
+                            <input
+                                id="searchEngineUrlInput"
+                                type="url"
+                                placeholder="https://example.com/search?q={query}"
+                                autocomplete="off"
+                            >
+
+                        </label>
+
+                        <label class="settings-engine-field">
+
+                            <span>
+                                Placeholder
+                            </span>
+
+                            <input
+                                id="searchEnginePlaceholderInput"
+                                type="text"
+                                placeholder="Search the web..."
+                                autocomplete="off"
+                            >
+
+                        </label>
+
+                    </div>
+
+                    <p
+                        class="settings-engine-editor-help"
+                        id="searchEngineEditorStatus"
+                        aria-live="polite"
+                    >
+                        Use {query} where the search text should be inserted.
+                    </p>
+
+                    <div class="settings-engine-editor-actions">
+
+                        <button
+                            class="settings-dialog-button primary"
+                            id="saveSearchEngineButton"
+                            type="button"
+                        >
+                            Add engine
+                        </button>
+
+                    </div>
+
+                </div>
 
             </div>
 
