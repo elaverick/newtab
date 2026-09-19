@@ -1416,3 +1416,74 @@ a {
     text-transform: uppercase;
     letter-spacing: 0.08em;
 }
+
+
+/* ================================================================
+   ARTICLE PAGINATION
+================================================================ */
+
+.article-pagination {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 16px;
+
+    margin-top: 28px;
+}
+
+
+.article-pagination[hidden] {
+    display: none;
+}
+
+
+.pagination-button {
+
+    width: 32px;
+    height: 32px;
+
+    padding: 0;
+
+    border: 1px solid var(--line);
+
+    background: transparent;
+
+    color: var(--muted);
+
+    font-size: 12px;
+}
+
+
+.pagination-button:hover:not(:disabled) {
+
+    color: var(--text);
+
+    border-color: var(--line-strong);
+}
+
+
+.pagination-button:disabled {
+
+    opacity: 0.35;
+
+    cursor: default;
+}
+
+
+.pagination-status {
+
+    min-width: 90px;
+
+    color: var(--muted);
+
+    font-size: 8px;
+
+    letter-spacing: 0.08em;
+
+    text-align: center;
+
+    text-transform: uppercase;
+}
