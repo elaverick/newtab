@@ -136,9 +136,9 @@ It should not use unrelated site logos.
 
 When an appropriate image genuinely cannot be obtained, `image` can be `null`.
 
-The webpage then selects a static liminal placeholder from the matching category folder.
+The webpage then selects a static liminal placeholder from a matching category folder.
 
-Placeholder images live under:
+The optional placeholder library uses this structure:
 
 ```text
 images/
@@ -149,7 +149,7 @@ images/
 └── music/
 ```
 
-Each category currently contains twelve PNGs named `01.png` through `12.png`.
+Each category folder is designed to contain twelve PNGs named `01.png` through `12.png`.
 
 The frontend converts the article category into a folder name and uses a deterministic hash of the category, article URL and title to select one of the twelve images. The same article therefore keeps the same placeholder image across page loads while different articles naturally receive different images.
 
@@ -587,7 +587,7 @@ This separation makes the project easier to fork and maintain.
 ├── articles.json
 ├── articles.schema.json
 ├── index.html
-├── images/
+├── images/                         # optional static liminal placeholders
 │   ├── automotive/
 │   ├── technology/
 │   ├── retro-computing/
