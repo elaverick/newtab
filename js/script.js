@@ -870,7 +870,8 @@ async function updateWeather() {
             getWeatherSymbol(code, isDay);
 
         weather.title =
-            describeWeather(code);
+            describeWeather(code) +
+            " — Weather data from Open-Meteo";
 
         weather.setAttribute(
             "aria-label",
