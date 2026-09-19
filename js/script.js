@@ -2460,38 +2460,8 @@ updateDate();
 const searchForm =
     document.getElementById("searchForm");
 
-const searchInput =
-    document.getElementById("searchInput");
-
-
-const searchEngines = {
-
-    Google:
-        "https://www.google.com/search?q=",
-
-    ChatGPT:
-        "https://chatgpt.com/?q=",
-
-    DuckDuckGo:
-        "https://duckduckgo.com/?q="
-
-};
-
-
-let selectedProvider =
-    "Google";
-
-
-providerOptions.forEach(option => {
-
-    option.addEventListener("click", () => {
-
-        selectedProvider =
-            option.dataset.provider;
-
-    });
-
-});
+const searchEngines =
+    SEARCH_ENGINE_DEFINITIONS;
 
 
 searchForm.addEventListener("submit", event => {
