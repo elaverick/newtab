@@ -705,53 +705,164 @@ const WEATHER_REFRESH_INTERVAL =
     15 * 60 * 1000;
 
 
-function getWeatherSymbol(code, isDay) {
+function createWeatherIcon(code, isDay) {
+
+    const svg =
+
+        (markup => {
+
+            const template =
+                document.createElement("template");
+
+            template.innerHTML =
+                markup.trim();
+
+            return template.content
+                .firstElementChild;
+
+        })(getWeatherIconMarkup(code, isDay));
+
+
+    svg.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    return svg;
+}
+
+
+function getWeatherIconMarkup(code, isDay) {
+
+    const common =
+        `<svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+        `;
+
 
     if (code === 0) {
-        return isDay ? "☀" : "☾";
+
+        return common +
+            (isDay
+                ? `>
+                    <circle cx="12" cy="12" r="4.5"/>
+                    <line x1="12" y1="2" x2="12" y2="5"/>
+                    <line x1="12" y1="19" x2="12" y2="22"/>
+                    <line x1="2" y1="12" x2="5" y2="12"/>
+                    <line x1="19" y1="12" x2="22" y2="12"/>
+                    <line x1="4.9" y1="4.9" x2="7" y2="7"/>
+                    <line x1="17" y1="17" x2="19.1" y2="19.1"/>
+                    <line x1="19.1" y1="4.9" x2="17" y2="7"/>
+                    <line x1="7" y1="17" x2="4.9" y2="19.1"/>
+                </svg>`
+                : `>
+                    <path d="M17.5 16.5A6.5 6.5 0 0 1 8 8a6.5 6.5 0 1 0 9.5 8.5Z"/>
+                    <line x1="17.5" y1="4" x2="17.5" y2="7"/>
+                    <line x1="16" y1="5.5" x2="19" y2="5.5"/>
+                </svg>`);
+
     }
+
 
     if (code === 1) {
-        return isDay ? "◔" : "☽";
+
+        return common +
+            (isDay
+                ? `>
+                    <circle cx="9" cy="12" r="4"/>
+                    <line x1="9" y1="3" x2="9" y2="1"/>
+                    <line x1="9" y1="23" x2="9" y2="21"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/>
+                    <line x1="15" y1="12" x2="17" y2="12"/>
+                    <path d="M15 8.5A5 5 0 0 1 20.5 14"/>
+                </svg>`
+                : `>
+                    <path d="M17.5 16.5A6.5 6.5 0 0 1 8 8a6.5 6.5 0 0 0-1 1"/>
+                    <path d="M13 16.5h5.5a2.5 2.5 0 0 0 0-5 4.5 4.5 0 0 0-8.3-1.7"/>
+                </svg>`);
+
     }
+
 
     if (code === 2) {
-        return "⛅";
+
+        return common + `>
+            <circle cx="8" cy="8" r="3.2"/>
+            <line x1="8" y1="2" x2="8" y2="4"/>
+            <line x1="8" y1="12" x2="8" y2="14"/>
+            <line x1="2" y1="8" x2="4" y2="8"/>
+            <line x1="12" y1="8" x2="14" y2="8"/>
+            <path d="M7 18.5h9a3.5 3.5 0 1 0-1-6.8 5.5 5.5 0 0 0-10.2 1.2"/>
+        </svg>`;
+
     }
 
-    if (code === 3) {
-        return "☁";
+
+    if (
+        code === 3 ||
+        code === 45 ||
+        code === 48
+    ) {
+
+        return common + `>
+            <path d="M6 9.5h10a3.5 3.5 0 0 1 0 7H6a3.5 3.5 0 0 1 0-7Z"/>
+            <line x1="4" y1="7" x2="9" y2="7"/>
+            <line x1="12" y1="4.5" x2="18" y2="4.5"/>
+            <line x1="7" y1="20" x2="11" y2="20"/>
+            <line x1="14" y1="20" x2="18" y2="20"/>
+        </svg>`;
+
     }
 
-    if (code === 45 || code === 48) {
-        return "≋";
+
+    if (
+        (code >= 51 && code <= 57) ||
+        (code >= 61 && code <= 67) ||
+        (code >= 80 && code <= 82)
+    ) {
+
+        return common + `>
+            <path d="M6 9.5h10a3.5 3.5 0 0 1 0 7H6a3.5 3.5 0 0 1 0-7Z"/>
+            <line x1="8" y1="19" x2="7" y2="22"/>
+            <line x1="13" y1="19" x2="12" y2="22"/>
+            <line x1="18" y1="19" x2="17" y2="22"/>
+        </svg>`;
+
     }
 
-    if (code >= 51 && code <= 57) {
-        return "≋";
+
+    if (
+        code >= 71 && code <= 77 ||
+        code === 85 ||
+        code === 86
+    ) {
+
+        return common + `>
+            <path d="M6 9.5h10a3.5 3.5 0 0 1 0 7H6a3.5 3.5 0 0 1 0-7Z"/>
+            <path d="M8 20l-2 2M12 19l-2 3M17 20l-2 2"/>
+            <path d="M8 19v-2M13 19v-2M18 19v-2"/>
+        </svg>`;
+
     }
 
-    if (code >= 61 && code <= 67) {
-        return "☂";
-    }
-
-    if (code >= 71 && code <= 77) {
-        return "❄";
-    }
-
-    if (code >= 80 && code <= 82) {
-        return "☂";
-    }
-
-    if (code === 85 || code === 86) {
-        return "❄";
-    }
 
     if (code >= 95 && code <= 99) {
-        return "ϟ";
+
+        return common + `>
+            <path d="M6 9.5h10a3.5 3.5 0 0 1 0 7H6a3.5 3.5 0 0 1 0-7Z"/>
+            <path d="M13 13l-2 4h2l-2 4 4-5h-2l2-3Z"/>
+        </svg>`;
+
     }
 
-    return "•";
+
+    return common + `>
+        <circle cx="12" cy="12" r="7"/>
+        <line x1="12" y1="9" x2="12" y2="13"/>
+        <circle cx="12" cy="16.5" r="0.5" fill="currentColor" stroke="none"/>
+    </svg>`;
 }
 
 
@@ -866,8 +977,9 @@ async function updateWeather() {
             );
         }
 
-        weather.textContent =
-            getWeatherSymbol(code, isDay);
+        weather.replaceChildren(
+            createWeatherIcon(code, isDay)
+        );
 
         weather.title =
             describeWeather(code) +
