@@ -1,14 +1,5 @@
 [
   {
-    "title": "Ferrari to bring Universo experience exhibition to India",
-    "source": "Autocar India",
-    "extract": "Ferrari is bringing its Universo Ferrari exhibition to India for the first time, with historic and current cars, a racing display and the Hypersail project. The exhibition will run in New Delhi from October 17 to November 1.",
-    "image": null,
-    "link": "https://www.autocarindia.com/car-news-amp/ferrari-to-bring-universo-experience-exhibition-to-india-440808",
-    "category": "Automotive",
-    "published": "2026-09-19T00:00:00+05:30"
-  },
-  {
     "title": "WATCH: Lando’s MCL-HY test unboxed",
     "source": "McLaren Racing",
     "extract": "McLaren has released a behind-the-scenes look at Lando Norris testing its 2027 World Endurance Championship hypercar. Norris completed 38 laps of Portimão in the MCL-HY prototype during the team's fifth track test.",
@@ -20,7 +11,7 @@
   {
     "title": "Garage 59 McLaren Wins Race 1 At Zandvoort",
     "source": "dailysportscar",
-    "extract": "Garage 59 took its first outright GT World Challenge Europe victory of 2026 at Zandvoort with the #58 McLaren GT3 Evo. The race also produced a Ferrari 296 GT3 Evo podium and strong class results for BMW and Aston Martin.",
+    "extract": "Garage 59 scored its first outright GT World Challenge Europe victory of 2026 at Zandvoort as Tom Fleming and Louis Prette won aboard the #58 McLaren GT3 Evo.",
     "image": "https://www.dailysportscar.com/wp-content/uploads/2026/09/58-0RL22711.jpg",
     "link": "https://www.dailysportscar.com/2026/09/19/garage-59-mclaren-wins-race-1-at-zandvoort.html",
     "category": "Automotive",
@@ -29,106 +20,133 @@
   {
     "title": "Aston Martin to unveil final upgrade for AMR26 car at Baku Grand Prix",
     "source": "Report.az",
-    "extract": "Aston Martin plans one final AMR26 upgrade at the Azerbaijan Grand Prix before switching its resources to the 2027 car. The final package is focused on reducing weight after a larger development programme earlier in the season.",
+    "extract": "Aston Martin plans one final AMR26 upgrade at the Azerbaijan Grand Prix before switching its resources to the 2027 car. The package is focused on reducing weight after a larger development programme earlier in the season.",
     "image": "https://images.report.az/2026/09/19/UBhRHznbzC3dK4S6pS8Ph0NJnevN0hG6qWUP4lzn_1200.jpg",
     "link": "https://report.az/en/formula-1/aston-martin-to-unveil-final-upgrade-for-amr26-car-at-baku-grand-prix",
     "category": "Automotive",
     "published": "2026-09-19T12:41:00Z"
   },
   {
-    "title": "Fernando Alonso reveals 'shock' after finding out Aston Martin truth",
-    "source": "GPFans",
-    "extract": "Fernando Alonso has described his surprise at how far Aston Martin was off the pace at the start of the 2026 season. He also discussed the team's response, including its major upgrade programme and continued work with Honda.",
+    "title": "Full test: Aston Martin DB12 S is a sharper, louder and lighter GT, but is it better?",
+    "source": "Autocar",
+    "extract": "Autocar tests the Aston Martin DB12 S, an upper-level version with more power, less weight and a sharper character. The test examines its engineering changes, performance and everyday usability.",
     "image": null,
-    "link": "https://www.gpfans.com/en/f1-news/1090456/f1-fernando-alonso-aston-martin-truth-shock-season-pedro-de-la-rosa/",
+    "link": "https://d2km96w3x5blkf.cloudfront.net/car-review/aston-martin/db12-s",
     "category": "Automotive",
-    "published": "2026-09-19T08:16:00Z"
+    "published": "2026-09-18T00:00:00Z"
   },
   {
-    "title": "Why the Toyota Prius could be more influential than the McLaren F1",
+    "title": "McLaren to retire Artura, GTS and 750S in next two years",
     "source": "Autocar",
-    "extract": "An Autocar feature considers the long-term influence of the Toyota Prius alongside the McLaren F1, examining how different kinds of engineering and design can shape the wider car industry.",
+    "extract": "McLaren plans to phase out three core models by the end of 2028 as it prepares a new supercar and SUV-led line-up. The changes follow the company's major UK investment programme.",
     "image": null,
-    "link": "https://www.autocar.co.uk/opinion/new-cars/mclaren-f1-or-toyota-prius-what-are-20th-centurys-most-influential-cars",
+    "link": "https://www.em.autocar.co.uk/car-news/new-cars/mclaren-retire-artura-gts-and-750s-next-two-years",
     "category": "Automotive",
-    "published": "2026-09-19T00:00:00Z"
+    "published": "2026-09-18T00:00:00Z"
+  },
+  {
+    "title": "Ferrari Challenge UK races into Donington Park this weekend",
+    "source": "Donington Park",
+    "extract": "Ferrari Challenge UK returns to Donington Park for the final round of the 2026 season, with Ferrari 296 Challenge cars contesting the weekend's races and the remaining championship positions.",
+    "image": null,
+    "link": "https://www.donington-park.co.uk/news/2026/sept/14/ferrari-challenge-uk-races-into-donington-park-this-weekend",
+    "category": "Automotive",
+    "published": "2026-09-18T00:00:00Z"
+  },
+  {
+    "title": "Simple Optimization For Linux 7.4 Can Open Files For Reading ~39% Faster",
+    "source": "Phoronix",
+    "extract": "A Linux 7.4 kernel patch removes redundant work in the VFS open path. Testing on a 20-core VM showed a 39% increase in operations per second for opening the same file read-only.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Linux-7.4-Faster-Do-Open",
+    "category": "Technology",
+    "published": "2026-09-19T16:28:00Z"
   },
   {
     "title": "Intel Xe Driver For Linux 7.4 Adds vRAM Health Check, Degraded Memory Handling",
     "source": "Phoronix",
-    "extract": "Intel's Xe kernel graphics driver is gaining vRAM health checking and memory-page offlining in Linux 7.4 development. The work is intended to detect faulty video memory and prevent degraded pages from being reused.",
+    "extract": "Intel's Xe kernel graphics driver is gaining vRAM health checking and memory-page offlining. The work is designed to detect faulty video memory and prevent degraded pages from being reused.",
     "image": null,
     "link": "https://www.phoronix.com/news/Intel-Xe-vRAM-Health-Check",
     "category": "Technology",
     "published": "2026-09-19T10:24:00Z"
   },
   {
-    "title": "Ubuntu 26.10 Switches To The Linux 7.3 Kernel",
-    "source": "Phoronix",
-    "extract": "Ubuntu 26.10 is switching its target kernel from Linux 7.2 to Linux 7.3, keeping the October release aligned with newer upstream hardware support and kernel capabilities.",
-    "image": null,
-    "link": "https://www.phoronix.com/news/Ubuntu-26.10-With-Linux-7.3",
-    "category": "Technology",
-    "published": "2026-09-19T00:50:00Z"
-  },
-  {
     "title": "GNOME OS Turns To Zswap To Deal With OOM Issues, Progress On Geary Email Client Fork",
     "source": "Phoronix",
-    "extract": "GNOME OS is enabling zswap by default to improve responsiveness on memory-constrained systems. The same update covers Convey, a GNOME mail-client fork that adds Microsoft 365 support and GTK4 improvements.",
+    "extract": "GNOME OS is enabling zswap by default to improve responsiveness on memory-constrained systems. The update also covers Convey, a GNOME mail-client fork adding Microsoft 365 support and GTK4 improvements.",
     "image": null,
     "link": "https://www.phoronix.com/news/GNOME-OS-Goes-Zswap",
     "category": "Technology",
     "published": "2026-09-19T10:38:00Z"
   },
   {
-    "title": "Intel suspends bug bounty program that paid up to $100,000 per flaw — new Intigriti disclosure program offers no rewards",
-    "source": "Tom's Hardware",
-    "extract": "Intel appears to have suspended its long-running vulnerability bounty programme, which previously paid up to $100,000 for qualifying reports. Its replacement disclosure programme currently offers no rewards.",
-    "image": "https://cdn.mos.cms.futurecdn.net/CkDCueH65AEMZMenj8tnEF.jpg",
-    "link": "https://www.tomshardware.com/tech-industry/cyber-security/intel-suspends-bug-bounty-program-that-paid-up-to-usd100-000-per-flaw-new-intigriti-disclosure-program-offers-no-rewards",
-    "category": "Technology",
-    "published": "2026-09-19T00:00:00Z"
-  },
-  {
-    "title": "Researchers create DNA computer that performs 100-bit calculations without electricity",
-    "source": "Tom's Hardware",
-    "extract": "Researchers at Maynooth University have built a molecular computer using self-assembling DNA strands. The system has executed several mathematical programs, including calculations involving 100-bit values, using chemical reactions rather than electrical switching.",
-    "image": "https://cdn.mos.cms.futurecdn.net/xfUTVPaJbVFgXjAsVg6PN.jpg",
-    "link": "https://www.tomshardware.com/tech-industry/researchers-create-dna-computer-that-performs-100-bit-calculations-without-electricity-uses-self-assembling-strands-to-perform-computing",
-    "category": "Technology",
-    "published": "2026-09-19T00:00:00Z"
-  },
-  {
-    "title": "Linux Kernel Build Times Ready To Be Significantly Reduced With Latest Patches",
+    "title": "KDE Plasma 6.8 Seeing More Polishing & Fixes, Plasma 6.9 Begins Seeing More Activity",
     "source": "Phoronix",
-    "extract": "New Linux kernel build-system patches could substantially reduce incremental and no-op build times by addressing single-threaded bottlenecks in the kernel build process.",
+    "extract": "KDE developers are polishing Plasma 6.8 after its beta release while early work on Plasma 6.9 gathers pace. Recent changes include fixes to KWin, notification handling and backup information.",
     "image": null,
-    "link": "https://www.phoronix.com/news/Linux-Kbuild-Faster-v3",
+    "link": "https://www.phoronix.com/news/Plasma-6.8-Post-Beta-Fixes",
     "category": "Technology",
-    "published": "2026-09-18T10:26:00Z"
+    "published": "2026-09-19T10:10:00Z"
+  },
+  {
+    "title": "Wine-Staging 11.18 Adds New Patches To Further Improve WoW64",
+    "source": "Phoronix",
+    "extract": "Wine-Staging 11.18 carries new patches for WoW64, including fixes around binary detection and kernel services, alongside updated VKD3D code. The release continues work toward running 32-bit Windows software cleanly in 64-bit environments.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Wine-Staging-11.18",
+    "category": "Technology",
+    "published": "2026-09-19T13:22:00Z"
+  },
+  {
+    "title": "Firefox 156 arrives with a forest of forks in its wake",
+    "source": "The Register",
+    "extract": "Mozilla's Firefox 156 release adds a small set of features while the wider Firefox ecosystem continues to spawn alternative browsers such as Waterfox, LibreWolf and Pale Moon. The release also updates Thunderbird and its enterprise controls.",
+    "image": null,
+    "link": "https://www.theregister.com/software/2026/09/19/firefox-156-arrives-with-a-forest-of-forks-in-its-wake/5297194",
+    "category": "Technology",
+    "published": "2026-09-19T08:28:00Z"
   },
   {
     "title": "Google's \"Painful To Maintain\" Binder C Linux Driver Being Removed In Favor Of Rust",
     "source": "Phoronix",
-    "extract": "Google is preparing to remove Android's long-standing C implementation of the Binder IPC driver from the Linux kernel in favour of its Rust rewrite. The Rust implementation has reached feature parity and is reported to match or exceed the C driver's performance.",
+    "extract": "Google is preparing to remove Android's long-standing C implementation of the Binder IPC driver from Linux in favour of its Rust rewrite. The Rust implementation has reached feature parity with the existing driver.",
     "image": null,
     "link": "https://www.phoronix.com/news/Google-Binder-C-Goodbye",
     "category": "Technology",
     "published": "2026-09-18T16:26:00Z"
   },
   {
-    "title": "CISA Flags Three Actively Exploited Linux Kernel Flaws, Orders Federal Patch by Sunday",
-    "source": "Tech Times",
-    "extract": "Three Linux kernel vulnerabilities have been added to the US Known Exploited Vulnerabilities catalogue, with US federal civilian agencies given a short remediation deadline. The flaws affect separate kernel subsystems and have confirmed evidence of active exploitation.",
+    "title": "Space Trolls of Mahlsdorf - A fully-featured shoot ’em up for the ZX Spectrum by Papi & Sohn",
+    "source": "Indie Retro News",
+    "extract": "A new ZX Spectrum shoot-'em-up supports three-player simultaneous play, with each player using a different craft. The game was built with MPAGD, Shmupkit and several classic development tools and has been tested on real Spectrum hardware.",
     "image": null,
-    "link": "https://www.techtimes.com/articles/327741/20260919/cisa-flags-three-actively-exploited-linux-kernel-flaws-orders-federal-patch-sunday.htm",
-    "category": "Technology",
-    "published": "2026-09-19T11:59:00Z"
+    "link": "https://www.indieretronews.com/2026/09/space-trolls-of-mahlsdorf-fully.html",
+    "category": "Retro Computing",
+    "published": "2026-09-19T10:47:00Z"
+  },
+  {
+    "title": "Cuthbert in Castle Wolfenstein - A First Person Shooter has arrived on the Plus/4!",
+    "source": "Indie Retro News",
+    "extract": "A new Commodore Plus/4 homebrew turns Cuthbert into a pseudo-3D first-person shooter. It uses the machine's hardware to render interconnected chambers across ten levels.",
+    "image": null,
+    "link": "https://www.indieretronews.com/2026/09/cuthbert-in-castle-wolfenstein-first.html",
+    "category": "Retro Computing",
+    "published": "2026-09-18T15:16:00Z"
+  },
+  {
+    "title": "The Blues Brothers : Jukebox Adventure - The PC sequel could be getting a full Amiga AGA version via dlfrsilver",
+    "source": "Indie Retro News",
+    "extract": "A newly discovered Amiga project is converting the PC version of The Blues Brothers: Jukebox Adventure to Amiga AGA. The developer reports that the conversion is already 80% complete and has been tested on real A1200 hardware.",
+    "image": null,
+    "link": "https://www.indieretronews.com/2026/09/the-blues-brothers-jukebox-adventure-pc.html",
+    "category": "Retro Computing",
+    "published": "2026-09-18T15:49:00Z"
   },
   {
     "title": "Type-N-Fire Type-In Packs Arcade Action Into 3K",
     "source": "The Oasis BBS",
-    "extract": "A C64 Appreciation Society video revisits Type-N-Fire, a 3K Commodore 64 type-in game from 1989. The piece examines its compact BASIC code, custom characters, machine-language routines and checksum protection.",
+    "extract": "A C64 Appreciation Society video revisits Type-N-Fire, a 3K Commodore 64 type-in game from 1989, examining its compact BASIC code, custom characters, machine-language routines and checksum protection.",
     "image": null,
     "link": "https://theoasisbbs.com/type-n-fire-type-in-packs-arcade-action-into-3k/",
     "category": "Retro Computing",
@@ -137,7 +155,7 @@
   {
     "title": "Heartbeat Soundtracker C64 Brings Sample Tracking to the Ultimate",
     "source": "The Oasis BBS",
-    "extract": "A new video explores Heartbeat Soundtracker C64, a music-creation package that uses the Commodore 64 Ultimate's extra memory and FPGA resources to bring multichannel sampled tracker playback to Commodore hardware.",
+    "extract": "Heartbeat Soundtracker C64 uses the Commodore 64 Ultimate's additional memory and FPGA resources to bring multichannel sampled tracker playback to Commodore hardware.",
     "image": null,
     "link": "https://theoasisbbs.com/heartbeat-soundtracker-c64-brings-sample-tracking-to-the-ultimate/",
     "category": "Retro Computing",
@@ -146,27 +164,18 @@
   {
     "title": "Visual Assembler 2.4.3 Adds SID Effects and Safer D64 Editing",
     "source": "The Oasis BBS",
-    "extract": "Visual Assembler 2.4.3 adds tracker effects and song ordering to its SID editor, alongside a safer D64 workflow with private working copies and automatic backups. The open-source development environment supports C64 projects and VICE testing.",
+    "extract": "Visual Assembler 2.4.3 adds tracker effects and song ordering to its SID editor, alongside a safer D64 workflow with private working copies and automatic backups for C64 projects.",
     "image": null,
     "link": "https://theoasisbbs.com/visual-assembler-2-4-3-adds-sid-effects-and-safer-d64-editing/",
     "category": "Retro Computing",
     "published": "2026-09-18T00:00:00Z"
   },
   {
-    "title": "C64 Game Creator Beta Nears Release for ARM-Based Macs",
-    "source": "The Oasis BBS",
-    "extract": "Sassoft is preparing a beta of its Commodore 64 Game Creator for ARM-based Macs, with early access planned for supporters and feedback feeding into development.",
+    "title": "BlastEm v1.0 Released",
+    "source": "RetroRGB",
+    "extract": "BlastEm has reached version 1.0, expanding its accurate emulation beyond the Genesis to systems including Sega CD, 32X, Game Gear, Master System and Sega Pico.",
     "image": null,
-    "link": "https://theoasisbbs.com/c64-game-creator-beta-nears-release-for-arm-based-macs/",
-    "category": "Retro Computing",
-    "published": "2026-09-18T00:00:00Z"
-  },
-  {
-    "title": "Kalevala RPG Release Brings Finnish Folklore to Commodore Systems",
-    "source": "The Oasis BBS",
-    "extract": "A new RPG drawing on Finnish folklore has been released for Commodore systems, adding a fresh homebrew adventure to the modern software library for classic hardware.",
-    "image": null,
-    "link": "https://theoasisbbs.com/kalevala-rpg-release-brings-finnish-folklore-to-commodore-systems/",
+    "link": "https://retrorgb.com/blastem-v1-0-released.html",
     "category": "Retro Computing",
     "published": "2026-09-18T00:00:00Z"
   },
@@ -191,7 +200,7 @@
   {
     "title": "Video Game Color Cycling Animates Static Images",
     "source": "The Oasis BBS",
-    "extract": "A new retro-computing experiment uses classic palette and colour-cycling techniques to animate otherwise static images, revisiting a distinctive trick from the era of limited graphics hardware.",
+    "extract": "A retro-computing experiment uses classic palette and colour-cycling techniques to animate otherwise static images, revisiting a distinctive trick from the era of limited graphics hardware.",
     "image": null,
     "link": "https://theoasisbbs.com/video-game-color-cycling-animates-static-images/",
     "category": "Retro Computing Projects",
@@ -200,7 +209,7 @@
   {
     "title": "Elite 0x10 Brings Classic Space Trading to the Commander X16",
     "source": "The Oasis BBS",
-    "extract": "Elite 0x10 is a fan project bringing the landmark 1984 space-trading game to the Commander X16. The project is targeting a 2026 completion and adapts the classic concept to modern retro hardware.",
+    "extract": "Elite 0x10 is a fan project bringing the landmark 1984 space-trading game to the Commander X16. The free project is targeting completion during 2026.",
     "image": null,
     "link": "https://theoasisbbs.com/elite-0x10-brings-classic-space-trading-to-the-commander-x16/",
     "category": "Retro Computing Projects",
@@ -209,7 +218,7 @@
   {
     "title": "Vixen Gameboy Demake - October 2023 Prototype",
     "source": "Newgrounds",
-    "extract": "An archived Game Boy prototype of Vixen has been published, documenting an early demake inspired by the 1988 ZX Spectrum and Commodore 64 game. The prototype helped lead to a later Game Boy Color port.",
+    "extract": "An archived Game Boy prototype of Vixen has been published, documenting an early demake inspired by the 1988 ZX Spectrum and Commodore 64 game and showing the route toward a later Game Boy Color port.",
     "image": null,
     "link": "https://www.newgrounds.com/portal/view/1052409",
     "category": "Retro Computing Projects",
@@ -225,12 +234,21 @@
     "published": "2026-09-18T00:00:00Z"
   },
   {
-    "title": "The Week’s Best Albums: Neil Young & The Chrome Hearts, Rhiannon Giddens, and more",
-    "source": "Qobuz Magazine",
-    "extract": "Qobuz's weekly new-album feature includes David Bowie's The Shel Talmy Recordings, released on September 18 with previously unheard material from his early career.",
+    "title": "I Came To Be Dazzled, And Geneva Watch Days 2026 Delivered",
+    "source": "Fratello Watches",
+    "extract": "A retrospective of Geneva Watch Days 2026 examines an edition that brought together 71 brands and nearly 400 debuting watches, alongside a large collector and press presence.",
     "image": null,
-    "link": "https://www.qobuz.com/us-en/magazine/story/2026/09/18/the-weeks-best-albums-neil-young-the-chrome-hearts-rhiannon-giddens-and-more/",
-    "category": "Music",
+    "link": "https://www.fratellowatches.com/the-geneva-watch-days-2026-delivered/",
+    "category": "Watches",
+    "published": "2026-09-18T00:00:00Z"
+  },
+  {
+    "title": "Oris Divers Date: The Modern Evolution of a Retro Dive Watch",
+    "source": "Teddy Baldassarre",
+    "extract": "Teddy Baldassarre examines how the Oris Divers Date evolves the Divers Sixty-Five formula with a 39mm case, 200 metres of water resistance, a ceramic bezel and quick-release fittings.",
+    "image": "https://teddybaldassarre.com/cdn/shop/articles/Oris-Divers-Date-wrist-FI_9eaf0730-bf4f-4bbd-8328-0494697dfa71.jpg?v=1789753252&width=800",
+    "link": "https://teddybaldassarre.com/blogs/watches/oris-divers-date-review",
+    "category": "Watches",
     "published": "2026-09-18T00:00:00Z"
   }
 ]
