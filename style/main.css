@@ -1798,21 +1798,24 @@ body.settings-modal-open {
 .settings-engine-list {
     border:
         1px solid var(--line);
+
+    overflow:
+        hidden;
 }
 
 
 .settings-engine-row {
     display:
-        flex;
+        grid;
+
+    grid-template-columns:
+        24px minmax(0, 1fr) auto;
 
     align-items:
         center;
 
-    justify-content:
-        space-between;
-
     gap:
-        18px;
+        10px;
 
     min-height:
         60px;
@@ -1822,12 +1825,68 @@ body.settings-modal-open {
 
     border-bottom:
         1px solid var(--line);
+
+    background:
+        transparent;
+
+    transition:
+        background 120ms ease,
+        opacity 120ms ease;
 }
 
 
 .settings-engine-row:last-child {
     border-bottom:
         0;
+}
+
+
+.settings-engine-row:hover,
+.settings-engine-row.open {
+    background:
+        var(--surface-subtle);
+}
+
+
+.settings-engine-row.is-dragging {
+    opacity:
+        0.45;
+}
+
+
+.settings-engine-handle {
+    display:
+        grid;
+
+    width:
+        20px;
+
+    height:
+        32px;
+
+    place-items:
+        center;
+
+    color:
+        var(--faint);
+
+    font-size:
+        14px;
+
+    line-height:
+        1;
+
+    cursor:
+        grab;
+
+    user-select:
+        none;
+}
+
+
+.settings-engine-row:active .settings-engine-handle {
+    cursor:
+        grabbing;
 }
 
 
@@ -1877,6 +1936,18 @@ body.settings-modal-open {
 
 
 .settings-engine-copy {
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    align-items:
+        baseline;
+
+    gap:
+        0 8px;
+
     min-width:
         0;
 }
@@ -1908,14 +1979,23 @@ body.settings-modal-open {
 
 
 .settings-engine-url {
-    margin-top:
-        4px;
-
     color:
         var(--muted);
 
     font-size:
         8px;
+}
+
+
+.settings-engine-status {
+    color:
+        var(--faint);
+
+    font-size:
+        7px;
+
+    letter-spacing:
+        0.1em;
 }
 
 
@@ -1927,179 +2007,69 @@ body.settings-modal-open {
         center;
 
     gap:
-        16px;
+        4px;
 
     flex:
         0 0 auto;
 }
 
 
-.settings-engine-default,
-.settings-engine-enabled {
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    gap:
-        6px;
-
-    color:
-        var(--muted);
-
-    font-size:
-        8px;
-
-    white-space:
-        nowrap;
-}
-
-
-.settings-engine-default input,
-.settings-engine-enabled input {
-    appearance:
-        none;
-
+.settings-engine-expand,
+.settings-engine-remove {
     width:
-        10px;
+        28px;
 
     height:
-        10px;
+        28px;
 
-    margin:
+    padding:
         0;
 
     border:
-        1px solid var(--line-strong);
+        1px solid transparent;
 
     background:
         transparent;
 
-    flex:
-        0 0 auto;
-}
-
-.settings-engine-default input {
-    border-radius:
-        50%;
-
-    display:
-        grid;
-
-    place-items:
-        center;
-}
-
-.settings-engine-default input:checked::after {
-    content:
-        "";
-
-    width:
-        4px;
-
-    height:
-        4px;
-
-    border-radius:
-        50%;
-
-    background:
-        var(--text);
-}
-
-.settings-engine-enabled input {
-    border-radius:
-        2px;
-}
-
-.settings-engine-enabled input:checked {
-    background:
-        var(--text);
-
-    border-color:
-        var(--text);
-
-    box-shadow:
-        inset 0 0 0 2px var(--surface);
-}
-
-
-.settings-details {
-    margin-top:
-        10px;
-
-    border:
-        1px solid var(--line);
-}
-
-
-.settings-details summary {
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        space-between;
-
-    padding:
-        12px;
-
     color:
         var(--muted);
 
     font-size:
-        8px;
-
-    letter-spacing:
-        0.12em;
-
-    list-style:
-        none;
-
-    cursor:
-        pointer;
-}
-
-
-.settings-details summary::-webkit-details-marker {
-    display:
-        none;
-}
-
-
-.settings-details summary::after {
-    content:
-        "+";
-
-    color:
-        var(--faint);
-
-    font-size:
-        12px;
+        15px;
 
     line-height:
         1;
 }
 
 
-.settings-details[open] summary::after {
-    content:
-        "−";
+.settings-engine-expand:hover,
+.settings-engine-remove:hover {
+    border-color:
+        var(--line);
+
+    color:
+        var(--text);
 }
 
 
-.settings-placeholder-list {
-    display:
-        grid;
+.settings-engine-expand {
+    transition:
+        transform 120ms ease;
+}
 
-    gap:
-        10px;
+
+.settings-engine-row.open .settings-engine-expand {
+    transform:
+        rotate(180deg);
+}
+
+
+.settings-engine-placeholder {
+    grid-column:
+        2 / 4;
 
     padding:
-        0 12px 12px;
+        0 0 4px;
 }
 
 
@@ -2108,7 +2078,7 @@ body.settings-modal-open {
         grid;
 
     grid-template-columns:
-        115px minmax(0, 1fr);
+        92px minmax(0, 1fr);
 
     align-items:
         center;
@@ -2125,11 +2095,11 @@ body.settings-modal-open {
     font-size:
         8px;
 
-    text-transform:
-        uppercase;
-
     letter-spacing:
         0.08em;
+
+    text-transform:
+        uppercase;
 }
 
 
@@ -2177,6 +2147,255 @@ body.settings-modal-open {
         var(--line-strong);
 }
 
+
+.settings-placeholder-field input:focus-visible,
+.settings-engine-expand:focus-visible,
+.settings-engine-remove:focus-visible,
+.settings-add-engine-button:focus-visible,
+.settings-engine-editor-close:focus-visible {
+    outline:
+        1px solid var(--line-strong);
+
+    outline-offset:
+        2px;
+}
+
+
+.settings-add-engine-button {
+    width:
+        100%;
+
+    min-height:
+        40px;
+
+    margin-top:
+        10px;
+
+    padding:
+        0 12px;
+
+    border:
+        1px solid var(--line);
+
+    background:
+        transparent;
+
+    color:
+        var(--muted);
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        0.12em;
+
+    text-align:
+        left;
+}
+
+
+.settings-add-engine-button:hover {
+    border-color:
+        var(--line-strong);
+
+    color:
+        var(--text);
+
+    background:
+        var(--surface-subtle);
+}
+
+
+.settings-engine-editor {
+    margin-top:
+        10px;
+
+    padding:
+        12px;
+
+    border:
+        1px solid var(--line);
+
+    background:
+        var(--surface-subtle);
+}
+
+
+.settings-engine-editor-header {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        12px;
+
+    margin-bottom:
+        12px;
+}
+
+
+.settings-engine-editor-kicker {
+    color:
+        var(--muted);
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        0.12em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.settings-engine-editor-close {
+    width:
+        26px;
+
+    height:
+        26px;
+
+    padding:
+        0;
+
+    border:
+        1px solid transparent;
+
+    background:
+        transparent;
+
+    color:
+        var(--muted);
+
+    font-size:
+        15px;
+}
+
+
+.settings-engine-editor-close:hover {
+    border-color:
+        var(--line);
+
+    color:
+        var(--text);
+}
+
+
+.settings-engine-editor-fields {
+    display:
+        grid;
+
+    gap:
+        10px;
+}
+
+
+.settings-engine-field {
+    display:
+        grid;
+
+    grid-template-columns:
+        92px minmax(0, 1fr);
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+}
+
+
+.settings-engine-field > span {
+    color:
+        var(--muted);
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        0.08em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.settings-engine-field input {
+    width:
+        100%;
+
+    height:
+        34px;
+
+    min-width:
+        0;
+
+    padding:
+        0 9px;
+
+    border:
+        1px solid var(--line);
+
+    outline:
+        0;
+
+    background:
+        transparent;
+
+    color:
+        var(--text);
+
+    font-size:
+        9px;
+}
+
+
+.settings-engine-field input::placeholder {
+    color:
+        var(--faint);
+
+    opacity:
+        1;
+}
+
+
+.settings-engine-field input:focus {
+    border-color:
+        var(--line-strong);
+}
+
+
+.settings-engine-editor-help {
+    margin:
+        10px 0 0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        8px;
+
+    line-height:
+        1.6;
+}
+
+
+.settings-engine-editor-actions {
+    display:
+        flex;
+
+    justify-content:
+        flex-end;
+
+    margin-top:
+        12px;
+}
 
 .settings-dialog-footer {
     display:
@@ -2283,29 +2502,57 @@ body.settings-modal-open {
 
 
     .settings-engine-row {
-        align-items:
-            flex-start;
-
-        flex-direction:
-            column;
+        grid-template-columns:
+            24px minmax(0, 1fr) auto;
 
         gap:
-            10px;
+            8px;
     }
 
 
-    .settings-engine-controls {
-        width:
+    .settings-engine-info {
+        min-width:
+            0;
+    }
+
+
+    .settings-engine-copy {
+        display:
+            grid;
+
+        gap:
+            3px;
+    }
+
+
+    .settings-engine-url {
+        max-width:
             100%;
-
-        justify-content:
-            space-between;
     }
 
 
-    .settings-placeholder-field {
+    .settings-placeholder-field,
+    .settings-engine-field {
         grid-template-columns:
             1fr;
+    }
+
+
+    .settings-engine-placeholder {
+        grid-column:
+            1 / -1;
+    }
+
+
+    .settings-engine-editor-actions {
+        justify-content:
+            stretch;
+    }
+
+
+    .settings-engine-editor-actions .settings-dialog-button {
+        width:
+            100%;
     }
 
 }
