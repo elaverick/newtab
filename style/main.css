@@ -1081,8 +1081,8 @@ a {
     width:
         100%;
 
-    height:
-        190px;
+    aspect-ratio:
+        16 / 9;
 
     display:
         grid;
@@ -2690,8 +2690,8 @@ body.settings-modal-open {
 
     .article-image {
 
-        height:
-            180px;
+        aspect-ratio:
+            16 / 9;
     }
 
 
