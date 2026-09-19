@@ -185,6 +185,43 @@ The categories are editorial rather than technical. You can change them, add new
 
 ---
 
+## Use as a Chrome New Tab page
+
+The GitHub Pages site is a normal static website. Chrome does not let an ordinary website replace the built-in New Tab page, so this repository includes a tiny Manifest V3 extension that uses Chrome's supported `chrome_url_overrides.newtab` mechanism and redirects the new tab to the GitHub Pages site.
+
+The extension is deliberately separate from the website itself. This means the site remains a normal static GitHub Pages deployment, while the extension only handles the browser integration.
+
+### Install locally
+
+For personal use, the extension can be loaded unpacked:
+
+1. Make sure your GitHub Pages site is working.
+2. Open `extension/redirect.js`.
+3. Set `LIMINAL_NEW_TAB_URL` to your GitHub Pages URL.
+4. In Chrome, open `chrome://extensions`.
+5. Enable **Developer mode**.
+6. Click **Load unpacked**.
+7. Select the repository's `extension` folder.
+
+Chrome will then use the extension's override whenever a new tab is opened.
+
+The extension uses `window.location.replace()`, so the temporary override page is replaced rather than leaving a redirect page in the browser history.
+
+### Forking
+
+A fork only needs one change to use its own GitHub Pages site:
+
+```js
+const LIMINAL_NEW_TAB_URL =
+    "https://your-user.github.io/your-repository/";
+```
+
+The extension does not contain a copy of the website. It always opens the configured GitHub Pages URL, so updates to the website and `articles.json` are available without repackaging the extension.
+
+For a published extension, the same `extension/` directory can be packaged and submitted separately from the website.
+
+---
+
 ## Building your own version
 
 The easiest route is:
