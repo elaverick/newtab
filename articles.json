@@ -6,6 +6,7 @@
         "link": "https://example.com/article-1",
         "category": "Automotive"
     },
+
     {
         "title": "A Quiet Return to Analogue",
         "extract": "An example editorial note about cars, design, engineering and the changing relationship between machines and the people who use them.",
@@ -13,6 +14,7 @@
         "link": "https://example.com/article-2",
         "category": "Automotive"
     },
+
     {
         "title": "Why Small Sports Cars Still Matter",
         "extract": "An example editorial note about cars, design, engineering and the changing relationship between machines and the people who use them.",
@@ -20,6 +22,7 @@
         "link": "https://example.com/article-3",
         "category": "Automotive"
     },
+
     {
         "title": "The Long Tail of the Supercar",
         "extract": "An example editorial note about cars, design, engineering and the changing relationship between machines and the people who use them.",
@@ -27,6 +30,7 @@
         "link": "https://example.com/article-4",
         "category": "Automotive"
     },
+
     {
         "title": "Designing for the Driver",
         "extract": "An example editorial note about cars, design, engineering and the changing relationship between machines and the people who use them.",
@@ -34,6 +38,7 @@
         "link": "https://example.com/article-5",
         "category": "Automotive"
     },
+
     {
         "title": "A New Age of Grand Touring",
         "extract": "An example editorial note about cars, design, engineering and the changing relationship between machines and the people who use them.",
@@ -41,6 +46,7 @@
         "link": "https://example.com/article-6",
         "category": "Automotive"
     },
+
     {
         "title": "The Architecture of Speed",
         "extract": "An example editorial note about cars, design, engineering and the changing relationship between machines and the people who use them.",
@@ -48,6 +54,7 @@
         "link": "https://example.com/article-7",
         "category": "Automotive"
     },
+
     {
         "title": "When Luxury Gets Strange",
         "extract": "An example editorial note about cars, design, engineering and the changing relationship between machines and the people who use them.",
@@ -55,6 +62,7 @@
         "link": "https://example.com/article-8",
         "category": "Automotive"
     },
+
     {
         "title": "The Road Less Travelled",
         "extract": "An example editorial note about cars, design, engineering and the changing relationship between machines and the people who use them.",
@@ -62,6 +70,7 @@
         "link": "https://example.com/article-9",
         "category": "Automotive"
     },
+
     {
         "title": "The Future of the Coachbuilt Car",
         "extract": "An example editorial note about cars, design, engineering and the changing relationship between machines and the people who use them.",
@@ -69,6 +78,7 @@
         "link": "https://example.com/article-10",
         "category": "Automotive"
     },
+
     {
         "title": "The Machines We Keep",
         "extract": "An example editorial note about software, computing and the systems that increasingly shape everyday life.",
@@ -76,6 +86,7 @@
         "link": "https://example.com/article-11",
         "category": "Technology"
     },
+
     {
         "title": "A Different Kind of Interface",
         "extract": "An example editorial note about software, computing and the systems that increasingly shape everyday life.",
@@ -83,6 +94,7 @@
         "link": "https://example.com/article-12",
         "category": "Technology"
     },
+
     {
         "title": "The Quiet Evolution of Computing",
         "extract": "An example editorial note about software, computing and the systems that increasingly shape everyday life.",
@@ -90,6 +102,7 @@
         "link": "https://example.com/article-13",
         "category": "Technology"
     },
+
     {
         "title": "What Happens After the App",
         "extract": "An example editorial note about software, computing and the systems that increasingly shape everyday life.",
@@ -97,6 +110,7 @@
         "link": "https://example.com/article-14",
         "category": "Technology"
     },
+
     {
         "title": "The Return of Local Software",
         "extract": "An example editorial note about software, computing and the systems that increasingly shape everyday life.",
@@ -104,6 +118,7 @@
         "link": "https://example.com/article-15",
         "category": "Technology"
     },
+
     {
         "title": "Why Small Tools Feel Better",
         "extract": "An example editorial note about software, computing and the systems that increasingly shape everyday life.",
@@ -111,6 +126,7 @@
         "link": "https://example.com/article-16",
         "category": "Technology"
     },
+
     {
         "title": "The Shape of Personal Data",
         "extract": "An example editorial note about software, computing and the systems that increasingly shape everyday life.",
@@ -118,6 +134,7 @@
         "link": "https://example.com/article-17",
         "category": "Technology"
     },
+
     {
         "title": "Computing Without the Cloud",
         "extract": "An example editorial note about software, computing and the systems that increasingly shape everyday life.",
@@ -125,6 +142,7 @@
         "link": "https://example.com/article-18",
         "category": "Technology"
     },
+
     {
         "title": "The Unfinished Desktop",
         "extract": "An example editorial note about software, computing and the systems that increasingly shape everyday life.",
@@ -132,6 +150,7 @@
         "link": "https://example.com/article-19",
         "category": "Technology"
     },
+
     {
         "title": "A More Private Internet",
         "extract": "An example editorial note about software, computing and the systems that increasingly shape everyday life.",
@@ -139,6 +158,7 @@
         "link": "https://example.com/article-20",
         "category": "Technology"
     },
+
     {
         "title": "Objects With a Longer Memory",
         "extract": "An example editorial note about objects, interfaces, materials and the choices that make things feel considered.",
@@ -146,6 +166,7 @@
         "link": "https://example.com/article-21",
         "category": "Design"
     },
+
     {
         "title": "The Case for Imperfection",
         "extract": "An example editorial note about objects, interfaces, materials and the choices that make things feel considered.",
@@ -153,6 +174,7 @@
         "link": "https://example.com/article-22",
         "category": "Design"
     },
+
     {
         "title": "Designing Around Constraints",
         "extract": "An example editorial note about objects, interfaces, materials and the choices that make things feel considered.",
@@ -160,6 +182,7 @@
         "link": "https://example.com/article-23",
         "category": "Design"
     },
+
     {
         "title": "Why Good Interfaces Disappear",
         "extract": "An example editorial note about objects, interfaces, materials and the choices that make things feel considered.",
@@ -167,6 +190,7 @@
         "link": "https://example.com/article-24",
         "category": "Design"
     },
+
     {
         "title": "The Return of Visible Structure",
         "extract": "An example editorial note about objects, interfaces, materials and the choices that make things feel considered.",
@@ -174,6 +198,7 @@
         "link": "https://example.com/article-25",
         "category": "Design"
     },
+
     {
         "title": "A Study in Useful Friction",
         "extract": "An example editorial note about objects, interfaces, materials and the choices that make things feel considered.",
@@ -181,6 +206,7 @@
         "link": "https://example.com/article-26",
         "category": "Design"
     },
+
     {
         "title": "Making Space for the Unnecessary",
         "extract": "An example editorial note about objects, interfaces, materials and the choices that make things feel considered.",
@@ -188,6 +214,7 @@
         "link": "https://example.com/article-27",
         "category": "Design"
     },
+
     {
         "title": "The Beauty of the Unfinished",
         "extract": "An example editorial note about objects, interfaces, materials and the choices that make things feel considered.",
@@ -195,6 +222,7 @@
         "link": "https://example.com/article-28",
         "category": "Design"
     },
+
     {
         "title": "When Utility Becomes Character",
         "extract": "An example editorial note about objects, interfaces, materials and the choices that make things feel considered.",
@@ -202,6 +230,7 @@
         "link": "https://example.com/article-29",
         "category": "Design"
     },
+
     {
         "title": "Against the Perfect Surface",
         "extract": "An example editorial note about objects, interfaces, materials and the choices that make things feel considered.",
@@ -209,6 +238,7 @@
         "link": "https://example.com/article-30",
         "category": "Design"
     },
+
     {
         "title": "Things We Notice Later",
         "extract": "An example editorial note about memory, media, collecting and the quieter corners of contemporary culture.",
@@ -216,6 +246,7 @@
         "link": "https://example.com/article-31",
         "category": "Culture"
     },
+
     {
         "title": "The Enduring Appeal of Obscure Things",
         "extract": "An example editorial note about memory, media, collecting and the quieter corners of contemporary culture.",
@@ -223,6 +254,7 @@
         "link": "https://example.com/article-32",
         "category": "Culture"
     },
+
     {
         "title": "Why Archives Keep Growing",
         "extract": "An example editorial note about memory, media, collecting and the quieter corners of contemporary culture.",
@@ -230,6 +262,7 @@
         "link": "https://example.com/article-33",
         "category": "Culture"
     },
+
     {
         "title": "A Brief History of Being Offline",
         "extract": "An example editorial note about memory, media, collecting and the quieter corners of contemporary culture.",
@@ -237,6 +270,7 @@
         "link": "https://example.com/article-34",
         "category": "Culture"
     },
+
     {
         "title": "The Comfort of Familiar Rituals",
         "extract": "An example editorial note about memory, media, collecting and the quieter corners of contemporary culture.",
@@ -244,6 +278,7 @@
         "link": "https://example.com/article-35",
         "category": "Culture"
     },
+
     {
         "title": "The Strange Life of Old Media",
         "extract": "An example editorial note about memory, media, collecting and the quieter corners of contemporary culture.",
@@ -251,6 +286,7 @@
         "link": "https://example.com/article-36",
         "category": "Culture"
     },
+
     {
         "title": "Objects That Became Culture",
         "extract": "An example editorial note about memory, media, collecting and the quieter corners of contemporary culture.",
@@ -258,6 +294,7 @@
         "link": "https://example.com/article-37",
         "category": "Culture"
     },
+
     {
         "title": "The People Who Collect Everything",
         "extract": "An example editorial note about memory, media, collecting and the quieter corners of contemporary culture.",
@@ -265,6 +302,7 @@
         "link": "https://example.com/article-38",
         "category": "Culture"
     },
+
     {
         "title": "Notes From the Cultural Margins",
         "extract": "An example editorial note about memory, media, collecting and the quieter corners of contemporary culture.",
@@ -272,6 +310,7 @@
         "link": "https://example.com/article-39",
         "category": "Culture"
     },
+
     {
         "title": "What We Choose to Remember",
         "extract": "An example editorial note about memory, media, collecting and the quieter corners of contemporary culture.",
@@ -279,6 +318,7 @@
         "link": "https://example.com/article-40",
         "category": "Culture"
     },
+
     {
         "title": "The Smallest Useful Question",
         "extract": "An example editorial note about observation, discovery, measurement and questions that remain open.",
@@ -286,6 +326,7 @@
         "link": "https://example.com/article-41",
         "category": "Science"
     },
+
     {
         "title": "Looking More Closely",
         "extract": "An example editorial note about observation, discovery, measurement and questions that remain open.",
@@ -293,6 +334,7 @@
         "link": "https://example.com/article-42",
         "category": "Science"
     },
+
     {
         "title": "A Map of the Invisible",
         "extract": "An example editorial note about observation, discovery, measurement and questions that remain open.",
@@ -300,6 +342,7 @@
         "link": "https://example.com/article-43",
         "category": "Science"
     },
+
     {
         "title": "The Science of Ordinary Things",
         "extract": "An example editorial note about observation, discovery, measurement and questions that remain open.",
@@ -307,6 +350,7 @@
         "link": "https://example.com/article-44",
         "category": "Science"
     },
+
     {
         "title": "What We Still Do Not Know",
         "extract": "An example editorial note about observation, discovery, measurement and questions that remain open.",
@@ -314,6 +358,7 @@
         "link": "https://example.com/article-45",
         "category": "Science"
     },
+
     {
         "title": "Patterns in Unexpected Places",
         "extract": "An example editorial note about observation, discovery, measurement and questions that remain open.",
@@ -321,6 +366,7 @@
         "link": "https://example.com/article-46",
         "category": "Science"
     },
+
     {
         "title": "A Better Way to Measure",
         "extract": "An example editorial note about observation, discovery, measurement and questions that remain open.",
@@ -328,6 +374,7 @@
         "link": "https://example.com/article-47",
         "category": "Science"
     },
+
     {
         "title": "The Long View of Discovery",
         "extract": "An example editorial note about observation, discovery, measurement and questions that remain open.",
@@ -335,6 +382,7 @@
         "link": "https://example.com/article-48",
         "category": "Science"
     },
+
     {
         "title": "When Simple Systems Become Complex",
         "extract": "An example editorial note about observation, discovery, measurement and questions that remain open.",
@@ -342,6 +390,7 @@
         "link": "https://example.com/article-49",
         "category": "Science"
     },
+
     {
         "title": "Questions Worth Keeping",
         "extract": "An example editorial note about observation, discovery, measurement and questions that remain open.",
@@ -349,6 +398,7 @@
         "link": "https://example.com/article-50",
         "category": "Science"
     },
+
     {
         "title": "Buildings That Refuse to Shout",
         "extract": "An example editorial note about buildings, spaces, materials and the ways places shape experience.",
@@ -356,6 +406,7 @@
         "link": "https://example.com/article-51",
         "category": "Architecture"
     },
+
     {
         "title": "The Quiet Architecture of Everyday Life",
         "extract": "An example editorial note about buildings, spaces, materials and the ways places shape experience.",
@@ -363,6 +414,7 @@
         "link": "https://example.com/article-52",
         "category": "Architecture"
     },
+
     {
         "title": "What Makes a Place Feel Permanent",
         "extract": "An example editorial note about buildings, spaces, materials and the ways places shape experience.",
@@ -370,6 +422,7 @@
         "link": "https://example.com/article-53",
         "category": "Architecture"
     },
+
     {
         "title": "Designing for Weather",
         "extract": "An example editorial note about buildings, spaces, materials and the ways places shape experience.",
@@ -377,6 +430,7 @@
         "link": "https://example.com/article-54",
         "category": "Architecture"
     },
+
     {
         "title": "The Case for Smaller Spaces",
         "extract": "An example editorial note about buildings, spaces, materials and the ways places shape experience.",
@@ -384,6 +438,7 @@
         "link": "https://example.com/article-55",
         "category": "Architecture"
     },
+
     {
         "title": "Architecture After the Landmark",
         "extract": "An example editorial note about buildings, spaces, materials and the ways places shape experience.",
@@ -391,6 +446,7 @@
         "link": "https://example.com/article-56",
         "category": "Architecture"
     },
+
     {
         "title": "Rooms Built Around Light",
         "extract": "An example editorial note about buildings, spaces, materials and the ways places shape experience.",
@@ -398,6 +454,7 @@
         "link": "https://example.com/article-57",
         "category": "Architecture"
     },
+
     {
         "title": "The Return of Honest Materials",
         "extract": "An example editorial note about buildings, spaces, materials and the ways places shape experience.",
@@ -405,6 +462,7 @@
         "link": "https://example.com/article-58",
         "category": "Architecture"
     },
+
     {
         "title": "Cities Between Uses",
         "extract": "An example editorial note about buildings, spaces, materials and the ways places shape experience.",
@@ -412,6 +470,7 @@
         "link": "https://example.com/article-59",
         "category": "Architecture"
     },
+
     {
         "title": "A Different Idea of Home",
         "extract": "An example editorial note about buildings, spaces, materials and the ways places shape experience.",
