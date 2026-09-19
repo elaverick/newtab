@@ -251,7 +251,7 @@ searchForm.addEventListener("submit", event => {
    ARTICLES
    ================================================================ */
 
-const ARTICLES_PER_PAGE = 6;
+const ARTICLES_PER_LOAD = 6;
 
 const articleGrid =
     document.getElementById("articleGrid");
@@ -259,22 +259,15 @@ const articleGrid =
 const articleTemplate =
     document.getElementById("articleTemplate");
 
-const articlePagination =
-    document.getElementById("articlePagination");
-
-const previousArticles =
-    document.getElementById("previousArticles");
-
-const nextArticles =
-    document.getElementById("nextArticles");
-
-const articlePageStatus =
-    document.getElementById("articlePageStatus");
+const articleSentinel =
+    document.getElementById("articleSentinel");
 
 
 let articles = [];
 
-let currentArticlePage = 0;
+let renderedArticleCount = 0;
+
+let isLoadingArticles = false;
 
 
 function renderArticle(article, index) {
@@ -351,21 +344,25 @@ function renderArticle(article, index) {
 }
 
 
-function renderArticlePage() {
+function renderNextArticles() {
 
-    const totalPages =
-        Math.ceil(
-            articles.length /
-            ARTICLES_PER_PAGE
-        );
+    if (
+        isLoadingArticles ||
+        renderedArticleCount >= articles.length
+    ) {
+        return;
+    }
+
+
+    isLoadingArticles = true;
+
 
     const start =
-        currentArticlePage *
-        ARTICLES_PER_PAGE;
+        renderedArticleCount;
 
     const end =
         Math.min(
-            start + ARTICLES_PER_PAGE,
+            start + ARTICLES_PER_LOAD,
             articles.length
         );
 
@@ -395,76 +392,48 @@ function renderArticlePage() {
         });
 
 
-    articleGrid.replaceChildren(
+    articleGrid.appendChild(
         fragment
     );
 
 
-    articlePageStatus.textContent =
-        totalPages > 1
-            ? `PAGE ${currentArticlePage + 1} / ${totalPages}`
-            : "";
+    renderedArticleCount =
+        end;
 
+    isLoadingArticles = false;
 
-    previousArticles.disabled =
-        currentArticlePage === 0;
-
-    nextArticles.disabled =
-        currentArticlePage >= totalPages - 1;
-
-
-    articlePagination.hidden =
-        totalPages <= 1;
-
-}
-
-
-function showArticlePage(page) {
-
-    const totalPages =
-        Math.ceil(
-            articles.length /
-            ARTICLES_PER_PAGE
-        );
 
     if (
-        page < 0 ||
-        page >= totalPages
+        renderedArticleCount >= articles.length &&
+        articleObserver
     ) {
-        return;
+
+        articleObserver.disconnect();
+
     }
-
-
-    currentArticlePage =
-        page;
-
-    renderArticlePage();
 
 }
 
 
-previousArticles.addEventListener(
-    "click",
-    () => {
+const articleObserver =
+    new IntersectionObserver(
+        entries => {
 
-        showArticlePage(
-            currentArticlePage - 1
-        );
+            if (
+                entries.some(
+                    entry => entry.isIntersecting
+                )
+            ) {
 
-    }
-);
+                renderNextArticles();
 
+            }
 
-nextArticles.addEventListener(
-    "click",
-    () => {
-
-        showArticlePage(
-            currentArticlePage + 1
-        );
-
-    }
-);
+        },
+        {
+            rootMargin: "400px 0px"
+        }
+    );
 
 
 async function loadArticles() {
@@ -504,10 +473,23 @@ async function loadArticles() {
         articles =
             data;
 
-        currentArticlePage =
+        renderedArticleCount =
             0;
 
-        renderArticlePage();
+        articleGrid.replaceChildren();
+
+        renderNextArticles();
+
+
+        if (
+            renderedArticleCount < articles.length
+        ) {
+
+            articleObserver.observe(
+                articleSentinel
+            );
+
+        }
 
 
     } catch (error) {
@@ -534,16 +516,9 @@ async function loadArticles() {
             message
         );
 
-
-        articlePagination.hidden =
-            true;
-
     }
 
 }
 
-
-articlePagination.hidden =
-    true;
 
 loadArticles();
