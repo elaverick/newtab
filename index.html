@@ -82,13 +82,13 @@
             </span>
 
             <button
-                class="theme-toggle"
-                id="themeToggle"
+                class="settings-button"
+                id="settingsButton"
                 type="button"
-                aria-label="Toggle light and dark mode"
-                title="Toggle light and dark mode"
+                aria-label="Settings"
+                title="Settings"
             >
-                ◐
+                ⚙
             </button>
 
         </div>
@@ -153,36 +153,7 @@
                 <div
                     class="provider-menu"
                     id="providerMenu"
-                >
-
-                    <button
-                        class="provider-option active"
-                        data-provider="Google"
-                        data-mark="G"
-                        type="button"
-                    >
-                        Google
-                    </button>
-
-                    <button
-                        class="provider-option"
-                        data-provider="ChatGPT"
-                        data-mark="C"
-                        type="button"
-                    >
-                        ChatGPT
-                    </button>
-
-                    <button
-                        class="provider-option"
-                        data-provider="DuckDuckGo"
-                        data-mark="D"
-                        type="button"
-                    >
-                        DuckDuckGo
-                    </button>
-
-                </div>
+                ></div>
 
             </div>
 
@@ -409,6 +380,247 @@
             </div>
 
         </div>
+
+    </section>
+
+
+    <div
+        class="settings-modal"
+        id="settingsModal"
+        hidden
+    >
+
+        <div
+            class="settings-modal-backdrop"
+            data-settings-close
+        ></div>
+
+        <div
+            class="settings-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="settingsDialogTitle"
+        >
+
+            <div class="settings-dialog-header">
+
+                <div>
+
+                    <span class="settings-dialog-kicker">
+                        00 / SETTINGS
+                    </span>
+
+                    <h3
+                        class="settings-dialog-title"
+                        id="settingsDialogTitle"
+                    >
+                        Settings
+                    </h3>
+
+                </div>
+
+                <button
+                    class="settings-dialog-close"
+                    id="settingsClose"
+                    type="button"
+                    aria-label="Close settings"
+                >
+                    ×
+                </button>
+
+            </div>
+
+            <p class="settings-dialog-description">
+                Configure how the index behaves.
+            </p>
+
+            <div class="settings-group">
+
+                <div class="settings-group-header">
+
+                    <span class="settings-group-kicker">
+                        APPEARANCE
+                    </span>
+
+                    <span class="settings-group-description">
+                        Choose how the page is lit.
+                    </span>
+
+                </div>
+
+                <div
+                    class="settings-theme-options"
+                    role="radiogroup"
+                    aria-label="Theme"
+                >
+
+                    <label class="settings-theme-option">
+
+                        <input
+                            type="radio"
+                            name="theme"
+                            id="themeSystem"
+                            value="system"
+                        >
+
+                        <span class="settings-theme-option-body">
+
+                            <span class="settings-theme-option-title">
+                                System
+                            </span>
+
+                            <span class="settings-theme-option-detail">
+                                Follow device
+                            </span>
+
+                        </span>
+
+                    </label>
+
+                    <label class="settings-theme-option">
+
+                        <input
+                            type="radio"
+                            name="theme"
+                            id="themeLight"
+                            value="light"
+                        >
+
+                        <span class="settings-theme-option-body">
+
+                            <span class="settings-theme-option-title">
+                                Light
+                            </span>
+
+                            <span class="settings-theme-option-detail">
+                                Always light
+                            </span>
+
+                        </span>
+
+                    </label>
+
+                    <label class="settings-theme-option">
+
+                        <input
+                            type="radio"
+                            name="theme"
+                            id="themeDark"
+                            value="dark"
+                        >
+
+                        <span class="settings-theme-option-body">
+
+                            <span class="settings-theme-option-title">
+                                Dark
+                            </span>
+
+                            <span class="settings-theme-option-detail">
+                                Always dark
+                            </span>
+
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+            <div class="settings-group">
+
+                <div class="settings-group-header">
+
+                    <span class="settings-group-kicker">
+                        LOCAL WEATHER
+                    </span>
+
+                    <span class="settings-group-description">
+                        Uses your location only when enabled.
+                    </span>
+
+                </div>
+
+                <label class="settings-switch-row">
+
+                    <span class="settings-switch-copy">
+
+                        <span class="settings-switch-title">
+                            Show weather
+                        </span>
+
+                        <span class="settings-switch-detail">
+                            Local conditions in the top bar.
+                        </span>
+
+                    </span>
+
+                    <span class="settings-switch">
+
+                        <input
+                            type="checkbox"
+                            id="weatherToggleSetting"
+                        >
+
+                        <span class="settings-switch-track">
+                            <span class="settings-switch-thumb"></span>
+                        </span>
+
+                    </span>
+
+                </label>
+
+            </div>
+
+            <div class="settings-group">
+
+                <div class="settings-group-header">
+
+                    <span class="settings-group-kicker">
+                        SEARCH ENGINES
+                    </span>
+
+                    <span class="settings-group-description">
+                        Choose which engines appear and which one starts selected.
+                    </span>
+
+                </div>
+
+                <div
+                    class="settings-engine-list"
+                    id="searchEngineSettings"
+                ></div>
+
+                <details class="settings-details">
+
+                    <summary>
+                        CUSTOMISE PLACEHOLDER TEXT
+                    </summary>
+
+                    <div
+                        class="settings-placeholder-list"
+                        id="searchPlaceholderSettings"
+                    ></div>
+
+                </details>
+
+            </div>
+
+            <div class="settings-dialog-footer">
+
+                <button
+                    class="settings-dialog-button primary"
+                    id="settingsDone"
+                    type="button"
+                >
+                    Done
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
 
 
     <!-- ============================================================
