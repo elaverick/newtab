@@ -2063,6 +2063,12 @@ removeSiteButton.addEventListener(
         savePlaces();
         renderPlaces();
 
+        updatePlaceSearchMatches(
+            document.getElementById(
+                "searchInput"
+            ).value
+        );
+
         setEditorMode(
             null
         );
@@ -2791,6 +2797,51 @@ function getDirectNavigationUrl(value) {
 }
 
 
+function getTextMatchPosition(text, query) {
+
+    if (!query) {
+        return 0;
+    }
+
+    return text
+        .toLocaleLowerCase()
+        .indexOf(query);
+
+}
+
+
+function getPlaceMatchPosition(place, query) {
+
+    const normalisedQuery =
+        query.trim().toLocaleLowerCase();
+
+    if (!normalisedQuery) {
+        return 0;
+    }
+
+    return Math.min(
+        ...[
+            place.name,
+            getPlaceHostname(place.url),
+            place.url
+        ]
+            .map(
+                value =>
+                    getTextMatchPosition(
+                        String(value ?? ""),
+                        normalisedQuery
+                    )
+            )
+            .filter(
+                position =>
+                    position >= 0
+            ),
+        Infinity
+    );
+
+}
+
+
 function getSearchHistoryMatches(query) {
 
     const normalisedQuery =
@@ -2799,31 +2850,152 @@ function getSearchHistoryMatches(query) {
     return searchHistory
         .map(
             (entry, index) => ({
+                type:
+                    "history",
                 entry,
                 index,
                 position:
-                    normalisedQuery
-                        ? entry.text
-                            .toLocaleLowerCase()
-                            .indexOf(
-                                normalisedQuery
-                            )
-                        : 0
+                    getTextMatchPosition(
+                        entry.text,
+                        normalisedQuery
+                    )
             })
         )
         .filter(
             item =>
                 normalisedQuery === "" ||
                 item.position >= 0
+        );
+
+}
+
+
+function getPlaceSearchMatches(query) {
+
+    const normalisedQuery =
+        query.trim().toLocaleLowerCase();
+
+    return places
+        .map(
+            (place, index) => ({
+                type:
+                    "place",
+                place,
+                index,
+                position:
+                    getPlaceMatchPosition(
+                        place,
+                        normalisedQuery
+                    )
+            })
         )
+        .filter(
+            item =>
+                normalisedQuery === "" ||
+                item.position >= 0
+        );
+
+}
+
+
+function getSearchSuggestionMatches(query) {
+
+    const normalisedQuery =
+        query.trim().toLocaleLowerCase();
+
+    const directNavigation =
+        Boolean(
+            getDirectNavigationUrl(
+                query
+            )
+        );
+
+    const historyMatches =
+        directNavigation
+            ? []
+            : getSearchHistoryMatches(
+                query
+            );
+
+    const placeMatches =
+        getPlaceSearchMatches(
+            query
+        );
+
+    return [
+        ...historyMatches,
+        ...placeMatches
+    ]
         .sort(
-            (a, b) =>
-                a.position - b.position ||
-                a.index - b.index
+            (a, b) => {
+
+                const positionDifference =
+                    a.position -
+                    b.position;
+
+                if (positionDifference !== 0) {
+                    return positionDifference;
+                }
+
+                if (
+                    a.type === "history" &&
+                    b.type === "history"
+                ) {
+                    return a.index - b.index;
+                }
+
+                if (
+                    a.type === "place" &&
+                    b.type === "place"
+                ) {
+                    return a.index - b.index;
+                }
+
+                return a.type === "history"
+                    ? -1
+                    : 1;
+
+            }
         )
         .slice(
             0,
             SEARCH_HISTORY_SUGGESTION_LIMIT
+        );
+
+}
+
+
+function updatePlaceSearchMatches(query) {
+
+    const normalisedQuery =
+        query.trim().toLocaleLowerCase();
+
+    siteGrid
+        .querySelectorAll(
+            ".site"
+        )
+        .forEach(
+            (element, index) => {
+
+                const place =
+                    places[index];
+
+                const isMatch =
+                    Boolean(
+                        place &&
+                        normalisedQuery &&
+                        getPlaceMatchPosition(
+                            place,
+                            normalisedQuery
+                        ) >= 0
+                    );
+
+                element.classList.toggle(
+                    "search-match",
+                    isMatch
+                );
+
+            }
         );
 
 }
@@ -2834,27 +3006,12 @@ function renderSearchHistory() {
     const query =
         searchInput.value.trim();
 
-    if (
-        getDirectNavigationUrl(query)
-    ) {
-
-        searchHistoryElement.hidden =
-            true;
-
-        searchHistoryElement.setAttribute(
-            "aria-hidden",
-            "true"
-        );
-
-        searchHistoryHighlightIndex =
-            -1;
-
-        return;
-
-    }
+    updatePlaceSearchMatches(
+        query
+    );
 
     const matches =
-        getSearchHistoryMatches(
+        getSearchSuggestionMatches(
             query
         );
 
@@ -2895,12 +3052,26 @@ function renderSearchHistory() {
             suggestion.className =
                 "search-history-suggestion";
 
-            suggestion.dataset.historyIndex =
-                String(item.index);
+            suggestion.dataset.suggestionType =
+                item.type;
+
+            if (item.type === "history") {
+
+                suggestion.dataset.historyIndex =
+                    String(item.index);
+
+            } else {
+
+                suggestion.dataset.placeIndex =
+                    String(item.index);
+
+            }
 
             suggestion.setAttribute(
                 "aria-label",
-                item.entry.text
+                item.type === "place"
+                    ? item.place.name
+                    : item.entry.text
             );
 
             const text =
@@ -2910,7 +3081,9 @@ function renderSearchHistory() {
                 "search-history-text";
 
             text.textContent =
-                item.entry.text;
+                item.type === "place"
+                    ? item.place.name
+                    : item.entry.text;
 
             const kind =
                 document.createElement("span");
@@ -2919,11 +3092,13 @@ function renderSearchHistory() {
                 "search-history-kind";
 
             kind.textContent =
-                getDirectNavigationUrl(
-                    item.entry.text
-                )
-                    ? "DIRECT"
-                    : "SEARCH";
+                item.type === "place"
+                    ? "PLACE"
+                    : getDirectNavigationUrl(
+                        item.entry.text
+                    )
+                        ? "DIRECT"
+                        : "SEARCH";
 
             suggestion.append(
                 text,
@@ -2939,21 +3114,33 @@ function renderSearchHistory() {
             remove.className =
                 "search-history-remove";
 
-            remove.dataset.historyIndex =
-                String(item.index);
+            if (item.type === "history") {
 
-            remove.setAttribute(
-                "aria-label",
-                "Remove " +
-                item.entry.text +
-                " from search history"
-            );
+                remove.dataset.historyIndex =
+                    String(item.index);
 
-            remove.title =
-                "Remove from history";
+                remove.setAttribute(
+                    "aria-label",
+                    "Remove " +
+                    item.entry.text +
+                    " from search history"
+                );
 
-            remove.textContent =
-                "×";
+                remove.title =
+                    "Remove from history";
+
+                remove.textContent =
+                    "×";
+
+            } else {
+
+                remove.hidden =
+                    true;
+
+                remove.tabIndex =
+                    -1;
+
+            }
 
             row.append(
                 suggestion,
@@ -2997,7 +3184,7 @@ function renderSearchHistory() {
 function setSearchHistoryHighlight(index) {
 
     const matches =
-        getSearchHistoryMatches(
+        getSearchSuggestionMatches(
             searchInput.value
         );
 
@@ -3039,6 +3226,10 @@ function submitSearchValue(value) {
 
     searchInput.value =
         query;
+
+    updatePlaceSearchMatches(
+        query
+    );
 
     const directUrl =
         getDirectNavigationUrl(
@@ -3092,7 +3283,6 @@ function submitSearchValue(value) {
         url;
 
 }
-
 
 
 let selectedProvider =
@@ -3431,7 +3621,10 @@ searchHistoryElement.addEventListener(
                 ".search-history-remove"
             );
 
-        if (remove) {
+        if (
+            remove &&
+            !remove.hidden
+        ) {
 
             const index =
                 Number(
@@ -3457,6 +3650,45 @@ searchHistoryElement.addEventListener(
             );
 
         if (!suggestion) {
+
+            return;
+
+        }
+
+        if (
+            suggestion.dataset.suggestionType ===
+            "place"
+        ) {
+
+            const index =
+                Number(
+                    suggestion.dataset.placeIndex
+                );
+
+            const place =
+                places[index];
+
+            if (!place) {
+                return;
+            }
+
+            addSearchHistoryEntry(
+                place.url
+            );
+
+            searchHistoryHighlightIndex =
+                -1;
+
+            searchHistoryElement.hidden =
+                true;
+
+            searchHistoryElement.setAttribute(
+                "aria-hidden",
+                "true"
+            );
+
+            window.location.href =
+                place.url;
 
             return;
 
