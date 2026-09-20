@@ -2849,17 +2849,7 @@ function getSearchHistoryMatches(query) {
 
     if (!normalisedQuery) {
 
-        return searchHistory
-            .map(
-                (entry, index) => ({
-                    type:
-                        "history",
-                    entry,
-                    index,
-                    position:
-                        0
-                })
-            );
+        return [];
 
     }
 
@@ -2892,17 +2882,7 @@ function getPlaceSearchMatches(query) {
 
     if (!normalisedQuery) {
 
-        return places
-            .map(
-                (place, index) => ({
-                    type:
-                        "place",
-                    place,
-                    index,
-                    position:
-                        0
-                })
-            );
+        return [];
 
     }
 
