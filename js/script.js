@@ -228,7 +228,7 @@ function createChristmasSnow() {
     );
 
     const snowflakeCount =
-        24;
+        32;
 
     for (
         let index = 0;
