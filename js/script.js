@@ -328,60 +328,20 @@ function createHalloweenBat() {
         "halloween-bat";
 
     bat.innerHTML = `
-        <svg
-            class="halloween-bat-svg"
-            viewBox="0 0 60 30"
-            aria-hidden="true"
-            focusable="false"
-        >
-            <g class="halloween-bat-wing-left">
-                <path
-                    d="M30 14
-                       C26 12 22 9 18 6
-                       C14 3 10 2 6 3
-                       C8 5 9 7 9 8
-                       C6 7 3 7 1 8
-                       C4 10 6 12 8 13
-                       C5 13 2 14 1 16
-                       C5 16 9 17 12 19
-                       C10 20 9 22 9 24
-                       C15 22 20 23 25 27
-                       C27 23 29 18 30 14
-                       Z"
-                ></path>
-            </g>
-
-            <g class="halloween-bat-wing-right">
-                <path
-                    d="M30 14
-                       C34 12 38 9 42 6
-                       C46 3 50 2 54 3
-                       C52 5 51 7 51 8
-                       C54 7 57 7 59 8
-                       C56 10 54 12 52 13
-                       C55 13 58 14 59 16
-                       C55 16 51 17 48 19
-                       C50 20 51 22 51 24
-                       C45 22 40 23 35 27
-                       C33 23 31 18 30 14
-                       Z"
-                ></path>
-            </g>
-
-            <path
-                class="halloween-bat-body"
-                d="M26 12
-                   C24 9 24 6 25 2
-                   L29 5
-                   L30 2
-                   L31 5
-                   L35 2
-                   C36 6 36 9 34 12
-                   C35 17 34 22 30 28
-                   C26 22 25 17 26 12
-                   Z"
-            ></path>
-        </svg>
+        <div class="halloween-bat-visual">
+            <img
+                class="halloween-bat-frame halloween-bat-frame-open"
+                src="images/halloween/bat-open.svg"
+                alt=""
+                aria-hidden="true"
+            >
+            <img
+                class="halloween-bat-frame halloween-bat-frame-flap"
+                src="images/halloween/bat-flap.svg"
+                alt=""
+                aria-hidden="true"
+            >
+        </div>
     `;
 
     return bat;
