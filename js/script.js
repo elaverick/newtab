@@ -330,14 +330,20 @@ function createHalloweenBat() {
     bat.innerHTML = `
         <div class="halloween-bat-visual">
             <img
-                class="halloween-bat-frame halloween-bat-frame-open"
-                src="images/halloween/bat-open.svg"
+                class="halloween-bat-frame halloween-bat-frame-1"
+                src="images/halloween/bat1.svg"
                 alt=""
                 aria-hidden="true"
             >
             <img
-                class="halloween-bat-frame halloween-bat-frame-flap"
-                src="images/halloween/bat-flap.svg"
+                class="halloween-bat-frame halloween-bat-frame-2"
+                src="images/halloween/bat2.svg"
+                alt=""
+                aria-hidden="true"
+            >
+            <img
+                class="halloween-bat-frame halloween-bat-frame-3"
+                src="images/halloween/bat3.svg"
                 alt=""
                 aria-hidden="true"
             >
