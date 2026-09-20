@@ -41,7 +41,7 @@
         var(--text);
 
     opacity:
-        0.13;
+        0.12;
 
     will-change:
         transform;
@@ -205,7 +205,6 @@
 @keyframes halloween-bat-flutter-motion {
 
     0%,
-    50%,
     100% {
         transform:
             translateY(0)
@@ -213,28 +212,35 @@
     }
 
     12.5%,
-    37.5% {
-        transform:
-            translateY(-1.4px)
-            scale(var(--bat-scale));
-    }
-
-    25% {
-        transform:
-            translateY(-2px)
-            scale(var(--bat-scale));
-    }
-
-    62.5%,
     87.5% {
         transform:
-            translateY(1.4px)
+            translateY(
+                calc(var(--bat-rise) * 0.707)
+            )
             scale(var(--bat-scale));
     }
 
+    25%,
     75% {
         transform:
-            translateY(2px)
+            translateY(
+                var(--bat-rise)
+            )
+            scale(var(--bat-scale));
+    }
+
+    37.5%,
+    62.5% {
+        transform:
+            translateY(
+                calc(var(--bat-rise) * 0.707)
+            )
+            scale(var(--bat-scale));
+    }
+
+    50% {
+        transform:
+            translateY(0)
             scale(var(--bat-scale));
     }
 }
@@ -242,34 +248,12 @@
 
 @keyframes halloween-bat-flight-ltr {
 
-    0% {
-        transform:
-            translate3d(0, 0, 0);
-    }
-
-    12.5% {
+    0%,
+    100% {
         transform:
             translate3d(
-                12.5vw,
-                calc(var(--bat-rise) * -0.707),
-                0
-            );
-    }
-
-    25% {
-        transform:
-            translate3d(
-                25vw,
-                var(--bat-rise),
-                0
-            );
-    }
-
-    37.5% {
-        transform:
-            translate3d(
-                37.5vw,
-                calc(var(--bat-rise) * 0.707),
+                0,
+                0,
                 0
             );
     }
@@ -282,75 +266,17 @@
                 0
             );
     }
-
-    62.5% {
-        transform:
-            translate3d(
-                62.5vw,
-                calc(var(--bat-rise) * -0.707),
-                0
-            );
-    }
-
-    75% {
-        transform:
-            translate3d(
-                75vw,
-                calc(var(--bat-rise) * -1),
-                0
-            );
-    }
-
-    87.5% {
-        transform:
-            translate3d(
-                87.5vw,
-                calc(var(--bat-rise) * -0.707),
-                0
-            );
-    }
-
-    100% {
-        transform:
-            translate3d(
-                calc(100vw + 140px),
-                0,
-                0
-            );
-    }
 }
 
 
 @keyframes halloween-bat-flight-rtl {
 
-    0% {
-        transform:
-            translate3d(0, 0, 0);
-    }
-
-    12.5% {
+    0%,
+    100% {
         transform:
             translate3d(
-                -12.5vw,
-                calc(var(--bat-rise) * 0.707),
-                0
-            );
-    }
-
-    25% {
-        transform:
-            translate3d(
-                -25vw,
-                var(--bat-rise),
-                0
-            );
-    }
-
-    37.5% {
-        transform:
-            translate3d(
-                -37.5vw,
-                calc(var(--bat-rise) * 0.707),
+                0,
+                0,
                 0
             );
     }
@@ -359,42 +285,6 @@
         transform:
             translate3d(
                 -50vw,
-                0,
-                0
-            );
-    }
-
-    62.5% {
-        transform:
-            translate3d(
-                -62.5vw,
-                calc(var(--bat-rise) * -0.707),
-                0
-            );
-    }
-
-    75% {
-        transform:
-            translate3d(
-                -75vw,
-                calc(var(--bat-rise) * -1),
-                0
-            );
-    }
-
-    87.5% {
-        transform:
-            translate3d(
-                -87.5vw,
-                calc(var(--bat-rise) * -0.707),
-                0
-            );
-    }
-
-    100% {
-        transform:
-            translate3d(
-                calc(-100vw - 140px),
                 0,
                 0
             );
