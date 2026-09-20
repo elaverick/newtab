@@ -152,6 +152,135 @@ a {
 }
 
 
+
+
+
+/* ================================================================
+   CHRISTMAS SNOW
+================================================================ */
+
+.page {
+
+    position:
+        relative;
+
+    z-index:
+        1;
+}
+
+
+.christmas-snow {
+
+    position:
+        fixed;
+
+    inset:
+        0;
+
+    z-index:
+        0;
+
+    overflow:
+        hidden;
+
+    pointer-events:
+        none;
+}
+
+
+.christmas-snowflake {
+
+    position:
+        absolute;
+
+    top:
+        -10vh;
+
+    display:
+        block;
+
+    color:
+        var(--text);
+
+    font-family:
+        var(--font-display);
+
+    font-size:
+        var(--snow-size);
+
+    line-height:
+        1;
+
+    opacity:
+        var(--snow-opacity);
+
+    user-select:
+        none;
+
+    will-change:
+        transform;
+
+    animation:
+        christmas-snowfall
+        var(--snow-duration)
+        linear
+        var(--snow-delay)
+        infinite;
+}
+
+
+@keyframes christmas-snowfall {
+
+    0% {
+
+        transform:
+            translate3d(
+                0,
+                -10vh,
+                0
+            )
+            rotate(0deg);
+
+    }
+
+    50% {
+
+        transform:
+            translate3d(
+                var(--snow-drift),
+                50vh,
+                0
+            )
+            rotate(180deg);
+
+    }
+
+    100% {
+
+        transform:
+            translate3d(
+                0,
+                110vh,
+                0
+            )
+            rotate(360deg);
+
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .christmas-snowflake {
+
+        animation-duration:
+            45s;
+
+    }
+
+}
+
+
 /* ================================================================
    PAGE
 ================================================================ */
@@ -798,7 +927,6 @@ a {
 
     border-top:
         1px solid var(--line);
-
     border-left:
         1px solid var(--line);
 }
@@ -1597,8 +1725,7 @@ body.settings-modal-open {
         var(--surface-subtle);
 
     border-color:
-        var(--line-strong);
-}
+        var(--line-strong);}
 
 
 .settings-theme-option-title {
@@ -2397,8 +2524,7 @@ body.settings-modal-open {
         12px;
 }
 
-.settings-dialog-footer {
-    display:
+.settings-dialog-footer {    display:
         flex;
 
     justify-content:
@@ -3197,236 +3323,3 @@ body.places-modal-open {
 .places-editor-kicker {
     color:
         var(--muted);
-
-    font-size:
-        8px;
-
-    letter-spacing:
-        0.14em;
-
-    text-transform:
-        uppercase;
-}
-
-
-.places-editor-status {
-    color:
-        var(--muted);
-
-    font-size:
-        8px;
-
-    text-align:
-        right;
-}
-
-
-.places-editor-fields {
-    display:
-        grid;
-
-    grid-template-columns:
-        1fr 1.5fr;
-
-    gap:
-        9px;
-}
-
-
-.places-field {
-    display:
-        block;
-}
-
-
-.places-field > span {
-    display:
-        block;
-
-    margin-bottom:
-        6px;
-
-    color:
-        var(--muted);
-
-    font-size:
-        8px;
-
-    letter-spacing:
-        0.1em;
-
-    text-transform:
-        uppercase;
-}
-
-
-.places-field input {
-    width:
-        100%;
-
-    height:
-        36px;
-
-    min-width:
-        0;
-
-    padding:
-        0 10px;
-
-    border:
-        1px solid var(--line);
-
-    outline:
-        0;
-
-    background:
-        transparent;
-
-    color:
-        var(--text);
-
-    font-size:
-        9px;
-}
-
-
-.places-field input:focus {
-    border-color:
-        var(--line-strong);
-}
-
-
-.places-editor-actions {
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        space-between;
-
-    gap:
-        10px;
-
-    margin-top:
-        12px;
-}
-
-
-.places-dialog-button {
-    min-width:
-        82px;
-
-    height:
-        35px;
-
-    padding:
-        0 12px;
-
-    border:
-        1px solid var(--line);
-
-    background:
-        transparent;
-
-    color:
-        var(--muted);
-
-    font-size:
-        9px;
-
-    letter-spacing:
-        0.06em;
-
-    text-transform:
-        uppercase;
-}
-
-
-.places-dialog-button:hover {
-    color:
-        var(--text);
-
-    border-color:
-        var(--line-strong);
-}
-
-
-.places-dialog-button.primary {
-    background:
-        var(--surface-subtle);
-
-    color:
-        var(--text);
-}
-
-
-.places-dialog-button.danger {
-    color:
-        var(--muted);
-}
-
-
-.places-dialog-button.danger:hover {
-    color:
-        var(--text);
-}
-
-
-.places-dialog-footer {
-    display:
-        flex;
-
-    justify-content:
-        flex-end;
-
-    margin-top:
-        18px;
-
-    padding-top:
-        18px;
-
-    border-top:
-        1px solid var(--line);
-}
-
-
-@media (max-width: 520px) {
-
-    .places-dialog {
-        margin:
-            12px auto;
-
-        padding:
-            18px;
-    }
-
-
-    .places-editor-fields {
-        grid-template-columns:
-            1fr;
-    }
-
-
-    .places-editor-actions {
-        align-items:
-            stretch;
-
-        flex-direction:
-            column-reverse;
-    }
-
-
-    .places-editor-primary {
-        width:
-            100%;
-    }
-
-
-    
-    .places-dialog-footer .places-dialog-button {
-        width:
-            100%;
-    }
-}
