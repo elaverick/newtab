@@ -328,10 +328,53 @@ function createHalloweenBat() {
         "halloween-bat";
 
     bat.innerHTML = `
-        <svg class="halloween-bat-svg" viewBox="0 0 60 28" aria-hidden="true" focusable="false">
-            <path class="halloween-bat-wing-left" d="M30 13 C25 7 20 4 12 5 C15 8 11 10 6 9 C10 14 17 15 23 14 C19 17 20 20 25 17 C27 16 29 14 30 13Z"></path>
-            <path class="halloween-bat-wing-right" d="M30 13 C35 7 40 4 48 5 C45 8 49 10 54 9 C50 14 43 15 37 14 C41 17 40 20 35 17 C33 16 31 14 30 13Z"></path>
-            <path class="halloween-bat-body" d="M27 12 C28 8 32 8 33 12 L34 17 L30 20 L26 17 Z"></path>
+        <svg
+            class="halloween-bat-svg"
+            viewBox="0 0 60 30"
+            aria-hidden="true"
+            focusable="false"
+        >
+            <g class="halloween-bat-wing-left">
+                <path
+                    d="M30 13
+                       C24 8 18 2 10 2
+                       L13 7
+                       L4 5
+                       L9 12
+                       L2 12
+                       C7 18 15 19 22 16
+                       L19 21
+                       C25 19 28 16 30 13
+                       Z"
+                ></path>
+            </g>
+            <g class="halloween-bat-wing-right">
+                <path
+                    d="M30 13
+                       C36 8 42 2 50 2
+                       L47 7
+                       L56 5
+                       L51 12
+                       L58 12
+                       C53 18 45 19 38 16
+                       L41 21
+                       C35 19 32 16 30 13
+                       Z"
+                ></path>
+            </g>
+            <path
+                class="halloween-bat-body"
+                d="M27 11
+                   L26 4
+                   L29 7
+                   L30 2
+                   L33 7
+                   L34 4
+                   L33 11
+                   C35 15 34 20 30 24
+                   C26 20 25 15 27 11
+                   Z"
+            ></path>
         </svg>
     `;
 
@@ -358,12 +401,17 @@ function createHalloweenBats() {
 
     bats.id =
         "halloweenBats";
+
     bats.className =
         "halloween-bats";
-    bats.setAttribute("aria-hidden", "true");
+
+    bats.setAttribute(
+        "aria-hidden",
+        "true"
+    );
 
     const batCount =
-        24;
+        10;
 
     for (
         let index = 0;
@@ -375,29 +423,61 @@ function createHalloweenBats() {
             createHalloweenBat();
 
         const direction =
-            index % 2 === 0 ? "ltr" : "rtl";
+            index % 2 === 0
+                ? "ltr"
+                : "rtl";
+
         const duration =
-            22 + Math.random() * 14;
+            26 + Math.random() * 18;
+
         const delay =
             -(Math.random() * duration);
+
         const rise =
-            5 + Math.random() * 9;
+            10 + Math.random() * 8;
+
         const top =
             4 + Math.random() * 92;
+
         const scale =
-            0.52 + Math.random() * 0.62;
+            0.46 + Math.random() * 0.52;
 
-        bat.classList.add("halloween-bat-" + direction);
-        bat.style.top = top + "%";
-        bat.style.setProperty("--bat-duration", duration + "s");
-        bat.style.setProperty("--bat-delay", delay + "s");
-        bat.style.setProperty("--bat-rise", rise + "px");
-        bat.style.setProperty("--bat-scale", scale);
+        bat.classList.add(
+            "halloween-bat-" + direction
+        );
 
-        bats.appendChild(bat);
+        bat.style.top =
+            top + "%";
+
+        bat.style.setProperty(
+            "--bat-duration",
+            duration + "s"
+        );
+
+        bat.style.setProperty(
+            "--bat-delay",
+            delay + "s"
+        );
+
+        bat.style.setProperty(
+            "--bat-rise",
+            rise + "px"
+        );
+
+        bat.style.setProperty(
+            "--bat-scale",
+            scale
+        );
+
+        bats.appendChild(
+            bat
+        );
+
     }
 
-    document.body.prepend(bats);
+    document.body.prepend(
+        bats
+    );
 
 }
 
@@ -406,12 +486,24 @@ function createHalloweenPumpkin(theme) {
 
     const pumpkin =
         document.createElement("img");
+
     pumpkin.className =
-        "halloween-pumpkin halloween-pumpkin-" + theme;
+        "halloween-pumpkin-" +
+        theme;
+
     pumpkin.src =
-        "images/halloween/pumpkin-" + theme + ".svg";
-    pumpkin.alt = "";
-    pumpkin.setAttribute("aria-hidden", "true");
+        "images/halloween/pumpkin-" +
+        theme +
+        ".svg";
+
+    pumpkin.alt =
+        "";
+
+    pumpkin.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
     return pumpkin;
 
 }
@@ -423,14 +515,88 @@ function addHalloweenPumpkinToSection(sectionHeader, side) {
         return;
     }
 
-    const holder =
+    const cluster =
         document.createElement("span");
-    holder.className =
-        "halloween-pumpkin-holder halloween-pumpkin-" + side;
-    holder.setAttribute("aria-hidden", "true");
-    holder.appendChild(createHalloweenPumpkin("light"));
-    holder.appendChild(createHalloweenPumpkin("dark"));
-    sectionHeader.appendChild(holder);
+
+    cluster.className =
+        "halloween-pumpkin-cluster halloween-pumpkin-" +
+        side;
+
+    cluster.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    const pumpkinCount =
+        2 + Math.floor(Math.random() * 3);
+
+    const positions =
+        pumpkinCount === 2
+            ? [28, 72]
+            : pumpkinCount === 3
+                ? [16, 50, 84]
+                : [9, 36, 64, 91];
+
+    positions.forEach(
+        (position) => {
+
+            const holder =
+                document.createElement("span");
+
+            holder.className =
+                "halloween-pumpkin";
+
+            holder.style.left =
+                position + "%";
+
+            holder.style.setProperty(
+                "--pumpkin-scale",
+                (
+                    0.70 +
+                    Math.random() * 0.34
+                ).toFixed(2)
+            );
+
+            holder.style.setProperty(
+                "--pumpkin-rotation",
+                (
+                    -6 +
+                    Math.random() * 12
+                ).toFixed(1) +
+                "deg"
+            );
+
+            holder.style.setProperty(
+                "--pumpkin-lift",
+                (
+                    -1 +
+                    Math.random() * 3
+                ).toFixed(1) +
+                "px"
+            );
+
+            holder.appendChild(
+                createHalloweenPumpkin(
+                    "light"
+                )
+            );
+
+            holder.appendChild(
+                createHalloweenPumpkin(
+                    "dark"
+                )
+            );
+
+            cluster.appendChild(
+                holder
+            );
+
+        }
+    );
+
+    sectionHeader.appendChild(
+        cluster
+    );
 
 }
 
@@ -438,32 +604,58 @@ function addHalloweenPumpkinToSection(sectionHeader, side) {
 function createHalloweenPumpkins() {
 
     document
-        .querySelectorAll(".halloween-pumpkin-holder")
-        .forEach(element => element.remove());
+        .querySelectorAll(
+            ".halloween-pumpkin-cluster"
+        )
+        .forEach(
+            element =>
+                element.remove()
+        );
 
     if (!isHalloween(getEffectiveDate())) {
         return;
     }
 
     const sectionHeaders =
-        Array.from(document.querySelectorAll(".section-header"));
+        Array.from(
+            document.querySelectorAll(
+                ".section-header"
+            )
+        );
 
-    addHalloweenPumpkinToSection(sectionHeaders[0], "places");
-    addHalloweenPumpkinToSection(sectionHeaders[1], "elsewhere");
+    addHalloweenPumpkinToSection(
+        sectionHeaders[0],
+        "places"
+    );
+
+    addHalloweenPumpkinToSection(
+        sectionHeaders[1],
+        "elsewhere"
+    );
 
 }
 
 
 function updateHalloweenDecorations() {
+
     const active =
-        isHalloween(getEffectiveDate());
-    document.body.classList.toggle("halloween-active", active);
+        isHalloween(
+            getEffectiveDate()
+        );
+
+    document.body.classList.toggle(
+        "halloween-active",
+        active
+    );
+
     createHalloweenPumpkins();
+
 }
 
 
 createHalloweenBats();
 updateHalloweenDecorations();
+
 
 /* ================================================================
    PLACES
