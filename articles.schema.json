@@ -39,7 +39,8 @@
             },
             "category": {
                 "type": "string",
-                "minLength": 1
+                "minLength": 1,
+                "description": "An arbitrary non-empty editorial category name. The schema does not restrict the number or names of categories."
             },
             "published": {
                 "type": "string",
