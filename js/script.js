@@ -2920,6 +2920,9 @@ function getPlaceSearchMatches(query) {
 
 function getSearchSuggestionMatches(query) {
 
+    const normalisedQuery =
+        query.trim().toLocaleLowerCase();
+
     const directNavigation =
         Boolean(
             getDirectNavigationUrl(
