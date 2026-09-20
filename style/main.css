@@ -124,7 +124,7 @@ body {
         var(--background);
 
     color:
-        var(--text);
+        var(--muted);
 
     font-family:
         var(--font-mono);
@@ -268,11 +268,8 @@ a {
 
 @media (prefers-reduced-motion: reduce) {
 
-    .christmas-snowflake {
-
-        animation-duration:
-            45s;
-
+    .christmas-snow {
+        display: none;
     }
 
 }
