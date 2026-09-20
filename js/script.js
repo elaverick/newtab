@@ -3020,6 +3020,29 @@ function renderSearchHistory() {
         query
     );
 
+    if (
+        getDirectNavigationUrl(
+            query
+        )
+    ) {
+
+        searchHistoryElement.replaceChildren();
+
+        searchHistoryElement.hidden =
+            true;
+
+        searchHistoryElement.setAttribute(
+            "aria-hidden",
+            "true"
+        );
+
+        searchHistoryHighlightIndex =
+            -1;
+
+        return;
+
+    }
+
     const matches =
         getSearchSuggestionMatches(
             query
@@ -5397,21 +5420,63 @@ searchForm.addEventListener(
 
         event.preventDefault();
 
-        const matches =
-            getSearchHistoryMatches(
-                searchInput.value
+        const query =
+            searchInput.value.trim();
+
+        if (
+            getDirectNavigationUrl(
+                query
+            )
+        ) {
+
+            submitSearchValue(
+                query
             );
 
-        const selectedHistoryEntry =
+            return;
+
+        }
+
+        const matches =
+            getSearchSuggestionMatches(
+                query
+            );
+
+        const selectedSuggestion =
             searchHistoryHighlightIndex >= 0
                 ? matches[
                     searchHistoryHighlightIndex
-                ]?.entry.text
+                ]
                 : null;
 
+        if (
+            selectedSuggestion?.type ===
+            "place"
+        ) {
+
+            submitSearchValue(
+                selectedSuggestion.place.url
+            );
+
+            return;
+
+        }
+
+        if (
+            selectedSuggestion?.type ===
+            "history"
+        ) {
+
+            submitSearchValue(
+                selectedSuggestion.entry.text
+            );
+
+            return;
+
+        }
+
         submitSearchValue(
-            selectedHistoryEntry ??
-            searchInput.value
+            query
         );
 
     }
