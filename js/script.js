@@ -2892,7 +2892,17 @@ function getPlaceSearchMatches(query) {
 
     if (!normalisedQuery) {
 
-        return [];
+        return places
+            .map(
+                (place, index) => ({
+                    type:
+                        "place",
+                    place,
+                    index,
+                    position:
+                        0
+                })
+            );
 
     }
 
@@ -2938,11 +2948,9 @@ function getSearchSuggestionMatches(query) {
             );
 
     const placeMatches =
-        normalisedQuery
-            ? getPlaceSearchMatches(
-                query
-            )
-            : [];
+        getPlaceSearchMatches(
+            query
+        );
 
     return [
         ...historyMatches,
