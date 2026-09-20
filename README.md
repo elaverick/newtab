@@ -115,6 +115,20 @@ This prevents the file from becoming a permanent news archive.
 
 ---
 
+## Easter eggs
+
+The page can contain date-specific visual Easter eggs without changing the normal page structure.
+
+For testing, append a date to the page URL with the `fakeDate` query parameter:
+
+```text
+https://elaverick.github.io/newtab/?fakeDate=2026-12-25
+```
+
+The value must be a valid date in `YYYY-MM-DD` format. The effective date is used by the Easter-egg logic and the date shown in the top bar; the clock continues to use the real time.
+
+Christmas Day currently enables the falling snow effect. Removing the `fakeDate` parameter returns the page to the real current date.
+
 ## Images
 
 Images are part of the article data, rather than something the webpage has to discover.
