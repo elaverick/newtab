@@ -1,33 +1,182 @@
 [
-  {"title":"WATCH: Lando’s MCL-HY test unboxed","source":"McLaren Racing","extract":"McLaren has released a behind-the-scenes look at Lando Norris testing its 2027 World Endurance Championship hypercar. Norris completed 38 laps of Portimão in the MCL-HY prototype during the team's fifth track test.","image":"https://images.ctfassets.net/gy95mqeyjg28/3KoojBE98KLnp0t3XIa4QJ/cce2dd625dbaae8896755ff957b6ec08/2526_youtube_unboxed_landohypercar.jpg?fm=webp&q=75&w=3840","link":"https://www.mclaren.com/racing/formula-1/2026/lando-hypercar-test-unboxed/","category":"Automotive","published":"2026-09-19T15:00:00Z"},
-  {"title":"Garage 59 McLaren Wins Race 1 At Zandvoort","source":"dailysportscar","extract":"Garage 59 scored its first outright GT World Challenge Europe victory of 2026 at Zandvoort as Tom Fleming and Louis Prette won aboard the #58 McLaren GT3 Evo.","image":"https://www.dailysportscar.com/wp-content/uploads/2026/09/58-0RL22711.jpg","link":"https://www.dailysportscar.com/2026/09/19/garage-59-mclaren-wins-race-1-at-zandvoort.html","category":"Automotive","published":"2026-09-19T14:49:00Z"},
-  {"title":"Aston Martin to unveil final upgrade for AMR26 car at Baku Grand Prix","source":"Report.az","extract":"Aston Martin plans one final AMR26 upgrade at the Azerbaijan Grand Prix before switching its resources to the 2027 car. The package is focused on reducing weight after a larger development programme earlier in the season.","image":"https://images.report.az/2026/09/19/UBhRHznbzC3dK4S6pS8Ph0NJnevN0hG6qWUP4lzn_1200.jpg","link":"https://report.az/en/formula-1/aston-martin-to-unveil-final-upgrade-for-amr26-car-at-baku-grand-prix","category":"Automotive","published":"2026-09-19T12:41:00Z"},
-  {"title":"Full test: Aston Martin DB12 S is a sharper, louder and lighter GT, but is it better?","source":"Autocar","extract":"Autocar tests the Aston Martin DB12 S, an upper-level version with more power, less weight and a sharper character. The test examines its engineering changes, performance and everyday usability.","image":null,"link":"https://d2km96w3x5blkf.cloudfront.net/car-review/aston-martin/db12-s","category":"Automotive","published":"2026-09-18T00:00:00Z"},
-  {"title":"McLaren to retire Artura, GTS and 750S in next two years","source":"Autocar","extract":"McLaren plans to phase out three core models by the end of 2028 as it prepares a new supercar and SUV-led line-up. The changes follow the company's major UK investment programme.","image":null,"link":"https://www.em.autocar.co.uk/car-news/new-cars/mclaren-retire-artura-gts-and-750s-next-two-years","category":"Automotive","published":"2026-09-18T00:00:00Z"},
-  {"title":"Ferrari Challenge UK races into Donington Park this weekend","source":"Donington Park","extract":"Ferrari Challenge UK returns to Donington Park for the final round of the 2026 season, with Ferrari 296 Challenge cars contesting the weekend's races and the remaining championship positions.","image":null,"link":"https://www.donington-park.co.uk/news/2026/sept/14/ferrari-challenge-uk-races-into-donington-park-this-weekend","category":"Automotive","published":"2026-09-18T00:00:00Z"},
-  {"title":"Schuring Scores Race 1 Pole At Zandvoort","source":"dailysportscar","extract":"Morris Schuring claimed his maiden GT World Challenge Europe Sprint Cup pole at Zandvoort, narrowly beating Garage 59's McLaren GT3 Evo. An AF Corse Ferrari 296 GT3 Evo qualified third overall.","image":null,"link":"https://www.dailysportscar.com/2026/09/19/schuring-scores-race-1-pole-at-zandvoort.html","category":"Automotive","published":"2026-09-19T09:43:00Z"},
-  {"title":"Simple Optimization For Linux 7.4 Can Open Files For Reading ~39% Faster","source":"Phoronix","extract":"A Linux 7.4 kernel patch removes redundant work in the VFS open path. Testing on a 20-core VM showed a 39% increase in operations per second for opening the same file read-only.","image":null,"link":"https://www.phoronix.com/news/Linux-7.4-Faster-Do-Open","category":"Technology","published":"2026-09-19T16:28:00Z"},
-  {"title":"Intel Xe Driver For Linux 7.4 Adds vRAM Health Check, Degraded Memory Handling","source":"Phoronix","extract":"Intel's Xe kernel graphics driver is gaining vRAM health checking and memory-page offlining. The work is designed to detect faulty video memory and prevent degraded pages from being reused.","image":null,"link":"https://www.phoronix.com/news/Intel-Xe-vRAM-Health-Check","category":"Technology","published":"2026-09-19T10:24:00Z"},
-  {"title":"GNOME OS Turns To Zswap To Deal With OOM Issues, Progress On Geary Email Client Fork","source":"Phoronix","extract":"GNOME OS is enabling zswap by default to improve responsiveness on memory-constrained systems. The update also covers Convey, a GNOME mail-client fork adding Microsoft 365 support and GTK4 improvements.","image":null,"link":"https://www.phoronix.com/news/GNOME-OS-Goes-Zswap","category":"Technology","published":"2026-09-19T10:38:00Z"},
-  {"title":"KDE Plasma 6.8 Seeing More Polishing & Fixes, Plasma 6.9 Begins Seeing More Activity","source":"Phoronix","extract":"KDE developers are polishing Plasma 6.8 after its beta release while early work on Plasma 6.9 gathers pace. Recent changes include fixes to KWin, notification handling and backup information.","image":null,"link":"https://www.phoronix.com/news/Plasma-6.8-Post-Beta-Fixes","category":"Technology","published":"2026-09-19T10:10:00Z"},
-  {"title":"Wine-Staging 11.18 Adds New Patches To Further Improve WoW64","source":"Phoronix","extract":"Wine-Staging 11.18 carries new patches for WoW64, including fixes around binary detection and kernel services, alongside updated VKD3D code. The release continues work toward running 32-bit Windows software cleanly in 64-bit environments.","image":null,"link":"https://www.phoronix.com/news/Wine-Staging-11.18","category":"Technology","published":"2026-09-19T13:22:00Z"},
-  {"title":"Firefox 156 arrives with a forest of forks in its wake","source":"The Register","extract":"Mozilla's Firefox 156 release adds a small set of features while the wider Firefox ecosystem continues to spawn alternative browsers such as Waterfox, LibreWolf and Pale Moon. The release also updates Thunderbird and its enterprise controls.","image":null,"link":"https://www.theregister.com/software/2026/09/19/firefox-156-arrives-with-a-forest-of-forks-in-its-wake/5297194","category":"Technology","published":"2026-09-19T08:28:00Z"},
-  {"title":"Google's \"Painful To Maintain\" Binder C Linux Driver Being Removed In Favor Of Rust","source":"Phoronix","extract":"Google is preparing to remove Android's long-standing C implementation of the Binder IPC driver from Linux in favour of its Rust rewrite. The Rust implementation has reached feature parity with the existing driver.","image":null,"link":"https://www.phoronix.com/news/Google-Binder-C-Goodbye","category":"Technology","published":"2026-09-18T16:26:00Z"},
-  {"title":"CISA Flags Three Actively Exploited Linux Kernel Flaws, Orders Federal Patch by Sunday","source":"Tech Times","extract":"Three Linux kernel vulnerabilities have been added to the US Known Exploited Vulnerabilities catalogue, with US federal civilian agencies given a short remediation deadline. The flaws affect separate kernel subsystems and have confirmed evidence of active exploitation.","image":null,"link":"https://www.techtimes.com/articles/327741/20260919/cisa-flags-three-actively-exploited-linux-kernel-flaws-orders-federal-patch-sunday.htm","category":"Technology","published":"2026-09-19T11:59:00Z"},
-  {"title":"ChatGPT-6 Astra cracks 108-year-old unsolved WWI German code for the first time","source":"Tom's Hardware","extract":"A developer reports using GPT-6 Astra to decipher a German ADFGVX radio message from 1918 that had remained unsolved. The proposed plaintext was cross-checked against historical records concerning Allied naval movements near Sevastopol.","image":null,"link":"https://www.tomshardware.com/tech-industry/artificial-intelligence/chatgpt-6-astra-cracks-108-year-old-unsolved-wwi-german-code-for-the-first-time-radio-message-sharing-enemy-movement-intelligence-had-evaded-decoding-1918-crimean-fleet-warning-verified-against-hms-canterbury-logs","category":"Technology","published":"2026-09-19T15:02:00Z"},
-  {"title":"Space Trolls of Mahlsdorf - A fully-featured shoot ’em up for the ZX Spectrum by Papi & Sohn","source":"Indie Retro News","extract":"A new ZX Spectrum shoot-'em-up supports three-player simultaneous play, with each player using a different craft. The game was built with MPAGD, Shmupkit and several classic development tools and has been tested on real Spectrum hardware.","image":null,"link":"https://www.indieretronews.com/2026/09/space-trolls-of-mahlsdorf-fully.html","category":"Retro Computing","published":"2026-09-19T10:47:00Z"},
-  {"title":"Cuthbert in Castle Wolfenstein - A First Person Shooter has arrived on the Plus/4!","source":"Indie Retro News","extract":"A new Commodore Plus/4 homebrew turns Cuthbert into a pseudo-3D first-person shooter. It uses the machine's hardware to render interconnected chambers across ten levels.","image":null,"link":"https://www.indieretronews.com/2026/09/cuthbert-in-castle-wolfenstein-first.html","category":"Retro Computing","published":"2026-09-18T15:16:00Z"},
-  {"title":"The Blues Brothers : Jukebox Adventure - The PC sequel could be getting a full Amiga AGA version via dlfrsilver","source":"Indie Retro News","extract":"A newly discovered Amiga project is converting the PC version of The Blues Brothers: Jukebox Adventure to Amiga AGA. The developer reports that the conversion is already 80% complete and has been tested on real A1200 hardware.","image":null,"link":"https://www.indieretronews.com/2026/09/the-blues-brothers-jukebox-adventure-pc.html","category":"Retro Computing","published":"2026-09-18T15:49:00Z"},
-  {"title":"Type-N-Fire Type-In Packs Arcade Action Into 3K","source":"The Oasis BBS","extract":"A C64 Appreciation Society video revisits Type-N-Fire, a 3K Commodore 64 type-in game from 1989, examining its compact BASIC code, custom characters, machine-language routines and checksum protection.","image":null,"link":"https://theoasisbbs.com/type-n-fire-type-in-packs-arcade-action-into-3k/","category":"Retro Computing","published":"2026-09-18T00:00:00Z"},
-  {"title":"Heartbeat Soundtracker C64 Brings Sample Tracking to the Ultimate","source":"The Oasis BBS","extract":"Heartbeat Soundtracker C64 uses the Commodore 64 Ultimate's additional memory and FPGA resources to bring multichannel sampled tracker playback to Commodore hardware.","image":null,"link":"https://theoasisbbs.com/heartbeat-soundtracker-c64-brings-sample-tracking-to-the-ultimate/","category":"Retro Computing","published":"2026-09-18T00:00:00Z"},
-  {"title":"Visual Assembler 2.4.3 Adds SID Effects and Safer D64 Editing","source":"The Oasis BBS","extract":"Visual Assembler 2.4.3 adds tracker effects and song ordering to its SID editor, alongside a safer D64 workflow with private working copies and automatic backups for C64 projects.","image":null,"link":"https://theoasisbbs.com/visual-assembler-2-4-3-adds-sid-effects-and-safer-d64-editing/","category":"Retro Computing","published":"2026-09-18T00:00:00Z"},
-  {"title":"BlastEm v1.0 Released","source":"RetroRGB","extract":"BlastEm has reached version 1.0, expanding its accurate emulation beyond the Genesis to systems including Sega CD, 32X, Game Gear, Master System and Sega Pico.","image":null,"link":"https://retrorgb.com/blastem-v1-0-released.html","category":"Retro Computing","published":"2026-09-18T00:00:00Z"},
-  {"title":"Dracula — An Amiga and ZX Spectrum Illustrated Adventure by DJSOFT","source":"Indie Retro News","extract":"DJSOFT has released a gothic interactive adventure for Commodore Amiga and ZX Spectrum inspired by Bram Stoker's Dracula. It combines a traditional text parser with illustrated scenes, puzzles and a real-time element, with a monochrome-focused ZX Spectrum 128K edition.","image":null,"link":"https://www.indieretronews.com/2026/09/dracula-amiga-and-zx-spectrum.html","category":"Retro Computing","published":"2026-09-19T14:58:00Z"},
-  {"title":"QAE: Amiga as a service (AAS)","source":"New Retro Gaming","extract":"A new Amiga-as-a-service experiment combines headless Amiga emulation with a WebSocket protocol and streamed desktop video. The project is designed to run multiple emulator instances server-side and is being prepared for a future WebAssembly build.","image":null,"link":"https://retromodsblog.wordpress.com/2026/09/18/qae-amiga-as-a-service-aas/","category":"Retro Computing Projects","published":"2026-09-18T00:00:00Z"},
-  {"title":"CHROMABLAST Amiga Shooter Enters Playable Beta","source":"The Oasis BBS","extract":"GuruVision has released a playable beta of CHROMABLAST, a new vertical shooter targeting OCS, ECS and AGA Amiga systems.","image":null,"link":"https://theoasisbbs.com/chromablast-amiga-shooter-enters-playable-beta/","category":"Retro Computing Projects","published":"2026-09-18T00:00:00Z"},
-  {"title":"Video Game Color Cycling Animates Static Images","source":"The Oasis BBS","extract":"A retro-computing experiment uses classic palette and colour-cycling techniques to animate otherwise static images, revisiting a distinctive trick from the era of limited graphics hardware.","image":null,"link":"https://theoasisbbs.com/video-game-color-cycling-animates-static-images/","category":"Retro Computing Projects","published":"2026-09-18T00:00:00Z"},
-  {"title":"Elite 0x10 Brings Classic Space Trading to the Commander X16","source":"The Oasis BBS","extract":"Elite 0x10 is a fan project bringing the landmark 1984 space-trading game to the Commander X16. The free project is targeting completion during 2026.","image":null,"link":"https://theoasisbbs.com/elite-0x10-brings-classic-space-trading-to-the-commander-x16/","category":"Retro Computing Projects","published":"2026-09-18T00:00:00Z"},
-  {"title":"Vixen Gameboy Demake - October 2023 Prototype","source":"Newgrounds","extract":"An archived Game Boy prototype of Vixen has been published, documenting an early demake inspired by the 1988 ZX Spectrum and Commodore 64 game and showing the route toward a later Game Boy Color port.","image":null,"link":"https://www.newgrounds.com/portal/view/1052409","category":"Retro Computing Projects","published":"2026-09-18T13:17:00Z"},
-  {"title":"JOAN OF ARC - A fantastic platformer from team Griffonsoft and publishers Psytronik Software for the Commodore 64","source":"Indie Retro News","extract":"Psytronik Software has launched Joan of Arc - Deus Contra Machinam, the third GriffonSoft DataSoft tribute game for Commodore 64. The dystopian action-puzzler puts players in control of an industrial welder fighting a rogue AI across more than 30 detailed screens.","image":null,"link":"https://www.indieretronews.com/2026/09/joan-of-arc-fantastic-platformer-from.html","category":"Retro Computing Projects","published":"2026-09-19T10:07:00Z"},
-  {"title":"The Shel Talmy Recordings","source":"The Second Disc","extract":"A newly released collection gathers 21 recordings David Bowie made with producer Shel Talmy in 1965, including ten previously unreleased tracks and newly remastered material.","image":null,"link":"https://theseconddisc.com/release/the-shel-talmy-recordings/","category":"Music","published":"2026-09-18T00:00:00Z"}
+  {
+    "title": "WATCH: Lando’s MCL-HY test unboxed",
+    "source": "McLaren Racing",
+    "extract": "McLaren has released a behind-the-scenes look at Lando Norris testing its 2027 World Endurance Championship hypercar. Norris completed 38 laps of Portimão in the MCL-HY prototype during the team's fifth track test.",
+    "image": "https://images.ctfassets.net/gy95mqeyjg28/3KoojBE98KLnp0t3XIa4QJ/cce2dd625dbaae8896755ff957b6ec08/2526_youtube_unboxed_landohypercar.jpg?fm=webp&q=75&w=3840",
+    "link": "https://www.mclaren.com/racing/formula-1/2026/lando-hypercar-test-unboxed/",
+    "category": "Automotive",
+    "published": "2026-09-19T15:00:00Z"
+  },
+  {
+    "title": "Garage 59 McLaren Wins Race 1 At Zandvoort",
+    "source": "dailysportscar",
+    "extract": "Garage 59 scored its first outright GT World Challenge Europe victory of 2026 at Zandvoort as Tom Fleming and Louis Prette won aboard the #58 McLaren GT3 Evo.",
+    "image": "https://www.dailysportscar.com/wp-content/uploads/2026/09/58-Garage-59-McLaren-720S-GT3-Evo-GTWC-Europe-2026-Zandvoort-1.jpg",
+    "link": "https://www.dailysportscar.com/2026/09/19/garage-59-mclaren-wins-race-1-at-zandvoort.html",
+    "category": "Automotive",
+    "published": "2026-09-19T14:49:00Z"
+  },
+  {
+    "title": "Aston Martin to unveil final upgrade for AMR26 car at Baku Grand Prix",
+    "source": "Report.az",
+    "extract": "Aston Martin plans one final AMR26 upgrade at the Azerbaijan Grand Prix before switching its resources to the 2027 car. The package is focused on reducing weight after a larger development programme earlier in the season.",
+    "image": "https://images.report.az/2026/09/19/UBhRHznbzC3dK4S6pS8Ph0NJnevN0hG6qWUP4lzn_1200.jpg",
+    "link": "https://report.az/en/formula-1/aston-martin-to-unveil-final-upgrade-for-amr26-car-at-baku-grand-prix",
+    "category": "Automotive",
+    "published": "2026-09-19T12:41:00Z"
+  },
+  {
+    "title": "Schuring Scores Race 1 Pole At Zandvoort",
+    "source": "dailysportscar",
+    "extract": "Morris Schuring claimed his maiden GT World Challenge Europe Sprint Cup pole at Zandvoort, narrowly beating Garage 59's McLaren GT3 Evo. An AF Corse Ferrari 296 GT3 Evo qualified third overall.",
+    "image": null,
+    "link": "https://www.dailysportscar.com/2026/09/19/schuring-scores-race-1-pole-at-zandvoort.html",
+    "category": "Automotive",
+    "published": "2026-09-19T09:43:00Z"
+  },
+  {
+    "title": "Simple Optimization For Linux 7.4 Can Open Files For Reading ~39% Faster",
+    "source": "Phoronix",
+    "extract": "A Linux 7.4 kernel patch removes redundant work in the VFS open path. Testing on a 20-core VM showed a 39% increase in operations per second for opening the same file read-only.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Linux-7.4-Faster-Do-Open",
+    "category": "Technology",
+    "published": "2026-09-19T16:28:00Z"
+  },
+  {
+    "title": "Intel Xe Driver For Linux 7.4 Adds vRAM Health Check, Degraded Memory Handling",
+    "source": "Phoronix",
+    "extract": "Intel's Xe kernel graphics driver is gaining vRAM health checking and memory-page offlining. The work is designed to detect faulty video memory and prevent degraded pages from being reused.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Intel-Xe-vRAM-Health-Check",
+    "category": "Technology",
+    "published": "2026-09-19T10:24:00Z"
+  },
+  {
+    "title": "GNOME OS Turns To Zswap To Deal With OOM Issues, Progress On Geary Email Client Fork",
+    "source": "Phoronix",
+    "extract": "GNOME OS is enabling zswap by default to improve responsiveness on memory-constrained systems. The update also covers Convey, a GNOME mail-client fork adding Microsoft 365 support and GTK4 improvements.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/GNOME-OS-Goes-Zswap",
+    "category": "Technology",
+    "published": "2026-09-19T10:38:00Z"
+  },
+  {
+    "title": "KDE Plasma 6.8 Seeing More Polishing & Fixes, Plasma 6.9 Begins Seeing More Activity",
+    "source": "Phoronix",
+    "extract": "KDE developers are polishing Plasma 6.8 after its beta release while early work on Plasma 6.9 gathers pace. Recent changes include fixes to KWin, notification handling and backup information.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Plasma-6.8-Post-Beta-Fixes",
+    "category": "Technology",
+    "published": "2026-09-19T10:10:00Z"
+  },
+  {
+    "title": "Wine-Staging 11.18 Adds New Patches To Further Improve WoW64",
+    "source": "Phoronix",
+    "extract": "Wine-Staging 11.18 carries new patches for WoW64, including fixes around binary detection and kernel services, alongside updated VKD3D code. The release continues work toward running 32-bit Windows software cleanly in 64-bit environments.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Wine-Staging-11.18",
+    "category": "Technology",
+    "published": "2026-09-19T13:22:00Z"
+  },
+  {
+    "title": "Firefox 156 arrives with a forest of forks in its wake",
+    "source": "The Register",
+    "extract": "Mozilla's Firefox 156 release adds a small set of features while the wider Firefox ecosystem continues to spawn alternative browsers such as Waterfox, LibreWolf and Pale Moon. The release also updates Thunderbird and its enterprise controls.",
+    "image": null,
+    "link": "https://www.theregister.com/software/2026/09/19/firefox-156-arrives-with-a-forest-of-forks-in-its-wake/5297194",
+    "category": "Technology",
+    "published": "2026-09-19T08:28:00Z"
+  },
+  {
+    "title": "Google's \"Painful To Maintain\" Binder C Linux Driver Being Removed In Favor Of Rust",
+    "source": "Phoronix",
+    "extract": "Google is preparing to remove Android's long-standing C implementation of the Binder IPC driver from Linux in favour of its Rust rewrite. The Rust implementation has reached feature parity with the existing driver.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Google-Binder-C-Goodbye",
+    "category": "Technology",
+    "published": "2026-09-18T16:26:00Z"
+  },
+  {
+    "title": "CISA Flags Three Actively Exploited Linux Kernel Flaws, Orders Federal Patch by Sunday",
+    "source": "Tech Times",
+    "extract": "Three Linux kernel vulnerabilities have been added to the US Known Exploited Vulnerabilities catalogue, with US federal civilian agencies given a short remediation deadline. The flaws affect separate kernel subsystems and have confirmed evidence of active exploitation.",
+    "image": null,
+    "link": "https://www.techtimes.com/articles/327741/20260919/cisa-flags-three-actively-exploited-linux-kernel-flaws-orders-federal-patch-sunday.htm",
+    "category": "Technology",
+    "published": "2026-09-19T11:59:00Z"
+  },
+  {
+    "title": "ChatGPT-6 Astra cracks 108-year-old unsolved WWI German code for the first time",
+    "source": "Tom's Hardware",
+    "extract": "A developer reports using GPT-6 Astra to decipher a German ADFGVX radio message from 1918 that had remained unsolved. The proposed plaintext was cross-checked against historical records concerning Allied naval movements near Sevastopol.",
+    "image": null,
+    "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chatgpt-6-astra-cracks-108-year-old-unsolved-wwi-german-code-for-the-first-time-radio-message-sharing-enemy-movement-intelligence-had-evaded-decoding-1918-crimean-fleet-warning-verified-against-hms-canterbury-logs",
+    "category": "Technology",
+    "published": "2026-09-19T15:02:00Z"
+  },
+  {
+    "title": "Space Trolls of Mahlsdorf - A fully-featured shoot ’em up for the ZX Spectrum by Papi & Sohn",
+    "source": "Indie Retro News",
+    "extract": "A new ZX Spectrum shoot-'em-up supports three-player simultaneous play, with each player using a different craft. The game was built with MPAGD, Shmupkit and several classic development tools and has been tested on real Spectrum hardware.",
+    "image": null,
+    "link": "https://www.indieretronews.com/2026/09/space-trolls-of-mahlsdorf-fully.html",
+    "category": "Retro Computing",
+    "published": "2026-09-19T10:47:00Z"
+  },
+  {
+    "title": "Cuthbert in Castle Wolfenstein - A First Person Shooter has arrived on the Plus/4!",
+    "source": "Indie Retro News",
+    "extract": "A new Commodore Plus/4 homebrew turns Cuthbert into a pseudo-3D first-person shooter. It uses the machine's hardware to render interconnected chambers across ten levels.",
+    "image": null,
+    "link": "https://www.indieretronews.com/2026/09/cuthbert-in-castle-wolfenstein-first.html",
+    "category": "Retro Computing",
+    "published": "2026-09-18T15:16:00Z"
+  },
+  {
+    "title": "The Blues Brothers : Jukebox Adventure - The PC sequel could be getting a full Amiga AGA version via dlfrsilver",
+    "source": "Indie Retro News",
+    "extract": "A newly discovered Amiga project is converting the PC version of The Blues Brothers: Jukebox Adventure to Amiga AGA. The developer reports that the conversion is already 80% complete and has been tested on real A1200 hardware.",
+    "image": null,
+    "link": "https://www.indieretronews.com/2026/09/the-blues-brothers-jukebox-adventure-pc.html",
+    "category": "Retro Computing",
+    "published": "2026-09-18T15:49:00Z"
+  },
+  {
+    "title": "Dracula — An Amiga and ZX Spectrum Illustrated Adventure by DJSOFT",
+    "source": "Indie Retro News",
+    "extract": "DJSOFT has released a gothic interactive adventure for Commodore Amiga and ZX Spectrum inspired by Bram Stoker's Dracula. It combines a traditional text parser with illustrated scenes, puzzles and a real-time element, with a monochrome-focused ZX Spectrum 128K edition.",
+    "image": null,
+    "link": "https://www.indieretronews.com/2026/09/dracula-amiga-and-zx-spectrum.html",
+    "category": "Retro Computing",
+    "published": "2026-09-19T14:58:00Z"
+  },
+  {
+    "title": "Vixen Gameboy Demake - October 2023 Prototype",
+    "source": "Newgrounds",
+    "extract": "An archived Game Boy prototype of Vixen has been published, documenting an early demake inspired by the 1988 ZX Spectrum and Commodore 64 game and showing the route toward a later Game Boy Color port.",
+    "image": null,
+    "link": "https://www.newgrounds.com/portal/view/1052409",
+    "category": "Retro Computing Projects",
+    "published": "2026-09-18T13:17:00Z"
+  },
+  {
+    "title": "JOAN OF ARC - A fantastic platformer from team Griffonsoft and publishers Psytronik Software for the Commodore 64",
+    "source": "Indie Retro News",
+    "extract": "Psytronik Software has launched Joan of Arc - Deus Contra Machinam, the third GriffonSoft DataSoft tribute game for Commodore 64. The dystopian action-puzzler puts players in control of an industrial welder fighting a rogue AI across more than 30 detailed screens.",
+    "image": null,
+    "link": "https://www.indieretronews.com/2026/09/joan-of-arc-fantastic-platformer-from.html",
+    "category": "Retro Computing Projects",
+    "published": "2026-09-19T10:07:00Z"
+  },
+  {
+    "title": "Indianapolis - Saturday, in photos",
+    "source": "Autosport",
+    "extract": "Autosport's Saturday gallery from Indianapolis Motor Speedway captures the 10th round of the 2026 IMSA season, including the Aston Martin Valkyrie competing in the event.",
+    "image": null,
+    "link": "https://www.autosport.com/imsa/galleries/indianapolis-saturday-in-photos/14155/",
+    "category": "Automotive",
+    "published": "2026-09-20T00:14:00Z"
+  }
 ]
