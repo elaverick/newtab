@@ -7,5 +7,95 @@
     "link": "https://www.reuters.com/world/asia-pacific/chinas-cxmt-says-new-memory-chip-platform-enters-mass-production-2026-09-20/",
     "category": "Technology",
     "published": "2026-09-20T03:54:00Z"
+  },
+  {
+    "title": "Linux 7.3-rc4 To Address Two Unfortunate Bugs With Btrfs",
+    "source": "Phoronix",
+    "extract": "The Linux 7.3-rc4 development cycle is picking up fixes for two Btrfs regressions, including a filesystem-ID compatibility problem that could disrupt software relying on stable identifiers and a root-device detection problem affecting initramdisk-less GRUB2 boots.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Btrfs-Fixes-For-Linux-7.3-rc4",
+    "category": "Technology",
+    "published": "2026-09-20T00:26:00Z"
+  },
+  {
+    "title": "Agentic security is the billion-dollar challenge for some clever startup to solve",
+    "source": "The Register",
+    "extract": "The Register examines the growing security problems around increasingly capable AI agents, including cases where agents have hacked organisations and people. Security investors and accelerator executives argue that the problem is becoming an important area for new defensive tools.",
+    "image": null,
+    "link": "https://www.theregister.com/security/2026/09/19/agentic-security-is-the-billion-dollar-challenge-for-some-clever-startup-to-solve/5297546",
+    "category": "Technology",
+    "published": "2026-09-19T15:25:00Z"
+  },
+  {
+    "title": "Space Trolls of Mahlsdorf - A fully-featured shoot ’em up for the ZX Spectrum by Papi & Sohn",
+    "source": "Indie Retro News",
+    "extract": "Papi & Sohn have released a new ZX Spectrum shoot ’em up built with MPAGD and Shmupkit. Its unusual feature is simultaneous three-player support, with two players using Sinclair joysticks and a third using the keyboard.",
+    "image": null,
+    "link": "https://www.indieretronews.com/2026/09/space-trolls-of-mahlsdorf-fully.html",
+    "category": "Retro Computing",
+    "published": "2026-09-19T10:47:00Z"
+  },
+  {
+    "title": "Skool Daze",
+    "source": "World of SAM",
+    "extract": "A new 2026 port of the classic 1984 ZX Spectrum and 1985 Commodore 64 game Skool Daze has arrived for the SAM Coupé. The public-domain release recreates the original action-adventure and includes new artwork by Nicholas Bay.",
+    "image": null,
+    "link": "https://www.worldofsam.org/products/skool-daze",
+    "category": "Retro Computing",
+    "published": "2026-09-19T15:55:00Z"
+  },
+  {
+    "title": "‘Star Trek: Strange New Worlds’: Paul Wesley on Playing Prince Dashing in Fairytale Episode",
+    "source": "TV Insider",
+    "extract": "Paul Wesley discusses the penultimate episode of Star Trek: Strange New Worlds season 4, including its fairytale premise and the developing relationship between Kirk and La’an.",
+    "image": null,
+    "link": "https://www.tvinsider.com/1291955/star-trek-strange-new-worlds-fairytale-episode-prince-dashing-paul-wesley/",
+    "category": "Entertainment",
+    "published": "2026-09-19T12:00:00Z"
+  },
+  {
+    "title": "Gerrit Graham Dies: Actor of ‘Star Trek’ & ‘Phantom of the Paradise’ Was 76",
+    "source": "TV Insider",
+    "extract": "TV Insider reports the death of actor Gerrit Graham, known for appearances in two Star Trek series as well as Phantom of the Paradise, and notes his work as a screenwriter and animation voice actor.",
+    "image": null,
+    "link": "https://www.tvinsider.com/1292089/gerrit-graham-dead-phantom-of-the-paradise-star-trek-actor/",
+    "category": "Entertainment",
+    "published": "2026-09-19T14:57:00Z"
+  },
+  {
+    "title": "‘Ride or Die’ Canceled at Prime Video After One Season — Could It Be Saved?",
+    "source": "TV Insider",
+    "extract": "Prime Video has cancelled the comedy thriller Ride or Die after one season. TV Insider reports on the cancellation and the possibility, raised by a separate report, of the series continuing elsewhere.",
+    "image": null,
+    "link": "https://www.tvinsider.com/1275377/ride-or-die-season-2-premiere-date-trailer-cast-details/",
+    "category": "Entertainment",
+    "published": "2026-09-20T01:30:00Z"
+  },
+  {
+    "title": "‘The Love Hypothesis’ Director Talks Adapting Fan-Favorite Chapter 16, Spice & All",
+    "source": "Swooon",
+    "extract": "Director Claire Scanlon discusses adapting a particularly anticipated chapter of The Love Hypothesis for the screen, including the challenge of translating a long, dialogue-heavy book scene into a film sequence.",
+    "image": null,
+    "link": "https://www.tvinsider.com/swooon/1302159/the-love-hypothesis-preview-chapter-16-scene-director-claire-scanlon-interview/",
+    "category": "Entertainment",
+    "published": "2026-09-19T13:00:00Z"
+  },
+  {
+    "title": "‘The Other Bennet Sister’ Christmas Special First Look: Who’s Returning?",
+    "source": "TV Insider",
+    "extract": "A first look at The Other Bennet Sister Christmas special reveals returning cast members and the first plot details for the three-part BritBox special based on Janice Hadlow’s novel.",
+    "image": null,
+    "link": "https://www.tvinsider.com/1292066/the-other-bennet-sister-christmas-special-cast-ella-bruccoleri-donal-finn-laurie-davidson/",
+    "category": "Entertainment",
+    "published": "2026-09-19T15:15:00Z"
+  },
+  {
+    "title": "Sharon Horgan in ‘Youth,’ Jon Hamm in ‘American Hostage,’ ‘Lioness’ Finale, ‘Lanterns’ Whodunit",
+    "source": "TV Insider",
+    "extract": "TV Insider previews a weekend of new television, including Sharon Horgan's new comedy Youth, Jon Hamm's American Hostage, the Lioness season finale and a new mystery in the superhero drama Lanterns.",
+    "image": null,
+    "link": "https://www.tvinsider.com/1291989/youth-american-hostage-premieres-lioness-season-finale-lanterns/",
+    "category": "Entertainment",
+    "published": "2026-09-19T11:00:00Z"
   }
 ]
