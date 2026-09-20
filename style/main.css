@@ -305,7 +305,8 @@ body.theme-dark .halloween-bat-frame-3 {
     0% {
 
         transform:
-            translateY(0);
+            translateY(0)
+            scale(var(--bat-size-scale));
     }
 
     12.5% {
@@ -313,7 +314,8 @@ body.theme-dark .halloween-bat-frame-3 {
         transform:
             translateY(
                 calc(var(--bat-rise) * 0.707)
-            );
+            )
+            scale(var(--bat-size-scale));
     }
 
     25% {
@@ -321,7 +323,8 @@ body.theme-dark .halloween-bat-frame-3 {
         transform:
             translateY(
                 var(--bat-rise)
-            );
+            )
+            scale(var(--bat-size-scale));
     }
 
     37.5% {
@@ -329,13 +332,15 @@ body.theme-dark .halloween-bat-frame-3 {
         transform:
             translateY(
                 calc(var(--bat-rise) * 0.707)
-            );
+            )
+            scale(var(--bat-size-scale));
     }
 
     50% {
 
         transform:
-            translateY(0);
+            translateY(0)
+            scale(var(--bat-size-scale));
     }
 
     62.5% {
@@ -343,7 +348,8 @@ body.theme-dark .halloween-bat-frame-3 {
         transform:
             translateY(
                 calc(var(--bat-rise) * -0.707)
-            );
+            )
+            scale(var(--bat-size-scale));
     }
 
     75% {
@@ -351,7 +357,8 @@ body.theme-dark .halloween-bat-frame-3 {
         transform:
             translateY(
                 calc(var(--bat-rise) * -1)
-            );
+            )
+            scale(var(--bat-size-scale));
     }
 
     87.5% {
@@ -359,13 +366,15 @@ body.theme-dark .halloween-bat-frame-3 {
         transform:
             translateY(
                 calc(var(--bat-rise) * -0.707)
-            );
+            )
+            scale(var(--bat-size-scale));
     }
 
     100% {
 
         transform:
-            translateY(0);
+            translateY(0)
+            scale(var(--bat-size-scale));
     }
 }
 
