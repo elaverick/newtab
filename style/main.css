@@ -124,6 +124,16 @@
 }
 
 
+.halloween-bat-frame-open {
+
+    animation:
+        halloween-bat-frame-open
+        0.68s
+        ease-in-out
+        infinite;
+}
+
+
 .halloween-bat-frame-flap {
 
     opacity:
@@ -132,20 +142,50 @@
     animation:
         halloween-bat-frame-flap
         0.68s
-        steps(1, end)
+        ease-in-out
         infinite;
 }
+
+
+@keyframes halloween-bat-frame-open {
+
+    0%,
+    40% {
+        opacity:
+            1;
+    }
+
+    46%,
+    54% {
+        opacity:
+            0;
+    }
+
+    60%,
+    100% {
+        opacity:
+            0;
+    }
+}
+
+
 
 
 @keyframes halloween-bat-frame-flap {
 
     0%,
-    49.99% {
+    40% {
         opacity:
             0;
     }
 
-    50%,
+    46%,
+    54% {
+        opacity:
+            1;
+    }
+
+    60%,
     100% {
         opacity:
             1;
