@@ -139,12 +139,27 @@ const EASTER_EGG_DATE_PARAMETER =
 
 function getEffectiveDate() {
 
-    const fakeDate =
+    const queryParameters =
         new URLSearchParams(
             window.location.search
-        ).get(
-            EASTER_EGG_DATE_PARAMETER
         );
+
+    let fakeDate = null;
+
+    queryParameters.forEach(
+        (value, key) => {
+
+            if (
+                key.toLowerCase() ===
+                EASTER_EGG_DATE_PARAMETER.toLowerCase()
+            ) {
+
+                fakeDate = value;
+
+            }
+
+        }
+    );
 
     if (fakeDate) {
 
