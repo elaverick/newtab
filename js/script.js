@@ -437,8 +437,10 @@ function createHalloweenBats() {
         );
 
         bat.style.setProperty(
-            "--bat-scale",
-            scale
+            "--bat-direction-scale",
+            direction === "rtl"
+                ? -1
+                : 1
         );
 
         bats.appendChild(
