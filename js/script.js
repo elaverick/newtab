@@ -130,6 +130,183 @@ applyTheme();
 
 
 /* ================================================================
+   EASTER EGGS
+================================================================ */
+
+const EASTER_EGG_DATE_PARAMETER =
+    "fakeDate";
+
+
+function getEffectiveDate() {
+
+    const fakeDate =
+        new URLSearchParams(
+            window.location.search
+        ).get(
+            EASTER_EGG_DATE_PARAMETER
+        );
+
+    if (fakeDate) {
+
+        const match =
+            /^(\\d{4})-(\\d{2})-(\\d{2})$/.exec(
+                fakeDate
+            );
+
+        if (match) {
+
+            const date =
+                new Date(
+                    Date.UTC(
+                        Number(match[1]),
+                        Number(match[2]) - 1,
+                        Number(match[3])
+                    )
+                );
+
+            if (
+                date.getUTCFullYear() === Number(match[1]) &&
+                date.getUTCMonth() === Number(match[2]) - 1 &&
+                date.getUTCDate() === Number(match[3])
+            ) {
+
+                return date;
+
+            }
+
+        }
+
+    }
+
+    return new Date();
+
+}
+
+
+function isChristmas(date) {
+
+    return (
+        date.getUTCMonth() === 11 &&
+        date.getUTCDate() === 25
+    );
+
+}
+
+
+function createChristmasSnow() {
+
+    const existing =
+        document.getElementById(
+            "christmasSnow"
+        );
+
+    if (existing) {
+
+        existing.remove();
+
+    }
+
+    const date =
+        getEffectiveDate();
+
+    if (!isChristmas(date)) {
+
+        return;
+
+    }
+
+    const snow =
+        document.createElement("div");
+
+    snow.id =
+        "christmasSnow";
+
+    snow.className =
+        "christmas-snow";
+
+    snow.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    const snowflakeCount =
+        32;
+
+    for (
+        let index = 0;
+        index < snowflakeCount;
+        index += 1
+    ) {
+
+        const flake =
+            document.createElement("span");
+
+        flake.className =
+            "christmas-snowflake";
+
+        flake.textContent =
+            "❄";
+
+        const size =
+            9 + Math.random() * 12;
+
+        const duration =
+            18 + Math.random() * 16;
+
+        const delay =
+            -(Math.random() * duration);
+
+        const drift =
+            -45 + Math.random() * 90;
+
+        const opacity =
+            0.16 + Math.random() * 0.24;
+
+        flake.style.setProperty(
+            "--snow-size",
+            size + "px"
+        );
+
+        flake.style.setProperty(
+            "--snow-duration",
+            duration + "s"
+        );
+
+        flake.style.setProperty(
+            "--snow-delay",
+            delay + "s"
+        );
+
+        flake.style.setProperty(
+            "--snow-drift",
+            drift + "px"
+        );
+
+        flake.style.setProperty(
+            "--snow-opacity",
+            opacity
+        );
+
+        flake.style.left =
+            (Math.random() * 100) + "%";
+
+        snow.appendChild(
+            flake
+        );
+
+    }
+
+    document.body.prepend(
+        snow
+    );
+
+}
+
+
+createChristmasSnow();
+
+
+/* ================================================================
    PLACES
    ================================================================ */
 
@@ -797,7 +974,6 @@ removeSiteButton.addEventListener(
 
     }
 );
-
 
 saveSiteButton.addEventListener(
     "click",
@@ -1597,8 +1773,7 @@ function getWeatherIconMarkup(code, isDay) {
                     <circle cx="9" cy="12" r="4"/>
                     <line x1="9" y1="3" x2="9" y2="1"/>
                     <line x1="9" y1="23" x2="9" y2="21"/>
-                    <line x1="1" y1="12" x2="3" y2="12"/>
-                    <line x1="15" y1="12" x2="17" y2="12"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/>                    <line x1="15" y1="12" x2="17" y2="12"/>
                     <path d="M15 8.5A5 5 0 0 1 20.5 14"/>
                 </svg>`
                 : `>
@@ -2397,8 +2572,7 @@ function createSearchEngineRow(
     removeButton.textContent =
         "×";
 
-    removeButton.setAttribute(
-        "aria-label",
+    removeButton.setAttribute(        "aria-label",
         "Remove " + definition.name
     );
 
@@ -3197,7 +3371,6 @@ let placeholderAssignments =
 let articleLoadSequence = 0;
 
 let displayArticles = [];
-
 let categoryCounts = new Map();
 
 let renderedArticleCount = 0;
