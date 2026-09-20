@@ -417,7 +417,7 @@ function createHalloweenBats() {
     );
 
     const batCount =
-        10;
+        8;
 
     for (
         let index = 0;
@@ -440,7 +440,7 @@ function createHalloweenBats() {
             -(Math.random() * duration);
 
         const rise =
-            10 + Math.random() * 8;
+            1.2 + Math.random() * 0.8;
 
         const top =
             4 + Math.random() * 92;
