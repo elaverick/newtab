@@ -157,17 +157,15 @@ function getEffectiveDate() {
 
             const date =
                 new Date(
-                    Date.UTC(
-                        Number(match[1]),
-                        Number(match[2]) - 1,
-                        Number(match[3])
-                    )
+                    Number(match[1]),
+                    Number(match[2]) - 1,
+                    Number(match[3])
                 );
 
             if (
-                date.getUTCFullYear() === Number(match[1]) &&
-                date.getUTCMonth() === Number(match[2]) - 1 &&
-                date.getUTCDate() === Number(match[3])
+                date.getFullYear() === Number(match[1]) &&
+                date.getMonth() === Number(match[2]) - 1 &&
+                date.getDate() === Number(match[3])
             ) {
 
                 return date;
@@ -186,8 +184,8 @@ function getEffectiveDate() {
 function isChristmas(date) {
 
     return (
-        date.getUTCMonth() === 11 &&
-        date.getUTCDate() === 25
+        date.getMonth() === 11 &&
+        date.getDate() === 25
     );
 
 }
