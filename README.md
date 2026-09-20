@@ -129,6 +129,12 @@ The value must be a valid date in `YYYY-MM-DD` format. The effective date is use
 
 Christmas Day currently enables the falling snow effect. Removing the `fakeDate` parameter returns the page to the real current date.
 
+### Halloween
+
+On 31 October the page adds small line-art bats flying in both directions with a gentle wing flutter and sine-like vertical modulation. Small original line-art pumpkins rest on the horizontal rules beneath Places and Elsewhere.
+
+The pumpkin artwork is provided as separate light and dark SVG assets in `images/halloween/` and switches automatically with the page theme.
+
 ## Images
 
 Images are part of the article data, rather than something the webpage has to discover.
