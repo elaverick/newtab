@@ -1,4 +1,274 @@
 /* ================================================================
+   HALLOWEEN EFFECTS
+================================================================ */
+
+.halloween-bats {
+
+    position:
+        absolute;
+
+    top:
+        0;
+    left:
+        0;
+    right:
+        0;
+    bottom:
+        0;
+
+    z-index:
+        0;
+
+    overflow:
+        hidden;
+
+    pointer-events:
+        none;
+}
+
+
+.halloween-bat {
+
+    position:
+        absolute;
+
+    width:
+        60px;
+    height:
+        28px;
+
+    color:
+        var(--text);
+
+    opacity:
+        0.14;
+
+    will-change:
+        transform;
+}
+
+
+.halloween-bat-ltr {
+    left:
+        -70px;
+    animation:
+        halloween-bat-flight-ltr
+        var(--bat-duration)
+        linear
+        var(--bat-delay)
+        infinite;
+}
+
+
+.halloween-bat-rtl {
+    right:
+        -70px;
+    animation:
+        halloween-bat-flight-rtl
+        var(--bat-duration)
+        linear
+        var(--bat-delay)
+        infinite;
+}
+
+
+.halloween-bat-svg {
+    display:
+        block;
+    width:
+        100%;
+    height:
+        100%;
+    transform:
+        scale(var(--bat-scale));
+}
+
+
+.halloween-bat-wing-left,
+.halloween-bat-wing-right,
+.halloween-bat-body {
+    fill:
+        currentColor;
+}
+
+
+.halloween-bat-wing-left {
+    transform-box:
+        fill-box;
+    transform-origin:
+        100% 50%;
+    animation:
+        halloween-bat-wingbeat
+        0.78s
+        ease-in-out
+        infinite;
+}
+
+
+.halloween-bat-wing-right {
+    transform-box:
+        fill-box;
+    transform-origin:
+        0% 50%;
+    animation:
+        halloween-bat-wingbeat
+        0.78s
+        ease-in-out
+        -0.13s
+        infinite;
+}
+
+
+@keyframes halloween-bat-wingbeat {
+
+    0%,
+    100% {
+        transform:
+            rotate(4deg);
+    }
+
+    50% {
+        transform:
+            rotate(-13deg);
+    }
+}
+
+
+@keyframes halloween-bat-flight-ltr {
+
+    0% {
+        transform:
+            translate3d(0, 0, 0);
+    }
+    25% {
+        transform:
+            translate3d(25vw, calc(var(--bat-rise) * -1), 0);
+    }
+    50% {
+        transform:
+            translate3d(50vw, 0, 0);
+    }
+    75% {
+        transform:
+            translate3d(75vw, var(--bat-rise), 0);
+    }
+    100% {
+        transform:
+            translate3d(calc(100vw + 140px), 0, 0);
+    }
+}
+
+
+@keyframes halloween-bat-flight-rtl {
+
+    0% {
+        transform:
+            translate3d(0, 0, 0);
+    }
+    25% {
+        transform:
+            translate3d(-25vw, var(--bat-rise), 0);
+    }
+    50% {
+        transform:
+            translate3d(-50vw, 0, 0);
+    }
+    75% {
+        transform:
+            translate3d(-75vw, calc(var(--bat-rise) * -1), 0);
+    }
+    100% {
+        transform:
+            translate3d(calc(-100vw - 140px), 0, 0);
+    }
+}
+
+
+.halloween-pumpkin-holder {
+
+    position:
+        absolute;
+
+    bottom:
+        -1px;
+
+    width:
+        42px;
+    height:
+        32px;
+
+    z-index:
+        2;
+
+    pointer-events:
+        none;
+
+    transform:
+        translateX(-50%);
+}
+
+
+.halloween-pumpkin-places {
+    left:
+        60%;
+}
+
+
+.halloween-pumpkin-elsewhere {
+    left:
+        78%;
+}
+
+
+.halloween-pumpkin {
+
+    position:
+        absolute;
+
+    left:
+        0;
+    bottom:
+        0;
+
+    width:
+        100%;
+    height:
+        auto;
+
+    display:
+        block;
+}
+
+
+.halloween-pumpkin-dark {
+    display:
+        none;
+}
+
+
+body.theme-dark .halloween-pumpkin-light {
+    display:
+        none;
+}
+
+
+body.theme-dark .halloween-pumpkin-dark {
+    display:
+        block;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .halloween-bats {
+        display:
+            none;
+    }
+
+}
+
+
+/* ================================================================
    DESIGN TOKENS — LIGHT LIMINAL
 ================================================================ */
 
@@ -802,6 +1072,9 @@ a {
 
 
 .section-header {
+
+    position:
+        relative;
 
     display:
         flex;
