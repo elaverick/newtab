@@ -461,12 +461,6 @@ function createPlaceElement(place, index) {
     link.href =
         place.url;
 
-    link.target =
-        "_blank";
-
-    link.rel =
-        "noopener noreferrer";
-
 
     const siteIndex =
         document.createElement("span");
