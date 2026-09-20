@@ -266,6 +266,11 @@ function createChristmasSnow() {
         );
 
         flake.style.setProperty(
+            "--snow-top",
+            (Math.random() * 100) + "%"
+        );
+
+        flake.style.setProperty(
             "--snow-duration",
             duration + "s"
         );
