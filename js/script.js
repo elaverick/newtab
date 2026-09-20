@@ -975,6 +975,7 @@ removeSiteButton.addEventListener(
     }
 );
 
+
 saveSiteButton.addEventListener(
     "click",
     () => {
@@ -1773,7 +1774,8 @@ function getWeatherIconMarkup(code, isDay) {
                     <circle cx="9" cy="12" r="4"/>
                     <line x1="9" y1="3" x2="9" y2="1"/>
                     <line x1="9" y1="23" x2="9" y2="21"/>
-                    <line x1="1" y1="12" x2="3" y2="12"/>                    <line x1="15" y1="12" x2="17" y2="12"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/>
+                    <line x1="15" y1="12" x2="17" y2="12"/>
                     <path d="M15 8.5A5 5 0 0 1 20.5 14"/>
                 </svg>`
                 : `>
@@ -2572,7 +2574,8 @@ function createSearchEngineRow(
     removeButton.textContent =
         "×";
 
-    removeButton.setAttribute(        "aria-label",
+    removeButton.setAttribute(
+        "aria-label",
         "Remove " + definition.name
     );
 
@@ -3371,6 +3374,7 @@ let placeholderAssignments =
 let articleLoadSequence = 0;
 
 let displayArticles = [];
+
 let categoryCounts = new Map();
 
 let renderedArticleCount = 0;
