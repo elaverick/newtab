@@ -149,7 +149,7 @@ function getEffectiveDate() {
     if (fakeDate) {
 
         const match =
-            /^(\\d{4})-(\\d{2})-(\\d{2})$/.exec(
+            /^(\d{4})-(\d{2})-(\d{2})$/.exec(
                 fakeDate
             );
 
