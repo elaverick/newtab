@@ -595,16 +595,80 @@ function createHalloweenDecorations() {
 }
 
 
-function createFireworkBurst() {
+let fireworksAnimationFrame = null;
 
-    const burst =
-        document.createElement("span");
 
-    burst.className =
-        "firework-burst";
+let fireworksResizeHandler = null;
+
+
+function createFireworkRocket(width, height) {
+
+    const x =
+        width * (
+            0.12 +
+            Math.random() * 0.76
+        );
+
+    const targetX =
+        x +
+        (
+            -width * 0.10 +
+            Math.random() * width * 0.20
+        );
+
+    const targetY =
+        height * (
+            0.16 +
+            Math.random() * 0.42
+        );
+
+    const riseDistance =
+        height -
+        targetY;
+
+    const duration =
+        55 +
+        Math.random() * 20;
+
+    return {
+        x,
+        y: height + 14,
+        targetX,
+        targetY,
+        velocityX:
+            (
+                targetX -
+                x
+            ) /
+            duration,
+        velocityY:
+            -(
+                riseDistance /
+                duration
+            ),
+        trail: [],
+        colour:
+            Math.random() > 0.25
+                ? "muted"
+                : "strong"
+    };
+
+}
+
+
+function createFireworkBurst(x, y, colours) {
+
+    const particles = [];
 
     const rayCount =
-        12;
+        48 +
+        Math.floor(
+            Math.random() * 17
+        );
+
+    const baseSpeed =
+        2.2 +
+        Math.random() * 1.8;
 
     for (
         let index = 0;
@@ -612,36 +676,94 @@ function createFireworkBurst() {
         index += 1
     ) {
 
-        const ray =
-            document.createElement("i");
-
-        ray.className =
-            "firework-ray";
-
-        ray.style.setProperty(
-            "--firework-angle",
+        const angle =
             (
-                index *
-                (
-                    360 /
-                    rayCount
-                )
-            ) +
-            "deg"
-        );
+                index /
+                rayCount
+            ) *
+            Math.PI *
+            2;
 
-        burst.appendChild(
-            ray
-        );
+        const speed =
+            baseSpeed *
+            (
+                0.72 +
+                Math.random() * 0.56
+            );
+
+        particles.push({
+
+            x,
+
+            y,
+
+            previousX:
+                x,
+
+            previousY:
+                y,
+
+            velocityX:
+                Math.cos(angle) *
+                speed,
+
+            velocityY:
+                Math.sin(angle) *
+                speed,
+
+            drag:
+                0.983 +
+                Math.random() * 0.006,
+
+            gravity:
+                0.020 +
+                Math.random() * 0.018,
+
+            life:
+                0.82 +
+                Math.random() * 0.38,
+
+            age:
+                0,
+
+            colour:
+                index % 7 === 0
+                    ? colours.strong
+                    : colours.muted
+
+        });
 
     }
 
-    return burst;
+    return particles;
 
 }
 
 
 function createFireworks() {
+
+    if (fireworksAnimationFrame !== null) {
+
+        cancelAnimationFrame(
+            fireworksAnimationFrame
+        );
+
+        fireworksAnimationFrame =
+            null;
+
+    }
+
+    if (fireworksResizeHandler !== null) {
+
+        window.removeEventListener(
+            "resize",
+            fireworksResizeHandler
+        );
+
+        fireworksResizeHandler =
+            null;
+
+    }
 
     const existing =
         document.getElementById(
@@ -654,81 +776,505 @@ function createFireworks() {
 
     }
 
-    const fireworks =
-        document.createElement("div");
+    if (
+        window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+        ).matches
+    ) {
 
-    fireworks.id =
+        return;
+
+    }
+
+    const canvas =
+        document.createElement("canvas");
+
+    canvas.id =
         "fireworks";
 
-    fireworks.className =
+    canvas.className =
         "fireworks";
 
-    fireworks.setAttribute(
+    canvas.setAttribute(
         "aria-hidden",
         "true"
     );
 
-    const burstCount =
-        7;
-
-    for (
-        let index = 0;
-        index < burstCount;
-        index += 1
-    ) {
-
-        const burst =
-            createFireworkBurst();
-
-        const x =
-            10 + Math.random() * 80;
-
-        const y =
-            10 + Math.random() * 75;
-
-        const scale =
-            0.55 + Math.random() * 0.55;
-
-        const delay =
-            -(Math.random() * 5);
-
-        const duration =
-            5.5 + Math.random() * 3.5;
-
-        burst.style.left =
-            x + "%";
-
-        burst.style.top =
-            y + "%";
-
-        burst.style.setProperty(
-            "--firework-scale",
-            scale
+    const context =
+        canvas.getContext(
+            "2d"
         );
 
-        burst.style.setProperty(
-            "--firework-delay",
-            delay + "s"
+    if (!context) {
+
+        return;
+
+    }
+
+    const rootStyles =
+        getComputedStyle(
+            document.body
         );
 
-        burst.style.setProperty(
-            "--firework-duration",
-            duration + "s"
+    const colours = {
+
+        muted:
+            rootStyles
+                .getPropertyValue(
+                    "--muted"
+                )
+                .trim() ||
+            "#777",
+
+        strong:
+            rootStyles
+                .getPropertyValue(
+                    "--line-strong"
+                )
+                .trim() ||
+            "#555"
+
+    };
+
+    let width =
+        window.innerWidth;
+
+    let height =
+        window.innerHeight;
+
+    let devicePixelRatio =
+        Math.min(
+            window.devicePixelRatio || 1,
+            2
         );
 
-        fireworks.appendChild(
-            burst
+    function resizeFireworks() {
+
+        width =
+            window.innerWidth;
+
+        height =
+            window.innerHeight;
+
+        devicePixelRatio =
+            Math.min(
+                window.devicePixelRatio || 1,
+                2
+            );
+
+        canvas.width =
+            Math.round(
+                width *
+                devicePixelRatio
+            );
+
+        canvas.height =
+            Math.round(
+                height *
+                devicePixelRatio
+            );
+
+        canvas.style.width =
+            width + "px";
+
+        canvas.style.height =
+            height + "px";
+
+        context.setTransform(
+            devicePixelRatio,
+            0,
+            0,
+            devicePixelRatio,
+            0,
+            0
         );
 
     }
 
-    document.body.prepend(
-        fireworks
+    resizeFireworks();
+
+    fireworksResizeHandler =
+        resizeFireworks;
+
+    window.addEventListener(
+        "resize",
+        fireworksResizeHandler,
+        {
+            passive: true
+        }
     );
 
+    const rockets = [];
+
+    const particles = [];
+
+    let nextLaunch =
+        performance.now() +
+        300;
+
+    let lastTime =
+        performance.now();
+
+    function launchRocket() {
+
+        rockets.push(
+            createFireworkRocket(
+                width,
+                height
+            )
+        );
+
+    }
+
+    function burstRocket(rocket) {
+
+        particles.push(
+            ...createFireworkBurst(
+                rocket.x,
+                rocket.y,
+                colours
+            )
+        );
+
+    }
+
+    function drawTrail(points, alpha) {
+
+        if (points.length < 2) {
+
+            return;
+
+        }
+
+        context.beginPath();
+
+        context.moveTo(
+            points[0].x,
+            points[0].y
+        );
+
+        for (
+            let index = 1;
+            index < points.length;
+            index += 1
+        ) {
+
+            context.lineTo(
+                points[index].x,
+                points[index].y
+            );
+
+        }
+
+        context.strokeStyle =
+            colours.muted;
+
+        context.globalAlpha =
+            alpha;
+
+        context.lineWidth =
+            1;
+
+        context.stroke();
+
+    }
+
+    function animateFireworks(now) {
+
+        const delta =
+            Math.min(
+                (
+                    now -
+                    lastTime
+                ) /
+                16.6667,
+                2.2
+            );
+
+        lastTime =
+            now;
+
+        context.clearRect(
+            0,
+            0,
+            width,
+            height
+        );
+
+        if (
+            now >=
+            nextLaunch
+        ) {
+
+            launchRocket();
+
+            if (
+                Math.random() <
+                0.26
+            ) {
+
+                launchRocket();
+
+            }
+
+            nextLaunch =
+                now +
+                650 +
+                Math.random() * 650;
+
+        }
+
+        for (
+            let index =
+                rockets.length - 1;
+            index >= 0;
+            index -= 1
+        ) {
+
+            const rocket =
+                rockets[index];
+
+            rocket.previousX =
+                rocket.x;
+
+            rocket.previousY =
+                rocket.y;
+
+            rocket.x +=
+                rocket.velocityX *
+                delta;
+
+            rocket.y +=
+                rocket.velocityY *
+                delta;
+
+            rocket.trail.unshift({
+                x:
+                    rocket.x,
+                y:
+                    rocket.y
+            });
+
+            rocket.trail =
+                rocket.trail.slice(
+                    0,
+                    7
+                );
+
+            drawTrail(
+                rocket.trail,
+                0.16
+            );
+
+            context.beginPath();
+
+            context.moveTo(
+                rocket.x,
+                rocket.y + 4
+            );
+
+            context.lineTo(
+                rocket.x,
+                rocket.y - 6
+            );
+
+            context.strokeStyle =
+                rocket.colour === "strong"
+                    ? colours.strong
+                    : colours.muted;
+
+            context.globalAlpha =
+                0.45;
+
+            context.lineWidth =
+                1;
+
+            context.stroke();
+
+            const reachedTarget =
+                rocket.y <=
+                    rocket.targetY;
+
+            const reachedTop =
+                rocket.y < -40;
+
+            if (
+                reachedTarget ||
+                reachedTop
+            ) {
+
+                burstRocket(
+                    rocket
+                );
+
+                rockets.splice(
+                    index,
+                    1
+                );
+
+            }
+
+        }
+
+        for (
+            let index =
+                particles.length - 1;
+            index >= 0;
+            index -= 1
+        ) {
+
+            const particle =
+                particles[index];
+
+            particle.age +=
+                0.016 *
+                delta;
+
+            if (
+                particle.age >=
+                particle.life
+            ) {
+
+                particles.splice(
+                    index,
+                    1
+                );
+
+                continue;
+
+            }
+
+            particle.previousX =
+                particle.x;
+
+            particle.previousY =
+                particle.y;
+
+            particle.velocityX *=
+                Math.pow(
+                    particle.drag,
+                    delta
+                );
+
+            particle.velocityY *=
+                Math.pow(
+                    particle.drag,
+                    delta
+                );
+
+            particle.velocityY +=
+                particle.gravity *
+                delta;
+
+            particle.x +=
+                particle.velocityX *
+                delta;
+
+            particle.y +=
+                particle.velocityY *
+                delta;
+
+            const lifeRemaining =
+                1 -
+                (
+                    particle.age /
+                    particle.life
+                );
+
+            const trailLength =
+                1.4 +
+                (
+                    2.4 *
+                    lifeRemaining
+                );
+
+            context.beginPath();
+
+            context.moveTo(
+                particle.x -
+                (
+                    particle.velocityX *
+                    trailLength
+                ),
+                particle.y -
+                (
+                    particle.velocityY *
+                    trailLength
+                )
+            );
+
+            context.lineTo(
+                particle.x,
+                particle.y
+            );
+
+            context.strokeStyle =
+                particle.colour;
+
+            context.globalAlpha =
+                0.65 *
+                lifeRemaining;
+
+            context.lineWidth =
+                lifeRemaining > 0.30
+                    ? 1
+                    : 0.75;
+
+            context.stroke();
+
+        }
+
+        context.globalAlpha =
+            1;
+
+        fireworksAnimationFrame =
+            requestAnimationFrame(
+                animateFireworks
+            );
+
+    }
+
+    canvas.addEventListener(
+        "contextlost",
+        event => {
+            event.preventDefault();
+
+            if (
+                fireworksAnimationFrame !== null
+            ) {
+
+                cancelAnimationFrame(
+                    fireworksAnimationFrame
+                );
+
+                fireworksAnimationFrame =
+                    null;
+
+            }
+
+        }
+    );
+
+    document.body.prepend(
+        canvas
+    );
+
+    for (
+        let index = 0;
+        index < 4;
+        index += 1
+    ) {
+
+        launchRocket();
+
+    }
+
+    fireworksAnimationFrame =
+        requestAnimationFrame(
+            animateFireworks
+        );
+
 }
-
-
 function triggerMatchesDate(date, trigger) {
 
     if (typeof trigger === "function") {
