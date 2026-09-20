@@ -79,6 +79,9 @@
 
 .halloween-bat-visual {
 
+    position:
+        relative;
+
     width:
         100%;
 
@@ -88,12 +91,22 @@
     display:
         block;
 
+    transform:
+        translateY(0);
+
     animation:
         halloween-bat-flutter
         0.68s
         ease-in-out
         infinite;
 }
+
+body.halloween-active .halloween-bat-rtl .halloween-bat-visual {
+
+    transform:
+        scaleX(-1);
+}
+
 
 
 .halloween-bat-frame {
@@ -116,77 +129,119 @@
     object-fit:
         contain;
 
-    filter:
-        none;
+    transform-origin:
+        50% 50%;
+
+    opacity:
+        0;
 
     will-change:
         opacity;
 }
 
 
-.halloween-bat-frame-open {
+.halloween-bat-frame-1,
+.halloween-bat-frame-2,
+.halloween-bat-frame-3 {
+
+    filter:
+        invert(0);
+}
+
+
+body.theme-dark .halloween-bat-frame-1,
+body.theme-dark .halloween-bat-frame-2,
+body.theme-dark .halloween-bat-frame-3 {
+
+    filter:
+        invert(1)
+        brightness(0.86);
+}
+
+
+.halloween-bat-frame-1 {
 
     animation:
-        halloween-bat-frame-open
-        0.68s
-        ease-in-out
+        halloween-bat-frame-1
+        0.96s
+        linear
         infinite;
 }
 
 
-.halloween-bat-frame-flap {
-
-    opacity:
-        0;
+.halloween-bat-frame-2 {
 
     animation:
-        halloween-bat-frame-flap
-        0.68s
-        ease-in-out
+        halloween-bat-frame-2
+        0.96s
+        linear
         infinite;
 }
 
 
-@keyframes halloween-bat-frame-open {
+.halloween-bat-frame-3 {
+
+    animation:
+        halloween-bat-frame-3
+        0.96s
+        linear
+        infinite;
+}
+
+
+@keyframes halloween-bat-frame-1 {
 
     0%,
-    40% {
+    41.66%,
+    100% {
         opacity:
             1;
     }
 
-    46%,
-    54% {
-        opacity:
-            0;
-    }
-
-    60%,
-    100% {
+    41.67%,
+    99.99% {
         opacity:
             0;
     }
 }
 
 
-
-
-@keyframes halloween-bat-frame-flap {
+@keyframes halloween-bat-frame-2 {
 
     0%,
-    40% {
+    33.32%,
+    75%,
+    100% {
         opacity:
             0;
     }
 
-    46%,
-    54% {
+    33.33%,
+    58.33% {
         opacity:
             1;
     }
 
-    60%,
+    58.34%,
+    74.99% {
+        opacity:
+            0;
+    }
+}
+
+
+@keyframes halloween-bat-frame-3 {
+
+    0%,
+    58.33%,
+    91.67%,
     100% {
+        opacity:
+            0;
+    }
+
+    58.34%,
+    91.66% {
         opacity:
             1;
     }
@@ -261,6 +316,9 @@
             translateY(0);
     }
 }
+
+
+
 
 
 @keyframes halloween-bat-flight-ltr {
