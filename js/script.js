@@ -181,16 +181,6 @@ function getEffectiveDate() {
 }
 
 
-function isChristmas(date) {
-
-    return (
-        date.getMonth() === 11 &&
-        date.getDate() === 25
-    );
-
-}
-
-
 function createChristmasSnow() {
 
     const existing =
@@ -201,15 +191,6 @@ function createChristmasSnow() {
     if (existing) {
 
         existing.remove();
-
-    }
-
-    const date =
-        getEffectiveDate();
-
-    if (!isChristmas(date)) {
-
-        return;
 
     }
 
@@ -306,19 +287,6 @@ function createChristmasSnow() {
 }
 
 
-createChristmasSnow();
-
-
-function isHalloween(date) {
-
-    return (
-        date.getMonth() === 9 &&
-        date.getDate() === 31
-    );
-
-}
-
-
 function createHalloweenBat() {
 
     const bat =
@@ -332,16 +300,16 @@ function createHalloweenBat() {
             <div class="halloween-bat-motion">
                 <img
                     class="halloween-bat-frame halloween-bat-frame-1"
-                src="images/halloween/bat1.svg"
-                alt=""
-                aria-hidden="true"
-            >
-            <img
-                class="halloween-bat-frame halloween-bat-frame-2"
-                src="images/halloween/bat2.svg"
-                alt=""
-                aria-hidden="true"
-            >
+                    src="images/halloween/bat1.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <img
+                    class="halloween-bat-frame halloween-bat-frame-2"
+                    src="images/halloween/bat2.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
                 <img
                     class="halloween-bat-frame halloween-bat-frame-3"
                     src="images/halloween/bat3.svg"
@@ -360,14 +328,14 @@ function createHalloweenBat() {
 function createHalloweenBats() {
 
     const existing =
-        document.getElementById("halloweenBats");
+        document.getElementById(
+            "halloweenBats"
+        );
 
     if (existing) {
-        existing.remove();
-    }
 
-    if (!isHalloween(getEffectiveDate())) {
-        return;
+        existing.remove();
+
     }
 
     const bats =
@@ -598,10 +566,6 @@ function createHalloweenPumpkins() {
                 element.remove()
         );
 
-    if (!isHalloween(getEffectiveDate())) {
-        return;
-    }
-
     const sectionHeaders =
         Array.from(
             document.querySelectorAll(
@@ -622,25 +586,258 @@ function createHalloweenPumpkins() {
 }
 
 
-function updateHalloweenDecorations() {
+function createHalloweenDecorations() {
 
-    const active =
-        isHalloween(
-            getEffectiveDate()
-        );
-
-    document.body.classList.toggle(
-        "halloween-active",
-        active
-    );
+    createHalloweenBats();
 
     createHalloweenPumpkins();
 
 }
 
 
-createHalloweenBats();
-updateHalloweenDecorations();
+function createFireworkBurst() {
+
+    const burst =
+        document.createElement("span");
+
+    burst.className =
+        "firework-burst";
+
+    const rayCount =
+        12;
+
+    for (
+        let index = 0;
+        index < rayCount;
+        index += 1
+    ) {
+
+        const ray =
+            document.createElement("i");
+
+        ray.className =
+            "firework-ray";
+
+        ray.style.setProperty(
+            "--firework-angle",
+            (
+                index *
+                (
+                    360 /
+                    rayCount
+                )
+            ) +
+            "deg"
+        );
+
+        burst.appendChild(
+            ray
+        );
+
+    }
+
+    return burst;
+
+}
+
+
+function createFireworks() {
+
+    const existing =
+        document.getElementById(
+            "fireworks"
+        );
+
+    if (existing) {
+
+        existing.remove();
+
+    }
+
+    const fireworks =
+        document.createElement("div");
+
+    fireworks.id =
+        "fireworks";
+
+    fireworks.className =
+        "fireworks";
+
+    fireworks.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    const burstCount =
+        7;
+
+    for (
+        let index = 0;
+        index < burstCount;
+        index += 1
+    ) {
+
+        const burst =
+            createFireworkBurst();
+
+        const x =
+            10 + Math.random() * 80;
+
+        const y =
+            10 + Math.random() * 75;
+
+        const scale =
+            0.55 + Math.random() * 0.55;
+
+        const delay =
+            -(Math.random() * 5);
+
+        const duration =
+            5.5 + Math.random() * 3.5;
+
+        burst.style.left =
+            x + "%";
+
+        burst.style.top =
+            y + "%";
+
+        burst.style.setProperty(
+            "--firework-scale",
+            scale
+        );
+
+        burst.style.setProperty(
+            "--firework-delay",
+            delay + "s"
+        );
+
+        burst.style.setProperty(
+            "--firework-duration",
+            duration + "s"
+        );
+
+        fireworks.appendChild(
+            burst
+        );
+
+    }
+
+    document.body.prepend(
+        fireworks
+    );
+
+}
+
+
+function triggerMatchesDate(date, trigger) {
+
+    if (typeof trigger === "function") {
+
+        return trigger(date);
+
+    }
+
+    if (Array.isArray(trigger)) {
+
+        return trigger.some(
+            value =>
+                triggerMatchesDate(
+                    date,
+                    value
+                )
+        );
+
+    }
+
+    if (
+        typeof trigger !== "string" ||
+        !/^\d{2}-\d{2}$/.test(trigger)
+    ) {
+
+        return false;
+
+    }
+
+    const month =
+        Number(
+            trigger.slice(
+                0,
+                2
+            )
+        );
+
+    const day =
+        Number(
+            trigger.slice(
+                3,
+                5
+            )
+        );
+
+    return (
+        date.getMonth() + 1 === month &&
+        date.getDate() === day
+    );
+
+}
+
+
+const EASTER_EGGS = [
+
+    {
+        trigger:
+            "12-25",
+
+        activate:
+            createChristmasSnow
+    },
+
+    {
+        trigger:
+            "10-31",
+
+        activate:
+            createHalloweenDecorations
+    },
+
+    {
+        trigger: [
+            "12-31",
+            "11-05"
+        ],
+
+        activate:
+            createFireworks
+    }
+
+];
+
+
+function activateEasterEggs(date) {
+
+    EASTER_EGGS.forEach(
+        easterEgg => {
+
+            if (
+                triggerMatchesDate(
+                    date,
+                    easterEgg.trigger
+                )
+            ) {
+
+                easterEgg.activate();
+
+            }
+
+        }
+    );
+
+}
+
+
+activateEasterEggs(
+    getEffectiveDate()
+);
 
 
 /* ================================================================
