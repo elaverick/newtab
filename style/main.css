@@ -1340,6 +1340,13 @@ a {
 }
 
 
+.search-history-row.place {
+
+    grid-template-columns:
+        minmax(0, 1fr);
+}
+
+
 .search-history-row:last-child {
 
     border-bottom:

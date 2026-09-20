@@ -2900,9 +2900,6 @@ function getPlaceSearchMatches(query) {
 
 function getSearchSuggestionMatches(query) {
 
-    const normalisedQuery =
-        query.trim().toLocaleLowerCase();
-
     const directNavigation =
         Boolean(
             getDirectNavigationUrl(
@@ -3142,10 +3139,24 @@ function renderSearchHistory() {
 
             }
 
-            row.append(
-                suggestion,
-                remove
-            );
+            if (item.type === "history") {
+
+                row.append(
+                    suggestion,
+                    remove
+                );
+
+            } else {
+
+                row.classList.add(
+                    "place"
+                );
+
+                row.append(
+                    suggestion
+                );
+
+            }
 
             if (
                 searchHistoryHighlightIndex ===
