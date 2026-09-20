@@ -204,15 +204,13 @@
 
 @keyframes halloween-bat-flutter-motion {
 
-    0%,
-    100% {
+    0% {
         transform:
             translateY(0)
             scale(var(--bat-scale));
     }
 
-    12.5%,
-    87.5% {
+    12.5% {
         transform:
             translateY(
                 calc(var(--bat-rise) * 0.707)
@@ -220,8 +218,7 @@
             scale(var(--bat-scale));
     }
 
-    25%,
-    75% {
+    25% {
         transform:
             translateY(
                 var(--bat-rise)
@@ -229,8 +226,7 @@
             scale(var(--bat-scale));
     }
 
-    37.5%,
-    62.5% {
+    37.5% {
         transform:
             translateY(
                 calc(var(--bat-rise) * 0.707)
@@ -239,6 +235,36 @@
     }
 
     50% {
+        transform:
+            translateY(0)
+            scale(var(--bat-scale));
+    }
+
+    62.5% {
+        transform:
+            translateY(
+                calc(var(--bat-rise) * -0.707)
+            )
+            scale(var(--bat-scale));
+    }
+
+    75% {
+        transform:
+            translateY(
+                calc(var(--bat-rise) * -1)
+            )
+            scale(var(--bat-scale));
+    }
+
+    87.5% {
+        transform:
+            translateY(
+                calc(var(--bat-rise) * -0.707)
+            )
+            scale(var(--bat-scale));
+    }
+
+    100% {
         transform:
             translateY(0)
             scale(var(--bat-scale));
