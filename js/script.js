@@ -228,7 +228,7 @@ function createChristmasSnow() {
     );
 
     const snowflakeCount =
-        32;
+        128;
 
     for (
         let index = 0;
@@ -308,6 +308,162 @@ function createChristmasSnow() {
 
 createChristmasSnow();
 
+
+function isHalloween(date) {
+
+    return (
+        date.getMonth() === 9 &&
+        date.getDate() === 31
+    );
+
+}
+
+
+function createHalloweenBat() {
+
+    const bat =
+        document.createElement("div");
+
+    bat.className =
+        "halloween-bat";
+
+    bat.innerHTML = `
+        <svg class="halloween-bat-svg" viewBox="0 0 60 28" aria-hidden="true" focusable="false">
+            <path class="halloween-bat-wing-left" d="M30 13 C25 7 20 4 12 5 C15 8 11 10 6 9 C10 14 17 15 23 14 C19 17 20 20 25 17 C27 16 29 14 30 13Z"></path>
+            <path class="halloween-bat-wing-right" d="M30 13 C35 7 40 4 48 5 C45 8 49 10 54 9 C50 14 43 15 37 14 C41 17 40 20 35 17 C33 16 31 14 30 13Z"></path>
+            <path class="halloween-bat-body" d="M27 12 C28 8 32 8 33 12 L34 17 L30 20 L26 17 Z"></path>
+        </svg>
+    `;
+
+    return bat;
+
+}
+
+
+function createHalloweenBats() {
+
+    const existing =
+        document.getElementById("halloweenBats");
+
+    if (existing) {
+        existing.remove();
+    }
+
+    if (!isHalloween(getEffectiveDate())) {
+        return;
+    }
+
+    const bats =
+        document.createElement("div");
+
+    bats.id =
+        "halloweenBats";
+    bats.className =
+        "halloween-bats";
+    bats.setAttribute("aria-hidden", "true");
+
+    const batCount =
+        24;
+
+    for (
+        let index = 0;
+        index < batCount;
+        index += 1
+    ) {
+
+        const bat =
+            createHalloweenBat();
+
+        const direction =
+            index % 2 === 0 ? "ltr" : "rtl";
+        const duration =
+            22 + Math.random() * 14;
+        const delay =
+            -(Math.random() * duration);
+        const rise =
+            5 + Math.random() * 9;
+        const top =
+            4 + Math.random() * 92;
+        const scale =
+            0.52 + Math.random() * 0.62;
+
+        bat.classList.add("halloween-bat-" + direction);
+        bat.style.top = top + "%";
+        bat.style.setProperty("--bat-duration", duration + "s");
+        bat.style.setProperty("--bat-delay", delay + "s");
+        bat.style.setProperty("--bat-rise", rise + "px");
+        bat.style.setProperty("--bat-scale", scale);
+
+        bats.appendChild(bat);
+    }
+
+    document.body.prepend(bats);
+
+}
+
+
+function createHalloweenPumpkin(theme) {
+
+    const pumpkin =
+        document.createElement("img");
+    pumpkin.className =
+        "halloween-pumpkin halloween-pumpkin-" + theme;
+    pumpkin.src =
+        "images/halloween/pumpkin-" + theme + ".svg";
+    pumpkin.alt = "";
+    pumpkin.setAttribute("aria-hidden", "true");
+    return pumpkin;
+
+}
+
+
+function addHalloweenPumpkinToSection(sectionHeader, side) {
+
+    if (!sectionHeader) {
+        return;
+    }
+
+    const holder =
+        document.createElement("span");
+    holder.className =
+        "halloween-pumpkin-holder halloween-pumpkin-" + side;
+    holder.setAttribute("aria-hidden", "true");
+    holder.appendChild(createHalloweenPumpkin("light"));
+    holder.appendChild(createHalloweenPumpkin("dark"));
+    sectionHeader.appendChild(holder);
+
+}
+
+
+function createHalloweenPumpkins() {
+
+    document
+        .querySelectorAll(".halloween-pumpkin-holder")
+        .forEach(element => element.remove());
+
+    if (!isHalloween(getEffectiveDate())) {
+        return;
+    }
+
+    const sectionHeaders =
+        Array.from(document.querySelectorAll(".section-header"));
+
+    addHalloweenPumpkinToSection(sectionHeaders[0], "places");
+    addHalloweenPumpkinToSection(sectionHeaders[1], "elsewhere");
+
+}
+
+
+function updateHalloweenDecorations() {
+    const active =
+        isHalloween(getEffectiveDate());
+    document.body.classList.toggle("halloween-active", active);
+    createHalloweenPumpkins();
+}
+
+
+createHalloweenBats();
+updateHalloweenDecorations();
 
 /* ================================================================
    PLACES
