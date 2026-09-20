@@ -963,14 +963,14 @@ a {
         1px solid var(--line);
 
     background:
-        transparent;
+        var(--background);
 }
 
 
 .site:hover {
 
     background:
-        var(--surface);
+        var(--background);
 }
 
 
@@ -1200,14 +1200,14 @@ a {
         1px solid var(--line);
 
     background:
-        transparent;
+        var(--background);
 }
 
 
 .article:hover {
 
     background:
-        var(--surface);
+        var(--background);
 }
 
 
