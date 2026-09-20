@@ -1119,6 +1119,9 @@ a {
 
 .search {
 
+    position:
+        relative;
+
     display:
         flex;
 
@@ -1290,6 +1293,191 @@ a {
 
     color:
         var(--text);
+}
+
+
+.search-history {
+
+    position:
+        absolute;
+
+    top:
+        calc(100% + 8px);
+
+    left:
+        0;
+
+    right:
+        0;
+
+    z-index:
+        30;
+
+    overflow:
+        hidden;
+
+    border:
+        1px solid var(--line);
+
+    background:
+        var(--surface);
+
+    box-shadow:
+        0 12px 30px rgba(20,30,40,0.08);
+}
+
+
+.search-history-row {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0, 1fr) auto;
+
+    border-bottom:
+        1px solid var(--line);
+}
+
+
+.search-history-row.place {
+
+    grid-template-columns:
+        minmax(0, 1fr);
+}
+
+
+.search-history-row:last-child {
+
+    border-bottom:
+        0;
+}
+
+
+.search-history-row.highlighted,
+.search-history-row:hover {
+
+    background:
+        var(--surface-subtle);
+}
+
+
+.search-history-suggestion {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    min-width:
+        0;
+
+    padding:
+        11px 12px;
+
+    border:
+        0;
+
+    background:
+        transparent;
+
+    color:
+        var(--text);
+
+    text-align:
+        left;
+
+    font-family:
+        var(--font-display);
+
+    font-size:
+        12px;
+}
+
+
+.search-history-text {
+
+    overflow:
+        hidden;
+
+    min-width:
+        0;
+
+    text-overflow:
+        ellipsis;
+
+    white-space:
+        nowrap;
+}
+
+
+.search-history-kind {
+
+    flex:
+        0 0 auto;
+
+    margin-left:
+        10px;
+
+    color:
+        var(--muted);
+
+    font-family:
+        var(--font-mono);
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        0.12em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.search-history-remove {
+
+    width:
+        42px;
+
+    padding:
+        0;
+
+    border:
+        0;
+
+    border-left:
+        1px solid var(--line);
+
+    background:
+        transparent;
+
+    color:
+        var(--muted);
+
+    font-size:
+        15px;
+}
+
+
+.search-history-remove:hover {
+
+    color:
+        var(--text);
+
+}
+
+
+.search-history-suggestion:focus-visible,
+.search-history-remove:focus-visible {
+
+    outline:
+        1px solid var(--line-strong);
+
+    outline-offset:
+        -1px;
 }
 
 
@@ -1569,6 +1757,26 @@ a {
 
     background:
         var(--background);
+}
+
+
+.site.search-match {
+
+    background:
+        var(--surface-subtle);
+
+    box-shadow:
+        inset 0 0 0 1px var(--line-strong);
+}
+
+
+.site.search-match .site-icon {
+
+    border-color:
+        var(--line-strong);
+
+    color:
+        var(--text);
 }
 
 

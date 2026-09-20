@@ -2063,6 +2063,12 @@ removeSiteButton.addEventListener(
         savePlaces();
         renderPlaces();
 
+        updatePlaceSearchMatches(
+            document.getElementById(
+                "searchInput"
+            ).value
+        );
+
         setEditorMode(
             null
         );
@@ -2531,6 +2537,777 @@ const providerMark =
 const searchInput =
     document.getElementById("searchInput");
 
+const SEARCH_HISTORY_KEY =
+    "newtab-search-history";
+
+const SEARCH_HISTORY_LIMIT =
+    50;
+
+const SEARCH_HISTORY_SUGGESTION_LIMIT =
+    6;
+
+
+let searchHistory =
+    loadSearchHistory();
+
+let searchHistoryHighlightIndex =
+    -1;
+
+
+const searchHistoryElement =
+    document.getElementById(
+        "searchHistory"
+    );
+
+
+function loadSearchHistory() {
+
+    try {
+
+        const saved =
+            JSON.parse(
+                localStorage.getItem(
+                    SEARCH_HISTORY_KEY
+                )
+            );
+
+        if (!Array.isArray(saved)) {
+
+            return [];
+
+        }
+
+        return saved
+            .filter(
+                entry =>
+                    entry &&
+                    typeof entry.text === "string"
+            )
+            .map(
+                entry => ({
+                    text:
+                        entry.text.trim(),
+                    timestamp:
+                        Number(entry.timestamp) || 0
+                })
+            )
+            .filter(
+                entry =>
+                    entry.text.length > 0
+            )
+            .slice(
+                0,
+                SEARCH_HISTORY_LIMIT
+            );
+
+    } catch (error) {
+
+        console.warn(
+            "Unable to load search history:",
+            error
+        );
+
+        return [];
+
+    }
+
+}
+
+
+function saveSearchHistory() {
+
+    localStorage.setItem(
+        SEARCH_HISTORY_KEY,
+        JSON.stringify(
+            searchHistory
+        )
+    );
+
+}
+
+
+function addSearchHistoryEntry(text) {
+
+    const value =
+        text.trim();
+
+    if (!value) {
+
+        return;
+
+    }
+
+    const normalised =
+        value.toLocaleLowerCase();
+
+    searchHistory =
+        searchHistory.filter(
+            entry =>
+                entry.text.toLocaleLowerCase() !==
+                normalised
+        );
+
+    searchHistory.unshift({
+        text: value,
+        timestamp: Date.now()
+    });
+
+    searchHistory =
+        searchHistory.slice(
+            0,
+            SEARCH_HISTORY_LIMIT
+        );
+
+    saveSearchHistory();
+
+}
+
+
+function removeSearchHistoryEntry(index) {
+
+    if (
+        index < 0 ||
+        index >= searchHistory.length
+    ) {
+
+        return;
+
+    }
+
+    searchHistory.splice(
+        index,
+        1
+    );
+
+    saveSearchHistory();
+
+    searchHistoryHighlightIndex =
+        -1;
+
+    renderSearchHistory();
+
+}
+
+
+function getDirectNavigationUrl(value) {
+
+    const query =
+        value.trim();
+
+    if (!query || /\s/.test(query)) {
+
+        return "";
+
+    }
+
+    if (
+        /^https?:\/\//i.test(
+            query
+        )
+    ) {
+
+        try {
+
+            const url =
+                new URL(query);
+
+            if (
+                url.protocol !== "http:" &&
+                url.protocol !== "https:"
+            ) {
+
+                return "";
+
+            }
+
+            if (!url.hostname) {
+
+                return "";
+
+            }
+
+            return url.href;
+
+        } catch (error) {
+
+            return "";
+
+        }
+
+    }
+
+    const host =
+        query.split(
+            /[/?#]/
+        )[0];
+
+    const looksLikeIpv4 =
+        /^(?:\d{1,3}\.){3}\d{1,3}(?::\d{1,5})?$/.test(
+            host
+        );
+
+    const looksLikeIpv6 =
+        /^\[[0-9a-f:]+\](?::\d{1,5})?$/i.test(
+            host
+        );
+
+    const looksLikeLocalhost =
+        /^localhost(?::\d{1,5})?$/i.test(
+            host
+        );
+
+    const looksLikeDomain =
+        /^(?=.{1,253}$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$/i.test(
+            host
+        );
+
+    if (
+        !looksLikeIpv4 &&
+        !looksLikeIpv6 &&
+        !looksLikeLocalhost &&
+        !looksLikeDomain
+    ) {
+
+        return "";
+
+    }
+
+    try {
+
+        const url =
+            new URL(
+                "https://" +
+                query
+            );
+
+        if (!url.hostname) {
+
+            return "";
+
+        }
+
+        return url.href;
+
+    } catch (error) {
+
+        return "";
+
+    }
+
+}
+
+
+function getTextMatchPosition(text, query) {
+
+    if (!query) {
+        return 0;
+    }
+
+    return text
+        .toLocaleLowerCase()
+        .indexOf(query);
+
+}
+
+
+function getPlaceMatchPosition(place, query) {
+
+    const normalisedQuery =
+        query.trim().toLocaleLowerCase();
+
+    if (!normalisedQuery) {
+        return 0;
+    }
+
+    return Math.min(
+        ...[
+            place.name,
+            getPlaceHostname(place.url),
+            place.url
+        ]
+            .map(
+                value =>
+                    getTextMatchPosition(
+                        String(value ?? ""),
+                        normalisedQuery
+                    )
+            )
+            .filter(
+                position =>
+                    position >= 0
+            ),
+        Infinity
+    );
+
+}
+
+
+function getSearchHistoryMatches(query) {
+
+    const normalisedQuery =
+        query.trim().toLocaleLowerCase();
+
+    if (!normalisedQuery) {
+
+        return [];
+
+    }
+
+    return searchHistory
+        .map(
+            (entry, index) => ({
+                type:
+                    "history",
+                entry,
+                index,
+                position:
+                    getTextMatchPosition(
+                        entry.text,
+                        normalisedQuery
+                    )
+            })
+        )
+        .filter(
+            item =>
+                item.position >= 0
+        );
+
+}
+
+
+function getPlaceSearchMatches(query) {
+
+    const normalisedQuery =
+        query.trim().toLocaleLowerCase();
+
+    if (!normalisedQuery) {
+
+        return [];
+
+    }
+
+    return places
+        .map(
+            (place, index) => ({
+                type:
+                    "place",
+                place,
+                index,
+                position:
+                    getPlaceMatchPosition(
+                        place,
+                        normalisedQuery
+                    )
+            })
+        )
+        .filter(
+            item =>
+                item.position !== Infinity
+        );
+
+}
+
+
+function getSearchSuggestionMatches(query) {
+
+    const normalisedQuery =
+        query.trim().toLocaleLowerCase();
+
+    const directNavigation =
+        Boolean(
+            getDirectNavigationUrl(
+                query
+            )
+        );
+
+    const historyMatches =
+        directNavigation
+            ? []
+            : getSearchHistoryMatches(
+                query
+            );
+
+    const placeMatches =
+        getPlaceSearchMatches(
+            query
+        );
+
+    return [
+        ...historyMatches,
+        ...placeMatches
+    ]
+        .sort(
+            (a, b) => {
+
+                const positionDifference =
+                    a.position -
+                    b.position;
+
+                if (positionDifference !== 0) {
+                    return positionDifference;
+                }
+
+                if (
+                    a.type === "history" &&
+                    b.type === "history"
+                ) {
+                    return a.index - b.index;
+                }
+
+                if (
+                    a.type === "place" &&
+                    b.type === "place"
+                ) {
+                    return a.index - b.index;
+                }
+
+                return a.type === "history"
+                    ? -1
+                    : 1;
+
+            }
+        )
+        .slice(
+            0,
+            SEARCH_HISTORY_SUGGESTION_LIMIT
+        );
+
+}
+
+
+function updatePlaceSearchMatches(query) {
+
+    const normalisedQuery =
+        query.trim().toLocaleLowerCase();
+
+    siteGrid
+        .querySelectorAll(
+            ".site"
+        )
+        .forEach(
+            (element, index) => {
+
+                const place =
+                    places[index];
+
+                const isMatch =
+                    Boolean(
+                        place &&
+                        normalisedQuery &&
+                        getPlaceMatchPosition(
+                            place,
+                            normalisedQuery
+                        ) !== Infinity
+                    );
+
+                element.classList.toggle(
+                    "search-match",
+                    isMatch
+                );
+
+            }
+        );
+
+}
+
+
+function renderSearchHistory() {
+
+    const query =
+        searchInput.value.trim();
+
+    updatePlaceSearchMatches(
+        query
+    );
+
+    const matches =
+        getSearchSuggestionMatches(
+            query
+        );
+
+    searchHistoryElement.replaceChildren();
+
+    if (!matches.length) {
+
+        searchHistoryElement.hidden =
+            true;
+
+        searchHistoryElement.setAttribute(
+            "aria-hidden",
+            "true"
+        );
+
+        searchHistoryHighlightIndex =
+            -1;
+
+        return;
+
+    }
+
+    matches.forEach(
+        (item, matchIndex) => {
+
+            const row =
+                document.createElement("div");
+
+            row.className =
+                "search-history-row";
+
+            const suggestion =
+                document.createElement("button");
+
+            suggestion.type =
+                "button";
+
+            suggestion.className =
+                "search-history-suggestion";
+
+            suggestion.dataset.suggestionType =
+                item.type;
+
+            if (item.type === "history") {
+
+                suggestion.dataset.historyIndex =
+                    String(item.index);
+
+            } else {
+
+                suggestion.dataset.placeIndex =
+                    String(item.index);
+
+            }
+
+            suggestion.setAttribute(
+                "aria-label",
+                item.type === "place"
+                    ? item.place.name
+                    : item.entry.text
+            );
+
+            const text =
+                document.createElement("span");
+
+            text.className =
+                "search-history-text";
+
+            text.textContent =
+                item.type === "place"
+                    ? item.place.name
+                    : item.entry.text;
+
+            const kind =
+                document.createElement("span");
+
+            kind.className =
+                "search-history-kind";
+
+            kind.textContent =
+                item.type === "place"
+                    ? "PLACE"
+                    : getDirectNavigationUrl(
+                        item.entry.text
+                    )
+                        ? "DIRECT"
+                        : "SEARCH";
+
+            suggestion.append(
+                text,
+                kind
+            );
+
+            const remove =
+                document.createElement("button");
+
+            remove.type =
+                "button";
+
+            remove.className =
+                "search-history-remove";
+
+            if (item.type === "history") {
+
+                remove.dataset.historyIndex =
+                    String(item.index);
+
+                remove.setAttribute(
+                    "aria-label",
+                    "Remove " +
+                    item.entry.text +
+                    " from search history"
+                );
+
+                remove.title =
+                    "Remove from history";
+
+                remove.textContent =
+                    "×";
+
+            } else {
+
+                remove.hidden =
+                    true;
+
+                remove.tabIndex =
+                    -1;
+
+            }
+
+            if (item.type === "history") {
+
+                row.append(
+                    suggestion,
+                    remove
+                );
+
+            } else {
+
+                row.classList.add(
+                    "place"
+                );
+
+                row.append(
+                    suggestion
+                );
+
+            }
+
+            if (
+                searchHistoryHighlightIndex ===
+                matchIndex
+            ) {
+
+                row.classList.add(
+                    "highlighted"
+                );
+
+                suggestion.setAttribute(
+                    "aria-current",
+                    "true"
+                );
+
+            }
+
+            searchHistoryElement.appendChild(
+                row
+            );
+
+        }
+    );
+
+    searchHistoryElement.hidden =
+        false;
+
+    searchHistoryElement.setAttribute(
+        "aria-hidden",
+        "false"
+    );
+
+}
+
+
+function setSearchHistoryHighlight(index) {
+
+    const matches =
+        getSearchSuggestionMatches(
+            searchInput.value
+        );
+
+    if (!matches.length) {
+
+        searchHistoryHighlightIndex =
+            -1;
+
+        renderSearchHistory();
+
+        return;
+
+    }
+
+    searchHistoryHighlightIndex =
+        Math.max(
+            0,
+            Math.min(
+                index,
+                matches.length - 1
+            )
+        );
+
+    renderSearchHistory();
+
+}
+
+
+function submitSearchValue(value) {
+
+    const query =
+        value.trim();
+
+    if (!query) {
+
+        return;
+
+    }
+
+    searchInput.value =
+        query;
+
+    updatePlaceSearchMatches(
+        query
+    );
+
+    const directUrl =
+        getDirectNavigationUrl(
+            query
+        );
+
+    addSearchHistoryEntry(
+        query
+    );
+
+    searchHistoryHighlightIndex =
+        -1;
+
+    searchHistoryElement.hidden =
+        true;
+
+    searchHistoryElement.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    if (directUrl) {
+
+        window.location.href =
+            directUrl;
+
+        return;
+
+    }
+
+    const provider =
+        getSearchEngineDefinition(
+            selectedProvider
+        )
+            ? selectedProvider
+            : searchSettings.order[0];
+
+    const url =
+        getSearchEngineUrl(
+            provider,
+            query
+        );
+
+    if (!url) {
+
+        return;
+
+    }
+
+    window.location.href =
+        url;
+
+}
+
 
 let selectedProvider =
     searchSettings.order[0] ?? "Google";
@@ -2778,6 +3555,218 @@ applySelectedProvider(
 );
 
 searchInput.focus();
+
+searchInput.addEventListener(
+    "input",
+    () => {
+
+        searchHistoryHighlightIndex =
+            -1;
+
+        renderSearchHistory();
+
+    }
+);
+
+
+searchInput.addEventListener(
+    "focus",
+    () => {
+
+        renderSearchHistory();
+
+    }
+);
+
+
+searchInput.addEventListener(
+    "keydown",
+    event => {
+
+        const isHistoryVisible =
+            !searchHistoryElement.hidden &&
+            searchHistoryElement.children.length > 0;
+
+        if (!isHistoryVisible) {
+
+            return;
+
+        }
+
+        if (event.key === "ArrowDown") {
+
+            event.preventDefault();
+
+            setSearchHistoryHighlight(
+                searchHistoryHighlightIndex + 1
+            );
+
+        } else if (
+            event.key === "ArrowUp"
+        ) {
+
+            event.preventDefault();
+
+            setSearchHistoryHighlight(
+                searchHistoryHighlightIndex <= 0
+                    ? 0
+                    : searchHistoryHighlightIndex - 1
+            );
+
+        } else if (
+            event.key === "Escape"
+        ) {
+
+            event.preventDefault();
+
+            searchHistoryElement.hidden =
+                true;
+
+            searchHistoryElement.setAttribute(
+                "aria-hidden",
+                "true"
+            );
+
+            searchHistoryHighlightIndex =
+                -1;
+
+        }
+
+    }
+);
+
+
+searchHistoryElement.addEventListener(
+    "click",
+    event => {
+
+        const remove =
+            event.target.closest(
+                ".search-history-remove"
+            );
+
+        if (
+            remove &&
+            !remove.hidden
+        ) {
+
+            const index =
+                Number(
+                    remove.dataset.historyIndex
+                );
+
+            removeSearchHistoryEntry(
+                index
+            );
+
+            event.preventDefault();
+            event.stopPropagation();
+
+            searchInput.focus();
+
+            return;
+
+        }
+
+        const suggestion =
+            event.target.closest(
+                ".search-history-suggestion"
+            );
+
+        if (!suggestion) {
+
+            return;
+
+        }
+
+        if (
+            suggestion.dataset.suggestionType ===
+            "place"
+        ) {
+
+            const index =
+                Number(
+                    suggestion.dataset.placeIndex
+                );
+
+            const place =
+                places[index];
+
+            if (!place) {
+                return;
+            }
+
+            addSearchHistoryEntry(
+                place.url
+            );
+
+            searchHistoryHighlightIndex =
+                -1;
+
+            searchHistoryElement.hidden =
+                true;
+
+            searchHistoryElement.setAttribute(
+                "aria-hidden",
+                "true"
+            );
+
+            window.location.href =
+                place.url;
+
+            return;
+
+        }
+
+        const index =
+            Number(
+                suggestion.dataset.historyIndex
+            );
+
+        const entry =
+            searchHistory[index];
+
+        if (!entry) {
+
+            return;
+
+        }
+
+        submitSearchValue(
+            entry.text
+        );
+
+    }
+);
+
+
+document.addEventListener(
+    "click",
+    event => {
+
+        if (
+            !searchHistoryElement.contains(
+                event.target
+            ) &&
+            event.target !== searchInput
+        ) {
+
+            searchHistoryElement.hidden =
+                true;
+
+            searchHistoryElement.setAttribute(
+                "aria-hidden",
+                "true"
+            );
+
+            searchHistoryHighlightIndex =
+                -1;
+
+        }
+
+    }
+);
+
 
 
 /* ================================================================
@@ -4408,32 +5397,22 @@ searchForm.addEventListener(
 
         event.preventDefault();
 
-        const query =
-            searchInput.value.trim();
-
-        if (!query) {
-            return;
-        }
-
-        const provider =
-            getSearchEngineDefinition(
-                selectedProvider
-            )
-                ? selectedProvider
-                : searchSettings.order[0];
-
-        const url =
-            getSearchEngineUrl(
-                provider,
-                query
+        const matches =
+            getSearchHistoryMatches(
+                searchInput.value
             );
 
-        if (!url) {
-            return;
-        }
+        const selectedHistoryEntry =
+            searchHistoryHighlightIndex >= 0
+                ? matches[
+                    searchHistoryHighlightIndex
+                ]?.entry.text
+                : null;
 
-        window.location.href =
-            url;
+        submitSearchValue(
+            selectedHistoryEntry ??
+            searchInput.value
+        );
 
     }
 );
