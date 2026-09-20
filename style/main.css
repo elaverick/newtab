@@ -90,8 +90,11 @@
     overflow:
         visible;
 
-    transform:
-        scale(var(--bat-scale));
+    animation:
+        halloween-bat-flutter-motion
+        0.68s
+        ease-in-out
+        infinite;
 }
 
 
@@ -199,17 +202,40 @@
 }
 
 
-@keyframes halloween-bat-body-bob {
+@keyframes halloween-bat-flutter-motion {
 
     0%,
+    50%,
     100% {
         transform:
-            translateY(1px);
+            translateY(0)
+            scale(var(--bat-scale));
     }
 
-    50% {
+    12.5%,
+    37.5% {
         transform:
-            translateY(-1px);
+            translateY(-1.4px)
+            scale(var(--bat-scale));
+    }
+
+    25% {
+        transform:
+            translateY(-2px)
+            scale(var(--bat-scale));
+    }
+
+    62.5%,
+    87.5% {
+        transform:
+            translateY(1.4px)
+            scale(var(--bat-scale));
+    }
+
+    75% {
+        transform:
+            translateY(2px)
+            scale(var(--bat-scale));
     }
 }
 
