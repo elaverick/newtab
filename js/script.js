@@ -228,7 +228,7 @@ function createChristmasSnow() {
     );
 
     const snowflakeCount =
-        32;
+        24;
 
     for (
         let index = 0;
@@ -246,19 +246,19 @@ function createChristmasSnow() {
             "❄";
 
         const size =
-            9 + Math.random() * 12;
+            8 + Math.random() * 10;
 
         const duration =
-            18 + Math.random() * 16;
+            24 + Math.random() * 18;
 
         const delay =
             -(Math.random() * duration);
 
         const drift =
-            -45 + Math.random() * 90;
+            -40 + Math.random() * 80;
 
         const opacity =
-            0.16 + Math.random() * 0.24;
+            0.10 + Math.random() * 0.15;
 
         flake.style.setProperty(
             "--snow-size",
@@ -3270,7 +3270,7 @@ const date =
 function updateDate() {
 
     const now =
-        new Date();
+        getEffectiveDate();
 
     const day =
         String(
