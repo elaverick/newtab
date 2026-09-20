@@ -413,8 +413,28 @@ function createHalloweenBats() {
         const top =
             4 + Math.random() * 92;
 
+        const sizeOptions = [
+            1,
+            0.95,
+            0.90,
+            0.85
+        ];
+
+        const sizeScale =
+            sizeOptions[
+                Math.floor(
+                    Math.random() *
+                    sizeOptions.length
+                )
+            ];
+
         bat.classList.add(
             "halloween-bat-" + direction
+        );
+
+        bat.style.setProperty(
+            "--bat-size-scale",
+            sizeScale
         );
 
         bat.style.top =
