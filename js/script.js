@@ -2847,6 +2847,22 @@ function getSearchHistoryMatches(query) {
     const normalisedQuery =
         query.trim().toLocaleLowerCase();
 
+    if (!normalisedQuery) {
+
+        return searchHistory
+            .map(
+                (entry, index) => ({
+                    type:
+                        "history",
+                    entry,
+                    index,
+                    position:
+                        0
+                })
+            );
+
+    }
+
     return searchHistory
         .map(
             (entry, index) => ({
@@ -2863,7 +2879,6 @@ function getSearchHistoryMatches(query) {
         )
         .filter(
             item =>
-                normalisedQuery === "" ||
                 item.position >= 0
         );
 
@@ -2874,6 +2889,12 @@ function getPlaceSearchMatches(query) {
 
     const normalisedQuery =
         query.trim().toLocaleLowerCase();
+
+    if (!normalisedQuery) {
+
+        return [];
+
+    }
 
     return places
         .map(
@@ -2891,8 +2912,7 @@ function getPlaceSearchMatches(query) {
         )
         .filter(
             item =>
-                normalisedQuery === "" ||
-                item.position >= 0
+                item.position !== Infinity
         );
 
 }
@@ -2915,9 +2935,11 @@ function getSearchSuggestionMatches(query) {
             );
 
     const placeMatches =
-        getPlaceSearchMatches(
-            query
-        );
+        normalisedQuery
+            ? getPlaceSearchMatches(
+                query
+            )
+            : [];
 
     return [
         ...historyMatches,
@@ -2984,7 +3006,7 @@ function updatePlaceSearchMatches(query) {
                         getPlaceMatchPosition(
                             place,
                             normalisedQuery
-                        ) >= 0
+                        ) !== Infinity
                     );
 
                 element.classList.toggle(
