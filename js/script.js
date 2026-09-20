@@ -329,8 +329,9 @@ function createHalloweenBat() {
 
     bat.innerHTML = `
         <div class="halloween-bat-visual">
-            <img
-                class="halloween-bat-frame halloween-bat-frame-1"
+            <div class="halloween-bat-motion">
+                <img
+                    class="halloween-bat-frame halloween-bat-frame-1"
                 src="images/halloween/bat1.svg"
                 alt=""
                 aria-hidden="true"
@@ -341,12 +342,13 @@ function createHalloweenBat() {
                 alt=""
                 aria-hidden="true"
             >
-            <img
-                class="halloween-bat-frame halloween-bat-frame-3"
-                src="images/halloween/bat3.svg"
-                alt=""
-                aria-hidden="true"
-            >
+                <img
+                    class="halloween-bat-frame halloween-bat-frame-3"
+                    src="images/halloween/bat3.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+            </div>
         </div>
     `;
 
@@ -411,9 +413,6 @@ function createHalloweenBats() {
         const top =
             4 + Math.random() * 92;
 
-        const scale =
-            0.46 + Math.random() * 0.52;
-
         bat.classList.add(
             "halloween-bat-" + direction
         );
@@ -434,13 +433,6 @@ function createHalloweenBats() {
         bat.style.setProperty(
             "--bat-rise",
             rise + "px"
-        );
-
-        bat.style.setProperty(
-            "--bat-direction-scale",
-            direction === "rtl"
-                ? -1
-                : 1
         );
 
         bats.appendChild(
