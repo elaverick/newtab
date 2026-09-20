@@ -1527,6 +1527,9 @@ const weather =
 const WEATHER_SETTINGS_KEY =
     "newtab-weather-enabled";
 
+const WEATHER_PERMISSION_REQUESTED_KEY =
+    "newtab-weather-permission-requested";
+
 const WEATHER_REFRESH_INTERVAL =
     15 * 60 * 1000;
 
@@ -1730,7 +1733,65 @@ function describeWeather(code) {
 
 
 
-async function updateWeather() {
+async function getGeolocationPermissionState() {
+
+    if (
+        !navigator.permissions ||
+        typeof navigator.permissions.query !== "function"
+    ) {
+
+        return "unknown";
+
+    }
+
+    try {
+
+        const permission =
+            await navigator.permissions.query({
+                name: "geolocation"
+            });
+
+        return permission.state;
+
+    } catch {
+
+        return "unknown";
+
+    }
+
+}
+
+
+async function requestCurrentPosition() {
+
+    localStorage.setItem(
+        WEATHER_PERMISSION_REQUESTED_KEY,
+        "true"
+    );
+
+    return new Promise((resolve, reject) => {
+
+        navigator.geolocation.getCurrentPosition(
+            resolve,
+            reject,
+            {
+                enableHighAccuracy: false,
+                maximumAge: 15 * 60 * 1000,
+                timeout: 10000
+            }
+        );
+
+    });
+
+}
+
+
+async function updateWeather(options = {}) {
+
+    const allowPermissionPrompt =
+        Boolean(
+            options.allowPermissionPrompt
+        );
 
     if (
         !getWeatherEnabled() ||
@@ -1744,23 +1805,46 @@ async function updateWeather() {
 
     }
 
+    const permissionState =
+        await getGeolocationPermissionState();
+
+    const permissionWasRequested =
+        localStorage.getItem(
+            WEATHER_PERMISSION_REQUESTED_KEY
+        ) === "true";
+
+    if (
+        permissionState === "denied"
+    ) {
+
+        weather.hidden = true;
+
+        localStorage.setItem(
+            WEATHER_SETTINGS_KEY,
+            "false"
+        );
+
+        return;
+
+    }
+
+    if (
+        permissionState === "prompt" &&
+        permissionWasRequested &&
+        !allowPermissionPrompt
+    ) {
+
+        weather.hidden = true;
+
+        return;
+
+    }
+
 
     try {
 
         const position =
-            await new Promise((resolve, reject) => {
-
-                navigator.geolocation.getCurrentPosition(
-                    resolve,
-                    reject,
-                    {
-                        enableHighAccuracy: false,
-                        maximumAge: 15 * 60 * 1000,
-                        timeout: 10000
-                    }
-                );
-
-            });
+            await requestCurrentPosition();
 
 
         if (!getWeatherEnabled()) {
@@ -1892,12 +1976,14 @@ function setWeatherEnabled(enabled) {
 
     }
 
-    updateWeather();
+    updateWeather({
+        allowPermissionPrompt: true
+    });
 
 }
 
 
-function initialiseWeather() {
+async function initialiseWeather() {
 
     weather.hidden =
         !getWeatherEnabled();
