@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 60" role="img" aria-labelledby="title desc">
+  <title id="title">Line art pumpkin</title>
+  <desc id="desc">A small three-dimensional jack-o-lantern drawn with restrained line art.</desc>
+  <g fill="#111820" stroke="#aab3b8" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M38 9 C36 5 39 3 43 2 C45 2 46 4 44 6 C43 7 42 9 42 11"/>
+    <path d="M40 10 C31 8 21 11 16 19 C11 28 12 43 18 49 C25 56 55 56 62 49 C68 43 69 28 64 19 C59 11 49 8 40 10 Z"/>
+    <path d="M20 17 C16 25 16 40 21 48"/>
+    <path d="M31 12 C26 22 26 43 32 52"/>
+    <path d="M43 11 C40 22 40 43 44 52"/>
+    <path d="M55 13 C59 23 58 43 53 50"/>
+    <path d="M64 19 C68 28 67 40 61 48"/>
+    <path d="M40 10 C33 8 29 10 27 14"/>
+    <path d="M31 24 L36 27 L32 31 Z"/>
+    <path d="M44 27 L49 24 L48 31 Z"/>
+    <path d="M31 38 C36 43 44 43 49 38 C46 46 35 46 31 38 Z"/>
+  </g>
+  <g fill="none" stroke="#68747d" stroke-width=".85" opacity=".9">
+    <path d="M24 16 C20 24 20 38 24 45"/>
+    <path d="M50 14 C53 23 53 40 49 48"/>
+  </g>
+</svg>

@@ -130,6 +130,1263 @@ applyTheme();
 
 
 /* ================================================================
+   EASTER EGGS
+================================================================ */
+
+const EASTER_EGG_DATE_PARAMETER =
+    "fakeDate";
+
+
+function getEffectiveDate() {
+
+    const fakeDate =
+        new URLSearchParams(
+            window.location.search
+        ).get(
+            EASTER_EGG_DATE_PARAMETER
+        );
+
+    if (fakeDate) {
+
+        const match =
+            /^(\d{4})-(\d{2})-(\d{2})$/.exec(
+                fakeDate
+            );
+
+        if (match) {
+
+            const date =
+                new Date(
+                    Number(match[1]),
+                    Number(match[2]) - 1,
+                    Number(match[3])
+                );
+
+            if (
+                date.getFullYear() === Number(match[1]) &&
+                date.getMonth() === Number(match[2]) - 1 &&
+                date.getDate() === Number(match[3])
+            ) {
+
+                return date;
+
+            }
+
+        }
+
+    }
+
+    return new Date();
+
+}
+
+
+function createChristmasSnow() {
+
+    const existing =
+        document.getElementById(
+            "christmasSnow"
+        );
+
+    if (existing) {
+
+        existing.remove();
+
+    }
+
+    const snow =
+        document.createElement("div");
+
+    snow.id =
+        "christmasSnow";
+
+    snow.className =
+        "christmas-snow";
+
+    snow.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    const snowflakeCount =
+        128;
+
+    for (
+        let index = 0;
+        index < snowflakeCount;
+        index += 1
+    ) {
+
+        const flake =
+            document.createElement("span");
+
+        flake.className =
+            "christmas-snowflake";
+
+        flake.textContent =
+            "❄";
+
+        const size =
+            8 + Math.random() * 10;
+
+        const duration =
+            24 + Math.random() * 18;
+
+        const delay =
+            -(Math.random() * duration);
+
+        const drift =
+            -40 + Math.random() * 80;
+
+        const opacity =
+            0.10 + Math.random() * 0.15;
+
+        flake.style.setProperty(
+            "--snow-size",
+            size + "px"
+        );
+
+        flake.style.setProperty(
+            "--snow-top",
+            (Math.random() * 100) + "%"
+        );
+
+        flake.style.setProperty(
+            "--snow-duration",
+            duration + "s"
+        );
+
+        flake.style.setProperty(
+            "--snow-delay",
+            delay + "s"
+        );
+
+        flake.style.setProperty(
+            "--snow-drift",
+            drift + "px"
+        );
+
+        flake.style.setProperty(
+            "--snow-opacity",
+            opacity
+        );
+
+        flake.style.left =
+            (Math.random() * 100) + "%";
+
+        snow.appendChild(
+            flake
+        );
+
+    }
+
+    document.body.prepend(
+        snow
+    );
+
+}
+
+
+function createHalloweenBat() {
+
+    const bat =
+        document.createElement("div");
+
+    bat.className =
+        "halloween-bat";
+
+    bat.innerHTML = `
+        <div class="halloween-bat-visual">
+            <div class="halloween-bat-motion">
+                <img
+                    class="halloween-bat-frame halloween-bat-frame-1"
+                    src="images/halloween/bat1.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <img
+                    class="halloween-bat-frame halloween-bat-frame-2"
+                    src="images/halloween/bat2.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <img
+                    class="halloween-bat-frame halloween-bat-frame-3"
+                    src="images/halloween/bat3.svg"
+                    alt=""
+                    aria-hidden="true"
+                >
+            </div>
+        </div>
+    `;
+
+    return bat;
+
+}
+
+
+function createHalloweenBats() {
+
+    const existing =
+        document.getElementById(
+            "halloweenBats"
+        );
+
+    if (existing) {
+
+        existing.remove();
+
+    }
+
+    const bats =
+        document.createElement("div");
+
+    bats.id =
+        "halloweenBats";
+
+    bats.className =
+        "halloween-bats";
+
+    bats.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    const batCount =
+        8;
+
+    for (
+        let index = 0;
+        index < batCount;
+        index += 1
+    ) {
+
+        const bat =
+            createHalloweenBat();
+
+        const direction =
+            index % 2 === 0
+                ? "ltr"
+                : "rtl";
+
+        const duration =
+            26 + Math.random() * 18;
+
+        const delay =
+            -(Math.random() * duration);
+
+        const rise =
+            1.2 + Math.random() * 0.8;
+
+        const top =
+            4 + Math.random() * 92;
+
+        const sizeOptions = [
+            1,
+            0.95,
+            0.90,
+            0.85
+        ];
+
+        const sizeScale =
+            sizeOptions[
+                Math.floor(
+                    Math.random() *
+                    sizeOptions.length
+                )
+            ];
+
+        bat.classList.add(
+            "halloween-bat-" + direction
+        );
+
+        bat.style.setProperty(
+            "--bat-size-scale",
+            sizeScale
+        );
+
+        bat.style.top =
+            top + "%";
+
+        bat.style.setProperty(
+            "--bat-duration",
+            duration + "s"
+        );
+
+        bat.style.setProperty(
+            "--bat-delay",
+            delay + "s"
+        );
+
+        bat.style.setProperty(
+            "--bat-rise",
+            rise + "px"
+        );
+
+        bats.appendChild(
+            bat
+        );
+
+    }
+
+    document.body.prepend(
+        bats
+    );
+
+}
+
+
+function createHalloweenPumpkin(theme) {
+
+    const pumpkin =
+        document.createElement("img");
+
+    pumpkin.className =
+        "halloween-pumpkin-" +
+        theme;
+
+    pumpkin.src =
+        "images/halloween/pumpkin-" +
+        theme +
+        ".svg";
+
+    pumpkin.alt =
+        "";
+
+    pumpkin.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    return pumpkin;
+
+}
+
+
+function addHalloweenPumpkinToSection(sectionHeader, side) {
+
+    if (!sectionHeader) {
+        return;
+    }
+
+    const cluster =
+        document.createElement("span");
+
+    cluster.className =
+        "halloween-pumpkin-cluster halloween-pumpkin-" +
+        side;
+
+    cluster.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    const pumpkinCount =
+        2 + Math.floor(Math.random() * 3);
+
+    const positions =
+        pumpkinCount === 2
+            ? [28, 72]
+            : pumpkinCount === 3
+                ? [16, 50, 84]
+                : [9, 36, 64, 91];
+
+    positions.forEach(
+        (position) => {
+
+            const holder =
+                document.createElement("span");
+
+            holder.className =
+                "halloween-pumpkin";
+
+            holder.style.left =
+                position + "%";
+
+            holder.style.setProperty(
+                "--pumpkin-scale",
+                (
+                    0.70 +
+                    Math.random() * 0.34
+                ).toFixed(2)
+            );
+
+            holder.style.setProperty(
+                "--pumpkin-rotation",
+                (
+                    -6 +
+                    Math.random() * 12
+                ).toFixed(1) +
+                "deg"
+            );
+
+            holder.style.setProperty(
+                "--pumpkin-lift",
+                (
+                    -1 +
+                    Math.random() * 3
+                ).toFixed(1) +
+                "px"
+            );
+
+            holder.appendChild(
+                createHalloweenPumpkin(
+                    "light"
+                )
+            );
+
+            holder.appendChild(
+                createHalloweenPumpkin(
+                    "dark"
+                )
+            );
+
+            cluster.appendChild(
+                holder
+            );
+
+        }
+    );
+
+    sectionHeader.appendChild(
+        cluster
+    );
+
+}
+
+
+function createHalloweenPumpkins() {
+
+    document
+        .querySelectorAll(
+            ".halloween-pumpkin-cluster"
+        )
+        .forEach(
+            element =>
+                element.remove()
+        );
+
+    const sectionHeaders =
+        Array.from(
+            document.querySelectorAll(
+                ".section-header"
+            )
+        );
+
+    addHalloweenPumpkinToSection(
+        sectionHeaders[0],
+        "places"
+    );
+
+    addHalloweenPumpkinToSection(
+        sectionHeaders[1],
+        "elsewhere"
+    );
+
+}
+
+
+function createHalloweenDecorations() {
+
+    createHalloweenBats();
+
+    createHalloweenPumpkins();
+
+}
+
+
+let fireworksAnimationFrame = null;
+
+
+let fireworksResizeHandler = null;
+
+
+function createFireworkRocket(width, height) {
+
+    const x =
+        width * (
+            0.12 +
+            Math.random() * 0.76
+        );
+
+    const targetX =
+        x +
+        (
+            -width * 0.10 +
+            Math.random() * width * 0.20
+        );
+
+    const targetY =
+        height * (
+            0.16 +
+            Math.random() * 0.42
+        );
+
+    const riseDistance =
+        height -
+        targetY;
+
+    const duration =
+        55 +
+        Math.random() * 20;
+
+    return {
+        x,
+        y: height + 14,
+        targetX,
+        targetY,
+        velocityX:
+            (
+                targetX -
+                x
+            ) /
+            duration,
+        velocityY:
+            -(
+                riseDistance /
+                duration
+            ),
+        trail: [],
+        colour:
+            Math.random() > 0.25
+                ? "muted"
+                : "strong"
+    };
+
+}
+
+
+function createFireworkBurst(x, y, colours) {
+
+    const particles = [];
+
+    const rayCount =
+        48 +
+        Math.floor(
+            Math.random() * 17
+        );
+
+    const baseSpeed =
+        2.2 +
+        Math.random() * 1.8;
+
+    for (
+        let index = 0;
+        index < rayCount;
+        index += 1
+    ) {
+
+        const angle =
+            (
+                index /
+                rayCount
+            ) *
+            Math.PI *
+            2;
+
+        const speed =
+            baseSpeed *
+            (
+                0.72 +
+                Math.random() * 0.56
+            );
+
+        particles.push({
+
+            x,
+
+            y,
+
+            previousX:
+                x,
+
+            previousY:
+                y,
+
+            velocityX:
+                Math.cos(angle) *
+                speed,
+
+            velocityY:
+                Math.sin(angle) *
+                speed,
+
+            drag:
+                0.983 +
+                Math.random() * 0.006,
+
+            gravity:
+                0.020 +
+                Math.random() * 0.018,
+
+            life:
+                0.82 +
+                Math.random() * 0.38,
+
+            age:
+                0,
+
+            colour:
+                index % 7 === 0
+                    ? colours.strong
+                    : colours.muted
+
+        });
+
+    }
+
+    return particles;
+
+}
+
+
+function createFireworks() {
+
+    if (fireworksAnimationFrame !== null) {
+
+        cancelAnimationFrame(
+            fireworksAnimationFrame
+        );
+
+        fireworksAnimationFrame =
+            null;
+
+    }
+
+    if (fireworksResizeHandler !== null) {
+
+        window.removeEventListener(
+            "resize",
+            fireworksResizeHandler
+        );
+
+        fireworksResizeHandler =
+            null;
+
+    }
+
+    const existing =
+        document.getElementById(
+            "fireworks"
+        );
+
+    if (existing) {
+
+        existing.remove();
+
+    }
+
+    if (
+        window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+        ).matches
+    ) {
+
+        return;
+
+    }
+
+    const canvas =
+        document.createElement("canvas");
+
+    canvas.id =
+        "fireworks";
+
+    canvas.className =
+        "fireworks";
+
+    canvas.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    const context =
+        canvas.getContext(
+            "2d"
+        );
+
+    if (!context) {
+
+        return;
+
+    }
+
+    const rootStyles =
+        getComputedStyle(
+            document.body
+        );
+
+    const colours = {
+
+        muted:
+            rootStyles
+                .getPropertyValue(
+                    "--muted"
+                )
+                .trim() ||
+            "#777",
+
+        strong:
+            rootStyles
+                .getPropertyValue(
+                    "--line-strong"
+                )
+                .trim() ||
+            "#555"
+
+    };
+
+    let width =
+        window.innerWidth;
+
+    let height =
+        window.innerHeight;
+
+    let devicePixelRatio =
+        Math.min(
+            window.devicePixelRatio || 1,
+            2
+        );
+
+    function resizeFireworks() {
+
+        width =
+            window.innerWidth;
+
+        height =
+            window.innerHeight;
+
+        devicePixelRatio =
+            Math.min(
+                window.devicePixelRatio || 1,
+                2
+            );
+
+        canvas.width =
+            Math.round(
+                width *
+                devicePixelRatio
+            );
+
+        canvas.height =
+            Math.round(
+                height *
+                devicePixelRatio
+            );
+
+        canvas.style.width =
+            width + "px";
+
+        canvas.style.height =
+            height + "px";
+
+        context.setTransform(
+            devicePixelRatio,
+            0,
+            0,
+            devicePixelRatio,
+            0,
+            0
+        );
+
+    }
+
+    resizeFireworks();
+
+    fireworksResizeHandler =
+        resizeFireworks;
+
+    window.addEventListener(
+        "resize",
+        fireworksResizeHandler,
+        {
+            passive: true
+        }
+    );
+
+    const rockets = [];
+
+    const particles = [];
+
+    let nextLaunch =
+        performance.now() +
+        300;
+
+    let lastTime =
+        performance.now();
+
+    function launchRocket() {
+
+        rockets.push(
+            createFireworkRocket(
+                width,
+                height
+            )
+        );
+
+    }
+
+    function burstRocket(rocket) {
+
+        particles.push(
+            ...createFireworkBurst(
+                rocket.x,
+                rocket.y,
+                colours
+            )
+        );
+
+    }
+
+    function drawTrail(points, alpha) {
+
+        if (points.length < 2) {
+
+            return;
+
+        }
+
+        context.beginPath();
+
+        context.moveTo(
+            points[0].x,
+            points[0].y
+        );
+
+        for (
+            let index = 1;
+            index < points.length;
+            index += 1
+        ) {
+
+            context.lineTo(
+                points[index].x,
+                points[index].y
+            );
+
+        }
+
+        context.strokeStyle =
+            colours.muted;
+
+        context.globalAlpha =
+            alpha;
+
+        context.lineWidth =
+            1;
+
+        context.stroke();
+
+    }
+
+    function animateFireworks(now) {
+
+        const delta =
+            Math.min(
+                (
+                    now -
+                    lastTime
+                ) /
+                16.6667,
+                2.2
+            );
+
+        lastTime =
+            now;
+
+        context.clearRect(
+            0,
+            0,
+            width,
+            height
+        );
+
+        if (
+            now >=
+            nextLaunch
+        ) {
+
+            launchRocket();
+
+            if (
+                Math.random() <
+                0.26
+            ) {
+
+                launchRocket();
+
+            }
+
+            nextLaunch =
+                now +
+                650 +
+                Math.random() * 650;
+
+        }
+
+        for (
+            let index =
+                rockets.length - 1;
+            index >= 0;
+            index -= 1
+        ) {
+
+            const rocket =
+                rockets[index];
+
+            rocket.previousX =
+                rocket.x;
+
+            rocket.previousY =
+                rocket.y;
+
+            rocket.x +=
+                rocket.velocityX *
+                delta;
+
+            rocket.y +=
+                rocket.velocityY *
+                delta;
+
+            rocket.trail.unshift({
+                x:
+                    rocket.x,
+                y:
+                    rocket.y
+            });
+
+            rocket.trail =
+                rocket.trail.slice(
+                    0,
+                    7
+                );
+
+            drawTrail(
+                rocket.trail,
+                0.16
+            );
+
+            context.beginPath();
+
+            context.moveTo(
+                rocket.x,
+                rocket.y + 4
+            );
+
+            context.lineTo(
+                rocket.x,
+                rocket.y - 6
+            );
+
+            context.strokeStyle =
+                rocket.colour === "strong"
+                    ? colours.strong
+                    : colours.muted;
+
+            context.globalAlpha =
+                0.45;
+
+            context.lineWidth =
+                1;
+
+            context.stroke();
+
+            const reachedTarget =
+                rocket.y <=
+                    rocket.targetY;
+
+            const reachedTop =
+                rocket.y < -40;
+
+            if (
+                reachedTarget ||
+                reachedTop
+            ) {
+
+                burstRocket(
+                    rocket
+                );
+
+                rockets.splice(
+                    index,
+                    1
+                );
+
+            }
+
+        }
+
+        for (
+            let index =
+                particles.length - 1;
+            index >= 0;
+            index -= 1
+        ) {
+
+            const particle =
+                particles[index];
+
+            particle.age +=
+                0.016 *
+                delta;
+
+            if (
+                particle.age >=
+                particle.life
+            ) {
+
+                particles.splice(
+                    index,
+                    1
+                );
+
+                continue;
+
+            }
+
+            particle.previousX =
+                particle.x;
+
+            particle.previousY =
+                particle.y;
+
+            particle.velocityX *=
+                Math.pow(
+                    particle.drag,
+                    delta
+                );
+
+            particle.velocityY *=
+                Math.pow(
+                    particle.drag,
+                    delta
+                );
+
+            particle.velocityY +=
+                particle.gravity *
+                delta;
+
+            particle.x +=
+                particle.velocityX *
+                delta;
+
+            particle.y +=
+                particle.velocityY *
+                delta;
+
+            const lifeRemaining =
+                1 -
+                (
+                    particle.age /
+                    particle.life
+                );
+
+            const trailLength =
+                1.4 +
+                (
+                    2.4 *
+                    lifeRemaining
+                );
+
+            context.beginPath();
+
+            context.moveTo(
+                particle.x -
+                (
+                    particle.velocityX *
+                    trailLength
+                ),
+                particle.y -
+                (
+                    particle.velocityY *
+                    trailLength
+                )
+            );
+
+            context.lineTo(
+                particle.x,
+                particle.y
+            );
+
+            context.strokeStyle =
+                particle.colour;
+
+            context.globalAlpha =
+                0.65 *
+                lifeRemaining;
+
+            context.lineWidth =
+                lifeRemaining > 0.30
+                    ? 1
+                    : 0.75;
+
+            context.stroke();
+
+        }
+
+        context.globalAlpha =
+            1;
+
+        fireworksAnimationFrame =
+            requestAnimationFrame(
+                animateFireworks
+            );
+
+    }
+
+    canvas.addEventListener(
+        "contextlost",
+        event => {
+            event.preventDefault();
+
+            if (
+                fireworksAnimationFrame !== null
+            ) {
+
+                cancelAnimationFrame(
+                    fireworksAnimationFrame
+                );
+
+                fireworksAnimationFrame =
+                    null;
+
+            }
+
+        }
+    );
+
+    document.body.prepend(
+        canvas
+    );
+
+    for (
+        let index = 0;
+        index < 4;
+        index += 1
+    ) {
+
+        launchRocket();
+
+    }
+
+    fireworksAnimationFrame =
+        requestAnimationFrame(
+            animateFireworks
+        );
+
+}
+function triggerMatchesDate(date, trigger) {
+
+    if (typeof trigger === "function") {
+
+        return trigger(date);
+
+    }
+
+    if (Array.isArray(trigger)) {
+
+        return trigger.some(
+            value =>
+                triggerMatchesDate(
+                    date,
+                    value
+                )
+        );
+
+    }
+
+    if (
+        typeof trigger !== "string" ||
+        !/^\d{2}-\d{2}$/.test(trigger)
+    ) {
+
+        return false;
+
+    }
+
+    const month =
+        Number(
+            trigger.slice(
+                0,
+                2
+            )
+        );
+
+    const day =
+        Number(
+            trigger.slice(
+                3,
+                5
+            )
+        );
+
+    return (
+        date.getMonth() + 1 === month &&
+        date.getDate() === day
+    );
+
+}
+
+
+const EASTER_EGGS = [
+
+    {
+        trigger:
+            "12-25",
+
+        activate:
+            createChristmasSnow
+    },
+
+    {
+        trigger:
+            "10-31",
+
+        activate:
+            createHalloweenDecorations
+    },
+
+    {
+        trigger: [
+            "12-31",
+            "11-05"
+        ],
+
+        activate:
+            createFireworks
+    }
+
+];
+
+
+function activateEasterEggs(date) {
+
+    EASTER_EGGS.forEach(
+        easterEgg => {
+
+            if (
+                triggerMatchesDate(
+                    date,
+                    easterEgg.trigger
+                )
+            ) {
+
+                easterEgg.activate();
+
+            }
+
+        }
+    );
+
+}
+
+
+activateEasterEggs(
+    getEffectiveDate()
+);
+
+
+/* ================================================================
    PLACES
    ================================================================ */
 
@@ -3095,7 +4352,7 @@ const date =
 function updateDate() {
 
     const now =
-        new Date();
+        getEffectiveDate();
 
     const day =
         String(

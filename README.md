@@ -115,6 +115,32 @@ This prevents the file from becoming a permanent news archive.
 
 ---
 
+## Easter eggs
+
+The page can contain date-specific visual Easter eggs without changing the normal page structure.
+
+For testing, append a date to the page URL with the `fakeDate` query parameter:
+
+```text
+https://elaverick.github.io/newtab/?fakeDate=2026-12-25
+```
+
+The value must be a valid date in `YYYY-MM-DD` format. The effective date is used by the Easter-egg logic and the date shown in the top bar; the clock continues to use the real time.
+
+Christmas Day currently enables the falling snow effect. Removing the `fakeDate` parameter returns the page to the real current date.
+
+The date effects are dispatched from a single `EASTER_EGGS` table. Fixed annual dates use a `MM-DD` trigger; a trigger can also be an array of dates when the same effect is reused, or a function for movable dates such as Easter.
+
+### Halloween
+
+On 31 October the page adds small line-art bats flying in both directions with a gentle wing flutter and sine-like vertical modulation. Small original line-art pumpkins rest on the horizontal rules beneath Places and Elsewhere.
+
+The pumpkin artwork is provided as separate light and dark SVG assets in `images/halloween/` and switches automatically with the page theme.
+
+### New Year's Eve and Bonfire Night
+
+On 31 December and 5 November the page uses the same sparse, monochrome liminal fireworks effect in the background. The effect is shared deliberately so the two dates have the same visual language.
+
 ## Images
 
 Images are part of the article data, rather than something the webpage has to discover.
