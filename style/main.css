@@ -36,7 +36,7 @@
         60px;
 
     height:
-        30px;
+        60px;
 
     color:
         var(--text);
@@ -83,10 +83,10 @@
         relative;
 
     width:
-        100%;
+        60px;
 
     height:
-        100%;
+        60px;
 
     display:
         block;
@@ -101,7 +101,69 @@
         infinite;
 }
 
-body.halloween-active .halloween-bat-rtl .halloween-bat-visual {
+
+.halloween-bat-frame {
+
+    position:
+        absolute;
+
+    display:
+        block;
+
+    width:
+        auto;
+
+    height:
+        60px;
+
+    max-width:
+        none;
+
+    object-fit:
+        contain;
+
+    opacity:
+        0;
+
+    will-change:
+        opacity;
+
+    transform-origin:
+        50% 50%;
+}
+
+
+.halloween-bat-frame-1 {
+
+    left:
+        -19px;
+
+    top:
+        18px;
+}
+
+
+.halloween-bat-frame-2 {
+
+    left:
+        -14px;
+
+    top:
+        21px;
+}
+
+
+.halloween-bat-frame-3 {
+
+    left:
+        -19px;
+
+    top:
+        -8px;
+}
+
+
+.halloween-bat-rtl .halloween-bat-frame {
 
     transform:
         scaleX(-1);
@@ -109,35 +171,6 @@ body.halloween-active .halloween-bat-rtl .halloween-bat-visual {
 
 
 
-.halloween-bat-frame {
-
-    position:
-        absolute;
-
-    inset:
-        0;
-
-    display:
-        block;
-
-    width:
-        100%;
-
-    height:
-        100%;
-
-    object-fit:
-        contain;
-
-    transform-origin:
-        50% 50%;
-
-    opacity:
-        0;
-
-    will-change:
-        opacity;
-}
 
 
 .halloween-bat-frame-1,
@@ -369,6 +402,9 @@ body.theme-dark .halloween-bat-frame-3 {
             );
     }
 }
+
+
+
 
 
 .halloween-pumpkin-cluster {
