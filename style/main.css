@@ -93,9 +93,33 @@
 
     display:
         block;
+}
+
+
+.halloween-bat-rtl .halloween-bat-visual {
 
     transform:
-        translateY(0);
+        scaleX(-1);
+
+}
+
+
+.halloween-bat-motion {
+
+    position:
+        relative;
+
+    width:
+        0;
+
+    height:
+        0;
+
+    display:
+        block;
+
+    transform-origin:
+        0 0;
 
     animation:
         halloween-bat-flutter
@@ -103,7 +127,6 @@
         ease-in-out
         infinite;
 }
-
 
 .halloween-bat-frame {
 
@@ -282,8 +305,7 @@ body.theme-dark .halloween-bat-frame-3 {
     0% {
 
         transform:
-            translateY(0)
-            scaleX(var(--bat-direction-scale));
+            translateY(0);
     }
 
     12.5% {
@@ -291,8 +313,7 @@ body.theme-dark .halloween-bat-frame-3 {
         transform:
             translateY(
                 calc(var(--bat-rise) * 0.707)
-            )
-            scaleX(var(--bat-direction-scale));
+            );
     }
 
     25% {
@@ -300,8 +321,7 @@ body.theme-dark .halloween-bat-frame-3 {
         transform:
             translateY(
                 var(--bat-rise)
-            )
-            scaleX(var(--bat-direction-scale));
+            );
     }
 
     37.5% {
@@ -309,15 +329,13 @@ body.theme-dark .halloween-bat-frame-3 {
         transform:
             translateY(
                 calc(var(--bat-rise) * 0.707)
-            )
-            scaleX(var(--bat-direction-scale));
+            );
     }
 
     50% {
 
         transform:
-            translateY(0)
-            scaleX(var(--bat-direction-scale));
+            translateY(0);
     }
 
     62.5% {
@@ -325,8 +343,7 @@ body.theme-dark .halloween-bat-frame-3 {
         transform:
             translateY(
                 calc(var(--bat-rise) * -0.707)
-            )
-            scaleX(var(--bat-direction-scale));
+            );
     }
 
     75% {
@@ -334,8 +351,7 @@ body.theme-dark .halloween-bat-frame-3 {
         transform:
             translateY(
                 calc(var(--bat-rise) * -1)
-            )
-            scaleX(var(--bat-direction-scale));
+            );
     }
 
     87.5% {
@@ -343,23 +359,20 @@ body.theme-dark .halloween-bat-frame-3 {
         transform:
             translateY(
                 calc(var(--bat-rise) * -0.707)
-            )
-            scaleX(var(--bat-direction-scale));
+            );
     }
 
     100% {
 
         transform:
-            translateY(0)
-            scaleX(var(--bat-direction-scale));
+            translateY(0);
     }
 }
 
 
 @keyframes halloween-bat-flight-ltr {
 
-    0%,
-    100% {
+    0% {
 
         transform:
             translate3d(
@@ -369,11 +382,11 @@ body.theme-dark .halloween-bat-frame-3 {
             );
     }
 
-    50% {
+    100% {
 
         transform:
             translate3d(
-                50vw,
+                calc(100vw + 140px),
                 0,
                 0
             );
@@ -383,8 +396,7 @@ body.theme-dark .halloween-bat-frame-3 {
 
 @keyframes halloween-bat-flight-rtl {
 
-    0%,
-    100% {
+    0% {
 
         transform:
             translate3d(
@@ -394,19 +406,16 @@ body.theme-dark .halloween-bat-frame-3 {
             );
     }
 
-    50% {
+    100% {
 
         transform:
             translate3d(
-                -50vw,
+                calc(-100vw - 140px),
                 0,
                 0
             );
     }
 }
-
-
-
 
 
 .halloween-pumpkin-cluster {
