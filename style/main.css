@@ -33,10 +33,10 @@
         absolute;
 
     width:
-        60px;
+        0;
 
     height:
-        60px;
+        0;
 
     color:
         var(--text);
@@ -82,11 +82,14 @@
     position:
         relative;
 
+    transform-origin:
+        0 0;
+
     width:
-        60px;
+        0;
 
     height:
-        60px;
+        0;
 
     display:
         block;
@@ -114,7 +117,7 @@
         auto;
 
     height:
-        60px;
+        30px;
 
     max-width:
         none;
@@ -129,65 +132,37 @@
         opacity;
 
     transform-origin:
-        50% 50%;
+        0 0;
 }
 
 
 .halloween-bat-frame-1 {
 
     left:
-        -19px;
+        -25px;
 
     top:
-        18px;
+        -5px;
 }
 
 
 .halloween-bat-frame-2 {
 
     left:
-        -14px;
+        -23px;
 
     top:
-        21px;
+        -4px;
 }
 
 
 .halloween-bat-frame-3 {
 
     left:
-        -19px;
+        -25px;
 
     top:
-        -8px;
-}
-
-
-.halloween-bat-rtl .halloween-bat-frame {
-
-    transform:
-        scaleX(-1);
-}
-
-
-.halloween-bat-rtl .halloween-bat-frame-1 {
-
-    left:
-        -10px;
-}
-
-
-.halloween-bat-rtl .halloween-bat-frame-2 {
-
-    left:
-        -7px;
-}
-
-
-.halloween-bat-rtl .halloween-bat-frame-3 {
-
-    left:
-        23px;
+        -25px;
 }
 
 
@@ -307,7 +282,8 @@ body.theme-dark .halloween-bat-frame-3 {
     0% {
 
         transform:
-            translateY(0);
+            translateY(0)
+            scaleX(var(--bat-direction-scale));
     }
 
     12.5% {
@@ -315,7 +291,8 @@ body.theme-dark .halloween-bat-frame-3 {
         transform:
             translateY(
                 calc(var(--bat-rise) * 0.707)
-            );
+            )
+            scaleX(var(--bat-direction-scale));
     }
 
     25% {
@@ -323,7 +300,8 @@ body.theme-dark .halloween-bat-frame-3 {
         transform:
             translateY(
                 var(--bat-rise)
-            );
+            )
+            scaleX(var(--bat-direction-scale));
     }
 
     37.5% {
@@ -331,13 +309,15 @@ body.theme-dark .halloween-bat-frame-3 {
         transform:
             translateY(
                 calc(var(--bat-rise) * 0.707)
-            );
+            )
+            scaleX(var(--bat-direction-scale));
     }
 
     50% {
 
         transform:
-            translateY(0);
+            translateY(0)
+            scaleX(var(--bat-direction-scale));
     }
 
     62.5% {
@@ -345,7 +325,8 @@ body.theme-dark .halloween-bat-frame-3 {
         transform:
             translateY(
                 calc(var(--bat-rise) * -0.707)
-            );
+            )
+            scaleX(var(--bat-direction-scale));
     }
 
     75% {
@@ -353,7 +334,8 @@ body.theme-dark .halloween-bat-frame-3 {
         transform:
             translateY(
                 calc(var(--bat-rise) * -1)
-            );
+            )
+            scaleX(var(--bat-direction-scale));
     }
 
     87.5% {
@@ -361,18 +343,17 @@ body.theme-dark .halloween-bat-frame-3 {
         transform:
             translateY(
                 calc(var(--bat-rise) * -0.707)
-            );
+            )
+            scaleX(var(--bat-direction-scale));
     }
 
     100% {
 
         transform:
-            translateY(0);
+            translateY(0)
+            scaleX(var(--bat-direction-scale));
     }
 }
-
-
-
 
 
 @keyframes halloween-bat-flight-ltr {
