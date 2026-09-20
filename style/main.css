@@ -406,18 +406,6 @@ body.theme-dark .halloween-pumpkin-dark {
 }
 
 
-@media (prefers-color-scheme: dark) {
-
-    .halloween-bat-frame {
-
-        filter:
-            invert(1)
-            brightness(0.86);
-    }
-
-}
-
-
 body.theme-dark .halloween-bat-frame {
 
     filter:
