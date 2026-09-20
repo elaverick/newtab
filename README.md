@@ -171,17 +171,11 @@ If a category has no matching image folder, or a selected placeholder cannot be 
 
 ## Editorial categories
 
-The current feed contains five categories:
-
-- **Automotive**
-- **Technology**
-- **Retro Computing**
-- **Retro Computing Projects**
-- **Music**
+The current feed uses editorial categories, including Automotive, Technology, Retro Computing, Retro Computing Projects, Music and Watches. This list is not a technical limitation.
 
 The frontend groups articles by category automatically.
 
-The categories are editorial rather than technical. You can change them, add new ones or remove them without needing to redesign the article renderer, provided the resulting JSON still conforms to the schema.
+The `category` field is deliberately open-ended. You can add new categories, remove categories or rename them without changing the JSON schema or article renderer, provided the category value remains a non-empty string and the resulting JSON conforms to the schema.
 
 ---
 
@@ -361,7 +355,7 @@ Field definitions:
 - `extract`: a concise description of the article, normally one or two sentences.
 - `image`: the best directly usable image URL associated with the article. Use `null` only when no suitable image can be obtained reliably.
 - `link`: the canonical URL of the article.
-- `category`: one of the permitted editorial categories.
+- `category`: any non-empty editorial category name. There is no fixed category list in the schema.
 - `published`: the original publication date and time as an ISO 8601 date-time.
 
 Do not fabricate article URLs, publication dates, facts or image URLs.
@@ -455,13 +449,7 @@ Do not fill the feed with celebrity gossip, trivial social-media activity or low
 
 ## Editorial categories
 
-Use these categories:
-
-- [CATEGORY 1]
-- [CATEGORY 2]
-- [CATEGORY 3]
-- [CATEGORY 4]
-- [CATEGORY 5]
+Define the categories for this feed below. There is no fixed limit on the number of categories.
 
 Do not force an article into a category where it does not genuinely belong.
 
