@@ -68,7 +68,7 @@
     "extract": "DJSOFT has released a new gothic text adventure for Amiga and ZX Spectrum, combining illustrated locations, a traditional parser and real-time pressure with puzzles inspired by Bram Stoker’s Dracula.",
     "image": null,
     "link": "https://kicksandgrips.com/news/djsoft-releases-dracula-for-amiga-and-zx-spectrum",
-    "category": "Retro Computing",
+    "category": "Retro Computing Projects",
     "published": "2026-09-19T15:10:00Z"
   },
   {
@@ -77,44 +77,8 @@
     "extract": "A new ZX Spectrum shoot ’em up built with MPAGD and Shmupkit supports both ULA+ and the standard ULA palette and has been tested on original 128K hardware, Spectrum Next and emulators.",
     "image": null,
     "link": "https://kicksandgrips.com/news/space-trolls-of-mahlsdorf-targets-zx-spectrum-hardware",
-    "category": "Retro Computing",
+    "category": "Retro Computing Projects",
     "published": "2026-09-19T15:15:00Z"
-  },
-  {
-    "title": "Amix: Amiga Unix gets 68040/68060 support",
-    "source": "Amiga-News.de",
-    "extract": "A new Amiga Unix kernel and patch extend Amix beyond its original 68020/68030 support, allowing the classic System V port to run on 68040 and 68060 processors.",
-    "image": null,
-    "link": "https://www.amigaux.org/",
-    "category": "Retro Computing",
-    "published": "2026-09-20T07:59:00Z"
-  },
-  {
-    "title": "Puzzle game: Connect 1.5",
-    "source": "Amiga-News.de",
-    "extract": "Connect 1.5 brings a technical optimisation to the Amiga puzzle game, allowing background music to work on machines with only 512 KB of RAM while also speeding board generation.",
-    "image": null,
-    "link": "https://logicalbyte.itch.io/",
-    "category": "Retro Computing",
-    "published": "2026-09-20T07:59:00Z"
-  },
-  {
-    "title": "Livecoding tool: Copper Showdown Editor 0.5.0",
-    "source": "Amiga-News.de",
-    "extract": "Copper Showdown Editor 0.5.0 updates its dependencies, refreshes the editor UI, adds a new sound example and introduces an audio wake-up timer for its real-time Amiga Copper-list workflow.",
-    "image": null,
-    "link": "https://gitlab.com/",
-    "category": "Retro Computing Projects",
-    "published": "2026-09-20T07:59:00Z"
-  },
-  {
-    "title": "Real-time strategy: StarCraft port AmiSC 0.7.1",
-    "source": "Amiga-News.de",
-    "extract": "AmiSC 0.7.1 advances a native AmigaOS 3.x port of StarCraft with a computer opponent and improved 320×240 and 640×480 modes without requiring PC emulation.",
-    "image": null,
-    "link": "https://github.com/",
-    "category": "Retro Computing Projects",
-    "published": "2026-09-19T23:43:00Z"
   },
   {
     "title": "Watch AC/DC’s Angus Young sign fan’s baby",
