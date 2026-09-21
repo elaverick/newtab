@@ -1,38 +1,173 @@
 [
   {
-    "title": "Linux 7.3-rc4 To Address Two Unfortunate Bugs With Btrfs",
-    "source": "Phoronix",
-    "extract": "Linux 7.3-rc4 is picking up two significant Btrfs fixes: restoring stable filesystem identifiers after a Linux 7.2 regression and fixing root-device detection for initramdisk-less GRUB2 boots.",
+    "title": "Aston Martin’s Valhalla Spider Is Coming for Ferrari’s PHEV Supercar",
+    "source": "Autoblog",
+    "extract": "Aston Martin is reportedly preparing an open-top Valhalla Spider, potentially arriving as early as November, giving the plug-in-hybrid supercar a rival to Ferrari’s open-air performance cars.",
     "image": null,
-    "link": "https://www.phoronix.com/news/Btrfs-Fixes-For-Linux-7.3-rc4",
-    "category": "Technology",
-    "published": "2026-09-20T00:26:00Z"
+    "link": "https://autos.yahoo.com/new-vehicles-and-reviews/articles/aston-martin-valhalla-spider-coming-210500614.html",
+    "category": "Automotive",
+    "published": "2026-09-20T21:05:00Z"
   },
   {
-    "title": "Simple Optimization For Linux 7.4 Can Open Files For Reading ~39% Faster",
-    "source": "Phoronix",
-    "extract": "A small Linux VFS optimisation removes redundant dentry work in do_open(), with testing on a 20-core VM showing a 39% increase in read-only file-open operations per second.",
-    "image": "https://www.phoronix.net/image.php?id=2026&image=faster_open_file_med",
-    "link": "https://www.phoronix.com/news/Linux-7.4-Faster-Do-Open",
-    "category": "Technology",
-    "published": "2026-09-19T16:28:00Z"
+    "title": "I Loved the 2026 Aston Martin DB12 S, But I’d Buy This Cheaper Aston",
+    "source": "Autoblog",
+    "extract": "A review of the hotter DB12 S highlights its 690-hp twin-turbo V8, carbon-ceramic brakes, titanium exhaust option and sharper chassis tuning, while comparing it with a cheaper Aston alternative.",
+    "image": null,
+    "link": "https://www.aol.com/articles/loved-2026-aston-martin-db12-150000000.html",
+    "category": "Automotive",
+    "published": "2026-09-19T15:00:00Z"
   },
   {
-    "title": "Steam Frame Making Use Of Zink For OpenGL On Vulkan",
-    "source": "Phoronix",
-    "extract": "Valve’s Steam Frame VR headset uses Mesa’s open-source Turnip Vulkan driver and Zink for OpenGL, running OpenGL on top of Vulkan on its Qualcomm Adreno graphics platform.",
+    "title": "2024 Gordon Murray Automotive T.50 for Sale With Only 62 Miles",
+    "source": "Autoblog",
+    "extract": "A nearly unused Gordon Murray Automotive T.50 with just 62 miles is heading to auction, offering a rare chance to acquire one of the fan-assisted, naturally aspirated V12 hypercars in essentially delivery-fresh condition.",
     "image": null,
-    "link": "https://www.phoronix.com/news/Steam-Frame-Uses-Zink",
-    "category": "Technology",
-    "published": "2026-09-18T20:13:00Z"
+    "link": "https://autos.yahoo.com/classic-and-collector/articles/2024-gordon-murray-automotive-t-123000885.html",
+    "category": "Automotive",
+    "published": "2026-09-19T12:30:00Z"
   },
   {
-    "title": "‘Star Trek: Strange New Worlds’: Paul Wesley on Playing Prince Dashing in Fairytale Episode",
-    "source": "TV Insider",
-    "extract": "Paul Wesley discusses the penultimate episode of Star Trek: Strange New Worlds season 4, including its fairytale setting and the developing relationship between Kirk and La’an.",
+    "title": "Some of the most iconic cars in the world look worse when US spec is applied",
+    "source": "Supercar Blondie",
+    "extract": "A look at how American safety regulations have forced visual changes to some of the world’s most recognisable Ferraris, Lamborghinis and Porsches, often producing distinctly different-looking cars from their European counterparts.",
     "image": null,
-    "link": "https://www.tvinsider.com/1291955/star-trek-strange-new-worlds-fairytale-episode-prince-dashing-paul-wesley/",
+    "link": "https://supercarblondie.com/iconic-cars-us-spec-controversy-bumpers/",
+    "category": "Automotive",
+    "published": "2026-09-20T12:02:00Z"
+  },
+  {
+    "title": "Malicious npm packages evade install-script defenses at runtime",
+    "source": "BleepingComputer",
+    "extract": "A new npm malware campaign shows how malicious packages can bypass installation-script protections by hiding their payload in normal runtime behaviour, with the impersonating package already attracting millions of weekly downloads.",
+    "image": null,
+    "link": "https://www.bleepingcomputer.com/news/security/malicious-npm-packages-evade-install-script-defenses-at-runtime/",
+    "category": "Technology",
+    "published": "2026-09-20T10:11:00Z"
+  },
+  {
+    "title": "Researchers escape OpenAI Codex sandbox to run commands on host",
+    "source": "BleepingComputer",
+    "extract": "Security researchers disclosed two Codex sandbox escapes, including one that could turn an untrusted repository into host command execution; OpenAI patched both flaws shortly after they were reported.",
+    "image": null,
+    "link": "https://www.bleepingcomputer.com/news/security/researchers-escape-openai-codex-sandbox-to-run-commands-on-host/amp/",
+    "category": "Technology",
+    "published": "2026-09-20T08:00:00Z"
+  },
+  {
+    "title": "Ten days that changed the course of AI",
+    "source": "Reuters",
+    "extract": "Reuters examines a turbulent ten-day period in AI development, including safety warnings, researchers leaving frontier labs and growing concern about increasingly autonomous systems.",
+    "image": null,
+    "link": "https://www.investing.com/news/stock-market-news/ten-days-that-changed-the-course-of-ai-4908072",
+    "category": "Technology",
+    "published": "2026-09-19T06:05:00Z"
+  },
+  {
+    "title": "Aston Martin’s Valhalla Spider Is Coming for Ferrari’s PHEV Supercar",
+    "source": "Autoblog",
+    "extract": "Aston Martin is reportedly preparing an open-top Valhalla Spider, potentially arriving as early as November, giving the plug-in-hybrid supercar a rival to Ferrari’s open-air performance cars.",
+    "image": null,
+    "link": "https://autos.yahoo.com/new-vehicles-and-reviews/articles/aston-martin-valhalla-spider-coming-210500614.html",
+    "category": "Automotive",
+    "published": "2026-09-20T21:05:00Z"
+  },
+  {
+    "title": "DJSOFT Releases Dracula for Amiga and ZX Spectrum",
+    "source": "Kicks & Grips",
+    "extract": "DJSOFT has released a new gothic text adventure for Amiga and ZX Spectrum, combining illustrated locations, a traditional parser and real-time pressure with puzzles inspired by Bram Stoker’s Dracula.",
+    "image": null,
+    "link": "https://kicksandgrips.com/news/djsoft-releases-dracula-for-amiga-and-zx-spectrum",
+    "category": "Retro Computing",
+    "published": "2026-09-19T15:10:00Z"
+  },
+  {
+    "title": "Space Trolls of Mahlsdorf Targets ZX Spectrum Hardware",
+    "source": "Kicks & Grips",
+    "extract": "A new ZX Spectrum shoot ’em up built with MPAGD and Shmupkit supports both ULA+ and the standard ULA palette and has been tested on original 128K hardware, Spectrum Next and emulators.",
+    "image": null,
+    "link": "https://kicksandgrips.com/news/space-trolls-of-mahlsdorf-targets-zx-spectrum-hardware",
+    "category": "Retro Computing",
+    "published": "2026-09-19T15:15:00Z"
+  },
+  {
+    "title": "Amix: Amiga Unix gets 68040/68060 support",
+    "source": "Amiga-News.de",
+    "extract": "A new Amiga Unix kernel and patch extend Amix beyond its original 68020/68030 support, allowing the classic System V port to run on 68040 and 68060 processors.",
+    "image": null,
+    "link": "https://www.amigaux.org/",
+    "category": "Retro Computing",
+    "published": "2026-09-20T07:59:00Z"
+  },
+  {
+    "title": "Puzzle game: Connect 1.5",
+    "source": "Amiga-News.de",
+    "extract": "Connect 1.5 brings a technical optimisation to the Amiga puzzle game, allowing background music to work on machines with only 512 KB of RAM while also speeding board generation.",
+    "image": null,
+    "link": "https://logicalbyte.itch.io/",
+    "category": "Retro Computing",
+    "published": "2026-09-20T07:59:00Z"
+  },
+  {
+    "title": "Livecoding tool: Copper Showdown Editor 0.5.0",
+    "source": "Amiga-News.de",
+    "extract": "Copper Showdown Editor 0.5.0 updates its dependencies, refreshes the editor UI, adds a new sound example and introduces an audio wake-up timer for its real-time Amiga Copper-list workflow.",
+    "image": null,
+    "link": "https://gitlab.com/",
+    "category": "Retro Computing Projects",
+    "published": "2026-09-20T07:59:00Z"
+  },
+  {
+    "title": "Real-time strategy: StarCraft port AmiSC 0.7.1",
+    "source": "Amiga-News.de",
+    "extract": "AmiSC 0.7.1 advances a native AmigaOS 3.x port of StarCraft with a computer opponent and improved 320×240 and 640×480 modes without requiring PC emulation.",
+    "image": null,
+    "link": "https://github.com/",
+    "category": "Retro Computing Projects",
+    "published": "2026-09-19T23:43:00Z"
+  },
+  {
+    "title": "Bloc Party Score Highest UK Album Chart Peak in 14 Years",
+    "source": "Neon Music",
+    "extract": "Anatomy of a Brief Romance has entered the UK Albums Chart at number six, giving Bloc Party their strongest chart position since Four reached number three in 2012.",
+    "image": null,
+    "link": "https://neonmusic.co.uk/bloc-party-anatomy-of-a-brief-romance-uk-chart",
+    "category": "Music",
+    "published": "2026-09-20T00:00:00Z"
+  },
+  {
+    "title": "Watch AC/DC’s Angus Young sign fan’s baby",
+    "source": "NME",
+    "extract": "Angus Young appeared at an AC/DC PWR/UP pop-up in Toronto after the band’s concert was cancelled, with footage showing him signing a young fan’s baby.",
+    "image": null,
+    "link": "https://www.nme.com/news/music/watch-ac-dcs-angus-young-sign-fans-baby-3969699",
+    "category": "Music",
+    "published": "2026-09-19T13:01:00Z"
+  },
+  {
+    "title": "AC/DC’s Dirty Deeds Done Dirt Cheap Turns 50",
+    "source": "Noise11",
+    "extract": "AC/DC’s Dirty Deeds Done Dirt Cheap reaches its 50th anniversary in September, marking five decades since the Bon Scott-era album helped establish the band’s harder, more confrontational sound.",
+    "image": null,
+    "link": "https://www.noise11.com/news/acdc-dirty-deeds-turns-50-20260920",
+    "category": "Music",
+    "published": "2026-09-20T00:00:00Z"
+  },
+  {
+    "title": "David Bowie’s 'Fame' Hits No. 1 Today",
+    "source": "AOL",
+    "extract": "A look back at David Bowie’s first US Billboard Hot 100 number one, Fame, which reached the top of the chart on September 20, 1975.",
+    "image": null,
+    "link": "https://www.aol.com/articles/david-bowies-fame-hits-no-060000000.html",
+    "category": "Music",
+    "published": "2026-09-20T06:00:00Z"
+  },
+  {
+    "title": "Star Trek is turning 60 – and the vision it promised feels more distant than ever",
+    "source": "The Guardian",
+    "extract": "On Star Trek’s 60th anniversary, Dave Schilling reflects on the franchise’s optimistic future and how its vision contrasts with the growing militarisation of space.",
+    "image": null,
+    "link": "https://www.theguardian.com/commentisfree/2026/sep/20/star-trek-air-force-weapons",
     "category": "Entertainment",
-    "published": "2026-09-19T17:00:00Z"
+    "published": "2026-09-20T11:00:00Z"
   }
 ]
