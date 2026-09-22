@@ -1,110 +1,317 @@
 [
   {
-    "title": "Aston Martin’s Valhalla Spider Is Coming for Ferrari’s PHEV Supercar",
-    "source": "Autoblog",
-    "extract": "Aston Martin is reportedly preparing an open-top Valhalla Spider, potentially arriving as early as November, giving the plug-in-hybrid supercar a rival to Ferrari’s open-air performance cars.",
-    "image": null,
-    "link": "https://autos.yahoo.com/new-vehicles-and-reviews/articles/aston-martin-valhalla-spider-coming-210500614.html",
+    "title": "McLaren releases behind-the-scenes look at Lando Norris's hypercar test",
+    "source": "Motorsport.com",
+    "extract": "McLaren has released footage of Lando Norris completing 38 laps and 177km in the 2027 MCL-HY hypercar during a Portugal test, as the Woking team prepares for its World Endurance Championship programme.",
+    "image": "https://cdn-2.motorsport.com/images/amp/6n7Axkw0/s1000/lando-norris-mclaren.webp",
+    "link": "https://www.motorsport.com/f1/news/mclaren-releases-behind-the-scenes-look-at-lando-norriss-hypercar-test/10857661/",
     "category": "Automotive",
-    "published": "2026-09-20T21:05:00Z"
+    "published": "2026-09-21T09:46:00Z"
   },
   {
-    "title": "I Loved the 2026 Aston Martin DB12 S, But I’d Buy This Cheaper Aston",
-    "source": "Autoblog",
-    "extract": "A review of the hotter DB12 S highlights its 690-hp twin-turbo V8, carbon-ceramic brakes, titanium exhaust option and sharper chassis tuning, while comparing it with a cheaper Aston alternative.",
+    "title": "F1 approves shorter races for 2027 to fit revised power unit plan",
+    "source": "Motorsport.com",
+    "extract": "Formula 1 has agreed in principle to reduce standard Grand Prix distance from 305km to 290km for 2027 as the sport prepares for revised power units with more combustion-engine output and less electrical power.",
     "image": null,
-    "link": "https://www.aol.com/articles/loved-2026-aston-martin-db12-150000000.html",
+    "link": "https://www.motorsport.com/f1/news/f1-approves-shorter-races-for-2027-to-fit-revised-power-unit-plan/10857797/",
     "category": "Automotive",
-    "published": "2026-09-19T15:00:00Z"
+    "published": "2026-09-21T16:52:00Z"
   },
   {
-    "title": "2024 Gordon Murray Automotive T.50 for Sale With Only 62 Miles",
-    "source": "Autoblog",
-    "extract": "A nearly unused Gordon Murray Automotive T.50 with just 62 miles is heading to auction, offering a rare chance to acquire one of the fan-assisted, naturally aspirated V12 hypercars in essentially delivery-fresh condition.",
+    "title": "Red Bull admits Max Verstappen's mysterious car issue cannot be fully fixed until 2027",
+    "source": "Motorsport.com",
+    "extract": "Red Bull says a persistent problem with Max Verstappen's 2026 car cannot be completely resolved until the next rules cycle, highlighting the technical compromises behind the current design.",
     "image": null,
-    "link": "https://autos.yahoo.com/classic-and-collector/articles/2024-gordon-murray-automotive-t-123000885.html",
+    "link": "https://www.motorsport.com/f1/news/red-bull-admits-max-verstappens-mysterious-car-issue-cannot-be-fully-fixed-until-2027/10857381/",
     "category": "Automotive",
-    "published": "2026-09-19T12:30:00Z"
+    "published": "2026-09-21"
   },
   {
-    "title": "Some of the most iconic cars in the world look worse when US spec is applied",
-    "source": "Supercar Blondie",
-    "extract": "A look at how American safety regulations have forced visual changes to some of the world’s most recognisable Ferraris, Lamborghinis and Porsches, often producing distinctly different-looking cars from their European counterparts.",
+    "title": "Sebastian Vettel: F1 must combine 'things we love' with sustainable future",
+    "source": "Motorsport.com",
+    "extract": "Sebastian Vettel has argued that Formula 1's future should retain the elements enthusiasts value while adapting its technical and sporting direction for greater sustainability.",
     "image": null,
-    "link": "https://supercarblondie.com/iconic-cars-us-spec-controversy-bumpers/",
+    "link": "https://www.motorsport.com/f1/news/sebastian-vettel-weighs-in-on-f1-2026-rules-debate-we-need-to-combine-things-we-love/10857419/",
     "category": "Automotive",
-    "published": "2026-09-20T12:02:00Z"
+    "published": "2026-09-21"
   },
   {
-    "title": "Malicious npm packages evade install-script defenses at runtime",
-    "source": "BleepingComputer",
-    "extract": "A new npm malware campaign shows how malicious packages can bypass installation-script protections by hiding their payload in normal runtime behaviour, with the impersonating package already attracting millions of weekly downloads.",
+    "title": "David Coulthard warns unchanged Madring return in 2027 would be 'stupidity'",
+    "source": "Motorsport.com",
+    "extract": "David Coulthard has called for changes to Madrid's new Madring circuit before Formula 1 returns in 2027, focusing attention on the track's overtaking characteristics.",
     "image": null,
-    "link": "https://www.bleepingcomputer.com/news/security/malicious-npm-packages-evade-install-script-defenses-at-runtime/",
-    "category": "Technology",
-    "published": "2026-09-20T10:11:00Z"
+    "link": "https://www.motorsport.com/f1/news/david-coulthard-warns-unchanged-madring-return-in-2027-would-be-stupidity/10857135/",
+    "category": "Automotive",
+    "published": "2026-09-21"
   },
   {
-    "title": "Researchers escape OpenAI Codex sandbox to run commands on host",
-    "source": "BleepingComputer",
-    "extract": "Security researchers disclosed two Codex sandbox escapes, including one that could turn an untrusted repository into host command execution; OpenAI patched both flaws shortly after they were reported.",
+    "title": "Mercedes and Aston Martin go head-to-head in charity football match",
+    "source": "Motorsport.com",
+    "extract": "Mercedes and Aston Martin teams took part in a charity football match, bringing two Formula 1-linked manufacturers together away from the circuit.",
     "image": null,
-    "link": "https://www.bleepingcomputer.com/news/security/researchers-escape-openai-codex-sandbox-to-run-commands-on-host/amp/",
-    "category": "Technology",
-    "published": "2026-09-20T08:00:00Z"
+    "link": "https://www.motorsport.com/f1/news/mercedes-and-aston-martin-go-head-to-head-in-charity-football-match-here-are-the-results/10857645/",
+    "category": "Automotive",
+    "published": "2026-09-21"
   },
   {
-    "title": "Ten days that changed the course of AI",
+    "title": "DeepSeek to brief UN Security Council on AI this week, sources say",
     "source": "Reuters",
-    "extract": "Reuters examines a turbulent ten-day period in AI development, including safety warnings, researchers leaving frontier labs and growing concern about increasingly autonomous systems.",
-    "image": null,
-    "link": "https://www.investing.com/news/stock-market-news/ten-days-that-changed-the-course-of-ai-4908072",
+    "extract": "DeepSeek is expected to brief the UN Security Council on artificial intelligence risks, alongside representatives from major AI companies, as governments discuss AI and international security.",
+    "image": "https://www.reuters.com/resizer/v2/P6B6KMJBVNLWZJGAA6BU275JZA.jpg?auth=2345017028c154316a05acb4c430e85a2e86523b28dae396f7de30de5eb036ed&quality=80&width=1920",
+    "link": "https://www.reuters.com/world/asia-pacific/deepseek-brief-un-security-council-ai-this-week-sources-say-2026-09-22/",
     "category": "Technology",
-    "published": "2026-09-19T06:05:00Z"
+    "published": "2026-09-22T09:18:00Z"
   },
   {
-    "title": "DJSOFT Releases Dracula for Amiga and ZX Spectrum",
-    "source": "Kicks & Grips",
-    "extract": "DJSOFT has released a new gothic text adventure for Amiga and ZX Spectrum, combining illustrated locations, a traditional parser and real-time pressure with puzzles inspired by Bram Stoker’s Dracula.",
+    "title": "Belgium's Aikido launches cybersecurity AI model",
+    "source": "Reuters",
+    "extract": "Belgian cybersecurity company Aikido has released an open-weight AI model designed for local cybersecurity deployments, allowing organisations to use defensive AI without sending sensitive code to external providers.",
     "image": null,
-    "link": "https://kicksandgrips.com/news/djsoft-releases-dracula-for-amiga-and-zx-spectrum",
+    "link": "https://www.reuters.com/legal/litigation/belgiums-aikido-launches-cybersecurity-ai-model-demand-local-tools-grows-2026-09-21/",
+    "category": "Technology",
+    "published": "2026-09-21T14:14:00Z"
+  },
+  {
+    "title": "Canonical announces Zephyr 26.04 LTS for MCU-grade devices",
+    "source": "Canonical",
+    "extract": "Canonical announced an enterprise Zephyr 26.04 LTS distribution with long-term support and device management for microcontroller products, building on the upstream real-time operating system.",
+    "image": null,
+    "link": "https://canonical.com/blog/zephyr-lts-announcement",
+    "category": "Technology",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "European Quantum Software Stack for Quantum Computers",
+    "source": "Fraunhofer FOKUS",
+    "extract": "The Q-VERSE project is developing a European, hardware-independent quantum software stack based around the open-source Eclipse Qrisp framework, aiming to make quantum application development more interoperable.",
+    "image": null,
+    "link": "https://www.fokus.fraunhofer.de/en/sqc/news/quantum_software_stack_quantum_computers.html",
+    "category": "Technology",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "Alibaba unveils new AI chip and ambitious model plans",
+    "source": "AP News",
+    "extract": "Alibaba unveiled the Zhenwu V900 AI chip and plans for a much larger next-generation AI model, alongside an expansion of its cloud computing infrastructure.",
+    "image": null,
+    "link": "https://apnews.com/article/b29908e516faff9f5a82b201ba954aab",
+    "category": "Technology",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "FuseSoC turns 15 as open-source silicon development continues to grow",
+    "source": "FOSSi Foundation",
+    "extract": "The FOSSi Foundation marked the 15th anniversary of FuseSoC, the modular package manager and build-tool collection used in open-source hardware and systems-on-chip development.",
+    "image": null,
+    "link": "https://librecores.org/blog/2026-09-21-ecl100",
+    "category": "Technology",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "Amix: Amiga Unix gets 68040/68060 support",
+    "source": "amiga-news.de",
+    "extract": "A new Amiga Unix kernel and patch allow the historic Amix System V port, previously limited to 68020 and 68030 processors, to run on 68040 and 68060 CPUs.",
+    "image": null,
+    "link": "https://amiga-news.de/en/news/AN-2026-09-00075-EN.html",
+    "category": "Retro Computing",
+    "published": "2026-09-20"
+  },
+  {
+    "title": "Real-time strategy: StarCraft port AmiSC 0.7.1",
+    "source": "amiga-news.de",
+    "extract": "AmiSC is an Amiga 68k native port of StarCraft that now includes a computer opponent and improved 320x240 and 640x480 modes while running directly on AmigaOS 3.x.",
+    "image": null,
+    "link": "https://amiga-news.de/en/news/AN-2026-09-00070-EN.html",
+    "category": "Retro Computing",
+    "published": "2026-09-19"
+  },
+  {
+    "title": "Puzzle game Connect 1.6 update improves 512 KB Amiga support",
+    "source": "amiga-news.de",
+    "extract": "Connect 1.6 fixes a crash affecting 512 KB Amigas when the second music track was loaded, allowing both tracks to work on the machine while also improving board-generation performance.",
+    "image": null,
+    "link": "https://amiga-news.de/en/news/AN-2026-09-00074-EN.html",
     "category": "Retro Computing Projects",
-    "published": "2026-09-19T15:10:00Z"
+    "published": "2026-09-20"
   },
   {
-    "title": "Space Trolls of Mahlsdorf Targets ZX Spectrum Hardware",
-    "source": "Kicks & Grips",
-    "extract": "A new ZX Spectrum shoot ’em up built with MPAGD and Shmupkit supports both ULA+ and the standard ULA palette and has been tested on original 128K hardware, Spectrum Next and emulators.",
+    "title": "Copper Showdown Editor 0.5.0 adds new Amiga live-coding capabilities",
+    "source": "amiga-news.de",
+    "extract": "Copper Showdown Editor creates Amiga Copper lists in Lua and renders them through the vAmiga emulator; version 0.5.0 updates dependencies, the editor and audio handling.",
     "image": null,
-    "link": "https://kicksandgrips.com/news/space-trolls-of-mahlsdorf-targets-zx-spectrum-hardware",
+    "link": "https://amiga-news.de/en/news/AN-2026-09-00073-EN.html",
     "category": "Retro Computing Projects",
-    "published": "2026-09-19T15:15:00Z"
+    "published": "2026-09-20"
   },
   {
-    "title": "Watch AC/DC’s Angus Young sign fan’s baby",
-    "source": "NME",
-    "extract": "Angus Young appeared at an AC/DC PWR/UP pop-up in Toronto after the band’s concert was cancelled, with footage showing him signing a young fan’s baby.",
-    "image": null,
-    "link": "https://www.nme.com/news/music/watch-ac-dcs-angus-young-sign-fans-baby-3969699",
-    "category": "Music",
-    "published": "2026-09-19T13:01:00Z"
+    "title": "Buzzard by Inez Ray arrives as a dystopian science-fiction novel",
+    "source": "Bookshop.org",
+    "extract": "Inez Ray's Buzzard is a dystopian science-fiction novel set in 2086, following a midwife imprisoned in a corporate-run facility who uncovers a disturbing mystery.",
+    "image": "https://images-us.bookshop.org/ingram/9781967967261.jpg?v=7798b2a642021aec5eddaee382d20d74&width=600",
+    "link": "https://bookshop.org/p/books/buzzard-inez-ray/e8764b16942fb15c?ean=9781967967261&listref=coming-soon-popular-sci-fi-preorders&next=t",
+    "category": "Books",
+    "published": "2026-09-22"
   },
   {
-    "title": "David Bowie’s 'Fame' Hits No. 1 Today",
-    "source": "AOL",
-    "extract": "A look back at David Bowie’s first US Billboard Hot 100 number one, Fame, which reached the top of the chart on September 20, 1975.",
-    "image": null,
-    "link": "https://www.aol.com/articles/david-bowies-fame-hits-no-060000000.html",
-    "category": "Music",
-    "published": "2026-09-20T06:00:00Z"
+    "title": "The Portal sends a retired FBI agent into an alternate universe",
+    "source": "PR.com",
+    "extract": "J.J. Faggiana's new science-fiction thriller The Portal follows a retired FBI agent given the ability to travel backward through time into an alternate universe, where he confronts the consequences of intervention.",
+    "image": "https://img.pr.com/release/2609/518317/pressrelease_518317_1789400480.jpeg",
+    "link": "https://www.pr.com/press-release/979075",
+    "category": "Books",
+    "published": "2026-09-21"
   },
   {
-    "title": "Star Trek is turning 60 – and the vision it promised feels more distant than ever",
-    "source": "The Guardian",
-    "extract": "On Star Trek’s 60th anniversary, Dave Schilling reflects on the franchise’s optimistic future and how its vision contrasts with the growing militarisation of space.",
+    "title": "Fold Catastrophes collects new science fiction from Peter Watts",
+    "source": "Bookshop.org",
+    "extract": "Peter Watts's Fold Catastrophes is a new science-fiction short-story collection exploring brain-computer interfaces, life inside stars, behavioural hacking and ecological collapse.",
     "image": null,
-    "link": "https://www.theguardian.com/commentisfree/2026/sep/20/star-trek-air-force-weapons",
+    "link": "https://bookshop.org/p/books/fold-catastrophes-peter-watts/f60bd0a61674ce2f?ean=9781616964672",
+    "category": "Books",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "Mick Herron on Slow Horses and Jackson Lamb",
+    "source": "The Times",
+    "extract": "Mick Herron discusses the return of Slow Horses, the evolution of Gary Oldman's Jackson Lamb compared with the character in the novels, and the continuing Slough House universe.",
+    "image": null,
+    "link": "https://www.thetimes.com/culture/tv-radio/article/mick-herron-on-slow-horses-gary-oldmans-jackson-is-diverging-from-mine-cmt86z70v",
+    "category": "Books",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "Both Online And Offline: H. Moser & Cie. Off-Grid",
+    "source": "Fratello Watches",
+    "extract": "H. Moser & Cie. has introduced the Off-Grid, a digital-mechanical hybrid with a skeletonized dial, a six-o'clock display and a D10 calibre developed with Sequent.",
+    "image": null,
+    "link": "https://www.fratellowatches.com/both-online-and-offline-the-new-h-moser-cie-off-grid-is-the-digital-watch-for-enthusiasts/",
+    "category": "Watches",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "Bianchet Tonneau UltraFino Ceramic Skeleton",
+    "source": "Fratello Watches",
+    "extract": "Bianchet's Tonneau UltraFino Ceramic Skeleton uses the golden ratio and Fibonacci sequence as design principles for its proportions and flowing case architecture.",
+    "image": null,
+    "link": "https://www.fratellowatches.com/bianchet-tonneau-ultrafino-ceramic-blue-and-white/",
+    "category": "Watches",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "Apiar Carbon1.0 OG uses additively manufactured carbon fibre",
+    "source": "WatchPro",
+    "extract": "British independent Apiar has launched the Carbon1.0 OG, combining a CBAM carbon-fibre case structure with Grade 23 titanium and a lightweight sports-watch design.",
+    "image": null,
+    "link": "https://usa.watchpro.com/apiar-launches-carbon1-0-og-watch/",
+    "category": "Watches",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "Bucherer UK sales rise to £109 million and profits triple",
+    "source": "WatchPro",
+    "extract": "Rolex-owned Bucherer reported £109.2 million in UK sales and £3.5 million operating profit for its latest financial year, with its London retail presence increasingly centred on Covent Garden.",
+    "image": null,
+    "link": "https://usa.watchpro.com/bucherer-sales-rise-to-109m-and-profits-triple/",
+    "category": "Watches",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "Norqain expands UK footprint through Watches of Switzerland Group",
+    "source": "WatchPro",
+    "extract": "Norqain is expanding its UK and Ireland distribution through new partnerships with Watches of Switzerland Group stores and online platforms.",
+    "image": null,
+    "link": "https://usa.watchpro.com/norqain-expands-uk-footprint-with-significant-watches-of-switzerland-group-partnership/",
+    "category": "Watches",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "Chronography aims to fill a gap in Ireland's watch event calendar",
+    "source": "WatchPro",
+    "extract": "A new Dublin horology event called Chronography will bring independent and microbrand watchmakers together for a one-day showcase at Smock Alley Theatre in October.",
+    "image": null,
+    "link": "https://usa.watchpro.com/the-big-interview-chronography-to-fill-a-gap-in-irelands-watch-event-calendar/",
+    "category": "Watches",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "Star Trek: The Original Series gets a 60th-anniversary release",
+    "source": "Collider",
+    "extract": "Star Trek: The Original Series is receiving a 60th-anniversary DVD and Blu-ray release, marking a new home-media edition of the original series.",
+    "image": null,
+    "link": "https://collider.com/star-trek-the-original-series-60th-anniversary-blu-ray/",
     "category": "Entertainment",
-    "published": "2026-09-20T11:00:00Z"
+    "published": "2026-09-21"
+  },
+  {
+    "title": "Resident Evil tops UK-Ireland box office with franchise-record opening",
+    "source": "ScreamWire",
+    "extract": "The latest Resident Evil film opened to £4.2 million across the UK and Ireland, giving the long-running horror franchise its biggest regional opening to date.",
+    "image": null,
+    "link": "https://screamwire.com/digests/2026-09-21",
+    "category": "Entertainment",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "Ash unearths long-lost track 'Bittersweet Blue' from the 1977 era",
+    "source": "XS Noize",
+    "extract": "Ash have released the previously unreleased Bittersweet Blue from the era of their debut album 1977, alongside the band's plans for a 30th-anniversary edition.",
+    "image": null,
+    "link": "https://www.xsnoize.com/ash-bittersweet-blue-1977-anniversary/",
+    "category": "Music",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "Bad Company announce previously unreleased Live in London album",
+    "source": "Entertainment Focus",
+    "extract": "Bad Company will release Live in London, a previously unreleased 2016 concert recording, across vinyl, CD and digital formats in November.",
+    "image": null,
+    "link": "https://entertainment-focus.com/2026/09/21/bad-company-announce-previously-unreleased-live-in-london-album-from-2016/",
+    "category": "Music",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "Declan Welsh and The Decadent West announce Explicit Agitation",
+    "source": "XS Noize",
+    "extract": "Declan Welsh and The Decadent West have announced their new album Explicit Agitation for February 2027, accompanied by the single Run Down Small Town and a UK and European tour.",
+    "image": null,
+    "link": "https://www.xsnoize.com/declan-welsh-explicit-agitation/",
+    "category": "Music",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "Sari Schorr releases Running Wild ahead of new album and tour",
+    "source": "Blues Matters Magazine",
+    "extract": "Sari Schorr has released the title track from her forthcoming album Running Wild, ahead of a 46-date European tour beginning in London later this month.",
+    "image": null,
+    "link": "https://bluesmatters.com/news/sari-schorr-releases-running-wild-ahead-of-new-album-and-european-tour/",
+    "category": "Music",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "Daley releases new album Strange Nature",
+    "source": "Musician Voice",
+    "extract": "R&B and soul singer-songwriter Daley has released his new album Strange Nature, alongside the start of a 27-city US tour.",
+    "image": null,
+    "link": "https://musicianvoice.com/index.php/2026/09/22/daley-releases-new-album-strange-nature-stream-new-rb-music-songs-interviews/",
+    "category": "Music",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "Tinashe on her new album Popstar",
+    "source": "Stereogum",
+    "extract": "Tinashe discusses her new album Popstar, her creative process and her interest in challenging expectations in a detailed cover-story interview.",
+    "image": null,
+    "link": "https://stereogum.com/2511642/tinashe-is-her-own-kind-of-popstar/interviews/cover-story",
+    "category": "Music",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "Classic Rock Tracks Of The Week: September 21, 2026",
+    "source": "Louder",
+    "extract": "Louder's latest selection highlights new tracks from Greta Van Fleet, Royal Blood, Dirty Honey, The Pineapple Thief and other contemporary rock artists.",
+    "image": null,
+    "link": "https://www.loudersound.com/music/tracks-singles/classic-rock-tracks-of-the-week-september-21-2026",
+    "category": "Music",
+    "published": "2026-09-21"
   }
 ]
