@@ -1,24 +1,33 @@
 [
   {
-    "title": "McLaren releases behind-the-scenes look at Lando Norris's hypercar test",
-    "source": "Motorsport.com",
-    "extract": "McLaren has released footage of Lando Norris completing 38 laps and 177km in the 2027 MCL-HY hypercar during a Portugal test, as the Woking team prepares for its World Endurance Championship programme.",
-    "image": "https://cdn-2.motorsport.com/images/amp/6n7Axkw0/s1000/lando-norris-mclaren.webp",
-    "link": "https://www.motorsport.com/f1/news/mclaren-releases-behind-the-scenes-look-at-lando-norriss-hypercar-test/10857661/",
+    "title": "Stars, cars and highlights from the 2026 Goodwood Revival",
+    "source": "Autosport",
+    "extract": "The 2026 Goodwood Revival brought together historic Le Mans winners, Formula 1 machinery and unusual cars, including reunited Ford GT40s, a rare Alfa Romeo 8C and a unique Lotus Elite project.",
+    "image": "https://cdn-1.motorsport.com/images/amp/6VyKg37Y/s1000/lola-t70.webp",
+    "link": "https://www.autosport.com/general/news/stars-cars-and-highlights-from-the-2026-goodwood-revival/10857973/",
     "category": "Automotive",
-    "published": "2026-09-21T09:46:00Z"
+    "published": "2026-09-22T14:53:00Z"
+  },
+  {
+    "title": "McLaren unveils a revised brand identity linking Racing and Automotive",
+    "source": "Motorsport.com",
+    "extract": "McLaren has refreshed its visual identity with a revised wordmark inspired by Bruce McLaren's New Zealand roots, bringing its racing and automotive businesses under a more unified design language.",
+    "image": null,
+    "link": "https://fr.motorsport.com/f1/news/mclaren-nouveau-logo-identite-evoluee/10857863/",
+    "category": "Automotive",
+    "published": "2026-09-22T07:58:00Z"
   },
   {
     "title": "F1 approves shorter races for 2027 to fit revised power unit plan",
     "source": "Motorsport.com",
-    "extract": "Formula 1 has agreed in principle to reduce standard Grand Prix distance from 305km to 290km for 2027 as the sport prepares for revised power units with more combustion-engine output and less electrical power.",
+    "extract": "Formula 1 has agreed in principle to reduce standard Grand Prix distance for 2027 as the sport prepares for revised power units with more combustion-engine output and less electrical power.",
     "image": null,
     "link": "https://www.motorsport.com/f1/news/f1-approves-shorter-races-for-2027-to-fit-revised-power-unit-plan/10857797/",
     "category": "Automotive",
     "published": "2026-09-21T16:52:00Z"
   },
   {
-    "title": "Red Bull admits Max Verstappen's mysterious car issue cannot be fully fixed until 2027",
+    "title": "Red Bull admits Verstappen's mysterious car issue cannot be fully fixed until 2027",
     "source": "Motorsport.com",
     "extract": "Red Bull says a persistent problem with Max Verstappen's 2026 car cannot be completely resolved until the next rules cycle, highlighting the technical compromises behind the current design.",
     "image": null,
@@ -27,16 +36,16 @@
     "published": "2026-09-21"
   },
   {
-    "title": "Sebastian Vettel: F1 must combine 'things we love' with sustainable future",
+    "title": "Sebastian Vettel says F1 must combine the things fans love with a sustainable future",
     "source": "Motorsport.com",
-    "extract": "Sebastian Vettel has argued that Formula 1's future should retain the elements enthusiasts value while adapting its technical and sporting direction for greater sustainability.",
+    "extract": "Sebastian Vettel argues that Formula 1 should preserve the elements enthusiasts value while adapting its technical and sporting direction for greater sustainability.",
     "image": null,
     "link": "https://www.motorsport.com/f1/news/sebastian-vettel-weighs-in-on-f1-2026-rules-debate-we-need-to-combine-things-we-love/10857419/",
     "category": "Automotive",
     "published": "2026-09-21"
   },
   {
-    "title": "David Coulthard warns unchanged Madring return in 2027 would be 'stupidity'",
+    "title": "David Coulthard calls for changes to Madrid's Madring before its 2027 return",
     "source": "Motorsport.com",
     "extract": "David Coulthard has called for changes to Madrid's new Madring circuit before Formula 1 returns in 2027, focusing attention on the track's overtaking characteristics.",
     "image": null,
@@ -45,273 +54,363 @@
     "published": "2026-09-21"
   },
   {
-    "title": "Mercedes and Aston Martin go head-to-head in charity football match",
-    "source": "Motorsport.com",
-    "extract": "Mercedes and Aston Martin teams took part in a charity football match, bringing two Formula 1-linked manufacturers together away from the circuit.",
+    "title": "D-Link warns of a maximum-severity zero-day in DIR-822A routers",
+    "source": "BleepingComputer",
+    "extract": "D-Link has warned of an unpatched maximum-severity stack-based buffer overflow in legacy DIR-822A routers, with public proof-of-concept exploit code available.",
     "image": null,
-    "link": "https://www.motorsport.com/f1/news/mercedes-and-aston-martin-go-head-to-head-in-charity-football-match-here-are-the-results/10857645/",
-    "category": "Automotive",
-    "published": "2026-09-21"
-  },
-  {
-    "title": "DeepSeek to brief UN Security Council on AI this week, sources say",
-    "source": "Reuters",
-    "extract": "DeepSeek is expected to brief the UN Security Council on artificial intelligence risks, alongside representatives from major AI companies, as governments discuss AI and international security.",
-    "image": "https://www.reuters.com/resizer/v2/P6B6KMJBVNLWZJGAA6BU275JZA.jpg?auth=2345017028c154316a05acb4c430e85a2e86523b28dae396f7de30de5eb036ed&quality=80&width=1920",
-    "link": "https://www.reuters.com/world/asia-pacific/deepseek-brief-un-security-council-ai-this-week-sources-say-2026-09-22/",
+    "link": "https://www.bleepingcomputer.com/news/security/d-link-warns-of-max-severity-zero-day-bug-in-dir-822a-routers/",
     "category": "Technology",
-    "published": "2026-09-22T09:18:00Z"
+    "published": "2026-09-22T08:48:00Z"
   },
   {
-    "title": "Belgium's Aikido launches cybersecurity AI model",
-    "source": "Reuters",
-    "extract": "Belgian cybersecurity company Aikido has released an open-weight AI model designed for local cybersecurity deployments, allowing organisations to use defensive AI without sending sensitive code to external providers.",
+    "title": "New ClosedQuorum Windows malware uses AI for attack decisions",
+    "source": "BleepingComputer",
+    "extract": "Researchers have identified Windows malware that uses Gemini, DeepSeek, Qwen and Mistral models to make autonomous decisions about its actions, illustrating a new class of AI-integrated threats.",
     "image": null,
-    "link": "https://www.reuters.com/legal/litigation/belgiums-aikido-launches-cybersecurity-ai-model-demand-local-tools-grows-2026-09-21/",
-    "category": "Technology",
-    "published": "2026-09-21T14:14:00Z"
-  },
-  {
-    "title": "Canonical announces Zephyr 26.04 LTS for MCU-grade devices",
-    "source": "Canonical",
-    "extract": "Canonical announced an enterprise Zephyr 26.04 LTS distribution with long-term support and device management for microcontroller products, building on the upstream real-time operating system.",
-    "image": null,
-    "link": "https://canonical.com/blog/zephyr-lts-announcement",
-    "category": "Technology",
-    "published": "2026-09-21"
-  },
-  {
-    "title": "European Quantum Software Stack for Quantum Computers",
-    "source": "Fraunhofer FOKUS",
-    "extract": "The Q-VERSE project is developing a European, hardware-independent quantum software stack based around the open-source Eclipse Qrisp framework, aiming to make quantum application development more interoperable.",
-    "image": null,
-    "link": "https://www.fokus.fraunhofer.de/en/sqc/news/quantum_software_stack_quantum_computers.html",
-    "category": "Technology",
-    "published": "2026-09-21"
-  },
-  {
-    "title": "Alibaba unveils new AI chip and ambitious model plans",
-    "source": "AP News",
-    "extract": "Alibaba unveiled the Zhenwu V900 AI chip and plans for a much larger next-generation AI model, alongside an expansion of its cloud computing infrastructure.",
-    "image": null,
-    "link": "https://apnews.com/article/b29908e516faff9f5a82b201ba954aab",
+    "link": "https://www.bleepingcomputer.com/news/security/new-closedquorum-windows-malware-uses-ai-for-attack-decisions/",
     "category": "Technology",
     "published": "2026-09-22"
   },
   {
-    "title": "FuseSoC turns 15 as open-source silicon development continues to grow",
-    "source": "FOSSi Foundation",
-    "extract": "The FOSSi Foundation marked the 15th anniversary of FuseSoC, the modular package manager and build-tool collection used in open-source hardware and systems-on-chip development.",
+    "title": "OpenTelemetry support arrives in the GitHub Copilot app",
+    "source": "GitHub Changelog",
+    "extract": "The GitHub Copilot app now supports OpenTelemetry configuration through enterprise-managed settings, allowing organisations to trace agent activity and tool interactions through compatible observability systems.",
     "image": null,
-    "link": "https://librecores.org/blog/2026-09-21-ecl100",
+    "link": "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
     "category": "Technology",
-    "published": "2026-09-21"
+    "published": "2026-09-22"
   },
   {
-    "title": "Amix: Amiga Unix gets 68040/68060 support",
-    "source": "amiga-news.de",
-    "extract": "A new Amiga Unix kernel and patch allow the historic Amix System V port, previously limited to 68020 and 68030 processors, to run on 68040 and 68060 CPUs.",
+    "title": "GitHub Copilot for JetBrains gains agent approvals, plans and persistent MCP controls",
+    "source": "GitHub Changelog",
+    "extract": "Copilot for JetBrains 1.18.0 adds assisted tool approvals, agent plan mode, shared skills and instructions, and persistent controls for MCP tools.",
     "image": null,
-    "link": "https://amiga-news.de/en/news/AN-2026-09-00075-EN.html",
+    "link": "https://github.blog/changelog/2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains/",
+    "category": "Technology",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "Open-source Nouveau driver gets HDMI Deep Color patches",
+    "source": "Phoronix",
+    "extract": "New patches for the open-source NVIDIA Nouveau driver add HDMI Deep Color support, including 10-, 12- and 16-bit-per-channel RGB output, although some capabilities remain untested.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Nouveau-Deep-Color-Patches",
+    "category": "Technology",
+    "published": "2026-09-22T20:54:00-04:00"
+  },
+  {
+    "title": "Alibaba contributes $3 million to Omarchy for an agentic Linux OS",
+    "source": "Phoronix",
+    "extract": "Alibaba Cloud is contributing $3 million to the Omacom Foundation over three years to help develop Omarchy and work towards a Linux desktop designed for people and AI agents to work together.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Omarchy-Alibaba-3M",
+    "category": "Technology",
+    "published": "2026-09-22T08:24:00-04:00"
+  },
+  {
+    "title": "Mike Battilana presents Amiga history and development at Saku 2026",
+    "source": "Amiga-News.de",
+    "extract": "Amiga Corporation's Mike Battilana gave a presentation at the Saku 2026 Amiga meeting in Finland, providing a new video record of the community event and its historical discussion.",
+    "image": null,
+    "link": "https://amiga-news.de/en/standard/",
     "category": "Retro Computing",
-    "published": "2026-09-20"
+    "published": "2026-09-22"
   },
   {
-    "title": "Real-time strategy: StarCraft port AmiSC 0.7.1",
-    "source": "amiga-news.de",
-    "extract": "AmiSC is an Amiga 68k native port of StarCraft that now includes a computer opponent and improved 320x240 and 640x480 modes while running directly on AmigaOS 3.x.",
+    "title": "Fliegeralarms Wintergames brings five winter sports to the Amiga 1200",
+    "source": "Amiga-News.de",
+    "extract": "A new free Amiga 1200 game from Fliegeralarm Games offers five winter sports disciplines, four-player hotseat play, 256-colour graphics and copper effects as part of AmiGameJam 9.",
     "image": null,
-    "link": "https://amiga-news.de/en/news/AN-2026-09-00070-EN.html",
+    "link": "https://amiga-news.de/en/standard/",
     "category": "Retro Computing",
-    "published": "2026-09-19"
+    "published": "2026-09-22"
   },
   {
-    "title": "Puzzle game Connect 1.6 update improves 512 KB Amiga support",
-    "source": "amiga-news.de",
-    "extract": "Connect 1.6 fixes a crash affecting 512 KB Amigas when the second music track was loaded, allowing both tracks to work on the machine while also improving board-generation performance.",
+    "title": "hURL 2.2 brings modern HTTPS and file-transfer support to Amiga systems",
+    "source": "Amiga-News.de",
+    "extract": "The hURL plugin has been updated across AmigaOS 3, AmigaOS 4, MorphOS and other platforms, providing command-line URL and transfer capabilities with platform-specific SSL support.",
     "image": null,
-    "link": "https://amiga-news.de/en/news/AN-2026-09-00074-EN.html",
+    "link": "https://amiga-news.de/en/standard/",
+    "category": "Retro Computing",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "AmiMAIL 2.0.6 updates email support for AmigaOS 3.2 and 4",
+    "source": "Amiga-News.de",
+    "extract": "Andreas Stürmer has updated AmiMAIL, an IMAP and SMTP client for AmigaOS 3.2 that also runs on AmigaOS 4, with a new maintenance release.",
+    "image": null,
+    "link": "https://amiga-news.de/en/standard/",
+    "category": "Retro Computing",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "Copperline 0.21.0 improves the Rust Amiga emulator",
+    "source": "Amiga-News.de",
+    "extract": "Copperline 0.21.0 adds spectators to netplay, supports four local controllers on desktop and RetroArch, reduces frame-display work and fixes file-picker crashes.",
+    "image": null,
+    "link": "https://amiga-news.de/en/compact/",
+    "category": "Retro Computing",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "The Sinclair Spectrum gets a desktop GUI",
+    "source": "Hackaday",
+    "extract": "ZXdesk is an assembly-language project that gives a 48K ZX Spectrum a GEM-like desktop with menus, windows and built-in applications, pushing the original hardware far beyond its normal interface.",
+    "image": null,
+    "link": "https://hackaday.com/2026/09/21/the-sinclair-spectrum-gets-a-desktop-gui/",
+    "category": "Retro Computing",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "Tiny Quest receives an Amstrad CPC port after a multi-system source conversion effort",
+    "source": "Indie Retro News",
+    "extract": "Outsoftware has ported the C64 platformer Tiny Quest to the Amstrad CPC after working through source conversions for more than 30 projects targeting underserved classic systems.",
+    "image": null,
+    "link": "https://www.indieretronews.com/2026/09/tiny-quest-charming-platformer-by-rebel.html",
     "category": "Retro Computing Projects",
-    "published": "2026-09-20"
+    "published": "2026-09-22T19:37:00+01:00"
   },
   {
-    "title": "Copper Showdown Editor 0.5.0 adds new Amiga live-coding capabilities",
-    "source": "amiga-news.de",
-    "extract": "Copper Showdown Editor creates Amiga Copper lists in Lua and renders them through the vAmiga emulator; version 0.5.0 updates dependencies, the editor and audio handling.",
+    "title": "Roland&Mej Build brings a new Amstrad CPC homebrew adventure",
+    "source": "Indie Retro News",
+    "extract": "The Qproyect has released Roland&Mej Build, a new Amstrad CPC adventure platformer in which two characters act as technology spies investigating the classic computer industry.",
     "image": null,
-    "link": "https://amiga-news.de/en/news/AN-2026-09-00073-EN.html",
+    "link": "https://www.indieretronews.com/2026/09/roland-build-amstrad-adventure.html",
     "category": "Retro Computing Projects",
-    "published": "2026-09-20"
+    "published": "2026-09-22T19:20:00+01:00"
   },
   {
-    "title": "Buzzard by Inez Ray arrives as a dystopian science-fiction novel",
-    "source": "Bookshop.org",
-    "extract": "Inez Ray's Buzzard is a dystopian science-fiction novel set in 2086, following a midwife imprisoned in a corporate-run facility who uncovers a disturbing mystery.",
-    "image": "https://images-us.bookshop.org/ingram/9781967967261.jpg?v=7798b2a642021aec5eddaee382d20d74&width=600",
-    "link": "https://bookshop.org/p/books/buzzard-inez-ray/e8764b16942fb15c?ean=9781967967261&listref=coming-soon-popular-sci-fi-preorders&next=t",
-    "category": "Books",
+    "title": "Flashback is being brought to the Atari ST through a modern engine port",
+    "source": "Indie Retro News",
+    "extract": "Neil Rackett is porting the REminiscence engine to Atari ST hardware to finally give the machine a version of Flashback, with optimised frame rates and display modes for different ST models.",
+    "image": null,
+    "link": "https://www.indieretronews.com/2026/09/flashback-brilliant-platformer-is-coming.html",
+    "category": "Retro Computing Projects",
+    "published": "2026-09-21T19:24:00+01:00"
+  },
+  {
+    "title": "BitBinders recreates and modernises hardware for Commodore and Amiga systems",
+    "source": "The Oasis BBS",
+    "extract": "A VCF Midwest interview with BitBinders covers replacement power supplies, recreated 1581 drives, dual-drive enclosures, a MEGA65 companion drive and a mechanical Amiga 1200 keyboard.",
+    "image": null,
+    "link": "https://theoasisbbs.com/bitbinders-retro-hardware-for-commodore-and-amiga-systems/",
+    "category": "Retro Computing Projects",
     "published": "2026-09-22"
   },
   {
-    "title": "The Portal sends a retired FBI agent into an alternate universe",
-    "source": "PR.com",
-    "extract": "J.J. Faggiana's new science-fiction thriller The Portal follows a retired FBI agent given the ability to travel backward through time into an alternate universe, where he confronts the consequences of intervention.",
-    "image": "https://img.pr.com/release/2609/518317/pressrelease_518317_1789400480.jpeg",
-    "link": "https://www.pr.com/press-release/979075",
-    "category": "Books",
+    "title": "Mint Software pushes modern media capabilities onto the Amiga 1200",
+    "source": "The Oasis BBS",
+    "extract": "A new demonstration shows MintAMP, MintPRINT, MintSCAN and MintVID connecting an accelerated Amiga 1200 to modern media, network and online services while exposing the limits of classic hardware.",
+    "image": null,
+    "link": "https://theoasisbbs.com/mint-software-brings-modern-media-to-the-amiga-1200/",
+    "category": "Retro Computing Projects",
     "published": "2026-09-21"
   },
   {
-    "title": "Fold Catastrophes collects new science fiction from Peter Watts",
-    "source": "Bookshop.org",
-    "extract": "Peter Watts's Fold Catastrophes is a new science-fiction short-story collection exploring brain-computer interfaces, life inside stars, behavioural hacking and ecological collapse.",
+    "title": "Shaderjoy 1.27 adds direct Mesa selection on AmigaOS 4",
+    "source": "The Oasis BBS",
+    "extract": "Shaderjoy 1.27 revises OpenGL handling on AmigaOS 4 and adds a MESA tooltype so users can select Mesa directly when the standard Ogles2 graphics path causes compatibility problems.",
     "image": null,
-    "link": "https://bookshop.org/p/books/fold-catastrophes-peter-watts/f60bd0a61674ce2f?ean=9781616964672",
-    "category": "Books",
+    "link": "https://theoasisbbs.com/shaderjoy-1-27-adds-mesa-selection-on-amigaos-4/",
+    "category": "Retro Computing Projects",
     "published": "2026-09-22"
   },
   {
-    "title": "Mick Herron on Slow Horses and Jackson Lamb",
-    "source": "The Times",
-    "extract": "Mick Herron discusses the return of Slow Horses, the evolution of Gary Oldman's Jackson Lamb compared with the character in the novels, and the continuing Slough House universe.",
-    "image": null,
-    "link": "https://www.thetimes.com/culture/tv-radio/article/mick-herron-on-slow-horses-gary-oldmans-jackson-is-diverging-from-mine-cmt86z70v",
-    "category": "Books",
-    "published": "2026-09-21"
+    "title": "Panerai introduces three smaller 42mm Luminor references",
+    "source": "Hodinkee",
+    "extract": "Panerai has introduced three 42mm Luminor models inspired by its pre-Vendome design heritage, bringing the historic cushion case and crown-protection architecture to a smaller and more accessible format.",
+    "image": "https://hodinkee-production.s3.amazonaws.com/uploads/images/6515fa4a-4bac-48b6-a951-ef4d6b25c3b2/PaneraiLuminorPAM017112.jpg",
+    "link": "https://www.hodinkee.com/articles/introducing-panerai-luminor",
+    "category": "Watches",
+    "published": "2026-09-22"
   },
   {
-    "title": "Both Online And Offline: H. Moser & Cie. Off-Grid",
+    "title": "Panerai Luminor 42mm models explored in detail",
     "source": "Fratello Watches",
-    "extract": "H. Moser & Cie. has introduced the Off-Grid, a digital-mechanical hybrid with a skeletonized dial, a six-o'clock display and a D10 calibre developed with Sequent.",
+    "extract": "Fratello examines Panerai's new 42mm Luminor references, including the PAM01710, PAM01711 and black DLC PAM01714, and their relationship to the brand's historic designs.",
     "image": null,
-    "link": "https://www.fratellowatches.com/both-online-and-offline-the-new-h-moser-cie-off-grid-is-the-digital-watch-for-enthusiasts/",
+    "link": "https://www.fratellowatches.com/exploring-new-territory-with-the-42mm-panerai-luminor-pam01710-pam01711-and-pam01714/",
     "category": "Watches",
-    "published": "2026-09-21"
+    "published": "2026-09-22"
   },
   {
-    "title": "Bianchet Tonneau UltraFino Ceramic Skeleton",
-    "source": "Fratello Watches",
-    "extract": "Bianchet's Tonneau UltraFino Ceramic Skeleton uses the golden ratio and Fibonacci sequence as design principles for its proportions and flowing case architecture.",
+    "title": "Vacheron Constantin and The Met unveil three new artisan works",
+    "source": "Haute Time",
+    "extract": "Vacheron Constantin and The Metropolitan Museum of Art have unveiled three new works created through their artisan residency programme, continuing a collaboration between contemporary artists and high horology.",
     "image": null,
-    "link": "https://www.fratellowatches.com/bianchet-tonneau-ultrafino-ceramic-blue-and-white/",
+    "link": "https://www.hautetime.com/vacheron-constantin-and-the-met-unveil-three-new-works-through-artisan-residency/",
     "category": "Watches",
-    "published": "2026-09-21"
+    "published": "2026-09-22"
   },
   {
-    "title": "Apiar Carbon1.0 OG uses additively manufactured carbon fibre",
-    "source": "WatchPro",
-    "extract": "British independent Apiar has launched the Carbon1.0 OG, combining a CBAM carbon-fibre case structure with Grade 23 titanium and a lightweight sports-watch design.",
+    "title": "Louis Vuitton adds bold colour to the Tambour Spin Time collection",
+    "source": "Haute Time",
+    "extract": "Louis Vuitton has expanded the Tambour Spin Time family with a more colourful new collection, extending the distinctive rotating-hour complication into a fresh set of designs.",
     "image": null,
-    "link": "https://usa.watchpro.com/apiar-launches-carbon1-0-og-watch/",
+    "link": "https://www.hautetime.com/louis-vuitton-brings-bold-color-to-the-tambour-spin-time-collection/",
     "category": "Watches",
-    "published": "2026-09-21"
+    "published": "2026-09-22"
   },
   {
-    "title": "Bucherer UK sales rise to £109 million and profits triple",
-    "source": "WatchPro",
-    "extract": "Rolex-owned Bucherer reported £109.2 million in UK sales and £3.5 million operating profit for its latest financial year, with its London retail presence increasingly centred on Covent Garden.",
+    "title": "MB&F's recent releases get a closer look",
+    "source": "Haute Time",
+    "extract": "Haute Time reviews the latest MB&F releases and the independent brand's continuing approach to unusual cases, mechanical displays and unconventional horological design.",
     "image": null,
-    "link": "https://usa.watchpro.com/bucherer-sales-rise-to-109m-and-profits-triple/",
+    "link": "https://www.hautetime.com/from-rebuilding-a-legend-to-setting-a-masterpiece-in-diamonds-everything-mbf-released-this-past-month/",
     "category": "Watches",
-    "published": "2026-09-21"
+    "published": "2026-09-22"
   },
   {
-    "title": "Norqain expands UK footprint through Watches of Switzerland Group",
-    "source": "WatchPro",
-    "extract": "Norqain is expanding its UK and Ireland distribution through new partnerships with Watches of Switzerland Group stores and online platforms.",
+    "title": "Taylor Swift to receive inaugural MTV VMA Artist Director Honors",
+    "source": "Rolling Stone",
+    "extract": "Taylor Swift will receive the first MTV VMA Artist Director Honors at the 2026 awards, recognising a sustained body of work and an artist's directorial voice.",
     "image": null,
-    "link": "https://usa.watchpro.com/norqain-expands-uk-footprint-with-significant-watches-of-switzerland-group-partnership/",
-    "category": "Watches",
-    "published": "2026-09-21"
+    "link": "https://au.rollingstone.com/music/music-news/taylor-swift-artist-director-honors-2026-mtv-vmas-101329/",
+    "category": "Music",
+    "published": "2026-09-22T07:52:00Z"
   },
   {
-    "title": "Chronography aims to fill a gap in Ireland's watch event calendar",
-    "source": "WatchPro",
-    "extract": "A new Dublin horology event called Chronography will bring independent and microbrand watchmakers together for a one-day showcase at Smock Alley Theatre in October.",
+    "title": "CHVRCHES return with new single Roses and London and Glasgow shows",
+    "source": "NME",
+    "extract": "CHVRCHES have returned with Roses, a dark new single, alongside intimate Glasgow and London shows marking the band's latest chapter.",
     "image": null,
-    "link": "https://usa.watchpro.com/the-big-interview-chronography-to-fill-a-gap-in-irelands-watch-event-calendar/",
-    "category": "Watches",
-    "published": "2026-09-21"
-  },
-  {
-    "title": "Star Trek: The Original Series gets a 60th-anniversary release",
-    "source": "Collider",
-    "extract": "Star Trek: The Original Series is receiving a 60th-anniversary DVD and Blu-ray release, marking a new home-media edition of the original series.",
-    "image": null,
-    "link": "https://collider.com/star-trek-the-original-series-60th-anniversary-blu-ray/",
-    "category": "Entertainment",
-    "published": "2026-09-21"
-  },
-  {
-    "title": "Resident Evil tops UK-Ireland box office with franchise-record opening",
-    "source": "ScreamWire",
-    "extract": "The latest Resident Evil film opened to £4.2 million across the UK and Ireland, giving the long-running horror franchise its biggest regional opening to date.",
-    "image": null,
-    "link": "https://screamwire.com/digests/2026-09-21",
-    "category": "Entertainment",
-    "published": "2026-09-21"
-  },
-  {
-    "title": "Ash unearths long-lost track 'Bittersweet Blue' from the 1977 era",
-    "source": "XS Noize",
-    "extract": "Ash have released the previously unreleased Bittersweet Blue from the era of their debut album 1977, alongside the band's plans for a 30th-anniversary edition.",
-    "image": null,
-    "link": "https://www.xsnoize.com/ash-bittersweet-blue-1977-anniversary/",
+    "link": "https://www.nme.com/news/music/chvrches-return-with-dark-politically-charged-new-single-roses-and-intimate-glasgow-and-london-shows-3969705",
     "category": "Music",
     "published": "2026-09-22"
   },
   {
-    "title": "Bad Company announce previously unreleased Live in London album",
-    "source": "Entertainment Focus",
-    "extract": "Bad Company will release Live in London, a previously unreleased 2016 concert recording, across vinyl, CD and digital formats in November.",
+    "title": "Patrick Wolf plans an orchestral celebration of The Magic Position",
+    "source": "NME",
+    "extract": "Patrick Wolf will mark 20 years of The Magic Position with a one-night orchestral London performance designed as a major live reinterpretation of the album.",
     "image": null,
-    "link": "https://entertainment-focus.com/2026/09/21/bad-company-announce-previously-unreleased-live-in-london-album-from-2016/",
-    "category": "Music",
-    "published": "2026-09-21"
-  },
-  {
-    "title": "Declan Welsh and The Decadent West announce Explicit Agitation",
-    "source": "XS Noize",
-    "extract": "Declan Welsh and The Decadent West have announced their new album Explicit Agitation for February 2027, accompanied by the single Run Down Small Town and a UK and European tour.",
-    "image": null,
-    "link": "https://www.xsnoize.com/declan-welsh-explicit-agitation/",
-    "category": "Music",
-    "published": "2026-09-21"
-  },
-  {
-    "title": "Sari Schorr releases Running Wild ahead of new album and tour",
-    "source": "Blues Matters Magazine",
-    "extract": "Sari Schorr has released the title track from her forthcoming album Running Wild, ahead of a 46-date European tour beginning in London later this month.",
-    "image": null,
-    "link": "https://bluesmatters.com/news/sari-schorr-releases-running-wild-ahead-of-new-album-and-european-tour/",
-    "category": "Music",
-    "published": "2026-09-21"
-  },
-  {
-    "title": "Daley releases new album Strange Nature",
-    "source": "Musician Voice",
-    "extract": "R&B and soul singer-songwriter Daley has released his new album Strange Nature, alongside the start of a 27-city US tour.",
-    "image": null,
-    "link": "https://musicianvoice.com/index.php/2026/09/22/daley-releases-new-album-strange-nature-stream-new-rb-music-songs-interviews/",
+    "link": "https://www.nme.com/news/music/patrick-wolf-to-celebrate-20-years-of-the-magic-position-at-orchestral-london-show-3969692",
     "category": "Music",
     "published": "2026-09-22"
   },
   {
-    "title": "Tinashe on her new album Popstar",
-    "source": "Stereogum",
-    "extract": "Tinashe discusses her new album Popstar, her creative process and her interest in challenging expectations in a detailed cover-story interview.",
+    "title": "Echo & The Bunnymen announce a 2026 winter UK tour",
+    "source": "NME",
+    "extract": "Echo & The Bunnymen have announced new UK winter dates, with tickets scheduled to go on sale on September 24.",
     "image": null,
-    "link": "https://stereogum.com/2511642/tinashe-is-her-own-kind-of-popstar/interviews/cover-story",
+    "link": "https://www.nme.com/news/music/echo-the-bunnymen-announce-2026-winter-uk-tour-buy-tickets-3969696",
     "category": "Music",
-    "published": "2026-09-21"
+    "published": "2026-09-22"
   },
   {
-    "title": "Classic Rock Tracks Of The Week: September 21, 2026",
-    "source": "Louder",
-    "extract": "Louder's latest selection highlights new tracks from Greta Van Fleet, Royal Blood, Dirty Honey, The Pineapple Thief and other contemporary rock artists.",
+    "title": "Razorlight's Andy Burrows announces new solo album Map Of The World",
+    "source": "NME",
+    "extract": "Andy Burrows has announced Map Of The World, his first solo album in seven years, alongside the new single Nothing Matters Anyway and collaborations with musicians including Nicky Wire and Tom Smith.",
     "image": null,
-    "link": "https://www.loudersound.com/music/tracks-singles/classic-rock-tracks-of-the-week-september-21-2026",
+    "link": "https://www.nme.com/news/music/razorlights-andy-burrows-announces-new-solo-album-map-of-the-world-3969690",
     "category": "Music",
-    "published": "2026-09-21"
+    "published": "2026-09-22"
+  },
+  {
+    "title": "Apple is opening its first live music venue beneath Battersea Power Station",
+    "source": "The Verge",
+    "extract": "Apple will open a 600-seat live music venue at its European headquarters in Battersea Power Station, with a 48-speaker spatial audio system and facilities for recording and broadcasting performances.",
+    "image": null,
+    "link": "https://www.theverge.com/tech/998581/apple-music-hall-london-venue-battersea",
+    "category": "Music",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "The Big Bad Book of Kaiju arrives with 25 new monster stories",
+    "source": "Reactor",
+    "extract": "Jonathan Maberry and Henry Herz have edited a new anthology of 25 original science-fiction and horror stories about giant monsters, bringing together established and emerging genre writers.",
+    "image": null,
+    "link": "https://reactormag.com/new-science-fiction-books-september-2026/",
+    "category": "Books",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "The Strangers brings intelligent mystery animals into Naomi Alderman's new novel",
+    "source": "Reactor",
+    "extract": "Naomi Alderman's new speculative novel The Strangers follows the spread of mysterious intelligent animals called mimmoths and the conspiracy theories and global power struggles that grow around them.",
+    "image": null,
+    "link": "https://reactormag.com/new-sff-crossover-books-september-2026/",
+    "category": "Books",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "A new September speculative-fiction release cycle arrives",
+    "source": "Kitab Dar",
+    "extract": "A detailed September speculative-fiction feature examines the week's new releases, including science fiction, fantasy and horror titles such as Mazywood, Incarnate and The Henchperson's Guide to Unionizing.",
+    "image": null,
+    "link": "https://kitabdar.com/literary-metamorphosis-inside-the-blockbuster-september-2026-speculative-fiction-release-cycle/",
+    "category": "Books",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "Porchlight highlights new books about AI and climate change",
+    "source": "Porchlight Book Company",
+    "extract": "Porchlight's latest new-release selection focuses on books examining the changing climate, artificial intelligence and other major technological and environmental questions.",
+    "image": null,
+    "link": "https://www.porchlightbooks.com/blogs/new-releases/new-book-releases-september-22-2026",
+    "category": "Books",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "Dead Beat reviewed as Leigh Bardugo's Ninth House finale",
+    "source": "The Good, The Bad and The Unread",
+    "extract": "A new review examines Dead Beat, Leigh Bardugo's third Ninth House novel, describing its dark-academia fantasy setting and its role as the conclusion to the series.",
+    "image": null,
+    "link": "https://goodbadandunread.com/2026/09/22/review-dead-beat-by-leigh-bardugo/",
+    "category": "Books",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "Daredevil: Born Again will end with its third season",
+    "source": "The Hollywood Reporter",
+    "extract": "Marvel's Daredevil: Born Again is expected to conclude with its third season, according to sources, after filming for the season finished and its previous showrunner departed during post-production.",
+    "image": null,
+    "link": "https://es.hollywoodreporter.com/daredevil-born-again-terminara-con-su-tercera-temporada-exclusiva/",
+    "category": "Entertainment",
+    "published": "2026-09-22T15:52:00-05:00"
+  },
+  {
+    "title": "Coyote vs. Acme finally reaches cinemas after years in limbo",
+    "source": "ABC News",
+    "extract": "The Looney Tunes hybrid Coyote vs. Acme is now in cinemas after Warner Bros. had previously shelved the completed film, with the release blending live action, digital effects and classic cartoon characters.",
+    "image": "https://live-production.wcms.abc-cdn.net.au/6401e4e40b2c87d2277d6d97afb90f36?cropH=803&cropW=1428&height=485&impolicy=wcms_crop_resize&width=862&xPos=144&yPos=0",
+    "link": "https://www.abc.net.au/news/2026-09-22/coyote-vs-acme-silenced-what-to-watch-in-cinemas-sept/107175618",
+    "category": "Entertainment",
+    "published": "2026-09-22T04:30:00+10:00"
+  },
+  {
+    "title": "Star Trek news roundup covers Year One uncertainty and Strange New Worlds",
+    "source": "Movieversal Film",
+    "extract": "A new Star Trek roundup covers the uncertain status of the proposed Year One series, the approach to Strange New Worlds season four and the franchise's wider 60th-anniversary activity.",
+    "image": null,
+    "link": "https://www.movieversalfilm.online/star-trek-news-round-up-12-22-september-2026/",
+    "category": "Entertainment",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "Sherlock Holmes producer June Wyndham Davies dies aged 97",
+    "source": "The Guardian",
+    "extract": "June Wyndham Davies, who produced Granada Television's acclaimed Sherlock Holmes adaptations starring Jeremy Brett, has died aged 97 after a long career in British television.",
+    "image": null,
+    "link": "https://www.theguardian.com/tv-and-radio/2026/sep/22/june-wyndham-davies-obituary",
+    "category": "Entertainment",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "Wil Wheaton recalls how Stand by Me led to Star Trek",
+    "source": "People",
+    "extract": "Wil Wheaton has discussed how his role in Stand by Me helped lead to his casting as Wesley Crusher in Star Trek: The Next Generation during a 40th-anniversary conversation about the film.",
+    "image": null,
+    "link": "https://people.com/wil-wheaton-says-he-got-role-in-star-trek-due-to-stand-by-me-12127360",
+    "category": "Entertainment",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "Angel's Egg arrives on 4K with new archival extras",
+    "source": "The A.V. Club",
+    "extract": "Mamoru Oshii's surreal animated classic Angel's Egg receives a new 4K release with interviews, artwork and archival material accompanying the restored film.",
+    "image": null,
+    "link": "https://www.avclub.com/4k-blu-ray-september-2026",
+    "category": "Entertainment",
+    "published": "2026-09-22"
   }
 ]
