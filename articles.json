@@ -99,15 +99,6 @@
     "published": "2026-09-27T11:08:00+01:00"
   },
   {
-    "title": "The Sinclair Spectrum gets a desktop GUI",
-    "source": "Hackaday",
-    "extract": "ZXdesk is an assembly-language program for the 48K ZX Spectrum that provides menus, windows and built-in applications in a desktop-like graphical interface.",
-    "image": null,
-    "link": "https://hackaday.com/2026/09/21/the-sinclair-spectrum-gets-a-desktop-gui/",
-    "category": "Retro Computing Projects",
-    "published": "2026-09-21"
-  },
-  {
     "title": "Unseen photos of David Bowie at his peak",
     "source": "AnOther",
     "extract": "A new extended-reality exhibition presents around 800 previously unseen photographs from David Bowie's 1983 Serious Moonlight tour, captured by photographer Denis O'Regan.",
@@ -187,14 +178,5 @@
     "link": "https://au.variety.com/2026/tv/features/lisa-henson-interview-jim-henson-muppets-exhibition-40691/",
     "category": "Entertainment",
     "published": "2026-09-28T08:00:00Z"
-  },
-  {
-    "title": "Backrooms begins streaming on HBO Max",
-    "source": "Reactor",
-    "extract": "Kane Parsons' liminal-space horror film Backrooms has begun streaming on HBO Max, bringing the internet-born horror concept to a wider audience.",
-    "image": null,
-    "link": "https://reactormag.com/backrooms-streaming-hbo-max-release-date/",
-    "category": "Entertainment",
-    "published": "2026-09-25"
   }
 ]
