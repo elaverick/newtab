@@ -45,15 +45,6 @@
     "published": "2026-09-28"
   },
   {
-    "title": "CISA orders feds to patch exploited Citrix flaws by Wednesday",
-    "source": "BleepingComputer",
-    "extract": "CISA has directed US government agencies to address two critical Citrix NetScaler vulnerabilities that are being exploited in attacks.",
-    "image": null,
-    "link": "https://www.bleepingcomputer.com/tag/denial-of-service/",
-    "category": "Technology",
-    "published": "2026-09-28T02:24:00Z"
-  },
-  {
     "title": "Truecaller takes its scam intelligence to the open web",
     "source": "TechCrunch",
     "extract": "Truecaller has launched Scam Checker, allowing users to submit suspicious phone numbers, links or messages for checks against its scam-reporting and risk data.",
@@ -72,15 +63,6 @@
     "published": "2026-09-27T15:00:00Z"
   },
   {
-    "title": "When the debugger lies with stale cache values",
-    "source": "Hackaday",
-    "extract": "A detailed investigation shows how stale cached values from J-Link debugging can make an nRF54LM20 appear to ignore successful memory operations.",
-    "image": null,
-    "link": "https://hackaday.com/2026/09/27/",
-    "category": "Technology",
-    "published": "2026-09-27"
-  },
-  {
     "title": "Vette! arrives on the Amiga via Vesuri",
     "source": "Indie Retro News",
     "extract": "A fan project brings the 1991 Macintosh street racer Vette! to Amiga by executing its original 68000 code with a custom implementation of Macintosh system services.",
@@ -88,15 +70,6 @@
     "link": "https://www.indieretronews.com/2026/09/vette-90s-game-by-spectrum-holobyte.html",
     "category": "Retro Computing",
     "published": "2026-09-27T16:25:00+01:00"
-  },
-  {
-    "title": "FablePhobia: The Borrowed Morning arrives on Commodore 64",
-    "source": "Indie Retro News",
-    "extract": "A short atmospheric graphic adventure for the C64 uses native graphics, simple puzzles and choice-driven exploration to tell a compact horror story.",
-    "image": null,
-    "link": "https://www.indieretronews.com/",
-    "category": "Retro Computing",
-    "published": "2026-09-27T16:56:00+01:00"
   },
   {
     "title": "Cat in the Sky with Diamonds is a new Amiga 500 game",
@@ -124,15 +97,6 @@
     "link": "https://www.indieretronews.com/2026/09/pow-snks-arcade-beat-em-up-is-coming-to.html",
     "category": "Retro Computing Projects",
     "published": "2026-09-27T11:08:00+01:00"
-  },
-  {
-    "title": "The Blues Brothers: Jukebox Adventure may be coming to Amiga AGA",
-    "source": "Indie Retro News",
-    "extract": "After a rare preview copy of the lost PC sequel was preserved, developer dlfrsilver has begun work on an Amiga 1200 AGA port.",
-    "image": null,
-    "link": "https://www.indieretronews.com/",
-    "category": "Retro Computing Projects",
-    "published": "2026-09-27T20:09:00+01:00"
   },
   {
     "title": "The Sinclair Spectrum gets a desktop GUI",
@@ -168,24 +132,6 @@
     "image": null,
     "link": "https://swatchgroup.jp/topics/2026/9/28/omega-constellation",
     "category": "Watches",
-    "published": "2026-09-28"
-  },
-  {
-    "title": "Panerai celebrates the centenary of its original Florence boutique",
-    "source": "Watches 7",
-    "extract": "Panerai is marking the centenary of its original Florentine boutique with new Luminor Firenze 8 Giorni editions in Platinumtech and steel.",
-    "image": null,
-    "link": "https://watchesseven.blogspot.com/2026_09_27_archive.html",
-    "category": "Watches",
-    "published": "2026-09-27"
-  },
-  {
-    "title": "Still Lost: Tales from 2080 by Sam A. Miller",
-    "source": "SFFWorld",
-    "extract": "SFFWorld highlights Sam A. Miller's new science-fiction collection, an irreverent set of stories looking toward the year 2080.",
-    "image": null,
-    "link": "https://www.sffworld.com/",
-    "category": "Books",
     "published": "2026-09-28"
   },
   {
