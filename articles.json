@@ -1,182 +1,200 @@
 [
   {
-    "title": "Huge Aston Martin-McLaren LMGT3 crash deemed racing incident after stewards probe",
-    "source": "Motorsport.com",
-    "extract": "The Fuji 6 Hours collision between Aston Martin factory driver Mattia Drudi and McLaren driver Finn Gehrsitz was judged a racing incident, with neither driver held predominantly responsible.",
-    "image": "https://cdn-8.motorsport.com/images/amp/K6x4KqR6/s1000/keine-strafe-nach-lmgt3-crash-zwischen-gehrsitz-und-drudi-in-fuji-26092702.webp",
-    "link": "https://www.motorsport.com/wec/news/mclaren-aston-martin-huge-lmgt3-crash-fuji-safety-car/10859689/",
+    "title": "AF Corse confirms two-car Ferrari 499P Hypercar effort for Asian Le Mans Series",
+    "source": "dailysportscar.com",
+    "extract": "AF Corse will field two Ferrari 499P Hypercars in the 2026/27 Asian Le Mans Series, becoming the first team to confirm a Hypercar entry for the new championship.",
+    "image": "https://www.dailysportscar.com/wp-content/uploads/2026/04/AL-FIA-WEC-2026-Imola-Prologue-44-730x487.jpg",
+    "link": "https://www.dailysportscar.com/2026/09/29/af-corse-confirms-two-car-ferrari-hypercar-effort-for-asian-le-mans-series.html",
     "category": "Automotive",
-    "published": "2026-09-28T04:40:00Z"
+    "published": "2026-09-29"
   },
   {
-    "title": "Matthew Jeffreys challenges Gordon Murray's account of the McLaren MP4/4",
-    "source": "Motor Sport Magazine",
-    "extract": "Former McLaren design engineer Matthew Jeffreys revisits the long-running dispute over who was responsible for the architecture and design of the legendary MP4/4.",
+    "title": "Ford GT (2017-2023) review: Ford's most modern Ferrari-beater",
+    "source": "Evo",
+    "extract": "Evo revisits the second-generation Ford GT, examining the road car's Le Mans-derived engineering, dramatic performance and compromises away from the circuit.",
     "image": null,
-    "link": "https://www.motorsportmagazine.com/archive/article/november-2026/42/matthew-jeffreys-challenges-gordon-murrays-account-of-the-mclaren-mp4-4/",
+    "link": "https://www.evo.co.uk/ford/209142/ford-gt-2017-2023-review-fords-most-modern-ferrari-beater",
     "category": "Automotive",
-    "published": "2026-09-28"
+    "published": "2026-09-30"
   },
   {
-    "title": "Orange and Clutton overcome the odds to claim GT3 victory and title",
-    "source": "Racecar",
-    "extract": "Simon Orange and Marcus Clutton overturned a sizeable points deficit to win the British GT3 championship, ending McLaren's long wait for a senior-class title.",
+    "title": "A new track for half the field: Six Bahrain Grand Prix in Malaysia talking points",
+    "source": "RaceFans",
+    "extract": "RaceFans previews Formula 1's return to Sepang, looking at the unfamiliar circuit for much of the field and the technical and competitive questions it creates.",
     "image": null,
-    "link": "https://www.racecar.com/news/104410/motorsport/orange-and-clutton-overcome-the-odds-to-claim-gt3-victory-and-title",
+    "link": "https://www.racefans.net/2026/09/30/a-new-track-for-half-the-field-six-bahrain-grand-prix-in-malaysia-talking-points/",
     "category": "Automotive",
-    "published": "2026-09-28"
+    "published": "2026-09-30"
   },
   {
-    "title": "NVIDIA launches Open Agent Safety Platform to secure AI agents",
-    "source": "NVIDIA Newsroom",
-    "extract": "NVIDIA has announced an open software platform and reference design intended to contain and secure autonomous AI agents from testing through deployment.",
+    "title": "Two-times Indianapolis 500 winner Gordon Johncock dies aged 90",
+    "source": "RaceFans",
+    "extract": "Gordon Johncock, a two-time Indianapolis 500 winner and 1976 USAC National Champion, has died aged 90, closing the career of one of American open-wheel racing's notable champions.",
     "image": null,
-    "link": "https://nvidianews.nvidia.com/news/open-agent-safety-platform",
-    "category": "Technology",
-    "published": "2026-09-28"
+    "link": "https://www.racefans.net/2026/09/30/two-times-indianapolis-500-winner-johncock-dies-aged-90/",
+    "category": "Automotive",
+    "published": "2026-09-30"
   },
   {
-    "title": "Nvidia launches new platform for reining in rogue AI agents",
-    "source": "TechCrunch",
-    "extract": "NVIDIA's new Open Agent Safety Platform combines runtime safeguards and containment mechanisms aimed at reducing the risks posed by autonomous AI agents.",
+    "title": "Synopsys and OpenAI strike deal to develop AI model for chip design work",
+    "source": "Reuters",
+    "extract": "Synopsys and OpenAI are developing GPT-Synopsys, a model trained to use chip-design software and help engineers navigate circuit and transistor-layout optimisation while traditional tools retain final verification.",
     "image": null,
-    "link": "https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/",
+    "link": "https://www.reuters.com/business/synopsys-openai-strike-deal-develop-ai-model-chip-design-work-2026-09-30/",
     "category": "Technology",
-    "published": "2026-09-28"
+    "published": "2026-09-30"
   },
   {
-    "title": "Truecaller takes its scam intelligence to the open web",
-    "source": "TechCrunch",
-    "extract": "Truecaller has launched Scam Checker, allowing users to submit suspicious phone numbers, links or messages for checks against its scam-reporting and risk data.",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/09/truecaller-scam-checker-image-feature.jpg?w=1024",
-    "link": "https://techcrunch.com/2026/09/27/truecaller-takes-its-scam-intelligence-to-the-open-web-as-it-looks-beyond-caller-id/",
+    "title": "Canonical begins pushing Resolute Raccoon",
+    "source": "The Register",
+    "extract": "Canonical has begun offering Ubuntu 26.04.1 to Ubuntu 24.04 users, marking the point release at which the normal LTS upgrade path starts to open.",
+    "image": null,
+    "link": "https://www.theregister.com/os-platforms/2026/09/30/canonical-begins-pushing-resolute-raccoon/5300225",
     "category": "Technology",
-    "published": "2026-09-27T21:30:00Z"
+    "published": "2026-09-30"
   },
   {
-    "title": "Sennheiser Momentum 5 review: Great sound, incredible battery life, and few compromises",
-    "source": "TechCrunch",
-    "extract": "The Momentum 5 headphones combine Dolby Atmos, expanded active noise cancellation, a user-replaceable battery and up to 57 hours of tested battery life.",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/09/momentum_over_ear_5_case_and_headphone_white_front_final.jpeg?w=680",
-    "link": "https://techcrunch.com/2026/09/27/sennheiser-momentum-5-review-great-sound-incredible-battery-life-and-few-compromises/",
+    "title": "OpenClaw slips on a suit to evade widespread business bans",
+    "source": "The Register",
+    "extract": "Red Hat, Nvidia, OpenAI and others are working on an enterprise edition of OpenClaw, positioning the agent platform as a controlled, Kubernetes-like environment for business deployments.",
+    "image": null,
+    "link": "https://www.theregister.com/ai-and-ml/2026/09/30/openclaw-slips-on-a-suit-to-evade-widespread-business-bans/5299962",
     "category": "Technology",
-    "published": "2026-09-27T15:00:00Z"
+    "published": "2026-09-30"
   },
   {
-    "title": "Vette! arrives on the Amiga via Vesuri",
+    "title": "Castlevania AGA reaches version 1.0 on Commodore Amiga",
     "source": "Indie Retro News",
-    "extract": "A fan project brings the 1991 Macintosh street racer Vette! to Amiga by executing its original 68000 code with a custom implementation of Macintosh system services.",
+    "extract": "Dante Retro Dev's fan-made Castlevania AGA has reached version 1.0, delivering a complete reimagining of the 1986 game for Amiga AGA machines with new content, polish and a printable manual.",
     "image": null,
-    "link": "https://www.indieretronews.com/2026/09/vette-90s-game-by-spectrum-holobyte.html",
-    "category": "Retro Computing",
-    "published": "2026-09-27T16:25:00+01:00"
-  },
-  {
-    "title": "Cat in the Sky with Diamonds is a new Amiga 500 game",
-    "source": "Indie Retro News",
-    "extract": "A new family-friendly Amiga 500 game made largely with AMOS Professional uses shifting gravity, obstacles and collectible diamonds in a colourful arcade-style design.",
-    "image": null,
-    "link": "https://www.indieretronews.com/2026/09/cat-in-sky-with-diamonds-colourful.html",
-    "category": "Retro Computing",
-    "published": "2026-09-27T11:22:00+01:00"
-  },
-  {
-    "title": "Lost in the Middle Ages is in development for the Amiga 500",
-    "source": "Indie Retro News",
-    "extract": "HooGames2017 has revealed a Scorpion Engine adventure for the Amiga 500, with five stages already built and a medieval world still being expanded.",
-    "image": null,
-    "link": "https://www.indieretronews.com/2026/09/lost-in-middle-ages-another-fantastic.html",
+    "link": "https://www.indieretronews.com/2026/09/castlevania-aga-castlevania-for.html",
     "category": "Retro Computing Projects",
-    "published": "2026-09-27T17:42:00+01:00"
+    "published": "2026-09-30T12:56:00+01:00"
   },
   {
-    "title": "POW is being converted to the Amiga as an AGA edition",
+    "title": "The C64 and ZX Spectrum handhelds delayed to April 2027",
+    "source": "GamesRadar+",
+    "extract": "Retro Games Ltd and Blaze have delayed their clamshell C64 and ZX Spectrum handhelds from October 2026 to April 22, 2027 after production quality issues were found during manufacturing.",
+    "image": null,
+    "link": "https://www.gamesradar.com/hardware/handhelds/the-upcoming-c64-and-zx-spectrum-handheld-just-got-hit-with-a-six-month-delay-due-to-quality-issues/",
+    "category": "Retro Computing",
+    "published": "2026-09-30"
+  },
+  {
+    "title": "VOID LANCER is a technically ambitious new C64 shoot-'em-up",
     "source": "Indie Retro News",
-    "extract": "Developer ESKAY is converting SNK's arcade brawler P.O.W. for the Amiga 1200, using triple buffering, hardware scrolling and sprite-based HUD rendering.",
+    "extract": "Snow-G's new C64 shooter is written from scratch in 6502 assembly and uses advanced sprite multiplexing, smooth scrolling, procedural graphics and a fast-loading system to push the eight-bit machine.",
     "image": null,
-    "link": "https://www.indieretronews.com/2026/09/pow-snks-arcade-beat-em-up-is-coming-to.html",
+    "link": "https://www.indieretronews.com/2026/09/void-lancer-rather-decent-c64-shoot-em.html",
     "category": "Retro Computing Projects",
-    "published": "2026-09-27T11:08:00+01:00"
+    "published": "2026-09-30T00:03:00+01:00"
   },
   {
-    "title": "Unseen photos of David Bowie at his peak",
-    "source": "AnOther",
-    "extract": "A new extended-reality exhibition presents around 800 previously unseen photographs from David Bowie's 1983 Serious Moonlight tour, captured by photographer Denis O'Regan.",
-    "image": null,
-    "link": "https://www.anothermag.com/art-photography/17509/david-bowie-photographs-venice-immersive-unseen-unheard",
+    "title": "David Bowie: You're Not Alone to open at Brighton Dome",
+    "source": "BroadwayWorld",
+    "extract": "A 360-degree David Bowie experience built from rare performance footage, photography, drawings, lyrics, notes and audio recordings will have a limited 2027 run at Brighton Dome.",
+    "image": "https://cloudimages2.broadwayworld.com/columnpiccloud/Photos-DAVID-BOWIE-YOU-RE-NOT-ALONE-to-OPEN-AT-BRIGHTON-DOME-1790776513.jpg?format=auto&width=1200",
+    "link": "https://www.broadwayworld.com/bwwtv/article/Photos-DAVID-BOWIE-YOURE-NOT-ALONE-to-OPEN-AT-BRIGHTON-DOME-20260930",
     "category": "Music",
-    "published": "2026-09-28"
+    "published": "2026-09-30"
   },
   {
-    "title": "The Killers' Sam's Town turns 20 with its reputation rewritten",
-    "source": "Noise11",
-    "extract": "The Killers' second album reaches its 20th anniversary, with a retrospective examining how its reception changed after its original release.",
+    "title": "David Bowie's 1. Outside at 31",
+    "source": "Maggiore on Bowie",
+    "extract": "A retrospective marks the 31st anniversary of David Bowie's 1. Outside, revisiting the album and highlighting new music created around the anniversary.",
     "image": null,
-    "link": "https://www.noise11.com/news/killers-sams-town-20-20260927",
+    "link": "https://maggioreonbowie.com/",
     "category": "Music",
-    "published": "2026-09-27"
+    "published": "2026-09-30"
   },
   {
-    "title": "Omega highlights the enduring Constellation collection",
-    "source": "Swatch Group Japan",
-    "extract": "Omega's Japanese site marks the Constellation collection with a feature on its design history and enduring place in the brand's catalogue.",
-    "image": null,
-    "link": "https://swatchgroup.jp/topics/2026/9/28/omega-constellation",
+    "title": "Rolex charity auction raises nearly $50 million",
+    "source": "JCK",
+    "extract": "Four unique Rolex Daytona watches made for Rolex's first charity auction raised a combined £37.3 million, with proceeds benefiting the Federer Foundation and Re:wild.",
+    "image": "https://www.jckonline.com/wp-content/uploads/2026/09/Rolex4seasons.jpg",
+    "link": "https://www.jckonline.com/editorial-article/rolex-auction-raise-nearly-50m/",
     "category": "Watches",
-    "published": "2026-09-28"
+    "published": "2026-09-29"
   },
   {
-    "title": "PW Studio: Publishing in China 2026: Phoenix Publishing and Media Group",
-    "source": "Publishers Weekly",
-    "extract": "Publishers Weekly profiles Phoenix Publishing and Media Group, including its Yilin Sci-Fi imprint and its programme of Chinese and translated science fiction.",
+    "title": "Breitling and Aston Martin present Top Time Tribute to the DB5",
+    "source": "LLQ Lifestyle",
+    "extract": "Breitling and Aston Martin have created three limited editions of the Top Time B01 Chronograph 41 inspired by the design and history of the Aston Martin DB5.",
+    "image": "https://llqlifestyle.com/wp-content/uploads/2026/09/5d6cb3a7-56a4-4995-a77c-c80a6221352e-819x1024.jpg",
+    "link": "https://llqlifestyle.com/time-and-speed-reunited-breitling-and-aston-martin-present-top-time-tribute-to-iconic-db5/",
+    "category": "Watches",
+    "published": "2026-09-29"
+  },
+  {
+    "title": "Missouri Williams and China Miéville among writers on Goldsmiths shortlist",
+    "source": "The Guardian",
+    "extract": "The 2026 Goldsmiths Prize shortlist includes China Miéville's 1,200-page paranormal novel The Rouse alongside five other books recognised for pushing at the boundaries of the novel form.",
     "image": null,
-    "link": "https://www.publishersweekly.com/pw/by-topic/specials/promotional/article/101360-pw-studio-publishing-in-china-2026-phoenix-publishing-and-media-group.html",
+    "link": "https://www.theguardian.com/books/2026/sep/30/missouri-williams-china-mieville-writers-shortlisted-2026-goldsmiths-prize",
     "category": "Books",
-    "published": "2026-09-28"
+    "published": "2026-09-30T09:30:00+01:00"
   },
   {
-    "title": "Transworld signs Mhairi McFarlane to two-book deal",
-    "source": "The Bookseller",
-    "extract": "Transworld has acquired world rights to two forthcoming novels by Mhairi McFarlane, with Significant Others scheduled for spring 2028.",
+    "title": "Cherise Saywell wins BBC National Short Story Award",
+    "source": "The Guardian",
+    "extract": "Cherise Saywell has won the 2026 BBC National Short Story Award for Ditto, a story about a child confronting domestic violence, recognised by judges for its emotional precision and control.",
     "image": null,
-    "link": "https://www.thebookseller.com/rights/transworld-poaches-mhairi-mcfarlane-from-harpercollins-with-two-book-deal",
+    "link": "https://www.theguardian.com/books/2026/sep/29/cherise-saywell-wins-bbc-short-story-award-ditto",
     "category": "Books",
-    "published": "2026-09-28"
+    "published": "2026-09-29"
   },
   {
-    "title": "Jon Watts to direct the next Star Wars movie",
-    "source": "Variety",
-    "extract": "Jon Watts has been attached to direct a new Star Wars feature, with Simon Kinberg writing the screenplay.",
+    "title": "The 2026 Aldiss Award shortlist",
+    "source": "The Aldiss Award",
+    "extract": "The 2026 Aldiss Award for World Building in speculative fiction has shortlisted five works spanning science fiction, fantasy and other speculative forms.",
     "image": null,
-    "link": "https://au.variety.com/2026/film/news/jon-watts-to-direct-star-wars-40762/",
-    "category": "Entertainment",
-    "published": "2026-09-28T09:01:00Z"
+    "link": "https://thealdissaward.com/the-2026-aldiss-award-shortlist/",
+    "category": "Books",
+    "published": "2026-09-29"
   },
   {
-    "title": "Avengers: Endgame Encore scores $86 million globally",
-    "source": "Variety",
-    "extract": "Marvel's theatrical rerelease of Avengers: Endgame generated $86 million worldwide and includes new footage ahead of Avengers: Doomsday.",
+    "title": "Patrick Radden Keefe's London Falling shortlisted for Baillie Gifford Prize",
+    "source": "The Guardian",
+    "extract": "Patrick Radden Keefe's London Falling is among six books shortlisted for the 2026 Baillie Gifford Prize, alongside works of biography, history and reporting.",
     "image": null,
-    "link": "https://au.variety.com/2026/film/news/avengers-endgame-encore-box-office-rerelease-huge-86-million-globally-40742/",
-    "category": "Entertainment",
-    "published": "2026-09-28T08:33:00Z"
+    "link": "https://www.theguardian.com/books/2026/oct/01/baillie-gifford-prize-shortlist-patrick-radden-keefe-matthew-sweet-london-falling",
+    "category": "Books",
+    "published": "2026-10-01"
   },
   {
-    "title": "Margaret Qualley and Sabrina Carpenter join Fred Astaire biopic",
-    "source": "Variety",
-    "extract": "Margaret Qualley and Sabrina Carpenter have joined Tom Holland in Paul King's forthcoming Fred Astaire biopic, playing Adele Astaire and Ginger Rogers.",
+    "title": "Stations by Louise Kennedy review: a powerful journey from the Troubles to London",
+    "source": "The Guardian",
+    "extract": "The Guardian reviews Louise Kennedy's new novel Stations, following characters between 1980s Northern Ireland and London in a story shaped by the legacy of the Troubles.",
     "image": null,
-    "link": "https://au.variety.com/2026/film/news/margaret-qualley-sabrina-carpenter-fred-astaire-biopic-40747/",
-    "category": "Entertainment",
-    "published": "2026-09-28T08:08:00Z"
+    "link": "https://www.theguardian.com/books/2026/sep/29/stations-by-louise-kennedy-review",
+    "category": "Books",
+    "published": "2026-09-29"
   },
   {
-    "title": "Lisa Henson takes viewers inside the Queensland Jim Henson exhibition",
-    "source": "Variety",
-    "extract": "Lisa Henson discusses the Brisbane exhibition celebrating 70 years of The Jim Henson Company and its puppetry and production history.",
+    "title": "Today's 22 new book releases from Min Jin Lee, Hernan Diaz, Ayad Akhtar and more",
+    "source": "PLAI",
+    "extract": "A September 30 release roundup highlights major new fiction including Min Jin Lee's American Hagwon, Hernan Diaz's Ply and Ayad Akhtar's The Radiance.",
     "image": null,
-    "link": "https://au.variety.com/2026/tv/features/lisa-henson-interview-jim-henson-muppets-exhibition-40691/",
+    "link": "https://plai.org.ph/todays-22-new-book-releases-from-min-jin-lee-hernan-diaz-ayad-akhtar-and-more/",
+    "category": "Books",
+    "published": "2026-09-30"
+  },
+  {
+    "title": "Jennifer Lawrence joins Zach Cregger's sci-fi thriller The Flood",
+    "source": "Dark Horizons",
+    "extract": "Jennifer Lawrence will lead Zach Cregger's original science-fiction thriller The Flood, a deep-space story involving a strange signal and an alien artefact that warps time and reality.",
+    "image": null,
+    "link": "https://www.darkhorizons.com/jennifer-lawrence-joins-zach-creggers-flood/",
     "category": "Entertainment",
-    "published": "2026-09-28T08:00:00Z"
+    "published": "2026-09-29T16:09:00-04:00"
+  },
+  {
+    "title": "Paramount gets court green light on Warner Bros deal",
+    "source": "Reuters",
+    "extract": "A US court has approved the proposed Paramount-Warner Bros acquisition, a major development for the companies behind franchises including Star Trek and other film and television properties.",
+    "image": null,
+    "link": "https://www.reuters.com/world/us/judge-allows-paramount-close-warner-bros-acquisition-2026-09-30/",
+    "category": "Entertainment",
+    "published": "2026-09-30"
   }
 ]
