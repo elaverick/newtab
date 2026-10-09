@@ -1,29 +1,56 @@
 [
   {
-    "title": "Bezos quip, Ive design shaped Ferrari's Luce EV, Elkann says",
+    "title": "Nvidia-backed Upscale AI launches platform to connect chips from rival suppliers",
     "source": "Reuters",
-    "extract": "Ferrari chairman John Elkann says a 2016 conversation with Jeff Bezos helped prompt the company to think seriously about an electric Ferrari, while Jony Ive's LoveFrom team spent five years helping shape the Luce.",
+    "extract": "Upscale AI has launched Token Fabric, a hardware-and-software platform designed to connect AI processors from different suppliers across a data centre. The system aims to reduce integration complexity and keep expensive accelerators fed with data rather than waiting on separate networking systems.",
     "image": null,
-    "link": "https://www.reuters.com/business/autos-transportation/bezos-quip-ive-design-shaped-ferraris-luce-ev-elkann-says-2026-10-07/",
+    "link": "https://www.reuters.com/business/nvidia-backed-upscale-ai-launches-platform-connect-chips-rival-suppliers-2026-10-08/",
+    "category": "Technology",
+    "published": "2026-10-08T12:01:00Z"
+  },
+  {
+    "title": "Flexible data-centre power use could save the grid billions",
+    "source": "Reuters",
+    "extract": "Utilities and technology companies are exploring demand-response arrangements that let data centres temporarily reduce or shift electricity use at peak times. Research cited by Reuters suggests the approach could reduce the need for costly grid upgrades as AI-driven electricity demand rises.",
+    "image": null,
+    "link": "https://www.reuters.com/business/energy/data-centers-flexible-power-usage-could-save-grid-billions-can-they-scale-2026-10-08/",
+    "category": "Technology",
+    "published": "2026-10-08T10:45:11Z"
+  },
+  {
+    "title": "ASML and Zeiss outline a possible next step beyond High-NA chipmaking",
+    "source": "Reuters",
+    "extract": "A peer-reviewed paper from ASML and Carl Zeiss describes Hyper NA, a possible next-generation lithography system that could print features as small as five nanometres. Development has begun, but production is not committed and the companies expect substantial engineering work before it is ready.",
+    "image": null,
+    "link": "https://www.reuters.com/business/asml-zeiss-say-next-generation-chipmaking-technology-may-be-ready-10-years-2026-10-08/",
+    "category": "Technology",
+    "published": "2026-10-08T12:46:21Z"
+  },
+  {
+    "title": "US AI task-force leaders plan first meeting as pressure for safeguards grows",
+    "source": "Reuters",
+    "extract": "Leaders of the US administration's AI task force are due to meet as concerns grow about security, vulnerabilities and the need for oversight. The group plans to develop a charter and consult sectors including banking, healthcare and utilities about AI-related risks.",
+    "image": null,
+    "link": "https://www.reuters.com/world/trump-ai-task-force-leaders-meet-thursday-vice-chair-says-2026-10-08/",
+    "category": "Technology",
+    "published": "2026-10-08T18:15:12Z"
+  },
+  {
+    "title": "Why electric-car sales are diverging between the US and Europe",
+    "source": "Reuters",
+    "extract": "Reuters reports that US EV sales have fallen this year while European adoption has continued to rise, with policy, fuel costs and model availability contributing to the difference. Hybrid sales have also grown in the US as manufacturers and buyers adjust their plans.",
+    "image": null,
+    "link": "https://www.reuters.com/business/autos-transportation/why-ev-sales-are-lukewarm-america-hot-europe-2026-10-08/",
     "category": "Automotive",
-    "published": "2026-10-07T13:24:00Z"
+    "published": "2026-10-08T10:03:47Z"
   },
   {
-    "title": "Microsoft brings more AI to PCs as it challenges Apple",
-    "source": "Reuters",
-    "extract": "Microsoft unveiled a local AI coding model, new agent-security technology and RTX Spark-powered Surface hardware as it pushes more AI processing from the cloud onto Windows PCs.",
+    "title": "William Shatner looks back on 60 years of Star Trek",
+    "source": "Entertainment Weekly",
+    "extract": "Ahead of a new documentary about Star Trek's cultural impact, William Shatner reflects on the franchise's unlikely survival after its original cancellation and the role syndication played in building its audience. He also discusses the experience of becoming Captain Kirk and the show's long legacy.",
     "image": null,
-    "link": "https://www.reuters.com/business/microsoft-nvidia-ceos-unveil-new-ai-laptop-san-francisco-event-2026-10-07/",
-    "category": "Technology",
-    "published": "2026-10-07T10:05:00Z"
-  },
-  {
-    "title": "CrowdStrike says China-based suspect used AI tools in South Korean bank attacks",
-    "source": "Reuters",
-    "extract": "CrowdStrike says a suspected attacker used AI tools while targeting South Korean financial institutions, highlighting the growing use of AI agents in real-world cyber incidents.",
-    "image": null,
-    "link": "https://www.reuters.com/world/suspect-behind-south-korea-bank-hacks-may-be-26-year-old-china-cybersecurity-2026-10-08/",
-    "category": "Technology",
-    "published": "2026-10-08T00:04:00Z"
+    "link": "https://ew.com/william-shatner-reflects-60-years-star-trek-12139388",
+    "category": "Entertainment",
+    "published": "2026-10-08T13:00:00Z"
   }
 ]
