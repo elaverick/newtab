@@ -1,56 +1,173 @@
 [
   {
-    "title": "Nvidia-backed Upscale AI launches platform to connect chips from rival suppliers",
-    "source": "Reuters",
-    "extract": "Upscale AI has launched Token Fabric, a hardware-and-software platform designed to connect AI processors from different suppliers across a data centre. The system aims to reduce integration complexity and keep expensive accelerators fed with data rather than waiting on separate networking systems.",
+    "title": "EU and China agree to curb hybrid-car exports in landmark trade deal",
+    "source": "The Guardian",
+    "extract": "The EU and China have agreed on a framework intended to curb Chinese hybrid-car exports, potentially more than halving volumes over four years. The deal marks a significant shift in the trade relationship for Europe's car industry.",
     "image": null,
-    "link": "https://www.reuters.com/business/nvidia-backed-upscale-ai-launches-platform-connect-chips-rival-suppliers-2026-10-08/",
-    "category": "Technology",
-    "published": "2026-10-08T12:01:00Z"
-  },
-  {
-    "title": "Flexible data-centre power use could save the grid billions",
-    "source": "Reuters",
-    "extract": "Utilities and technology companies are exploring demand-response arrangements that let data centres temporarily reduce or shift electricity use at peak times. Research cited by Reuters suggests the approach could reduce the need for costly grid upgrades as AI-driven electricity demand rises.",
-    "image": null,
-    "link": "https://www.reuters.com/business/energy/data-centers-flexible-power-usage-could-save-grid-billions-can-they-scale-2026-10-08/",
-    "category": "Technology",
-    "published": "2026-10-08T10:45:11Z"
-  },
-  {
-    "title": "ASML and Zeiss outline a possible next step beyond High-NA chipmaking",
-    "source": "Reuters",
-    "extract": "A peer-reviewed paper from ASML and Carl Zeiss describes Hyper NA, a possible next-generation lithography system that could print features as small as five nanometres. Development has begun, but production is not committed and the companies expect substantial engineering work before it is ready.",
-    "image": null,
-    "link": "https://www.reuters.com/business/asml-zeiss-say-next-generation-chipmaking-technology-may-be-ready-10-years-2026-10-08/",
-    "category": "Technology",
-    "published": "2026-10-08T12:46:21Z"
-  },
-  {
-    "title": "US AI task-force leaders plan first meeting as pressure for safeguards grows",
-    "source": "Reuters",
-    "extract": "Leaders of the US administration's AI task force are due to meet as concerns grow about security, vulnerabilities and the need for oversight. The group plans to develop a charter and consult sectors including banking, healthcare and utilities about AI-related risks.",
-    "image": null,
-    "link": "https://www.reuters.com/world/trump-ai-task-force-leaders-meet-thursday-vice-chair-says-2026-10-08/",
-    "category": "Technology",
-    "published": "2026-10-08T18:15:12Z"
-  },
-  {
-    "title": "Why electric-car sales are diverging between the US and Europe",
-    "source": "Reuters",
-    "extract": "Reuters reports that US EV sales have fallen this year while European adoption has continued to rise, with policy, fuel costs and model availability contributing to the difference. Hybrid sales have also grown in the US as manufacturers and buyers adjust their plans.",
-    "image": null,
-    "link": "https://www.reuters.com/business/autos-transportation/why-ev-sales-are-lukewarm-america-hot-europe-2026-10-08/",
+    "link": "https://www.theguardian.com/business/2026/oct/09/china-agrees-to-curb-hybrid-car-exports-to-eu-in-landmark-deal",
     "category": "Automotive",
-    "published": "2026-10-08T10:03:47Z"
+    "published": "2026-10-09T15:05:00Z"
   },
   {
-    "title": "William Shatner looks back on 60 years of Star Trek",
-    "source": "Entertainment Weekly",
-    "extract": "Ahead of a new documentary about Star Trek's cultural impact, William Shatner reflects on the franchise's unlikely survival after its original cancellation and the role syndication played in building its audience. He also discusses the experience of becoming Captain Kirk and the show's long legacy.",
+    "title": "Pininfarina-designed Honda NSX restomod is finally revealed",
+    "source": "Road & Track",
+    "extract": "JAS Motorsport's Tensei reworks the original NSX formula with a naturally aspirated 3.5-litre V6 developed with JUDD, producing 425 hp at 8,500 rpm. The project pairs a carbon-fibre body with a six-speed manual and a Torsen limited-slip differential.",
     "image": null,
-    "link": "https://ew.com/william-shatner-reflects-60-years-star-trek-12139388",
+    "link": "https://www.roadandtrack.com/news/a74082703/pininfarina-designed-honda-acura-nsx-restomod/",
+    "category": "Automotive",
+    "published": "2026-10-08T19:32:00Z"
+  },
+  {
+    "title": "Python 3.15 released with a faster experimental JIT compiler",
+    "source": "Phoronix",
+    "extract": "Python 3.15 has been released with an experimental just-in-time compiler that is reported to run faster, alongside the latest runtime and language improvements. The release offers a useful look at where Python performance work is heading.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Python-3.15-Released",
+    "category": "Technology",
+    "published": "2026-10-09T14:58:00Z"
+  },
+  {
+    "title": "SQLite 3.54 improves performance and drops Windows XP support",
+    "source": "Phoronix",
+    "extract": "SQLite 3.54 includes command-line and query-planner updates and reports performance gains on Linux x86-64. The release also ends support for Windows XP and Windows CE.",
+    "image": "https://www.phoronix.net/image.php?id=2022&image=sqlite",
+    "link": "https://www.phoronix.com/news/SQLite-3.54-Released",
+    "category": "Technology",
+    "published": "2026-10-10T00:41:00Z"
+  },
+  {
+    "title": "Ubuntu 26.10 will include desktop images for RISC-V",
+    "source": "Phoronix",
+    "extract": "Ubuntu 26.10 is set to offer desktop ISO images for RISC-V, expanding the architecture's practical options beyond server and command-line use. Xubuntu's minimal image is also expected to be useful for virtualised testing.",
+    "image": "https://www.phoronix.net/image.php?id=2026&image=ubuntu_2610_riscv",
+    "link": "https://www.phoronix.com/news/Ubuntu-26.10-RISC-V-Desktop",
+    "category": "Technology",
+    "published": "2026-10-09T17:59:00Z"
+  },
+  {
+    "title": "Valve's Proton 11.0-2e update fixes EA App issues",
+    "source": "Phoronix",
+    "extract": "A new Proton compatibility-layer update addresses EA App launch and focus problems for Linux gamers using Steam Play. It is a small but practical compatibility fix for Windows games running on Linux.",
+    "image": "https://www.phoronix.net/image.php?id=2026&image=ea_app",
+    "link": "https://www.phoronix.com/news/Steam-Play-Proton-11.0-2e",
+    "category": "Technology",
+    "published": "2026-10-09T17:56:00Z"
+  },
+  {
+    "title": "Linux patches aim to speed up Zswap by batching writeback I/O",
+    "source": "Phoronix",
+    "extract": "Proposed Linux kernel changes batch writeback operations in Zswap, the compressed-memory cache used with swap. The work targets the I/O overhead that can limit performance when compressed pages are written back.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Faster-Zswap-Batch-Writeback-IO",
+    "category": "Technology",
+    "published": "2026-10-09T11:34:00Z"
+  },
+  {
+    "title": "Linux patches could enable hibernation with Secure Boot lockdown",
+    "source": "Phoronix",
+    "extract": "New Linux kernel patches address the restrictions that currently prevent hibernation in lockdown mode. If merged, the work could make suspend-to-disk more usable on systems that retain Secure Boot security protections.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Linux-Hibernation-With-Lockdown",
+    "category": "Technology",
+    "published": "2026-10-09T10:27:00Z"
+  },
+  {
+    "title": "NVIDIA's Boro project explores AI-assisted Linux kernel development",
+    "source": "Phoronix",
+    "extract": "NVIDIA has introduced Boro, an open-source Rust command-line tool that uses local AI to assist with Linux kernel development. The approach puts AI coding assistance closer to a developer's own workstation and workflow.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/NVIDIA-Boro-Linux-Kernel-AI",
+    "category": "Technology",
+    "published": "2026-10-09T10:06:00Z"
+  },
+  {
+    "title": "Linux 7.4 graphics development closes with more AMD HDMI 2.1 fixes",
+    "source": "Phoronix",
+    "extract": "The AMDGPU driver development cycle for Linux 7.4 includes additional HDMI 2.1 fixes. The changes are part of the continuing upstream work needed to improve display compatibility on Linux systems using AMD graphics.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Linux-7.4-AMDGPU-Final",
+    "category": "Technology",
+    "published": "2026-10-09T09:54:00Z"
+  },
+  {
+    "title": "HDR support is coming to Qualcomm's Linux graphics driver for Snapdragon X",
+    "source": "Phoronix",
+    "extract": "Patches for Qualcomm's MSM DRM driver add HDR support that could benefit Snapdragon X laptops running Linux. The work is an incremental but meaningful step toward improving high-dynamic-range display support on Arm-based PCs.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Qualcomm-MSM-DRM-HDR",
+    "category": "Technology",
+    "published": "2026-10-09T09:37:00Z"
+  },
+  {
+    "title": "Margaret Hamilton, whose software helped Apollo reach the Moon, dies at 90",
+    "source": "The Washington Post",
+    "extract": "Margaret Hamilton led software engineering for Apollo's onboard flight systems and helped establish software as a discipline demanding rigorous engineering. Her work is a key chapter in the history of early computing and mission-critical code.",
+    "image": null,
+    "link": "https://www.washingtonpost.com/obituaries/2026/10/08/margaret-hamilton-dies-90-her-programming-helped-astronauts-reach-moon/",
+    "category": "Retro Computing",
+    "published": "2026-10-08T17:13:00Z"
+  },
+  {
+    "title": "The best recent science-fiction, fantasy and horror: four books reviewed",
+    "source": "The Guardian",
+    "extract": "A fresh genre roundup reviews works including Victor LaValle's Lovecraft-influenced horror, Becky Chambers' science-fiction romance, Diego Muzzio's postwar gothic tale and Deena Helm's politically inflected ghost story. It offers several new routes into contemporary speculative fiction.",
+    "image": null,
+    "link": "https://www.theguardian.com/books/2026/oct/09/the-best-recent-science-fiction-fantasy-and-horror-review-roundup",
+    "category": "Books",
+    "published": "2026-10-09T11:00:00Z"
+  },
+  {
+    "title": "The Starving Bride turns a sideshow into a gothic near-future",
+    "source": "The Guardian",
+    "extract": "Catherine Chidgey's novel uses a disturbing public spectacle and a near-future setting to explore hunger, appearance and social unease. The review highlights its blend of gothic storytelling and contemporary concerns.",
+    "image": null,
+    "link": "https://www.theguardian.com/books/2026/oct/09/the-starving-bride-catherine-chidgey-book-review",
+    "category": "Books",
+    "published": "2026-10-08T14:00:00Z"
+  },
+  {
+    "title": "Russell T Davies's memoir looks back on five decades of television",
+    "source": "The Guardian",
+    "extract": "The Doctor Who revivalist and creator of Queer as Folk structures The Queerest of Folk around his television work, mixing behind-the-scenes history with humour and a defence of creative risk. The review presents it as both a personal career memoir and a celebration of television writing.",
+    "image": null,
+    "link": "https://www.theguardian.com/books/2026/oct/09/the-queerest-of-folk-by-russell-t-davies-review-the-groundbreaking-screenwriter-tells-it-like-it-is",
+    "category": "Books",
+    "published": "2026-10-09T06:00:00Z"
+  },
+  {
+    "title": "Gromit finally gets a voice, narrated by Martin Freeman",
+    "source": "The Guardian",
+    "extract": "An audiobook autobiography gives Gromit a new kind of voice: Martin Freeman narrates the character's imagined inner thoughts while preserving the famously silent screen persona. It's an unusual new chapter for Aardman’s much-loved animated dog.",
+    "image": null,
+    "link": "https://www.theguardian.com/film/2026/oct/09/gromit-autobiography-martin-freeman-voice",
     "category": "Entertainment",
-    "published": "2026-10-08T13:00:00Z"
+    "published": "2026-10-09T11:00:00Z"
+  },
+  {
+    "title": "Murakami's Hard-Boiled Wonderland becomes a surreal stage spectacle",
+    "source": "The Guardian",
+    "extract": "A new Barbican stage adaptation brings Haruki Murakami's parallel-world science-fiction novel to life with elaborate visuals and choreography. The production interweaves the novel's Tokyo narrative with its dreamlike alternative reality.",
+    "image": null,
+    "link": "https://www.theguardian.com/stage/2026/oct/09/end-of-the-world-and-hard-boiled-wonderland-review-haruki-murakami-barbican-theatre-london",
+    "category": "Entertainment",
+    "published": "2026-10-09T13:53:00Z"
+  },
+  {
+    "title": "Tyson to VisionQuest: seven shows to stream this week",
+    "source": "The Guardian",
+    "extract": "This week's streaming guide includes Marvel's VisionQuest, a new Treasure Island adaptation, the latest season of the espionage drama The Diplomat and an ambitious Spanish anthology series. VisionQuest is singled out as a lively follow-up to WandaVision.",
+    "image": null,
+    "link": "https://www.theguardian.com/tv-and-radio/2026/oct/09/tyson-to-visionquest-the-seven-best-shows-to-stream-this-week",
+    "category": "Entertainment",
+    "published": "2026-10-09T06:00:00Z"
+  },
+  {
+    "title": "AI production threatens the advertising-to-film pipeline for new directors",
+    "source": "The Guardian",
+    "extract": "Commercials have long served as a training ground for directors such as Ridley Scott and Guy Ritchie, but advertising agencies are automating more production with generative AI. Industry voices warn that cost-cutting could reduce opportunities for emerging filmmakers to learn through practical work.",
+    "image": null,
+    "link": "https://www.theguardian.com/film/2026/oct/09/ai-threat-britain-directors-ridley-scott-guy-ritchie",
+    "category": "Entertainment",
+    "published": "2026-10-09T15:00:00Z"
   }
 ]
