@@ -1,173 +1,119 @@
 [
   {
-    "title": "EU and China agree to curb hybrid-car exports in landmark trade deal",
-    "source": "The Guardian",
-    "extract": "The EU and China have agreed on a framework intended to curb Chinese hybrid-car exports, potentially more than halving volumes over four years. The deal marks a significant shift in the trade relationship for Europe's car industry.",
-    "image": null,
-    "link": "https://www.theguardian.com/business/2026/oct/09/china-agrees-to-curb-hybrid-car-exports-to-eu-in-landmark-deal",
-    "category": "Automotive",
-    "published": "2026-10-09T15:05:00Z"
-  },
-  {
-    "title": "Pininfarina-designed Honda NSX restomod is finally revealed",
+    "title": "Manthey marks 30 years with two sharper Porsche race cars",
     "source": "Road & Track",
-    "extract": "JAS Motorsport's Tensei reworks the original NSX formula with a naturally aspirated 3.5-litre V6 developed with JUDD, producing 425 hp at 8,500 rpm. The project pairs a carbon-fibre body with a six-speed manual and a Torsen limited-slip differential.",
+    "extract": "Manthey has revealed anniversary versions of the Porsche 911 GT3 Cup and 718 Cayman GT4 RS Clubsport. The 911 gains a 4.2-litre flat-six producing 552 hp, revised cooling and aerodynamics, while both track-focused cars are limited to 15 examples each.",
     "image": null,
-    "link": "https://www.roadandtrack.com/news/a74082703/pininfarina-designed-honda-acura-nsx-restomod/",
+    "link": "https://www.roadandtrack.com/news/a74082999/manthey-30th-anniversary-porsche-911-gt3-cup-718-gt4-rs-clubsport/",
     "category": "Automotive",
-    "published": "2026-10-08T19:32:00Z"
+    "published": "2026-10-09T11:30:00Z"
   },
   {
-    "title": "Python 3.15 released with a faster experimental JIT compiler",
-    "source": "Phoronix",
-    "extract": "Python 3.15 has been released with an experimental just-in-time compiler that is reported to run faster, alongside the latest runtime and language improvements. The release offers a useful look at where Python performance work is heading.",
+    "title": "Porsche teases an 8,000-rpm redline for its Mission S supercar concept",
+    "source": "Road & Track",
+    "extract": "Porsche has shown the Mission S concept's animated gauge cluster, with a tachometer approaching an 8,000-rpm redline. The powertrain remains unconfirmed, but the planned October 15 reveal could preview a new range-topping performance car.",
     "image": null,
-    "link": "https://www.phoronix.com/news/Python-3.15-Released",
-    "category": "Technology",
-    "published": "2026-10-09T14:58:00Z"
+    "link": "https://www.roadandtrack.com/news/a74094026/the-porsche-mission-s-supercar-concept-revs-to-8000-rpm/",
+    "category": "Automotive",
+    "published": "2026-10-09T18:40:00Z"
   },
   {
-    "title": "SQLite 3.54 improves performance and drops Windows XP support",
-    "source": "Phoronix",
-    "extract": "SQLite 3.54 includes command-line and query-planner updates and reports performance gains on Linux x86-64. The release also ends support for Windows XP and Windows CE.",
-    "image": "https://www.phoronix.net/image.php?id=2022&image=sqlite",
-    "link": "https://www.phoronix.com/news/SQLite-3.54-Released",
-    "category": "Technology",
-    "published": "2026-10-10T00:41:00Z"
-  },
-  {
-    "title": "Ubuntu 26.10 will include desktop images for RISC-V",
-    "source": "Phoronix",
-    "extract": "Ubuntu 26.10 is set to offer desktop ISO images for RISC-V, expanding the architecture's practical options beyond server and command-line use. Xubuntu's minimal image is also expected to be useful for virtualised testing.",
-    "image": "https://www.phoronix.net/image.php?id=2026&image=ubuntu_2610_riscv",
-    "link": "https://www.phoronix.com/news/Ubuntu-26.10-RISC-V-Desktop",
-    "category": "Technology",
-    "published": "2026-10-09T17:59:00Z"
-  },
-  {
-    "title": "Valve's Proton 11.0-2e update fixes EA App issues",
-    "source": "Phoronix",
-    "extract": "A new Proton compatibility-layer update addresses EA App launch and focus problems for Linux gamers using Steam Play. It is a small but practical compatibility fix for Windows games running on Linux.",
-    "image": "https://www.phoronix.net/image.php?id=2026&image=ea_app",
-    "link": "https://www.phoronix.com/news/Steam-Play-Proton-11.0-2e",
-    "category": "Technology",
-    "published": "2026-10-09T17:56:00Z"
-  },
-  {
-    "title": "Linux patches aim to speed up Zswap by batching writeback I/O",
-    "source": "Phoronix",
-    "extract": "Proposed Linux kernel changes batch writeback operations in Zswap, the compressed-memory cache used with swap. The work targets the I/O overhead that can limit performance when compressed pages are written back.",
+    "title": "Honda's next hybrid system promises better handling and electric all-wheel drive",
+    "source": "Road & Track",
+    "extract": "Honda has outlined a next-generation hybrid platform with improved efficiency, lighter and more rigid vehicle structures, a new Motion Management System and electric all-wheel drive. The company says it aims to improve driver engagement as well as fuel economy.",
     "image": null,
-    "link": "https://www.phoronix.com/news/Faster-Zswap-Batch-Writeback-IO",
-    "category": "Technology",
-    "published": "2026-10-09T11:34:00Z"
+    "link": "https://www.roadandtrack.com/news/a74092149/next-gen-honda-hybrid-platform-better-handling/",
+    "category": "Automotive",
+    "published": "2026-10-09T15:34:00Z"
   },
   {
-    "title": "Linux patches could enable hibernation with Secure Boot lockdown",
-    "source": "Phoronix",
-    "extract": "New Linux kernel patches address the restrictions that currently prevent hibernation in lockdown mode. If merged, the work could make suspend-to-disk more usable on systems that retain Secure Boot security protections.",
+    "title": "Stack Overflow survey finds developers use AI heavily but still distrust its answers",
+    "source": "The Register",
+    "extract": "Stack Overflow's survey of 30,903 developers found AI tools are routine for many respondents, yet only around 7 percent trust AI output for important work decisions. Source attribution matters to 79 percent, underlining the need to verify generated code and technical advice.",
     "image": null,
-    "link": "https://www.phoronix.com/news/Linux-Hibernation-With-Lockdown",
+    "link": "https://www.theregister.com/software/2026/10/10/stack-overflow-survey-finds-devs-hooked-on-ai-but-not-totally-sold-on-its-judgment/5301662",
     "category": "Technology",
-    "published": "2026-10-09T10:27:00Z"
+    "published": "2026-10-10T09:14:00Z"
   },
   {
-    "title": "NVIDIA's Boro project explores AI-assisted Linux kernel development",
-    "source": "Phoronix",
-    "extract": "NVIDIA has introduced Boro, an open-source Rust command-line tool that uses local AI to assist with Linux kernel development. The approach puts AI coding assistance closer to a developer's own workstation and workflow.",
+    "title": "GitHub is rebuilding its Git storage architecture to handle the agent boom",
+    "source": "The Register",
+    "extract": "GitHub is redesigning repository storage as coding agents drive a sharp increase in traffic. Early internal tests reportedly show a 35-fold improvement in write performance, with separate read and write paths and maintenance moved out of the serving path.",
     "image": null,
-    "link": "https://www.phoronix.com/news/NVIDIA-Boro-Linux-Kernel-AI",
+    "link": "https://www.theregister.com/devops/2026/10/09/so-long-spokes-github-rewrites-storage-to-restore-reliability-just-in-time-for-agentic-hordes/5302148",
     "category": "Technology",
-    "published": "2026-10-09T10:06:00Z"
+    "published": "2026-10-09T07:03:00Z"
   },
   {
-    "title": "Linux 7.4 graphics development closes with more AMD HDMI 2.1 fixes",
-    "source": "Phoronix",
-    "extract": "The AMDGPU driver development cycle for Linux 7.4 includes additional HDMI 2.1 fixes. The changes are part of the continuing upstream work needed to improve display compatibility on Linux systems using AMD graphics.",
+    "title": "Study finds AI coding agents produce more code, but not necessarily more software",
+    "source": "Ars Technica",
+    "extract": "A study drawing on engineering activity across more than 700,000 employees found that faster AI-assisted coding can be offset by longer review cycles and more revisions. The researchers found little evidence so far that these tools consistently increase overall software output or reduce employment.",
     "image": null,
-    "link": "https://www.phoronix.com/news/Linux-7.4-AMDGPU-Final",
+    "link": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
     "category": "Technology",
-    "published": "2026-10-09T09:54:00Z"
+    "published": "2026-10-09T19:43:00Z"
   },
   {
-    "title": "HDR support is coming to Qualcomm's Linux graphics driver for Snapdragon X",
-    "source": "Phoronix",
-    "extract": "Patches for Qualcomm's MSM DRM driver add HDR support that could benefit Snapdragon X laptops running Linux. The work is an incremental but meaningful step toward improving high-dynamic-range display support on Arm-based PCs.",
+    "title": "Alan Turing Institute chief calls for UK control over critical AI capabilities",
+    "source": "The Guardian",
+    "extract": "George Williamson, the new head of the Alan Turing Institute, argues that the UK should not depend entirely on AI systems controlled abroad. He says domestic capability matters for national resilience because access to foreign systems can be restricted by political or commercial decisions.",
     "image": null,
-    "link": "https://www.phoronix.com/news/Qualcomm-MSM-DRM-HDR",
+    "link": "https://www.theguardian.com/technology/2026/oct/10/uk-foreign-ai-head-alan-turing-institute-george-williamson",
     "category": "Technology",
-    "published": "2026-10-09T09:37:00Z"
+    "published": "2026-10-10T10:00:00Z"
   },
   {
-    "title": "Margaret Hamilton, whose software helped Apollo reach the Moon, dies at 90",
-    "source": "The Washington Post",
-    "extract": "Margaret Hamilton led software engineering for Apollo's onboard flight systems and helped establish software as a discipline demanding rigorous engineering. Her work is a key chapter in the history of early computing and mission-critical code.",
+    "title": "Geargrafx emulator adds automatic overscan cropping and CRT aspect-ratio support",
+    "source": "GitHub — Geargrafx",
+    "extract": "The open-source TurboGrafx-16 and PC Engine emulator has added automatic overscan cropping and CRT aspect-ratio handling. Other recent commits also address save-state compatibility and a timer-underflow bug, improving accuracy and reliability on modern displays.",
     "image": null,
-    "link": "https://www.washingtonpost.com/obituaries/2026/10/08/margaret-hamilton-dies-90-her-programming-helped-astronauts-reach-moon/",
+    "link": "https://github.com/drhelius/Geargrafx/commit/45b2759ed6084a3dad8505a4f446d5c5e76d6d9a",
     "category": "Retro Computing",
-    "published": "2026-10-08T17:13:00Z"
+    "published": "2026-10-10T23:47:16Z"
   },
   {
-    "title": "The best recent science-fiction, fantasy and horror: four books reviewed",
-    "source": "The Guardian",
-    "extract": "A fresh genre roundup reviews works including Victor LaValle's Lovecraft-influenced horror, Becky Chambers' science-fiction romance, Diego Muzzio's postwar gothic tale and Deena Helm's politically inflected ghost story. It offers several new routes into contemporary speculative fiction.",
+    "title": "OpenRCT2 v0.5.6 brings land recolouring and a new title sequence",
+    "source": "GitHub — OpenRCT2",
+    "extract": "The latest OpenRCT2 release adds recolourable land surfaces and edges, 18 additional colours including five from the original RollerCoaster Tycoon, a new title sequence and improvements to track design and park management.",
     "image": null,
-    "link": "https://www.theguardian.com/books/2026/oct/09/the-best-recent-science-fiction-fantasy-and-horror-review-roundup",
+    "link": "https://github.com/OpenRCT2/OpenRCT2/commit/82b309798a83346b7f9fc61a53847f4323deb19d",
+    "category": "Retro Computing Projects",
+    "published": "2026-10-10T11:57:21Z"
+  },
+  {
+    "title": "Yiyun Li reflects on Anne Carson's Nobel recognition and life-sustaining writing",
+    "source": "The Guardian",
+    "extract": "Following Anne Carson's Nobel Prize in Literature, novelist Yiyun Li reflects on Carson's singular approach to language and her translations of Euripides. Li describes returning to Carson's work during profound personal grief and explains why the recognition feels both joyful and deserved.",
+    "image": null,
+    "link": "https://www.theguardian.com/books/2026/oct/09/winning-the-nobel-prize-in-literature-anne-carson-yiyun-li",
     "category": "Books",
-    "published": "2026-10-09T11:00:00Z"
+    "published": "2026-10-09T11:12:00Z"
   },
   {
-    "title": "The Starving Bride turns a sideshow into a gothic near-future",
+    "title": "Author AK Blakemore discusses the books that shaped her writing",
     "source": "The Guardian",
-    "extract": "Catherine Chidgey's novel uses a disturbing public spectacle and a near-future setting to explore hunger, appearance and social unease. The review highlights its blend of gothic storytelling and contemporary concerns.",
+    "extract": "The novelist and poet talks about formative encounters with The Great Gatsby, Orlando and other books, including works she has changed her mind about. The conversation also points readers towards her new novel, Doom Painting, and contemporary fiction she has recently admired.",
     "image": null,
-    "link": "https://www.theguardian.com/books/2026/oct/09/the-starving-bride-catherine-chidgey-book-review",
+    "link": "https://www.theguardian.com/books/2026/oct/09/ak-blakemore-the-goldfinch-by-donna-tartt-was-extremely-silly-and-bad",
     "category": "Books",
-    "published": "2026-10-08T14:00:00Z"
+    "published": "2026-10-09T09:00:00Z"
   },
   {
-    "title": "Russell T Davies's memoir looks back on five decades of television",
+    "title": "Ray Gunn review: Brad Bird brings old-school film noir to animated science fiction",
     "source": "The Guardian",
-    "extract": "The Doctor Who revivalist and creator of Queer as Folk structures The Queerest of Folk around his television work, mixing behind-the-scenes history with humour and a defence of creative risk. The review presents it as both a personal career memoir and a celebration of television writing.",
+    "extract": "Brad Bird's new animated film combines a retro-futurist city, hard-boiled detective fiction and a cast led by Sam Rockwell, Tom Waits and Scarlett Johansson. The review praises its imaginative visual design, humour and old-fashioned storytelling, with echoes of Metropolis and Blade Runner.",
     "image": null,
-    "link": "https://www.theguardian.com/books/2026/oct/09/the-queerest-of-folk-by-russell-t-davies-review-the-groundbreaking-screenwriter-tells-it-like-it-is",
-    "category": "Books",
-    "published": "2026-10-09T06:00:00Z"
-  },
-  {
-    "title": "Gromit finally gets a voice, narrated by Martin Freeman",
-    "source": "The Guardian",
-    "extract": "An audiobook autobiography gives Gromit a new kind of voice: Martin Freeman narrates the character's imagined inner thoughts while preserving the famously silent screen persona. It's an unusual new chapter for Aardman’s much-loved animated dog.",
-    "image": null,
-    "link": "https://www.theguardian.com/film/2026/oct/09/gromit-autobiography-martin-freeman-voice",
+    "link": "https://www.theguardian.com/film/2026/oct/10/ray-gunn-review-brad-birds-animated-film-noir-sci-fi-caper-is-an-old-school-family-classic",
     "category": "Entertainment",
-    "published": "2026-10-09T11:00:00Z"
+    "published": "2026-10-10T13:45:00Z"
   },
   {
-    "title": "Murakami's Hard-Boiled Wonderland becomes a surreal stage spectacle",
+    "title": "The Guardian's weekly guide to new films, television, games and stage shows",
     "source": "The Guardian",
-    "extract": "A new Barbican stage adaptation brings Haruki Murakami's parallel-world science-fiction novel to life with elaborate visuals and choreography. The production interweaves the novel's Tokyo narrative with its dreamlike alternative reality.",
+    "extract": "The week's entertainment guide previews Aaron Sorkin's The Social Reckoning, Paul Greengrass's historical drama The Uprising, new streaming adaptations, Marvel's VisionQuest and several stage and comedy events. It rounds up upcoming film, television, game and theatre releases.",
     "image": null,
-    "link": "https://www.theguardian.com/stage/2026/oct/09/end-of-the-world-and-hard-boiled-wonderland-review-haruki-murakami-barbican-theatre-london",
+    "link": "https://www.theguardian.com/culture/2026/oct/10/from-the-social-reckoning-to-harriet-kemsley-your-complete-entertainment-guide-to-the-week-ahead",
     "category": "Entertainment",
-    "published": "2026-10-09T13:53:00Z"
-  },
-  {
-    "title": "Tyson to VisionQuest: seven shows to stream this week",
-    "source": "The Guardian",
-    "extract": "This week's streaming guide includes Marvel's VisionQuest, a new Treasure Island adaptation, the latest season of the espionage drama The Diplomat and an ambitious Spanish anthology series. VisionQuest is singled out as a lively follow-up to WandaVision.",
-    "image": null,
-    "link": "https://www.theguardian.com/tv-and-radio/2026/oct/09/tyson-to-visionquest-the-seven-best-shows-to-stream-this-week",
-    "category": "Entertainment",
-    "published": "2026-10-09T06:00:00Z"
-  },
-  {
-    "title": "AI production threatens the advertising-to-film pipeline for new directors",
-    "source": "The Guardian",
-    "extract": "Commercials have long served as a training ground for directors such as Ridley Scott and Guy Ritchie, but advertising agencies are automating more production with generative AI. Industry voices warn that cost-cutting could reduce opportunities for emerging filmmakers to learn through practical work.",
-    "image": null,
-    "link": "https://www.theguardian.com/film/2026/oct/09/ai-threat-britain-directors-ridley-scott-guy-ritchie",
-    "category": "Entertainment",
-    "published": "2026-10-09T15:00:00Z"
+    "published": "2026-10-10T05:00:00Z"
   }
 ]
