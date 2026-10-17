@@ -1,119 +1,164 @@
 [
   {
-    "title": "Manthey marks 30 years with two sharper Porsche race cars",
-    "source": "Road & Track",
-    "extract": "Manthey has revealed anniversary versions of the Porsche 911 GT3 Cup and 718 Cayman GT4 RS Clubsport. The 911 gains a 4.2-litre flat-six producing 552 hp, revised cooling and aerodynamics, while both track-focused cars are limited to 15 examples each.",
+    "title": "France and Germany strike deal on car emissions and UK special status",
+    "source": "Reuters",
+    "extract": "France and Germany have agreed on changes to the EU’s car-emissions approach, including a proposed 90% reduction target that leaves room for compensating measures. The agreement could also give the UK a route into the bloc’s future 'Made in EU' rules, with implications for automakers and supply chains.",
     "image": null,
-    "link": "https://www.roadandtrack.com/news/a74082999/manthey-30th-anniversary-porsche-911-gt3-cup-718-gt4-rs-clubsport/",
+    "link": "https://www.reuters.com/business/france-germany-agree-deal-car-emissions-uk-special-status-2026-10-16/",
     "category": "Automotive",
-    "published": "2026-10-09T11:30:00Z"
+    "published": "2026-10-16T10:59:00Z"
   },
   {
-    "title": "Porsche teases an 8,000-rpm redline for its Mission S supercar concept",
-    "source": "Road & Track",
-    "extract": "Porsche has shown the Mission S concept's animated gauge cluster, with a tachometer approaching an 8,000-rpm redline. The powertrain remains unconfirmed, but the planned October 15 reveal could preview a new range-topping performance car.",
-    "image": null,
-    "link": "https://www.roadandtrack.com/news/a74094026/the-porsche-mission-s-supercar-concept-revs-to-8000-rpm/",
-    "category": "Automotive",
-    "published": "2026-10-09T18:40:00Z"
-  },
-  {
-    "title": "Honda's next hybrid system promises better handling and electric all-wheel drive",
-    "source": "Road & Track",
-    "extract": "Honda has outlined a next-generation hybrid platform with improved efficiency, lighter and more rigid vehicle structures, a new Motion Management System and electric all-wheel drive. The company says it aims to improve driver engagement as well as fuel economy.",
-    "image": null,
-    "link": "https://www.roadandtrack.com/news/a74092149/next-gen-honda-hybrid-platform-better-handling/",
-    "category": "Automotive",
-    "published": "2026-10-09T15:34:00Z"
-  },
-  {
-    "title": "Stack Overflow survey finds developers use AI heavily but still distrust its answers",
-    "source": "The Register",
-    "extract": "Stack Overflow's survey of 30,903 developers found AI tools are routine for many respondents, yet only around 7 percent trust AI output for important work decisions. Source attribution matters to 79 percent, underlining the need to verify generated code and technical advice.",
-    "image": null,
-    "link": "https://www.theregister.com/software/2026/10/10/stack-overflow-survey-finds-devs-hooked-on-ai-but-not-totally-sold-on-its-judgment/5301662",
-    "category": "Technology",
-    "published": "2026-10-10T09:14:00Z"
-  },
-  {
-    "title": "GitHub is rebuilding its Git storage architecture to handle the agent boom",
-    "source": "The Register",
-    "extract": "GitHub is redesigning repository storage as coding agents drive a sharp increase in traffic. Early internal tests reportedly show a 35-fold improvement in write performance, with separate read and write paths and maintenance moved out of the serving path.",
-    "image": null,
-    "link": "https://www.theregister.com/devops/2026/10/09/so-long-spokes-github-rewrites-storage-to-restore-reliability-just-in-time-for-agentic-hordes/5302148",
-    "category": "Technology",
-    "published": "2026-10-09T07:03:00Z"
-  },
-  {
-    "title": "Study finds AI coding agents produce more code, but not necessarily more software",
-    "source": "Ars Technica",
-    "extract": "A study drawing on engineering activity across more than 700,000 employees found that faster AI-assisted coding can be offset by longer review cycles and more revisions. The researchers found little evidence so far that these tools consistently increase overall software output or reduce employment.",
-    "image": null,
-    "link": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
-    "category": "Technology",
-    "published": "2026-10-09T19:43:00Z"
-  },
-  {
-    "title": "Alan Turing Institute chief calls for UK control over critical AI capabilities",
+    "title": "Calls grow to limit London's rollout of driverless robotaxis",
     "source": "The Guardian",
-    "extract": "George Williamson, the new head of the Alan Turing Institute, argues that the UK should not depend entirely on AI systems controlled abroad. He says domestic capability matters for national resilience because access to foreign systems can be restricted by political or commercial decisions.",
+    "extract": "London’s planned robotaxi rollout is drawing objections from drivers and public figures, who want Transport for London to have clear powers to regulate autonomous ride-hailing. The debate puts the practical and employment consequences of self-driving taxis in focus.",
     "image": null,
-    "link": "https://www.theguardian.com/technology/2026/oct/10/uk-foreign-ai-head-alan-turing-institute-george-williamson",
-    "category": "Technology",
-    "published": "2026-10-10T10:00:00Z"
+    "link": "https://www.theguardian.com/uk-news/2026/oct/16/london-driverless-robotaxis-uber-drivers-wayve-tfl-licences",
+    "category": "Automotive",
+    "published": "2026-10-16T11:00:00Z"
   },
   {
-    "title": "Geargrafx emulator adds automatic overscan cropping and CRT aspect-ratio support",
-    "source": "GitHub — Geargrafx",
-    "extract": "The open-source TurboGrafx-16 and PC Engine emulator has added automatic overscan cropping and CRT aspect-ratio handling. Other recent commits also address save-state compatibility and a timer-underflow bug, improving accuracy and reliability on modern displays.",
+    "title": "China proposes tighter export controls on AI technologies",
+    "source": "Reuters",
+    "extract": "Beijing has proposed export controls covering 23 AI technologies as part of a wider review of strategic technology exports. The draft targets some overseas deployments involving sensitive model technology while proposing to keep ordinary access through APIs, apps and software-as-a-service outside the restrictions.",
     "image": null,
-    "link": "https://github.com/drhelius/Geargrafx/commit/45b2759ed6084a3dad8505a4f446d5c5e76d6d9a",
+    "link": "https://www.reuters.com/world/asia-pacific/china-proposes-adding-40-ai-biotech-solar-technologies-export-control-list-2026-10-16/",
+    "category": "Technology",
+    "published": "2026-10-16T08:31:00Z"
+  },
+  {
+    "title": "IMF chief warns AI risks could outweigh its benefits without safeguards",
+    "source": "Reuters",
+    "extract": "IMF managing director Kristalina Georgieva says artificial intelligence could deliver substantial economic gains but also negative shocks if productivity improvements fail to materialise or safeguards are inadequate. Her remarks add to the debate about governance and financial stability as AI adoption accelerates.",
+    "image": null,
+    "link": "https://www.reuters.com/technology/imf-chief-says-ai-risks-may-exceed-opportunities-without-safeguards-ethical-2026-10-16/",
+    "category": "Technology",
+    "published": "2026-10-16T08:19:00Z"
+  },
+  {
+    "title": "Anthropic's Jack Clark says AI's impact is accelerating rapidly",
+    "source": "Reuters",
+    "extract": "Anthropic co-founder Jack Clark says AI capabilities are advancing at an accelerating pace and could have a major effect on US economic output. He also argues that international coordination will be needed to establish rules as increasingly capable systems spread.",
+    "image": null,
+    "link": "https://www.reuters.com/world/china/anthropics-clark-says-ais-impact-accelerating-quickly-could-vastly-boost-us-gdp-2026-10-17/",
+    "category": "Technology",
+    "published": "2026-10-17T09:15:00Z"
+  },
+  {
+    "title": "Many English NHS trusts reject or move away from Palantir patient-data platform",
+    "source": "The Guardian",
+    "extract": "Freedom of information responses show that a number of NHS trusts have declined to use, or have moved away from, the Federated Data Platform supplied by Palantir. Some trusts say it duplicates systems they already have, while others report benefits for scheduling, highlighting the mixed reception for the national programme.",
+    "image": null,
+    "link": "https://www.theguardian.com/technology/2026/oct/17/palantir-patient-data-tech-rejected-by-many-nhs-trusts-in-england",
+    "category": "Technology",
+    "published": "2026-10-17T06:00:00Z"
+  },
+  {
+    "title": "New Amiga datatype renders PC ANSI art in the IBM VGA font",
+    "source": "GitHub — AmigaDatatypes",
+    "extract": "The new PC ANSI datatype reads .ans BBS screens and .nfo artwork as text, rendering them with the IBM VGA font and 16 colours. The developer says it has been tested against 1,712 files from the 16colo.rs archive, bringing a distinctive PC-era text-art format to Amiga software.",
+    "image": null,
+    "link": "https://github.com/creep-ltx/AmigaDatatypes/commit/1f2b61a30b824e375401036c71f11e3c8ea20836",
     "category": "Retro Computing",
-    "published": "2026-10-10T23:47:16Z"
+    "published": "2026-10-17T09:35:33Z"
   },
   {
-    "title": "OpenRCT2 v0.5.6 brings land recolouring and a new title sequence",
-    "source": "GitHub — OpenRCT2",
-    "extract": "The latest OpenRCT2 release adds recolourable land surfaces and edges, 18 additional colours including five from the original RollerCoaster Tycoon, a new title sequence and improvements to track design and park management.",
+    "title": "A ZX Spectrum 128K, +2 and +3 emulator is being built for an ESP32-S3 handheld",
+    "source": "GitHub — esp32zx",
+    "extract": "This project brings a Spectrum 128K, +2 and +3 to a 7-inch ESP32-S3 device, including a cycle-aware Z80 and ULA, AY and beeper audio, tape and disk support, snapshots and Bluetooth keyboard input. It is a substantial modern hardware project focused on reproducing the original machines’ behaviour.",
     "image": null,
-    "link": "https://github.com/OpenRCT2/OpenRCT2/commit/82b309798a83346b7f9fc61a53847f4323deb19d",
+    "link": "https://github.com/rlucencic/esp32zx/commit/0f7c989f145176149ace86024b8af9bfff94b875",
     "category": "Retro Computing Projects",
-    "published": "2026-10-10T11:57:21Z"
+    "published": "2026-10-17T09:25:10Z"
   },
   {
-    "title": "Yiyun Li reflects on Anne Carson's Nobel recognition and life-sustaining writing",
-    "source": "The Guardian",
-    "extract": "Following Anne Carson's Nobel Prize in Literature, novelist Yiyun Li reflects on Carson's singular approach to language and her translations of Euripides. Li describes returning to Carson's work during profound personal grief and explains why the recognition feels both joyful and deserved.",
+    "title": "Terra Strike brings a Zarch-style 3D landscape shooter to the Amiga",
+    "source": "GitHub — amiga_games",
+    "extract": "A new 68k Amiga game project takes inspiration from Zarch: pilot over a flat-shaded 3D island, attack tanks, buildings and ships, then land to refuel. The project is developing a distinctly modern homebrew game around the look and feel of classic Amiga-era 3D action.",
     "image": null,
-    "link": "https://www.theguardian.com/books/2026/oct/09/winning-the-nobel-prize-in-literature-anne-carson-yiyun-li",
+    "link": "https://github.com/geekychris/amiga_games/commit/5c334428650592288d7e7179923f735c8fd19e3d",
+    "category": "Retro Computing Projects",
+    "published": "2026-10-17T08:55:52Z"
+  },
+  {
+    "title": "A new megademo recreates C64 and Amiga demo-scene style in JavaScript and Python",
+    "source": "GitHub — megademo",
+    "extract": "This project builds a modern megademo inspired by Commodore 64 and Amiga productions, using JavaScript and Python in Circuitry Studio. It is a contemporary experiment in recreating the form and atmosphere of classic computer demos.",
+    "image": null,
+    "link": "https://github.com/johnwylie70/megademo/commit/23f53955da7a6abcee645a646ee577e0179d56a7",
+    "category": "Retro Computing Projects",
+    "published": "2026-10-17T09:45:00Z"
+  },
+  {
+    "title": "The best recent crime and thrillers: review roundup",
+    "source": "The Guardian",
+    "extract": "This roundup surveys new crime and thriller fiction, including Ian Rankin’s The Heights and several mysteries built around family secrets, inheritance and investigation. It offers a useful cross-section of current work in the crime and thriller genres.",
+    "image": null,
+    "link": "https://www.theguardian.com/books/2026/oct/16/the-best-recent-and-thrillers-review-roundup",
     "category": "Books",
-    "published": "2026-10-09T11:12:00Z"
+    "published": "2026-10-16T11:00:00Z"
   },
   {
-    "title": "Author AK Blakemore discusses the books that shaped her writing",
+    "title": "Tim Jeal obituary: biographer who reshaped views of Victorian explorers",
     "source": "The Guardian",
-    "extract": "The novelist and poet talks about formative encounters with The Great Gatsby, Orlando and other books, including works she has changed her mind about. The conversation also points readers towards her new novel, Doom Painting, and contemporary fiction she has recently admired.",
+    "extract": "The biographer and novelist Tim Jeal, who has died aged 81, challenged received accounts of figures including Henry Morton Stanley, David Livingstone and Robert Baden-Powell. His work combined historical research with a willingness to question heroic national narratives.",
     "image": null,
-    "link": "https://www.theguardian.com/books/2026/oct/09/ak-blakemore-the-goldfinch-by-donna-tartt-was-extremely-silly-and-bad",
+    "link": "https://www.theguardian.com/books/2026/oct/15/tim-jeal-obituary",
     "category": "Books",
-    "published": "2026-10-09T09:00:00Z"
+    "published": "2026-10-15T15:14:00Z"
   },
   {
-    "title": "Ray Gunn review: Brad Bird brings old-school film noir to animated science fiction",
+    "title": "From The Shining to Trainspotting: what makes a great film adaptation?",
     "source": "The Guardian",
-    "extract": "Brad Bird's new animated film combines a retro-futurist city, hard-boiled detective fiction and a cast led by Sam Rockwell, Tom Waits and Scarlett Johansson. The review praises its imaginative visual design, humour and old-fashioned storytelling, with echoes of Metropolis and Blade Runner.",
+    "extract": "A look at successful adaptations argues that films often work best when they creatively reinterpret their source material rather than reproduce it faithfully. Examples such as The Shining and Children of Men show how directors can preserve a story’s force while making something distinct for the screen.",
     "image": null,
-    "link": "https://www.theguardian.com/film/2026/oct/10/ray-gunn-review-brad-birds-animated-film-noir-sci-fi-caper-is-an-old-school-family-classic",
+    "link": "https://www.theguardian.com/film/2026/oct/16/book-film-adaptations-shining-trainspotting-bridget-jones-godfather-clockwork-orange-silence-lambs",
     "category": "Entertainment",
-    "published": "2026-10-10T13:45:00Z"
+    "published": "2026-10-16T12:00:00Z"
   },
   {
-    "title": "The Guardian's weekly guide to new films, television, games and stage shows",
+    "title": "The Face of Horror review: a playful, stylish spin on Hammer horror",
     "source": "The Guardian",
-    "extract": "The week's entertainment guide previews Aaron Sorkin's The Social Reckoning, Paul Greengrass's historical drama The Uprising, new streaming adaptations, Marvel's VisionQuest and several stage and comedy events. It rounds up upcoming film, television, game and theatre releases.",
+    "extract": "Anna Biller’s horror film borrows the flavour of 1960s Hammer while relocating its ghost-story sensibility to medieval Japan. The review praises its playful genre touches, black comedy and striking visual style, describing it as a potential cult favourite.",
     "image": null,
-    "link": "https://www.theguardian.com/culture/2026/oct/10/from-the-social-reckoning-to-harriet-kemsley-your-complete-entertainment-guide-to-the-week-ahead",
+    "link": "https://www.theguardian.com/film/2026/oct/16/the-face-of-horror-review-anna-biller-london-film-festival",
     "category": "Entertainment",
-    "published": "2026-10-10T05:00:00Z"
+    "published": "2026-10-16T05:30:00Z"
+  },
+  {
+    "title": "Klara and the Sun review: Taika Waititi's adaptation is a sentimental robot story",
+    "source": "The Guardian",
+    "extract": "Taika Waititi adapts Kazuo Ishiguro’s novel about an artificial friend observing a human family in a near-future world shaped by advanced technology. The review is critical of the film’s tone, but the subject makes it a notable science-fiction adaptation about artificial intelligence and personhood.",
+    "image": null,
+    "link": "https://www.theguardian.com/film/2026/oct/15/klara-and-the-sun-review-taika-waititi-kazuo-ishiguro",
+    "category": "Entertainment",
+    "published": "2026-10-15T20:15:00Z"
+  },
+  {
+    "title": "Look Back review: Kore-eda adapts a manga about friendship and artistic ambition",
+    "source": "The Guardian",
+    "extract": "Hirokazu Kore-eda’s live-action adaptation of Tatsuki Fujimoto’s manga follows two young artists whose friendship is shaped by ambition, collaboration and loss. It brings the manga’s emotional intensity to a film screened at the London Film Festival.",
+    "image": null,
+    "link": "https://www.theguardian.com/film/2026/oct/16/look-back-review-hirokazu-kore-eda",
+    "category": "Entertainment",
+    "published": "2026-10-16T16:50:00Z"
+  },
+  {
+    "title": "Masterplan review: a glossy heist caper with spy-tech gimmicks",
+    "source": "The Guardian",
+    "extract": "Stanley Tucci stars in a heist comedy built around a Louvre robbery and technological tricks including retinal-scan cloning and virtual-reality intrusion. The review finds the caper lightweight, but its mix of espionage, comedy and gadgetry makes it an entertaining genre release to track.",
+    "image": null,
+    "link": "https://www.theguardian.com/film/2026/oct/16/masterplan-stanley-tucci-movie-review",
+    "category": "Entertainment",
+    "published": "2026-10-16T19:24:00Z"
+  },
+  {
+    "title": "Winnie-the-Pooh turns 100 as the character's cultural life continues",
+    "source": "The Guardian",
+    "extract": "A century after A. A. Milne’s first Pooh book, new BBC programmes and commemorations revisit the bear’s history and his place in popular culture. The anniversary is also a reminder of how a literary character became a lasting presence across illustration, animation and merchandise.",
+    "image": null,
+    "link": "https://www.theguardian.com/commentisfree/2026/oct/16/the-guardian-view-on-winnie-the-pooh-now-we-are-100",
+    "category": "Entertainment",
+    "published": "2026-10-16T16:52:00Z"
   }
 ]
