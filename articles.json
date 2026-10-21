@@ -1,164 +1,137 @@
 [
   {
-    "title": "France and Germany strike deal on car emissions and UK special status",
+    "title": "Ferrari CEO hails Tesla Roadster redesign as bold innovation",
     "source": "Reuters",
-    "extract": "France and Germany have agreed on changes to the EU’s car-emissions approach, including a proposed 90% reduction target that leaves room for compensating measures. The agreement could also give the UK a route into the bloc’s future 'Made in EU' rules, with implications for automakers and supply chains.",
-    "image": null,
-    "link": "https://www.reuters.com/business/france-germany-agree-deal-car-emissions-uk-special-status-2026-10-16/",
+    "extract": "Ferrari CEO Benedetto Vigna praised the redesigned Tesla Roadster as an example of the bold innovation the car industry needs. The Roadster presentation included dramatic airborne manoeuvres and SpaceX-derived thrusters; production is planned for 2028.",
+    "image": "https://www.reuters.com/resizer/v2/QEV2L4U7PVIERAX2JANLQZT6N4.jpg?auth=91f741c9f357a74512cd3322a1f00087aaec3f843cffd19430803e96b0173ced&quality=80&width=1080",
+    "link": "https://www.reuters.com/business/autos-transportation/ferrari-ceo-hails-tesla-roadster-redesign-bold-innovation-industry-needs-2026-10-20/",
     "category": "Automotive",
-    "published": "2026-10-16T10:59:00Z"
+    "published": "2026-10-20T13:56:00Z"
   },
   {
-    "title": "Calls grow to limit London's rollout of driverless robotaxis",
-    "source": "The Guardian",
-    "extract": "London’s planned robotaxi rollout is drawing objections from drivers and public figures, who want Transport for London to have clear powers to regulate autonomous ride-hailing. The debate puts the practical and employment consequences of self-driving taxis in focus.",
-    "image": null,
-    "link": "https://www.theguardian.com/uk-news/2026/oct/16/london-driverless-robotaxis-uber-drivers-wayve-tfl-licences",
-    "category": "Automotive",
-    "published": "2026-10-16T11:00:00Z"
-  },
-  {
-    "title": "China proposes tighter export controls on AI technologies",
+    "title": "Germany's Agile Robots plans to build up to 2,000 humanoid robots with Nvidia",
     "source": "Reuters",
-    "extract": "Beijing has proposed export controls covering 23 AI technologies as part of a wider review of strategic technology exports. The draft targets some overseas deployments involving sensitive model technology while proposing to keep ordinary access through APIs, apps and software-as-a-service outside the restrictions.",
-    "image": null,
-    "link": "https://www.reuters.com/world/asia-pacific/china-proposes-adding-40-ai-biotech-solar-technologies-export-control-list-2026-10-16/",
+    "extract": "Agile Robots plans to produce 1,000–2,000 compact humanoid robots in 2027 through a partnership with Nvidia. The research-oriented machines combine Agile's hardware with Nvidia computing and software, aiming to save labs months of integration work.",
+    "image": "https://www.reuters.com/resizer/v2/ULPCAYDYZZOELJD6C2BPPNHMKM.jpg?auth=8b07595b70253cbbc970709a25498c3c6efce359c4dd90d03f75e972f296271e&quality=80&width=1080",
+    "link": "https://www.reuters.com/business/germanys-agile-make-2000-humanoid-robots-with-nvidia-ceo-says-2026-10-21/",
     "category": "Technology",
-    "published": "2026-10-16T08:31:00Z"
+    "published": "2026-10-21T12:02:00Z"
   },
   {
-    "title": "IMF chief warns AI risks could outweigh its benefits without safeguards",
+    "title": "OpenAI president urges AI safeguards as group he funds opposes regulation",
     "source": "Reuters",
-    "extract": "IMF managing director Kristalina Georgieva says artificial intelligence could deliver substantial economic gains but also negative shocks if productivity improvements fail to materialise or safeguards are inadequate. Her remarks add to the debate about governance and financial stability as AI adoption accelerates.",
-    "image": null,
-    "link": "https://www.reuters.com/technology/imf-chief-says-ai-risks-may-exceed-opportunities-without-safeguards-ethical-2026-10-16/",
+    "extract": "A political group supported by OpenAI president Greg Brockman is spending millions to back candidates opposed to restrictions on AI development, even as executives call for federal safety rules. The reporting examines the tension between public safety messaging and industry lobbying.",
+    "image": "https://www.reuters.com/resizer/v2/AEHG2SVRJJOGPPZH4WL7TCP7AM.jpg?auth=3b4d7cd4dff11c04085a1046184951c09e7bda2d4b93e93bcaaf126d2d15bba6&quality=80&width=1080",
+    "link": "https://www.reuters.com/legal/litigation/openai-president-urges-ai-safeguards-group-he-funds-opposes-regulation-2026-10-21/",
     "category": "Technology",
-    "published": "2026-10-16T08:19:00Z"
+    "published": "2026-10-21T10:02:00Z"
   },
   {
-    "title": "Anthropic's Jack Clark says AI's impact is accelerating rapidly",
-    "source": "Reuters",
-    "extract": "Anthropic co-founder Jack Clark says AI capabilities are advancing at an accelerating pace and could have a major effect on US economic output. He also argues that international coordination will be needed to establish rules as increasingly capable systems spread.",
+    "title": "Prometheus procfs adds Linux NVMe diagnostic counters",
+    "source": "GitHub — prometheus/procfs",
+    "extract": "The Prometheus procfs library now parses Linux 7.2 diagnostic counters for NVMe controllers, namespaces and multipath namespace heads. The new on-demand fields expose command errors, retries, reconnects and path-failure behaviour without forcing every caller to read extra sysfs files.",
     "image": null,
-    "link": "https://www.reuters.com/world/china/anthropics-clark-says-ais-impact-accelerating-quickly-could-vastly-boost-us-gdp-2026-10-17/",
+    "link": "https://github.com/prometheus/procfs/commit/8eaeae9dc99ebb08499bd100187e8ce39912a834",
     "category": "Technology",
-    "published": "2026-10-17T09:15:00Z"
+    "published": "2026-10-20T18:48:33Z"
   },
   {
-    "title": "Many English NHS trusts reject or move away from Palantir patient-data platform",
-    "source": "The Guardian",
-    "extract": "Freedom of information responses show that a number of NHS trusts have declined to use, or have moved away from, the Federated Data Platform supplied by Palantir. Some trusts say it duplicates systems they already have, while others report benefits for scheduling, highlighting the mixed reception for the national programme.",
+    "title": "MAME Home Systems adds BBC Micro models to its system roster",
+    "source": "GitHub — ToolAssisted-run/chimera",
+    "extract": "A new development build lists the BBC Micro Model A, Model B, B+ and Master 128 in the MAME Home Systems core. The project notes that a ROM-based boot test has not yet been performed, so this is a meaningful integration step rather than a claim of complete validation.",
     "image": null,
-    "link": "https://www.theguardian.com/technology/2026/oct/17/palantir-patient-data-tech-rejected-by-many-nhs-trusts-in-england",
-    "category": "Technology",
-    "published": "2026-10-17T06:00:00Z"
-  },
-  {
-    "title": "New Amiga datatype renders PC ANSI art in the IBM VGA font",
-    "source": "GitHub — AmigaDatatypes",
-    "extract": "The new PC ANSI datatype reads .ans BBS screens and .nfo artwork as text, rendering them with the IBM VGA font and 16 colours. The developer says it has been tested against 1,712 files from the 16colo.rs archive, bringing a distinctive PC-era text-art format to Amiga software.",
-    "image": null,
-    "link": "https://github.com/creep-ltx/AmigaDatatypes/commit/1f2b61a30b824e375401036c71f11e3c8ea20836",
+    "link": "https://github.com/ToolAssisted-run/chimera/commit/a11b398a19c00348fd68f710c6fee98dd140f793",
     "category": "Retro Computing",
-    "published": "2026-10-17T09:35:33Z"
+    "published": "2026-10-20T15:05:10Z"
   },
   {
-    "title": "A ZX Spectrum 128K, +2 and +3 emulator is being built for an ESP32-S3 handheld",
-    "source": "GitHub — esp32zx",
-    "extract": "This project brings a Spectrum 128K, +2 and +3 to a 7-inch ESP32-S3 device, including a cycle-aware Z80 and ULA, AY and beeper audio, tape and disk support, snapshots and Bluetooth keyboard input. It is a substantial modern hardware project focused on reproducing the original machines’ behaviour.",
+    "title": "KliveIDE completes +3 ROM annotations and adds ZX Spectrum Next ROM level 2",
+    "source": "GitHub — Dotneteer/kliveide",
+    "extract": "The KliveIDE project has completed annotations for the ZX Spectrum +3 ROMs and added level-two annotations for the ZX Spectrum Next ROMs. The work improves the technical documentation available to people exploring and debugging Spectrum firmware.",
     "image": null,
-    "link": "https://github.com/rlucencic/esp32zx/commit/0f7c989f145176149ace86024b8af9bfff94b875",
-    "category": "Retro Computing Projects",
-    "published": "2026-10-17T09:25:10Z"
+    "link": "https://github.com/Dotneteer/kliveide/commit/4a56aa59659a1c5304847e4a7d96f1fa28a5370a",
+    "category": "Retro Computing",
+    "published": "2026-10-21T11:16:21Z"
   },
   {
-    "title": "Terra Strike brings a Zarch-style 3D landscape shooter to the Amiga",
-    "source": "GitHub — amiga_games",
-    "extract": "A new 68k Amiga game project takes inspiration from Zarch: pilot over a flat-shaded 3D island, attack tanks, buildings and ships, then land to refuel. The project is developing a distinctly modern homebrew game around the look and feel of classic Amiga-era 3D action.",
+    "title": "emu198x releases new Amiga emulator package",
+    "source": "GitHub — emu198x/homebrew-tap",
+    "extract": "The emu198x Homebrew tap has advanced its Amiga emulator package to version 0.43.0. The change makes the new emulator release available through the package manager for users running the project on macOS.",
     "image": null,
-    "link": "https://github.com/geekychris/amiga_games/commit/5c334428650592288d7e7179923f735c8fd19e3d",
-    "category": "Retro Computing Projects",
-    "published": "2026-10-17T08:55:52Z"
+    "link": "https://github.com/emu198x/homebrew-tap/commit/1b06a0b5e7894e5a15df49510b8ea1dd6fc9c4cd",
+    "category": "Retro Computing",
+    "published": "2026-10-21T14:19:25Z"
   },
   {
-    "title": "A new megademo recreates C64 and Amiga demo-scene style in JavaScript and Python",
-    "source": "GitHub — megademo",
-    "extract": "This project builds a modern megademo inspired by Commodore 64 and Amiga productions, using JavaScript and Python in Circuitry Studio. It is a contemporary experiment in recreating the form and atmosphere of classic computer demos.",
+    "title": "emu198x BBC Micro emulator package advances to version 0.43.0",
+    "source": "GitHub — emu198x/homebrew-tap",
+    "extract": "A new Homebrew package update brings the emu198x Acorn BBC Micro emulator to version 0.43.0. This is a fresh release update for the headless emulator project, separate from the MAME Home Systems integration work.",
     "image": null,
-    "link": "https://github.com/johnwylie70/megademo/commit/23f53955da7a6abcee645a646ee577e0179d56a7",
-    "category": "Retro Computing Projects",
-    "published": "2026-10-17T09:45:00Z"
+    "link": "https://github.com/emu198x/homebrew-tap/commit/1b3dcc0f4307f9811f2b0f8e7f448de94b8a4070",
+    "category": "Retro Computing",
+    "published": "2026-10-21T14:19:14Z"
   },
   {
-    "title": "The best recent crime and thrillers: review roundup",
+    "title": "UP-Term improves Amiga console window pen rendering",
+    "source": "GitHub — spotUP/UP-Term",
+    "extract": "UP-Term now draws Amiga pens 0 and 1 using the window's ground colour in a CON: window. It is a small but concrete compatibility improvement for a terminal project targeting Amiga systems.",
+    "image": null,
+    "link": "https://github.com/spotUP/UP-Term/commit/f2cd54d65d94578f5a97ad8cce0e5f419c655c43",
+    "category": "Retro Computing Projects",
+    "published": "2026-10-21T14:38:33Z"
+  },
+  {
+    "title": "emu198x adds C64 tape autoloading and media selection before boot",
+    "source": "GitHub — emu198x/emu198x",
+    "extract": "The emulator now supports automatically loading Commodore 64 tapes in Fleet and selecting media before the machine boots. The change makes a common home-computer workflow easier to reproduce in the modern emulator.",
+    "image": null,
+    "link": "https://github.com/emu198x/emu198x/commit/404ed4e95b3af75516cefdaaf13a68c0f2bb4e6a",
+    "category": "Retro Computing Projects",
+    "published": "2026-10-21T13:20:59Z"
+  },
+  {
+    "title": "The Mystery of What Befell in the Ditch brings Thure Erik Lund into English",
     "source": "The Guardian",
-    "extract": "This roundup surveys new crime and thriller fiction, including Ian Rankin’s The Heights and several mysteries built around family secrets, inheritance and investigation. It offers a useful cross-section of current work in the crime and thriller genres.",
-    "image": null,
-    "link": "https://www.theguardian.com/books/2026/oct/16/the-best-recent-and-thrillers-review-roundup",
+    "extract": "Thure Erik Lund's novel, originally published in 1999, arrives in English as a bleakly comic and linguistically inventive portrait of a man railing against modernity. The review connects its Norwegian setting to broader questions about cultural commodification, technology and alienation.",
+    "image": "https://i.guim.co.uk/img/media/e5ed58ba13b3890c65a23deea188045309736783/0_456_2667_2133/master/2667.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/books/2026/oct/21/the-mystery-of-what-befell-in-the-ditch-by-thure-erik-lund-review-is-this-the-greatest-living-norwegian-writer",
     "category": "Books",
-    "published": "2026-10-16T11:00:00Z"
+    "published": "2026-10-21T08:00:00Z"
   },
   {
-    "title": "Tim Jeal obituary: biographer who reshaped views of Victorian explorers",
+    "title": "Ghosts: The Possession of Button House takes its comedy to the screen",
     "source": "The Guardian",
-    "extract": "The biographer and novelist Tim Jeal, who has died aged 81, challenged received accounts of figures including Henry Morton Stanley, David Livingstone and Robert Baden-Powell. His work combined historical research with a willingness to question heroic national narratives.",
+    "extract": "The review covers the Ghosts film spin-off, which keeps the British sitcom's playful supernatural comedy while widening its scope. The cast have also discussed the possibility of further stories, including a caveman-themed spin-off.",
     "image": null,
-    "link": "https://www.theguardian.com/books/2026/oct/15/tim-jeal-obituary",
-    "category": "Books",
-    "published": "2026-10-15T15:14:00Z"
-  },
-  {
-    "title": "From The Shining to Trainspotting: what makes a great film adaptation?",
-    "source": "The Guardian",
-    "extract": "A look at successful adaptations argues that films often work best when they creatively reinterpret their source material rather than reproduce it faithfully. Examples such as The Shining and Children of Men show how directors can preserve a story’s force while making something distinct for the screen.",
-    "image": null,
-    "link": "https://www.theguardian.com/film/2026/oct/16/book-film-adaptations-shining-trainspotting-bridget-jones-godfather-clockwork-orange-silence-lambs",
+    "link": "https://www.theguardian.com/film/2026/oct/21/ghosts-the-possession-of-button-house-review",
     "category": "Entertainment",
-    "published": "2026-10-16T12:00:00Z"
+    "published": "2026-10-21T06:00:00Z"
   },
   {
-    "title": "The Face of Horror review: a playful, stylish spin on Hammer horror",
+    "title": "Scream review: Wes Craven's meta-horror remains sharp 30 years on",
     "source": "The Guardian",
-    "extract": "Anna Biller’s horror film borrows the flavour of 1960s Hammer while relocating its ghost-story sensibility to medieval Japan. The review praises its playful genre touches, black comedy and striking visual style, describing it as a potential cult favourite.",
+    "extract": "A new review revisits Scream three decades after the original's arrival, praising how its self-aware slasher conventions still deliver suspense and wit. It is a useful reminder of the influence the film's genre-savvy approach continues to have.",
     "image": null,
-    "link": "https://www.theguardian.com/film/2026/oct/16/the-face-of-horror-review-anna-biller-london-film-festival",
+    "link": "https://www.theguardian.com/film/2026/oct/21/scream-review-wes-craven-meta-horror-remains-super-smart-and-scary-30-years-on",
     "category": "Entertainment",
-    "published": "2026-10-16T05:30:00Z"
+    "published": "2026-10-21T10:00:00Z"
   },
   {
-    "title": "Klara and the Sun review: Taika Waititi's adaptation is a sentimental robot story",
+    "title": "You Can See Everything mania lifts viewership for The Dropout",
     "source": "The Guardian",
-    "extract": "Taika Waititi adapts Kazuo Ishiguro’s novel about an artificial friend observing a human family in a near-future world shaped by advanced technology. The review is critical of the film’s tone, but the subject makes it a notable science-fiction adaptation about artificial intelligence and personhood.",
+    "extract": "The documentary You Can See Everything has generated enough attention to lift viewership for The Dropout by 186%, according to the report. The story is an unusual look at how a new documentary can send audiences back to an earlier television treatment of the same subject.",
     "image": null,
-    "link": "https://www.theguardian.com/film/2026/oct/15/klara-and-the-sun-review-taika-waititi-kazuo-ishiguro",
+    "link": "https://www.theguardian.com/film/2026/oct/20/you-can-see-everything-mania-lifts-viewership-for-the-dropout-by-186",
     "category": "Entertainment",
-    "published": "2026-10-15T20:15:00Z"
+    "published": "2026-10-20T21:16:00Z"
   },
   {
-    "title": "Look Back review: Kore-eda adapts a manga about friendship and artistic ambition",
+    "title": "Spielberg's War of the Worlds forced Americans to look in the mirror",
     "source": "The Guardian",
-    "extract": "Hirokazu Kore-eda’s live-action adaptation of Tatsuki Fujimoto’s manga follows two young artists whose friendship is shaped by ambition, collaboration and loss. It brings the manga’s emotional intensity to a film screened at the London Film Festival.",
+    "extract": "A new essay revisits Steven Spielberg's War of the Worlds as a science-fiction film shaped by American fears and political anxieties. It treats the alien invasion as a lens on human behaviour rather than just a spectacle-driven disaster movie.",
     "image": null,
-    "link": "https://www.theguardian.com/film/2026/oct/16/look-back-review-hirokazu-kore-eda",
+    "link": "https://www.theguardian.com/culture/2026/oct/21/spielberg-tom-cruise-war-of-the-worlds-film-review",
     "category": "Entertainment",
-    "published": "2026-10-16T16:50:00Z"
-  },
-  {
-    "title": "Masterplan review: a glossy heist caper with spy-tech gimmicks",
-    "source": "The Guardian",
-    "extract": "Stanley Tucci stars in a heist comedy built around a Louvre robbery and technological tricks including retinal-scan cloning and virtual-reality intrusion. The review finds the caper lightweight, but its mix of espionage, comedy and gadgetry makes it an entertaining genre release to track.",
-    "image": null,
-    "link": "https://www.theguardian.com/film/2026/oct/16/masterplan-stanley-tucci-movie-review",
-    "category": "Entertainment",
-    "published": "2026-10-16T19:24:00Z"
-  },
-  {
-    "title": "Winnie-the-Pooh turns 100 as the character's cultural life continues",
-    "source": "The Guardian",
-    "extract": "A century after A. A. Milne’s first Pooh book, new BBC programmes and commemorations revisit the bear’s history and his place in popular culture. The anniversary is also a reminder of how a literary character became a lasting presence across illustration, animation and merchandise.",
-    "image": null,
-    "link": "https://www.theguardian.com/commentisfree/2026/oct/16/the-guardian-view-on-winnie-the-pooh-now-we-are-100",
-    "category": "Entertainment",
-    "published": "2026-10-16T16:52:00Z"
+    "published": "2026-10-21T14:00:00Z"
   }
 ]
