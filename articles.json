@@ -1,137 +1,128 @@
 [
   {
-    "title": "Ferrari CEO hails Tesla Roadster redesign as bold innovation",
+    "title": "Cloudflare reports millions of attempts after PHP flaw disclosure",
     "source": "Reuters",
-    "extract": "Ferrari CEO Benedetto Vigna praised the redesigned Tesla Roadster as an example of the bold innovation the car industry needs. The Roadster presentation included dramatic airborne manoeuvres and SpaceX-derived thrusters; production is planned for 2028.",
-    "image": "https://www.reuters.com/resizer/v2/QEV2L4U7PVIERAX2JANLQZT6N4.jpg?auth=91f741c9f357a74512cd3322a1f00087aaec3f843cffd19430803e96b0173ced&quality=80&width=1080",
-    "link": "https://www.reuters.com/business/autos-transportation/ferrari-ceo-hails-tesla-roadster-redesign-bold-innovation-industry-needs-2026-10-20/",
-    "category": "Automotive",
-    "published": "2026-10-20T13:56:00Z"
+    "extract": "Cloudflare says attempts against newly disclosed PHP flaws rose from thousands before disclosure to millions afterwards. Developers have released fixes, and some operators temporarily restricted services while updating affected systems.",
+    "image": null,
+    "link": "https://www.reuters.com/world/asia-pacific/cloudflare-sees-millions-exploit-attempts-after-php-disclosure-2026-10-22/",
+    "category": "Technology",
+    "published": "2026-10-22T04:08:00Z"
   },
   {
-    "title": "Germany's Agile Robots plans to build up to 2,000 humanoid robots with Nvidia",
+    "title": "Anthropic unveils Claude Duet AI agent app",
     "source": "Reuters",
-    "extract": "Agile Robots plans to produce 1,000–2,000 compact humanoid robots in 2027 through a partnership with Nvidia. The research-oriented machines combine Agile's hardware with Nvidia computing and software, aiming to save labs months of integration work.",
-    "image": "https://www.reuters.com/resizer/v2/ULPCAYDYZZOELJD6C2BPPNHMKM.jpg?auth=8b07595b70253cbbc970709a25498c3c6efce359c4dd90d03f75e972f296271e&quality=80&width=1080",
-    "link": "https://www.reuters.com/business/germanys-agile-make-2000-humanoid-robots-with-nvidia-ceo-says-2026-10-21/",
+    "extract": "Anthropic has introduced Claude Duet, a standalone agent app for daily briefings and tasks such as scheduling, financial forecasts and web apps. Its waitlisted research preview connects to thousands of integrations and requires approval for sensitive actions.",
+    "image": null,
+    "link": "https://www.reuters.com/technology/anthropic-unveils-claude-duet-ai-agent-app-2026-10-21/",
     "category": "Technology",
-    "published": "2026-10-21T12:02:00Z"
+    "published": "2026-10-21T20:19:40Z"
   },
   {
-    "title": "OpenAI president urges AI safeguards as group he funds opposes regulation",
+    "title": "Microsoft details campaign targeting ConnectWise Cloud Backup",
     "source": "Reuters",
-    "extract": "A political group supported by OpenAI president Greg Brockman is spending millions to back candidates opposed to restrictions on AI development, even as executives call for federal safety rules. The reporting examines the tension between public safety messaging and industry lobbying.",
-    "image": "https://www.reuters.com/resizer/v2/AEHG2SVRJJOGPPZH4WL7TCP7AM.jpg?auth=3b4d7cd4dff11c04085a1046184951c09e7bda2d4b93e93bcaaf126d2d15bba6&quality=80&width=1080",
-    "link": "https://www.reuters.com/legal/litigation/openai-president-urges-ai-safeguards-group-he-funds-opposes-regulation-2026-10-21/",
+    "extract": "Microsoft attributes a global campaign targeting hundreds of organisations to the Storm-0940 group, which used an open-source security-testing framework. The investigation found several cases of elevated cloud access across finance, government, aerospace and energy.",
+    "image": null,
+    "link": "https://www.reuters.com/technology/chinese-linked-hackers-compromise-connectwise-target-hundreds-global-attack-2026-10-21/",
     "category": "Technology",
-    "published": "2026-10-21T10:02:00Z"
+    "published": "2026-10-21T21:16:00Z"
   },
   {
-    "title": "Prometheus procfs adds Linux NVMe diagnostic counters",
-    "source": "GitHub — prometheus/procfs",
-    "extract": "The Prometheus procfs library now parses Linux 7.2 diagnostic counters for NVMe controllers, namespaces and multipath namespace heads. The new on-demand fields expose command errors, retries, reconnects and path-failure behaviour without forcing every caller to read extra sysfs files.",
+    "title": "Flight Simulator II over Chicago",
+    "source": "GitHub — ivanizag/apple2-activities",
+    "extract": "A new Apple II+ demonstration runs subLOGIC's Flight Simulator II version 2.0 from an original disk image. The repeatable flight leaves Meigs Field, passes Chicago's towers, dives into Lake Michigan and finishes with a night-time runway view.",
     "image": null,
-    "link": "https://github.com/prometheus/procfs/commit/8eaeae9dc99ebb08499bd100187e8ce39912a834",
-    "category": "Technology",
-    "published": "2026-10-20T18:48:33Z"
-  },
-  {
-    "title": "MAME Home Systems adds BBC Micro models to its system roster",
-    "source": "GitHub — ToolAssisted-run/chimera",
-    "extract": "A new development build lists the BBC Micro Model A, Model B, B+ and Master 128 in the MAME Home Systems core. The project notes that a ROM-based boot test has not yet been performed, so this is a meaningful integration step rather than a claim of complete validation.",
-    "image": null,
-    "link": "https://github.com/ToolAssisted-run/chimera/commit/a11b398a19c00348fd68f710c6fee98dd140f793",
+    "link": "https://github.com/ivanizag/apple2-activities/commit/2a827e150bdc3e68aaff0ec697bf41b7fcf0b2af",
     "category": "Retro Computing",
-    "published": "2026-10-20T15:05:10Z"
+    "published": "2026-10-21T22:09:37Z"
   },
   {
-    "title": "KliveIDE completes +3 ROM annotations and adds ZX Spectrum Next ROM level 2",
-    "source": "GitHub — Dotneteer/kliveide",
-    "extract": "The KliveIDE project has completed annotations for the ZX Spectrum +3 ROMs and added level-two annotations for the ZX Spectrum Next ROMs. The work improves the technical documentation available to people exploring and debugging Spectrum firmware.",
+    "title": "AmigaOS 3.x gets an OpenSSH 10.6 client and key generator",
+    "source": "GitHub — farsonic/AmiBash",
+    "extract": "AmiBash now packages OpenSSH 10.6's ssh client and ssh-keygen for AmigaOS 3.x on 68020-or-newer systems. The port works without OpenSSL and supports modern key and key-exchange algorithms; it has been tested under AROS and FS-UAE.",
     "image": null,
-    "link": "https://github.com/Dotneteer/kliveide/commit/4a56aa59659a1c5304847e4a7d96f1fa28a5370a",
-    "category": "Retro Computing",
-    "published": "2026-10-21T11:16:21Z"
-  },
-  {
-    "title": "emu198x releases new Amiga emulator package",
-    "source": "GitHub — emu198x/homebrew-tap",
-    "extract": "The emu198x Homebrew tap has advanced its Amiga emulator package to version 0.43.0. The change makes the new emulator release available through the package manager for users running the project on macOS.",
-    "image": null,
-    "link": "https://github.com/emu198x/homebrew-tap/commit/1b06a0b5e7894e5a15df49510b8ea1dd6fc9c4cd",
-    "category": "Retro Computing",
-    "published": "2026-10-21T14:19:25Z"
-  },
-  {
-    "title": "emu198x BBC Micro emulator package advances to version 0.43.0",
-    "source": "GitHub — emu198x/homebrew-tap",
-    "extract": "A new Homebrew package update brings the emu198x Acorn BBC Micro emulator to version 0.43.0. This is a fresh release update for the headless emulator project, separate from the MAME Home Systems integration work.",
-    "image": null,
-    "link": "https://github.com/emu198x/homebrew-tap/commit/1b3dcc0f4307f9811f2b0f8e7f448de94b8a4070",
-    "category": "Retro Computing",
-    "published": "2026-10-21T14:19:14Z"
-  },
-  {
-    "title": "UP-Term improves Amiga console window pen rendering",
-    "source": "GitHub — spotUP/UP-Term",
-    "extract": "UP-Term now draws Amiga pens 0 and 1 using the window's ground colour in a CON: window. It is a small but concrete compatibility improvement for a terminal project targeting Amiga systems.",
-    "image": null,
-    "link": "https://github.com/spotUP/UP-Term/commit/f2cd54d65d94578f5a97ad8cce0e5f419c655c43",
+    "link": "https://github.com/farsonic/AmiBash/commit/c71b383e19cced2d118401c2597943120f20d686",
     "category": "Retro Computing Projects",
-    "published": "2026-10-21T14:38:33Z"
+    "published": "2026-10-22T04:10:13Z"
   },
   {
-    "title": "emu198x adds C64 tape autoloading and media selection before boot",
-    "source": "GitHub — emu198x/emu198x",
-    "extract": "The emulator now supports automatically loading Commodore 64 tapes in Fleet and selecting media before the machine boots. The change makes a common home-computer workflow easier to reproduce in the modern emulator.",
+    "title": "ESP32 emulator adds runtime-selectable Motorola 68k CPU support",
+    "source": "GitHub — rlucencic/esp32emu",
+    "extract": "The ESP32-based emulator can now choose its Motorola 68k CPU type at runtime rather than compiling a fixed processor variant. That lets Amiga A500 and A1200 configurations share one firmware image; the author reports no slowdown in a host-side Kick Off 2 comparison.",
     "image": null,
-    "link": "https://github.com/emu198x/emu198x/commit/404ed4e95b3af75516cefdaaf13a68c0f2bb4e6a",
+    "link": "https://github.com/rlucencic/esp32emu/commit/e6e73cd0875819b6a9244c0ccacd605163f2dc30",
     "category": "Retro Computing Projects",
-    "published": "2026-10-21T13:20:59Z"
+    "published": "2026-10-22T04:43:10Z"
   },
   {
-    "title": "The Mystery of What Befell in the Ditch brings Thure Erik Lund into English",
+    "title": "Emuwiz adds ZX Spectrum media inspection and preservation-only RZX recordings",
+    "source": "GitHub — kiehntre/emuwiz",
+    "extract": "Emuwiz adds structural inspection for Spectrum PZX, NEX, UDI and MDR media formats, distinguishing validated, partial, unsupported and ambiguous files. RZX gameplay recordings are now preserved as records rather than launchable games, with fingerprint checks to detect later changes.",
+    "image": null,
+    "link": "https://github.com/kiehntre/emuwiz/commit/64a86b92efb89bc221670466c070534f3a2c8974",
+    "category": "Retro Computing Projects",
+    "published": "2026-10-22T04:53:12Z"
+  },
+  {
+    "title": "Applecorn runs BBC Micro language ROMs on an Apple IIe",
+    "source": "GitHub — ivanizag/apple2-activities",
+    "extract": "A new Applecorn demonstration runs BBC Micro language ROMs unchanged on an enhanced Apple IIe through a BBC operating-system implementation for ProDOS. The page shows BBC BASIC graphics and examples in COMAL, Lisp, Forth, micro-PROLOG, BCPL and Pascal.",
+    "image": null,
+    "link": "https://github.com/ivanizag/apple2-activities/commit/6ad1b4f8d33fbe12ea14a7ead8fc88b09d7cb5cc",
+    "category": "Retro Computing Projects",
+    "published": "2026-10-21T21:40:12Z"
+  },
+  {
+    "title": "FES advances C64 FPGA emulation with native 1541 drive firmware and MOS6581 audio",
+    "source": "GitHub — DeanoC/fes",
+    "extract": "The open-source FPGA-based Fogger Expandable System is pushing its Commodore 64 implementation closer to original hardware behaviour. Recent work runs 1541 disk-drive firmware on a development CPU and VIA, adds native PAL timing and continues cycle-level fixes for the VIC, CIA, CPU and disk interface.",
+    "image": null,
+    "link": "https://github.com/DeanoC/fes/commit/8eff4a0f33e139101df0be7d7fbe1d082ce8c2a3",
+    "category": "Retro Computing Projects",
+    "published": "2026-10-21T09:49:09Z"
+  },
+  {
+    "title": "Unreal-NG improves Spectrum Next extended keys and host keyboard mapping",
+    "source": "GitHub — alfishe/unreal-ng",
+    "extract": "The emulator now handles the ZX Spectrum Next's 16 extended membrane keys as distinct inputs and improves punctuation, keypad and shortcut mapping across host operating systems. The update also refines keyboard overlays for the Spectrum+, Next, Forum and Profi configurations.",
+    "image": null,
+    "link": "https://github.com/alfishe/unreal-ng/commit/cca31182be4bd2bf28f9454bb474e258e1838a87",
+    "category": "Retro Computing Projects",
+    "published": "2026-10-22T01:52:25Z"
+  },
+  {
+    "title": "Spatterlight restores Finder previews for Spectrum, C64 and Apple II game files",
+    "source": "GitHub — angstsmurf/spatterlight",
+    "extract": "Spatterlight's Quick Look preview and thumbnail extensions now cover more interactive-fiction and retro-game formats, including Spectrum snapshots and tapes, Commodore 64 disk and tape images, and Apple II disk images. The change also fixes an extension-registration bug that prevented thumbnails for later file types.",
+    "image": null,
+    "link": "https://github.com/angstsmurf/spatterlight/commit/21f5c424070ef4e30271e9f0cdf9504bd447502c",
+    "category": "Retro Computing Projects",
+    "published": "2026-10-20T23:43:09Z"
+  },
+  {
+    "title": "Moria8 begins an Atari 8-bit port of the classic roguelike",
+    "source": "GitHub — dcgibbons/moria8",
+    "extract": "Moria8, an assembly port of the classic Moria roguelike, has added an in-progress Atari 8-bit target. The project already has released builds for the Commodore 64, Plus/4, C128 and Apple II, with more vintage platforms planned.",
+    "image": null,
+    "link": "https://github.com/dcgibbons/moria8/commit/9368eab76558e7e0b1e76a7ef1006ed95cf41727",
+    "category": "Retro Computing Projects",
+    "published": "2026-10-22T02:48:23Z"
+  },
+  {
+    "title": "MAME Home Systems improves keyboard layouts across emulated machines",
+    "source": "GitHub — ToolAssisted-run/chimera-core-mamehome",
+    "extract": "The MAME Home Systems core now displays keyboards in rows using each machine's matrix or named keys, including Amstrad CPC models, the BBC Micro and TI-83. It also separates joystick and controller entries that were previously interleaved.",
+    "image": null,
+    "link": "https://github.com/ToolAssisted-run/chimera-core-mamehome/commit/76db90857cbfd6d78dd1afeab59f4ea2cbaf036a",
+    "category": "Retro Computing Projects",
+    "published": "2026-10-21T16:43:29Z"
+  },
+  {
+    "title": "On Another Planet They Can Save Me by Lieke Marsman review",
     "source": "The Guardian",
-    "extract": "Thure Erik Lund's novel, originally published in 1999, arrives in English as a bleakly comic and linguistically inventive portrait of a man railing against modernity. The review connects its Norwegian setting to broader questions about cultural commodification, technology and alienation.",
-    "image": "https://i.guim.co.uk/img/media/e5ed58ba13b3890c65a23deea188045309736783/0_456_2667_2133/master/2667.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/oct/21/the-mystery-of-what-befell-in-the-ditch-by-thure-erik-lund-review-is-this-the-greatest-living-norwegian-writer",
+    "extract": "The late Dutch poet Lieke Marsman's posthumous memoir explores how terminal illness unsettled her rational worldview, including her ideas about God and extraterrestrial life. The review describes a playful, humane book arguing for openness and hope when certainty breaks down.",
+    "image": null,
+    "link": "https://www.theguardian.com/books/2026/oct/21/on-another-planet-they-can-save-me-by-lieke-marsman-review-an-astonishing-memoir-of-terminal-illness",
     "category": "Books",
-    "published": "2026-10-21T08:00:00Z"
-  },
-  {
-    "title": "Ghosts: The Possession of Button House takes its comedy to the screen",
-    "source": "The Guardian",
-    "extract": "The review covers the Ghosts film spin-off, which keeps the British sitcom's playful supernatural comedy while widening its scope. The cast have also discussed the possibility of further stories, including a caveman-themed spin-off.",
-    "image": null,
-    "link": "https://www.theguardian.com/film/2026/oct/21/ghosts-the-possession-of-button-house-review",
-    "category": "Entertainment",
     "published": "2026-10-21T06:00:00Z"
-  },
-  {
-    "title": "Scream review: Wes Craven's meta-horror remains sharp 30 years on",
-    "source": "The Guardian",
-    "extract": "A new review revisits Scream three decades after the original's arrival, praising how its self-aware slasher conventions still deliver suspense and wit. It is a useful reminder of the influence the film's genre-savvy approach continues to have.",
-    "image": null,
-    "link": "https://www.theguardian.com/film/2026/oct/21/scream-review-wes-craven-meta-horror-remains-super-smart-and-scary-30-years-on",
-    "category": "Entertainment",
-    "published": "2026-10-21T10:00:00Z"
-  },
-  {
-    "title": "You Can See Everything mania lifts viewership for The Dropout",
-    "source": "The Guardian",
-    "extract": "The documentary You Can See Everything has generated enough attention to lift viewership for The Dropout by 186%, according to the report. The story is an unusual look at how a new documentary can send audiences back to an earlier television treatment of the same subject.",
-    "image": null,
-    "link": "https://www.theguardian.com/film/2026/oct/20/you-can-see-everything-mania-lifts-viewership-for-the-dropout-by-186",
-    "category": "Entertainment",
-    "published": "2026-10-20T21:16:00Z"
-  },
-  {
-    "title": "Spielberg's War of the Worlds forced Americans to look in the mirror",
-    "source": "The Guardian",
-    "extract": "A new essay revisits Steven Spielberg's War of the Worlds as a science-fiction film shaped by American fears and political anxieties. It treats the alien invasion as a lens on human behaviour rather than just a spectacle-driven disaster movie.",
-    "image": null,
-    "link": "https://www.theguardian.com/culture/2026/oct/21/spielberg-tom-cruise-war-of-the-worlds-film-review",
-    "category": "Entertainment",
-    "published": "2026-10-21T14:00:00Z"
   }
 ]
