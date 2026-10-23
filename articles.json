@@ -1,128 +1,83 @@
 [
   {
-    "title": "Cloudflare reports millions of attempts after PHP flaw disclosure",
-    "source": "Reuters",
-    "extract": "Cloudflare says attempts against newly disclosed PHP flaws rose from thousands before disclosure to millions afterwards. Developers have released fixes, and some operators temporarily restricted services while updating affected systems.",
+    "title": "OpenBSD 8.0 expands virtual machines and brings a proposed Wine port",
+    "source": "The Register",
+    "extract": "OpenBSD 8.0 raises the x86-64 kernel virtual-memory address space to 512GB, supports multiprocessor virtual machines with up to 64 vCPUs, adds Arm64 hibernation and updates OpenSSH, LibreSSL and graphics drivers. Separately, a proposed 64-bit Wine port could let some Windows applications run on OpenBSD.",
     "image": null,
-    "link": "https://www.reuters.com/world/asia-pacific/cloudflare-sees-millions-exploit-attempts-after-php-disclosure-2026-10-22/",
+    "link": "https://www.theregister.com/os-platforms/2026/10/21/openbsd-80-beefs-up-virtual-machines-and-gets-a-taste-of-wine/5304430",
     "category": "Technology",
-    "published": "2026-10-22T04:08:00Z"
+    "published": "2026-10-21T16:45:00Z"
   },
   {
-    "title": "Anthropic unveils Claude Duet AI agent app",
-    "source": "Reuters",
-    "extract": "Anthropic has introduced Claude Duet, a standalone agent app for daily briefings and tasks such as scheduling, financial forecasts and web apps. Its waitlisted research preview connects to thousands of integrations and requires approval for sensitive actions.",
+    "title": "Signal calling bug could leave audio or video active after hangup",
+    "source": "The Register",
+    "extract": "A flaw in Signal's RingRTC calling library could prevent a hang-up request from being processed if its event queue is overwhelmed. The fixed library version is 2.72.0; users should update their Signal apps to ensure they have the corrected code.",
     "image": null,
-    "link": "https://www.reuters.com/technology/anthropic-unveils-claude-duet-ai-agent-app-2026-10-21/",
+    "link": "https://www.theregister.com/security/2026/10/21/signal-bug-could-keep-your-mic-and-camera-on-after-hangup/5304528",
     "category": "Technology",
-    "published": "2026-10-21T20:19:40Z"
+    "published": "2026-10-21T18:00:00Z"
   },
   {
-    "title": "Microsoft details campaign targeting ConnectWise Cloud Backup",
-    "source": "Reuters",
-    "extract": "Microsoft attributes a global campaign targeting hundreds of organisations to the Storm-0940 group, which used an open-source security-testing framework. The investigation found several cases of elevated cloud access across finance, government, aerospace and energy.",
+    "title": "AI speeds up coding but floods open-source maintainers with low-quality pull requests",
+    "source": "The Register",
+    "extract": "A Linux Foundation survey found maintainers estimate that about a quarter of incoming pull requests are low-quality AI-generated contributions, rising to 31% on larger projects. Respondents said generative AI reduced code-authoring time, while raising new challenges around review, trust and project policies.",
     "image": null,
-    "link": "https://www.reuters.com/technology/chinese-linked-hackers-compromise-connectwise-target-hundreds-global-attack-2026-10-21/",
+    "link": "https://www.theregister.com/ai-and-ml/2026/10/21/ai-cuts-coding-time-but-its-also-filling-open-sources-inbox-with-crap/5304389",
     "category": "Technology",
-    "published": "2026-10-21T21:16:00Z"
+    "published": "2026-10-21T13:43:00Z"
   },
   {
-    "title": "Flight Simulator II over Chicago",
-    "source": "GitHub — ivanizag/apple2-activities",
-    "extract": "A new Apple II+ demonstration runs subLOGIC's Flight Simulator II version 2.0 from an original disk image. The repeatable flight leaves Meigs Field, passes Chicago's towers, dives into Lake Michigan and finishes with a night-time runway view.",
-    "image": null,
-    "link": "https://github.com/ivanizag/apple2-activities/commit/2a827e150bdc3e68aaff0ec697bf41b7fcf0b2af",
-    "category": "Retro Computing",
-    "published": "2026-10-21T22:09:37Z"
+    "title": "Aston Martin unveils a special United States Grand Prix livery",
+    "source": "Formula 1",
+    "extract": "Aston Martin's AMR26 will wear a one-off light-blue-accented design at Austin to mark five years of partnership with Cognizant. The team says the livery celebrates the collaboration, which now includes Cognizant's role as its Global AI Services Partner.",
+    "image": "https://media.formula1.com/image/upload/t_16by9South/c_fit%2Cw_3200%2Ch_1800/q_auto/v1740000001/fom-website/2026/Aston%20Martin/87802686-3337-19f7-f906-9ec5bb330be3.webp",
+    "link": "https://www.formula1.com/en/latest/article/gallery-aston-martin-reveal-special-livery-for-united-states-grand-prix.54xJBwPZxuLxE2ON1Oh2bi",
+    "category": "Automotive",
+    "published": "2026-10-21T16:45:00Z"
   },
   {
-    "title": "AmigaOS 3.x gets an OpenSSH 10.6 client and key generator",
-    "source": "GitHub — farsonic/AmiBash",
-    "extract": "AmiBash now packages OpenSSH 10.6's ssh client and ssh-keygen for AmigaOS 3.x on 68020-or-newer systems. The port works without OpenSSL and supports modern key and key-exchange algorithms; it has been tested under AROS and FS-UAE.",
-    "image": null,
-    "link": "https://github.com/farsonic/AmiBash/commit/c71b383e19cced2d118401c2597943120f20d686",
-    "category": "Retro Computing Projects",
-    "published": "2026-10-22T04:10:13Z"
+    "title": "Ferrari's United States Grand Prix livery turns the car into an engineering blueprint",
+    "source": "Formula 1",
+    "extract": "Ferrari and title partner HP have created a special SF-26 livery covered in technical sketches, power-unit schematics and gearbox drawings. The design is intended to put the engineering work behind a Formula 1 car centre stage and will run on both Ferrari cars in Austin.",
+    "image": "https://media.formula1.com/image/upload/c_fit%2Cw_3200%2Ch_1800/q_auto/v1740000001/fom-website/2026/Ferrari/F1_F678_AUSTIN_stills_c01_v05_16_9_d7fe13e5-7aa3-4a16-b360-c58ac37d9d07.webp",
+    "link": "https://www.formula1.com/en/latest/article/gallery-ferrari-become-latest-team-to-unveil-special-livery-for-united-states-grand-prix.4EbG3ECmHt6RxHQYeFPkvD",
+    "category": "Automotive",
+    "published": "2026-10-21T20:43:00Z"
   },
   {
-    "title": "ESP32 emulator adds runtime-selectable Motorola 68k CPU support",
-    "source": "GitHub — rlucencic/esp32emu",
-    "extract": "The ESP32-based emulator can now choose its Motorola 68k CPU type at runtime rather than compiling a fixed processor variant. That lets Amiga A500 and A1200 configurations share one firmware image; the author reports no slowdown in a host-side Kick Off 2 comparison.",
-    "image": null,
-    "link": "https://github.com/rlucencic/esp32emu/commit/e6e73cd0875819b6a9244c0ccacd605163f2dc30",
-    "category": "Retro Computing Projects",
-    "published": "2026-10-22T04:43:10Z"
-  },
-  {
-    "title": "Emuwiz adds ZX Spectrum media inspection and preservation-only RZX recordings",
-    "source": "GitHub — kiehntre/emuwiz",
-    "extract": "Emuwiz adds structural inspection for Spectrum PZX, NEX, UDI and MDR media formats, distinguishing validated, partial, unsupported and ambiguous files. RZX gameplay recordings are now preserved as records rather than launchable games, with fingerprint checks to detect later changes.",
-    "image": null,
-    "link": "https://github.com/kiehntre/emuwiz/commit/64a86b92efb89bc221670466c070534f3a2c8974",
-    "category": "Retro Computing Projects",
-    "published": "2026-10-22T04:53:12Z"
-  },
-  {
-    "title": "Applecorn runs BBC Micro language ROMs on an Apple IIe",
-    "source": "GitHub — ivanizag/apple2-activities",
-    "extract": "A new Applecorn demonstration runs BBC Micro language ROMs unchanged on an enhanced Apple IIe through a BBC operating-system implementation for ProDOS. The page shows BBC BASIC graphics and examples in COMAL, Lisp, Forth, micro-PROLOG, BCPL and Pascal.",
-    "image": null,
-    "link": "https://github.com/ivanizag/apple2-activities/commit/6ad1b4f8d33fbe12ea14a7ead8fc88b09d7cb5cc",
-    "category": "Retro Computing Projects",
-    "published": "2026-10-21T21:40:12Z"
-  },
-  {
-    "title": "FES advances C64 FPGA emulation with native 1541 drive firmware and MOS6581 audio",
-    "source": "GitHub — DeanoC/fes",
-    "extract": "The open-source FPGA-based Fogger Expandable System is pushing its Commodore 64 implementation closer to original hardware behaviour. Recent work runs 1541 disk-drive firmware on a development CPU and VIA, adds native PAL timing and continues cycle-level fixes for the VIC, CIA, CPU and disk interface.",
-    "image": null,
-    "link": "https://github.com/DeanoC/fes/commit/8eff4a0f33e139101df0be7d7fbe1d082ce8c2a3",
-    "category": "Retro Computing Projects",
-    "published": "2026-10-21T09:49:09Z"
-  },
-  {
-    "title": "Unreal-NG improves Spectrum Next extended keys and host keyboard mapping",
-    "source": "GitHub — alfishe/unreal-ng",
-    "extract": "The emulator now handles the ZX Spectrum Next's 16 extended membrane keys as distinct inputs and improves punctuation, keypad and shortcut mapping across host operating systems. The update also refines keyboard overlays for the Spectrum+, Next, Forum and Profi configurations.",
-    "image": null,
-    "link": "https://github.com/alfishe/unreal-ng/commit/cca31182be4bd2bf28f9454bb474e258e1838a87",
-    "category": "Retro Computing Projects",
-    "published": "2026-10-22T01:52:25Z"
-  },
-  {
-    "title": "Spatterlight restores Finder previews for Spectrum, C64 and Apple II game files",
-    "source": "GitHub — angstsmurf/spatterlight",
-    "extract": "Spatterlight's Quick Look preview and thumbnail extensions now cover more interactive-fiction and retro-game formats, including Spectrum snapshots and tapes, Commodore 64 disk and tape images, and Apple II disk images. The change also fixes an extension-registration bug that prevented thumbnails for later file types.",
-    "image": null,
-    "link": "https://github.com/angstsmurf/spatterlight/commit/21f5c424070ef4e30271e9f0cdf9504bd447502c",
-    "category": "Retro Computing Projects",
-    "published": "2026-10-20T23:43:09Z"
-  },
-  {
-    "title": "Moria8 begins an Atari 8-bit port of the classic roguelike",
-    "source": "GitHub — dcgibbons/moria8",
-    "extract": "Moria8, an assembly port of the classic Moria roguelike, has added an in-progress Atari 8-bit target. The project already has released builds for the Commodore 64, Plus/4, C128 and Apple II, with more vintage platforms planned.",
-    "image": null,
-    "link": "https://github.com/dcgibbons/moria8/commit/9368eab76558e7e0b1e76a7ef1006ed95cf41727",
-    "category": "Retro Computing Projects",
-    "published": "2026-10-22T02:48:23Z"
-  },
-  {
-    "title": "MAME Home Systems improves keyboard layouts across emulated machines",
-    "source": "GitHub — ToolAssisted-run/chimera-core-mamehome",
-    "extract": "The MAME Home Systems core now displays keyboards in rows using each machine's matrix or named keys, including Amstrad CPC models, the BBC Micro and TI-83. It also separates joystick and controller entries that were previously interleaved.",
-    "image": null,
-    "link": "https://github.com/ToolAssisted-run/chimera-core-mamehome/commit/76db90857cbfd6d78dd1afeab59f4ea2cbaf036a",
-    "category": "Retro Computing Projects",
-    "published": "2026-10-21T16:43:29Z"
-  },
-  {
-    "title": "On Another Planet They Can Save Me by Lieke Marsman review",
+    "title": "Female Life on Planet Earth explores a mother's hidden past",
     "source": "The Guardian",
-    "extract": "The late Dutch poet Lieke Marsman's posthumous memoir explores how terminal illness unsettled her rational worldview, including her ideas about God and extraterrestrial life. The review describes a playful, humane book arguing for openness and hope when certainty breaks down.",
+    "extract": "Laleh Khadivi's novel follows an Iranian-American woman who receives photographs suggesting her late mother was involved in the Iranian Revolution's repression of other women. The review highlights the book's mix of family secrets, sardonic domestic observations and questions about inheritance, identity and grief.",
     "image": null,
-    "link": "https://www.theguardian.com/books/2026/oct/21/on-another-planet-they-can-save-me-by-lieke-marsman-review-an-astonishing-memoir-of-terminal-illness",
+    "link": "https://www.theguardian.com/books/2026/oct/22/female-life-on-planet-earth-by-laleh-khadivi-review-a-mothers-secret-past-in-the-iranian-revolution",
     "category": "Books",
-    "published": "2026-10-21T06:00:00Z"
+    "published": "2026-10-22T06:00:00Z"
+  },
+  {
+    "title": "Black Bag turns a bizarre campus experiment into a comic audiobook",
+    "source": "The Guardian",
+    "extract": "Luke Kennard narrates his Booker-shortlisted novel about an unemployed London actor paid to sit inside a black leather bag during university seminars. The review praises Kennard's comic timing while noting the story's more serious reflections on relationships and masculinity.",
+    "image": null,
+    "link": "https://www.theguardian.com/books/2026/oct/22/black-bag-by-luke-kennard-audiobook-review-brilliant-booker-shortlisted-campus-comedy",
+    "category": "Books",
+    "published": "2026-10-22T14:00:00Z"
+  },
+  {
+    "title": "Taika Waititi's Star Wars film is put on ice",
+    "source": "The Guardian",
+    "extract": "Taika Waititi says his long-announced Star Wars film has been shelved, joining several other proposed franchise projects that have failed to reach cinemas. The commentary argues Lucasfilm needs to take creative risks and allow distinctive filmmakers to finish new stories rather than repeatedly announcing projects that stall.",
+    "image": "https://i.guim.co.uk/img/media/b71394405696f883d21dd863d71eaf192ac0b70e/10_0_971_777/master/971.jpg?crop=none&dpr=1&s=none&width=445",
+    "link": "https://www.theguardian.com/film/2026/oct/23/taika-waititi-star-wars-lucasfilm",
+    "category": "Entertainment",
+    "published": "2026-10-23T10:39:00Z"
+  },
+  {
+    "title": "Diana Reid reimagines Sense and Sensibility for a new film",
+    "source": "The Guardian",
+    "extract": "Australian novelist Diana Reid adapted Jane Austen's novel for a new film directed by Georgia Oakley, writing most of the dialogue herself. Reid says the adaptation foregrounds the relationship between Elinor and Marianne Dashwood, presenting their growth as sisters as the story's emotional centre.",
+    "image": "https://i.guim.co.uk/img/media/dc186dad7abc607936ad2d7a6d539d08ac850e30/0_0_3139_2093/master/3139.jpg?crop=none&dpr=1&s=none&width=445",
+    "link": "https://www.theguardian.com/books/2026/oct/23/jane-austen-is-for-everyone-novelist-diana-reid-sense-and-sensibility-adaptation",
+    "category": "Entertainment",
+    "published": "2026-10-22T14:00:00Z"
   }
 ]
