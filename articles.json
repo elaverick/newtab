@@ -1,182 +1,20 @@
 [
   {
-    "title": "OpenAI resumes frontier-model training after security overhaul and discloses a Brotli flaw",
-    "source": "Reuters",
-    "extract": "OpenAI says it resumed training its most advanced models on October 1 after tightening security and removing internet access from training environments. During tests in which AI agents tried to escape restricted environments, researchers found a flaw in Brotli that could permit code execution in affected systems, including those using Node.js, Bun and Envoy. Updated Brotli versions have since been released.",
-    "image": "https://www.reuters.com/resizer/v2/QB4VAS5YBVJETLBHCXTTPM544E.jpg?auth=ef548d0fdc46993392f21bdfc99690060125d5d6f0d455ac468a60ffc1953810&quality=80&width=1080",
-    "link": "https://www.reuters.com/business/openai-resumes-frontier-ai-training-with-enhanced-security-no-internet-access-2026-10-23/",
-    "category": "Technology",
-    "published": "2026-10-23T20:06:00Z"
-  },
-  {
-    "title": "Moonshot limits cyber-offensive capabilities in new Kimi K3.1 Pro model",
-    "source": "Reuters",
-    "extract": "Chinese AI company Moonshot says it removed cyber-related data from the training and reinforcement-learning environments for Kimi K3.1 Pro while retaining general coding skills. The company plans to publish the model's open weights by November 4; its internal tests suggest the changes reduced vulnerability-exploitation performance, though the results have not been independently verified.",
-    "image": "https://www.reuters.com/resizer/v2/YUZH36EDDVLKJIT4ZLMQM5YCHY.jpg?auth=640bf855fd5fc082ab671d39bb039832ccf201921d49922fbe71f6343102e381&quality=80&width=1920",
-    "link": "https://www.reuters.com/technology/moonshot-curbs-hacking-ability-new-kimi-model-fears-grow-over-ai-powered-2026-10-24/",
-    "category": "Technology",
-    "published": "2026-10-24T04:25:00Z"
-  },
-  {
-    "title": "UK government sets out £600 million for AI biosecurity and security work",
-    "source": "Reuters",
-    "extract": "The UK government announced around £600 million in funding for work addressing risks from artificial intelligence. Plans include £100 million for an AI Biosecurity Lab to detect biological threats and £65 million for countermeasures against pathogens, with support also expected from technology companies and research partners.",
-    "image": "https://www.reuters.com/resizer/v2/LPFJVGHECVPOBN4R6V4RVKSBCE.jpg?auth=013989a20ba11ff19cc6b6a5c5a1b8e68bd10e3a71c040e716c4caaa55af6f58&quality=80&width=1920",
-    "link": "https://www.reuters.com/world/uk/uk-government-sets-out-800-million-ai-security-funding-2026-10-23/",
-    "category": "Technology",
-    "published": "2026-10-23T23:03:00Z"
-  },
-  {
-    "title": "AT&T and T-Mobile tighten AI safeguards as autonomous networks remain years away",
-    "source": "Reuters",
-    "extract": "AT&T and T-Mobile are strengthening monitoring and security as they use more AI in telecom operations. Executives described safeguards around customer data, third-party software and AI agents, while saying fully autonomous networks remain years away and people are still needed for complex faults.",
-    "image": "https://www.reuters.com/resizer/v2/YQTC2ELQ2VOBJJFZPWEEX7THKM.jpg?auth=3385cfb067309fd6d3868af8b0202796663e05fa872c8cde23c2a8c8d416838e&quality=80&width=1920",
-    "link": "https://www.reuters.com/legal/litigation/att-t-mobile-tighten-ai-guardrails-autonomous-networks-remain-years-away-2026-10-23/",
-    "category": "Technology",
-    "published": "2026-10-23T16:19:00Z"
-  },
-  {
-    "title": "Amazon says AWS cloud capacity is largely sold out through 2027",
-    "source": "Reuters",
-    "extract": "Amazon CEO Andy Jassy said AWS has committed most of its cloud-computing capacity through 2027, with significant commitments already extending into 2028. Demand from AI research labs and enterprise customers is outpacing the company's ability to add infrastructure.",
-    "image": null,
-    "link": "https://www.reuters.com/business/retail-consumer/amazon-cloud-capacity-sold-out-through-2027-ceo-jassy-says-2026-10-23/",
-    "category": "Technology",
-    "published": "2026-10-23T23:06:00Z"
-  },
-  {
-    "title": "LSEG to buy Octus for $3.54 billion to strengthen data and analytics against AI disruption",
-    "source": "Reuters",
-    "extract": "London Stock Exchange Group agreed to buy credit-data provider Octus for $3.54 billion, adding specialist information from journalists, analysts and legal experts to its financial-data business. LSEG said the acquisition would expand its credit and private-market data offering as it develops AI tools and responds to potential AI-driven disruption.",
-    "image": null,
-    "link": "https://www.reuters.com/business/finance/lseg-buy-octus-35-billion-data-analytics-push-2026-10-22/",
-    "category": "Technology",
-    "published": "2026-10-22T06:05:00Z"
-  },
-  {
-    "title": "Leclerc urges caution after Ferrari tops United States Grand Prix practice",
-    "source": "Formula 1",
-    "extract": "Charles Leclerc topped both Friday practice sessions at Austin, but warned that Ferrari's latest floor, sidepod-inlet and diffuser changes may deliver only a modest performance gain. He expects Red Bull and Mercedes to remain strong and says rivals may have more pace to unlock before qualifying.",
-    "image": null,
-    "link": "https://www.formula1.com/en/latest/article/we-need-to-be-careful-leclerc-warns-against-high-expectations-at-united-states-gp.3YLWMX7LEph9Fo3qfBbsQn",
-    "category": "Automotive",
-    "published": "2026-10-24T00:15:00Z"
-  },
-  {
-    "title": "MiSTer adds a DragonBowl arcade core with both encrypted and unencrypted sets",
-    "source": "GitHub — intactio/MiSTer_DB",
-    "extract": "A new MiSTer database entry points to the DragonBowl arcade core release dated 2026-10-24. The update documents both the encrypted-program set and an unencrypted alternative, including the external core file and required MAME sets.",
-    "image": null,
-    "link": "https://github.com/intactio/MiSTer_DB/commit/8aef38d9e1f688832036d0558b40638a3603415e",
-    "category": "Retro Computing",
-    "published": "2026-10-24T04:52:42Z"
-  },
-  {
-    "title": "RP2350 Acorn Archimedes project gains a Wi-Fi web control panel",
-    "source": "GitHub — 8bitkick/rp2350-acorn-archimedes",
-    "extract": "The Acorn Archimedes recreation running on an RP2350 now serves a control page over Wi-Fi. The page provides an A3000-style keyboard, trackpad controls, typing, boot and turbo options, Wi-Fi setup and a JSON API, reusing the saved network configuration from the BBC Micro build.",
-    "image": null,
-    "link": "https://github.com/8bitkick/rp2350-acorn-archimedes/commit/f3839163c0390ea884fdce3cd56b072a024095e7",
-    "category": "Retro Computing Projects",
-    "published": "2026-10-23T20:06:45Z"
-  },
-  {
-    "title": "Emuwiz fixes Amiga WHDLoad configuration selection for FS-UAE",
-    "source": "GitHub — kiehntre/emuwiz",
-    "extract": "Emuwiz now requires FS-UAE's actual fs-uae.conf rather than mistakenly treating the launcher's Launcher.ini as emulator configuration. The fix prevents WHDLoad launches and Kickstart or machine inspection from using the wrong settings, and adds checks and guidance for missing or unreadable configuration files.",
-    "image": null,
-    "link": "https://github.com/kiehntre/emuwiz/commit/4d78e74cf5c1a1da004eb7cf3bae13dfd8139154",
-    "category": "Retro Computing Projects",
-    "published": "2026-10-24T03:41:42Z"
-  },
-  {
-    "title": "OpenAmigaRTG updates SDL2 and SDL3 patches for AmigaOS 3 screen blankers",
-    "source": "GitHub — DalsinAI/openamigartg",
-    "extract": "The AmigaOS back ends for SDL2 and SDL3 now periodically notify OpenBlanker while an SDL application is running, matching the screen-saver handling used by the X11 back end. The change is intended to stop the blanker from activating during programs that keep the display in use.",
-    "image": null,
-    "link": "https://github.com/DalsinAI/openamigartg/commit/a3e1cf14f67c76491cf4413a88fa02c9767924f8",
-    "category": "Retro Computing Projects",
-    "published": "2026-10-24T04:09:30Z"
-  },
-  {
-    "title": "emu198x Acorn BBC Micro emulator package advances to version 0.44.2",
-    "source": "GitHub — emu198x/homebrew-tap",
-    "extract": "The Homebrew tap now points its Acorn BBC Micro emulator formula at emu198x version 0.44.2, providing a fresh package update for users installing the emulator through Homebrew.",
-    "image": null,
-    "link": "https://github.com/emu198x/homebrew-tap/commit/404f912750eb4383978679ef75e8470d3ed1a846",
-    "category": "Retro Computing Projects",
-    "published": "2026-10-23T13:55:17Z"
-  },
-  {
-    "title": "U64 BBC BASIC clarifies its firmware requirement for the Commodore 64 Ultimate",
-    "source": "GitHub — xahmol/u64-bbcbasic",
-    "extract": "The U64 BBC BASIC project has clarified that its network, palette and SID features require Ultimate 64 firmware 3.15a. The Commodore 64 Ultimate firmware update does not yet include those features, so the documentation now explains that the project is not fully functional on that model until the firmware catches up.",
-    "image": null,
-    "link": "https://github.com/xahmol/u64-bbcbasic/commit/d326b7e666925ead78d4afe3c3c9b74cba485f35",
-    "category": "Retro Computing Projects",
-    "published": "2026-10-23T08:37:00Z"
-  },
-  {
-    "title": "Ryu Murakami, cult Japanese author of Audition and Coin Locker Babies, dies aged 74",
+    "title": "The datacentre next door: residents challenge Britain's AI infrastructure boom",
     "source": "The Guardian",
-    "extract": "The Japanese novelist and filmmaker, known for blackly comic and confrontational fiction, has died aged 74. His work includes Coin Locker Babies, In the Miso Soup, Piercing and Audition, the last of which became a landmark horror film; many of his books remain untranslated into English.",
-    "image": "https://i.guim.co.uk/img/media/639c5d4b0c2cafdfe14eeb753baa74eaa9e5cf39/0_494_3500_2798/master/3500.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/oct/23/ryu-murakami-cult-author-of-coin-locker-babies-and-audition-dies-aged-74",
-    "category": "Books",
-    "published": "2026-10-23T13:21:00Z"
+    "extract": "Across Newport and Cardiff, residents are challenging plans for large AI and cloud datacentres over noise, air pollution, grid capacity and the loss of public amenities. The investigation describes how hundreds of proposed UK facilities could demand more electricity than the country typically uses at peak, and asks who benefits from the expansion of private computing infrastructure.",
+    "image": null,
+    "link": "https://www.theguardian.com/technology/2026/oct/24/the-datacentre-next-door-on-the-frontline-of-techs-latest-david-v-goliath-battle",
+    "category": "Technology",
+    "published": "2026-10-24T11:00:00Z"
   },
   {
-    "title": "Children's and teens roundup highlights new fantasy, fairy tales and comic adventures",
+    "title": "From Fatherland to Aberfan: the week's standout film, TV and book reviews",
     "source": "The Guardian",
-    "extract": "The Guardian's latest children's and young-adult book roundup includes a Minotaur retelling, new fairy-tale collections, the conclusion of a fantasy trilogy and Mikey Please's comic fantasy adventure The Rambler's Curse. The selection ranges from illustrated picture books to young-adult fiction.",
-    "image": "https://i.guim.co.uk/img/media/4d7734cfe0139961836401da4a1b5aac4c326098/334_172_1777_1423/master/1777.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/oct/23/childrens-and-teens-roundup-the-best-new-picture-books-and-novels",
-    "category": "Books",
-    "published": "2026-10-23T11:00:00Z"
-  },
-  {
-    "title": "Tom Skerritt, Alien and Top Gun actor, dies aged 93",
-    "source": "The Guardian",
-    "extract": "Tom Skerritt, whose screen career spanned more than six decades, has died aged 93. He played Captain Dallas in Ridley Scott's Alien and Commander Mike 'Viper' Metcalf in Top Gun, alongside roles in M*A*S*H, A River Runs Through It and the television drama Picket Fences.",
-    "image": "https://i.guim.co.uk/img/media/476d2c07cc0cb11581f1b009b5bb0b312843ea5b/442_0_2790_2232/master/2790.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/film/2026/oct/22/tom-skerritt-actor-dead",
+    "extract": "The Guardian's weekly culture roundup highlights a historical drama about Thomas Mann's daughter and a documentary revisiting the Aberfan disaster, alongside recommendations spanning film, television, books and music. Its picks include the new Shaun the Sheep film and several literary works, offering a compact guide to recent releases across the arts.",
+    "image": null,
+    "link": "https://www.theguardian.com/culture/2026/oct/24/fatherland-aberfan-village-that-fought-back-week-in-rave-reviews",
     "category": "Entertainment",
-    "published": "2026-10-22T20:19:00Z"
-  },
-  {
-    "title": "Ali G: Who Iz I? review finds Sacha Baron Cohen's satire crude but intermittently funny",
-    "source": "The Guardian",
-    "extract": "Sacha Baron Cohen returns to his Ali G persona in a new film built around elaborate hoaxes rather than a conventional narrative. The review finds flashes of effective satire and bad-taste comedy, but argues that the film repeatedly explains its own pranks and struggles to connect with a younger audience.",
-    "image": "https://i.guim.co.uk/img/media/f68e33d5b692f17a2fdc4dec248180853a9faee4/633_0_3421_2740/master/3421.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/film/2026/oct/22/ali-g-who-iz-i-review-sacha-baron-cohens-high-stakes-satire-punches-up-and-down-with-spectacular-bad-taste",
-    "category": "Entertainment",
-    "published": "2026-10-22T15:00:00Z"
-  },
-  {
-    "title": "Junk review: David Schwimmer's Hollywood satire struggles to bring its stories together",
-    "source": "The Guardian",
-    "extract": "Jack Begert's film follows two loosely connected Los Angeles stories involving young addicts and a self-loathing screenwriter played by David Schwimmer. The review praises its striking visuals and occasional surrealist invention but finds the contrasting strands fail to cohere.",
-    "image": "https://i.guim.co.uk/img/media/488139961f8241bab8c60398f95a2fa7b5ab9694/330_0_2697_2160/master/2697.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/film/2026/oct/23/junk-movie-review-david-schwimmer-mubi",
-    "category": "Entertainment",
-    "published": "2026-10-23T09:00:00Z"
-  },
-  {
-    "title": "Backrooms to The Monkey: seven films to watch on television this week",
-    "source": "The Guardian",
-    "extract": "The week's television film picks include Backrooms, a horror film based on the liminal-space web series, alongside Ingmar Bergman's The Seventh Seal, Cat Person, The Boston Strangler, All of Us Strangers and The Monkey. The selection mixes new genre cinema with classic and psychological films.",
-    "image": "https://i.guim.co.uk/img/media/9b86288974790bf021f03df0ad1c25108d554f79/203_0_1284_1027/master/1284.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/tv-and-radio/2026/oct/23/backrooms-to-the-monkey-the-seven-best-films-to-watch-on-tv-this-week",
-    "category": "Entertainment",
-    "published": "2026-10-23T08:00:00Z"
-  },
-  {
-    "title": "TV guide: Robson Green's Northumbria Mysteries and The Walking Dead: Dead City",
-    "source": "The Guardian",
-    "extract": "The Guardian's Friday television guide highlights the new cosy-crime series The Northumbria Mysteries, in which Robson Green's ex-convict character solves a murder alongside an Oxford-educated detective. It also previews a what-if episode of The Walking Dead: Dead City set in a New York where the apocalypse never happened.",
-    "image": "https://i.guim.co.uk/img/media/fc1e80735e3de20fa938cf0e847f23345368fe59/484_111_3030_2425/master/3030.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/tv-and-radio/2026/oct/23/tv-tonight-robson-green-stars-in-a-rural-culture-clash-cosy-drama",
-    "category": "Entertainment",
-    "published": "2026-10-23T11:05:00Z"
+    "published": "2026-10-24T05:00:00Z"
   }
 ]
