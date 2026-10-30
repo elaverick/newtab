@@ -1,20 +1,164 @@
 [
   {
-    "title": "The datacentre next door: residents challenge Britain's AI infrastructure boom",
-    "source": "The Guardian",
-    "extract": "Across Newport and Cardiff, residents are challenging plans for large AI and cloud datacentres over noise, air pollution, grid capacity and the loss of public amenities. The investigation describes how hundreds of proposed UK facilities could demand more electricity than the country typically uses at peak, and asks who benefits from the expansion of private computing infrastructure.",
-    "image": null,
-    "link": "https://www.theguardian.com/technology/2026/oct/24/the-datacentre-next-door-on-the-frontline-of-techs-latest-david-v-goliath-battle",
-    "category": "Technology",
-    "published": "2026-10-24T11:00:00Z"
+    "title": "Aston Martin Valhalla Spider: the ultimate open-top supercar",
+    "source": "Aston Martin / Publicnow (via MarketScreener)",
+    "extract": "Aston Martin's Valhalla Spider pairs a removable fabric roof with the Valhalla's 1,079PS plug-in-hybrid powertrain: an 828PS 4.0-litre twin-turbo V8 plus three electric motors. Revised aerodynamics and stability calibrations preserve the 217mph top speed with the roof removed or the optional carbon-fibre hardtop fitted.",
+    "image": "https://media.astonmartin.com/wp-content/uploads/2026/10/37c5cfe25d6187c8e6d6885c37d19e31-m.jpg.webp",
+    "link": "https://www.marketscreener.com/news/aston-martin-valhalla-spider-the-ultimate-open-top-supercar-ce785cd3db81f522",
+    "category": "Automotive",
+    "published": "2026-10-29T00:40:00Z"
   },
   {
-    "title": "From Fatherland to Aberfan: the week's standout film, TV and book reviews",
-    "source": "The Guardian",
-    "extract": "The Guardian's weekly culture roundup highlights a historical drama about Thomas Mann's daughter and a documentary revisiting the Aberfan disaster, alongside recommendations spanning film, television, books and music. Its picks include the new Shaun the Sheep film and several literary works, offering a compact guide to recent releases across the arts.",
+    "title": "This Audi Quattro Restomod Swaps Its Famous Five-Cylinder for a 10,000-RPM V8",
+    "source": "Autoblog (via Yahoo Autos)",
+    "extract": "The British-built Audacious IV uses B7 RS4 underpinnings, a 4.2-litre V8, Torsen all-wheel drive and a six-speed manual in a Quattro-inspired body. Four power configurations include two versions capable of 10,000rpm; the most powerful supercharged setup is rated at 750hp, with production limited to 50 cars.",
     "image": null,
-    "link": "https://www.theguardian.com/culture/2026/oct/24/fatherland-aberfan-village-that-fought-back-week-in-rave-reviews",
+    "link": "https://autos.yahoo.com/classic-and-collector/articles/audi-quattro-restomod-swaps-famous-113000565.html",
+    "category": "Automotive",
+    "published": "2026-10-30T11:30:00Z"
+  },
+  {
+    "title": "Mistral AI publicly releases Large 4, targets cybersecurity users",
+    "source": "Reuters",
+    "extract": "Mistral publicly released Large 4, an open-weight model designed to help organisations identify and fix cybersecurity vulnerabilities. It can be downloaded and run on an organisation's own systems, and was upgraded after testing with government and corporate users.",
+    "image": "https://www.reuters.com/resizer/v2/W5U4M4YWLJMBXGL3ILC7HMBOLU.jpg?auth=f63bb27ebdf63eb4a76c7f01208720a5b278c70bb87f9b574b65405a6152a584&quality=80&width=1920",
+    "link": "https://www.reuters.com/legal/litigation/mistral-ai-publicly-releases-large-4-targets-cybersecurity-users-2026-10-29/",
+    "category": "Technology",
+    "published": "2026-10-29T14:03:00Z"
+  },
+  {
+    "title": "AI found a way to crash bitcoin nodes on Windows and Macs. It's now public",
+    "source": "CoinDesk",
+    "extract": "A language-model scan uncovered three Bitcoin Core flaws, including a remote memory-exhaustion bug that could crash nodes on Windows, macOS and BSD. Human contributors verified the findings, fixes shipped on 27 October, and the project disclosed them under a new policy for bugs that AI tools can readily discover.",
+    "image": "https://www.coindesk.com/_next/image?q=75&url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fs3y3vcno%2Fproduction%2F0fd512cd2b3b63152562fab784b9d94b8b8b56ea-1500x994.jpg%3Frect%3D0%2C75%2C1500%2C844%26w%3D1920%26h%3D1080%26auto%3Dformat&w=1200",
+    "link": "https://www.coindesk.com/tech/2026/10/29/ai-found-a-way-to-crash-bitcoin-nodes-on-windows-and-macs-it-s-now-public",
+    "category": "Technology",
+    "published": "2026-10-29T05:54:00Z"
+  },
+  {
+    "title": "Attackers turn GitHub issues into supply chain campaign against 61 public repos in less than an hour",
+    "source": "The Register",
+    "extract": "Radware identified 83 malicious issues, pull requests or comments across 61 public GitHub repositories, including LangExtract, Trivy, Brave and MLflow. Hidden HTML comments triggered vulnerable CI workflows to execute commands and attempt to exfiltrate secrets; researchers confirmed two executions but could not establish whether credentials were stolen.",
+    "image": null,
+    "link": "https://www.theregister.com/security/2026/10/29/attackers-turn-github-issues-into-supply-chain-campaign-against-61-public-repos-in-less-than-an-hour/5306153",
+    "category": "Technology",
+    "published": "2026-10-29T12:00:00Z"
+  },
+  {
+    "title": "Researchers find bugs in 5 AI developer tools, with OpenAI and Microsoft flaws still unpatched",
+    "source": "The Register",
+    "extract": "Researchers found vulnerabilities in Cursor, GitHub Copilot, Claude Desktop, VS Code and Codex. The common weakness was embedded browsers with excessive capabilities, potentially enabling host command execution, local file access or address-bar spoofing; The Register reported that the Codex and VS Code issues remained unpatched at publication.",
+    "image": null,
+    "link": "https://www.theregister.com/security/2026/10/29/researchers-find-bugs-in-5-ai-developer-tools-with-openai-and-microsoft-flaws-still-unpatched/5306508",
+    "category": "Technology",
+    "published": "2026-10-29T23:12:00Z"
+  },
+  {
+    "title": "Topcoat enables Rust to render server-side web apps",
+    "source": "The Register",
+    "extract": "AWS engineer Carl Lerche, creator of Tokio, presented Topcoat, a Rust framework for server-rendered web apps. It compiles Rust into browser-friendly JavaScript while keeping most application logic on the server, aiming to reduce client-side loading overhead for conventional database-driven sites.",
+    "image": null,
+    "link": "https://www.theregister.com/devops/2026/10/29/topcoat-enables-rust-to-render-server-side-web-apps/5306470",
+    "category": "Technology",
+    "published": "2026-10-29T19:27:00Z"
+  },
+  {
+    "title": "Startup wants to make AI agents safe for DevOps duty",
+    "source": "The Register",
+    "extract": "University of Michigan researchers founded Vera Platforms to benchmark and train AI agents for production DevOps tasks. Its CloudOpsBench test includes S3 bucket cleanup, compliance-pipeline repair and DynamoDB autoscaling, using a simulator to test agents before they touch live infrastructure.",
+    "image": null,
+    "link": "https://www.theregister.com/ai-and-ml/2026/10/29/startup-wants-to-make-ai-agents-safe-for-devops-duty/5306477",
+    "category": "Technology",
+    "published": "2026-10-29T19:46:00Z"
+  },
+  {
+    "title": "Attention Seeking Behaviour by Aea Varfis-van Warmelo review – a slippery liar’s tale",
+    "source": "The Guardian",
+    "extract": "A Goldsmiths-shortlisted debut follows an unreliable narrator who compulsively lies, then becomes entangled in copying legal files for a journalist investigating a rape case. The review praises its unsettling questions about memory, credibility and justice, while noting that a digression into facial-action coding interrupts the narrative.",
+    "image": "https://i.guim.co.uk/img/media/704e06f95913b56d6e78950080384e2dd05ca6ac/92_52_836_669/master/836.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/books/2026/oct/30/attention-seeking-behaviour-by-aea-varfis-van-warmelo-review-a-slippery-liars-tale",
+    "category": "Books",
+    "published": "2026-10-30T07:00:00Z"
+  },
+  {
+    "title": "Bram Stoker’s Dracula audiobook review – cinematic horror with an A-list cast",
+    "source": "The Guardian",
+    "extract": "Mary Lambert's Audible Originals adaptation, adapted by Robyn Ahern, gives Bram Stoker's novel cinematic sound design and a cast led by Jonathan Bailey, Ella Purnell, Aimee Lou Wood and Maggie Gyllenhaal. The Guardian praises its immersive audio effects and streamlined retelling, which avoids camp while retaining shocks and gore.",
+    "image": "https://i.guim.co.uk/img/media/1c1f241084b79a749ab386874f9277185231b765/336_326_4053_3242/master/4053.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/books/2026/oct/29/bram-stokers-dracula-audiobook-review-cinematic-horror-with-an-a-list-cast",
+    "category": "Books",
+    "published": "2026-10-29T15:00:00Z"
+  },
+  {
+    "title": "The best recent translated fiction – review roundup",
+    "source": "The Guardian",
+    "extract": "The Guardian reviews four translations: Barbi Marković's surreal, darkly comic Minihorror; Pol Guasch's climate-changed Paradise Burns; Helle Helle's Danish road-trip novel Hafni Says; and Hamid Ismailov's action-filled, darkly funny stories Googling for Soul.",
+    "image": "https://i.guim.co.uk/img/media/000bd487e76f2fedcc9bd41a36b76fa0671bfde1/597_196_4503_3602/master/4503.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/books/2026/oct/30/the-best-recent-translated-fiction-review-roundup",
+    "category": "Books",
+    "published": "2026-10-30T12:00:00Z"
+  },
+  {
+    "title": "Philippa Gregory: I read 100 of the 18th century’s most popular novels – the perfect author’s apprenticeship",
+    "source": "The Guardian",
+    "extract": "Historical novelist Philippa Gregory explains how reading more than 100 popular 18th-century novels for her PhD became an apprenticeship in plot, structure and character. She discusses influences from Jane Austen and Elizabeth Goudge to Dickens and Iris Murdoch, and how those books shaped her approach to historical fiction.",
+    "image": null,
+    "link": "https://www.theguardian.com/books/2026/oct/30/philippa-gregory-i-read-100-of-the-best-18th-century-novels-the-perfect-authors-apprenticeship",
+    "category": "Books",
+    "published": "2026-10-30T10:00:00Z"
+  },
+  {
+    "title": "I Love Boosters review – supercool outlaw women go shoplifting in Boots Riley’s frantic and funny caper",
+    "source": "The Guardian",
+    "extract": "Boots Riley's fashion-industry fantasy-caper follows three outlaw women who steal couture and resell it cheaply, only to encounter a rival using a magical portal ring. The Guardian finds it funny and imaginative, though its relentless pace can become exhausting.",
+    "image": "https://i.guim.co.uk/img/media/68f075915ca88393c3952d93cc4f40407920a439/576_40_3065_1766/master/3065.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/film/2026/oct/29/i-love-boosters-review-boots-riley-shoplifting-satire-is-a-mile-a-minute-melee-of-unadulterated-keraziness",
     "category": "Entertainment",
-    "published": "2026-10-24T05:00:00Z"
+    "published": "2026-10-29T09:00:00Z"
+  },
+  {
+    "title": "Basketweavers get in a twist over Alexander Skarsgård’s Wicker Husband",
+    "source": "The Guardian",
+    "extract": "The film's wicker-clad character has prompted a debate among basket makers over willow, plaiting and traditional weaving. Wētā Workshop's team built the costume from 50 interlocking 3D-printed thermoplastic pieces attached to a suit, choosing the material for movement rather than traditional basketry.",
+    "image": "https://i.guim.co.uk/img/media/be0d97fc91c315045415219d27f15042ad1de9dc/0_160_2893_2314/master/2893.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/film/2026/oct/30/basketweavers-get-in-a-twist-over-alexander-skarsgard-wicker-husband",
+    "category": "Entertainment",
+    "published": "2026-10-30T12:24:00Z"
+  },
+  {
+    "title": "The Mosquito Bowl review – Netflix mixes football, war and cliches in slick by-the-numbers saga",
+    "source": "The Guardian",
+    "extract": "Peter Berg's Netflix drama follows four college football stars who join the US Marines after Pearl Harbor and culminates in a 1944 Christmas Eve game at Guadalcanal. The Guardian finds the football and battle sequences absorbing but criticises its thin characterisation and familiar patriotic clichés.",
+    "image": "https://i.guim.co.uk/img/media/2183461f44353da3f2611218286e20edea1be335/519_0_3500_2800/master/3500.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/film/2026/oct/29/the-mosquito-bowl-netflix-movie-review",
+    "category": "Entertainment",
+    "published": "2026-10-29T17:37:00Z"
+  },
+  {
+    "title": "Elke Sommer, prolific German star of A Shot in the Dark and And Then There Were None, dies aged 85",
+    "source": "The Guardian",
+    "extract": "The German-born actor became a familiar face in 1960s and 70s cinema, appearing opposite Peter Sellers in A Shot in the Dark, in Agatha Christie's And Then There Were None and in Carry On Behind. The obituary also recalls her Hollywood comedies and cult horror films for Mario Bava.",
+    "image": "https://i.guim.co.uk/img/media/a5bd5bf44de86d5645ef230aec31ff1400c125a8/0_318_2104_1683/master/2104.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/film/2026/oct/29/elke-sommer-prolific-german-star-of-a-shot-in-the-dark-and-and-then-there-were-none-dies",
+    "category": "Entertainment",
+    "published": "2026-10-29T16:36:00Z"
+  },
+  {
+    "title": "Susan Saint James obituary",
+    "source": "The Guardian",
+    "extract": "The US actor starred opposite Rock Hudson in McMillan & Wife before becoming one half of the sitcom Kate & Allie. The obituary covers her two decades of television work, including crime drama, comedy and later guest roles.",
+    "image": "https://i.guim.co.uk/img/media/2219957802dea6d6664157a4e77b409cb42d6f96/0_77_2931_2345/master/2931.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/tv-and-radio/2026/oct/30/susan-saint-james-obituary",
+    "category": "Entertainment",
+    "published": "2026-10-30T10:08:00Z"
+  },
+  {
+    "title": "Sir Patrick Stewart obituary",
+    "source": "The Guardian",
+    "extract": "The obituary traces Stewart's career from the Royal Shakespeare Company to global fame as Captain Jean-Luc Picard in Star Trek and Professor Charles Xavier in X-Men. It also recalls his roles in Dune, I, Claudius, Tinker Tailor Soldier Spy, Extras and Frasier, alongside a long stage career.",
+    "image": "https://i.guim.co.uk/img/media/c866c23fcca67eda881839057e2be9a78ca86ba1/242_86_3388_2711/master/3388.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/culture/2026/oct/30/sir-patrick-stewart-obituary",
+    "category": "Entertainment",
+    "published": "2026-10-30T11:16:00Z"
   }
 ]
