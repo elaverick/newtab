@@ -160,5 +160,131 @@
     "link": "https://www.theguardian.com/culture/2026/oct/30/sir-patrick-stewart-obituary",
     "category": "Entertainment",
     "published": "2026-10-30T11:16:00Z"
+  },
+  {
+    "title": "Ferrari’s new patent: why Maranello is putting a roof scoop on supercars",
+    "source": "ClubAlfa",
+    "extract": "A Ferrari patent describes a roof-mounted intake and duct to route hot air from the front radiator away from the rear wing. The proposed system is intended to keep the wing working in cleaner airflow; the patent does not establish that the design will reach production or quantify any downforce gain.",
+    "image": null,
+    "link": "https://www.clubalfa.it/en/ferrari-wild-new-patent-why-maranello-is-putting-a-roof-scoop-on-supercars-47012",
+    "category": "Automotive",
+    "published": "2026-10-30T12:10:00Z"
+  },
+  {
+    "title": "Google’s first data center satellite is online and writing poetry",
+    "source": "TechCrunch",
+    "extract": "Google’s Suncatcher prototype has reached orbit and is communicating with the ground. The test satellite carries four Google TPUs and a roughly one-kilowatt solar power system, putting the company’s idea of space-based AI computing into an early hardware-testing phase.",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/DSC_0298.jpg?w=1024",
+    "link": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
+    "category": "Technology",
+    "published": "2026-10-30T17:00:00Z"
+  },
+  {
+    "title": "Can AI data centers be mass-produced like cars? This startup aims to find out",
+    "source": "TechCrunch",
+    "extract": "Runware is developing a factory approach to modular AI data centers, assembling prefabricated computing pods rather than building each facility as a bespoke project. The company says its process can manufacture and deliver a dense computing pod in as little as 48 hours.",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/Runware-Factory-.jpg?w=1024",
+    "link": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
+    "category": "Technology",
+    "published": "2026-10-30T13:00:00Z"
+  },
+  {
+    "title": "Granola crunches up a dictation feature to compete with Wispr",
+    "source": "TechCrunch",
+    "extract": "Meeting-notes app Granola has added a Mac dictation feature that can be invoked with the Fn key. It transcribes speech and cleans up the wording for use across applications, extending the product beyond its original meeting-notes workflow.",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/Granola.jpg?w=1024",
+    "link": "https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/",
+    "category": "Technology",
+    "published": "2026-10-29T17:54:00Z"
+  },
+  {
+    "title": "Ex-Palantir execs launch Dream with $17M from a16z to build AI world models for construction",
+    "source": "TechCrunch",
+    "extract": "Startup Dream is applying AI world models to construction and architecture, engineering and construction workflows. Its systems are intended to simulate physical environments and building constraints, potentially giving designers and contractors a way to test proposed changes before work begins.",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/TeamPhoto_1.png?w=1024",
+    "link": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
+    "category": "Technology",
+    "published": "2026-10-29T16:21:00Z"
+  },
+  {
+    "title": "Waymo taps Toyota to supply robotaxis for Japan and the UK",
+    "source": "TechCrunch",
+    "extract": "Waymo is working with Toyota on a robotaxi programme built around the bZ4X, with Japan and the UK among the markets in view. The partnership is a notable step in taking Waymo’s autonomous-driving system beyond its existing vehicle and operating-market footprint.",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/Waymo_Toyota_bZ4X.jpg?w=1024",
+    "link": "https://techcrunch.com/2026/10/30/waymos-next-robotaxi-will-be-a-toyota-bz4x-destined-for-japan-and-the-uk/",
+    "category": "Technology",
+    "published": "2026-10-30T07:01:00Z"
+  },
+  {
+    "title": "North Korean hackers blamed for stealing record $6.3B in Binance breach",
+    "source": "TechCrunch",
+    "extract": "Investigators have attributed a record-breaking cryptocurrency theft affecting Binance to North Korean hackers. The report describes the scale of the alleged loss, efforts to freeze funds and how compromise of an engineer’s laptop formed part of the attack chain.",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/binance-2206279918.jpg?w=1024",
+    "link": "https://techcrunch.com/2026/10/30/north-korean-hackers-blamed-for-stealing-record-6-3b-in-binance-breach/",
+    "category": "Technology",
+    "published": "2026-10-30T14:00:00Z"
+  },
+  {
+    "title": "DoorDash said it’s only received ‘several hundred’ orders from AI agents",
+    "source": "TechCrunch",
+    "extract": "DoorDash executives said the company has received only several hundred orders placed by third-party AI agents, a tiny number beside the millions of daily deliveries handled through its service. The comments offer a reality check on how much agent-driven commerce is happening in practice.",
+    "image": "https://techcrunch.com/wp-content/uploads/2022/08/GettyImages-1232015093.jpg?w=1024",
+    "link": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
+    "category": "Technology",
+    "published": "2026-10-30T13:54:00Z"
+  },
+  {
+    "title": "LibreOffice’s ‘no AI’ stance meets LLM-assisted code",
+    "source": "The Register",
+    "extract": "The Document Foundation says LibreOffice has no built-in AI features and its core developers do not use LLMs, while community contributors may use coding assistants if they disclose that use and their submissions receive careful review. The report explores the distinction between an AI-free product and an AI-free development process.",
+    "image": null,
+    "link": "https://assets.theregister.com/2026/10/29/20269/?td=keepreading",
+    "category": "Technology",
+    "published": "2026-10-29T11:29:00Z"
+  },
+  {
+    "title": "Foo Fighters close ‘Kimmel’ run with a trip down ‘Baker Street’",
+    "source": "JamBase",
+    "extract": "Foo Fighters revisited their 1997 cover of Gerry Rafferty’s ‘Baker Street’ during their run on Jimmy Kimmel Live. The performance brings a rarely played track from the band’s early catalogue back into the spotlight.",
+    "image": "https://www.jambase.com/wp-content/uploads/2026/10/foo-fighters-baker-street-kimmel-featured-1200x632.jpg",
+    "link": "https://www.jambase.com/article/foo-fighters-baker-street-kimmel",
+    "category": "Music",
+    "published": "2026-10-30T15:50:00Z"
+  },
+  {
+    "title": "90 New Sci-Fi, Fantasy, and Horror Books Arriving in November",
+    "source": "Gizmodo",
+    "extract": "Gizmodo previews a large slate of November science-fiction, fantasy and horror releases, including new work from John Scalzi, Cassandra Khaw and other genre writers. The roundup is a useful look ahead at the month’s speculative-fiction reading, alongside memoirs from genre favourites.",
+    "image": "https://gizmodo.com/app/uploads/2026/10/devilwind-2.jpg",
+    "link": "https://gizmodo.com/90-new-sci-fi-fantasy-and-horror-books-arriving-in-november-2000830155",
+    "category": "Books",
+    "published": "2026-10-30T14:00:00Z"
+  },
+  {
+    "title": "‘I left shellshocked’: writers on their scariest non-horror movies",
+    "source": "The Guardian",
+    "extract": "Writers pick films that frightened them without belonging to the horror genre, ranging from classic animation and science fiction to unsettling dramas and thrillers. The selection looks at the ways atmosphere, imagery and ideas can be more disturbing than conventional horror shocks.",
+    "image": "https://i.guim.co.uk/img/media/1790e09bea721dd17b1415a3fc87c9bf0891235e/630_0_2974_2381/master/2974.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/film/2026/oct/30/scariest-non-horror-movies",
+    "category": "Entertainment",
+    "published": "2026-10-30T09:00:00Z"
+  },
+  {
+    "title": "John Carpenter says answer to The Thing’s ending is hiding in the movie",
+    "source": "SYFY Wire",
+    "extract": "John Carpenter has said that the solution to the famously ambiguous ending of his 1982 science-fiction horror film The Thing is visible within the movie itself. The filmmaker maintains that audiences have not yet identified the clue he has in mind, renewing discussion around one of the genre’s enduring mysteries.",
+    "image": null,
+    "link": "https://www.syfy.com/syfy-wire/john-carpenter-says-answer-to-the-thing-ending-right-there-in-the-movie",
+    "category": "Entertainment",
+    "published": "2026-10-30T19:39:00Z"
+  },
+  {
+    "title": "From Possible Love to Ali G: Who Iz I?: the seven best films to watch on TV this week",
+    "source": "The Guardian",
+    "extract": "The Guardian’s weekly television-film selection ranges from comedy to documentary and genre cinema, including Ali G: Who Iz I?, The Fog and Talk to Me. It is a compact guide to the films scheduled for television during the coming week.",
+    "image": null,
+    "link": "https://www.theguardian.com/tv-and-radio/2026/oct/30/from-possible-love-to-ali-g-who-iz-i-the-seven-best-films-to-watch-on-tv-this-week",
+    "category": "Entertainment",
+    "published": "2026-10-30T09:00:00Z"
   }
 ]
