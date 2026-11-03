@@ -1,182 +1,371 @@
 [
   {
-    "title": "Antonelli makes history as youngest F1 champion at 20 years old",
+    "title": "Ferrari nudges up full-year forecasts after beating consensus in Q3",
     "source": "Reuters",
-    "extract": "Kimi Antonelli clinched the 2026 drivers' title at 20 years and 68 days by finishing third in a dramatic, red-flagged Mexico City Grand Prix. Max Verstappen won ahead of Ferrari's Lewis Hamilton; the race also featured a clash between Ferrari teammates and a suspension-failure crash that stopped the race.",
-    "image": "https://www.reuters.com/resizer/v2/U5TPJUTSNJLYDDCOIJXTDAVMUU.jpg?auth=2eb6cbb181583b932ae93fc4825f6efc02b6e7b81ce60c095c601bec1d85820e&quality=80&width=1080",
-    "link": "https://www.reuters.com/sports/formula1/antonelli-becomes-youngest-f1-champion-20-years-old-2026-11-01/",
-    "category": "Automotive",
-    "published": "2026-11-01T22:32:00Z"
-  },
-  {
-    "title": "China's robot makers have mastered the moves. Now comes the race for brains",
-    "source": "Reuters",
-    "extract": "Chinese robotics firms are shifting from spectacle-ready humanoid hardware to embodied AI that can understand surroundings, learn tasks and adapt without per-task programming. Reuters reports $13 billion raised across 322 deals in the first half of 2026, as companies compete to collect real-world training data and build more capable robot brains.",
-    "image": "https://www.reuters.com/resizer/v2/G73KIUSXBNJL5L2BGTO5KIPOUU.jpg?auth=599048c8b390fef38366d2c544e612f8c7eefe5570988957b45e80f1b7dc83b1&quality=80&width=1080",
-    "link": "https://www.reuters.com/world/china/chinas-robot-makers-have-mastered-moves-now-comes-race-brains-2026-11-01/",
-    "category": "Technology",
-    "published": "2026-11-01T23:08:00Z"
-  },
-  {
-    "title": "‘Anyone can be a super-hacker now’: The world faces a cybersecurity reckoning",
-    "source": "The Washington Post",
-    "extract": "An alleged 26-year-old amateur used AI chatbots to help attack nine South Korean banks, exposing financial data belonging to tens of thousands of people. Security researchers warn that accessible AI tools are lowering the barrier to sophisticated attacks, even as the same technology can help defenders find and fix vulnerabilities.",
-    "image": "https://author-service-images-prod-us-east-1.publishing.aws.arc.pub/washpost/4b7608a1-20ec-4b1e-ae34-fe587d3a220d.png",
-    "link": "https://www.washingtonpost.com/technology/2026/11/01/wave-new-cyberattacks-is-just-getting-started/",
-    "category": "Technology",
-    "published": "2026-11-01T10:00:00Z"
-  },
-  {
-    "title": "Sadiq Khan calls for cap on numbers of robotaxis on London streets",
-    "source": "The Guardian",
-    "extract": "London mayor Sadiq Khan wants Transport for London to gain powers to cap and regulate robotaxis before fully driverless services expand. Current Wayve/Uber and Baidu/Freenow trials still require safety drivers or human intervention; Khan cites congestion, air quality, road safety and taxi livelihoods.",
-    "image": "https://i.guim.co.uk/img/media/f6c7f7fa456c9d2d24c7290211be395c992289b7/0_0_4583_3667/master/4583.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/technology/2026/nov/01/sadiq-khan-calls-cap-numbers-robotaxis-london-streets",
-    "category": "Technology",
-    "published": "2026-11-01T10:00:00Z"
-  },
-  {
-    "title": "AI is stealing Indigenous Australian art and churning out ‘Temu slop’, artist says",
-    "source": "The Guardian",
-    "extract": "Pitjantjatjara artist Sally Scales says AI-generated imitations strip First Nations art of its cultural lineage and agency, with works scraped, altered and sold without attribution. Artists and intellectual-property experts propose stronger data transparency, opt-outs, compensation and takedown mechanisms to protect Indigenous cultural knowledge.",
-    "image": "https://i.guim.co.uk/img/media/d42e0956def730a6b1eb335fab858536fb224a9c/0_0_8256_5504/master/8256.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/artanddesign/2026/nov/02/ai-stealing-indigenous-australian-art-temu-slop-artist-says-ntwnfb",
-    "category": "Technology",
-    "published": "2026-11-01T14:00:00Z"
-  },
-  {
-    "title": "National Grid to site biggest substation in UK near planned Teesside datacentre",
-    "source": "The Guardian",
-    "extract": "National Grid has agreed to buy land on Teesside for a proposed substation that could become Britain's largest, supplying a planned 500,000-square-metre AI datacentre. The project could support up to 3.2GW, highlighting the electricity-grid challenge behind large-scale UK AI infrastructure.",
-    "image": "https://i.guim.co.uk/img/media/6454f44555fa48a5f38d1d066c370cb6e7376a80/0_0_6827_5464/master/6827.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/business/2026/nov/01/national-grid-to-site-biggest-substation-on-teesside-near-planned-ai-datacentre",
-    "category": "Technology",
-    "published": "2026-11-01T17:10:00Z"
-  },
-  {
-    "title": "How a small Wisconsin city scuttled a secretive $1.6bn datacenter project",
-    "source": "The Guardian",
-    "extract": "Menomonie residents helped halt a proposed $1.6bn hyperscale AI datacentre after officials pursued the project through nondisclosure agreements and closed-door steps. Guardian reporting based on interviews, public records and emails details how the 320-acre campus was pitched, how residents organised, and why the project remains paused rather than cancelled.",
-    "image": "https://i.guim.co.uk/img/media/61be171119618d6d06feb21e32b64fd03ce80952/0_278_2403_3003/master/2403.jpg?crop=none&dpr=1&s=none&width=445",
-    "link": "https://www.theguardian.com/us-news/ng-interactive/2026/nov/01/wisconsin-city-menomie-meta-datacenter",
-    "category": "Technology",
-    "published": "2026-11-01T17:00:00Z"
-  },
-  {
-    "title": "Police use facial recognition to scan one million faces in WA trial leading to 122 arrests",
-    "source": "The Guardian",
-    "extract": "Western Australia police say a five-month real-time facial-recognition trial scanned 1.38 million faces and generated 122 arrests, while recording nine false alerts. Civil-liberties advocates challenge the framing of the error rate and warn of privacy and due-process risks; the vans have been withdrawn while the trial is reviewed.",
-    "image": "https://i.guim.co.uk/img/media/52be4530d7e3640e661d83a08791923838efe95f/514_0_5031_4024/master/5031.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/australia-news/2026/nov/02/wa-police-facial-recognition-technology-trial",
-    "category": "Technology",
-    "published": "2026-11-02T02:02:00Z"
-  },
-  {
-    "title": "‘Being hated is very bracing’: Helen Garner on surviving three marriages and being called a ‘rotten feminist’",
-    "source": "The Guardian",
-    "extract": "Australian writer Helen Garner discusses her latest book, The Season, her career in fiction and literary true crime, and the backlash to The First Stone. She reflects on relationships, grandparenthood and finding a wider readership five decades into her career.",
-    "image": "https://i.guim.co.uk/img/media/6bb0d61778dfadb41ea06b7937127dfb554f49d3/0_984_2880_2304/master/2880.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/oct/31/being-hated-is-very-bracing-helen-garner-on-surviving-three-marriages-and-being-called-a-rotten-feminist",
-    "category": "Books",
-    "published": "2026-10-31T09:00:00Z"
-  },
-  {
-    "title": "What we’re reading: Ian Rankin, Louise Kennedy and Guardian readers on the books they enjoyed in October",
-    "source": "The Guardian",
-    "extract": "Ian Rankin recommends a biography of Muriel Spark and a Glasgow crime debut, while Louise Kennedy and Guardian readers share recent choices ranging from China Miéville’s weird fiction to Emma Cline and Halldór Laxness. The roundup offers a varied reading list spanning crime, speculative fiction and translated literature.",
-    "image": "https://i.guim.co.uk/img/media/dbacfb9989eb82cded2b58d1df825f6427175ee5/0_0_5000_4000/master/5000.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/oct/31/what-were-reading-ian-rankin-louise-kennedy-and-guardian-readers-on-the-books-they-enjoyed-in-october",
-    "category": "Books",
-    "published": "2026-10-31T09:04:00Z"
-  },
-  {
-    "title": "Unseen Harry Houdini writing published on 100th anniversary of his death",
-    "source": "The Guardian",
-    "extract": "A previously unpublished Houdini article, An Interesting Scrapbook, is appearing in Strand magazine on the centenary of his death. The piece documents the magicians and stage performers who shaped early theatrical magic, revealing Houdini as a careful historian as well as an escapologist.",
-    "image": "https://i.guim.co.uk/img/media/866c4346c85ba06f6e796e616a4eebe4f779ae37/0_190_2650_2120/master/2650.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/oct/31/harry-houdini-strand-magazine-article",
-    "category": "Books",
-    "published": "2026-10-31T10:00:00Z"
-  },
-  {
-    "title": "Like many authors, I’m bombarded by scam fan mail. I wasn’t prepared for what would happen when I wrote back",
-    "source": "The Guardian",
-    "extract": "Novelist Joe Dunthorne describes receiving convincing AI-written fan emails that offer to promote his books, then tracing one supposed book-club contact to a Philippine address linked to scam networks. The essay explores how generative AI is making literary impersonation more persuasive and exposing authors to organised fraud.",
-    "image": "https://i.guim.co.uk/img/media/8391dca1b5f47a3e14d5b9ff67498971e58f7917/232_292_1147_917/master/1147.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/nov/01/like-many-authors-im-bombarded-by-scam-fan-mail-i-wasnt-prepared-for-what-would-happen-when-i-wrote-back",
-    "category": "Books",
-    "published": "2026-11-01T12:00:00Z"
-  },
-  {
-    "title": "Historian Lucy Worsley looks back: ‘The story of my life has been – the bookworm shall go to the ball’",
-    "source": "The Guardian",
-    "extract": "Historian and presenter Lucy Worsley reflects on childhood reading, her route into history and the role of costume and storytelling in her television work. Her latest book, Queens and Kings: An Unusually Personal History, draws on the historical subjects that have shaped her career.",
-    "image": "https://media.guim.co.uk/a1691f17552ee09218dd2a63823c2ca4fd5fe6e9/0_0_4781_7076/1351.jpg",
-    "link": "https://www.theguardian.com/lifeandstyle/2026/nov/01/historian-lucy-worsley-looks-back-the-story-of-my-life-has-been-the-bookworm-shall-go-to-the-ball",
-    "category": "Books",
-    "published": "2026-11-01T14:00:00Z"
-  },
-  {
-    "title": "Yaga review – this erotic witchy thriller starring Hudson Williams is a total head-messer",
-    "source": "The Guardian",
-    "extract": "Sky’s folk-horror mystery reworks the Baba Yaga legend as a coastal Canadian detective story, with Hudson Williams playing two roles and Carrie-Anne Moss as an enigmatic professor. The Guardian review calls it quirky and uneven but praises its supernatural atmosphere and feminist twist.",
-    "image": "https://i.guim.co.uk/img/media/2f930cb202aac189dd728f0849c0423cb837aece/694_0_7921_6336/master/7921.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/tv-and-radio/2026/oct/31/yaga-review-sky-atlantic-erotic-thriller-hudson-williams",
-    "category": "Entertainment",
-    "published": "2026-10-31T21:40:00Z"
-  },
-  {
-    "title": "Romeo + Juliet at 30: how Baz Luhrmann made teens fall in love with Shakespeare",
-    "source": "The Guardian",
-    "extract": "Thirty years after Baz Luhrmann’s film arrived, the Guardian revisits its maximalist 1996 adaptation, which recast Verona’s feud as a 1990s gang war and turned Shakespeare into a pop-culture gateway for teenagers. The feature looks at its visual style, soundtrack and lasting influence.",
-    "image": "https://i.guim.co.uk/img/media/780dc006ffeb503f765b140a9823242821e3ff21/141_0_2387_1911/master/2387.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/film/2026/nov/01/baz-luhrmann-romeo-and-juliet-turns-30",
-    "category": "Entertainment",
-    "published": "2026-11-01T10:00:00Z"
-  },
-  {
-    "title": "‘Let’s take Alexa out into the garden and smash it with a shoe’: Charlie Brooker and Diane Morgan take aim at Hollywood, AI ... and each other",
-    "source": "The Guardian",
-    "extract": "As Philomena Cunk returns in Cunk on Cinema, Charlie Brooker and Diane Morgan discuss the character’s evolution, the new three-part film series and their comic take on Hollywood and AI. Brooker also discusses his forthcoming deadpan detective series, Blackmere.",
-    "image": "https://i.guim.co.uk/img/media/e61e91d5e91396982d0211ccfd3d3a2478839c29/0_0_5000_4000/master/5000.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/01/philomena-cunk-on-cinema-charlie-brooker-diane-morgan-interview",
-    "category": "Entertainment",
-    "published": "2026-11-01T10:00:00Z"
-  },
-  {
-    "title": "Saturday Night Live: Obsession breakout Inde Navarrette fronts a scary good Halloween episode",
-    "source": "The Guardian",
-    "extract": "The Halloween episode hosted by Obsession breakout Inde Navarrette features David S Pumpkins, a Midnight Matinees short about a robot companion and a series of darkly comic sketches. The Guardian review calls it the strongest episode of the season so far.",
-    "image": "https://i.guim.co.uk/img/media/37aecf6f72bd999f6bb1a8985c7151c94b98a25a/104_0_834_667/master/834.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/01/saturday-night-live-inde-navarrette-hosts-halloween-episode",
-    "category": "Entertainment",
-    "published": "2026-11-01T14:29:00Z"
-  },
-  {
-    "title": "Blue Planet III review – David Attenborough makes another absolute corker",
-    "source": "The Guardian",
-    "extract": "David Attenborough narrates the new series, which showcases dolphins using sponges, coordinated shark hunts and a turtle escaping a shark, alongside a stark sequence on coral bleaching. The review praises its mix of wonder, comedy and environmental urgency.",
-    "image": "https://i.guim.co.uk/img/media/3659d139ff45a5d0ec6cffea15e795cb4ab7e69e/850_0_4500_3600/master/4500.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/01/blue-planet-iii-review-david-attenborough-bbc-iplayer",
-    "category": "Entertainment",
-    "published": "2026-11-01T21:00:00Z"
-  },
-  {
-    "title": "The Lives of Others review – Keira Knightley brings star power to Robert Icke’s Stasi drama",
-    "source": "The Guardian",
-    "extract": "Robert Icke’s stage adaptation of the Oscar-winning Stasi drama stars Keira Knightley, Luke Thompson and Alex Dillane. The Guardian finds the production suspenseful but argues that its overt theatricality struggles to match the original film’s quiet psychological subtlety.",
-    "image": "https://i.guim.co.uk/img/media/54b1522dac068bec34689f3143182f6d21581723/0_1386_3750_3000/master/3750.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/stage/2026/nov/02/the-lives-of-others-review-keira-knightley-brings-star-power-to-robert-ickes-stasi-drama",
-    "category": "Entertainment",
-    "published": "2026-11-02T00:05:00Z"
-  },
-  {
-    "title": "TV tonight: The Gilded Age returns in all its glossy Julian Fellowes’ glory",
-    "source": "The Guardian",
-    "extract": "Julian Fellowes’ period drama returns with Agnes trying to defend her place in society as ambitious new-money industrialists challenge the old order. The Guardian’s TV guide previews the season opener alongside other Monday-night picks.",
+    "extract": "Ferrari raised its full-year outlook after Q3 results beat expectations; the report also notes strong F80 demand and that planned 2027 production of the Luce is already allocated.",
     "image": null,
-    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/02/tv-tonight-the-gilded-age-returns-in-all-its-glossy-julian-fellowes-glory",
+    "link": "https://www.reuters.com/business/ferrari-nudges-up-full-year-forecasts-after-beating-consensus-q3-2026-11-03/",
+    "category": "Automotive",
+    "published": "2026-11-03T11:49:00Z"
+  },
+  {
+    "title": "Architect creates open-source replacement for VM migration tool VMware has hidden",
+    "source": "The Register",
+    "extract": "OpenVDDK is an open-source replacement for VMware's Virtual Disk Development Kit, aiming to keep virtual-disk tooling usable without relying on VMware's now-hidden download.",
+    "image": null,
+    "link": "https://www.theregister.com/virtualization/2026/11/03/architect-creates-open-source-replacement-for-vm-migration-tool-vmware-has-hidden/5307124",
+    "category": "Technology",
+    "published": "2026-11-03T04:45:59Z"
+  },
+  {
+    "title": "Toyota shows off SoC that stores model weights and its OS on integrated memory",
+    "source": "The Register",
+    "extract": "Toyota's new system-on-chip places AI model weights and the operating system in integrated memory, aiming to reduce data movement and latency for physical-AI applications.",
+    "image": null,
+    "link": "https://www.theregister.com/systems/2026/11/03/toyota-shows-off-soc-that-stores-model-weights-and-its-os-on-integrated-memory/5307117",
+    "category": "Technology",
+    "published": "2026-11-03T03:25:32Z"
+  },
+  {
+    "title": "Forget retraining – AI can now tweak another AI's weights",
+    "source": "The Register",
+    "extract": "Researchers describe weight-space programming, a way to adjust an existing model's parameters directly rather than retraining it from scratch, opening another route to tuning and composing AI systems.",
+    "image": null,
+    "link": "https://www.theregister.com/ai-and-ml/2026/11/03/forget-retraining-ai-can-now-tweak-another-ais-weights/5307105",
+    "category": "Technology",
+    "published": "2026-11-03T08:15:00Z"
+  },
+  {
+    "title": "Open models can do 90 percent of agentic work at a twentieth of the cost of a frontier LLM, Gartner says",
+    "source": "The Register",
+    "extract": "Gartner's assessment suggests open models can handle roughly 90% of agentic workloads at around one-twentieth the cost of frontier systems, with orchestration and tooling doing much of the heavy lifting.",
+    "image": null,
+    "link": "https://www.theregister.com/ai-and-ml/2026/11/03/open-models-can-do-90-percent-of-agentic-work-at-a-twentieth-of-the-cost-of-a-frontier-llm-gartner/5307132",
+    "category": "Technology",
+    "published": "2026-11-03T06:19:50Z"
+  },
+  {
+    "title": "Max-severity bug in widely used OT programming tool exploited to deliver Linux malware",
+    "source": "The Register",
+    "extract": "Attackers are exploiting a critical Node-RED flaw to deliver Linux malware, raising the stakes for industrial and IoT deployments that expose the flow-based automation platform.",
+    "image": null,
+    "link": "https://www.theregister.com/security/2026/11/02/max-severity-bug-in-widely-used-ot-programming-tool-exploited-to-deliver-linux-malware/5307086",
+    "category": "Technology",
+    "published": "2026-11-02T22:55:00Z"
+  },
+  {
+    "title": "Cops bust botnet of 1.3M infected Android TV boxes",
+    "source": "The Register",
+    "extract": "Law-enforcement action has disrupted a botnet built from roughly 1.3 million infected Android TV devices, a significant takedown in the smart-device malware ecosystem.",
+    "image": null,
+    "link": "https://www.theregister.com/cyber-crime/2026/11/02/cops-bust-botnet-of-13m-infected-android-tv-boxes/5307045",
+    "category": "Technology",
+    "published": "2026-11-02T19:03:31Z"
+  },
+  {
+    "title": "Token thieves costing companies $100K+ per day in illicit LLM charges",
+    "source": "The Register",
+    "extract": "Stolen LLM API credentials are being abused for unauthorised inference at costs reportedly exceeding $100,000 per day for some organisations, highlighting the need to protect model tokens like production secrets.",
+    "image": null,
+    "link": "https://www.theregister.com/security/2026/11/02/token-thieves-costing-companies-100k-per-day-in-illicit-llm-charges/5306967",
+    "category": "Technology",
+    "published": "2026-11-02T16:00:00Z"
+  },
+  {
+    "title": "FBI pins $6.3B Binance crypto heist on North Korean hackers",
+    "source": "The Register",
+    "extract": "The FBI attributes the massive Binance-linked cryptocurrency theft to North Korean hackers, adding an official attribution to one of the sector's largest cyber heists.",
+    "image": null,
+    "link": "https://www.theregister.com/security/2026/11/02/fbi-pins-63b-binance-crypto-heist-on-north-korean-hackers/5306889",
+    "category": "Technology",
+    "published": "2026-11-02T11:45:00Z"
+  },
+  {
+    "title": "GhostBSD 26.2 takes the fright out of FreeBSD with a friendlier installer",
+    "source": "The Register",
+    "extract": "GhostBSD 26.2 ships with a more approachable installer and an updated FreeBSD base, aiming to make a desktop-friendly BSD system easier to deploy.",
+    "image": "https://image.theregister.com/5307232.webp?croph=100.00&cropw=100.00&format=jpg&height=720&imageId=5307232&width=960&x=0.00&y=0.00",
+    "link": "https://www.theregister.com/os-platforms/2026/11/03/ghostbsd-262-takes-the-fright-out-of-freebsd-with-a-friendlier-installer/5307228",
+    "category": "Technology",
+    "published": "2026-11-03T16:02:00Z"
+  },
+  {
+    "title": "OpenAI built itself a new Git backend, too",
+    "source": "The New Stack",
+    "extract": "OpenAI's in-house Pando backend is designed for its enormous monorepo workload, cutting Git push latency by nearly five times while serving vast amounts of repository data.",
+    "image": null,
+    "link": "https://thenewstack.io/openai-pando-git-backend/",
+    "category": "Technology",
+    "published": "2026-11-03T00:00:00Z"
+  },
+  {
+    "title": "Same fab, different paths: Kioxia and Sandisk diverge on HBF",
+    "source": "Blocks & Files",
+    "extract": "Kioxia and Sandisk are taking different approaches to high-bandwidth flash, as HBF emerges as a potential new memory architecture for data-intensive AI systems.",
+    "image": null,
+    "link": "https://www.blocksandfiles.com/flash/2026/11/03/same-fab-different-paths-kioxia-and-sandisk-diverge-on-hbf/5307156",
+    "category": "Technology",
+    "published": "2026-11-03T14:21:00Z"
+  },
+  {
+    "title": "OpenAI employees warned about operational security lapses for years, sources say",
+    "source": "Reuters",
+    "extract": "Former and current staff told Reuters that concerns about operational security and internal controls were raised repeatedly, prompting scrutiny of how the AI company protects sensitive systems and information.",
+    "image": null,
+    "link": "https://www.reuters.com/business/openai-employees-warned-about-operational-security-lapses-years-sources-say-2026-11-03/",
+    "category": "Technology",
+    "published": "2026-11-03T18:56:00Z"
+  },
+  {
+    "title": "Anthropic restricts AI bot Claude's ability to clone or decompile specific existing games",
+    "source": "Time Extension",
+    "extract": "Anthropic has added server-side restrictions to Claude Code that block certain attempts to clone or decompile named commercial games, while allowing original projects and user-owned material.",
+    "image": null,
+    "link": "https://www.timeextension.com/news/2026/11/anthropic-restricts-ai-bot-claudes-ability-to-clone-or-decompile-specific-existing-games",
+    "category": "Technology",
+    "published": "2026-11-02T16:00:00Z"
+  },
+  {
+    "title": "Former Sega dev shares Mega Drive archive, including abandoned code for Segapede, Jester and a game starring Tails",
+    "source": "Time Extension",
+    "extract": "Former Sega Technical Institute developer Ken Rose has released source code, design documents and related material for several unreleased Mega Drive projects, including Segapede, Jester and a Tails-led game.",
+    "image": null,
+    "link": "https://www.timeextension.com/news/2026/11/former-sega-dev-shares-mega-drive-archive-inc-abandoned-code-for-segapede-jester-and-a-game-starring-sonics-pal-tails",
+    "category": "Retro Computing",
+    "published": "2026-11-03T18:00:00Z"
+  },
+  {
+    "title": "Modular retro console Polymega is getting support for the Sega Master System, Mark III and Game Gear",
+    "source": "Time Extension",
+    "extract": "A new Polymega teaser points to support for Sega Master System, Mark III and Game Gear software; the company has not yet confirmed the hardware module details or release timing.",
+    "image": null,
+    "link": "https://www.timeextension.com/news/2026/11/modular-retro-console-polymega-is-getting-support-for-the-sega-master-system-mark-iii-and-game-gear",
+    "category": "Retro Computing",
+    "published": "2026-11-02T21:20:00Z"
+  },
+  {
+    "title": "Castlevania: Symphony of the Night is getting an AI-free SNES port, and you can play it now",
+    "source": "Time Extension",
+    "extract": "A homebrew developer has produced a playable, AI-free SNES port of Symphony of the Night, translating the PlayStation-era game to Nintendo's 16-bit hardware in an ambitious fan project.",
+    "image": null,
+    "link": "https://www.timeextension.com/news/2026/11/castlevania-symphony-of-the-night-is-getting-an-ai-free-snes-port-and-you-can-play-it-now",
+    "category": "Retro Computing Projects",
+    "published": "2026-11-02T11:00:00Z"
+  },
+  {
+    "title": "MediEvil's AI-free recomp hits version 1.0",
+    "source": "Time Extension",
+    "extract": "The community recompilation of the original MediEvil has reached version 1.0, bringing the PS1 classic to modern PC hardware with compatibility and performance improvements.",
+    "image": null,
+    "link": "https://www.timeextension.com/news/2026/11/we-have-the-skills-to-bring-love-to-these-old-games-after-last-months-beta-medievils-ai-free-recomp-hits-version-1-0",
+    "category": "Retro Computing Projects",
+    "published": "2026-11-02T15:00:00Z"
+  },
+  {
+    "title": "AYANEO's new AYASpace 2 emulator launcher wants to curate your own personal 'Pocket Museum'",
+    "source": "Time Extension",
+    "extract": "AYANEO's AYASpace 2 adds a Pocket Museum interface for emulated games, organising libraries by platform, era, genre and developer, with convenience features aimed at retro handheld users.",
+    "image": null,
+    "link": "https://www.timeextension.com/news/2026/11/ayaneos-new-ayaspace-2-emulator-launcher-wants-to-curate-your-own-personal-pocket-museum",
+    "category": "Retro Computing Projects",
+    "published": "2026-11-02T14:00:00Z"
+  },
+  {
+    "title": "After 2 years of sneak peeks, fangame Super Mario & The Rainbow Stars just got a spooktacular second chapter",
+    "source": "Time Extension",
+    "extract": "The long-teased fan-made Mario adventure has released its second chapter, adding a new instalment to a community-built project that has been in development for two years.",
+    "image": null,
+    "link": "https://www.timeextension.com/news/2026/11/after-2-years-of-sneak-peeks-fangame-super-mario-and-the-rainbow-stars-just-got-a-spooktacular-second-chapter",
+    "category": "Retro Computing Projects",
+    "published": "2026-11-02T13:00:00Z"
+  },
+  {
+    "title": "Thief: The Dark Project Remastered brings its sticky fingers to PC and consoles next month",
+    "source": "Time Extension",
+    "extract": "A remaster of LookingGlass's 1998 stealth classic is heading to PC and consoles next month, with a physical edition already available to pre-order—a welcome return for one of PC gaming's foundational immersive sims.",
+    "image": null,
+    "link": "https://www.timeextension.com/news/2026/11/thief-the-dark-project-remastered-brings-its-sticky-fingers-to-pc-and-consoles-next-month",
+    "category": "Retro Computing Projects",
+    "published": "2026-11-02T17:00:00Z"
+  },
+  {
+    "title": "Vintage fun: Prodding AI agents using retro hardware just because you can",
+    "source": "The Register",
+    "extract": "A developer has connected vintage DECwriter and Commodore-era hardware to modern AI coding agents, turning a retro terminal setup into a working interface for contemporary tools.",
+    "image": null,
+    "link": "https://www.theregister.com/offbeat/2026/11/02/vintage-fun-prodding-ai-agents-using-retro-hardware-just-because-you-can/5306705",
+    "category": "Retro Computing Projects",
+    "published": "2026-11-02T11:00:00Z"
+  },
+  {
+    "title": "Audemars Piguet debuts Supersonnerie trio",
+    "source": "SJX Watches",
+    "extract": "Audemars Piguet revisits its signature minute repeater with three new Supersonnerie references across Royal Oak and Code 11.59; the titanium soundboard and case architecture amplify the chime, and the titanium Royal Oak is limited to 50 pieces.",
+    "image": "https://watchesbysjx.com/wp-content/uploads/2026/11/Audemars-Piguet-code-1159-royal-oak-minute-repeaters-3x2-centred-header-2.jpg",
+    "link": "https://watchesbysjx.com/2026",
+    "category": "Watches",
+    "published": "2026-11-02T20:54:39Z"
+  },
+  {
+    "title": "Insight: Modern escapement developments, Part I",
+    "source": "SJX Watches",
+    "extract": "Part I examines modern revivals and refinements of classic escapements, including detent and Robin-derived designs, with a technical look at efficiency, locking and shock resistance.",
+    "image": "https://watchesbysjx.com/wp-content/uploads/2025/10/Voutilainen-KV20i-Reversed-CS-escapement.jpg",
+    "link": "https://watchesbysjx.com/2026/11/insight-modern-escapement-developments-part-i.html",
+    "category": "Watches",
+    "published": "2026-11-03T01:00:21Z"
+  },
+  {
+    "title": "First look: H. Moser & Cie. drops two heritage models, including a new chronograph",
+    "source": "Monochrome Watches",
+    "extract": "H. Moser & Cie. has unveiled two heritage-inspired watches, including a new chronograph, pairing vintage design cues with the brand's contemporary movement work.",
+    "image": null,
+    "link": "https://monochrome-watches.com/first-look-h-moser-cie-drops-two-heritage-models-including-a-new-chronograph/",
+    "category": "Watches",
+    "published": "2026-11-02T10:01:58Z"
+  },
+  {
+    "title": "Introducing: The sleeker, more compact and more accessible Minase Mastercraft J3 collection",
+    "source": "Monochrome Watches",
+    "extract": "Minase's new Mastercraft J3 collection brings its Japanese case-finishing expertise to a more compact, accessible range, with 37mm and 40mm cases and a Miyota 90S5 automatic movement.",
+    "image": null,
+    "link": "https://monochrome-watches.com/minase-mastercraft-j3-entry-level-collection-miyota-introducing-price/",
+    "category": "Watches",
+    "published": "2026-11-02T07:00:44Z"
+  },
+  {
+    "title": "Direnzo introduces its first GMT, the DRZ 08 Cosmonaire",
+    "source": "Worn & Wound",
+    "extract": "Direnzo launches its first GMT watch, the DRZ 08 Cosmonaire, using a Sellita SW330-2 caller-GMT movement in a compact 39mm case.",
+    "image": null,
+    "link": "https://wornandwound.com/direnzo-introduces-their-first-gmt-the-drz-08-cosmonaire/",
+    "category": "Watches",
+    "published": "2026-11-02T20:00:05Z"
+  },
+  {
+    "title": "Introducing: Casio expands its mechanical range with the CMK-100 collection",
+    "source": "Monochrome Watches",
+    "extract": "Casio expands its mechanical collection with the CMK-100, pairing a compact titanium case with an automatic movement—an unusual direction for a brand better known for quartz and digital watches.",
+    "image": null,
+    "link": "https://monochrome-watches.com/casio-expands-its-mechanical-range-with-the-cmk-100-collection-an-accessible-compact-titanium-explorer-like-watch/",
+    "category": "Watches",
+    "published": "2026-11-02T17:10:18Z"
+  },
+  {
+    "title": "The Rhyl Poster by Tom McCarthy review – is this avant-garde spy drama worth the riddles?",
+    "source": "The Guardian",
+    "extract": "Tom McCarthy's new novel blends spy-fiction intrigue with avant-garde literary puzzles; the review weighs whether the riddles reward the reader.",
+    "image": null,
+    "link": "https://www.theguardian.com/books/2026/nov/02/the-rhyl-poster-by-tom-mccarthy-review-is-this-avant-garde-spy-drama-worth-the-riddles",
+    "category": "Books",
+    "published": "2026-11-02T09:00:00Z"
+  },
+  {
+    "title": "Lords of Serendipity by Randy Boyagoda review – a campus satire for this moment of crisis",
+    "source": "The Guardian",
+    "extract": "Randy Boyagoda's comic campus novel turns contemporary university politics and institutional turmoil into a sharp satire.",
+    "image": null,
+    "link": "https://www.theguardian.com/books/2026/nov/03/lords-of-serendipity-by-randy-boyagoda-review-a-campus-satire-for-this-moment-of-crisis",
+    "category": "Books",
+    "published": "2026-11-03T07:00:00Z"
+  },
+  {
+    "title": "Sarah J. Maas's Court of Splintered Harmony is the UK's fastest-selling adult fantasy novel",
+    "source": "The Guardian",
+    "extract": "The latest Sarah J. Maas release sold 188,914 UK copies in its first week, setting a new record for an adult fantasy novel and underlining the series' enormous readership.",
+    "image": null,
+    "link": "https://www.theguardian.com/books/2026/nov/03/sarah-j-maas-court-of-splintered-harmony-uk-fastest-selling-adult-fantasy-novel",
+    "category": "Books",
+    "published": "2026-11-03T18:51:00Z"
+  },
+  {
+    "title": "True crime novel about murdered Paris life model wins France's biggest literary prize",
+    "source": "The Guardian",
+    "extract": "Philippe Jaenada's novel revisiting the 1949 murder of a Parisian life model has won the Prix Goncourt, bringing a decades-old case into the literary spotlight.",
+    "image": null,
+    "link": "https://www.theguardian.com/books/2026/nov/03/true-crime-novel-murdered-model-wins-france-literary-prize-prix-goncourt-philippe-jaenada",
+    "category": "Books",
+    "published": "2026-11-03T14:31:00Z"
+  },
+  {
+    "title": "New book celebrating 45 years of the ZX Spectrum smashes all Kickstarter goals, receiving £112,000 in pledges",
+    "source": "Time Extension",
+    "extract": "The ZX Spectrum history book's Kickstarter has cleared all stretch goals and raised more than £112,000, turning a 45th-anniversary tribute into a substantial community-funded project.",
+    "image": null,
+    "link": "https://www.timeextension.com/news/2026/11/new-book-celebrating-45-years-of-the-zx-spectrum-smashes-all-kickstarter-goals-receiving-p112000-in-pledges",
+    "category": "Books",
+    "published": "2026-11-02T15:00:00Z"
+  },
+  {
+    "title": "John Leeson, voice of Doctor Who's K9, dies aged 83",
+    "source": "The Guardian",
+    "extract": "Actor John Leeson, who voiced K9 in Doctor Who for decades, has died aged 83—a notable loss for fans of classic British science-fiction television.",
+    "image": null,
+    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/02/john-leeson-doctor-who-k9-dies",
     "category": "Entertainment",
-    "published": "2026-11-02T06:15:00Z"
+    "published": "2026-11-02T09:13:00Z"
+  },
+  {
+    "title": "Alex Garland's Elden Ring adaptation is on course to be Hollywood's goriest ever fantasy movie",
+    "source": "The Guardian",
+    "extract": "Alex Garland's film adaptation of FromSoftware's fantasy epic is shaping up as an unusually brutal screen version, with production details pointing to a high-gore take on the Lands Between.",
+    "image": null,
+    "link": "https://www.theguardian.com/film/2026/nov/02/alex-garland-elden-ring-adaptation-amazon-mgm-cailee-spaeny",
+    "category": "Entertainment",
+    "published": "2026-11-02T06:00:00Z"
+  },
+  {
+    "title": "Dustin Hoffman says filming The Graduate was a 'terrible experience' in new memoir",
+    "source": "The Guardian",
+    "extract": "In his new memoir Look at Me, Hoffman revisits the making of The Graduate and describes filming as a miserable experience, offering a fresh behind-the-scenes account of the 1967 classic.",
+    "image": null,
+    "link": "https://www.theguardian.com/film/2026/nov/03/dustin-hoffman-memoir-look-at-me-the-graduate-mike-nichols",
+    "category": "Entertainment",
+    "published": "2026-11-03T00:54:00Z"
+  },
+  {
+    "title": "Carrie at 50: Brian De Palma's fiery masterpiece still has the power to shock",
+    "source": "The Guardian",
+    "extract": "A 50th-anniversary look at Brian De Palma's adaptation traces how its slow-burn dread, split-screen finale and Sissy Spacek's performance still make it a formidable horror film.",
+    "image": null,
+    "link": "https://www.theguardian.com/film/2026/nov/03/carrie-movie-anniversary-stephen-king",
+    "category": "Entertainment",
+    "published": "2026-11-03T10:00:00Z"
+  },
+  {
+    "title": "Mum, I'm Alien Pregnant review – slime and silliness in amusing New Zealand comedy horror",
+    "source": "The Guardian",
+    "extract": "The Guardian's review finds plenty of slime and silliness in this New Zealand comedy-horror, a deliberately oddball mix of pregnancy panic and extraterrestrial body horror.",
+    "image": null,
+    "link": "https://www.theguardian.com/film/2026/nov/03/mum-im-alien-pregnant-review-slime-and-silliness-in-amusing-new-zealand-comedy-horror",
+    "category": "Entertainment",
+    "published": "2026-11-03T13:00:00Z"
+  },
+  {
+    "title": "The Simpsons' French Homer and Marge voice actors marry in real life",
+    "source": "The Guardian",
+    "extract": "The French voice actors behind Homer and Marge, Philippe Peythieu and Véronique Augereau, have married in real life after decades voicing the couple.",
+    "image": null,
+    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/03/the-simpsons-french-homer-marge-married-real-life-peythieu-augereau",
+    "category": "Entertainment",
+    "published": "2026-11-03T14:33:00Z"
+  },
+  {
+    "title": "Blockhead review – comic thriller turns a struggling novelist into a monster",
+    "source": "The Guardian",
+    "extract": "A comic thriller follows a struggling novelist whose attempt to reinvent himself takes a monstrous turn; the review highlights its darkly funny, genre-bending approach.",
+    "image": null,
+    "link": "https://www.theguardian.com/film/2026/nov/02/blockhead-review-joe-sims-danny-horn-matt-harlock",
+    "category": "Entertainment",
+    "published": "2026-11-02T11:00:00Z"
+  },
+  {
+    "title": "Lupin is back! Omar Sy is ridiculously watchable and effortlessly charming as a blindingly brilliant thief",
+    "source": "The Guardian",
+    "extract": "Omar Sy returns as Assane Diop in the fourth part of Netflix's French heist series, with the review praising the show's charm, disguises and elaborate thief-versus-detective games.",
+    "image": null,
+    "link": "https://www.theguardian.com/culture/2026/nov/04/lupin-season-4-part-four-omar-sy-netflix-show",
+    "category": "Entertainment",
+    "published": "2026-11-03T14:00:00Z"
   }
 ]
