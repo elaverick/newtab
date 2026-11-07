@@ -1,272 +1,74 @@
 [
   {
-    "title": "Tencent rolls out AI model trained with limited cybersecurity data amid hacking fears",
-    "source": "Reuters",
-    "extract": "Tencent says its new Hy4 model restricts cybersecurity training to defensive tasks such as finding software flaws and helping patch them, excluding material for building hacking tools or breaking into systems.",
-    "image": "https://www.reuters.com/resizer/v2/DQFEYHAQ5ZJQFFHXXFJB5LRFZY.jpg?auth=ce84a11093b4e3d6bc094e15af9385c6f96314e095981f0dc0255ca7f2940ba0&quality=80&width=1920",
-    "link": "https://www.reuters.com/legal/litigation/tencent-rolls-out-ai-model-trained-with-limited-cybersecurity-data-amid-hacking-2026-11-04/",
-    "category": "Technology",
-    "published": "2026-11-04T10:34:00Z"
-  },
-  {
-    "title": "Nvidia chips pile up in Hong Kong as China withholds import approval",
-    "source": "Reuters",
-    "extract": "Reuters reports roughly 600,000 H200 accelerators are sitting in Hong Kong awaiting approval for mainland shipment, highlighting the tension between China's AI compute demand and reluctance to depend on US chips.",
-    "image": "https://www.reuters.com/resizer/v2/KSKEIMDXPJMLPOFS6S5JSABDZA.jpg?auth=8f08cb0655633a9aeb0c169b8198cd02a1b9e8c05d6d35d50d2c1296de3d50ff&quality=80&width=1920",
-    "link": "https://www.reuters.com/world/china/nvidia-chips-pile-up-hong-kong-china-withholds-import-approval-2026-11-05/",
-    "category": "Technology",
-    "published": "2026-11-05T11:27:00Z"
-  },
-  {
-    "title": "India flags Chinese-linked AI tools in hacking campaign against financial firms",
-    "source": "Reuters",
-    "extract": "India's CERT-In has named the group Crafty Falcon and identified four AI-enabled tools used in attacks on non-bank lenders, fintech firms and crypto exchanges; at least two tools are linked by researchers to China.",
-    "image": "https://www.reuters.com/resizer/v2/BCOEEUL7IVI55CUNHEWSDL4ZEE.jpg?auth=678b5d38f17b0aae16ca555f5c7d4275cf32e617cac94aed9e823bae03722efb&quality=80&width=1920",
-    "link": "https://www.reuters.com/legal/government/india-flags-chinese-linked-ai-tools-hacking-campaign-against-financial-firms-2026-11-05/",
-    "category": "Technology",
-    "published": "2026-11-05T08:38:00Z"
-  },
-  {
-    "title": "IBM, AMD, Oak Ridge National Laboratory launch quantum error correction platform",
-    "source": "Reuters",
-    "extract": "The collaboration pairs IBM's quantum processors with Oak Ridge's AMD-powered Umbra supercomputer so researchers can test hybrid methods for detecting and correcting quantum errors.",
-    "image": "https://www.reuters.com/resizer/v2/BOWT6NJ3ARLYTILJYJE7DOSHWU.jpg?auth=2d73a0efe51de7f80b8559b93249026e57942993d71afefb848e84df143514c5&quality=80&width=1920",
-    "link": "https://www.reuters.com/technology/ibm-amd-oak-ridge-national-laboratory-launch-quantum-error-correction-platform-2026-11-05/",
-    "category": "Technology",
-    "published": "2026-11-05T13:00:00Z"
-  },
-  {
-    "title": "OpenAI launches GPT-6 Cyber with 'Critical' cybersecurity rating",
-    "source": "Reuters",
-    "extract": "OpenAI released GPT-6 Cyber to vetted security customers, citing work uncovering Firefox and Linux kernel vulnerabilities and developing patches for critical findings.",
-    "image": "https://www.reuters.com/resizer/v2/MROCIBC2CBONRIYR5F6SLQV5OU.jpg?auth=e29f8cbfd71b73d3e376c18d1b9e443cc8268c687c5030a9a1024fc3089df298&quality=80&width=1920",
-    "link": "https://www.reuters.com/technology/openai-launches-gpt-6-cyber-with-critical-cybersecurity-rating-2026-11-05/",
-    "category": "Technology",
-    "published": "2026-11-05T17:01:00Z"
-  },
-  {
-    "title": "Anthropic's models improving nearly twice as fast with help from AI, study finds",
-    "source": "Reuters",
-    "extract": "An independent METR study found Anthropic's benchmark capabilities have been improving about 1.9 times faster since October 2025, as AI tools increasingly help build successor models.",
-    "image": "https://www.reuters.com/resizer/v2/CM7HZKH2SJOM5NIZSR5UD2HCLQ.jpg?auth=a1dbbf3550a045cd0558e1f9ab9be80487f29eb6034d8a89d2aea933f7f838ec&quality=80&width=1920",
-    "link": "https://www.reuters.com/technology/anthropics-models-improving-nearly-twice-fast-with-help-ai-study-finds-2026-11-05/",
-    "category": "Technology",
-    "published": "2026-11-05T18:02:00Z"
-  },
-  {
-    "title": "Discord is ditching Electron and its new app uses less RAM",
-    "source": "The Verge",
-    "extract": "Discord is moving its desktop client from Electron to Rust, aiming to cut resource use while sharing more code across desktop and mobile clients.",
-    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/acastro_STK062_01.jpg?crop=0%2C0%2C100%2C100&quality=90&strip=all&w=2400",
-    "link": "https://www.theverge.com/news/1027379/discord-ditching-electron-web-app",
-    "category": "Technology",
-    "published": "2026-11-05T11:39:00Z"
-  },
-  {
-    "title": "Perplexity launches its own take on AI agents for work",
-    "source": "The Verge",
-    "extract": "Perplexity's always-on Teammates can take on separate roles in a workspace, reuse existing projects and memory, and run ongoing tasks through the company's Computer system; the feature requires its $200-per-month Max plan.",
-    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25472503/STK271_PERPLEXITY_C.jpg?crop=0%2C0%2C100%2C100&quality=90&strip=all&w=2400",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
-    "category": "Technology",
-    "published": "2026-11-05T22:26:00Z"
-  },
-  {
-    "title": "Muse has a voice mode now",
-    "source": "The Verge",
-    "extract": "Meta is rolling out real-time voice conversations for its Muse AI agent, with animated avatars and selectable vocal styles; the feature is initially available in the US.",
-    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKB394_MUSE_AI_CVIRGINIA_D.png?crop=0.95588235294118%2C0%2C98.088235294118%2C100&quality=90&strip=all&w=2400",
-    "link": "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar",
-    "category": "Technology",
-    "published": "2026-11-05T19:03:00Z"
-  },
-  {
-    "title": "'Conker? Ultimate? Dream? Zelda?' - Rare co-founder Tim Stamper wants to know what fans want him to reveal first",
-    "source": "Time Extension",
-    "extract": "Rare co-founder Tim Stamper is preparing to open his archive on YouTube, inviting fans to choose which material from his four-decade career should be revealed first.",
+    "title": "Yangwang U9 Xtreme sets a 312.65-mph production-car speed record",
+    "source": "Autoweek",
+    "extract": "BYD's electric hypercar reached 503.17 km/h on a closed road in Abu Dhabi, becoming the first production car to exceed 500 km/h in a single-direction run. Engineers adjusted its rear-wing angle, suspension rebound damping and tyre pressures between attempts; the four-motor U9 Xtreme produces nearly 3,000 hp.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/conker-ultimate-dream-zelda-rare-co-founder-tim-stamper-wants-to-know-what-fans-want-him-to-reveal-first",
-    "category": "Retro Computing",
-    "published": "2026-11-05T09:30:00Z"
+    "link": "https://www.autoweek.com/news/a74360059/yangwang-u9-xtreme-sets-production-ev-speed-record/",
+    "category": "Automotive",
+    "published": "2026-11-06T12:26:00-05:00"
   },
   {
-    "title": "'Next Stop? Production Line!' - Retro Games Ltd offers an update on its recreation of the Atari 800XL",
-    "source": "Time Extension",
-    "extract": "Retro Games Ltd says firmware development for its Atari 800XL recreation is complete and the hardware is entering final manufacturing stages, with shipping still scheduled for April 2027.",
+    "title": "FAA to finally ditch floppy disks in its air traffic control technology upgrade",
+    "source": "Ars Technica",
+    "extract": "The Federal Aviation Administration plans to replace information display systems still dating to the 1980s across 435 facilities. The upgrade will retire floppy disks used to distribute weather, NOTAM and airport-status information, giving controllers a single, more accessible data platform.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/next-stop-production-line-retro-games-ltd-offers-an-update-on-its-recreation-of-the-atari-800xl",
-    "category": "Retro Computing Projects",
-    "published": "2026-11-05T10:00:00Z"
+    "link": "https://arstechnica.com/tech-policy/2026/11/faa-to-finally-ditch-floppy-disks-in-what-it-calls-historic-tech-upgrade/",
+    "category": "Technology",
+    "published": "2026-11-06T14:12:00-05:00"
   },
   {
-    "title": "'Commodore Is Returning to Shelves Soon' - The C64 Ultimate is headed to physical retail",
-    "source": "Time Extension",
-    "extract": "The revived Commodore has signed an exclusive distribution deal with Colby to bring the C64 Ultimate to physical stores across Europe and parts of Africa and Asia, with US expansion still being worked on.",
+    "title": "Writer Nick Harkaway expands his father John le Carré's spyverse in new thriller The Taper Man",
+    "source": "Associated Press",
+    "extract": "Nick Harkaway's latest novel sends George Smiley to California in 1965 to pursue a Soviet agent and navigate tensions with le Carré's fictional CIA, 'the Cousins'. Harkaway says the Cold War setting has unsettling parallels with 2026, and plans at least one more Smiley novel.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/commodore-is-returning-to-shelves-soon-the-c64-ultimate-is-headed-to-physical-retail",
-    "category": "Retro Computing",
-    "published": "2026-11-04T13:00:00Z"
-  },
-  {
-    "title": "'Battlespire Rules' - after 29 years, the secret of this Elder Scrolls Easter egg has finally been revealed",
-    "source": "Time Extension",
-    "extract": "A newly donated archive of Elder Scrolls creator Julian LeFay's papers revealed how to trigger a hidden 1997 Battlespire Easter egg: hold the 1 key and type Spire during a game.",
-    "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/battlespire-rules-after-29-years-the-secret-of-this-elder-scrolls-easter-egg-has-finally-been-revealed",
-    "category": "Retro Computing",
-    "published": "2026-11-04T11:00:00Z"
-  },
-  {
-    "title": "Speedrunner discovers the formula to Dampé's RNG gravedigging in Zelda: Ocarina of Time",
-    "source": "Time Extension",
-    "extract": "A former speedrunner has decoded the 1998 N64 game's gravedigging RNG by spotting a tell in gravedigger Dampé's blinking pattern, turning a long-standing mystery into a near-reliable method.",
-    "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/speedrunner-discovers-the-formula-to-dampes-rng-gravedigging-in-zelda-ocarina-of-time",
-    "category": "Retro Computing",
-    "published": "2026-11-05T11:00:00Z"
-  },
-  {
-    "title": "This impressive new Game Boy Color game may look a little familiar to F-Zero fans",
-    "source": "Time Extension",
-    "extract": "Developer Shane McCafferty has released Zero, a Mode 7-inspired anti-gravity racer for Game Boy Color, adding another technically ambitious homebrew title to the handheld's library.",
-    "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/this-impressive-new-game-boy-color-game-may-look-a-little-familiar-to-f-zero-fans",
-    "category": "Retro Computing Projects",
-    "published": "2026-11-05T16:00:00Z"
-  },
-  {
-    "title": "Crazy Taxi meets GTA in Downtown Dash, a new arcade-style racing game for your Atari Jaguar",
-    "source": "Time Extension",
-    "extract": "Dr Ludos has released an open-source 3D arcade racer for Atari Jaguar, built in six months with help from the homebrew community and using community-created tools, sound and models.",
-    "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/crazy-taxi-meets-gta-in-downtown-dash-a-new-arcade-style-racing-game-for-your-atari-jaguar",
-    "category": "Retro Computing Projects",
-    "published": "2026-11-04T09:45:00Z"
-  },
-  {
-    "title": "The wait is over! Taito's 1987 shmup Exzisus joins Arcade Archives today",
-    "source": "Time Extension",
-    "extract": "Taito's 1987 shoot-'em-up Exzisus has arrived in Hamster's Arcade Archives, bringing its robot-mech space combat to modern PlayStation, Xbox and Nintendo platforms with additional modes.",
-    "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/the-wait-is-over-taitos-1987-shmup-exzisus-joins-arcade-archives-today",
-    "category": "Retro Computing",
-    "published": "2026-11-05T13:00:00Z"
-  },
-  {
-    "title": "EA is bringing 25 classic PC games to Steam",
-    "source": "The Verge",
-    "extract": "EA is bringing 25 classic PC titles to Steam; a rediscovered media vault let the company restore Road Rash and six Wing Commander editions, including more than 1,500 recovered FMV scenes.",
-    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/ROAD_RASH.jpg?crop=0%2C0%2C100%2C100&quality=90&strip=all&w=2400",
-    "link": "https://www.theverge.com/games/1023553/ea-classic-pc-games-steam-anniversary-edition",
-    "category": "Retro Computing Projects",
-    "published": "2026-11-05T18:30:00Z"
-  },
-  {
-    "title": "'He was destined for this award': China Miéville wins Goldsmiths prize for 1,200-page novel",
-    "source": "The Guardian",
-    "extract": "China Miéville's 1,264-page paranormal thriller and historical saga The Rouse has won the Goldsmiths Prize, praised for its scale, formal experimentation and blend of British imperial and Cold War history.",
-    "image": "https://i.guim.co.uk/img/media/23c820edece4b448070c968b7afe37cd105e4747/396_0_5000_4000/master/5000.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/nov/04/china-mieville-wins-10000-goldsmiths-prize-for-the-rouse",
+    "link": "https://apnews.com/article/9cfbf7823ca42e67884b8a10db62d17c",
     "category": "Books",
-    "published": "2026-11-04T20:00:00Z"
+    "published": "2026-11-07T00:07:00-05:00"
   },
   {
-    "title": "'Blockbuster' history of Alexander the Great wins £50,000 Baillie Gifford prize",
+    "title": "True North by Paul Theroux review – an American's view of Canada",
     "source": "The Guardian",
-    "extract": "Edmund Richardson's Alexander: God, King, Man has become the first ancient-history title to win the Baillie Gifford nonfiction prize, drawing on new archaeology and decoded Babylonian records.",
-    "image": "https://i.guim.co.uk/img/media/d0ab22f2a1cc567cb6a398fc45bff51e8ad5bed9/117_0_1247_998/master/1247.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/nov/04/edmund-richardson-alexander-god-king-man-wins-baillie-gifford-prize",
+    "extract": "Paul Theroux's latest travel book follows a long road journey across Canada, combining encounters with people from many walks of life with reflections on the country's identity, immigration and Indigenous history. The review finds the veteran travel writer's curiosity and energy undimmed at 85.",
+    "image": "https://i.guim.co.uk/img/media/0a06d9d4ae08f3a3a5a093fb9806a6d2c01efff8/0_0_5184_3123/master/5184.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/books/2026/nov/06/true-north-by-paul-theroux-review-an-americans-view-of-canada",
     "category": "Books",
-    "published": "2026-11-04T22:15:00Z"
+    "published": "2026-11-06T02:00:00-05:00"
   },
   {
-    "title": "Winner of the Prix Goncourt literary prize admits to using AI",
+    "title": "If Dune is this generation's Star Wars, we are all in big trouble",
     "source": "The Guardian",
-    "extract": "Prix Goncourt winner Philippe Jaenada says he used ChatGPT three times while writing his novel, including to plant a sentence and generate absurd answers for a technical detail.",
-    "image": "https://i.guim.co.uk/img/media/3828a993d195cb9ebff36c53aed34bb94581d25f/299_0_6000_4800/master/6000.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/nov/05/winner-of-the-prix-goncourt-literary-prize-admits-to-using-ai-philippe-jaenada",
-    "category": "Books",
-    "published": "2026-11-05T18:08:00Z"
-  },
-  {
-    "title": "Was one of the great novels of the Enlightenment written by a man who thought he was a werewolf?",
-    "source": "The Guardian",
-    "extract": "A new Swiss exhibition revisits Jan Potocki's surreal 18th-century novel The Manuscript Found in Saragossa, exploring its strange origins and the author's fascination with the supernatural.",
-    "image": "https://i.guim.co.uk/img/media/6502dcb3edacdb359ad3b0ac7db815234b39b4fb/0_0_3195_2147/master/3195.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/nov/05/the-manuscript-found-in-saragossa-jan-potocki-exhibition-switzerland",
-    "category": "Books",
-    "published": "2026-11-05T09:43:00Z"
-  },
-  {
-    "title": "American Hagwon by Min Jin Lee review - a gloriously immersive follow-up to Pachinko",
-    "source": "The Guardian",
-    "extract": "Min Jin Lee's follow-up to Pachinko traces a Korean family across Seoul, Sydney and California over three decades, using the pressures of private tutoring to examine migration, class and ambition.",
-    "image": "https://i.guim.co.uk/img/media/abe9cf4512317ad0cbd16f9a92bea12e7935f268/1050_435_4858_3887/master/4858.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/nov/05/american-hagwon-by-min-jin-lee-review-a-gloriously-immersive-follow-up-to-pachinko",
-    "category": "Books",
-    "published": "2026-11-05T07:00:00Z"
-  },
-  {
-    "title": "Where to start with: John Berger",
-    "source": "The Guardian",
-    "extract": "On the centenary of John Berger's birth, the Guardian offers a route through his fiction, essays and art criticism, from G. and To the Wedding to Ways of Seeing.",
-    "image": "https://i.guim.co.uk/img/media/0d76862186c31229f6cb6c9dc7c2a7b20ac00845/0_0_5000_4000/master/5000.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/nov/05/where-to-start-with-john-berger",
-    "category": "Books",
-    "published": "2026-11-05T12:30:00Z"
-  },
-  {
-    "title": "Black Doves review - Ben Whishaw, Keira Knightley and Sarah Lancashire are spine-tinglingly good",
-    "source": "The Guardian",
-    "extract": "The second season of the British espionage drama returns with Keira Knightley, Ben Whishaw and Sarah Lancashire; the Guardian praises its performances and emotional core despite its implausible plotting.",
-    "image": "https://i.guim.co.uk/img/media/4ac1559469263a0bf985c843de8cc29f6abc75ac/0_0_7267_4845/master/7267.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/05/black-doves-review-keira-knightley-ben-whishaw",
+    "extract": "Ben Child questions Florence Pugh's comparison of Denis Villeneuve's Dune films with Star Wars, contrasting the latter's hopeful rebellion and redemption with Dune's darker portrait of charismatic power, fanaticism and a ruler who may foresee catastrophe without preventing it.",
+    "image": "https://i.guim.co.uk/img/media/6f8a53f102e7ec7d1d7cf97b93fcb707b5f0de49/192_0_4926_3942/master/4926.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/film/2026/nov/06/florence-pugh-dune-star-wars",
     "category": "Entertainment",
-    "published": "2026-11-05T08:01:00Z"
+    "published": "2026-11-06T15:04:00+01:00"
   },
   {
-    "title": "Adam Driver confirms Star Wars Kylo Ren film he worked on with Steven Soderbergh is dead: 'Yeah, it's over'",
-    "source": "Entertainment Weekly",
-    "extract": "Adam Driver says the standalone Ben Solo/Kylo Ren film he developed with Steven Soderbergh and a completed writing team is no longer happening after Lucasfilm declined the project.",
-    "image": "https://ew.com/thmb/542N2P7B7lrlUAYo9BPhjRmvx2M%3D/1500x0/filters%3Ano_upscale%28%29%3Amax_bytes%28150000%29%3Astrip_icc%28%29%3Aformat%28webp%29/adam-driver-kylo-ren-star-wars-102025-f9cb2778394e4fcb9cbe93fe7d4e7e6e.jpg",
-    "link": "https://ew.com/adam-driver-kylo-ren-movie-steven-soderbergh-not-happening-12237807",
-    "category": "Entertainment",
-    "published": "2026-11-05T15:06:00Z"
-  },
-  {
-    "title": "Grimes is going to star in an AI movie that's coming to theaters",
-    "source": "The Verge",
-    "extract": "Grimes will lend her likeness and voice to Gods Don't Give Gifts, an AI-generated science-fiction anthology due in theatres on December 4, testing whether AI filmmaking can support a commercial release.",
-    "image": null,
-    "link": "https://www.theverge.com/entertainment/1026282/grimes-ai-movie",
-    "category": "Entertainment",
-    "published": "2026-11-05T17:00:00Z"
-  },
-  {
-    "title": "'George Lucas told me off for wearing lipstick': Celia Imrie on Traitors, Star Wars and treating the lens like a lover",
+    "title": "The Cat in the Hat review – Bill Hader brings plenty but this animated rework is a mess",
     "source": "The Guardian",
-    "extract": "Celia Imrie recalls being cast as Bravo 5 in The Phantom Menace, being reprimanded by George Lucas for lipstick, and her time in The Traitors and Absolutely Fabulous.",
-    "image": "https://i.guim.co.uk/img/media/c0340dcf43abc5a2a5c19ed0ac7b9f99822abe99/204_0_3100_2480/master/3100.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/film/2026/nov/05/celia-imrie-interview-traitors-star-wars-george-lucas",
+    "extract": "Bill Hader and Matt Berry bring energy to Warner Bros' animated Dr Seuss adaptation, but the review argues that its overlong story borrows too heavily from other animated hits and turns the book's playful world into corporate workplace satire. A new Looney Tunes short featuring Daffy Duck screens before the film.",
+    "image": "https://i.guim.co.uk/img/media/07048846bc1de89d9d63210a3221853e31347902/243_0_1280_1024/master/1280.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/film/2026/nov/06/cat-in-the-hat-movie-review",
     "category": "Entertainment",
-    "published": "2026-11-05T13:00:00Z"
+    "published": "2026-11-06T14:38:00Z"
   },
   {
-    "title": "TV tonight: the final episode of gloriously daft sketch show Ellie & Natasia",
+    "title": "Rocky review – 50 years on, Stallone's boxer remains an exhilaratingly gritty contender",
     "source": "The Guardian",
-    "extract": "The Guardian highlights the final episode of Ellie White and Natasia Demetriou's sketch comedy, praising its short run and absurd modern-manners humour.",
-    "image": "https://i.guim.co.uk/img/media/0c12d6154183c007ec311c55459e72eea1996b48/586_74_2225_1781/master/2225.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/04/tv-tonight-ellie-and-natasia-final-episode-gloriously-daft-sketch-show",
+    "extract": "The 1976 film returns for its 50th anniversary, with Peter Bradshaw praising its idealism, simplicity and enduring underdog appeal. Sylvester Stallone's Rocky Balboa remains a working-class fighter whose moral victory and determination to go the distance give the film its lasting emotional force.",
+    "image": "https://i.guim.co.uk/img/media/4983037b9080442838dca1996fa88baa04a164d4/269_0_2638_2110/master/2638.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/film/2026/nov/06/rocky-review-50-sylvester-stallone-boxer",
     "category": "Entertainment",
-    "published": "2026-11-04T06:20:00Z"
+    "published": "2026-11-06T12:00:00+01:00"
   },
   {
-    "title": "Dave Grohl started 'sobbing like a baby' after performing with AC/DC",
-    "source": "Entertainment Weekly",
-    "extract": "Foo Fighters frontman Dave Grohl describes breaking down backstage after joining AC/DC for Highway to Hell at MetLife Stadium, calling the experience a full-circle moment rooted in his childhood love of the band.",
-    "image": "https://ew.com/thmb/6RwAxEUwCg8sQTOfr4GnU7Qx48Q%3D/1500x0/filters%3Ano_upscale%28%29%3Amax_bytes%28150000%29%3Astrip_icc%28%29%3Aformat%28webp%29/Dave-Grohl-Brian-Johnson-01-110426-a71b00ef042c4389af0122f9dc9ba784.jpg",
-    "link": "https://ew.com/dave-grohl-sobbed-like-baby-after-performing-with-acdc-12236577",
-    "category": "Music",
-    "published": "2026-11-04T19:51:00Z"
+    "title": "I Play Rocky review – Anthony Ippolito adds knockout sweetness to the story of Stallone's Hollywood triumph",
+    "source": "The Guardian",
+    "extract": "This drama recounts how the young Sylvester Stallone refused lucrative offers to sell his Rocky screenplay unless he could play the lead himself. Anthony Ippolito is praised for capturing Stallone's warmth, humour and determination in a brisk, entertaining account of the film's unlikely creation.",
+    "image": "https://i.guim.co.uk/img/media/67d68a8bf99e04203df58627bce4bccf21e969cc/385_0_5200_4160/master/5200.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/film/2026/nov/05/i-play-rocky-review-anthony-ippolito-adds-knockout-sweetness-to-the-story-of-stallones-hollywood-triumph",
+    "category": "Entertainment",
+    "published": "2026-11-05T12:00:00+01:00"
   }
 ]
