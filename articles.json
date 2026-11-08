@@ -1,74 +1,128 @@
 [
   {
-    "title": "Yangwang U9 Xtreme sets a 312.65-mph production-car speed record",
-    "source": "Autoweek",
-    "extract": "BYD's electric hypercar reached 503.17 km/h on a closed road in Abu Dhabi, becoming the first production car to exceed 500 km/h in a single-direction run. Engineers adjusted its rear-wing angle, suspension rebound damping and tyre pressures between attempts; the four-motor U9 Xtreme produces nearly 3,000 hp.",
-    "image": null,
-    "link": "https://www.autoweek.com/news/a74360059/yangwang-u9-xtreme-sets-production-ev-speed-record/",
+    "title": "Norris wins in wet Brazil as Mercedes take constructors' title",
+    "source": "Reuters",
+    "extract": "Mercedes clinched their ninth Formula One constructors' championship as McLaren's Lando Norris won a rain-affected Sao Paulo Grand Prix from pole. Max Verstappen charged from 21st to second, while Ferrari's Charles Leclerc finished seventh and Lewis Hamilton ninth.",
+    "image": "https://www.reuters.com/resizer/v2/4VKZ6X3UBVPKHKRFD7YPXC2JWM.jpg?auth=0dd37425609f8d5a629fb81c6b290768f57719bfa7a157b0acce14ee5e174ad2&quality=80&width=1080",
+    "link": "https://www.reuters.com/sports/formula1/norris-wins-brazil-mercedes-take-constructors-title-2026-11-08/",
     "category": "Automotive",
-    "published": "2026-11-06T12:26:00-05:00"
+    "published": "2026-11-08T18:51:00Z"
   },
   {
-    "title": "FAA to finally ditch floppy disks in its air traffic control technology upgrade",
-    "source": "Ars Technica",
-    "extract": "The Federal Aviation Administration plans to replace information display systems still dating to the 1980s across 435 facilities. The upgrade will retire floppy disks used to distribute weather, NOTAM and airport-status information, giving controllers a single, more accessible data platform.",
-    "image": null,
-    "link": "https://arstechnica.com/tech-policy/2026/11/faa-to-finally-ditch-floppy-disks-in-what-it-calls-historic-tech-upgrade/",
+    "title": "Labour expected to cut EV targets for UK’s car industry despite MPs’ protests",
+    "source": "The Guardian",
+    "extract": "Ministers are expected to reduce the UK's 2030 zero-emission vehicle sales target from 80% to about 60%, while extending compliance flexibilities to 2034. Carmakers argue the interim targets are difficult to meet, while MPs and charging-industry representatives warn that weakening the mandate could undermine investment and climate commitments.",
+    "image": "https://i.guim.co.uk/img/media/2db94dc51d06421443808c322eecd0e97b2d330b/27_0_4763_3811/master/4763.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/environment/2026/nov/08/labour-cut-ev-target-car-industry-despite-climate-concerns",
+    "category": "Automotive",
+    "published": "2026-11-08T17:51:00Z"
+  },
+  {
+    "title": "Anthropic secures $3.4 billion generator deal for AI data centers, FT reports",
+    "source": "Reuters",
+    "extract": "The Financial Times reports that Anthropic secured commitments for 1.7 gigawatts of gas-fired generators to support its data centres, in a deal worth about $3.4bn. Reuters said it could not immediately verify the report; Anthropic and the supplier did not respond to requests for comment.",
+    "image": "https://www.reuters.com/resizer/v2/72ZRXZT4GJI6TADZANSOHU7FU4.jpg?auth=4ae01a7f85fe18b4de87aae08778dc715e242e9cc4df8ce31164a5038bf2502f&quality=80&width=1920",
+    "link": "https://www.reuters.com/business/energy/anthropic-secures-34-billion-generator-deal-ai-data-centers-ft-reports-2026-11-08/",
     "category": "Technology",
-    "published": "2026-11-06T14:12:00-05:00"
+    "published": "2026-11-08T12:54:00Z"
   },
   {
-    "title": "Writer Nick Harkaway expands his father John le Carré's spyverse in new thriller The Taper Man",
-    "source": "Associated Press",
-    "extract": "Nick Harkaway's latest novel sends George Smiley to California in 1965 to pursue a Soviet agent and navigate tensions with le Carré's fictional CIA, 'the Cousins'. Harkaway says the Cold War setting has unsettling parallels with 2026, and plans at least one more Smiley novel.",
+    "title": "Hot fridges, a fake nuclear alert and a $6bn heist: are we in the foothills of a hacking epidemic?",
+    "source": "The Guardian",
+    "extract": "A wave of cyber incidents has included internet-connected commercial fridges being remotely heated across Europe, a major cryptocurrency theft and a fake nuclear alert in Kyiv. The UK's National Cyber Security Centre warns that AI is helping expose software weaknesses, while experts caution that the incidents do not yet prove a comparable surge in successful attacks.",
+    "image": "https://i.guim.co.uk/img/media/2f701bb3716151b3e3f3cdfb57e25022cd3900f3/1262_0_6329_5063/master/6329.jpg?crop=none&dpr=1&s=none&width=445",
+    "link": "https://www.theguardian.com/news/ng-interactive/2026/nov/08/hot-fridges-a-fake-nuclear-alert-and-a-6bn-heist-are-we-in-the-foothills-of-a-hacking-epidemic",
+    "category": "Technology",
+    "published": "2026-11-08T06:00:00Z"
+  },
+  {
+    "title": "Code is cheap now. Trust is the new bottleneck",
+    "source": "The Deep View",
+    "extract": "In an interview with GitHub chief product officer Mario Rodriguez, The Deep View examines how AI agents are changing software development, code review and open source. Rodriguez discusses GitHub's move to Azure, rebuilding its foundations for machine-speed development, and why security and reliability matter as much as faster code generation.",
+    "image": "https://cdn.sanity.io/images/0no9te5e/production/e497b162a92bdb7cce476521cabacaafbcfb08af-1670x942.png?auto=format&fit=max&h=2602&rect=140%2C0%2C1390%2C942&w=3840",
+    "link": "https://www.thedeepview.com/articles/code-is-cheap-now-trust-is-the-new-bottleneck",
+    "category": "Technology",
+    "published": "2026-11-08T13:00:00Z"
+  },
+  {
+    "title": "Nvidia marks 20 years of the GeForce 8800 GTX with a demanding Steam homage",
+    "source": "Yahoo Tech (Tom's Hardware)",
+    "extract": "For the 20th anniversary of the GeForce 8800 GTX, Nvidia is celebrating the GPU's role in PC gaming and CUDA with a free interactive Steam demo. The path-traced recreation of a 2006 gaming room lets players inspect and install the card, but its modern graphics features require far newer hardware than the original did.",
+    "image": "https://cdn.mos.cms.futurecdn.net/TmUVtxVZfu7Yc9Rnd5tCtA.jpg",
+    "link": "https://tech.yahoo.com/computing/articles/nvidia-released-8800-gtx-gpu-142000479.html",
+    "category": "Retro Computing",
+    "published": "2026-11-08T14:20:00Z"
+  },
+  {
+    "title": "Humanbrew Discord co-founder is looking to build their own AI-free PlayStation SDK",
+    "source": "Time Extension",
+    "extract": "PlayStation and Dreamcast homebrew developer Elias Daler is attempting to create a 100% AI-free software development kit for the original PlayStation. The ambitious project is being written in C++ and aims to make it easier to create new homebrew software for the console.",
     "image": null,
-    "link": "https://apnews.com/article/9cfbf7823ca42e67884b8a10db62d17c",
+    "link": "https://www.timeextension.com/news/2026/11/humanbrew-discord-co-founder-is-looking-to-build-their-own-ai-free-playstation-sdk",
+    "category": "Retro Computing Projects",
+    "published": "2026-11-07T14:00:00Z"
+  },
+  {
+    "title": "Virtua Fighter 2 model viewer lets you inspect the Sega Saturn classic frame by frame",
+    "source": "Time Extension",
+    "extract": "Homebrewer Xevengar has released a Sega Saturn model viewer for Virtua Fighter 2. It lets fans inspect all 11 characters, including boss Dural, and examine the game's motion-captured animation frame by frame, offering a closer look at the technical achievement behind the Saturn port.",
+    "image": null,
+    "link": "https://www.timeextension.com/news/2026/11/virtua-fighter-2-model-viewer-lets-you-see-stupid-lions-stupid-lifejacket-in-all-its-stupid-polygonal-glory",
+    "category": "Retro Computing Projects",
+    "published": "2026-11-07T12:00:00Z"
+  },
+  {
+    "title": "Weakening AI copyright law will spell ‘disaster for creativity’, global music body warns Albanese",
+    "source": "The Guardian",
+    "extract": "The head of the International Federation of the Phonographic Industry warns that weakening Australia's copyright protections to let AI companies train on creative work could damage the country's reputation and affect music rights worldwide. The IFPI argues that licensing deals are possible and that creators should retain control and receive fair compensation.",
+    "image": "https://i.guim.co.uk/img/media/a9d776b6ee27daeda7be27a2ffc273f39b966850/200_0_6000_4800/master/6000.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/technology/2026/nov/09/weakening-ai-copyright-law-will-spell-disaster-for-creativity-australia",
+    "category": "Music",
+    "published": "2026-11-08T14:00:00Z"
+  },
+  {
+    "title": "Narrative threads: how to write a Booker-shortlisted novel, by Marlon James, Douglas Stuart, Elizabeth Strout and more",
+    "source": "The Guardian",
+    "extract": "This year's Booker finalists explain the real-life experiences and ideas that shaped their shortlisted novels. Douglas Stuart traces John of John to a trip to the Western Isles, Elizabeth Strout discusses the political anxieties behind The Things We Never Say, and M John Harrison describes the alien-invasion ideas behind The End of Everything.",
+    "image": "https://i.guim.co.uk/img/media/0b959ff0ef8e3b81da00082aaa888c9a2dd43fa7/276_282_1521_1217/master/1521.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/books/2026/nov/07/narrative-threads-how-to-write-a-booker-shortlisted-novel-by-marlon-james-douglas-stuart-elizabeth-strout-and-more",
     "category": "Books",
-    "published": "2026-11-07T00:07:00-05:00"
+    "published": "2026-11-07T09:00:00Z"
   },
   {
-    "title": "True North by Paul Theroux review – an American's view of Canada",
+    "title": "‘No tech, no texts, just childhood’: author Liz Pichon on the secrets behind her multi-million selling Tom Gates series",
     "source": "The Guardian",
-    "extract": "Paul Theroux's latest travel book follows a long road journey across Canada, combining encounters with people from many walks of life with reflections on the country's identity, immigration and Indigenous history. The review finds the veteran travel writer's curiosity and energy undimmed at 85.",
-    "image": "https://i.guim.co.uk/img/media/0a06d9d4ae08f3a3a5a093fb9806a6d2c01efff8/0_0_5184_3123/master/5184.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/nov/06/true-north-by-paul-theroux-review-an-americans-view-of-canada",
+    "extract": "As the Tom Gates series reaches its 15th anniversary, Liz Pichon discusses the 25th book, the series' 16.5 million sales and how she keeps the stories fresh. She also reflects on overcoming childhood dyslexia and using doodles, visual jokes and accessible layouts to encourage reluctant readers.",
+    "image": "https://i.guim.co.uk/img/media/1eafafb6e0671cd94d2d86a0ed34393976637daa/0_1432_5760_4608/master/5760.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/books/2026/nov/08/no-tech-no-texts-just-childhood-author-liz-pichon-on-the-secrets-behind-her-multi-million-selling-tom-gates-series",
     "category": "Books",
-    "published": "2026-11-06T02:00:00-05:00"
+    "published": "2026-11-08T12:00:00Z"
   },
   {
-    "title": "If Dune is this generation's Star Wars, we are all in big trouble",
+    "title": "‘Life is like a heartbeat’: Michelle Yeoh on playing a robot in Blade Runner 2099",
     "source": "The Guardian",
-    "extract": "Ben Child questions Florence Pugh's comparison of Denis Villeneuve's Dune films with Star Wars, contrasting the latter's hopeful rebellion and redemption with Dune's darker portrait of charismatic power, fanaticism and a ruler who may foresee catastrophe without preventing it.",
-    "image": "https://i.guim.co.uk/img/media/6f8a53f102e7ec7d1d7cf97b93fcb707b5f0de49/192_0_4926_3942/master/4926.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/film/2026/nov/06/florence-pugh-dune-star-wars",
+    "extract": "Michelle Yeoh discusses her role as Olwen, a replicant in Blade Runner 2099, set 50 years after the previous instalment. She describes developing the character's fluid, unsettling physicality and explores the series' questions about humanity, identity and what it means to be synthetic.",
+    "image": "https://i.guim.co.uk/img/media/79b85c937ffed09426bf9c4a8da0474288e3be69/0_995_5625_6505/master/5625.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/film/2026/nov/07/michelle-yeoh-interview-blade-runner-2099-everything-everywhere-oscar",
     "category": "Entertainment",
-    "published": "2026-11-06T15:04:00+01:00"
+    "published": "2026-11-07T12:00:00Z"
   },
   {
-    "title": "The Cat in the Hat review – Bill Hader brings plenty but this animated rework is a mess",
+    "title": "Hollywood banks on Ebenezer to bring Johnny Depp in from the cold",
     "source": "The Guardian",
-    "extract": "Bill Hader and Matt Berry bring energy to Warner Bros' animated Dr Seuss adaptation, but the review argues that its overlong story borrows too heavily from other animated hits and turns the book's playful world into corporate workplace satire. A new Looney Tunes short featuring Daffy Duck screens before the film.",
-    "image": "https://i.guim.co.uk/img/media/07048846bc1de89d9d63210a3221853e31347902/243_0_1280_1024/master/1280.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/film/2026/nov/06/cat-in-the-hat-movie-review",
+    "extract": "Johnny Depp's role as Scrooge in the forthcoming Ebenezer is his first major Hollywood studio production in eight years. The film's marketing draws on the actor's eccentric screen persona, while industry analysts see the Dickens adaptation as a test of his commercial appeal.",
+    "image": "https://i.guim.co.uk/img/media/18da89459cb16624bf4035cd6ef735fbbf9f9335/642_4_3933_3146/master/3933.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/film/2026/nov/07/johnny-depp-ebenezer-film-scrooge-hollywood",
     "category": "Entertainment",
-    "published": "2026-11-06T14:38:00Z"
+    "published": "2026-11-07T14:00:00Z"
   },
   {
-    "title": "Rocky review – 50 years on, Stallone's boxer remains an exhilaratingly gritty contender",
+    "title": "The Good Daughter: Rose Byrne’s legal thriller is so full of calamity it borders on Mr Bean-like farce",
     "source": "The Guardian",
-    "extract": "The 1976 film returns for its 50th anniversary, with Peter Bradshaw praising its idealism, simplicity and enduring underdog appeal. Sylvester Stallone's Rocky Balboa remains a working-class fighter whose moral victory and determination to go the distance give the film its lasting emotional force.",
-    "image": "https://i.guim.co.uk/img/media/4983037b9080442838dca1996fa88baa04a164d4/269_0_2638_2110/master/2638.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/film/2026/nov/06/rocky-review-50-sylvester-stallone-boxer",
+    "extract": "The Guardian reviews Sky Atlantic's adaptation of Karin Slaughter's novel, starring Rose Byrne, Meghann Fahy and Brendan Gleeson. Its opening piles trauma on trauma until the story approaches farce, but the review finds a more engaging family thriller once the initial chaos settles.",
+    "image": "https://i.guim.co.uk/img/media/a568b24dac5379e0be579890ab5925df49b79728/420_6_2351_1880/master/2351.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/07/the-good-daughter-rose-byrne-legal-thriller-peacock-sky-atlantic",
     "category": "Entertainment",
-    "published": "2026-11-06T12:00:00+01:00"
-  },
-  {
-    "title": "I Play Rocky review – Anthony Ippolito adds knockout sweetness to the story of Stallone's Hollywood triumph",
-    "source": "The Guardian",
-    "extract": "This drama recounts how the young Sylvester Stallone refused lucrative offers to sell his Rocky screenplay unless he could play the lead himself. Anthony Ippolito is praised for capturing Stallone's warmth, humour and determination in a brisk, entertaining account of the film's unlikely creation.",
-    "image": "https://i.guim.co.uk/img/media/67d68a8bf99e04203df58627bce4bccf21e969cc/385_0_5200_4160/master/5200.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/film/2026/nov/05/i-play-rocky-review-anthony-ippolito-adds-knockout-sweetness-to-the-story-of-stallones-hollywood-triumph",
-    "category": "Entertainment",
-    "published": "2026-11-05T12:00:00+01:00"
+    "published": "2026-11-07T07:00:00Z"
   }
 ]
