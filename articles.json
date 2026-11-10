@@ -1,128 +1,272 @@
 [
   {
-    "title": "Norris wins in wet Brazil as Mercedes take constructors' title",
+    "title": "Mercedes-Benz signs low-carbon aluminum deal, updates climate targets",
     "source": "Reuters",
-    "extract": "Mercedes clinched their ninth Formula One constructors' championship as McLaren's Lando Norris won a rain-affected Sao Paulo Grand Prix from pole. Max Verstappen charged from 21st to second, while Ferrari's Charles Leclerc finished seventh and Lewis Hamilton ninth.",
-    "image": "https://www.reuters.com/resizer/v2/4VKZ6X3UBVPKHKRFD7YPXC2JWM.jpg?auth=0dd37425609f8d5a629fb81c6b290768f57719bfa7a157b0acce14ee5e174ad2&quality=80&width=1080",
-    "link": "https://www.reuters.com/sports/formula1/norris-wins-brazil-mercedes-take-constructors-title-2026-11-08/",
+    "extract": "A long-term Norsk Hydro supply agreement will cover at least 10% of Mercedes-Benz's primary aluminium needs, with a target of lowering the material's emissions by 2030.",
+    "image": "https://www.reuters.com/resizer/v2/EGMXYG6K75MMZBQ4RBNMJP2CMU.jpg?auth=667c656cc674fc4548db0d58d5a7a9d7a6c59d9f855f98f9ac330bdd9d15892c&quality=80&width=1920",
+    "link": "https://www.reuters.com/sustainability/cop/mercedes-benz-signs-low-carbon-aluminum-deal-updates-climate-targets-2026-11-10/",
     "category": "Automotive",
-    "published": "2026-11-08T18:51:00Z"
+    "published": "2026-11-10T08:35:00Z"
   },
   {
-    "title": "Labour expected to cut EV targets for UK’s car industry despite MPs’ protests",
-    "source": "The Guardian",
-    "extract": "Ministers are expected to reduce the UK's 2030 zero-emission vehicle sales target from 80% to about 60%, while extending compliance flexibilities to 2034. Carmakers argue the interim targets are difficult to meet, while MPs and charging-industry representatives warn that weakening the mandate could undermine investment and climate commitments.",
-    "image": "https://i.guim.co.uk/img/media/2db94dc51d06421443808c322eecd0e97b2d330b/27_0_4763_3811/master/4763.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/environment/2026/nov/08/labour-cut-ev-target-car-industry-despite-climate-concerns",
-    "category": "Automotive",
-    "published": "2026-11-08T17:51:00Z"
-  },
-  {
-    "title": "Anthropic secures $3.4 billion generator deal for AI data centers, FT reports",
+    "title": "Google to introduce two variants of its in-house chips, Bloomberg News reports",
     "source": "Reuters",
-    "extract": "The Financial Times reports that Anthropic secured commitments for 1.7 gigawatts of gas-fired generators to support its data centres, in a deal worth about $3.4bn. Reuters said it could not immediately verify the report; Anthropic and the supplier did not respond to requests for comment.",
-    "image": "https://www.reuters.com/resizer/v2/72ZRXZT4GJI6TADZANSOHU7FU4.jpg?auth=4ae01a7f85fe18b4de87aae08778dc715e242e9cc4df8ce31164a5038bf2502f&quality=80&width=1920",
-    "link": "https://www.reuters.com/business/energy/anthropic-secures-34-billion-generator-deal-ai-data-centers-ft-reports-2026-11-08/",
+    "extract": "Bloomberg reports Google is preparing 8tx and 8i Max TPU variants aimed at large AI workloads, coding agents and customers that need stronger hardware security.",
+    "image": "https://www.reuters.com/resizer/v2/ERLAE3YMMJKH7F2NXRRLDXR2FI.jpg?auth=22ff73a194a64cd73986b75fe734559387108aec0f5e0e8e29c0c5bef12b9519&quality=80&width=1920",
+    "link": "https://www.reuters.com/business/google-to-introduce-two-variants-its-in-house-chips-bloomberg-news-reports-2026-11-09/",
     "category": "Technology",
-    "published": "2026-11-08T12:54:00Z"
+    "published": "2026-11-09T12:39:57Z"
   },
   {
-    "title": "Hot fridges, a fake nuclear alert and a $6bn heist: are we in the foothills of a hacking epidemic?",
+    "title": "Meta releases Muse Ember, a new lightweight model for agent execution",
+    "source": "TechCrunch",
+    "extract": "Meta says Muse Ember is its smallest, most cost-efficient model yet, tuned for agent execution, tool use, coding subtasks and long-document processing.",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/11/Blog-Header-Visual.png?w=1024",
+    "link": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+    "category": "Technology",
+    "published": "2026-11-09T18:00:00Z"
+  },
+  {
+    "title": "Anthropic launches Claude Fable 5.2 and Mythos 5.2 models",
+    "source": "MacRumors",
+    "extract": "Anthropic's new model pair targets coding, reasoning and vision; the company reports faster generation and lower token use on demanding tasks, with Mythos access restricted to selected research and security programmes.",
+    "image": "https://images.macrumors.com/t/h-SgaNwlfg1xqeFyNxTtAvRMWhE%3D/400x0/article-new/2025/09/anthopic-claude.jpg?lossy=",
+    "link": "https://www.macrumors.com/2026/11/09/anthropic-launches-claude-fable-5-2/",
+    "category": "Technology",
+    "published": "2026-11-09T19:38:00Z"
+  },
+  {
+    "title": "Disney and Adobe are building generative AI tools together",
+    "source": "The Verge",
+    "extract": "The multiyear partnership gives Disney early access to Adobe's generative-AI technology and aims to build artist-led models for creative production, theme parks, cruises and ESPN.",
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Disney-Adobe-AI-partnership.jpg?crop=0%2C0%2C100%2C100&quality=90&strip=all&w=2400",
+    "link": "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership",
+    "category": "Technology",
+    "published": "2026-11-09T15:38:00Z"
+  },
+  {
+    "title": "Apple's $50 Intelligence Usage Packs extend access to some AI features",
+    "source": "The Verge",
+    "extract": "Apple has introduced a $49.99 top-up for usage-limited AI features in Logic Pro, with the same credit-style approach expected to spread across Creator Studio apps.",
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/logicpro.jpg?crop=0%2C0.012751849018109%2C100%2C99.974496301964&quality=90&strip=all&w=2400",
+    "link": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+    "category": "Technology",
+    "published": "2026-11-09T19:09:00Z"
+  },
+  {
+    "title": "Parents and teachers decry Google pledge to yank Search if schools block AI",
     "source": "The Guardian",
-    "extract": "A wave of cyber incidents has included internet-connected commercial fridges being remotely heated across Europe, a major cryptocurrency theft and a fake nuclear alert in Kyiv. The UK's National Cyber Security Centre warns that AI is helping expose software weaknesses, while experts caution that the incidents do not yet prove a comparable surge in successful attacks.",
-    "image": "https://i.guim.co.uk/img/media/2f701bb3716151b3e3f3cdfb57e25022cd3900f3/1262_0_6329_5063/master/6329.jpg?crop=none&dpr=1&s=none&width=445",
-    "link": "https://www.theguardian.com/news/ng-interactive/2026/nov/08/hot-fridges-a-fake-nuclear-alert-and-a-6bn-heist-are-we-in-the-foothills-of-a-hacking-epidemic",
+    "extract": "Google's policy would also disable Search for school accounts that block its AI tools, prompting educators to question the company's leverage over classroom technology and student data.",
+    "image": "https://i.guim.co.uk/img/media/f9e7e92c7afc213ee5f07553302bd0c680f2720b/0_0_4000_2666/master/4000.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/us-news/2026/nov/09/parents-teachers-google-search-schools-ai",
     "category": "Technology",
-    "published": "2026-11-08T06:00:00Z"
+    "published": "2026-11-09T14:00:00Z"
   },
   {
-    "title": "Code is cheap now. Trust is the new bottleneck",
-    "source": "The Deep View",
-    "extract": "In an interview with GitHub chief product officer Mario Rodriguez, The Deep View examines how AI agents are changing software development, code review and open source. Rodriguez discusses GitHub's move to Azure, rebuilding its foundations for machine-speed development, and why security and reliability matter as much as faster code generation.",
-    "image": "https://cdn.sanity.io/images/0no9te5e/production/e497b162a92bdb7cce476521cabacaafbcfb08af-1670x942.png?auto=format&fit=max&h=2602&rect=140%2C0%2C1390%2C942&w=3840",
-    "link": "https://www.thedeepview.com/articles/code-is-cheap-now-trust-is-the-new-bottleneck",
+    "title": "EU sues IBM and two European firms over troubled entry/exit border system",
+    "source": "The Guardian",
+    "extract": "EU-Lisa is suing IBM, Atos and Leonardo over delays in developing the Entry/Exit System; the case concerns delivery failures, not the system's current operation.",
+    "image": "https://i.guim.co.uk/img/media/d4e0bb6cf66538930d3fcf221707a4675ec85a38/222_0_2919_2336/master/2919.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/world/2026/nov/09/eu-lawsuit-ibm-atos-leonardo-entry-exit-border-system",
     "category": "Technology",
-    "published": "2026-11-08T13:00:00Z"
+    "published": "2026-11-09T10:49:00Z"
   },
   {
-    "title": "Nvidia marks 20 years of the GeForce 8800 GTX with a demanding Steam homage",
-    "source": "Yahoo Tech (Tom's Hardware)",
-    "extract": "For the 20th anniversary of the GeForce 8800 GTX, Nvidia is celebrating the GPU's role in PC gaming and CUDA with a free interactive Steam demo. The path-traced recreation of a 2006 gaming room lets players inspect and install the card, but its modern graphics features require far newer hardware than the original did.",
-    "image": "https://cdn.mos.cms.futurecdn.net/TmUVtxVZfu7Yc9Rnd5tCtA.jpg",
-    "link": "https://tech.yahoo.com/computing/articles/nvidia-released-8800-gtx-gpu-142000479.html",
+    "title": "Epic Games Launcher is coming to SteamOS",
+    "source": "The Verge",
+    "extract": "Epic's new launcher will support SteamOS and other Linux distributions, a notable step for Steam Deck users, although Fortnite support remains uncertain because of anti-cheat compatibility.",
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/STK108_EPIC_GAMES_C.jpg?crop=0%2C0%2C100%2C100&quality=90&strip=all&w=2400",
+    "link": "https://www.theverge.com/games/1029557/epic-games-launcher-is-coming-to-steamos",
+    "category": "Technology",
+    "published": "2026-11-08T20:52:00Z"
+  },
+  {
+    "title": "AMD FSR 4.1 officially arrives on Xbox Series X|S",
+    "source": "Multiplayer.it",
+    "extract": "AMD's FSR 4.1 upscaler is now available to Xbox Series X|S developers through the latest GDK, bringing its image-quality and performance improvements to console builds.",
+    "image": "https://multiplayer.net-cdn.it/thumbs/images/2026/11/08/xbox-series-x-s-nuovi-modelli_cropped_240_0_1717_827_jpeg_1600x900_crop_q85_jpg_1600x900_crop_q85.jpg",
+    "link": "https://multiplayer.it/notizie/amd-fsr-41-arriva-su-xbox-series-xs-in-maniera-ufficiale-con-i-suoi-miglioramenti.html",
+    "category": "Technology",
+    "published": "2026-11-08T15:02:00Z"
+  },
+  {
+    "title": "Quote of the day by Shigeru Miyamoto: 'There are two types of games – well-made games and interesting games'",
+    "source": "GamesRadar+",
+    "extract": "A resurfaced 1996 interview captures Miyamoto weighing polish against originality, offering a look back at the design thinking behind Nintendo's early 3D era.",
+    "image": "https://cdn.mos.cms.futurecdn.net/ug7UzWWmGj5PbiK8bRbQa5.jpg",
+    "link": "https://www.gamesradar.com/games/the-legend-of-zelda/quote-of-the-day-by-shigeru-miyamoto-there-are-two-types-of-games-well-made-games-and-interesting-games-and-nintendo-didnt-always-get-the-balance-right/",
     "category": "Retro Computing",
-    "published": "2026-11-08T14:20:00Z"
+    "published": "2026-11-09T18:00:00Z"
   },
   {
-    "title": "Humanbrew Discord co-founder is looking to build their own AI-free PlayStation SDK",
+    "title": "Nintendo of America invests in game preservation as it looks to hire an archivist",
+    "source": "GamesRadar+",
+    "extract": "Nintendo of America is seeking an archivist to preserve its history and institutional knowledge, a notable step toward formalising the company's game and hardware preservation.",
+    "image": "https://cdn.mos.cms.futurecdn.net/qFVrBFZW5DWcyTgBRpz68D.jpg",
+    "link": "https://www.gamesradar.com/games/nintendo-of-america-invests-in-game-preservation-as-it-looks-to-hire-an-archivist-to-make-sure-its-history-is-preserved-for-future-generations/",
+    "category": "Retro Computing",
+    "published": "2026-11-09T21:43:10Z"
+  },
+  {
+    "title": "Fan preserves Namco's 2011 Japan-only mobile game Pac-Man SP",
     "source": "Time Extension",
-    "extract": "PlayStation and Dreamcast homebrew developer Elias Daler is attempting to create a 100% AI-free software development kit for the original PlayStation. The ambitious project is being written in C++ and aims to make it easier to create new homebrew software for the console.",
+    "extract": "A preservationist has rescued Namco's Japan-only 2011 mobile Pac-Man SP, a title long unavailable commercially, and plans to add it to the Keitai World Launcher archive.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/humanbrew-discord-co-founder-is-looking-to-build-their-own-ai-free-playstation-sdk",
+    "link": "https://www.timeextension.com/news/2026/11/fan-preserves-namcos-2011-japan-only-mobile-game-pac-man-sp",
     "category": "Retro Computing Projects",
-    "published": "2026-11-07T14:00:00Z"
+    "published": "2026-11-08T11:00:00Z"
   },
   {
-    "title": "Virtua Fighter 2 model viewer lets you inspect the Sega Saturn classic frame by frame",
+    "title": "Dolphin Depot is a new Nintendo GameCube homebrew app launcher that works on real hardware",
     "source": "Time Extension",
-    "extract": "Homebrewer Xevengar has released a Sega Saturn model viewer for Virtua Fighter 2. It lets fans inspect all 11 characters, including boss Dural, and examine the game's motion-captured animation frame by frame, offering a closer look at the technical achievement behind the Saturn port.",
+    "extract": "The beta launcher lets GameCube owners browse and install homebrew apps on original hardware, including emulators, game launchers and resolution tools.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/virtua-fighter-2-model-viewer-lets-you-see-stupid-lions-stupid-lifejacket-in-all-its-stupid-polygonal-glory",
+    "link": "https://www.timeextension.com/news/2026/11/dolphin-depot-is-a-new-nintendo-gamecube-homebrew-app-launcher-that-works-on-real-hardware",
     "category": "Retro Computing Projects",
-    "published": "2026-11-07T12:00:00Z"
-  },
-  {
-    "title": "Weakening AI copyright law will spell ‘disaster for creativity’, global music body warns Albanese",
-    "source": "The Guardian",
-    "extract": "The head of the International Federation of the Phonographic Industry warns that weakening Australia's copyright protections to let AI companies train on creative work could damage the country's reputation and affect music rights worldwide. The IFPI argues that licensing deals are possible and that creators should retain control and receive fair compensation.",
-    "image": "https://i.guim.co.uk/img/media/a9d776b6ee27daeda7be27a2ffc273f39b966850/200_0_6000_4800/master/6000.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/technology/2026/nov/09/weakening-ai-copyright-law-will-spell-disaster-for-creativity-australia",
-    "category": "Music",
     "published": "2026-11-08T14:00:00Z"
   },
   {
-    "title": "Narrative threads: how to write a Booker-shortlisted novel, by Marlon James, Douglas Stuart, Elizabeth Strout and more",
+    "title": "18 Nintendo Game & Watch classics come to ZX Spectrum via SM510 emulator",
+    "source": "Time Extension",
+    "extract": "A new SM510 emulator brings 18 Game & Watch titles, including Mario Bros. and Donkey Kong, to the ZX Spectrum and original 48K hardware.",
+    "image": null,
+    "link": "https://www.timeextension.com/news/2026/11/18-nintendo-game-and-watch-classics-inc-mario-bros-and-donkey-kong-come-to-zx-spectrum-via-sm510-emulator",
+    "category": "Retro Computing Projects",
+    "published": "2026-11-09T15:00:00Z"
+  },
+  {
+    "title": "A Golden Wake is getting a reimagining, 12 years after its original release",
+    "source": "Time Extension",
+    "extract": "Grundislav Games is reimagining its 2014 point-and-click adventure with refreshed art, new puzzles, characters, locations, voice acting and music.",
+    "image": null,
+    "link": "https://www.timeextension.com/news/2026/11/time-to-revisit-the-roaring-20s-12-years-later-the-point-n-click-adventure-a-golden-wake-is-getting-a-reimagining",
+    "category": "Retro Computing Projects",
+    "published": "2026-11-09T13:00:00Z"
+  },
+  {
+    "title": "Portal 2's cancelled F-Stop prototype is now playable",
+    "source": "Gamekult",
+    "extract": "A playable reconstruction of F-Stop, the cancelled Portal 2 prequel concept, has surfaced, reviving a 2007-era prototype that explored a different mechanic from the finished game.",
+    "image": "https://cdn.gamekult.com/optim/images/news/30/3050872693/portal-2-ne-devait-pas-avoir-de-portails-et-devait-etre-un-prequel-ce-prototype-est-desormais-jouable-9e8269e3__930_300__0-312-1822-901.png",
+    "link": "https://www.gamekult.com/actualite/portal-2-ne-devait-pas-avoir-de-portails-et-devait-etre-un-prequel-ce-prototype-est-desormais-jouable-3050872693.html",
+    "category": "Retro Computing Projects",
+    "published": "2026-11-08T16:21:00Z"
+  },
+  {
+    "title": "M John Harrison becomes first science fiction author to win the Booker prize",
     "source": "The Guardian",
-    "extract": "This year's Booker finalists explain the real-life experiences and ideas that shaped their shortlisted novels. Douglas Stuart traces John of John to a trip to the Western Isles, Elizabeth Strout discusses the political anxieties behind The Things We Never Say, and M John Harrison describes the alien-invasion ideas behind The End of Everything.",
-    "image": "https://i.guim.co.uk/img/media/0b959ff0ef8e3b81da00082aaa888c9a2dd43fa7/276_282_1521_1217/master/1521.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/nov/07/narrative-threads-how-to-write-a-booker-shortlisted-novel-by-marlon-james-douglas-stuart-elizabeth-strout-and-more",
+    "extract": "Harrison's post-apocalyptic novel The End of Everything, set on the near-future Kent coast, has won the £50,000 Booker Prize, making him the first science-fiction author to take the award.",
+    "image": "https://i.guim.co.uk/img/media/f88eb30da8765416e5de2380d70ed0056788cab0/691_0_6776_5421/master/6776.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/books/2026/nov/09/m-john-harrison-the-end-of-everything-wins-2026-booker-prize",
     "category": "Books",
-    "published": "2026-11-07T09:00:00Z"
+    "published": "2026-11-09T22:00:00Z"
   },
   {
-    "title": "‘No tech, no texts, just childhood’: author Liz Pichon on the secrets behind her multi-million selling Tom Gates series",
+    "title": "Lessons in Harmony by Jonathan Coe review – what can music tell us about national identity?",
     "source": "The Guardian",
-    "extract": "As the Tom Gates series reaches its 15th anniversary, Liz Pichon discusses the 25th book, the series' 16.5 million sales and how she keeps the stories fresh. She also reflects on overcoming childhood dyslexia and using doodles, visual jokes and accessible layouts to encourage reluctant readers.",
-    "image": "https://i.guim.co.uk/img/media/1eafafb6e0671cd94d2d86a0ed34393976637daa/0_1432_5760_4608/master/5760.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/nov/08/no-tech-no-texts-just-childhood-author-liz-pichon-on-the-secrets-behind-her-multi-million-selling-tom-gates-series",
+    "extract": "Coe's historical novel follows the friendship between Maurice Ravel and Ralph Vaughan Williams from Paris in 1907 through the world wars, using music to explore national identity.",
+    "image": "https://i.guim.co.uk/img/media/8f7d42cd37c4dc3ab25977b30905dc7b7b9d1382/0_0_2703_2163/master/2703.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/books/2026/nov/10/lessons-in-harmony-by-jonathan-coe-review-what-can-music-tell-us-about-national-identity",
     "category": "Books",
-    "published": "2026-11-08T12:00:00Z"
+    "published": "2026-11-10T07:00:00Z"
   },
   {
-    "title": "‘Life is like a heartbeat’: Michelle Yeoh on playing a robot in Blade Runner 2099",
+    "title": "Godzilla Minus Zero takes US box office by storm in opening weekend",
     "source": "The Guardian",
-    "extract": "Michelle Yeoh discusses her role as Olwen, a replicant in Blade Runner 2099, set 50 years after the previous instalment. She describes developing the character's fluid, unsettling physicality and explores the series' questions about humanity, identity and what it means to be synthetic.",
-    "image": "https://i.guim.co.uk/img/media/79b85c937ffed09426bf9c4a8da0474288e3be69/0_995_5625_6505/master/5625.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/film/2026/nov/07/michelle-yeoh-interview-blade-runner-2099-everything-everywhere-oscar",
+    "extract": "The 39th Godzilla film opened with $31.6m in North America and $63m worldwide, setting a record for the biggest opening weekend by a live-action foreign-language film.",
+    "image": "https://i.guim.co.uk/img/media/d3260e91d299ce23b75f7f95251a3e4f9b3cbe25/843_0_2880_2304/master/2880.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/world/2026/nov/09/godzilla-minus-zero-takes-us-box-office-by-storm-in-opening-weekend",
     "category": "Entertainment",
-    "published": "2026-11-07T12:00:00Z"
+    "published": "2026-11-09T04:21:00Z"
   },
   {
-    "title": "Hollywood banks on Ebenezer to bring Johnny Depp in from the cold",
-    "source": "The Guardian",
-    "extract": "Johnny Depp's role as Scrooge in the forthcoming Ebenezer is his first major Hollywood studio production in eight years. The film's marketing draws on the actor's eccentric screen persona, while industry analysts see the Dickens adaptation as a test of his commercial appeal.",
-    "image": "https://i.guim.co.uk/img/media/18da89459cb16624bf4035cd6ef735fbbf9f9335/642_4_3933_3146/master/3933.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/film/2026/nov/07/johnny-depp-ebenezer-film-scrooge-hollywood",
+    "title": "New Blade Runner 2099 trailer sees Hunter Schafer go undercover as humanity's last hope",
+    "source": "GamesRadar+",
+    "extract": "The new trailer shows Hunter Schafer's Cora going undercover amid a replicant takeover in Los Angeles, offering a fuller look at the upcoming Philip K. Dick-inspired series.",
+    "image": "https://img.youtube.com/vi/1d4x_eSdqNc/maxresdefault.jpg",
+    "link": "https://www.gamesradar.com/entertainment/sci-fi-shows/new-blade-runner-2099-trailer-sees-hunter-schafer-go-undercover-as-humanitys-last-hope-amid-replicant-takeover/",
     "category": "Entertainment",
-    "published": "2026-11-07T14:00:00Z"
+    "published": "2026-11-09T21:37:06Z"
   },
   {
-    "title": "The Good Daughter: Rose Byrne’s legal thriller is so full of calamity it borders on Mr Bean-like farce",
-    "source": "The Guardian",
-    "extract": "The Guardian reviews Sky Atlantic's adaptation of Karin Slaughter's novel, starring Rose Byrne, Meghann Fahy and Brendan Gleeson. Its opening piles trauma on trauma until the story approaches farce, but the review finds a more engaging family thriller once the initial chaos settles.",
-    "image": "https://i.guim.co.uk/img/media/a568b24dac5379e0be579890ab5925df49b79728/420_6_2351_1880/master/2351.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/07/the-good-daughter-rose-byrne-legal-thriller-peacock-sky-atlantic",
+    "title": "Adam Driver finally said yes to Marvel for X-Men because he was a 'big fan' and the script was 'really cool'",
+    "source": "GamesRadar+",
+    "extract": "Driver says his childhood love of the X-Men comics and TV series, plus Jake Schreier's pitch and a strong script, persuaded him to play Mr. Sinister in Marvel's new film.",
+    "image": "https://cdn.mos.cms.futurecdn.net/Y3rEwHHx4K9v8qiatLfJSc.jpg",
+    "link": "https://www.gamesradar.com/entertainment/marvel-movies/adam-driver-finally-said-yes-to-marvel-for-x-men-because-he-was-a-big-fan-of-the-comics-and-the-script-is-really-cool/",
     "category": "Entertainment",
-    "published": "2026-11-07T07:00:00Z"
+    "published": "2026-11-09T11:26:17Z"
+  },
+  {
+    "title": "Hideo Kojima has high praise for season 2 of Netflix's Keira Knightley-led spy thriller",
+    "source": "GamesRadar+",
+    "extract": "Kojima calls Black Doves season two an outstanding British spy thriller, praising its writing, Knightley and Whishaw, and its treatment of spies and assassins.",
+    "image": "https://cdn.mos.cms.futurecdn.net/vwLYdyfvH9zueHwXNM2iKn.jpg",
+    "link": "https://www.gamesradar.com/entertainment/thriller-shows/hideo-kojima-has-high-praise-for-season-2-of-netflixs-keira-knightley-led-spy-thriller-i-could-watch-this-forever/",
+    "category": "Entertainment",
+    "published": "2026-11-09T16:27:13Z"
+  },
+  {
+    "title": "A one-part wonder! The West End's streamlined Harry Potter and the Cursed Child works like magic",
+    "source": "The Guardian",
+    "extract": "The West End production has been condensed from two parts and five hours into a single three-hour show, retaining the spectacle and performances of the fantasy hit.",
+    "image": "https://i.guim.co.uk/img/media/546bc95dfc79655ed5baa5acb0d1e1f0cc989806/156_0_4688_3750/master/4688.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/stage/2026/nov/09/harry-potter-and-the-cursed-child-one-part-production-review-palace-theatre-london-jack-thorne",
+    "category": "Entertainment",
+    "published": "2026-11-09T15:11:00Z"
+  },
+  {
+    "title": "Donnie Dunagan, original voice of Disney's Bambi and triple Purple Heart marine, dies aged 92",
+    "source": "The Guardian",
+    "extract": "Dunagan voiced young Bambi at six before serving 25 years in the Marines and earning three Purple Hearts, linking a classic animation role with an extraordinary later life.",
+    "image": "https://i.guim.co.uk/img/media/4a2f0cd9fa8b0cd8733fdc02c69594c202d67501/306_274_2685_2148/master/2685.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/film/2026/nov/09/donnie-dunagan-bambi-voice-triple-purple-heart-marine-dies",
+    "category": "Entertainment",
+    "published": "2026-11-09T17:48:00Z"
+  },
+  {
+    "title": "'We did 10 takes of it!' Kerr Smith on Dawson's Creek and filming US TV's first gay kiss",
+    "source": "The Guardian",
+    "extract": "Smith revisits the landmark 2000 Dawson's Creek storyline in his memoir, recalling the filming of US network television's first gay kiss and the reaction that followed.",
+    "image": "https://i.guim.co.uk/img/media/522c995de2603ff344e1861dbf0add750d2c0297/87_1_2389_1911/master/2389.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/09/kerr-smith-dawsons-creek-tv",
+    "category": "Entertainment",
+    "published": "2026-11-09T11:00:00Z"
+  },
+  {
+    "title": "'Sadistic, forbidden pleasure': why Gone Girl is my feelgood movie",
+    "source": "The Guardian",
+    "extract": "Rosamund Pike explains why David Fincher's 2014 psychological thriller has become an unlikely comfort watch, revisiting its dark humour, revenge plot and precise unease.",
+    "image": "https://i.guim.co.uk/img/media/fcb22334443769a37b4f2c24c130816341980cd1/560_347_2476_1982/master/2476.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/film/2026/nov/09/gone-girl-david-fincher-comfort-movie",
+    "category": "Entertainment",
+    "published": "2026-11-09T10:00:00Z"
+  },
+  {
+    "title": "Robert Pattinson has auditioned for James Bond – and finally the 007 race is interesting",
+    "source": "The Guardian",
+    "extract": "Reports that Pattinson auditioned alongside Nicholas Hoult and Josh O'Connor give the long-running 007 casting search a fresh set of contenders, with the article weighing the unusual screen presence he could bring.",
+    "image": "https://i.guim.co.uk/img/media/43692c0f9aa90d2e2b6ef91d8e7e8c5c5c3d8dbe/620_76_2131_1705/master/2131.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/film/2026/nov/09/robert-pattinson-nicholas-hoult-josh-oconnor-new-james-bond-contenders",
+    "category": "Entertainment",
+    "published": "2026-11-09T05:29:00Z"
+  },
+  {
+    "title": "Soul Patrol review – heart-stopping story of Vietnam's first Black special ops team",
+    "source": "The Guardian",
+    "extract": "The documentary follows an all-Black six-man reconnaissance patrol in Vietnam, drawing on a member's memoir, home movies, interviews and a reunion to revisit their service and the racism they faced.",
+    "image": null,
+    "link": "https://www.theguardian.com/film/2026/nov/10/soul-patrol-review-heart-stopping-story-of-vietnams-first-black-special-ops-team",
+    "category": "Entertainment",
+    "published": "2026-11-10T07:00:00Z"
+  },
+  {
+    "title": "Square Enix reveals Dragon Quest RPG: The Cursed Tree and the Chosen Isle for mobile",
+    "source": "Time Extension",
+    "extract": "Square Enix has announced a new mobile Dragon Quest RPG for iOS and Android, with an announcement trailer scheduled for 10 November and further details still to come.",
+    "image": null,
+    "link": "https://www.timeextension.com/news/2026/11/square-enix-reveals-dragon-quest-rpg-the-cursed-tree-and-the-chosen-isle-for-mobile",
+    "category": "Entertainment",
+    "published": "2026-11-09T11:40:00Z"
   }
 ]
