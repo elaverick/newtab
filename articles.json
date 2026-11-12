@@ -1,272 +1,173 @@
 [
   {
-    "title": "Mercedes-Benz signs low-carbon aluminum deal, updates climate targets",
-    "source": "Reuters",
-    "extract": "A long-term Norsk Hydro supply agreement will cover at least 10% of Mercedes-Benz's primary aluminium needs, with a target of lowering the material's emissions by 2030.",
-    "image": "https://www.reuters.com/resizer/v2/EGMXYG6K75MMZBQ4RBNMJP2CMU.jpg?auth=667c656cc674fc4548db0d58d5a7a9d7a6c59d9f855f98f9ac330bdd9d15892c&quality=80&width=1920",
-    "link": "https://www.reuters.com/sustainability/cop/mercedes-benz-signs-low-carbon-aluminum-deal-updates-climate-targets-2026-11-10/",
+    "title": "Horse Powertrain reveals a 4.0-litre hybrid V8 for Lotus's first supercar",
+    "source": "Horse Powertrain",
+    "extract": "The production-ready HORSE W40 is a 4.0-litre twin-turbo V8 rated at more than 500kW and 800Nm, paired with an eight-speed hybrid dual-clutch transmission. The powertrain is set to debut in Lotus's Type 135, the marque's first supercar.",
+    "image": null,
+    "link": "https://news.cision.com/horse-powertrain/r/horse-powertrain-develops-new-hybrid-v8-powertrain%2Cc4422557",
     "category": "Automotive",
-    "published": "2026-11-10T08:35:00Z"
+    "published": "2026-11-10T10:30:00+01:00"
   },
   {
-    "title": "Google to introduce two variants of its in-house chips, Bloomberg News reports",
+    "title": "Nissan cuts petrol-car production in China as EV and plug-in hybrid demand accelerates",
+    "source": "The Guardian",
+    "extract": "Nissan says the shift to new-energy vehicles in China is happening faster than expected, so it will scale back local petrol-car output and expand battery-electric and plug-in hybrid production. The change follows steeply lower sales in the country and highlights the divergent pace of electrification across markets.",
+    "image": "https://i.guim.co.uk/img/media/ca0149ecf79e64aff07c9e23af6d3bcf7fd78d70/1393_39_6942_5558/master/6942.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/business/2026/nov/11/nissan-reduces-petrol-car-production-as-ev-sales-boom-in-china",
+    "category": "Automotive",
+    "published": "2026-11-11T08:11:00-05:00"
+  },
+  {
+    "title": "Google DeepMind uses AI to formally verify key parts of Signal's encryption protocol",
+    "source": "WIRED",
+    "extract": "DeepMind's AlphaProof Code framework helped researchers mathematically verify several of Signal's core cryptographic guarantees in a four-week proof of concept. The work did not verify the entire app, but the team is releasing its specification and proofs to support further formal-verification research.",
+    "image": "https://media.wired.com/photos/6af239fd5613664a71d65edb/master/w_2560%2Cc_limit/Security_V1-ezgif.com-video-to-gif-converter.gif",
+    "link": "https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/",
+    "category": "Technology",
+    "published": "2026-11-10T00:01:00-08:00"
+  },
+  {
+    "title": "Yandex says 2.84% of cloud customer data is permanently lost after attacks",
     "source": "Reuters",
-    "extract": "Bloomberg reports Google is preparing 8tx and 8i Max TPU variants aimed at large AI workloads, coding agents and customers that need stronger hardware security.",
-    "image": "https://www.reuters.com/resizer/v2/ERLAE3YMMJKH7F2NXRRLDXR2FI.jpg?auth=22ff73a194a64cd73986b75fe734559387108aec0f5e0e8e29c0c5bef12b9519&quality=80&width=1920",
-    "link": "https://www.reuters.com/business/google-to-introduce-two-variants-its-in-house-chips-bloomberg-news-reports-2026-11-09/",
+    "extract": "Yandex says it has restored 97.16% of customer data after attacks damaged three data centres, but the remaining 2.84% cannot be recovered because of equipment damage and missing customer backups. The company says it plans to enable backups by default and spread cloud resources across more independent locations.",
+    "image": "https://www.reuters.com/resizer/v2/DMZULYJDENKHJA5UJ7TVI4DTA4.jpg?auth=b622cfaea752147eeee449f33745a4b846a073162e5891a341dd5a6e2d41ecac&quality=80&width=1920",
+    "link": "https://www.reuters.com/technology/russias-yandex-says-nearly-3-cloud-customer-data-lost-after-attacks-2026-11-10/",
     "category": "Technology",
-    "published": "2026-11-09T12:39:57Z"
+    "published": "2026-11-10T13:24:00Z"
   },
   {
-    "title": "Meta releases Muse Ember, a new lightweight model for agent execution",
-    "source": "TechCrunch",
-    "extract": "Meta says Muse Ember is its smallest, most cost-efficient model yet, tuned for agent execution, tool use, coding subtasks and long-document processing.",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/11/Blog-Header-Visual.png?w=1024",
-    "link": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+    "title": "Helsing launches Clarity battlefield intelligence software built around AI agents",
+    "source": "Reuters",
+    "extract": "Helsing's Clarity software combines information from drones, satellites, military reports and open-source intelligence to help identify assets and assess possible responses. The company says its specialist agents expose supporting evidence, while human operators remain responsible for approving any strike.",
+    "image": "https://www.reuters.com/resizer/v2/4JE74NWUE5PSXPK4QUEVUKLUOE.jpg?auth=3c5969eee3d0f224d7de5220113fd3b8883ecff6e0bde1a9c355d62471293630&quality=80&width=1920",
+    "link": "https://www.reuters.com/technology/helsing-enters-market-battlefield-software-built-combat-data-2026-11-11/",
     "category": "Technology",
-    "published": "2026-11-09T18:00:00Z"
+    "published": "2026-11-11T10:31:00Z"
   },
   {
-    "title": "Anthropic launches Claude Fable 5.2 and Mythos 5.2 models",
-    "source": "MacRumors",
-    "extract": "Anthropic's new model pair targets coding, reasoning and vision; the company reports faster generation and lower token use on demanding tasks, with Mythos access restricted to selected research and security programmes.",
-    "image": "https://images.macrumors.com/t/h-SgaNwlfg1xqeFyNxTtAvRMWhE%3D/400x0/article-new/2025/09/anthopic-claude.jpg?lossy=",
-    "link": "https://www.macrumors.com/2026/11/09/anthropic-launches-claude-fable-5-2/",
+    "title": "AI agents used by Kazakhstan-linked hackers to steal 2,000 Tajik government documents",
+    "source": "Reuters",
+    "extract": "Researchers say the espionage group used Hermes, an open-source autonomous-agent framework, to plan reconnaissance, run hacking commands and organise stolen files. The exposed operation shows how attackers are beginning to delegate substantial parts of cyber intrusions to AI agents.",
+    "image": "https://www.reuters.com/resizer/v2/TAA5HQJCM5PK3PCIOUMREKYKZE.jpg?auth=7ee6ed17db9708cb6ef6d0f263e53d7bea84dadaa14b87caedd3cb35b8959a80&quality=80&width=1920",
+    "link": "https://www.reuters.com/legal/government/kazakhstan-linked-hackers-used-ai-steal-tajik-government-documents-researchers-2026-11-11/",
     "category": "Technology",
-    "published": "2026-11-09T19:38:00Z"
+    "published": "2026-11-11T11:07:00Z"
   },
   {
-    "title": "Disney and Adobe are building generative AI tools together",
-    "source": "The Verge",
-    "extract": "The multiyear partnership gives Disney early access to Adobe's generative-AI technology and aims to build artist-led models for creative production, theme parks, cruises and ESPN.",
-    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Disney-Adobe-AI-partnership.jpg?crop=0%2C0%2C100%2C100&quality=90&strip=all&w=2400",
-    "link": "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership",
+    "title": "UK AI-chip startup Fractile raises $720m at a $7bn valuation",
+    "source": "Reuters",
+    "extract": "London- and Bristol-based Fractile has raised $720 million in a Series C round, valuing the company at $7 billion. It is developing chips for AI inference that it says can deliver faster responses while reducing energy use and cost, with backing that includes the UK's Sovereign AI fund.",
+    "image": "https://www.reuters.com/resizer/v2/V4PVSE76LBKLPI7NYCJPPJFEXI.jpg?auth=81c0411597624a138a3a8d34a0c2836933feccbe4ed668b8e83a16afd5a3b9bd&quality=80&width=1920",
+    "link": "https://www.reuters.com/legal/transactional/uk-backed-ai-chip-startup-fractile-hits-7-billion-valuation-funding-round-2026-11-11/",
     "category": "Technology",
-    "published": "2026-11-09T15:38:00Z"
+    "published": "2026-11-11T14:53:00Z"
   },
   {
-    "title": "Apple's $50 Intelligence Usage Packs extend access to some AI features",
-    "source": "The Verge",
-    "extract": "Apple has introduced a $49.99 top-up for usage-limited AI features in Logic Pro, with the same credit-style approach expected to spread across Creator Studio apps.",
-    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/logicpro.jpg?crop=0%2C0.012751849018109%2C100%2C99.974496301964&quality=90&strip=all&w=2400",
-    "link": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+    "title": "United Airlines moves to block AI agents from its digital platforms over security concerns",
+    "source": "Reuters",
+    "extract": "United plans to restrict AI bots across its websites and booking channels, warning that sharing account credentials can expose personal data or trigger unintended purchases and account changes. It also cites regulatory risks when automated agents perform actions such as flight check-in.",
+    "image": "https://www.reuters.com/resizer/v2/ZQGG2F4U4JL4VBTJMLKIZOVQ3Y.jpg?auth=683df9bbb7de1a2ad33005001bba9d19a255bd61eaf933201a0a709527a2e475&quality=80&width=1920",
+    "link": "https://www.reuters.com/legal/litigation/united-airlines-moves-block-ai-agents-its-platform-over-security-concerns-2026-11-11/",
     "category": "Technology",
-    "published": "2026-11-09T19:09:00Z"
+    "published": "2026-11-11T19:25:00Z"
   },
   {
-    "title": "Parents and teachers decry Google pledge to yank Search if schools block AI",
-    "source": "The Guardian",
-    "extract": "Google's policy would also disable Search for school accounts that block its AI tools, prompting educators to question the company's leverage over classroom technology and student data.",
-    "image": "https://i.guim.co.uk/img/media/f9e7e92c7afc213ee5f07553302bd0c680f2720b/0_0_4000_2666/master/4000.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/us-news/2026/nov/09/parents-teachers-google-search-schools-ai",
+    "title": "Samsung's new HBM chip-packaging plant to trigger $30bn in additional investment",
+    "source": "Reuters",
+    "extract": "South Korea says Samsung's new high-bandwidth-memory packaging facility in Asan will be followed by roughly 40 trillion won in advanced-equipment investment. The three-floor clean-room production line is scheduled to begin operating in June 2028 to meet demand for server memory.",
+    "image": "https://www.reuters.com/resizer/v2/APAQOTD445NRXFTILK4UBSJCS4.jpg?auth=a6e8380bd92f1efa06ea6a03f574e563852f57bc8b04a33b2d1f9de3becc60e1&quality=80&width=1920",
+    "link": "https://www.reuters.com/world/asia-pacific/south-koreas-lee-says-samsung-chip-packaging-expansion-spur-30-billion-2026-11-12/",
     "category": "Technology",
-    "published": "2026-11-09T14:00:00Z"
+    "published": "2026-11-12T01:43:00Z"
   },
   {
-    "title": "EU sues IBM and two European firms over troubled entry/exit border system",
-    "source": "The Guardian",
-    "extract": "EU-Lisa is suing IBM, Atos and Leonardo over delays in developing the Entry/Exit System; the case concerns delivery failures, not the system's current operation.",
-    "image": "https://i.guim.co.uk/img/media/d4e0bb6cf66538930d3fcf221707a4675ec85a38/222_0_2919_2336/master/2919.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/world/2026/nov/09/eu-lawsuit-ibm-atos-leonardo-entry-exit-border-system",
-    "category": "Technology",
-    "published": "2026-11-09T10:49:00Z"
-  },
-  {
-    "title": "Epic Games Launcher is coming to SteamOS",
-    "source": "The Verge",
-    "extract": "Epic's new launcher will support SteamOS and other Linux distributions, a notable step for Steam Deck users, although Fortnite support remains uncertain because of anti-cheat compatibility.",
-    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/STK108_EPIC_GAMES_C.jpg?crop=0%2C0%2C100%2C100&quality=90&strip=all&w=2400",
-    "link": "https://www.theverge.com/games/1029557/epic-games-launcher-is-coming-to-steamos",
-    "category": "Technology",
-    "published": "2026-11-08T20:52:00Z"
-  },
-  {
-    "title": "AMD FSR 4.1 officially arrives on Xbox Series X|S",
-    "source": "Multiplayer.it",
-    "extract": "AMD's FSR 4.1 upscaler is now available to Xbox Series X|S developers through the latest GDK, bringing its image-quality and performance improvements to console builds.",
-    "image": "https://multiplayer.net-cdn.it/thumbs/images/2026/11/08/xbox-series-x-s-nuovi-modelli_cropped_240_0_1717_827_jpeg_1600x900_crop_q85_jpg_1600x900_crop_q85.jpg",
-    "link": "https://multiplayer.it/notizie/amd-fsr-41-arriva-su-xbox-series-xs-in-maniera-ufficiale-con-i-suoi-miglioramenti.html",
-    "category": "Technology",
-    "published": "2026-11-08T15:02:00Z"
-  },
-  {
-    "title": "Quote of the day by Shigeru Miyamoto: 'There are two types of games – well-made games and interesting games'",
-    "source": "GamesRadar+",
-    "extract": "A resurfaced 1996 interview captures Miyamoto weighing polish against originality, offering a look back at the design thinking behind Nintendo's early 3D era.",
-    "image": "https://cdn.mos.cms.futurecdn.net/ug7UzWWmGj5PbiK8bRbQa5.jpg",
-    "link": "https://www.gamesradar.com/games/the-legend-of-zelda/quote-of-the-day-by-shigeru-miyamoto-there-are-two-types-of-games-well-made-games-and-interesting-games-and-nintendo-didnt-always-get-the-balance-right/",
+    "title": "PlayStation 3 turns 20: a retrospective on Sony's Cell-powered console",
+    "source": "Time Extension",
+    "extract": "The Japanese launch anniversary revisits the PS3's unusual Cell Broadband Engine, co-developed with IBM and Toshiba, and the development challenges it created. The console eventually sold 87.4 million units and helped bring Blu-ray, HDMI and standard 1080p output to the mainstream console market.",
+    "image": null,
+    "link": "https://www.timeextension.com/news/2026/11/anniversary-ps3-sonys-most-controversial-playstation-turns-20-today",
     "category": "Retro Computing",
-    "published": "2026-11-09T18:00:00Z"
+    "published": "2026-11-11T15:00:00-08:00"
   },
   {
-    "title": "Nintendo of America invests in game preservation as it looks to hire an archivist",
-    "source": "GamesRadar+",
-    "extract": "Nintendo of America is seeking an archivist to preserve its history and institutional knowledge, a notable step toward formalising the company's game and hardware preservation.",
-    "image": "https://cdn.mos.cms.futurecdn.net/qFVrBFZW5DWcyTgBRpz68D.jpg",
-    "link": "https://www.gamesradar.com/games/nintendo-of-america-invests-in-game-preservation-as-it-looks-to-hire-an-archivist-to-make-sure-its-history-is-preserved-for-future-generations/",
+    "title": "1985 arcade racer Shot Rider joins Arcade Archives on modern consoles",
+    "source": "Time Extension",
+    "extract": "Seibu Kaihatsu's motorcycle-themed vertical racer is being added to Hamster's Arcade Archives, with release scheduled for 12 November 2026. The modern release adds score-focused modes, while the Arcade Archives 2 editions also include a time-attack mode.",
+    "image": null,
+    "link": "https://www.timeextension.com/news/2026/11/seibu-kaihatsus-1985-arcade-racer-shot-rider-speeds-into-the-arcade-archives-this-week",
     "category": "Retro Computing",
-    "published": "2026-11-09T21:43:10Z"
+    "published": "2026-11-11T11:00:00-08:00"
   },
   {
-    "title": "Fan preserves Namco's 2011 Japan-only mobile game Pac-Man SP",
+    "title": "Rare Mega Drive RPG Twinkle Tale gets its first official release outside Japan",
     "source": "Time Extension",
-    "extract": "A preservationist has rescued Namco's Japan-only 2011 mobile Pac-Man SP, a title long unavailable commercially, and plans to add it to the Keitai World Launcher archive.",
+    "extract": "The 1992 Japan-only action RPG is receiving newly localised Mega Drive / Genesis cartridges from Retro-Bit and Limited Run Games. Pre-orders opened on 10 November, with the individually numbered collector's edition expected to ship in March 2027.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/fan-preserves-namcos-2011-japan-only-mobile-game-pac-man-sp",
-    "category": "Retro Computing Projects",
-    "published": "2026-11-08T11:00:00Z"
+    "link": "https://www.timeextension.com/news/2026/11/rare-sega-mega-drive-release-twinkle-tale-gets-new-physical-edition-courtesy-of-retro-bit",
+    "category": "Retro Computing",
+    "published": "2026-11-10T09:30:00-08:00"
   },
   {
-    "title": "Dolphin Depot is a new Nintendo GameCube homebrew app launcher that works on real hardware",
+    "title": "Morning Star is a new Golden Axe-inspired homebrew beat-'em-up for Mega Drive",
     "source": "Time Extension",
-    "extract": "The beta launcher lets GameCube owners browse and install homebrew apps on original hardware, including emulators, game launchers and resolution tools.",
+    "extract": "A five-person team has announced a work-in-progress Mega Drive game inspired by Golden Axe and Dungeons & Dragons. The developers are targeting four playable heroes, two-player co-op, magic attacks and mountable creatures.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/dolphin-depot-is-a-new-nintendo-gamecube-homebrew-app-launcher-that-works-on-real-hardware",
+    "link": "https://www.timeextension.com/news/2026/11/morning-star-is-a-promising-new-golden-axe-style-beat-em-up-coming-to-the-sega-mega-drive",
     "category": "Retro Computing Projects",
-    "published": "2026-11-08T14:00:00Z"
+    "published": "2026-11-10T12:00:00-08:00"
   },
   {
-    "title": "18 Nintendo Game & Watch classics come to ZX Spectrum via SM510 emulator",
+    "title": "iMSX2 emulator update brings MSX games to Apple Watch",
     "source": "Time Extension",
-    "extract": "A new SM510 emulator brings 18 Game & Watch titles, including Mario Bros. and Donkey Kong, to the ZX Spectrum and original 48K hardware.",
+    "extract": "The iMSX2.8 update lets users sync MSX ROMs, disk images and saves from an iPhone to an Apple Watch, then run games on the watch's tiny display with touch controls. The emulator is built around C-BIOS to reproduce the original MSX environment.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/18-nintendo-game-and-watch-classics-inc-mario-bros-and-donkey-kong-come-to-zx-spectrum-via-sm510-emulator",
+    "link": "https://www.timeextension.com/news/2026/11/imsx2-emulator-brings-the-msx-library-to-apple-watch-an-admittedly-niche-but-cool-benefit",
     "category": "Retro Computing Projects",
-    "published": "2026-11-09T15:00:00Z"
+    "published": "2026-11-10T14:00:00-08:00"
   },
   {
-    "title": "A Golden Wake is getting a reimagining, 12 years after its original release",
+    "title": "NES platformer 8 Eyes is being lined up for enhanced SNES, Mega Drive and GBA versions",
     "source": "Time Extension",
-    "extract": "Grundislav Games is reimagining its 2014 point-and-click adventure with refreshed art, new puzzles, characters, locations, voice acting and music.",
+    "extract": "Piko Interactive is seeking crowdfunding for enhanced versions of the 1988 NES action-adventure, with upgraded graphics and sound planned for SNES, Mega Drive and GBA. A special NES commemorative edition is also planned, although the campaign launch date has not yet been announced.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/time-to-revisit-the-roaring-20s-12-years-later-the-point-n-click-adventure-a-golden-wake-is-getting-a-reimagining",
+    "link": "https://www.timeextension.com/news/2026/11/castlevania-style-nes-platformer-8-eyes-could-be-getting-an-enhanced-release-for-snes-sega-genesis-and-gba",
     "category": "Retro Computing Projects",
-    "published": "2026-11-09T13:00:00Z"
+    "published": "2026-11-11T17:00:00-08:00"
   },
   {
-    "title": "Portal 2's cancelled F-Stop prototype is now playable",
-    "source": "Gamekult",
-    "extract": "A playable reconstruction of F-Stop, the cancelled Portal 2 prequel concept, has surfaced, reviving a 2007-era prototype that explored a different mechanic from the finished game.",
-    "image": "https://cdn.gamekult.com/optim/images/news/30/3050872693/portal-2-ne-devait-pas-avoir-de-portails-et-devait-etre-un-prequel-ce-prototype-est-desormais-jouable-9e8269e3__930_300__0-312-1822-901.png",
-    "link": "https://www.gamekult.com/actualite/portal-2-ne-devait-pas-avoir-de-portails-et-devait-etre-un-prequel-ce-prototype-est-desormais-jouable-3050872693.html",
-    "category": "Retro Computing Projects",
-    "published": "2026-11-08T16:21:00Z"
-  },
-  {
-    "title": "M John Harrison becomes first science fiction author to win the Booker prize",
+    "title": "The Guardian's latest science-fiction, fantasy and horror roundup covers five new novels",
     "source": "The Guardian",
-    "extract": "Harrison's post-apocalyptic novel The End of Everything, set on the near-future Kent coast, has won the £50,000 Booker Prize, making him the first science-fiction author to take the award.",
-    "image": "https://i.guim.co.uk/img/media/f88eb30da8765416e5de2380d70ed0056788cab0/691_0_6776_5421/master/6776.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/nov/09/m-john-harrison-the-end-of-everything-wins-2026-booker-prize",
+    "extract": "Lisa Tuttle's roundup spans an AI-governed near-future Icelandic mystery, a dark fantasy about magical story worlds, illustrated horror, Chinese speculative fiction and a surreal comic fantasy. The selection includes Alfa, The Lost Spectacular, Look What the Cat Dragged In, China +100 and Everything Happens So Much.",
+    "image": "https://i.guim.co.uk/img/media/d50d43dd21034b2f8e73e0d6cf1dbf9e0014ca98/0_0_4030_3224/master/4030.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/books/2026/nov/11/the-best-recent-science-fiction-fantasy-and-horror-review-roundup",
     "category": "Books",
-    "published": "2026-11-09T22:00:00Z"
+    "published": "2026-11-11T10:00:00+01:00"
   },
   {
-    "title": "Lessons in Harmony by Jonathan Coe review – what can music tell us about national identity?",
-    "source": "The Guardian",
-    "extract": "Coe's historical novel follows the friendship between Maurice Ravel and Ralph Vaughan Williams from Paris in 1907 through the world wars, using music to explore national identity.",
-    "image": "https://i.guim.co.uk/img/media/8f7d42cd37c4dc3ab25977b30905dc7b7b9d1382/0_0_2703_2163/master/2703.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/nov/10/lessons-in-harmony-by-jonathan-coe-review-what-can-music-tell-us-about-national-identity",
-    "category": "Books",
-    "published": "2026-11-10T07:00:00Z"
-  },
-  {
-    "title": "Godzilla Minus Zero takes US box office by storm in opening weekend",
-    "source": "The Guardian",
-    "extract": "The 39th Godzilla film opened with $31.6m in North America and $63m worldwide, setting a record for the biggest opening weekend by a live-action foreign-language film.",
-    "image": "https://i.guim.co.uk/img/media/d3260e91d299ce23b75f7f95251a3e4f9b3cbe25/843_0_2880_2304/master/2880.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/world/2026/nov/09/godzilla-minus-zero-takes-us-box-office-by-storm-in-opening-weekend",
-    "category": "Entertainment",
-    "published": "2026-11-09T04:21:00Z"
-  },
-  {
-    "title": "New Blade Runner 2099 trailer sees Hunter Schafer go undercover as humanity's last hope",
-    "source": "GamesRadar+",
-    "extract": "The new trailer shows Hunter Schafer's Cora going undercover amid a replicant takeover in Los Angeles, offering a fuller look at the upcoming Philip K. Dick-inspired series.",
-    "image": "https://img.youtube.com/vi/1d4x_eSdqNc/maxresdefault.jpg",
-    "link": "https://www.gamesradar.com/entertainment/sci-fi-shows/new-blade-runner-2099-trailer-sees-hunter-schafer-go-undercover-as-humanitys-last-hope-amid-replicant-takeover/",
-    "category": "Entertainment",
-    "published": "2026-11-09T21:37:06Z"
-  },
-  {
-    "title": "Adam Driver finally said yes to Marvel for X-Men because he was a 'big fan' and the script was 'really cool'",
-    "source": "GamesRadar+",
-    "extract": "Driver says his childhood love of the X-Men comics and TV series, plus Jake Schreier's pitch and a strong script, persuaded him to play Mr. Sinister in Marvel's new film.",
-    "image": "https://cdn.mos.cms.futurecdn.net/Y3rEwHHx4K9v8qiatLfJSc.jpg",
-    "link": "https://www.gamesradar.com/entertainment/marvel-movies/adam-driver-finally-said-yes-to-marvel-for-x-men-because-he-was-a-big-fan-of-the-comics-and-the-script-is-really-cool/",
-    "category": "Entertainment",
-    "published": "2026-11-09T11:26:17Z"
-  },
-  {
-    "title": "Hideo Kojima has high praise for season 2 of Netflix's Keira Knightley-led spy thriller",
-    "source": "GamesRadar+",
-    "extract": "Kojima calls Black Doves season two an outstanding British spy thriller, praising its writing, Knightley and Whishaw, and its treatment of spies and assassins.",
-    "image": "https://cdn.mos.cms.futurecdn.net/vwLYdyfvH9zueHwXNM2iKn.jpg",
-    "link": "https://www.gamesradar.com/entertainment/thriller-shows/hideo-kojima-has-high-praise-for-season-2-of-netflixs-keira-knightley-led-spy-thriller-i-could-watch-this-forever/",
-    "category": "Entertainment",
-    "published": "2026-11-09T16:27:13Z"
-  },
-  {
-    "title": "A one-part wonder! The West End's streamlined Harry Potter and the Cursed Child works like magic",
-    "source": "The Guardian",
-    "extract": "The West End production has been condensed from two parts and five hours into a single three-hour show, retaining the spectacle and performances of the fantasy hit.",
-    "image": "https://i.guim.co.uk/img/media/546bc95dfc79655ed5baa5acb0d1e1f0cc989806/156_0_4688_3750/master/4688.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/stage/2026/nov/09/harry-potter-and-the-cursed-child-one-part-production-review-palace-theatre-london-jack-thorne",
-    "category": "Entertainment",
-    "published": "2026-11-09T15:11:00Z"
-  },
-  {
-    "title": "Donnie Dunagan, original voice of Disney's Bambi and triple Purple Heart marine, dies aged 92",
-    "source": "The Guardian",
-    "extract": "Dunagan voiced young Bambi at six before serving 25 years in the Marines and earning three Purple Hearts, linking a classic animation role with an extraordinary later life.",
-    "image": "https://i.guim.co.uk/img/media/4a2f0cd9fa8b0cd8733fdc02c69594c202d67501/306_274_2685_2148/master/2685.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/film/2026/nov/09/donnie-dunagan-bambi-voice-triple-purple-heart-marine-dies",
-    "category": "Entertainment",
-    "published": "2026-11-09T17:48:00Z"
-  },
-  {
-    "title": "'We did 10 takes of it!' Kerr Smith on Dawson's Creek and filming US TV's first gay kiss",
-    "source": "The Guardian",
-    "extract": "Smith revisits the landmark 2000 Dawson's Creek storyline in his memoir, recalling the filming of US network television's first gay kiss and the reaction that followed.",
-    "image": "https://i.guim.co.uk/img/media/522c995de2603ff344e1861dbf0add750d2c0297/87_1_2389_1911/master/2389.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/09/kerr-smith-dawsons-creek-tv",
-    "category": "Entertainment",
-    "published": "2026-11-09T11:00:00Z"
-  },
-  {
-    "title": "'Sadistic, forbidden pleasure': why Gone Girl is my feelgood movie",
-    "source": "The Guardian",
-    "extract": "Rosamund Pike explains why David Fincher's 2014 psychological thriller has become an unlikely comfort watch, revisiting its dark humour, revenge plot and precise unease.",
-    "image": "https://i.guim.co.uk/img/media/fcb22334443769a37b4f2c24c130816341980cd1/560_347_2476_1982/master/2476.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/film/2026/nov/09/gone-girl-david-fincher-comfort-movie",
-    "category": "Entertainment",
-    "published": "2026-11-09T10:00:00Z"
-  },
-  {
-    "title": "Robert Pattinson has auditioned for James Bond – and finally the 007 race is interesting",
-    "source": "The Guardian",
-    "extract": "Reports that Pattinson auditioned alongside Nicholas Hoult and Josh O'Connor give the long-running 007 casting search a fresh set of contenders, with the article weighing the unusual screen presence he could bring.",
-    "image": "https://i.guim.co.uk/img/media/43692c0f9aa90d2e2b6ef91d8e7e8c5c5c3d8dbe/620_76_2131_1705/master/2131.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/film/2026/nov/09/robert-pattinson-nicholas-hoult-josh-oconnor-new-james-bond-contenders",
-    "category": "Entertainment",
-    "published": "2026-11-09T05:29:00Z"
-  },
-  {
-    "title": "Soul Patrol review – heart-stopping story of Vietnam's first Black special ops team",
-    "source": "The Guardian",
-    "extract": "The documentary follows an all-Black six-man reconnaissance patrol in Vietnam, drawing on a member's memoir, home movies, interviews and a reunion to revisit their service and the racism they faced.",
-    "image": null,
-    "link": "https://www.theguardian.com/film/2026/nov/10/soul-patrol-review-heart-stopping-story-of-vietnams-first-black-special-ops-team",
-    "category": "Entertainment",
-    "published": "2026-11-10T07:00:00Z"
-  },
-  {
-    "title": "Square Enix reveals Dragon Quest RPG: The Cursed Tree and the Chosen Isle for mobile",
+    "title": "But Can It Run Doom? book Kickstarter explores the game's many unlikely ports",
     "source": "Time Extension",
-    "extract": "Square Enix has announced a new mobile Dragon Quest RPG for iOS and Android, with an announcement trailer scheduled for 10 November and further details still to come.",
+    "extract": "Boss Fight Books has launched a Kickstarter for David L. Craddock's 224-page history of Doom's PC origins, console conversions and unusual hardware adaptations. A special edition adds interviews with John Carmack, Tom Hall, John Romero and soundtrack composer Aubrey Hodges.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/square-enix-reveals-dragon-quest-rpg-the-cursed-tree-and-the-chosen-isle-for-mobile",
-    "category": "Entertainment",
-    "published": "2026-11-09T11:40:00Z"
+    "link": "https://www.timeextension.com/news/2026/11/but-can-it-run-doom-kickstarter-begins-for-book-cataloguing-the-many-devices-that-can-in-fact-run-doom",
+    "category": "Books",
+    "published": "2026-11-11T14:00:00-08:00"
+  },
+  {
+    "title": "PlayStation: The First 30 Years is a lavish visual history built from Sony's archives",
+    "source": "Time Extension",
+    "extract": "Read-Only Memory's large-format book draws on Sony's hardware archives and exclusive interviews with Ken Kutaragi, Teiyu Goto and Yujin Morisawa. It documents prototypes, design sketches, debug hardware and the engineering history behind the PlayStation family.",
+    "image": null,
+    "link": "https://www.timeextension.com/news/2026/11/gallery-playstation-the-first-30-years-a-lavish-coffee-table-book-that-could-literally-be-a-coffee-table",
+    "category": "Books",
+    "published": "2026-11-11T18:00:00-08:00"
+  },
+  {
+    "title": "Forgotten Worlds issue 9 revisits the TurboGrafx-16 and PC Engine",
+    "source": "Time Extension",
+    "extract": "The 100-page ninth issue of Forgotten Worlds focuses on NEC's PC Engine / TurboGrafx-16, covering its hardware, games, packaging and marketing history. It also includes interviews with former NEC USA manager John Podlasek and PC Engine programmer Hiromasa Iwasaki.",
+    "image": null,
+    "link": "https://www.timeextension.com/news/2026/11/new-limited-edition-issue-of-forgotten-worlds-is-dedicated-to-the-turbografx-16-pc-engine",
+    "category": "Retro Computing",
+    "published": "2026-11-10T16:00:00-08:00"
   }
 ]
