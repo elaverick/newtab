@@ -1,173 +1,146 @@
 [
   {
-    "title": "Horse Powertrain reveals a 4.0-litre hybrid V8 for Lotus's first supercar",
-    "source": "Horse Powertrain",
-    "extract": "The production-ready HORSE W40 is a 4.0-litre twin-turbo V8 rated at more than 500kW and 800Nm, paired with an eight-speed hybrid dual-clutch transmission. The powertrain is set to debut in Lotus's Type 135, the marque's first supercar.",
-    "image": null,
-    "link": "https://news.cision.com/horse-powertrain/r/horse-powertrain-develops-new-hybrid-v8-powertrain%2Cc4422557",
-    "category": "Automotive",
-    "published": "2026-11-10T10:30:00+01:00"
-  },
-  {
-    "title": "Nissan cuts petrol-car production in China as EV and plug-in hybrid demand accelerates",
+    "title": "UK car industry to press EU for two-year delay to Brexit EV tariffs",
     "source": "The Guardian",
-    "extract": "Nissan says the shift to new-energy vehicles in China is happening faster than expected, so it will scale back local petrol-car output and expand battery-electric and plug-in hybrid production. The change follows steeply lower sales in the country and highlights the divergent pace of electrification across markets.",
-    "image": "https://i.guim.co.uk/img/media/ca0149ecf79e64aff07c9e23af6d3bcf7fd78d70/1393_39_6942_5558/master/6942.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/business/2026/nov/11/nissan-reduces-petrol-car-production-as-ev-sales-boom-in-china",
+    "extract": "UK carmakers are preparing to seek a two-year delay to the EU-UK battery rules of origin that would otherwise trigger 10% tariffs on many electric vehicles from 1 January. Manufacturers argue that European battery production is not yet at the scale needed to meet the rules.",
+    "image": "https://i.guim.co.uk/img/media/8ab0cdf0d430e3257ca969f133bc738343df5ddc/1000_0_5000_4000/master/5000.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/business/2026/nov/12/uk-car-industry-rules-of-origin-brexit-ev-tariffs-eu",
     "category": "Automotive",
-    "published": "2026-11-11T08:11:00-05:00"
+    "published": "2026-11-12T11:30:00-05:00"
   },
   {
-    "title": "Google DeepMind uses AI to formally verify key parts of Signal's encryption protocol",
-    "source": "WIRED",
-    "extract": "DeepMind's AlphaProof Code framework helped researchers mathematically verify several of Signal's core cryptographic guarantees in a four-week proof of concept. The work did not verify the entire app, but the team is releasing its specification and proofs to support further formal-verification research.",
-    "image": "https://media.wired.com/photos/6af239fd5613664a71d65edb/master/w_2560%2Cc_limit/Security_V1-ezgif.com-video-to-gif-converter.gif",
-    "link": "https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/",
-    "category": "Technology",
-    "published": "2026-11-10T00:01:00-08:00"
-  },
-  {
-    "title": "Yandex says 2.84% of cloud customer data is permanently lost after attacks",
+    "title": "Faxes, phones and Bluetooth: Microsoft outage forces businesses to find fixes",
     "source": "Reuters",
-    "extract": "Yandex says it has restored 97.16% of customer data after attacks damaged three data centres, but the remaining 2.84% cannot be recovered because of equipment damage and missing customer backups. The company says it plans to enable backups by default and spread cloud resources across more independent locations.",
-    "image": "https://www.reuters.com/resizer/v2/DMZULYJDENKHJA5UJ7TVI4DTA4.jpg?auth=b622cfaea752147eeee449f33745a4b846a073162e5891a341dd5a6e2d41ecac&quality=80&width=1920",
-    "link": "https://www.reuters.com/technology/russias-yandex-says-nearly-3-cloud-customer-data-lost-after-attacks-2026-11-10/",
+    "extract": "A worldwide Microsoft 365 outage disrupted Outlook, Teams and Copilot, forcing businesses, exchanges and financial firms to fall back on telephones, fax machines and Bluetooth transfers. The incident has renewed calls for tested contingency plans and less dependence on a small number of technology providers.",
+    "image": "https://www.reuters.com/resizer/v2/HJUKAEXCOBPQHI2OX7DL6FP2FQ.jpg?auth=4cb2030482f2c62b3bbe7281db35c38168dc8324da8b9a4d6e2752ba28ba17d4&quality=80&width=1920",
+    "link": "https://www.reuters.com/business/finance/faxes-phones-bluetooth-microsoft-outage-forces-businesses-find-fixes-2026-11-13/",
     "category": "Technology",
-    "published": "2026-11-10T13:24:00Z"
+    "published": "2026-11-13T14:54:00Z"
   },
   {
-    "title": "Helsing launches Clarity battlefield intelligence software built around AI agents",
+    "title": "China's $3 billion-plus pipeline of Nvidia-powered AI data centres",
     "source": "Reuters",
-    "extract": "Helsing's Clarity software combines information from drones, satellites, military reports and open-source intelligence to help identify assets and assess possible responses. The company says its specialist agents expose supporting evidence, while human operators remain responsible for approving any strike.",
-    "image": "https://www.reuters.com/resizer/v2/4JE74NWUE5PSXPK4QUEVUKLUOE.jpg?auth=3c5969eee3d0f224d7de5220113fd3b8883ecff6e0bde1a9c355d62471293630&quality=80&width=1920",
-    "link": "https://www.reuters.com/technology/helsing-enters-market-battlefield-software-built-combat-data-2026-11-11/",
+    "extract": "A Reuters review identified more than $3 billion in Chinese computing projects built around Nvidia processors, including proposed facilities using H100 and H200 systems. The projects show the continuing role of US-designed accelerators in China's AI infrastructure despite export restrictions.",
+    "image": "https://www.reuters.com/resizer/v2/I2HAV333JNK6HIF3QS3SO7JLZI.jpg?auth=122e5cc061b0ae95842c6d44ad93af1ab4bec16a25d5381f6b090704b3669b6e&quality=80&width=1080",
+    "link": "https://www.reuters.com/world/china/factbox-chinas-3-billion-plus-pipeline-nvidia-powered-ai-data-centres-2026-11-13/",
     "category": "Technology",
-    "published": "2026-11-11T10:31:00Z"
+    "published": "2026-11-13T09:28:00Z"
   },
   {
-    "title": "AI agents used by Kazakhstan-linked hackers to steal 2,000 Tajik government documents",
-    "source": "Reuters",
-    "extract": "Researchers say the espionage group used Hermes, an open-source autonomous-agent framework, to plan reconnaissance, run hacking commands and organise stolen files. The exposed operation shows how attackers are beginning to delegate substantial parts of cyber intrusions to AI agents.",
-    "image": "https://www.reuters.com/resizer/v2/TAA5HQJCM5PK3PCIOUMREKYKZE.jpg?auth=7ee6ed17db9708cb6ef6d0f263e53d7bea84dadaa14b87caedd3cb35b8959a80&quality=80&width=1920",
-    "link": "https://www.reuters.com/legal/government/kazakhstan-linked-hackers-used-ai-steal-tajik-government-documents-researchers-2026-11-11/",
+    "title": "Apache HTTP Server patches critical HTTP/2 remote code execution flaw",
+    "source": "BleepingComputer",
+    "extract": "The Apache Software Foundation has fixed a critical race condition in mod_http2 that could let an unauthenticated attacker corrupt heap memory and execute code with the web server's privileges. The flaw affects Apache HTTP Server 2.4.55 through 2.4.70 when HTTP/2 is enabled.",
+    "image": "https://www.bleepstatic.com/content/hl-images/2026/11/12/Apache.jpg",
+    "link": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/",
     "category": "Technology",
-    "published": "2026-11-11T11:07:00Z"
+    "published": "2026-11-12T19:12:00Z"
   },
   {
-    "title": "UK AI-chip startup Fractile raises $720m at a $7bn valuation",
-    "source": "Reuters",
-    "extract": "London- and Bristol-based Fractile has raised $720 million in a Series C round, valuing the company at $7 billion. It is developing chips for AI inference that it says can deliver faster responses while reducing energy use and cost, with backing that includes the UK's Sovereign AI fund.",
-    "image": "https://www.reuters.com/resizer/v2/V4PVSE76LBKLPI7NYCJPPJFEXI.jpg?auth=81c0411597624a138a3a8d34a0c2836933feccbe4ed668b8e83a16afd5a3b9bd&quality=80&width=1920",
-    "link": "https://www.reuters.com/legal/transactional/uk-backed-ai-chip-startup-fractile-hits-7-billion-valuation-funding-round-2026-11-11/",
+    "title": "New Windows SignDrop zero-day gives hackers SYSTEM privileges",
+    "source": "BleepingComputer",
+    "extract": "A newly disclosed flaw in the Windows Common Log File System can reportedly let a local attacker gain SYSTEM privileges by abusing the way privileged processes create authentication files. The researcher says there is no patch yet and that the issue can undermine antimalware self-protection.",
+    "image": "https://www.bleepstatic.com/images/news/u/1109292/2026/SignDrop%20PoC%20exploit.jpg",
+    "link": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/",
     "category": "Technology",
-    "published": "2026-11-11T14:53:00Z"
+    "published": "2026-11-12T16:04:00Z"
   },
   {
-    "title": "United Airlines moves to block AI agents from its digital platforms over security concerns",
-    "source": "Reuters",
-    "extract": "United plans to restrict AI bots across its websites and booking channels, warning that sharing account credentials can expose personal data or trigger unintended purchases and account changes. It also cites regulatory risks when automated agents perform actions such as flight check-in.",
-    "image": "https://www.reuters.com/resizer/v2/ZQGG2F4U4JL4VBTJMLKIZOVQ3Y.jpg?auth=683df9bbb7de1a2ad33005001bba9d19a255bd61eaf933201a0a709527a2e475&quality=80&width=1920",
-    "link": "https://www.reuters.com/legal/litigation/united-airlines-moves-block-ai-agents-its-platform-over-security-concerns-2026-11-11/",
+    "title": "Police dismantle Gootloader, CastleRAT and StealC malware infrastructure",
+    "source": "BleepingComputer",
+    "extract": "A multinational Operation Endgame action coordinated by Europol and Eurojust seized 257 domains and 235 servers linked to three major malware operations. Investigators also identified 6.4 million stolen victim datasets on the criminal infrastructure.",
+    "image": "https://www.bleepstatic.com/content/hl-images/2026/11/12/Operation-Endgame.jpg",
+    "link": "https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/",
     "category": "Technology",
-    "published": "2026-11-11T19:25:00Z"
+    "published": "2026-11-12T15:07:00Z"
   },
   {
-    "title": "Samsung's new HBM chip-packaging plant to trigger $30bn in additional investment",
-    "source": "Reuters",
-    "extract": "South Korea says Samsung's new high-bandwidth-memory packaging facility in Asan will be followed by roughly 40 trillion won in advanced-equipment investment. The three-floor clean-room production line is scheduled to begin operating in June 2028 to meet demand for server memory.",
-    "image": "https://www.reuters.com/resizer/v2/APAQOTD445NRXFTILK4UBSJCS4.jpg?auth=a6e8380bd92f1efa06ea6a03f574e563852f57bc8b04a33b2d1f9de3becc60e1&quality=80&width=1920",
-    "link": "https://www.reuters.com/world/asia-pacific/south-koreas-lee-says-samsung-chip-packaging-expansion-spur-30-billion-2026-11-12/",
-    "category": "Technology",
-    "published": "2026-11-12T01:43:00Z"
-  },
-  {
-    "title": "PlayStation 3 turns 20: a retrospective on Sony's Cell-powered console",
+    "title": "Rare co-founder rescues a Conker banner from the company's former HQ after almost 30 years",
     "source": "Time Extension",
-    "extract": "The Japanese launch anniversary revisits the PS3's unusual Cell Broadband Engine, co-developed with IBM and Toshiba, and the development challenges it created. The console eventually sold 87.4 million units and helped bring Blu-ray, HDMI and standard 1080p output to the mainstream console market.",
+    "extract": "Rare co-founder Tim Stamper returned to the developer's original Manor Farm headquarters and removed a Conker promotional banner that had remained in a former studio barn for at least 27 years. The find offers a rare glimpse into the company's history and a piece of memorabilia that may now be preserved.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/anniversary-ps3-sonys-most-controversial-playstation-turns-20-today",
+    "link": "https://www.timeextension.com/news/2026/11/rare-co-founder-rescues-conker-from-companys-former-hq-after-almost-30-years",
     "category": "Retro Computing",
-    "published": "2026-11-11T15:00:00-08:00"
+    "published": "2026-11-12T12:00:00Z"
   },
   {
-    "title": "1985 arcade racer Shot Rider joins Arcade Archives on modern consoles",
+    "title": "Shigeru Miyamoto reflects on Game Boy creator Gunpei Yokoi",
     "source": "Time Extension",
-    "extract": "Seibu Kaihatsu's motorcycle-themed vertical racer is being added to Hamster's Arcade Archives, with release scheduled for 12 November 2026. The modern release adds score-focused modes, while the Arcade Archives 2 editions also include a time-attack mode.",
+    "extract": "A newly translated 1997 interview captures Shigeru Miyamoto and other Nintendo staff reflecting on Gunpei Yokoi's influence. Miyamoto discusses Yokoi's design philosophy, his work on Game & Watch and the Game Boy, and the ideas behind his approach to game design.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/seibu-kaihatsus-1985-arcade-racer-shot-rider-speeds-into-the-arcade-archives-this-week",
+    "link": "https://www.timeextension.com/news/2026/11/the-singular-master-i-look-up-to-in-game-design-shigeru-miyamoto-on-game-boy-creator-gunpei-yokoi",
     "category": "Retro Computing",
-    "published": "2026-11-11T11:00:00-08:00"
+    "published": "2026-11-12T13:00:00Z"
   },
   {
-    "title": "Rare Mega Drive RPG Twinkle Tale gets its first official release outside Japan",
+    "title": "Super Mario 64 Gaeilge translation project appears close to completion",
     "source": "Time Extension",
-    "extract": "The 1992 Japan-only action RPG is receiving newly localised Mega Drive / Genesis cartridges from Retro-Bit and Limited Run Games. Pre-orders opened on 10 November, with the individually numbered collector's edition expected to ship in March 2027.",
+    "extract": "A fan translation of Super Mario 64 is nearing completion, bringing Gaeilge to the N64 classic's menus, HUD and in-game text. The project is playable from beginning to end and is now undergoing careful proofreading to improve the accuracy of the translation.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/rare-sega-mega-drive-release-twinkle-tale-gets-new-physical-edition-courtesy-of-retro-bit",
-    "category": "Retro Computing",
-    "published": "2026-11-10T09:30:00-08:00"
-  },
-  {
-    "title": "Morning Star is a new Golden Axe-inspired homebrew beat-'em-up for Mega Drive",
-    "source": "Time Extension",
-    "extract": "A five-person team has announced a work-in-progress Mega Drive game inspired by Golden Axe and Dungeons & Dragons. The developers are targeting four playable heroes, two-player co-op, magic attacks and mountable creatures.",
-    "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/morning-star-is-a-promising-new-golden-axe-style-beat-em-up-coming-to-the-sega-mega-drive",
+    "link": "https://www.timeextension.com/news/2026/11/nintendo-fans-super-mario-64-gaeilge-translation-project-seems-close-to-completion",
     "category": "Retro Computing Projects",
-    "published": "2026-11-10T12:00:00-08:00"
+    "published": "2026-11-12T11:00:00Z"
   },
   {
-    "title": "iMSX2 emulator update brings MSX games to Apple Watch",
+    "title": "Super Metroid x Castlevania fangame brings Samus to Dracula's castle",
     "source": "Time Extension",
-    "extract": "The iMSX2.8 update lets users sync MSX ROMs, disk images and saves from an iPhone to an Apple Watch, then run games on the watch's tiny display with touch controls. The emulator is built around C-BIOS to reproduce the original MSX environment.",
+    "extract": "Metroidvania: Symphony of the Hunter is a fan-made crossover that places Super Metroid's Samus in Castlevania: Symphony of the Night's Dracula's castle. Developed over 12 years, it adds original art, animation, lore, save stations and an escape sequence, and is nearing completion.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/imsx2-emulator-brings-the-msx-library-to-apple-watch-an-admittedly-niche-but-cool-benefit",
+    "link": "https://www.timeextension.com/news/2026/11/super-metroid-x-castlevania-fangame-will-let-samus-play-her-own-symphony-of-the-night",
     "category": "Retro Computing Projects",
-    "published": "2026-11-10T14:00:00-08:00"
+    "published": "2026-11-12T09:30:00Z"
   },
   {
-    "title": "NES platformer 8 Eyes is being lined up for enhanced SNES, Mega Drive and GBA versions",
+    "title": "NES horror homebrew All Hell Unleashed receives its final major update",
     "source": "Time Extension",
-    "extract": "Piko Interactive is seeking crowdfunding for enhanced versions of the 1988 NES action-adventure, with upgraded graphics and sound planned for SNES, Mega Drive and GBA. A special NES commemorative edition is also planned, although the campaign launch date has not yet been announced.",
+    "extract": "The Ultimate Edition of the NES homebrew horror tribute adds a killer mode, two-player support and quality-of-life improvements. The project combines characters and themes from classic slasher films and has been developed and updated by a fan team for nearly three years.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/castlevania-style-nes-platformer-8-eyes-could-be-getting-an-enhanced-release-for-snes-sega-genesis-and-gba",
+    "link": "https://www.timeextension.com/news/2026/11/its-been-a-labour-of-love-for-nearly-three-years-ultimate-nes-horror-tribute-all-hell-unleashed-gets-one-final-update",
     "category": "Retro Computing Projects",
-    "published": "2026-11-11T17:00:00-08:00"
+    "published": "2026-11-12T17:00:00Z"
   },
   {
-    "title": "The Guardian's latest science-fiction, fantasy and horror roundup covers five new novels",
+    "title": "Does M John Harrison's Booker win mean science fiction is finally accepted by the literary establishment?",
     "source": "The Guardian",
-    "extract": "Lisa Tuttle's roundup spans an AI-governed near-future Icelandic mystery, a dark fantasy about magical story worlds, illustrated horror, Chinese speculative fiction and a surreal comic fantasy. The selection includes Alfa, The Lost Spectacular, Look What the Cat Dragged In, China +100 and Everything Happens So Much.",
-    "image": "https://i.guim.co.uk/img/media/d50d43dd21034b2f8e73e0d6cf1dbf9e0014ca98/0_0_4030_3224/master/4030.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/nov/11/the-best-recent-science-fiction-fantasy-and-horror-review-roundup",
+    "extract": "M John Harrison's Booker Prize win has prompted leading writers including Kazuo Ishiguro and Jeff VanderMeer to revisit the literary establishment's historic resistance to science fiction. The article explores how Harrison's genre-blending novel The End of Everything challenges the boundaries between literary and speculative fiction.",
+    "image": "https://i.guim.co.uk/img/media/044714e910b9f6cd9660b9352db5413917bde16a/434_0_4120_3296/master/4120.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/books/2026/nov/11/m-john-harrison-booker-science-fiction",
     "category": "Books",
-    "published": "2026-11-11T10:00:00+01:00"
+    "published": "2026-11-11T11:44:00-05:00"
   },
   {
-    "title": "But Can It Run Doom? book Kickstarter explores the game's many unlikely ports",
-    "source": "Time Extension",
-    "extract": "Boss Fight Books has launched a Kickstarter for David L. Craddock's 224-page history of Doom's PC origins, console conversions and unusual hardware adaptations. A special edition adds interviews with John Carmack, Tom Hall, John Romero and soundtrack composer Aubrey Hodges.",
+    "title": "Lighting up the room with the Fortis Novonaut N-42 TR series",
+    "source": "Fratello Watches",
+    "extract": "Fortis has added three Novonaut N-42 TR models with fully luminous dials designed to maximise visibility in low-light conditions. The new variants bring a striking high-visibility treatment to the brand's space- and tool-watch-inspired chronograph line.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/but-can-it-run-doom-kickstarter-begins-for-book-cataloguing-the-many-devices-that-can-in-fact-run-doom",
-    "category": "Books",
-    "published": "2026-11-11T14:00:00-08:00"
+    "link": "https://www.fratellowatches.com/fortis-novonaut-n-42-tr-series/",
+    "category": "Watches",
+    "published": "2026-11-12T23:01:50Z"
   },
   {
-    "title": "PlayStation: The First 30 Years is a lavish visual history built from Sony's archives",
-    "source": "Time Extension",
-    "extract": "Read-Only Memory's large-format book draws on Sony's hardware archives and exclusive interviews with Ken Kutaragi, Teiyu Goto and Yujin Morisawa. It documents prototypes, design sketches, debug hardware and the engineering history behind the PlayStation family.",
+    "title": "Zenith G.F.J. Calibre 135 Double Signed with J.N. Shapiro",
+    "source": "Hodinkee",
+    "extract": "Zenith's 25-piece rose-gold G.F.J. collaboration pairs the historic hand-wound Calibre 135 with J.N. Shapiro's hand-turned guilloché dial work and American-style damaskeening on the movement bridges. The limited edition brings independent artisanal decoration to one of watchmaking's most celebrated chronometer movements.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/gallery-playstation-the-first-30-years-a-lavish-coffee-table-book-that-could-literally-be-a-coffee-table",
-    "category": "Books",
-    "published": "2026-11-11T18:00:00-08:00"
+    "link": "https://www.hodinkee.com/articles/zenith-shapiro-collab",
+    "category": "Watches",
+    "published": "2026-11-12T13:00:00-05:00"
   },
   {
-    "title": "Forgotten Worlds issue 9 revisits the TurboGrafx-16 and PC Engine",
-    "source": "Time Extension",
-    "extract": "The 100-page ninth issue of Forgotten Worlds focuses on NEC's PC Engine / TurboGrafx-16, covering its hardware, games, packaging and marketing history. It also includes interviews with former NEC USA manager John Podlasek and PC Engine programmer Hiromasa Iwasaki.",
+    "title": "Vacheron Constantin adds two new references to the Fiftysix collection",
+    "source": "Worn & Wound",
+    "extract": "Vacheron Constantin has added two steel Fiftysix references with grey two-tone dials: a time-and-date model and a complete calendar with moonphase. The article also examines the collection's movement sourcing, finishing and positioning within the brand.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/new-limited-edition-issue-of-forgotten-worlds-is-dedicated-to-the-turbografx-16-pc-engine",
-    "category": "Retro Computing",
-    "published": "2026-11-10T16:00:00-08:00"
+    "link": "https://wornandwound.com/vacheron-constantin-adds-two-new-references-to-the-fiftysix-collection/",
+    "category": "Watches",
+    "published": "2026-11-12T20:00:54Z"
+  },
+  {
+    "title": "Disney unveils Star Wars 50th anniversary plans, including an IMAX re-release",
+    "source": "Variety",
+    "extract": "Disney and Lucasfilm are planning a yearlong Star Wars 50th anniversary celebration in 2027, including a restored theatrical return of the original 1977 film in IMAX and other formats. The programme also includes commemorative Lego and Hasbro collections, an exhibition and new immersive experiences.",
+    "image": "https://variety.com/wp-content/uploads/2026/11/star-wars-50th-anniversary-merch.png?crop=1&h=666&w=1000",
+    "link": "https://variety.com/2026/shopping/news/star-wars-50th-anniversary-merch-lego-hasbro-1236945834/",
+    "category": "Entertainment",
+    "published": "2026-11-12T05:00:00-08:00"
   }
 ]
