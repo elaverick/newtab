@@ -1,146 +1,137 @@
 [
   {
-    "title": "UK car industry to press EU for two-year delay to Brexit EV tariffs",
-    "source": "The Guardian",
-    "extract": "UK carmakers are preparing to seek a two-year delay to the EU-UK battery rules of origin that would otherwise trigger 10% tariffs on many electric vehicles from 1 January. Manufacturers argue that European battery production is not yet at the scale needed to meet the rules.",
-    "image": "https://i.guim.co.uk/img/media/8ab0cdf0d430e3257ca969f133bc738343df5ddc/1000_0_5000_4000/master/5000.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/business/2026/nov/12/uk-car-industry-rules-of-origin-brexit-ev-tariffs-eu",
+    "title": "Audi explains the $300,000 premium for its Nuvolari supercar over the Lamborghini Temerario",
+    "source": "Motor1",
+    "extract": "Audi says the Nuvolari earns its roughly $700,000 price through a carbon-fibre body, active Formula 1-inspired aerodynamics producing more than 400kg of downforce, larger brakes and a more sophisticated predictive quattro system. Its 987hp hybrid V8 makes it more powerful than the Temerario on which it is based, while production is limited to 499 cars.",
+    "image": "https://cdn.motor1.com/images/mgl/E6NRgR/s3/audi-nuvolari-first-drive-review.jpg",
+    "link": "https://www.motor1.com/news/815292/audi-nuvolari-lamborghini-temerario-price-difference/",
     "category": "Automotive",
-    "published": "2026-11-12T11:30:00-05:00"
+    "published": "2026-11-13T14:00:00Z"
   },
   {
-    "title": "Faxes, phones and Bluetooth: Microsoft outage forces businesses to find fixes",
-    "source": "Reuters",
-    "extract": "A worldwide Microsoft 365 outage disrupted Outlook, Teams and Copilot, forcing businesses, exchanges and financial firms to fall back on telephones, fax machines and Bluetooth transfers. The incident has renewed calls for tested contingency plans and less dependence on a small number of technology providers.",
-    "image": "https://www.reuters.com/resizer/v2/HJUKAEXCOBPQHI2OX7DL6FP2FQ.jpg?auth=4cb2030482f2c62b3bbe7281db35c38168dc8324da8b9a4d6e2752ba28ba17d4&quality=80&width=1920",
-    "link": "https://www.reuters.com/business/finance/faxes-phones-bluetooth-microsoft-outage-forces-businesses-find-fixes-2026-11-13/",
-    "category": "Technology",
-    "published": "2026-11-13T14:54:00Z"
+    "title": "Toyota's tiny rear-wheel-drive S-FR sports car could be revived as a kei coupe",
+    "source": "Motor1",
+    "extract": "A Japanese report suggests Toyota may revive the S-FR name as a compact rear-wheel-drive sports car built to kei-car dimensions, potentially using a turbocharged 660cc engine and manual gearbox. The idea draws on Daihatsu's running K-Open development prototypes, although neither company has confirmed a production model.",
+    "image": "https://cdn.motor1.com/images/mgl/z3beW/s3/toyota-s-fr-grinta-tascabile.jpg",
+    "link": "https://www.motor1.com/news/815349/toyota-cheap-rwd-coupe-2027-rumor/",
+    "category": "Automotive",
+    "published": "2026-11-13T08:20:00Z"
   },
   {
-    "title": "China's $3 billion-plus pipeline of Nvidia-powered AI data centres",
-    "source": "Reuters",
-    "extract": "A Reuters review identified more than $3 billion in Chinese computing projects built around Nvidia processors, including proposed facilities using H100 and H200 systems. The projects show the continuing role of US-designed accelerators in China's AI infrastructure despite export restrictions.",
-    "image": "https://www.reuters.com/resizer/v2/I2HAV333JNK6HIF3QS3SO7JLZI.jpg?auth=122e5cc061b0ae95842c6d44ad93af1ab4bec16a25d5381f6b090704b3669b6e&quality=80&width=1080",
-    "link": "https://www.reuters.com/world/china/factbox-chinas-3-billion-plus-pipeline-nvidia-powered-ai-data-centres-2026-11-13/",
-    "category": "Technology",
-    "published": "2026-11-13T09:28:00Z"
-  },
-  {
-    "title": "Apache HTTP Server patches critical HTTP/2 remote code execution flaw",
-    "source": "BleepingComputer",
-    "extract": "The Apache Software Foundation has fixed a critical race condition in mod_http2 that could let an unauthenticated attacker corrupt heap memory and execute code with the web server's privileges. The flaw affects Apache HTTP Server 2.4.55 through 2.4.70 when HTTP/2 is enabled.",
-    "image": "https://www.bleepstatic.com/content/hl-images/2026/11/12/Apache.jpg",
-    "link": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/",
-    "category": "Technology",
-    "published": "2026-11-12T19:12:00Z"
-  },
-  {
-    "title": "New Windows SignDrop zero-day gives hackers SYSTEM privileges",
-    "source": "BleepingComputer",
-    "extract": "A newly disclosed flaw in the Windows Common Log File System can reportedly let a local attacker gain SYSTEM privileges by abusing the way privileged processes create authentication files. The researcher says there is no patch yet and that the issue can undermine antimalware self-protection.",
-    "image": "https://www.bleepstatic.com/images/news/u/1109292/2026/SignDrop%20PoC%20exploit.jpg",
-    "link": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/",
-    "category": "Technology",
-    "published": "2026-11-12T16:04:00Z"
-  },
-  {
-    "title": "Police dismantle Gootloader, CastleRAT and StealC malware infrastructure",
-    "source": "BleepingComputer",
-    "extract": "A multinational Operation Endgame action coordinated by Europol and Eurojust seized 257 domains and 235 servers linked to three major malware operations. Investigators also identified 6.4 million stolen victim datasets on the criminal infrastructure.",
-    "image": "https://www.bleepstatic.com/content/hl-images/2026/11/12/Operation-Endgame.jpg",
-    "link": "https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/",
-    "category": "Technology",
-    "published": "2026-11-12T15:07:00Z"
-  },
-  {
-    "title": "Rare co-founder rescues a Conker banner from the company's former HQ after almost 30 years",
-    "source": "Time Extension",
-    "extract": "Rare co-founder Tim Stamper returned to the developer's original Manor Farm headquarters and removed a Conker promotional banner that had remained in a former studio barn for at least 27 years. The find offers a rare glimpse into the company's history and a piece of memorabilia that may now be preserved.",
+    "title": "Wine 11.22 adds x86 AVX emulation for Windows software on ARM64",
+    "source": "Phoronix",
+    "extract": "Wine 11.22 adds Advanced Vector Extensions support to its x86 emulation path on ARM64, helping Windows applications that assume AVX is available run through ARM64EC builds. The release also updates Unicode locale data, improves address-space randomisation and includes 34 bug fixes.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/rare-co-founder-rescues-conker-from-companys-former-hq-after-almost-30-years",
-    "category": "Retro Computing",
-    "published": "2026-11-12T12:00:00Z"
+    "link": "https://www.phoronix.com/news/Wine-11.22-Released",
+    "category": "Technology",
+    "published": "2026-11-14T01:35:00Z"
   },
   {
-    "title": "Shigeru Miyamoto reflects on Game Boy creator Gunpei Yokoi",
-    "source": "Time Extension",
-    "extract": "A newly translated 1997 interview captures Shigeru Miyamoto and other Nintendo staff reflecting on Gunpei Yokoi's influence. Miyamoto discusses Yokoi's design philosophy, his work on Game & Watch and the Game Boy, and the ideas behind his approach to game design.",
+    "title": "Cloudflare open-sources Kitesurf, its lightweight browser built for AI agents",
+    "source": "Phoronix",
+    "extract": "Cloudflare has released Kitesurf under the Apache 2.0 licence. Built on Cloudflare Workers, the stateless browser can parse HTML, handle CSS and execute JavaScript without a full browser container, aiming to give agents a lighter and more scalable way to interact with websites.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/the-singular-master-i-look-up-to-in-game-design-shigeru-miyamoto-on-game-boy-creator-gunpei-yokoi",
-    "category": "Retro Computing",
-    "published": "2026-11-12T13:00:00Z"
+    "link": "https://www.phoronix.com/news/Cloudflare-Kitesurf-Open-Source",
+    "category": "Technology",
+    "published": "2026-11-13T21:07:00Z"
   },
   {
-    "title": "Super Mario 64 Gaeilge translation project appears close to completion",
-    "source": "Time Extension",
-    "extract": "A fan translation of Super Mario 64 is nearing completion, bringing Gaeilge to the N64 classic's menus, HUD and in-game text. The project is playable from beginning to end and is now undergoing careful proofreading to improve the accuracy of the translation.",
+    "title": "AMD's openSIL reaches production on sixth-generation EPYC Venice processors",
+    "source": "Phoronix",
+    "extract": "AMD has confirmed that openSIL, its open-source alternative to proprietary AGESA silicon initialisation, has met its production goal with sixth-generation EPYC Venice. AMD says no Venice platform has booted without openSIL and expects to publish the Venice code within a quarter of launch, opening further possibilities for Coreboot-based systems.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/nintendo-fans-super-mario-64-gaeilge-translation-project-seems-close-to-completion",
-    "category": "Retro Computing Projects",
-    "published": "2026-11-12T11:00:00Z"
+    "link": "https://www.phoronix.com/news/AMD-openSIL-Venice-Goal",
+    "category": "Technology",
+    "published": "2026-11-13T18:20:00Z"
   },
   {
-    "title": "Super Metroid x Castlevania fangame brings Samus to Dracula's castle",
-    "source": "Time Extension",
-    "extract": "Metroidvania: Symphony of the Hunter is a fan-made crossover that places Super Metroid's Samus in Castlevania: Symphony of the Night's Dracula's castle. Developed over 12 years, it adds original art, animation, lore, save stations and an escape sequence, and is nearing completion.",
+    "title": "KDE Frameworks 6.32 fixes a 15-year-old bug in USB file-copy notifications",
+    "source": "Phoronix",
+    "extract": "KDE Frameworks 6.32 corrects a long-standing issue where the completion notification for copying files to removable USB storage appeared when data had reached the local cache, rather than when it had actually been written to the device. The fix uses sync_file_range, alongside broader Baloo, KArchive and Kirigami improvements.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/super-metroid-x-castlevania-fangame-will-let-samus-play-her-own-symphony-of-the-night",
-    "category": "Retro Computing Projects",
-    "published": "2026-11-12T09:30:00Z"
+    "link": "https://www.phoronix.com/news/KDE-Frameworks-6.32",
+    "category": "Technology",
+    "published": "2026-11-13T17:02:00Z"
   },
   {
-    "title": "NES horror homebrew All Hell Unleashed receives its final major update",
-    "source": "Time Extension",
-    "extract": "The Ultimate Edition of the NES homebrew horror tribute adds a killer mode, two-player support and quality-of-life improvements. The project combines characters and themes from classic slasher films and has been developed and updated by a fan team for nearly three years.",
+    "title": "AMD uses AI agents and HRX Loom to port 50 language models to client GPUs in days",
+    "source": "Phoronix",
+    "extract": "An AMD engineering experiment brought 50 Hugging Face models spanning 18 architectures to AMD client GPUs in roughly three to four days using HRX Loom and an AI-agent workflow. The team reported 1.5–2.1x faster 32K-token prompt processing than llama.cpp's ROCm backend and 1.9x over its Vulkan backend, although Loom remains experimental.",
     "image": null,
-    "link": "https://www.timeextension.com/news/2026/11/its-been-a-labour-of-love-for-nearly-three-years-ultimate-nes-horror-tribute-all-hell-unleashed-gets-one-final-update",
-    "category": "Retro Computing Projects",
-    "published": "2026-11-12T17:00:00Z"
+    "link": "https://www.phoronix.com/news/AMD-HRX-Loom-Experiment",
+    "category": "Technology",
+    "published": "2026-11-13T15:53:00Z"
   },
   {
-    "title": "Does M John Harrison's Booker win mean science fiction is finally accepted by the literary establishment?",
+    "title": "XRAID is released as a new parity RAID implementation for the XFS filesystem",
+    "source": "Phoronix",
+    "extract": "Linux developer Christoph Hellwig has publicly released XRAID, a declustered-parity RAID implementation integrated with XFS and aimed particularly at zoned storage such as shingled magnetic-recording drives. Its design also works with conventional disks and SSDs, with the developer reporting write speeds up to 20 times faster than mdraid in some cases.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/XRAID-XFS-RAID",
+    "category": "Technology",
+    "published": "2026-11-13T13:22:00Z"
+  },
+  {
+    "title": "One for Sorrow by Favel Parrett review: a finely crafted novel of wartime betrayal and desire",
     "source": "The Guardian",
-    "extract": "M John Harrison's Booker Prize win has prompted leading writers including Kazuo Ishiguro and Jeff VanderMeer to revisit the literary establishment's historic resistance to science fiction. The article explores how Harrison's genre-blending novel The End of Everything challenges the boundaries between literary and speculative fiction.",
-    "image": "https://i.guim.co.uk/img/media/044714e910b9f6cd9660b9352db5413917bde16a/434_0_4120_3296/master/4120.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/nov/11/m-john-harrison-booker-science-fiction",
+    "extract": "Favel Parrett's novel is set in Nazi-occupied Trondheim and follows a lonely boy who finds a surrogate father in his new teacher, while the teacher begins an affair with the boy's mother. The Guardian praises the book's spare prose and subtle portrayal of grief, family silence and the emotional consequences of wartime intimacy.",
+    "image": "https://i.guim.co.uk/img/media/14d5d97edca10549b8f81c0a289f15cbd88b18da/0_0_5000_4000/master/5000.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/books/2026/nov/13/one-for-sorrow-favel-parrett-new-novel-review",
     "category": "Books",
-    "published": "2026-11-11T11:44:00-05:00"
+    "published": "2026-11-12T14:00:00Z"
   },
   {
-    "title": "Lighting up the room with the Fortis Novonaut N-42 TR series",
-    "source": "Fratello Watches",
-    "extract": "Fortis has added three Novonaut N-42 TR models with fully luminous dials designed to maximise visibility in low-light conditions. The new variants bring a striking high-visibility treatment to the brand's space- and tool-watch-inspired chronograph line.",
-    "image": null,
-    "link": "https://www.fratellowatches.com/fortis-novonaut-n-42-tr-series/",
-    "category": "Watches",
-    "published": "2026-11-12T23:01:50Z"
+    "title": "The best books to read in November and December: new paperbacks from Benjamin Myers, Jeanette Winterson and John Updike",
+    "source": "The Guardian",
+    "extract": "The Guardian's new paperback roundup ranges from Benjamin Myers's imaginative novel about actor Klaus Kinski to Rabih Alameddine's buoyant family story, Glasgow-set crime fiction by Frances Crawford, a newly translated Henning Mankell novel and Ian Buruma's history of wartime Berlin. It offers a varied set of fiction, crime, history and memoir recommendations.",
+    "image": "https://i.guim.co.uk/img/media/b971b018a3c55d8e989b6f3454dd12e63d660100/0_0_4000_5000/master/4000.png?crop=none&dpr=1&s=none&width=480",
+    "link": "https://www.theguardian.com/books/ng-interactive/2026/nov/13/the-best-books-to-read-in-november-and-december-new-paperbacks-from-benjamin-myers-jeanette-winterson-and-john-updike",
+    "category": "Books",
+    "published": "2026-11-13T09:30:00Z"
   },
   {
-    "title": "Zenith G.F.J. Calibre 135 Double Signed with J.N. Shapiro",
-    "source": "Hodinkee",
-    "extract": "Zenith's 25-piece rose-gold G.F.J. collaboration pairs the historic hand-wound Calibre 135 with J.N. Shapiro's hand-turned guilloché dial work and American-style damaskeening on the movement bridges. The limited edition brings independent artisanal decoration to one of watchmaking's most celebrated chronometer movements.",
-    "image": null,
-    "link": "https://www.hodinkee.com/articles/zenith-shapiro-collab",
-    "category": "Watches",
-    "published": "2026-11-12T13:00:00-05:00"
+    "title": "This Cursed Beautiful Land by Evan Gershkovich review: a reporter's account of imprisonment in Russia",
+    "source": "The Guardian",
+    "extract": "Evan Gershkovich recounts his arrest on fabricated espionage charges while reporting in Russia, 18 months in prison and eventual release in a 2024 prisoner exchange. The review finds his account of prison life compelling and illuminating, while noting the limits of analysing a country from behind bars.",
+    "image": "https://i.guim.co.uk/img/media/294a387c651aa5578720dabd50fd240b0b5f9672/2921_256_2385_1908/master/2385.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/books/2026/nov/13/this-cursed-beautiful-land-by-evan-gershkovich-review-jailed-in-putins-russia",
+    "category": "Books",
+    "published": "2026-11-13T07:00:00Z"
   },
   {
-    "title": "Vacheron Constantin adds two new references to the Fiftysix collection",
-    "source": "Worn & Wound",
-    "extract": "Vacheron Constantin has added two steel Fiftysix references with grey two-tone dials: a time-and-date model and a complete calendar with moonphase. The article also examines the collection's movement sourcing, finishing and positioning within the brand.",
-    "image": null,
-    "link": "https://wornandwound.com/vacheron-constantin-adds-two-new-references-to-the-fiftysix-collection/",
-    "category": "Watches",
-    "published": "2026-11-12T20:00:54Z"
-  },
-  {
-    "title": "Disney unveils Star Wars 50th anniversary plans, including an IMAX re-release",
-    "source": "Variety",
-    "extract": "Disney and Lucasfilm are planning a yearlong Star Wars 50th anniversary celebration in 2027, including a restored theatrical return of the original 1977 film in IMAX and other formats. The programme also includes commemorative Lego and Hasbro collections, an exhibition and new immersive experiences.",
-    "image": "https://variety.com/wp-content/uploads/2026/11/star-wars-50th-anniversary-merch.png?crop=1&h=666&w=1000",
-    "link": "https://variety.com/2026/shopping/news/star-wars-50th-anniversary-merch-lego-hasbro-1236945834/",
+    "title": "Inside the 42-year journey to bring William Gibson's Neuromancer to the screen",
+    "source": "WIRED",
+    "extract": "WIRED speaks with the creators and cast of Apple's long-awaited Neuromancer adaptation about the decades of failed attempts to film William Gibson's 1984 novel. The team discusses Gibson's involvement, the expanded Tessier-Ashpool storyline, practical retro-futurist sets built partly in Japan and the challenge of creating a world that feels distinct from the many works the book inspired.",
+    "image": "https://media.wired.com/photos/6aee55c49c22209c9f013e23/16%3A9/w_2560%2Cc_limit/Neuromancer-BTS-Culture_102_18753F.jpg",
+    "link": "https://www.wired.com/story/exclusive-apple-tv-neuromancer-creator-interviews/",
     "category": "Entertainment",
-    "published": "2026-11-12T05:00:00-08:00"
+    "published": "2026-11-13T11:00:00Z"
+  },
+  {
+    "title": "Cunk on Cinema review: Diane Morgan's mockumentary is a gloriously stupid guide to film history",
+    "source": "The Guardian",
+    "extract": "Diane Morgan returns as Philomena Cunk for a three-part comic history of cinema, baffling experts and filmmakers including Benedict Cumberbatch, Mark Kermode and Michael Bay with surreal questions and mangled film references. The Guardian praises its relentless gag rate and deadpan absurdity, with Charlie Brooker and his long-time collaborators continuing to write the series.",
+    "image": "https://i.guim.co.uk/img/media/942efa55383cda44338732fda072528f72394344/512_0_3571_2857/master/3571.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/12/cunk-on-cinema-review-philomena-cunk-diane-morgan-bbc-two",
+    "category": "Entertainment",
+    "published": "2026-11-12T22:30:00Z"
+  },
+  {
+    "title": "Gentle Monster to Conclave: seven films worth watching on television this week",
+    "source": "The Guardian",
+    "extract": "The Guardian's weekly film guide highlights a mix of recent drama, mystery and historical storytelling, led by Marie Kreutzer's Gentle Monster with Léa Seydoux and Edward Berger's twisty papal thriller Conclave starring Ralph Fiennes. The selection also includes Kurosawa's epic Ran and films ranging from Eileen to The Dead Don't Hurt.",
+    "image": "https://i.guim.co.uk/img/media/ea45ffaab8ef0ce357d1c62cd59676f71b1e592c/467_9_2202_1762/master/2202.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/13/the-seven-best-films-to-watch-on-tv-this-week",
+    "category": "Entertainment",
+    "published": "2026-11-13T09:00:00Z"
+  },
+  {
+    "title": "Darth Vader's original lightsaber sells for a record $4.875 million",
+    "source": "The Guardian",
+    "extract": "The lightsaber used by Darth Vader in The Empire Strikes Back and Return of the Jedi, including the iconic 'I am your father' sequence, sold for $4.875 million at Heritage Auctions. The sale set a record for an on-screen Star Wars prop, surpassing the previous record for Luke Skywalker's lightsaber and severed hand.",
+    "image": "https://i.guim.co.uk/img/media/d9dae96045308125438b564a2480095d842ede20/0_0_2948_1986/master/2948.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/film/2026/nov/13/star-wars-darth-vader-lightsaber-sells-for-nearly-5m-auction",
+    "category": "Entertainment",
+    "published": "2026-11-13T04:41:00Z"
   }
 ]
