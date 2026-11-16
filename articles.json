@@ -1,137 +1,335 @@
 [
   {
-    "title": "Audi explains the $300,000 premium for its Nuvolari supercar over the Lamborghini Temerario",
-    "source": "Motor1",
-    "extract": "Audi says the Nuvolari earns its roughly $700,000 price through a carbon-fibre body, active Formula 1-inspired aerodynamics producing more than 400kg of downforce, larger brakes and a more sophisticated predictive quattro system. Its 987hp hybrid V8 makes it more powerful than the Temerario on which it is based, while production is limited to 499 cars.",
-    "image": "https://cdn.motor1.com/images/mgl/E6NRgR/s3/audi-nuvolari-first-drive-review.jpg",
-    "link": "https://www.motor1.com/news/815292/audi-nuvolari-lamborghini-temerario-price-difference/",
+    "title": "The Nissan Patrol turns 75 after becoming the first vehicle to climb Mount Fuji",
+    "source": "Autoblog",
+    "extract": "Nissan marks 75 years of the Patrol, revisiting its 1958 Mount Fuji climb and previewing the new 2027 Armada Patrol PRO-4X with off-road hardware and adaptive air suspension.",
+    "image": "https://www.autoblog.com/.image/NzowMDAwMDAwMDAxMjY4NTA1/2027-nissan-armada-patrol-pro-4x.jpg?profile=w2560&x=50&y=50",
+    "link": "https://www.autoblog.com/news/nissan-patrol-turns-75-after-becoming-first-vehicle-to-climb-mount-fuji",
     "category": "Automotive",
-    "published": "2026-11-13T14:00:00Z"
+    "published": "2026-11-15T17:00:00-05:00"
   },
   {
-    "title": "Toyota's tiny rear-wheel-drive S-FR sports car could be revived as a kei coupe",
-    "source": "Motor1",
-    "extract": "A Japanese report suggests Toyota may revive the S-FR name as a compact rear-wheel-drive sports car built to kei-car dimensions, potentially using a turbocharged 660cc engine and manual gearbox. The idea draws on Daihatsu's running K-Open development prototypes, although neither company has confirmed a production model.",
-    "image": "https://cdn.motor1.com/images/mgl/z3beW/s3/toyota-s-fr-grinta-tascabile.jpg",
-    "link": "https://www.motor1.com/news/815349/toyota-cheap-rwd-coupe-2027-rumor/",
+    "title": "Spyker returns with an 800-hp manual hypercar that targets Pagani and Bugatti",
+    "source": "Autoblog",
+    "extract": "A new Spyker is planned around a 4.0-litre twin-turbo V8, a manual gearbox and an 800-hp target, with production intended to remain deliberately low-volume.",
+    "image": "https://www.autoblog.com/.image/NzowMDAwMDAwMDAxMTk4MTU4/spyker-c8-preliator-xxv-coupe.png?ar=16-9&profile=w2560",
+    "link": "https://www.autoblog.com/news/spyker-returns-with-an-800-hp-manual-hypercar-targets-pagani-and-bugatti",
     "category": "Automotive",
-    "published": "2026-11-13T08:20:00Z"
+    "published": "2026-11-14T16:58:00-05:00"
   },
   {
-    "title": "Wine 11.22 adds x86 AVX emulation for Windows software on ARM64",
+    "title": "Ferrari 499P wins first Asian Le Mans Hypercar race at Paul Ricard",
+    "source": "RACER",
+    "extract": "AF Corse's Ferrari 499P took the opening Asian Le Mans Series Hypercar victory at Paul Ricard in a rain-affected four-hour race, giving Ferrari an early win in the new class.",
+    "image": "https://cdn-cs-images.racer.com/v3/assets/blte77f57883ea46be1/blt81b3306de079ac6e/6af8bcb79dba8a26a3b1394f/00-start-6579-6af8ad3c7e5c6350954945.jpg.webp?environment=live",
+    "link": "https://racer.com/2026/11/14/ferrari-499p-wins-first-asian-le-mans-hypercar-race-at-paul-ricard/",
+    "category": "Automotive",
+    "published": "2026-11-14T14:36:00-05:00"
+  },
+  {
+    "title": "Oscar Piastri: You have to manhandle McLaren's F1 car to find its potential",
+    "source": "Motorsport.com",
+    "extract": "Piastri says the MCL40 has to be driven at what feels like 110% to be quick, with its narrow performance window making it difficult to extract the car's full pace.",
+    "image": "https://cdn-2.motorsport.com/images/amp/6zoD8ea0/s1000/motorsport-com-graphics-2026-1.webp",
+    "link": "https://www.motorsport.com/f1/news/oscar-piastri-youve-got-to-manhandle-mclarens-f1-car-to-find-its-potential/10874559/",
+    "category": "Automotive",
+    "published": "2026-11-14T17:39:00Z"
+  },
+  {
+    "title": "The Petrolhead Corner: Going off-road and beyond with three wild SEMA builds",
+    "source": "Monochrome Watches",
+    "extract": "The feature tours three extreme SEMA projects, including a 1,300-hp hybrid Honda Passport Trophy Truck with an 800V system, alongside radical Nissan and Jeep builds.",
+    "image": "https://monochrome-watches.com/app/uploads/2026/11/Jeep-Wrangler-Scrambler-SRT-SEMA-2026-1.jpg",
+    "link": "https://monochrome-watches.com/the-petrolhead-corner-going-off-road-and-beyond-with-three-wild-sema-builds/",
+    "category": "Automotive",
+    "published": "2026-11-14T09:35:50Z"
+  },
+  {
+    "title": "McLaren to upgrade MCL40 at its bogey F1 track in Las Vegas",
+    "source": "Motorsport.com",
+    "extract": "McLaren plans to introduce MCL40 parts at Las Vegas, describing the work as a foundation for its 2027 car after recent gains in driveability and performance.",
+    "image": "https://cdn-9.motorsport.com/images/amp/01QNp9q0/s1000/leonardo-fornaroli-mclaren.webp",
+    "link": "https://au.motorsport.com/f1/news/mclaren-to-upgrade-mcl40-car-at-its-bogey-f1-track-las-vegas/10874308/",
+    "category": "Automotive",
+    "published": "2026-11-14T09:09:00Z"
+  },
+  {
+    "title": "Linux 7.4-rc3 released with a broad set of late fixes",
     "source": "Phoronix",
-    "extract": "Wine 11.22 adds Advanced Vector Extensions support to its x86 emulation path on ARM64, helping Windows applications that assume AVX is available run through ARM64EC builds. The release also updates Unicode locale data, improves address-space randomisation and includes 34 bug fixes.",
-    "image": null,
-    "link": "https://www.phoronix.com/news/Wine-11.22-Released",
+    "extract": "The third release candidate for Linux 7.4 brings late fixes across drivers, filesystems and networking as the kernel approaches its final release.",
+    "image": "https://www.phoronix.net/image.php?id=2026&image=linux_74_rc3",
+    "link": "https://www.phoronix.com/news/Linux-7.4-rc3-Released",
     "category": "Technology",
-    "published": "2026-11-14T01:35:00Z"
+    "published": "2026-11-15T17:55:00-05:00"
   },
   {
-    "title": "Cloudflare open-sources Kitesurf, its lightweight browser built for AI agents",
+    "title": "AMD prepares capacity-aware scheduling for Linux hybrid CPUs",
     "source": "Phoronix",
-    "extract": "Cloudflare has released Kitesurf under the Apache 2.0 licence. Built on Cloudflare Workers, the stateless browser can parse HTML, handle CSS and execute JavaScript without a full browser container, aiming to give agents a lighter and more scalable way to interact with websites.",
-    "image": null,
-    "link": "https://www.phoronix.com/news/Cloudflare-Kitesurf-Open-Source",
+    "extract": "AMD is preparing Linux scheduler support that exposes per-core capacity information for hybrid CPUs, helping the scheduler place work more intelligently across different core types.",
+    "image": "https://www.phoronix.net/image.php?id=framework-16-ryzen-ai-300-series&image=framework_16_15_med",
+    "link": "https://www.phoronix.com/news/AMD-Capacity-Aware-Sched",
     "category": "Technology",
-    "published": "2026-11-13T21:07:00Z"
+    "published": "2026-11-15T09:20:00-05:00"
   },
   {
-    "title": "AMD's openSIL reaches production on sixth-generation EPYC Venice processors",
+    "title": "IBM enables ARM64 guest virtual machines on s390",
     "source": "Phoronix",
-    "extract": "AMD has confirmed that openSIL, its open-source alternative to proprietary AGESA silicon initialisation, has met its production goal with sixth-generation EPYC Venice. AMD says no Venice platform has booted without openSIL and expects to publish the Venice code within a quarter of launch, opening further possibilities for Coreboot-based systems.",
+    "extract": "IBM has outlined support for running ARM64 guest virtual machines on its s390 mainframe platform, a notable cross-architecture virtualization step for its Linux and KVM ecosystem.",
     "image": null,
-    "link": "https://www.phoronix.com/news/AMD-openSIL-Venice-Goal",
+    "link": "https://www.phoronix.com/news/IBM-VMs-ARM64-On-s390",
     "category": "Technology",
-    "published": "2026-11-13T18:20:00Z"
+    "published": "2026-11-15T06:42:00-05:00"
   },
   {
-    "title": "KDE Frameworks 6.32 fixes a 15-year-old bug in USB file-copy notifications",
+    "title": "AMD's ARG Root Guest feature for SEV-SNP VMs is coming to Linux",
     "source": "Phoronix",
-    "extract": "KDE Frameworks 6.32 corrects a long-standing issue where the completion notification for copying files to removable USB storage appeared when data had reached the local cache, rather than when it had actually been written to the device. The fix uses sync_file_range, alongside broader Baloo, KArchive and Kirigami improvements.",
+    "extract": "AMD's ARG Root Guest design extends SEV-SNP confidential computing with a protected root guest that can coordinate virtual-machine operations such as live migration without requiring guest changes.",
     "image": null,
-    "link": "https://www.phoronix.com/news/KDE-Frameworks-6.32",
+    "link": "https://www.phoronix.com/news/AMD-ARG-Root-Guest",
     "category": "Technology",
-    "published": "2026-11-13T17:02:00Z"
+    "published": "2026-11-15T06:24:00-05:00"
   },
   {
-    "title": "AMD uses AI agents and HRX Loom to port 50 language models to client GPUs in days",
+    "title": "ASUS Ascent QN10 mini PC gets Linux support",
     "source": "Phoronix",
-    "extract": "An AMD engineering experiment brought 50 Hugging Face models spanning 18 architectures to AMD client GPUs in roughly three to four days using HRX Loom and an AI-agent workflow. The team reported 1.5–2.1x faster 32K-token prompt processing than llama.cpp's ROCm backend and 1.9x over its Vulkan backend, although Loom remains experimental.",
-    "image": null,
-    "link": "https://www.phoronix.com/news/AMD-HRX-Loom-Experiment",
+    "extract": "The Snapdragon X2 Elite-powered ASUS Ascent QN10 mini PC is gaining Linux support as developers bring up its firmware and platform devices.",
+    "image": "https://www.phoronix.net/image.php?id=2026&image=asus_qn10_1",
+    "link": "https://www.phoronix.com/news/ASUS-Ascent-QN10-Linux",
     "category": "Technology",
-    "published": "2026-11-13T15:53:00Z"
+    "published": "2026-11-15T06:03:00-05:00"
   },
   {
-    "title": "XRAID is released as a new parity RAID implementation for the XFS filesystem",
+    "title": "Redox OS gets Go working and a GIMP port",
     "source": "Phoronix",
-    "extract": "Linux developer Christoph Hellwig has publicly released XRAID, a declustered-parity RAID implementation integrated with XFS and aimed particularly at zoned storage such as shingled magnetic-recording drives. Its design also works with conventional disks and SSDs, with the developer reporting write speeds up to 20 times faster than mdraid in some cases.",
-    "image": null,
-    "link": "https://www.phoronix.com/news/XRAID-XFS-RAID",
+    "extract": "Redox OS's latest development update reports working Go toolchains and a GIMP port, alongside continued work on its Rust-based userspace and package-management improvements.",
+    "image": "https://www.phoronix.net/image.php?id=2026&image=redox_gimp_med",
+    "link": "https://www.phoronix.com/news/Redox-OS-Golang-GIMP",
     "category": "Technology",
-    "published": "2026-11-13T13:22:00Z"
+    "published": "2026-11-14T11:06:00-05:00"
   },
   {
-    "title": "One for Sorrow by Favel Parrett review: a finely crafted novel of wartime betrayal and desire",
+    "title": "Basic Apple M5 support begins landing for Linux 7.5",
+    "source": "Phoronix",
+    "extract": "Initial Linux 7.5 device-tree support for Apple's M5 platform is landing, an early step toward booting Linux on the newest Apple silicon; GPU support remains a separate challenge.",
+    "image": "https://www.phoronix.net/image.php?id=2025&image=apple_m5",
+    "link": "https://www.phoronix.com/news/Apple-M5-For-Linux-7.5",
+    "category": "Technology",
+    "published": "2026-11-14T10:33:00-05:00"
+  },
+  {
+    "title": "Red Hat develops QEMU memory tiering for virtual machines",
+    "source": "Phoronix",
+    "extract": "Red Hat is developing QEMU memory-tiering support that can use NVMe-backed storage as a slower memory tier for virtual machines, potentially easing DRAM pressure on dense hosts.",
+    "image": "https://www.phoronix.net/image.php?id=2026&image=qemu_memory_tier_med",
+    "link": "https://www.phoronix.com/news/QEMU-VM-Memory-Tiering",
+    "category": "Technology",
+    "published": "2026-11-14T08:12:00-05:00"
+  },
+  {
+    "title": "FreeBSD 15.2-BETA2 released with OpenSSH and VirtIO updates",
+    "source": "Phoronix",
+    "extract": "FreeBSD 15.2-BETA2 brings OpenSSH 10.6p2, ML-DSA/Ed25519 host-key defaults and further VirtIO and networking fixes ahead of the stable release.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/FreeBSD-15.2-Beta-2",
+    "category": "Technology",
+    "published": "2026-11-14T05:37:00-05:00"
+  },
+  {
+    "title": "KDE Plasma 6.9 will allow XWayland to run on demand",
+    "source": "Phoronix",
+    "extract": "KDE Plasma 6.9 is set to launch XWayland only when needed, alongside new window-effect presets and other desktop refinements.",
+    "image": "https://www.phoronix.net/image.php?id=2026&image=kde_wobbly",
+    "link": "https://www.phoronix.com/news/Plasma-6.9-XWayland-On-Demand",
+    "category": "Technology",
+    "published": "2026-11-14T05:51:00-05:00"
+  },
+  {
+    "title": "Thirty years ago in Dundee, the birth of Grand Theft Auto",
+    "source": "Le Monde",
+    "extract": "Le Monde revisits the small Dundee team behind the original Grand Theft Auto, tracing the game's origins and the design decisions that turned a top-down experiment into a landmark open-world series.",
+    "image": "https://img.lemde.fr/2026/10/27/46/0/1500/750/1280/640/75/0/71b886b_ftp-1-yvagyra1aaaa-449677-3495478.jpg",
+    "link": "https://www.lemonde.fr/en/culture/article/2026/11/15/30-years-ago-in-dundee-the-birth-of-grand-theft-auto_6747540_30.html",
+    "category": "Retro Computing",
+    "published": "2026-11-15T05:00:00+01:00"
+  },
+  {
+    "title": "The original Xbox turns 25: the PC-derived console that challenged the PS2",
+    "source": "Tom's Hardware",
+    "extract": "Tom's Hardware marks 25 years since the original Xbox launch, revisiting its Pentium III and Nvidia architecture, built-in hard drive and Ethernet as defining hardware choices.",
+    "image": "https://cdn.mos.cms.futurecdn.net/Zx8v2NCkpQnoktZ8nzaiS7.jpg",
+    "link": "https://www.tomshardware.com/video-games/xbox/the-original-xbox-was-released-25-years-ago-today-microsofts-pentium-iii-and-nvidia-gpu-powered-console-did-surprisingly-well-in-a-ps2-dominated-era",
+    "category": "Retro Computing",
+    "published": "2026-11-15T06:00:00-05:00"
+  },
+  {
+    "title": "DOSBox Staging posts a fresh development build",
+    "source": "DOSBox Staging",
+    "extract": "The project's official development-build tracker lists a new 0.84.0-alpha-7d4b4 snapshot dated 14 November, giving MS-DOS emulation users another build to test.",
+    "image": null,
+    "link": "https://www.dosbox-staging.org/releases/development-builds/",
+    "category": "Retro Computing Projects",
+    "published": "2026-11-14T22:54:11Z"
+  },
+  {
+    "title": "RetroRecomp 1.7.6 expands support for classic platforms",
+    "source": "RetroRecomp",
+    "extract": "Version 1.7.6 adds support for Game Boy Advance, MSX2+, Nintendo 64, PlayStation and Amiga 1200, broadening the project's native recompilation pipeline across classic platforms.",
+    "image": null,
+    "link": "https://github.com/ArthurReboulSalze/RetroRecomp/releases/tag/v1.7.6",
+    "category": "Retro Computing Projects",
+    "published": "2026-11-15T16:55:00Z"
+  },
+  {
+    "title": "Garbage brings generations together with its rock at Mexico City's Zócalo",
+    "source": "La Jornada",
+    "extract": "Around 90,000 people gathered at Mexico City's Zócalo for Garbage's free show, which brought together generations of fans and included a guest appearance by The Warning.",
+    "image": null,
+    "link": "https://www.jornada.com.mx/noticia/2026/11/15/espectaculos/en-el-zocalo-garbage-une-a-generaciones-con-su-rock",
+    "category": "Music",
+    "published": "2026-11-15T08:28:00-06:00"
+  },
+  {
+    "title": "Foo Fighters deliver a sweary, high-energy spectacle at Marvel Stadium",
+    "source": "Sydney Morning Herald",
+    "extract": "The band played a three-hour, 31-song set at Melbourne's Marvel Stadium, mixing catalogue favourites with a tribute to Taylor Hawkins and a showcase for new drummer Ilan Rubin.",
+    "image": null,
+    "link": "https://www.smh.com.au/culture/live-reviews/melbourne-review-wrap-foo-fighers-2026-20261115-p61e9k.html",
+    "category": "Music",
+    "published": "2026-11-15T03:01:00Z"
+  },
+  {
+    "title": "Sunday Morning Showdown: Panerai Submersible Destro vs Omega Seamaster Ploprof",
+    "source": "Fratello",
+    "extract": "Fratello pits Panerai's 44mm Submersible Marina Militare Destro PAM01757 against Omega's 1200m Seamaster Ploprof Summer Blue, comparing two distinctive professional dive-watch philosophies.",
+    "image": null,
+    "link": "https://www.fratellowatches.com/sunday-morning-showdown-panerai-submersible-marina-militare-destro-pam01757-vs-omega-seamaster-ploprof-1200m-summer-blue/",
+    "category": "Watches",
+    "published": "2026-11-15T06:00:04Z"
+  },
+  {
+    "title": "Modern escapement developments, part II",
+    "source": "SJX Watches",
+    "extract": "SJX examines contemporary mechanical escapement experiments, from established manufacturers' latest designs to independent watchmakers challenging the traditional Swiss lever.",
+    "image": "https://watchesbysjx.com/wp-content/uploads/2023/12/Girard-Perregaux-Neo-Constant-Escapement-close-up-4.jpg",
+    "link": "https://watchesbysjx.com/2026/11/modern-escapement-developments-part-ii.html",
+    "category": "Watches",
+    "published": "2026-11-16T01:00:16Z"
+  },
+  {
+    "title": "The ABCs of Time: dial styles, history and evolution of a watch's crucial part",
+    "source": "Monochrome Watches",
+    "extract": "Monochrome traces the evolution of watch-dial styles, from early utilitarian layouts and railroad standards to California, military, Bauhaus and Art Deco designs.",
+    "image": "https://monochrome-watches.com/app/uploads/2021/05/Grand-Seiko-SLGH005-White-Birch-Hi-Beat-Caliber-9SA5-review-2.jpg",
+    "link": "https://monochrome-watches.com/dial-styles-history-and-evolution-of-a-watchs-crucial-part-abcs-of-time/",
+    "category": "Watches",
+    "published": "2026-11-14T15:00:55Z"
+  },
+  {
+    "title": "Chopard Mille Miglia Classic Chronograph American Racing Stripes watch hands-on",
+    "source": "A Blog to Watch",
+    "extract": "A hands-on look at Chopard's Mille Miglia Classic Chronograph in its American Racing Stripes edition, a motorsport-inspired treatment of the brand's long-running rally chronograph.",
+    "image": null,
+    "link": "https://www.ablogtowatch.com/chopard-mille-miglia-classic-chronograph-american-racing-stripes-watch-hands-on/",
+    "category": "Watches",
+    "published": "2026-11-15T08:01:21Z"
+  },
+  {
+    "title": "Hands-on: Nubeo Tranquility Automatic Star Trek 60th Anniversary watch",
+    "source": "A Blog to Watch",
+    "extract": "A Blog to Watch goes hands-on with Nubeo's Tranquility Automatic Star Trek 60th Anniversary watch, a limited-edition tribute to the franchise's visual world.",
+    "image": null,
+    "link": "https://www.ablogtowatch.com/hands-on-nubeo-tranquility-automatic-star-trek-60th-anniversary-watch-is-a-bold-tribute-to-the-final-frontier/",
+    "category": "Watches",
+    "published": "2026-11-14T08:01:35Z"
+  },
+  {
+    "title": "The Auret Mederi: a distinctive debut with Colombian roots",
+    "source": "Fratello",
+    "extract": "Fratello introduces the Auret Mederi, a new independent watch with Colombian roots, a distinctive multi-sided case and a deeply textured dial.",
+    "image": null,
+    "link": "https://www.fratellowatches.com/the-auret-mederi-a-distinctive-debut-with-colombian-roots/",
+    "category": "Watches",
+    "published": "2026-11-14T10:00:52Z"
+  },
+  {
+    "title": "‘It's like the wild west’: how AI has rocked the literary world",
     "source": "The Guardian",
-    "extract": "Favel Parrett's novel is set in Nazi-occupied Trondheim and follows a lonely boy who finds a surrogate father in his new teacher, while the teacher begins an affair with the boy's mother. The Guardian praises the book's spare prose and subtle portrayal of grief, family silence and the emotional consequences of wartime intimacy.",
-    "image": "https://i.guim.co.uk/img/media/14d5d97edca10549b8f81c0a289f15cbd88b18da/0_0_5000_4000/master/5000.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/nov/13/one-for-sorrow-favel-parrett-new-novel-review",
+    "extract": "The Guardian examines how generative AI is disrupting publishing, from questions of authorship and disclosure to the uncertainty facing writers, agents and editors.",
+    "image": "https://i.guim.co.uk/img/media/b8a39bdb32dea0bb0e41f2a5aa45ffef61974668/1314_1100_4459_5573/master/4459.jpg?crop=none&dpr=1&s=none&width=480",
+    "link": "https://www.theguardian.com/books/2026/nov/14/its-like-the-wild-west-how-ai-has-rocked-the-literary-world",
     "category": "Books",
-    "published": "2026-11-12T14:00:00Z"
+    "published": "2026-11-14T10:00:00+01:00"
   },
   {
-    "title": "The best books to read in November and December: new paperbacks from Benjamin Myers, Jeanette Winterson and John Updike",
+    "title": "She was a monster: the real Patricia Highsmith, by the people who knew her",
     "source": "The Guardian",
-    "extract": "The Guardian's new paperback roundup ranges from Benjamin Myers's imaginative novel about actor Klaus Kinski to Rabih Alameddine's buoyant family story, Glasgow-set crime fiction by Frances Crawford, a newly translated Henning Mankell novel and Ian Buruma's history of wartime Berlin. It offers a varied set of fiction, crime, history and memoir recommendations.",
-    "image": "https://i.guim.co.uk/img/media/b971b018a3c55d8e989b6f3454dd12e63d660100/0_0_4000_5000/master/4000.png?crop=none&dpr=1&s=none&width=480",
-    "link": "https://www.theguardian.com/books/ng-interactive/2026/nov/13/the-best-books-to-read-in-november-and-december-new-paperbacks-from-benjamin-myers-jeanette-winterson-and-john-updike",
+    "extract": "People who knew Patricia Highsmith describe the writer behind Tom Ripley, exploring the unsettling gap between her crime-fiction brilliance and her difficult private life.",
+    "image": "https://i.guim.co.uk/img/media/3629c8cc3fb810d88d14476f6ea692dd19f18fdb/0_0_3540_2831/master/3540.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/books/2026/nov/15/she-was-a-monster-the-real-patricia-highsmith-by-the-people-who-knew-her",
     "category": "Books",
-    "published": "2026-11-13T09:30:00Z"
+    "published": "2026-11-15T07:00:00-05:00"
   },
   {
-    "title": "This Cursed Beautiful Land by Evan Gershkovich review: a reporter's account of imprisonment in Russia",
+    "title": "The Sensualist by Gary Shteyngart review: a delectable romp through life's pleasures",
     "source": "The Guardian",
-    "extract": "Evan Gershkovich recounts his arrest on fabricated espionage charges while reporting in Russia, 18 months in prison and eventual release in a 2024 prisoner exchange. The review finds his account of prison life compelling and illuminating, while noting the limits of analysing a country from behind bars.",
-    "image": "https://i.guim.co.uk/img/media/294a387c651aa5578720dabd50fd240b0b5f9672/2921_256_2385_1908/master/2385.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/nov/13/this-cursed-beautiful-land-by-evan-gershkovich-review-jailed-in-putins-russia",
+    "extract": "Gary Shteyngart's new essay collection gets a lively review, ranging across food, travel, watches and the small pleasures of everyday life with the author's trademark comic voice.",
+    "image": null,
+    "link": "https://www.theguardian.com/books/2026/nov/16/the-sensualist-by-gary-shteyngart-review-a-delectable-romp-through-lifes-pleasures",
     "category": "Books",
-    "published": "2026-11-13T07:00:00Z"
+    "published": "2026-11-16T02:00:00-05:00"
   },
   {
-    "title": "Inside the 42-year journey to bring William Gibson's Neuromancer to the screen",
-    "source": "WIRED",
-    "extract": "WIRED speaks with the creators and cast of Apple's long-awaited Neuromancer adaptation about the decades of failed attempts to film William Gibson's 1984 novel. The team discusses Gibson's involvement, the expanded Tessier-Ashpool storyline, practical retro-futurist sets built partly in Japan and the challenge of creating a world that feels distinct from the many works the book inspired.",
-    "image": "https://media.wired.com/photos/6aee55c49c22209c9f013e23/16%3A9/w_2560%2Cc_limit/Neuromancer-BTS-Culture_102_18753F.jpg",
-    "link": "https://www.wired.com/story/exclusive-apple-tv-neuromancer-creator-interviews/",
-    "category": "Entertainment",
-    "published": "2026-11-13T11:00:00Z"
-  },
-  {
-    "title": "Cunk on Cinema review: Diane Morgan's mockumentary is a gloriously stupid guide to film history",
+    "title": "Saturday Night Live recap: is John Mulaney the best modern host we have?",
     "source": "The Guardian",
-    "extract": "Diane Morgan returns as Philomena Cunk for a three-part comic history of cinema, baffling experts and filmmakers including Benedict Cumberbatch, Mark Kermode and Michael Bay with surreal questions and mangled film references. The Guardian praises its relentless gag rate and deadpan absurdity, with Charlie Brooker and his long-time collaborators continuing to write the series.",
-    "image": "https://i.guim.co.uk/img/media/942efa55383cda44338732fda072528f72394344/512_0_3571_2857/master/3571.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/12/cunk-on-cinema-review-philomena-cunk-diane-morgan-bbc-two",
+    "extract": "John Mulaney returns to host Saturday Night Live, and the recap argues that his tightly structured sketches and recurring characters make him one of the show's strongest modern hosts.",
+    "image": "https://i.guim.co.uk/img/media/0c06ebf3ed4520610dd70cf2ffa984d19a18783e/83_0_834_667/master/834.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/15/saturday-night-live-recap-is-john-mulaney-the-best-modern-host-we-have",
     "category": "Entertainment",
-    "published": "2026-11-12T22:30:00Z"
+    "published": "2026-11-15T09:19:00-05:00"
   },
   {
-    "title": "Gentle Monster to Conclave: seven films worth watching on television this week",
+    "title": "The DCU's James Gunn and Peter Safran have been fired: what next for superhero movies?",
     "source": "The Guardian",
-    "extract": "The Guardian's weekly film guide highlights a mix of recent drama, mystery and historical storytelling, led by Marie Kreutzer's Gentle Monster with Léa Seydoux and Edward Berger's twisty papal thriller Conclave starring Ralph Fiennes. The selection also includes Kurosawa's epic Ran and films ranging from Eileen to The Dead Don't Hurt.",
-    "image": "https://i.guim.co.uk/img/media/ea45ffaab8ef0ce357d1c62cd59676f71b1e592c/467_9_2202_1762/master/2202.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/13/the-seven-best-films-to-watch-on-tv-this-week",
+    "extract": "The Guardian's Week in Geek assesses the reported exit of James Gunn and Peter Safran from DC Studios and what the leadership change could mean for the franchise's future.",
+    "image": "https://i.guim.co.uk/img/media/7f5751f059b0ae4dacc7f62de06673f7226f6075/270_0_2650_2120/master/2650.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/film/2026/nov/16/james-gunn-peter-safran-fired-dcu-superhero-movies",
     "category": "Entertainment",
-    "published": "2026-11-13T09:00:00Z"
+    "published": "2026-11-16T07:30:00+01:00"
   },
   {
-    "title": "Darth Vader's original lightsaber sells for a record $4.875 million",
+    "title": "Ten years, thousands of staff and a billion dollars: the inside story of Grand Theft Auto VI",
     "source": "The Guardian",
-    "extract": "The lightsaber used by Darth Vader in The Empire Strikes Back and Return of the Jedi, including the iconic 'I am your father' sequence, sold for $4.875 million at Heritage Auctions. The sale set a record for an on-screen Star Wars prop, surpassing the previous record for Luke Skywalker's lightsaber and severed hand.",
-    "image": "https://i.guim.co.uk/img/media/d9dae96045308125438b564a2480095d842ede20/0_0_2948_1986/master/2948.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/film/2026/nov/13/star-wars-darth-vader-lightsaber-sells-for-nearly-5m-auction",
+    "extract": "A rare inside look at Rockstar North charts a decade of GTA VI development, its enormous production scale and the creative choices behind the next Grand Theft Auto.",
+    "image": "https://i.guim.co.uk/img/media/bcaf21a5ea7f320d200cf89cb3e6d93d0bd16a0b/1959_1148_5504_6876/master/5504.jpg?crop=none&dpr=1&s=none&width=480",
+    "link": "https://www.theguardian.com/games/ng-interactive/2026/nov/15/grand-theft-auto-vi-inside-rockstar-games",
     "category": "Entertainment",
-    "published": "2026-11-13T04:41:00Z"
+    "published": "2026-11-15T05:00:00-05:00"
+  },
+  {
+    "title": "What do we actually need from the next James Bond?",
+    "source": "The Guardian",
+    "extract": "The Guardian's podcast asks what the next James Bond film actually needs, weighing the character's future and the expectations facing the next creative team.",
+    "image": "https://i.guim.co.uk/img/media/dd644d13a493c22717ca5bf1cf6f276704de8608/313_0_1875_1500/master/1875.jpg?crop=none&dpr=1&s=none&width=445",
+    "link": "https://www.theguardian.com/australia-news/audio/2026/nov/16/what-do-we-actually-need-from-the-next-james-bond-full-story-podcast",
+    "category": "Entertainment",
+    "published": "2026-11-15T09:00:00-05:00"
+  },
+  {
+    "title": "Honey review: Killing Eve prequel drops the ball on what made the original so much fun",
+    "source": "The Guardian",
+    "extract": "The Killing Eve prequel Honey is reviewed as a spy-comedy that struggles to recapture the original show's sharp chemistry and dark humour.",
+    "image": "https://i.guim.co.uk/img/media/55e4e15a6a3951699eb8a3935b44e57136c0a81b/270_0_4264_3413/master/4264.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/14/honey-review-killing-eve-prequel-drops-the-ball-on-the-thing-that-made-the-original-so-much-fun",
+    "category": "Entertainment",
+    "published": "2026-11-14T16:50:00-05:00"
+  },
+  {
+    "title": "The Drunkmen's Marseillaise review: a film about a secret mission to collect songs of resistance",
+    "source": "The Guardian",
+    "extract": "The documentary retraces a clandestine 1961 journey to record anti-Franco resistance songs in Spain, turning a little-known cultural operation into a story of musical and political defiance.",
+    "image": "https://i.guim.co.uk/img/uploads/2026/11/13/A_group_sing_resistance_songs_in_a_roadside_bar_in_The_Drunkmen_s_Marseillaise--424538b4-acd0-4848-94cb-c072e0b87734-1.0.0000000.jpg?crop=5%3A4&dpr=1&s=none&width=120",
+    "link": "https://www.theguardian.com/film/2026/nov/16/the-drunkmens-marseillaise-review-a-film-about-a-secret-mission-to-collect-songs-of-resistance",
+    "category": "Entertainment",
+    "published": "2026-11-16T07:00:00+01:00"
   }
 ]
