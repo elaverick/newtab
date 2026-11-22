@@ -1,299 +1,236 @@
 [
   {
-    "title": "Antonelli fastest but Verstappen on pole in Las Vegas",
+    "title": "Verstappen wins in Las Vegas for third time in four years",
     "source": "Reuters",
-    "extract": "Kimi Antonelli set the quickest qualifying time but a five-place penalty drops him to sixth, leaving Max Verstappen on pole alongside George Russell; McLaren's Lando Norris starts third and both Ferrari drivers missed the top-ten shootout.",
-    "image": "https://www.reuters.com/resizer/v2/PK6NJBI4CFOQLN42CDIBFZ3WWY.jpg?auth=2b8e89a481fed9e2f75f9fe12f58b1fa54f44875d19ca23ef9a7b8d59d0113d4&quality=80&width=1080",
-    "link": "https://www.reuters.com/sports/formula1/antonelli-fastest-verstappen-pole-las-vegas-2026-11-21/",
+    "extract": "Max Verstappen won the Las Vegas Grand Prix for the third time in four years. Lando Norris and Oscar Piastri finished second and third, while George Russell hit the barriers late and Ferrari teammates Lewis Hamilton and Charles Leclerc collided.",
+    "image": "https://www.reuters.com/resizer/v2/KPO3CIMNGBKZJBUENI4ZLEZRRQ.jpg?auth=8dc92622c00f54aab8f1e29da3dd037872fc009147e7612660ec2f81ef95573d&quality=80&width=1080",
+    "link": "https://www.reuters.com/sports/formula1/verstappen-wins-las-vegas-third-time-four-years-2026-11-22/",
     "category": "Automotive",
-    "published": "2026-11-21T05:20:00Z"
+    "published": "2026-11-22T05:48:00Z"
   },
   {
-    "title": "F1 agrees framework for switch to V8 engines from 2030, says FIA",
-    "source": "Reuters",
-    "extract": "Formula One stakeholders have unanimously backed a 2.1-litre turbocharged V8 framework for 2030, with limited hybridisation and advanced sustainable fuels aimed at simpler, lighter cars and more attack-oriented racing.",
-    "image": "https://www.reuters.com/resizer/v2/NZKP5Y2DDBO7VKSGFQHBJOJBLY.jpg?auth=42c499351a9394cabfa5a680291012b3ccd523e9118d9c01d79fddcaec633773&quality=80&width=1080",
-    "link": "https://www.reuters.com/sports/formula1/agreement-principle-f1-have-v8-engines-2030-says-brown-2026-11-20/",
+    "title": "Ferrari adds 296 Challenge Evo and Stradale variants",
+    "source": "Motorsport.com",
+    "extract": "Motorsport.com reports two new additions to the 296 Challenge family: an Evo track variant and a road-going Stradale version. The pairing extends Ferrari's V6 platform in both competition and road-car directions.",
+    "image": null,
+    "link": "https://www.motorsport.com/ferrari-challenge/news/due-novita-per-la-ferrari-296-challenge-ecco-le-versioni-evo-e-stradale/10876538/",
     "category": "Automotive",
-    "published": "2026-11-20T15:15:00Z"
+    "published": "2026-11-21T22:00:00+01:00"
   },
   {
-    "title": "Intel Linux NPU Driver 1.39.1 Released With Nova Lake Support",
+    "title": "Linux 7.4 to remove NVMe namespaces in parallel for faster results",
     "source": "Phoronix",
-    "extract": "Intel's user-space Linux NPU Driver 1.39.1 adds official support for Nova Lake's sixth-generation NPU IP, complementing the mainlined IVPU kernel driver; the release recommends OpenVINO 2026.5.",
-    "image": "https://www.phoronix.net/image.php?id=2026&image=npu_nvl",
-    "link": "https://www.phoronix.com/news/Intel-LInux-NPU-Driver-1.39.1",
+    "extract": "A change merged for Linux 7.4 removes NVMe namespaces asynchronously rather than serially, allowing grace-period waits to overlap. The optimization can substantially shorten disconnect times for controllers with many namespaces.",
+    "image": "https://www.phoronix.net/image.php?id=2026&image=nvme_ns_removal",
+    "link": "https://www.phoronix.com/news/Linux-7.4-NVMe-NS-Parallel",
     "category": "Technology",
-    "published": "2026-11-21T10:51:00-05:00"
+    "published": "2026-11-21T20:24:00-05:00"
   },
   {
-    "title": "Debian 13.8 Released With 150+ Security Updates",
+    "title": "Sashiko AI introduces Linux performance specialist review stage",
     "source": "Phoronix",
-    "extract": "Debian 13.8 refreshes Trixie installation media with more than 150 security advisories covered, alongside package rebuilds, bug fixes and compatibility updates involving KWin, OpenSSL, glibc and Thunderbird.",
-    "image": "https://www.phoronix.net/image.php?id=debian-13-benchmarks&image=debian_13_4_med",
-    "link": "https://www.phoronix.com/news/Debian-13.8-Released",
-    "category": "Technology",
-    "published": "2026-11-21T06:20:00-05:00"
-  },
-  {
-    "title": "FreeBSD 15.2 Beta 3 Released Following 17 Security Advisories",
-    "source": "Phoronix",
-    "extract": "The third 15.2 beta folds in fixes for 17 newly disclosed advisories, updated OpenZFS and other system fixes; the advisories include privilege escalation and a remote-code-execution issue in the NFSv4 server.",
-    "image": "https://www.phoronix.net/image.php?id=2026&image=freebsd_17_sa",
-    "link": "https://www.phoronix.com/news/FreeBSD-15.2-Beta-3",
-    "category": "Technology",
-    "published": "2026-11-21T05:26:00-05:00"
-  },
-  {
-    "title": "GnuPG's GPGME Affected By Critical Security Bug In Turn Affecting Mail Clients, Flatpak",
-    "source": "Phoronix",
-    "extract": "A crafted, very long OpenPGP user ID can trigger a double-free in GPGME, potentially exposing application data and possibly enabling remote code execution; maintainer Werner Koch urges affected users to update immediately.",
+    "extract": "The open-source Sashiko AI code-review tool adds an optional performance-specialist stage for Linux kernel patches. Phoronix reports its benchmark's positive detection rate rising from 15% to 70%, without adding false positives on neutral commits.",
     "image": null,
-    "link": "https://www.phoronix.com/news/GnuPG-GPGME-Critical",
+    "link": "https://www.phoronix.com/news/Sashiko-AI-Performance-Review",
     "category": "Technology",
-    "published": "2026-11-20T15:46:00-05:00"
+    "published": "2026-11-21T12:49:00-05:00"
   },
   {
-    "title": "Intel Preps Linux 7.5 Change To Better Handle Multiple GPUs With Lots Of VRAM",
-    "source": "Phoronix",
-    "extract": "A Linux 7.5 DRM change expands GEM/TTM buffer-object mmap ranges from 1TB to 8TB, addressing address-space exhaustion in multi-GPU systems with very large VRAM, including future Intel D-series accelerators.",
-    "image": "https://www.phoronix.net/image.php?id=2026&image=intel_d270_med",
-    "link": "https://www.phoronix.com/news/Linux-7.5-DRM-8TB-mmap",
-    "category": "Technology",
-    "published": "2026-11-20T14:41:00-05:00"
-  },
-  {
-    "title": "AMD Contributes Integration For Content-Adaptive / Adaptive Backlight Modulation To GNOME",
-    "source": "Phoronix",
-    "extract": "AMD's Mutter integration exposes Adaptive Backlight Modulation through GNOME's compositor, allowing compatible Ryzen AI laptop panels to reduce backlight power dynamically based on screen content, with some trade-off in colour accuracy.",
-    "image": "https://www.phoronix.net/image.php?id=framework-16-ryzen-ai-300-series&image=framework_16_14_med",
-    "link": "https://www.phoronix.com/news/GNOME-AMD-Content-Adaptive",
-    "category": "Technology",
-    "published": "2026-11-20T12:52:00-05:00"
-  },
-  {
-    "title": "System76 Thelio Prime: A Petite But Performant AMD-Powered Linux PC",
-    "source": "Phoronix",
-    "extract": "Phoronix tests the redesigned 9.78-litre Linux desktop, built in-house from aluminium and steel and configurable up to Ryzen 9 9900X, discrete Radeon or GeForce graphics, 96GB RAM and 16TB NVMe; the review finds it well engineered and quiet under load.",
+    "title": "AWS got hit by an outage too. Here's why you didn't hear about it",
+    "source": "The Register",
+    "extract": "Corey Quinn examines a November 15 us-east-1 incident that disrupted sign-up, authentication and connectivity, while AWS's status page lagged customer reports by 93 minutes. A useful look at the gap between service health and customer-visible incident reporting.",
     "image": null,
-    "link": "https://www.phoronix.com/review/system76-thelio-prime",
+    "link": "https://www.theregister.com/columnists/2026/11/21/aws-got-hit-by-an-outage-too-heres-why-you-didnt-hear-about-it/5311511",
     "category": "Technology",
-    "published": "2026-11-20T11:38:00-05:00"
+    "published": "2026-11-21T14:35:00Z"
   },
   {
-    "title": "Fedora Incident Response Policy Drafted For Improving Workflow & Security Disclosures",
+    "title": "KDE Plasma 6.9 allows adjusting the text cursor blinking rate, other improvements",
     "source": "Phoronix",
-    "extract": "Fedora's Security SIG has drafted an incident-response policy defining what constitutes an incident, how it is declared, how embargoed information is handled and how communication should work, partly addressing lessons from the XZ Utils crisis.",
+    "extract": "The upcoming Plasma 6.9 adds control over text-cursor blinking, improved Chinese, Japanese and Korean input on the on-screen keyboard, more targeted multi-display settings and faster screenshots. KWin also gains NVIDIA overlay-plane support.",
+    "image": "https://www.phoronix.net/image.php?id=2026&image=plasma_cursor_blink_med",
+    "link": "https://www.phoronix.com/news/KDE-Plasma-6.9-Cursor-Blinking",
+    "category": "Technology",
+    "published": "2026-11-21T05:51:00-05:00"
+  },
+  {
+    "title": "NASA Mars rover and orbiter suffer glitches",
+    "source": "The Register",
+    "extract": "Perseverance has paused science operations because of a communications-rate problem, while the long-running Mars Odyssey orbiter faces a more serious anomaly that could threaten its mission. Odyssey has now operated for roughly a quarter-century.",
     "image": null,
-    "link": "https://www.phoronix.com/news/Fedora-Incident-Response-Policy",
+    "link": "https://www.theregister.com/science/2026/11/21/nasa-mars-rover-and-orbiter-suffer-glitches/5311360",
     "category": "Technology",
-    "published": "2026-11-20T09:47:00-05:00"
+    "published": "2026-11-21T07:47:00Z"
   },
   {
-    "title": "AMDXDNA Driver Reaches Version 1.0, Ryzen AI NPU10 & NPU11 Coming To Linux 7.5",
-    "source": "Phoronix",
-    "extract": "The in-tree AMDXDNA driver is reaching version 1.0 with Linux 7.5 and prepares support for AIE4-based Ryzen AI NPU10/NPU11; recent user-space work has made Ryzen AI NPUs increasingly useful for local LLM workloads on Linux.",
+    "title": "Amazon's split personality: AWS embraces bot commerce while main site enforces bans",
+    "source": "The Register",
+    "extract": "AWS Marketplace is opening agentic purchasing through x402 and Bedrock AgentCore Payments, even as Amazon's retail site blocks third-party shopping bots. The split highlights how quickly agent commerce is becoming a platform feature.",
     "image": null,
-    "link": "https://www.phoronix.com/news/AMDXDNA-1.0-Linux-Driver",
+    "link": "https://www.theregister.com/ai-and-ml/2026/11/20/amazons-split-personality-aws-embraces-bot-commerce-while-main-site-enforces-bans/5311493",
     "category": "Technology",
-    "published": "2026-11-20T08:16:00-05:00"
+    "published": "2026-11-20T23:41:00Z"
   },
   {
-    "title": "Rust Coreutils 0.13 Release Delivers More Performance, Better Compatibility",
-    "source": "Phoronix",
-    "extract": "The Rust reimplementation of GNU Coreutils reports gains such as basenc base58 around 35 times faster and cut 23% faster, while reaching 95.26% of the GNU Test Suite and improving file handling and Windows compatibility.",
-    "image": "https://www.phoronix.net/image.php?id=2026&image=rust_coreutils_013",
-    "link": "https://www.phoronix.com/news/Rust-Coreutils-0.13",
-    "category": "Technology",
-    "published": "2026-11-20T06:16:00-05:00"
-  },
-  {
-    "title": "Vulkan 1.4.369 Introduces New AMD Extension For Improving Ray-Tracing Performance",
-    "source": "Phoronix",
-    "extract": "Vulkan 1.4.369 adds experimental VK_AMDX_multi_level_acceleration_structure, allowing deeper instance hierarchies for ray-traced scenes to improve update granularity, reuse geometry and potentially reduce acceleration-structure memory use.",
+    "title": "PHP 8.6: Things are gonna get a lot more strict around here",
+    "source": "The Register",
+    "extract": "PHP's annual release introduces more security-friendly defaults for session handling. It arrives alongside coordinated patched releases across supported branches that close seven critical remote-code-execution flaws.",
     "image": null,
-    "link": "https://www.phoronix.com/news/Vulkan-AMDX-Ray-Tracing-Struct",
+    "link": "https://www.theregister.com/devops/2026/11/20/php-86-things-are-gonna-get-a-lot-more-strict-around-here/5311486",
     "category": "Technology",
-    "published": "2026-11-20T06:05:00-05:00"
+    "published": "2026-11-20T23:28:00Z"
   },
   {
-    "title": "Cloud Hypervisor 55 Released With AArch64 Nested Virtualization, Up To 990 ARM vCPUs",
-    "source": "Phoronix",
-    "extract": "The Rust-based virtual-machine monitor adds AArch64 nested virtualization for FEAT_NV2-capable systems, raises the KVM ARM vCPU ceiling from 255 to 990 and includes security hardening, VFIO DMA-BUF support and live-migration improvements.",
-    "image": "https://www.phoronix.net/image.php?id=2021&image=lf_cloud_hypervisor",
-    "link": "https://www.phoronix.com/news/Cloud-Hypervisor-55",
-    "category": "Technology",
-    "published": "2026-11-20T05:51:00-05:00"
-  },
-  {
-    "title": "Kwi Sees First Release As KDE's New Terminal Emulator",
-    "source": "Phoronix",
-    "extract": "KDE's new Kwi terminal emulator reaches 0.1, built on Ghostty and now an official KDE application; the first release brings tab, global-menu and theming improvements, with source and Flatpak builds available.",
-    "image": "https://www.phoronix.net/image.php?id=2026&image=kwi_01",
-    "link": "https://www.phoronix.com/news/Kwi-Terminal-First-Release",
-    "category": "Technology",
-    "published": "2026-11-20T05:41:00-05:00"
-  },
-  {
-    "title": "FFmpeg 9.1 Released With NVIDIA Optical Flow FRUC, APV Vulkan Encoder",
-    "source": "Phoronix",
-    "extract": "FFmpeg 9.1 adds NVIDIA optical-flow frame-rate up-conversion, a Vulkan encoder for the royalty-free APV codec, ASTC image support, an improved AAC encoder and a broad set of codec, filter and device enhancements.",
+    "title": "Visa, Mastercard theft included info useful for phishing, but not draining bank accounts, say researchers",
+    "source": "The Register",
+    "extract": "Researchers found no card numbers, passwords or home addresses in leaked Visa and Mastercard files, but did find mobile numbers, BIN prefixes and travel, hotel and restaurant bookings that could support convincing phishing. The published sample is only a small fraction of the data thieves claim to hold.",
     "image": null,
-    "link": "https://www.phoronix.com/news/FFmpeg-9.1-Released",
+    "link": "https://www.theregister.com/cyber-crime/2026/11/20/visa-mastercard-theft-included-info-useful-for-phishing-but-not-draining-bank-accounts-say-researchers/5311478",
     "category": "Technology",
-    "published": "2026-11-20T05:30:00-05:00"
+    "published": "2026-11-20T21:27:00Z"
   },
   {
-    "title": "Linux 7.5 To Optionally Block /proc/kcore Access For Better Security",
-    "source": "Phoronix",
-    "extract": "A queued Linux 7.5 patch adds a boot-time kcore=off option to disable /proc/kcore, reducing exposure of physical-memory and kernel-address-space dumps on systems that do not need the facility.",
-    "image": "https://www.phoronix.net/image.php?id=2026&image=kcore",
-    "link": "https://www.phoronix.com/news/Linux-7.5-Restrict-proc-kcore",
-    "category": "Technology",
-    "published": "2026-11-19T17:03:00-05:00"
-  },
-  {
-    "title": "LLVM Effectively Completes Its Relicensing After Nearly A Decade Of Work",
-    "source": "Phoronix",
-    "extract": "LLVM's long-running effort to move historic contributions to Apache 2.0 with LLVM exceptions is effectively complete: more than 99.5% of code is now covered, following agreements with over 1,300 contributors and about 100 organisations.",
+    "title": "Signal slams door on prying AI agents to protect privacy",
+    "source": "The Register",
+    "extract": "Signal now blocks operating-system AI agents such as Siri and Gemini from capturing message screens by default, unless users explicitly allow it. The change responds to concerns that on-screen AI features could expose private conversations to external services.",
     "image": null,
-    "link": "https://www.phoronix.com/news/LLVM-Re-Licensing-Complete",
+    "link": "https://www.theregister.com/security/2026/11/20/signal-slams-door-on-prying-ai-agents-to-protect-privacy/5311466",
     "category": "Technology",
-    "published": "2026-11-19T16:02:00-05:00"
+    "published": "2026-11-20T20:42:00Z"
   },
   {
-    "title": "MorphOS: Bluetooth stack MBlue 1.0",
+    "title": "Nvidia’s journey to forge the one CPU SKU to rule them all",
+    "source": "The Register",
+    "extract": "Nvidia is pitching Vera as a single 88-core, 3.3GHz Arm CPU design for most datacentre workloads, from Vera-Rubin systems to standalone HPC racks. The deep dive explains how it aims to balance throughput and latency rather than offer dozens of narrowly tuned SKUs.",
+    "image": "https://image.theregister.com/5282081.webp?croph=100.00&cropw=100.00&format=jpg&height=720&imageId=5282081&width=960&x=0.00&y=0.00",
+    "link": "https://www.theregister.com/systems/2026/11/20/nvidias-journey-to-forge-the-one-cpu-sku-to-rule-them-all/5311438",
+    "category": "Technology",
+    "published": "2026-11-20T18:45:00Z"
+  },
+  {
+    "title": "China attackers deployed AI agents that autonomously found and exploited a 0-day to take over a university server",
+    "source": "The Register",
+    "extract": "Amazon says suspected China-linked attackers used the open-source Cairn framework to find and exploit a zero-day in MONAI Label, gaining control of a university server. The agents adapted over many hours with little human direction.",
+    "image": null,
+    "link": "https://www.theregister.com/security/2026/11/20/china-attackers-deployed-ai-agents-that-autonomously-found-and-exploited-a-0-day-to-take-over-a-university-server/5311382",
+    "category": "Technology",
+    "published": "2026-11-20T17:30:00Z"
+  },
+  {
+    "title": "Dutch data watchdog highlights safety issues with AI glasses",
+    "source": "The Register",
+    "extract": "A Dutch regulator tested six smart-glasses models and found failures involving medication instructions, child-safety warnings and even a false claim that emergency services had been called during a CPR simulation. It advised consumers against buying them for now.",
+    "image": null,
+    "link": "https://www.theregister.com/security/2026/11/20/dutch-data-watchdog-highlights-safety-issues-with-ai-glasses/5311345",
+    "category": "Technology",
+    "published": "2026-11-20T16:44:00Z"
+  },
+  {
+    "title": "AI boom threatens circuit board crunch to rival pandemic-era chip shortage",
+    "source": "The Register",
+    "extract": "The Global Electronics Association warns that AI-server demand is squeezing PCB materials and fabrication capacity, crowding out automotive, medical, industrial and defence orders. It says meaningful relief may not arrive before mid-2028.",
+    "image": null,
+    "link": "https://www.theregister.com/systems/2026/11/20/ai-boom-threatens-circuit-board-crunch-to-rival-pandemic-era-chip-shortage/5311335",
+    "category": "Technology",
+    "published": "2026-11-20T16:01:00Z"
+  },
+  {
+    "title": "Spy court blasts UK secrecy, forces government to admit Apple ‘backdoor’ demand",
+    "source": "The Register",
+    "extract": "The Investigatory Powers Tribunal has confirmed that the UK government served Apple with a Technical Capability Notice, while its precise demands remain secret. The ruling renews scrutiny of the government's pressure over end-to-end encrypted iCloud data.",
+    "image": null,
+    "link": "https://www.theregister.com/security/2026/11/20/spy-court-blasts-uk-secrecy-forces-government-to-admit-apple-backdoor-demand/5311292",
+    "category": "Technology",
+    "published": "2026-11-20T12:18:00Z"
+  },
+  {
+    "title": "Windows 11 passkey bug cries failure after successful sign-in",
+    "source": "The Register",
+    "extract": "A cross-device passkey bug could show Android users a failed-authentication message even after the Windows 11 PC sign-in succeeded. Microsoft included a fix in optional update KB5132057 for versions 25H2 and 26H2.",
+    "image": null,
+    "link": "https://www.theregister.com/security/2026/11/20/windows-11-passkey-bug-cries-failure-after-successful-sign-in/5311263",
+    "category": "Technology",
+    "published": "2026-11-20T11:09:00Z"
+  },
+  {
+    "title": "vAmigaWeb emulator gains lower audio latency and a Kickstart replacement",
     "source": "Amiga News",
-    "extract": "MorphOS 3.21 gains a native Bluetooth stack with support for keyboards, mice, AHI audio devices, headset microphones, phone file transfers and battery reporting, including support for selected USB dongles and built-in Bluetooth on G5 Macs.",
+    "extract": "The browser-based Amiga emulator moves to vAmigaCore 5.0, improving super-hires pixel accuracy and reducing audio latency. It also offers KickSlopStart, a free Kickstart 1.3-compatible replacement for classic A500 and A2000 setups.",
     "image": null,
-    "link": "https://amiga-news.de/en/news/AN-2026-11-00119-EN.html",
+    "link": "https://www.amiga-news.de/de/news/AN-2026-11-00121-DE.html",
     "category": "Retro Computing",
-    "published": "2026-11-20T19:04:00+01:00"
+    "published": "2026-11-21T21:52:00+01:00"
   },
   {
-    "title": "AmigaOS 4: PuTTY 1.0",
+    "title": "FireFront brings top-down tank action to RTG Amigas",
     "source": "Amiga News",
-    "extract": "A new native AmigaOS 4 port of PuTTY 0.85 brings SSH, Telnet, remote login and serial connectivity, with SFTP/SCP, Unicode support and a ReAction interface.",
+    "extract": "FireFront is a top-down Amiga tank game inspired by Fire Power, with a ten-mission campaign, three selectable tanks and rescue or destruction objectives. It requires at least a 68030 CPU and RTG graphics.",
     "image": null,
-    "link": "https://amiga-news.de/en/news/AN-2026-11-00117-EN.html",
-    "category": "Retro Computing",
-    "published": "2026-11-20T17:49:00+01:00"
-  },
-  {
-    "title": "Code editor for AmigaOS 4 and MorphOS: Pragtical 3.12.5",
-    "source": "Amiga News",
-    "extract": "The Pragtical code editor port for AmigaOS 4 and MorphOS reaches 3.12.5, adding code folding and fixing a stack crash on AmigaOS 4.1 caused by an undersized stack-cookie setting.",
-    "image": null,
-    "link": "https://amiga-news.de/en/news/AN-2026-11-00120-EN.html",
+    "link": "https://www.amiga-news.de/de/news/AN-2026-11-00125-DE.html",
     "category": "Retro Computing Projects",
-    "published": "2026-11-20T22:41:00+01:00"
+    "published": "2026-11-21T22:37:00+01:00"
   },
   {
-    "title": "Football game: Final demo version of Mundialito 3",
+    "title": "Copper Basic 1.3 adds an Amiga BASIC cross-compiler",
     "source": "Amiga News",
-    "extract": "The final demo of this AMOS Pro football game for Amiga 1200 rewrites player movement and set-piece routines, adds ten teams per league, improves the AI and league economy, and completes its intro music and menus.",
+    "extract": "Copper Basic 1.3 is a Python cross-compiler that produces bootable A500-compatible disk images and adds commands for Amiga custom chips. Amiga News notes that the advertised source archives are empty, so the project's source is not currently inspectable.",
     "image": null,
-    "link": "https://amiga-news.de/en/news/AN-2026-11-00118-EN.html",
+    "link": "https://www.amiga-news.de/de/news/AN-2026-11-00124-DE.html",
     "category": "Retro Computing Projects",
-    "published": "2026-11-20T17:59:00+01:00"
+    "published": "2026-11-21T22:24:00+01:00"
   },
   {
-    "title": "Program for testing block devices: Devtest 2.0",
+    "title": "PiAROS 0.5 released for Raspberry Pi",
     "source": "Amiga News",
-    "extract": "Devtest 2.0 improves an Amiga utility that tests block-device drivers and physical drives, adding better support for disks larger than 4GB and more accurate benchmarks.",
+    "extract": "PiAROS 0.5 is a 64-bit AROS distribution for Raspberry Pi 3, Pi 4/400 and Pi 5/500, accompanied by a new project website.",
     "image": null,
-    "link": "https://amiga-news.de/en/news/AN-2026-11-00116-EN.html",
+    "link": "https://www.amiga-news.de/de/news/AN-2026-11-00123-DE.html",
     "category": "Retro Computing Projects",
-    "published": "2026-11-20T17:29:00+01:00"
+    "published": "2026-11-21T21:58:00+01:00"
   },
   {
-    "title": "BASIC-Cross-Compiler: QBAVision 1.4",
+    "title": "CrylicEdit 1.4 adds UTF support and macros",
     "source": "Amiga News",
-    "extract": "QBAVision combines a BASIC development environment with a Motorola 68000 cross-compiler for native AmigaOS Hunk programmes; updates add improved AmigaOS 1.3 presentation and speech, graphics tools and a native Windows IDE.",
+    "extract": "CrylicEdit 1.4 adds UTF-8 and UTF-16 reading, UTF-8 writing, macros and word wrapping while retaining compatibility with Amiga systems from a 1MB Amiga 500 through RTG-equipped machines.",
     "image": null,
-    "link": "https://amiga-news.de/en/news/AN-2026-11-00115-EN.html",
+    "link": "https://www.amiga-news.de/de/news/AN-2026-11-00122-DE.html",
     "category": "Retro Computing Projects",
-    "published": "2026-11-20T17:12:00+01:00"
+    "published": "2026-11-21T21:57:00+01:00"
   },
   {
-    "title": "Classic in HD: Another World - 20th Anniversary Edition (AGA/RTG)",
-    "source": "Amiga News",
-    "extract": "A new AGA/RTG Amiga port of the 20th Anniversary Edition uses the open-source RAWGL engine, optimizing HD backgrounds while rendering the original polygon-based moving objects in HD across hardware from a standard A1200 to faster accelerator and emulator setups.",
-    "image": null,
-    "link": "https://amiga-news.de/en/news/AN-2026-11-00113-EN.html",
+    "title": "ChatGPT shrunk down to run on a Super Nintendo",
+    "source": "The Register",
+    "extract": "Retro tech journalist Benj Edwards has distilled a 2.2-million-parameter language model into an SNES ROM, with an optional tiny Wikipedia factbook; a related NES ROM simulates talking to a ghost. It is a playful vintage-hardware experiment, not a useful general chatbot.",
+    "image": "https://image.theregister.com/5311424.webp?croph=100.00&cropw=100.00&format=jpg&height=462&imageId=5311424&width=960&x=0.00&y=0.00",
+    "link": "https://www.theregister.com/offbeat/2026/11/21/chatgpt-shrunk-down-to-run-on-a-super-nintendo/5311418",
     "category": "Retro Computing Projects",
-    "published": "2026-11-19T23:54:00+01:00"
+    "published": "2026-11-21T11:46:00Z"
   },
   {
-    "title": "Science-Fiction strategy: Mass Fraction",
-    "source": "Amiga News",
-    "extract": "This new hard-science-fiction economic strategy game for Amiga A1200 tasks players with building a space company capable of creating and staffing an orbital station; it is available free or by donation and was made with AI assistance.",
-    "image": null,
-    "link": "https://amiga-news.de/en/news/AN-2026-11-00112-EN.html",
-    "category": "Retro Computing Projects",
-    "published": "2026-11-19T23:44:00+01:00"
-  },
-  {
-    "title": "Light in the dark: 20 long books for short winter days",
+    "title": "Green Kingdom by Ben Dark review – a luscious natural history of plant life",
     "source": "The Guardian",
-    "extract": "A curated list of 20 ambitious long novels includes Dhalgren, Jonathan Strange & Mr Norrell, William T Vollmann's Cold War/CIA epic A Table for Fortune and China Miéville's occult-military The Rouse, spanning science fiction, fantasy, espionage and weird fiction.",
-    "image": "https://i.guim.co.uk/img/uploads/2026/11/16/Illustration_Klaus_Kremmerz__Animation_Ali_Assaf--731aef0e-00aa-4493-b930-91269a127b51-1.0.0000000.jpg?crop=4%3A5&dpr=1&s=none&width=120",
-    "link": "https://www.theguardian.com/books/ng-interactive/2026/nov/21/light-in-the-dark-20-long-books-for-short-winter-days",
+    "extract": "Ben Dark traces the evolution of plant dynasties from ancient pond life to modern flowering species, blending botany, folklore and natural history. The review praises its vivid prose and connections between plant evolution, history and landscape.",
+    "image": "https://i.guim.co.uk/img/media/0e456d1b2deb0bb08a3d590703e040187379fca2/514_0_4176_3341/master/4176.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/books/2026/nov/20/green-kingdom-by-ben-dark-review-a-luscious-natural-history-of-plant-life",
     "category": "Books",
-    "published": "2026-11-21T04:00:00-05:00"
+    "published": "2026-11-20T02:00:00-05:00"
   },
   {
-    "title": "The best recent crime and thrillers – review roundup",
+    "title": "From I Am Helen to You Can See Everything: the week in rave reviews",
     "source": "The Guardian",
-    "extract": "The Guardian's latest crime and thriller roundup covers Nick Harkaway's new George Smiley continuation, Mick Herron's Slow Horses novellas, a psychological thriller and two historical mysteries, with Cold War espionage, MI5 intrigue and wartime Portmeirion in the mix.",
-    "image": "https://i.guim.co.uk/img/media/3959aaa22b98862a0866248279d12096dc58002e/585_56_1822_1458/master/1822.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/nov/20/the-best-recent-and-thrillers-review-roundup",
-    "category": "Books",
-    "published": "2026-11-20T07:00:00-05:00"
-  },
-  {
-    "title": "Blade Runner 2099: fans will have no idea what is happening in this sci-fi sequel. Why is it even on TV?",
-    "source": "The Guardian",
-    "extract": "The Guardian's review of Prime Video's Blade Runner sequel series finds the Philip K. Dick-inspired dystopia visually atmospheric but narratively opaque, with Hunter Schafer and Michelle Yeoh leading a story set 50 years after Blade Runner 2049.",
-    "image": "https://i.guim.co.uk/img/media/b4fa12ccac714060aa3462d12465de7347744cbf/36_31_2445_1956/master/2445.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/21/blade-runner-2099-fans-will-have-no-idea-what-is-happening-in-this-sci-fi-sequel-why-is-it-even-on-tv",
+    "extract": "The Guardian's weekly culture roundup highlights Honey, a Killing Eve prequel following a young female spy in 1980s Berlin, and The Altruists, a drama about FTX founders Sam Bankman-Fried and Caroline Ellison. It also covers the documentary about Theranos founder Elizabeth Holmes.",
+    "image": "https://i.guim.co.uk/img/media/644032a631698c7ae1ae0b89d247f0e295cd9822/1446_245_5043_4034/master/5043.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/culture/2026/nov/21/from-i-am-helen-to-you-can-see-everything-the-week-in-rave-reviews",
     "category": "Entertainment",
-    "published": "2026-11-21T02:00:00-05:00"
+    "published": "2026-11-21T01:00:00-05:00"
   },
   {
-    "title": "Bill’s Included review – Rob Brydon’s new character is as glorious as Gavin & Stacey’s Uncle Bryn",
+    "title": "Ben Whishaw and Kathryn Hunter are a dynamite duo on the road to nowhere in Eurotrash",
     "source": "The Guardian",
-    "extract": "Rob Brydon's new BBC sitcom casts him as a recently divorced landlord renting rooms to four students; the Guardian praises Brydon's gloriously awkward comic performance while finding the ensemble and storylines thin.",
-    "image": "https://i.guim.co.uk/img/media/4854d8890e8b9dd241a5f2329da388f678f3f37d/390_0_3818_3055/master/3818.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/20/bills-included-review-rob-brydon-sitcom-bbc",
+    "extract": "The Young Vic adapts Christian Kracht's darkly comic novel into a road-trip play about a mother and son trying to give away questionable family money. The review praises the leads' chemistry and comic set-pieces while noting that the adaptation softens the novel's confrontation with Nazi family history.",
+    "image": "https://i.guim.co.uk/img/media/28263f1ab465cc1e39b9d6ee6f4c2dcbc4195b21/0_1684_4800_3840/master/4800.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/stage/2026/nov/20/ben-whishaw-kathryn-hunter-eurotrash-review-young-vic",
     "category": "Entertainment",
-    "published": "2026-11-20T17:00:00-05:00"
-  },
-  {
-    "title": "The Slightest Touch to California Schemin’: the seven best films to watch on TV this week",
-    "source": "The Guardian",
-    "extract": "The Guardian's weekly film picks include James McAvoy's California Schemin', a true-story comedy about Dundee rappers posing as Americans, alongside Cabaret, Downhill Racer and the documentary The Slightest Touch.",
-    "image": "https://i.guim.co.uk/img/media/e5883e1ea2b26d00d828d1bab186f51c8ee88a34/273_9_1322_1058/master/1322.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/tv-and-radio/2026/nov/20/the-seven-best-films-to-watch-on-tv-this-week",
-    "category": "Entertainment",
-    "published": "2026-11-20T04:00:00-05:00"
-  },
-  {
-    "title": "Steps review – Netflix’s Disney-lite Cinderella rework has enough pep in its step",
-    "source": "The Guardian",
-    "extract": "Netflix's animated Cinderella rework follows the misunderstood stepsisters Lilith and Margot on a magical quest; the review finds the plot crowded but the film lively, funny and more enjoyable than much of the streamer's recent animation.",
-    "image": "https://i.guim.co.uk/img/media/94d3f4b3e7e462d428ba059451b74e49e59dfe2b/625_0_2749_2200/master/2749.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/film/2026/nov/20/steps-netflix-movie-review",
-    "category": "Entertainment",
-    "published": "2026-11-20T03:01:00-05:00"
-  },
-  {
-    "title": "The Further Mis-Adventures of Cliff Booth review – Tarantino and Fincher join forces for Brad Pitt’s glorious return",
-    "source": "The Guardian",
-    "extract": "David Fincher directs Quentin Tarantino's sequel to Once Upon a Time in Hollywood, returning Brad Pitt as Cliff Booth in a 1977 Los Angeles crime caper; the Guardian highlights its black comedy, outrageous energy and Pitt's comic performance.",
-    "image": "https://i.guim.co.uk/img/media/d332056d21c56c70525279014f547e816809b7b8/451_0_3216_2574/master/3216.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/film/2026/nov/19/the-further-mis-adventures-of-cliff-booth-review-quentin-tarantino-david-fincher-brad-pitt",
-    "category": "Entertainment",
-    "published": "2026-11-19T19:00:00+01:00"
+    "published": "2026-11-20T09:06:00-05:00"
   }
 ]
