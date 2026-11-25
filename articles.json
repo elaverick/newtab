@@ -223,5 +223,50 @@
     "link": "https://www.theguardian.com/film/2026/nov/23/spielberg-western-paul-thomas-anderson-heart-in-winter",
     "category": "Entertainment",
     "published": "2026-11-23T18:10:00Z"
+  },
+  {
+    "title": "AWS’s Strands Decider v2 targets agent decisions that hinge on a single detail",
+    "source": "VentureBeat",
+    "extract": "AWS has released five open-weight Strands Decider v2 models built on Gemma 4, designed to score developer-supplied options rather than generate free-form text. The models read a whole scenario bidirectionally, can be fine-tuned and self-hosted, and are intended for routing, classification and policy decisions inside agent systems.",
+    "image": "https://venturebeat.com/_next/image?q=85&url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F5Ok8Doxp5kgCYnud2RbV9o%2Ff0c8950d0f89d033a61670b5cf8601dd%2Fdecider-smk1.jpeg%3Fw%3D1000%26q%3D100&w=3840",
+    "link": "https://venturebeat.com/data/awss-strands-decider-v2-targets-the-agent-decisions-that-hinge-on-a-single-detail",
+    "category": "Technology",
+    "published": "2026-11-23T11:15:00-08:00"
+  },
+  {
+    "title": "Meta’s Muse Personal AI Agent Launches in the UK",
+    "source": "MacRumors",
+    "extract": "Meta has brought Muse to UK adults, where the personal agent can work across connected apps and websites, including email, calendars, retailers and travel services. The rollout highlights its approval gates for sensitive actions, per-app permissions and isolated cloud computer.",
+    "image": "https://images.macrumors.com/t/VTo7inwO6U6wrOUbQzTNu9nfeW4%3D/400x0/article-new/2026/11/meta-muse-uk%402x-scaled.jpg?lossy=",
+    "link": "https://www.macrumors.com/2026/11/24/metas-muse-personal-ai-agent-launches-in-the-uk/",
+    "category": "Technology",
+    "published": "2026-11-24T03:15:00-08:00"
+  },
+  {
+    "title": "Signal Now Blocks AI Screen Access to Protect Chats",
+    "source": "MacRumors",
+    "extract": "Signal is extending screenshot and screen-reading protections to iPhones and supported Android devices, preventing assistants such as Siri and Gemini from capturing private conversations. The controls are enabled by default on supported versions, addressing a gap that end-to-end encryption alone cannot close.",
+    "image": "https://images.macrumors.com/t/4yXi_8CNsvtCPVwUPMh8A7jBRbM%3D/400x0/article-new/2023/11/signal-logo.jpg?lossy=",
+    "link": "https://www.macrumors.com/2026/11/24/signal-blocks-ai-access-to-protect-chats/",
+    "category": "Technology",
+    "published": "2026-11-24T09:04:00-08:00"
+  },
+  {
+    "title": "Google Search Gets Wallet Access, With Drive Coming Soon",
+    "source": "MacRumors",
+    "extract": "Google is adding an opt-in Google Wallet connection to Personal Intelligence in Search’s AI Mode, allowing answers to draw on spending and card-rewards information. Drive and Gemini connections are planned next, while Wallet access is read-only and cannot move, manage or invest money.",
+    "image": "https://images.macrumors.com/t/GO7sD12kombUYmaGCDK0mgTITMk%3D/400x0/article-new/2026/11/google-personal-intelligence.jpg?lossy=",
+    "link": "https://www.macrumors.com/2026/11/23/google-search-wallet-access/",
+    "category": "Technology",
+    "published": "2026-11-23T14:09:00-08:00"
+  },
+  {
+    "title": "Tidal to ban and remove millions of AI-generated tracks as AI slop inundates music streaming",
+    "source": "TechCrunch",
+    "extract": "Tidal will begin rejecting and removing wholly AI-generated tracks on December 9, after identifying more than 43% of recent uploads as AI-generated. AI-assisted music remains allowed; the move is a stronger response than the labelling approach used by larger services such as Spotify and YouTube Music.",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/06/tidal-brand.jpg?w=720",
+    "link": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
+    "category": "Music",
+    "published": "2026-11-24T08:46:00-08:00"
   }
 ]
