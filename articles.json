@@ -1,272 +1,173 @@
 [
   {
-    "title": "Who is Tom Hart? Meet the man set to replace GP as Max Verstappen’s race engineer at Red Bull",
-    "source": "Formula 1",
-    "extract": "Tom Hart has been gradually taking over Max Verstappen’s race-engineering duties as Gianpiero Lambiase prepares to leave for McLaren. A mechanical engineer who joined Red Bull in 2012, Hart has worked with Verstappen since 2020 and took charge for the Las Vegas win.",
-    "image": "https://media.formula1.com/image/upload/c_lfill%2Cw_3392/q_auto/v1740000001/fom-website/2026/Las%20Vegas/GettyImages-2305972965.webp",
-    "link": "https://www.formula1.com/en/latest/article/who-is-tom-hart-meet-the-man-set-to-replace-gp-as-max-verstappens-race-engineer-at-red-bull.4U1Zq3JUB2gujP5OoTMW1Z",
-    "category": "Automotive",
-    "published": "2026-11-24T10:27:00Z"
-  },
-  {
-    "title": "OpenAI, Cisco launch ‘Shirudo’: How it protects Linux systems from security threats",
-    "source": "The Indian Express",
-    "extract": "OpenAI and Cisco have released Shirudo, an open-source eBPF-based tool that can apply temporary protections to live Linux systems while teams prepare permanent patches. Its safeguards can be tested before enforcement and use signed policies plus TPM-backed records.",
-    "image": "https://images.indianexpress.com/2026/11/Tech-featured-image52.jpg?w=640",
-    "link": "https://indianexpress.com/article/technology/tech-news-technology/openai-cisco-launch-shirudo-linux-systems-security-threats-10976255/lite/",
-    "category": "Technology",
-    "published": "2026-11-24T13:19:00+05:30"
-  },
-  {
-    "title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
-    "source": "TechCrunch",
-    "extract": "Claude Ship adds agents for pull-request review, CI and merge-conflict fixes, and policy-based approvals. Anthropic recommends starting in observe-only mode and keeping human review for higher-risk changes as teams experiment with delegated code approval.",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2295579000.jpg?w=1024",
-    "link": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
-    "category": "Technology",
-    "published": "2026-11-23T14:05:00-08:00"
-  },
-  {
-    "title": "Amazon’s Decart acquisition is a bet on using software to narrow the silicon gap with Nvidia",
-    "source": "TechCrunch",
-    "extract": "Amazon is acquiring Decart’s optimization technology and team to improve how AI models run on non-Nvidia chips, particularly its Trainium accelerators. The deal underlines how software optimization is becoming a strategic lever in the AI hardware race.",
-    "image": "https://techcrunch.com/wp-content/uploads/2022/07/AP22104515656433.jpg?w=1024",
-    "link": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/",
-    "category": "Technology",
-    "published": "2026-11-24T07:51:00-08:00"
-  },
-  {
-    "title": "UK warns AI-driven cyberattacks are exposing years of weak security",
-    "source": "TechCrunch",
-    "extract": "The UK’s NCSC says autonomous AI tools are accelerating intrusions by finding exposed systems, weak passwords and poorly secured developer APIs. The underlying weaknesses are often old security debt rather than novel vulnerabilities, making basic controls more important than ever.",
-    "image": "https://techcrunch.com/wp-content/uploads/2023/08/password-stealing-malware.jpg?w=1024",
-    "link": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/",
-    "category": "Technology",
-    "published": "2026-11-24T10:02:00-08:00"
-  },
-  {
-    "title": "Anthropic’s Alpöge says the 250,000-page Riemann proof figure was a joke",
-    "source": "The Next Web",
-    "extract": "Anthropic mathematician Levent Alpöge clarified that the 250,000-page figure was a joke, not a proposed manuscript; the Lean code itself has been machine-checked, while the Clay Mathematics Institute still lists the problem as active rather than solved. Formal verification is not yet the same as broad mathematical acceptance.",
-    "image": "https://media.thenextweb.com/2026/10/anthropic-logo-smartphone-laptop-purple.avif",
-    "link": "https://thenextweb.com/news/alpoge-250000-page-riemann-proof-figure-joke-lean-clay-active",
-    "category": "Technology",
-    "published": "2026-11-24T15:13:00Z"
-  },
-  {
-    "title": "Zstd 1.6 Released With Many Fixes, New Performance Optimizations",
+    "title": "F2FS Getting Ready With Its Large Folios Support",
     "source": "Phoronix",
-    "extract": "Zstandard 1.6 brings faster decompression on AArch64, SVE2 compression optimizations and improvements for RISC-V vector extensions, alongside multithreaded and memory-safety fixes. It is a substantial update to a widely used open-source compression library.",
-    "image": "https://www.phoronix.com/assets/categories/freesoftware.webp",
-    "link": "https://www.phoronix.com/news/Zstandard-Zstd-1.6",
+    "extract": "Linux's F2FS filesystem is preparing support for large folios in buffered I/O, allowing it to handle multi-page memory units rather than single pages. Early benchmark results show substantial throughput improvements for some workloads, and the work is progressing in the filesystem's development branch for a possible Linux 7.5 release.",
+    "image": "https://www.phoronix.net/image.php?id=2026&image=f2fs_large_folio",
+    "link": "https://www.phoronix.com/news/F2FS-Large-Folios-Coming",
     "category": "Technology",
-    "published": "2026-11-23T18:00:00-05:00"
+    "published": "2026-11-26T11:37:00Z"
   },
   {
-    "title": "Ladybird Web Browser/Engine Reaches Alpha",
+    "title": "Intel Xe Driver Gaining PCIe Function Level Reset Support With Linux 7.5",
     "source": "Phoronix",
-    "extract": "The independent Ladybird browser and its from-scratch web engine have reached alpha after four years of development. Early builds are available for macOS and Linux, including Flatpak and distribution packages alongside source builds.",
-    "image": "https://www.phoronix.com/assets/categories/freesoftware.webp",
-    "link": "https://www.phoronix.com/news/Ladybird-Browser-Alpha",
+    "extract": "Intel's Xe graphics driver is gaining PCIe Function Level Reset support, allowing an individual PCIe function to be reset without disturbing other devices. The initial implementation is limited to reinitialising the GPU's graphics tile, with further components expected in follow-up work; it is useful groundwork for virtualization and targeted recovery.",
+    "image": "https://www.phoronix.net/image.php?id=intel-arc-pro-b50-linux&image=intel_arc_pro_b50_10_med",
+    "link": "https://www.phoronix.com/news/Intel-Xe-PCIe-FLR-Linux-7.5",
     "category": "Technology",
-    "published": "2026-11-23T16:00:00-05:00"
+    "published": "2026-11-26T10:56:00Z"
   },
   {
-    "title": "XNU Linux Lets macOS Userspace Processes Run On Linux",
+    "title": "KosmicKrisp Becomes the Go-To Vulkan Solution on Macs, Superseding MoltenVK",
     "source": "Phoronix",
-    "extract": "XNU Linux runs Apple’s open-source XNU kernel as a loadable module inside an otherwise unmodified ARM64 Linux kernel, allowing macOS user-space processes to run alongside Linux processes without a hypervisor. The early demonstration boots a macOS 27 system disk to the desktop.",
-    "image": "https://www.phoronix.net/image.php?id=2026&image=xnu_linux_1",
-    "link": "https://www.phoronix.com/news/XNU-Linux",
+    "extract": "The Khronos Group is deprecating its Vulkan Portability Initiative after LunarG's KosmicKrisp achieved Vulkan 1.4 conformance on Apple Silicon. Built into Mesa and layered over Metal, KosmicKrisp becomes the preferred route for modern Apple devices, while MoltenVK remains useful for older Intel Macs and older macOS versions.",
+    "image": "https://www.phoronix.net/image.php?id=2026&image=moltenvk_kosmickrisp",
+    "link": "https://www.phoronix.com/news/Vulkan-Macs-Go-KosmicKrisp",
     "category": "Technology",
-    "published": "2026-11-23T08:14:00-05:00"
+    "published": "2026-11-26T01:39:00Z"
   },
   {
-    "title": "VKD3D 2.2 Released With More Improvements For Direct3D 12 On Vulkan",
+    "title": "GNU Linux-Libre Welcomes Reverse-Engineered Firmware for an Old VIA Wi-Fi Chipset",
     "source": "Phoronix",
-    "extract": "VKD3D 2.2 advances Direct3D 12-on-Vulkan support for Wine, adding Shader Model 6.2 support, Vulkan shader float controls, HLSL handling improvements and compiler fixes. The release is expected to feed into the upcoming Wine 12.0 milestone.",
-    "image": "https://www.phoronix.net/image.php?id=2024&image=vkd3d",
-    "link": "https://www.phoronix.com/news/VKD3D-2.2-Released",
+    "extract": "A developer has reverse-engineered the firmware for VIA's VT6656 USB 802.11b/g adapter, allowing the driver to meet GNU Linux-libre's requirement for fully free firmware. The chipset is two decades old and its driver was removed from mainline Linux, but the work restores a free-software option for the older 6.12 LTS kernel.",
+    "image": "https://www.phoronix.net/image.php?id=2026&image=vt6656_sml",
+    "link": "https://www.phoronix.com/news/GNU-Linux-Libre-VIA-VT6656",
     "category": "Technology",
-    "published": "2026-11-23T06:36:00-05:00"
+    "published": "2026-11-25T13:35:00Z"
   },
   {
-    "title": "Firefox 161 Brings Per-Site VPN Toggling, Classic Themes Section",
+    "title": "Linux 7.5 to Whitelist Intel Xeon CPUs for Peer-to-Peer DMA",
     "source": "Phoronix",
-    "extract": "Firefox 161 adds per-site controls for its built-in VPN, a classic-themes section and developer-facing CSS improvements including the random() function and Typed OM changes. It is a useful feature release for both browser users and web developers.",
-    "image": "https://www.phoronix.com/assets/categories/mozilla.webp",
-    "link": "https://www.phoronix.com/news/Firefox-161",
+    "extract": "Linux 7.5 is set to explicitly whitelist Intel Xeon server generations from Skylake-SP through Diamond Rapids for PCIe peer-to-peer DMA. This fixes cases in VMware and Hyper-V guests where passthrough devices lack the host-bridge information required by the existing checks, enabling direct transfers between GPUs, NICs and NVMe devices without routing data through system RAM.",
+    "image": "https://www.phoronix.net/image.php?id=giga-computing-r284&image=giga_computing_r284_7_med",
+    "link": "https://www.phoronix.com/news/Linux-7.5-Intel-Xeon-P2PDMA",
     "category": "Technology",
-    "published": "2026-11-23T09:11:00-05:00"
+    "published": "2026-11-25T11:38:00Z"
   },
   {
-    "title": "LibreOffice 27.2 Alpha 1 Released For Testing",
+    "title": "3mdeb Updates Coreboot-Based Dasharo Firmware for MSI Z690 and Z790 Motherboards",
     "source": "Phoronix",
-    "extract": "The first LibreOffice 27.2 alpha adds JPEG-XL support, dynamic arrays in Calc, a new chart type and interface refinements ahead of the planned February release. The build is available for testing now.",
-    "image": "https://www.phoronix.com/assets/categories/libreoffice.webp",
-    "link": "https://www.phoronix.com/news/LibreOffice-27.2-Alpha-1",
+    "extract": "3mdeb has released updated Dasharo firmware builds for MSI PRO Z690-A and Z790-P motherboards. The updates improve experimental overclocking, DDR4 XMP training and CPU tuning, add USB power and wake controls, and enable Secure Boot, SMM write protection and early-boot IOMMU DMA protection by default.",
+    "image": "https://www.phoronix.net/image.php?id=coreboot-adl-dream&image=msi_dasharo_4_med",
+    "link": "https://www.phoronix.com/news/2026-Firmware-MSI-PRO-Z690-Z790",
     "category": "Technology",
-    "published": "2026-11-23T08:04:00-05:00"
+    "published": "2026-11-25T11:10:00Z"
   },
   {
-    "title": "Mesa 27.0 Merges LLVMpipe AVX-512 Support",
+    "title": "Servo 0.8 Adds HTML Video Captions and Fixes Flutter Web Performance",
     "source": "Phoronix",
-    "extract": "Mesa 27.0 has merged AVX-512 support for LLVMpipe, its software OpenGL driver. The work completes a long-running optimization effort, although the maintainer did not have modern AVX-512 hardware available for performance measurements.",
-    "image": "https://www.phoronix.com/assets/categories/mesa.webp",
-    "link": "https://www.phoronix.com/news/Mesa-27.0-AVX-512-LLVMpipe",
-    "category": "Technology",
-    "published": "2026-11-23T06:24:00-05:00"
-  },
-  {
-    "title": "Mesa 27.0 RadeonSI Gallium3D Disables Radeon Kernel Driver Support By Default",
-    "source": "Phoronix",
-    "extract": "Mesa 27.0 now disables compatibility with the legacy Radeon kernel driver by default for RadeonSI, steering early GCN 1.0 and 1.1 users toward AMDGPU and newer kernels. The compatibility switch remains available temporarily through AMD_DEBUG=use_radeon.",
-    "image": "https://www.phoronix.net/image.php?id=2026&image=radeonsi_radeon",
-    "link": "https://www.phoronix.com/news/RadeonSI-Radeon-Disable-Default",
-    "category": "Technology",
-    "published": "2026-11-23T14:11:00-05:00"
-  },
-  {
-    "title": "Mesa’s NVK NVIDIA Driver Another Step Closer To Vulkan Ray-Tracing",
-    "source": "Phoronix",
-    "extract": "Mesa’s open-source NVK driver has merged initial handling for Nvidia Tree Traversal Unit instructions, an important step toward Vulkan ray-tracing extensions on the open-source driver. Full ray-tracing support remains a longer-term goal.",
-    "image": "https://www.phoronix.net/image.php?id=nvidia-rtx-5060-ti-linux-cuda&image=nvidia_rtx5060_ti_1_med",
-    "link": "https://www.phoronix.com/news/Mesa-NVK-TTU-Instructions",
-    "category": "Technology",
-    "published": "2026-11-23T20:52:00-05:00"
-  },
-  {
-    "title": "CrowdStrike snaps up Zscaler in $44 billion deal as cyber threats mount",
-    "source": "Reuters",
-    "extract": "CrowdStrike will acquire Zscaler in a $43.9bn all-stock transaction, a record cybersecurity deal that combines endpoint protection with secure application and data access. The companies expect the combined business to start with more than $10bn in annual recurring revenue.",
-    "image": "https://images.indianexpress.com/2024/07/crowdstrike-microsoft-outage_08d2d5.jpg?w=1024",
-    "link": "https://indianexpress.com/article/technology/tech-news-technology/crowdstrike-snaps-up-zscaler-in-44-billion-deal-as-cyber-threats-mount-10975917/",
-    "category": "Technology",
-    "published": "2026-11-24T09:41:00+05:30"
-  },
-  {
-    "title": "The Blancpain Carrousel Incliné, a New Angle on Chronometric Precision",
-    "source": "Monochrome Watches",
-    "extract": "Blancpain’s new 30-degree flying carrousel uses a sapphire case and dial to expose its calibre 222ISQ, with a 100-hour power reserve and a stated rate tolerance of 0 to +2 seconds per day. The movement’s inclined regulator is a technically ambitious development of the brand’s long-running carrousel work.",
+    "extract": "The Rust-based Servo browser engine now supports subtitles and captions in HTML5 video and works properly with Flutter web content after a typed-arrays performance fix. Servo 0.8 also brings CSS and Web API improvements, smoother zooming, lower memory use, fewer allocations and continued progress on WebGL2 and WebGPU.",
     "image": null,
-    "link": "https://monochrome-watches.com/blancpain-carrousel-incline-inclined-carrousel-regulating-organ-sapphire-case-video-review-price/",
-    "category": "Watches",
-    "published": "2026-11-24T09:01:37Z"
+    "link": "https://www.phoronix.com/news/Servo-0.8-October-2026",
+    "category": "Technology",
+    "published": "2026-11-25T13:58:00Z"
   },
   {
-    "title": "The Lebois & Co Heritage Atelier Chronograph Bleu-sur-Blanc, with Two-Tone Enamel Dial",
-    "source": "Monochrome Watches",
-    "extract": "This limited-production chronograph pairs a grand feu two-tone enamel dial by Donzé Cadrans with a hand-wound La Joux-Perret LC-450 column-wheel movement. Its decimal scale divides each minute into 100 units, an unusual detail on a contemporary chronograph.",
-    "image": "https://monochrome-watches.com/app/uploads/2026/11/Lebois-Heritage-Atelier-Chronograph-Bleu-sur-Blanc-Grand-Feu-enamel-dial-review-10.jpg",
-    "link": "https://monochrome-watches.com/hands-on-lebois-co-heritage-atelier-chronograph-bleu-sur-blanc-with-two-tone-enamel-dial/",
-    "category": "Watches",
-    "published": "2026-11-23T17:05:51Z"
+    "title": "Collabora Online Cuts Per-Document Memory Use by Around Half",
+    "source": "Phoronix",
+    "extract": "An optimization to Collabora Online's copy-on-write memory handling reduces memory use per open document by roughly 50%. The change addresses waste caused by 4KB kernel-page granularity when many small allocations are created and discarded during document startup, improving the efficiency of multi-user office deployments.",
+    "image": "https://www.phoronix.net/image.php?id=2026&image=collabora_online_memory",
+    "link": "https://www.phoronix.com/news/Collabora-Online-Half-Memory",
+    "category": "Technology",
+    "published": "2026-11-24T14:50:00Z"
   },
   {
-    "title": "Just Because: Hunting for Vintage Watch Ads In A Brooklyn Basement",
-    "source": "Hodinkee",
-    "extract": "Hodinkee follows collector Nick Federowicz through a Brooklyn archive of thousands of vintage magazines as he hunts for rare watch advertisements to sell as collectible art. The feature explores the visual history of brands including Rolex, Omega and Patek Philippe, and the people preserving their advertising ephemera.",
-    "image": "https://hodinkee.imgix.net/uploads/articles/ce8a1ca4-efa9-405d-8a44-67a49b5da77b/Ad-Patina-Hero.jpg?alt=&auto=format&ch=Width%2CDPR%2CSave-Data&fit=crop&fm=jpg&ixlib=rails-1.1.0&q=55&usm=12",
-    "link": "https://www.hodinkee.com/articles/hunting-for-vintage-watch-ads-in-a-brooklyn-basement",
-    "category": "Watches",
-    "published": "2026-11-23T11:00:00-05:00"
+    "title": "Alien Arena Arrives on Flathub With Gameplay and Networking Optimizations",
+    "source": "Phoronix",
+    "extract": "The open-source sci-fi first-person shooter Alien Arena is now available through Flathub for x86-64 and AArch64 Linux systems. Version 7.72.4 brings movement and strafing improvements, better lag compensation, dynamic culling, bot behaviour changes, networking fixes and graphical refinements.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Alien-Arena-Flathub",
+    "category": "Technology",
+    "published": "2026-11-25T10:52:00Z"
   },
   {
-    "title": "More sex, different endings: how fan fiction makes our dreams come true",
-    "source": "The Guardian",
-    "extract": "The Guardian examines how fan fiction communities around worlds such as Harry Potter and Star Trek are influencing mainstream publishing, with popular online authors securing book deals. It is a lively look at the creative relationship between fandom, original fiction and commercial publishing.",
-    "image": "https://i.guim.co.uk/img/media/63699cb433076977787909a905eca9f0d4d3f1a3/1000_0_5000_4000/master/5000.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/nov/23/more-sex-different-endings-how-fan-fiction-makes-our-dreams-come-true",
-    "category": "Books",
-    "published": "2026-11-23T07:30:00-05:00"
+    "title": "Linux 7.4 Disables LLVM Profi to Avoid Slower Binaries and Pathological Build Times",
+    "source": "Phoronix",
+    "extract": "The Linux 7.4 kernel is disabling LLVM's Profi flow-based profile inference when AutoFDO is used. Interactions with the kernel's flow-sensitive discriminators could make optimized binaries slower and trigger extremely long or stalled compilation, so the change is also being prepared for stable-kernel backports.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Linux-Kernel-Disable-Profi",
+    "category": "Technology",
+    "published": "2026-11-25T11:27:00Z"
   },
   {
-    "title": "Adder Stone by Clare Clark review – the story of a drowned Welsh village",
-    "source": "The Guardian",
-    "extract": "Clare Clark’s historical novel centres on a Welsh village drowned by a reservoir, using the submerged community’s history to explore memory, loss and place. The Guardian’s review highlights its blend of social history and haunting storytelling.",
-    "image": "https://i.guim.co.uk/img/media/9f286b94b1f1c77b11bcf0be90fe061078611734/45_8_2955_2364/master/2955.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/books/2026/nov/23/adder-stone-by-clare-clark-review-the-story-of-a-drowned-welsh-village",
-    "category": "Books",
-    "published": "2026-11-23T09:00:00Z"
+    "title": "TornadoVM 8.2 Adds a Native AMD ROCm HIP Backend for Java GPU Computing",
+    "source": "Phoronix",
+    "extract": "TornadoVM 8.2 adds a dedicated ROCm HIP backend to its Java framework for JIT-compiling workloads to GPUs. The new backend interfaces directly with the HIP runtime on Windows and Linux, alongside continued improvements to Apple Metal support and updates for OpenJ9 and IBM Semeru.",
+    "image": "https://www.phoronix.net/image.php?id=2026&image=tornadovm_examples",
+    "link": "https://www.phoronix.com/news/TornadoVM-8.2",
+    "category": "Technology",
+    "published": "2026-11-24T13:24:00Z"
   },
   {
-    "title": "Battlestar Galactica’s Showrunner Loved One Scene The Sci-Fi Channel Wanted To Cut",
+    "title": "PostgreSQL 19 Shows Promising Gains on AMD's 6th-Generation EPYC Venice",
+    "source": "Phoronix",
+    "extract": "Initial Phoronix benchmarks compare PostgreSQL 19 with version 18 on a 256-core AMD EPYC 9996 Venice server. Improvements from asynchronous I/O workers, SIMD acceleration, faster foreign-key checks and parallel autovacuum deliver measurable gains without changing the database configuration.",
+    "image": null,
+    "link": "https://www.phoronix.com/review/postgresql-19-benchmarks",
+    "category": "Technology",
+    "published": "2026-11-25T16:31:00Z"
+  },
+  {
+    "title": "Pop!_OS 26.04 LTS Released With More COSMIC Apps and Remote Desktop",
+    "source": "Phoronix",
+    "extract": "System76 has released Pop!_OS 26.04 LTS, based on Ubuntu 26.04 LTS and the latest COSMIC desktop. New features include automatic updates, COSMIC System Monitor and Store applications, drawing-tablet support, remote desktop, improved magnification and better hybrid-GPU handling.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Pop-OS-26.04-Released",
+    "category": "Technology",
+    "published": "2026-11-24T21:00:00Z"
+  },
+  {
+    "title": "Linus Torvalds Criticizes a Huge AI-Assisted EXT4 Pull Request During the Linux 7.4 Cycle",
+    "source": "Phoronix",
+    "extract": "Linus Torvalds accepted a large EXT4 pull request containing more than 41,000 lines, but sharply criticized its timing and the volume of AI-generated fixes arriving late in the Linux 7.4 release cycle. He stressed that AI-assisted patches still need disciplined review, testing and separate development branches.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Linus-Torvalds-EXT4-AI-Big",
+    "category": "Technology",
+    "published": "2026-11-24T21:01:00Z"
+  },
+  {
+    "title": "Ubuntu Outlines an Optional, Local-First AI Interface for the Desktop",
+    "source": "Phoronix",
+    "extract": "Canonical has shared more detail on an experimental Ubuntu desktop launcher intended to connect files, applications and local context through keyboard- and speech-friendly interaction. The proposed assistant is opt-in, local-first and privacy-focused; the current warty-prototype Snap is a design mock-up, with architecture details planned for January.",
+    "image": "https://www.phoronix.net/image.php?id=2026&image=warty_launcher",
+    "link": "https://www.phoronix.com/news/Ubuntu-AI-Desktop-Interact",
+    "category": "Technology",
+    "published": "2026-11-24T16:12:00Z"
+  },
+  {
+    "title": "Benchmarking Shows Linux FRED Support Can Improve I/O Performance on AMD Zen 6",
+    "source": "Phoronix",
+    "extract": "Phoronix has measured the effect of Flexible Return and Event Delivery on AMD's EPYC 9006 Zen 6 processors by comparing Linux 7.4 with FRED disabled. The newer interrupt and exception mechanism delivered gains of a few percent in some networking and local-storage tests, complementing other Zen 6 platform improvements.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/AMD-Zen-6-FRED-Benefits",
+    "category": "Technology",
+    "published": "2026-11-25T01:55:00Z"
+  },
+  {
+    "title": "Porsche Creates a One-Off 911 GT3 Tribute to the 911 GT1",
+    "source": "MotorGrail",
+    "extract": "Porsche China has commissioned a one-off 911 GT3 in a hand-painted livery inspired by the 1996 911 GT1, marking 30 years of the race car and Zhuhai International Circuit. The road car retains the naturally aspirated 4.0-litre flat-six, producing 510 PS and revving to 9,000 rpm, with bespoke Sonderwunsch details throughout.",
+    "image": null,
+    "link": "https://www.motorgrail.com/news/porsche-unveils-one-off-911-gt3-tribute-to-911-gt1-in-china/",
+    "category": "Automotive",
+    "published": "2026-11-25T12:40:00Z"
+  },
+  {
+    "title": "The Hobbit – Amiga AGA Enhanced Edition Brings the Classic Adventure to the A1200",
+    "source": "Indie Retro News",
+    "extract": "Developer thall72 has ported the MSX version of Melbourne House's 1982 The Hobbit to native 68000 code for AGA-equipped Amigas. The release keeps the original parser, puzzles and independent characters while adding more than 60 new 256-colour paintings, an AGA intro, rearranged C64 music, disk saving and a WHDLoad edition; it has been tested on real A1200 hardware, MiSTer and emulators.",
+    "image": null,
+    "link": "https://www.indieretronews.com/2026/11/the-hobbit-theyre-taking-hobbits-to.html",
+    "category": "Retro Computing Projects",
+    "published": "2026-11-25T06:35:00Z"
+  },
+  {
+    "title": "Blade Runner 2099 Premieres on Prime Video as an Eight-Episode Limited Series",
     "source": "TVLine",
-    "extract": "Ronald D. Moore recalls how the Sci-Fi Channel wanted a quiet Battlestar Galactica scene cut because it lacked action; he responded by making it longer. The anecdote reveals how deliberately the series protected its slower pacing and small human moments amid the war.",
-    "image": "https://www.tvline.com/img/gallery/battlestar-galacticas-showrunner-loved-one-scene-the-sci-fi-channel-wanted-to-cut/intro-1795098900.jpg",
-    "link": "https://www.tvline.com/2321643/battlestar-galactica-showrunner-loved-scene-sci-fi-channel-wanted-cut/",
+    "extract": "Blade Runner 2099 arrives on Prime Video as an eight-episode binge release, with Michelle Yeoh leading the dystopian sequel set decades after Blade Runner 2049 and Hunter Schafer co-starring. The series explores a future Los Angeles shaped by artificial humans known as replicants.",
+    "image": "https://www.tvline.com/img/gallery/what-to-watch-on-tv-and-streaming-wednesday-november-25-2026/intro-1795567095.jpg",
+    "link": "https://www.tvline.com/2323989/what-to-watch-november-25-2026-tv-shows-movies-streaming/",
     "category": "Entertainment",
-    "published": "2026-11-24T19:12:00-05:00"
-  },
-  {
-    "title": "Gone Girl director David Fincher admits to lying about viral Ben Affleck Yankees hat story",
-    "source": "Entertainment Weekly",
-    "extract": "David Fincher has admitted that the famous story about a fight with Ben Affleck over wearing a Yankees cap in Gone Girl was invented to tease the actor. They did negotiate the hat, but the supposed multi-day production shutdown was Fincher’s joke.",
-    "image": "https://ew.com/thmb/Mld3lc6LSxhPlMVE76chjGqFySE%3D/1500x0/filters%3Ano_upscale%28%29%3Amax_bytes%28150000%29%3Astrip_icc%28%29%3Aformat%28webp%29/david-fincher-ben-affleck-112328-4def8d4c8da248abbe60358f2c21e34a.jpg",
-    "link": "https://ew.com/david-fincher-lied-about-ben-affleck-yankees-hat-story-gone-girl-12274821",
-    "category": "Entertainment",
-    "published": "2026-11-23T12:59:00-05:00"
-  },
-  {
-    "title": "The 13 biggest differences between The Hunger Games: Sunrise on the Reaping book and movie",
-    "source": "Entertainment Weekly",
-    "extract": "Entertainment Weekly compares the Sunrise on the Reaping film with Suzanne Collins’ novel, covering omitted scenes, toned-down violence, changed character arcs and the altered epilogue. It is a useful companion for readers of the book and fans of the adaptation.",
-    "image": "https://ew.com/thmb/n9pNSc0OC5BVhbpNMcWLOfNjeoM%3D/1500x0/filters%3Ano_upscale%28%29%3Amax_bytes%28150000%29%3Astrip_icc%28%29%3Aformat%28webp%29/The-Hunger-Games-Sunrise-on-the-Reaping-Joseph-Zada-112326-e61a4534faad4817aba466ceef70b7d6.jpg",
-    "link": "https://ew.com/13-biggest-changes-between-the-sunrise-on-the-reaping-book-movie-12274589",
-    "category": "Entertainment",
-    "published": "2026-11-24T09:15:00-05:00"
-  },
-  {
-    "title": "Steven Spielberg to make a western written by Paul Thomas Anderson",
-    "source": "The Guardian",
-    "extract": "Steven Spielberg will direct The Heart in Winter, adapting Kevin Barry’s 2024 novel, with Paul Thomas Anderson writing the screenplay. Cillian Murphy, Jessie Buckley and Mark Rylance are set to star in the late-19th-century Western about two fugitives on the run.",
-    "image": "https://i.guim.co.uk/img/media/e1f49c81d555e4febe4fdd970d1f485ba0014e13/328_331_2849_2279/master/2849.jpg?crop=none&dpr=1&s=none&width=465",
-    "link": "https://www.theguardian.com/film/2026/nov/23/spielberg-western-paul-thomas-anderson-heart-in-winter",
-    "category": "Entertainment",
-    "published": "2026-11-23T18:10:00Z"
-  },
-  {
-    "title": "AWS’s Strands Decider v2 targets agent decisions that hinge on a single detail",
-    "source": "VentureBeat",
-    "extract": "AWS has released five open-weight Strands Decider v2 models built on Gemma 4, designed to score developer-supplied options rather than generate free-form text. The models read a whole scenario bidirectionally, can be fine-tuned and self-hosted, and are intended for routing, classification and policy decisions inside agent systems.",
-    "image": "https://venturebeat.com/_next/image?q=85&url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F5Ok8Doxp5kgCYnud2RbV9o%2Ff0c8950d0f89d033a61670b5cf8601dd%2Fdecider-smk1.jpeg%3Fw%3D1000%26q%3D100&w=3840",
-    "link": "https://venturebeat.com/data/awss-strands-decider-v2-targets-the-agent-decisions-that-hinge-on-a-single-detail",
-    "category": "Technology",
-    "published": "2026-11-23T11:15:00-08:00"
-  },
-  {
-    "title": "Meta’s Muse Personal AI Agent Launches in the UK",
-    "source": "MacRumors",
-    "extract": "Meta has brought Muse to UK adults, where the personal agent can work across connected apps and websites, including email, calendars, retailers and travel services. The rollout highlights its approval gates for sensitive actions, per-app permissions and isolated cloud computer.",
-    "image": "https://images.macrumors.com/t/VTo7inwO6U6wrOUbQzTNu9nfeW4%3D/400x0/article-new/2026/11/meta-muse-uk%402x-scaled.jpg?lossy=",
-    "link": "https://www.macrumors.com/2026/11/24/metas-muse-personal-ai-agent-launches-in-the-uk/",
-    "category": "Technology",
-    "published": "2026-11-24T03:15:00-08:00"
-  },
-  {
-    "title": "Signal Now Blocks AI Screen Access to Protect Chats",
-    "source": "MacRumors",
-    "extract": "Signal is extending screenshot and screen-reading protections to iPhones and supported Android devices, preventing assistants such as Siri and Gemini from capturing private conversations. The controls are enabled by default on supported versions, addressing a gap that end-to-end encryption alone cannot close.",
-    "image": "https://images.macrumors.com/t/4yXi_8CNsvtCPVwUPMh8A7jBRbM%3D/400x0/article-new/2023/11/signal-logo.jpg?lossy=",
-    "link": "https://www.macrumors.com/2026/11/24/signal-blocks-ai-access-to-protect-chats/",
-    "category": "Technology",
-    "published": "2026-11-24T09:04:00-08:00"
-  },
-  {
-    "title": "Google Search Gets Wallet Access, With Drive Coming Soon",
-    "source": "MacRumors",
-    "extract": "Google is adding an opt-in Google Wallet connection to Personal Intelligence in Search’s AI Mode, allowing answers to draw on spending and card-rewards information. Drive and Gemini connections are planned next, while Wallet access is read-only and cannot move, manage or invest money.",
-    "image": "https://images.macrumors.com/t/GO7sD12kombUYmaGCDK0mgTITMk%3D/400x0/article-new/2026/11/google-personal-intelligence.jpg?lossy=",
-    "link": "https://www.macrumors.com/2026/11/23/google-search-wallet-access/",
-    "category": "Technology",
-    "published": "2026-11-23T14:09:00-08:00"
-  },
-  {
-    "title": "Tidal to ban and remove millions of AI-generated tracks as AI slop inundates music streaming",
-    "source": "TechCrunch",
-    "extract": "Tidal will begin rejecting and removing wholly AI-generated tracks on December 9, after identifying more than 43% of recent uploads as AI-generated. AI-assisted music remains allowed; the move is a stronger response than the labelling approach used by larger services such as Spotify and YouTube Music.",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/06/tidal-brand.jpg?w=720",
-    "link": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
-    "category": "Music",
-    "published": "2026-11-24T08:46:00-08:00"
+    "published": "2026-11-25T08:00:00Z"
   }
 ]
