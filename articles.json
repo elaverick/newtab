@@ -1,173 +1,308 @@
 [
   {
-    "title": "F2FS Getting Ready With Its Large Folios Support",
-    "source": "Phoronix",
-    "extract": "Linux's F2FS filesystem is preparing support for large folios in buffered I/O, allowing it to handle multi-page memory units rather than single pages. Early benchmark results show substantial throughput improvements for some workloads, and the work is progressing in the filesystem's development branch for a possible Linux 7.5 release.",
-    "image": "https://www.phoronix.net/image.php?id=2026&image=f2fs_large_folio",
-    "link": "https://www.phoronix.com/news/F2FS-Large-Folios-Coming",
-    "category": "Technology",
-    "published": "2026-11-26T11:37:00Z"
-  },
-  {
-    "title": "Intel Xe Driver Gaining PCIe Function Level Reset Support With Linux 7.5",
-    "source": "Phoronix",
-    "extract": "Intel's Xe graphics driver is gaining PCIe Function Level Reset support, allowing an individual PCIe function to be reset without disturbing other devices. The initial implementation is limited to reinitialising the GPU's graphics tile, with further components expected in follow-up work; it is useful groundwork for virtualization and targeted recovery.",
-    "image": "https://www.phoronix.net/image.php?id=intel-arc-pro-b50-linux&image=intel_arc_pro_b50_10_med",
-    "link": "https://www.phoronix.com/news/Intel-Xe-PCIe-FLR-Linux-7.5",
-    "category": "Technology",
-    "published": "2026-11-26T10:56:00Z"
-  },
-  {
-    "title": "KosmicKrisp Becomes the Go-To Vulkan Solution on Macs, Superseding MoltenVK",
-    "source": "Phoronix",
-    "extract": "The Khronos Group is deprecating its Vulkan Portability Initiative after LunarG's KosmicKrisp achieved Vulkan 1.4 conformance on Apple Silicon. Built into Mesa and layered over Metal, KosmicKrisp becomes the preferred route for modern Apple devices, while MoltenVK remains useful for older Intel Macs and older macOS versions.",
-    "image": "https://www.phoronix.net/image.php?id=2026&image=moltenvk_kosmickrisp",
-    "link": "https://www.phoronix.com/news/Vulkan-Macs-Go-KosmicKrisp",
-    "category": "Technology",
-    "published": "2026-11-26T01:39:00Z"
-  },
-  {
-    "title": "GNU Linux-Libre Welcomes Reverse-Engineered Firmware for an Old VIA Wi-Fi Chipset",
-    "source": "Phoronix",
-    "extract": "A developer has reverse-engineered the firmware for VIA's VT6656 USB 802.11b/g adapter, allowing the driver to meet GNU Linux-libre's requirement for fully free firmware. The chipset is two decades old and its driver was removed from mainline Linux, but the work restores a free-software option for the older 6.12 LTS kernel.",
-    "image": "https://www.phoronix.net/image.php?id=2026&image=vt6656_sml",
-    "link": "https://www.phoronix.com/news/GNU-Linux-Libre-VIA-VT6656",
-    "category": "Technology",
-    "published": "2026-11-25T13:35:00Z"
-  },
-  {
-    "title": "Linux 7.5 to Whitelist Intel Xeon CPUs for Peer-to-Peer DMA",
-    "source": "Phoronix",
-    "extract": "Linux 7.5 is set to explicitly whitelist Intel Xeon server generations from Skylake-SP through Diamond Rapids for PCIe peer-to-peer DMA. This fixes cases in VMware and Hyper-V guests where passthrough devices lack the host-bridge information required by the existing checks, enabling direct transfers between GPUs, NICs and NVMe devices without routing data through system RAM.",
-    "image": "https://www.phoronix.net/image.php?id=giga-computing-r284&image=giga_computing_r284_7_med",
-    "link": "https://www.phoronix.com/news/Linux-7.5-Intel-Xeon-P2PDMA",
-    "category": "Technology",
-    "published": "2026-11-25T11:38:00Z"
-  },
-  {
-    "title": "3mdeb Updates Coreboot-Based Dasharo Firmware for MSI Z690 and Z790 Motherboards",
-    "source": "Phoronix",
-    "extract": "3mdeb has released updated Dasharo firmware builds for MSI PRO Z690-A and Z790-P motherboards. The updates improve experimental overclocking, DDR4 XMP training and CPU tuning, add USB power and wake controls, and enable Secure Boot, SMM write protection and early-boot IOMMU DMA protection by default.",
-    "image": "https://www.phoronix.net/image.php?id=coreboot-adl-dream&image=msi_dasharo_4_med",
-    "link": "https://www.phoronix.com/news/2026-Firmware-MSI-PRO-Z690-Z790",
-    "category": "Technology",
-    "published": "2026-11-25T11:10:00Z"
-  },
-  {
-    "title": "Servo 0.8 Adds HTML Video Captions and Fixes Flutter Web Performance",
-    "source": "Phoronix",
-    "extract": "The Rust-based Servo browser engine now supports subtitles and captions in HTML5 video and works properly with Flutter web content after a typed-arrays performance fix. Servo 0.8 also brings CSS and Web API improvements, smoother zooming, lower memory use, fewer allocations and continued progress on WebGL2 and WebGPU.",
+    "title": "AWS adds virtual iPhones to its cloud",
+    "source": "The Register",
+    "extract": "AWS has added virtual iPhones to its cloud device-testing service alongside Android emulation, but the initial catalogue is limited to two handsets and one tablet.",
     "image": null,
-    "link": "https://www.phoronix.com/news/Servo-0.8-October-2026",
+    "link": "https://www.theregister.com/off-prem/2026/11/27/aws-adds-virtual-iphones-to-its-cloud/5312457",
     "category": "Technology",
-    "published": "2026-11-25T13:58:00Z"
+    "published": "2026-11-27T05:13:00Z"
   },
   {
-    "title": "Collabora Online Cuts Per-Document Memory Use by Around Half",
+    "title": "Initial AMD RDNA5 Support To Appear In Linux 7.5",
     "source": "Phoronix",
-    "extract": "An optimization to Collabora Online's copy-on-write memory handling reduces memory use per open document by roughly 50%. The change addresses waste caused by 4KB kernel-page granularity when many small allocations are created and discarded during document startup, improving the efficiency of multi-user office deployments.",
-    "image": "https://www.phoronix.net/image.php?id=2026&image=collabora_online_memory",
-    "link": "https://www.phoronix.com/news/Collabora-Online-Half-Memory",
+    "extract": "Initial AMD GFX13/RDNA5 enablement patches are being prepared for Linux 7.5, covering early graphics-controller, memory-controller and display support; the work remains experimental.",
+    "image": "https://www.phoronix.net/image.php?id=2026&image=rdna5_for_linux75",
+    "link": "https://www.phoronix.com/news/AMD-RDNA5-Linux-7.5-Initial",
     "category": "Technology",
-    "published": "2026-11-24T14:50:00Z"
+    "published": "2026-11-26T20:55:00-05:00"
   },
   {
-    "title": "Alien Arena Arrives on Flathub With Gameplay and Networking Optimizations",
+    "title": "Omarchy 4.6-RC1 Released With More Local AI Integration, Its Own File Manager",
     "source": "Phoronix",
-    "extract": "The open-source sci-fi first-person shooter Alien Arena is now available through Flathub for x86-64 and AArch64 Linux systems. Version 7.72.4 brings movement and strafing improvements, better lag compensation, dynamic culling, bot behaviour changes, networking fixes and graphical refinements.",
+    "extract": "Omarchy 4.6-RC1 adds curated local-model selection, AI-agent Game Vibes and its own Qt6 file manager, plus in-house image, media and configuration tools.",
+    "image": "https://www.phoronix.net/image.php?id=2026&image=omarchy_46_1",
+    "link": "https://www.phoronix.com/news/Omarchy-4.6-Released",
+    "category": "Technology",
+    "published": "2026-11-26T20:33:00-05:00"
+  },
+  {
+    "title": "Free e-government platform that serves two billion people in ten countries has critical SQL injection bug",
+    "source": "The Register",
+    "extract": "A critical SQL injection flaw in India's Digital Infrastructure for Governance Impact and Transformation platform could expose data across a public-service system used in ten countries and serving roughly two billion people.",
     "image": null,
-    "link": "https://www.phoronix.com/news/Alien-Arena-Flathub",
+    "link": "https://www.theregister.com/security/2026/11/27/free-e-government-platform-that-serves-two-billion-people-in-ten-countries-has-critical-sql-injection-bug/5312449",
     "category": "Technology",
-    "published": "2026-11-25T10:52:00Z"
+    "published": "2026-11-27T01:19:00Z"
   },
   {
-    "title": "Linux 7.4 Disables LLVM Profi to Avoid Slower Binaries and Pathological Build Times",
-    "source": "Phoronix",
-    "extract": "The Linux 7.4 kernel is disabling LLVM's Profi flow-based profile inference when AutoFDO is used. Interactions with the kernel's flow-sensitive discriminators could make optimized binaries slower and trigger extremely long or stalled compilation, so the change is also being prepared for stable-kernel backports.",
+    "title": "'Skins' for AmigaOS 3 window frames: SkinPatch 1.4",
+    "source": "Amiga News",
+    "extract": "SkinPatch 1.4 lets AmigaOS 3 users restyle Workbench window gadgets, title bars, frames and scrollbars with live-preview themes that apply without a reboot.",
     "image": null,
-    "link": "https://www.phoronix.com/news/Linux-Kernel-Disable-Profi",
-    "category": "Technology",
-    "published": "2026-11-25T11:27:00Z"
-  },
-  {
-    "title": "TornadoVM 8.2 Adds a Native AMD ROCm HIP Backend for Java GPU Computing",
-    "source": "Phoronix",
-    "extract": "TornadoVM 8.2 adds a dedicated ROCm HIP backend to its Java framework for JIT-compiling workloads to GPUs. The new backend interfaces directly with the HIP runtime on Windows and Linux, alongside continued improvements to Apple Metal support and updates for OpenJ9 and IBM Semeru.",
-    "image": "https://www.phoronix.net/image.php?id=2026&image=tornadovm_examples",
-    "link": "https://www.phoronix.com/news/TornadoVM-8.2",
-    "category": "Technology",
-    "published": "2026-11-24T13:24:00Z"
-  },
-  {
-    "title": "PostgreSQL 19 Shows Promising Gains on AMD's 6th-Generation EPYC Venice",
-    "source": "Phoronix",
-    "extract": "Initial Phoronix benchmarks compare PostgreSQL 19 with version 18 on a 256-core AMD EPYC 9996 Venice server. Improvements from asynchronous I/O workers, SIMD acceleration, faster foreign-key checks and parallel autovacuum deliver measurable gains without changing the database configuration.",
-    "image": null,
-    "link": "https://www.phoronix.com/review/postgresql-19-benchmarks",
-    "category": "Technology",
-    "published": "2026-11-25T16:31:00Z"
-  },
-  {
-    "title": "Pop!_OS 26.04 LTS Released With More COSMIC Apps and Remote Desktop",
-    "source": "Phoronix",
-    "extract": "System76 has released Pop!_OS 26.04 LTS, based on Ubuntu 26.04 LTS and the latest COSMIC desktop. New features include automatic updates, COSMIC System Monitor and Store applications, drawing-tablet support, remote desktop, improved magnification and better hybrid-GPU handling.",
-    "image": null,
-    "link": "https://www.phoronix.com/news/Pop-OS-26.04-Released",
-    "category": "Technology",
-    "published": "2026-11-24T21:00:00Z"
-  },
-  {
-    "title": "Linus Torvalds Criticizes a Huge AI-Assisted EXT4 Pull Request During the Linux 7.4 Cycle",
-    "source": "Phoronix",
-    "extract": "Linus Torvalds accepted a large EXT4 pull request containing more than 41,000 lines, but sharply criticized its timing and the volume of AI-generated fixes arriving late in the Linux 7.4 release cycle. He stressed that AI-assisted patches still need disciplined review, testing and separate development branches.",
-    "image": null,
-    "link": "https://www.phoronix.com/news/Linus-Torvalds-EXT4-AI-Big",
-    "category": "Technology",
-    "published": "2026-11-24T21:01:00Z"
-  },
-  {
-    "title": "Ubuntu Outlines an Optional, Local-First AI Interface for the Desktop",
-    "source": "Phoronix",
-    "extract": "Canonical has shared more detail on an experimental Ubuntu desktop launcher intended to connect files, applications and local context through keyboard- and speech-friendly interaction. The proposed assistant is opt-in, local-first and privacy-focused; the current warty-prototype Snap is a design mock-up, with architecture details planned for January.",
-    "image": "https://www.phoronix.net/image.php?id=2026&image=warty_launcher",
-    "link": "https://www.phoronix.com/news/Ubuntu-AI-Desktop-Interact",
-    "category": "Technology",
-    "published": "2026-11-24T16:12:00Z"
-  },
-  {
-    "title": "Benchmarking Shows Linux FRED Support Can Improve I/O Performance on AMD Zen 6",
-    "source": "Phoronix",
-    "extract": "Phoronix has measured the effect of Flexible Return and Event Delivery on AMD's EPYC 9006 Zen 6 processors by comparing Linux 7.4 with FRED disabled. The newer interrupt and exception mechanism delivered gains of a few percent in some networking and local-storage tests, complementing other Zen 6 platform improvements.",
-    "image": null,
-    "link": "https://www.phoronix.com/news/AMD-Zen-6-FRED-Benefits",
-    "category": "Technology",
-    "published": "2026-11-25T01:55:00Z"
-  },
-  {
-    "title": "Porsche Creates a One-Off 911 GT3 Tribute to the 911 GT1",
-    "source": "MotorGrail",
-    "extract": "Porsche China has commissioned a one-off 911 GT3 in a hand-painted livery inspired by the 1996 911 GT1, marking 30 years of the race car and Zhuhai International Circuit. The road car retains the naturally aspirated 4.0-litre flat-six, producing 510 PS and revving to 9,000 rpm, with bespoke Sonderwunsch details throughout.",
-    "image": null,
-    "link": "https://www.motorgrail.com/news/porsche-unveils-one-off-911-gt3-tribute-to-911-gt1-in-china/",
-    "category": "Automotive",
-    "published": "2026-11-25T12:40:00Z"
-  },
-  {
-    "title": "The Hobbit – Amiga AGA Enhanced Edition Brings the Classic Adventure to the A1200",
-    "source": "Indie Retro News",
-    "extract": "Developer thall72 has ported the MSX version of Melbourne House's 1982 The Hobbit to native 68000 code for AGA-equipped Amigas. The release keeps the original parser, puzzles and independent characters while adding more than 60 new 256-colour paintings, an AGA intro, rearranged C64 music, disk saving and a WHDLoad edition; it has been tested on real A1200 hardware, MiSTer and emulators.",
-    "image": null,
-    "link": "https://www.indieretronews.com/2026/11/the-hobbit-theyre-taking-hobbits-to.html",
+    "link": "https://www.amiga-news.de/en/news/AN-2026-11-00157-EN.html",
     "category": "Retro Computing Projects",
-    "published": "2026-11-25T06:35:00Z"
+    "published": "2026-11-26T22:47:00+01:00"
   },
   {
-    "title": "Blade Runner 2099 Premieres on Prime Video as an Eight-Episode Limited Series",
-    "source": "TVLine",
-    "extract": "Blade Runner 2099 arrives on Prime Video as an eight-episode binge release, with Michelle Yeoh leading the dystopian sequel set decades after Blade Runner 2049 and Hunter Schafer co-starring. The series explores a future Los Angeles shaped by artificial humans known as replicants.",
-    "image": "https://www.tvline.com/img/gallery/what-to-watch-on-tv-and-streaming-wednesday-november-25-2026/intro-1795567095.jpg",
-    "link": "https://www.tvline.com/2323989/what-to-watch-november-25-2026-tv-shows-movies-streaming/",
+    "title": "AmiSnip 1.3: Snipping Tool-style screen capture for AmigaOS 3",
+    "source": "Amiga News",
+    "extract": "AmiSnip 1.3 adds a selectable, resizable screen-capture area to AmigaOS 3, with options to copy the capture, save it to disk or open it directly in MultiView or PPaint.",
+    "image": null,
+    "link": "https://www.amiga-news.de/en/news/AN-2026-11-00156-EN.html",
+    "category": "Retro Computing Projects",
+    "published": "2026-11-26T22:43:00+01:00"
+  },
+  {
+    "title": "PPC hardware: the next Mirari production run is due to start shortly",
+    "source": "Amiga News",
+    "extract": "The Mirari PowerPC mainboard has cleared component sourcing and its production order has been placed; assembly will be followed by CPU installation and U-Boot SD-card configuration.",
+    "image": null,
+    "link": "https://www.amiga-news.de/en/news/AN-2026-11-00155-EN.html",
+    "category": "Retro Computing Projects",
+    "published": "2026-11-26T22:31:00+01:00"
+  },
+  {
+    "title": "Gamers, Your Wallet Might Lose the Battle to This New Arcade-Inspired Model from Alpina",
+    "source": "Worn & Wound",
+    "extract": "Alpina's Startimer Pilot Solarmetre gets a Galaga-inspired edition, bringing retro arcade styling to the brand's pilot-watch line.",
+    "image": null,
+    "link": "https://wornandwound.com/gamers-your-wallet-might-lose-the-battle-to-this-new-arcade-inspired-model-from-alpina/",
+    "category": "Watches",
+    "published": "2026-11-26T21:00:37Z"
+  },
+  {
+    "title": "It Looks Like AI Agent Skills Will Be Submitted For Linux 7.5",
+    "source": "Phoronix",
+    "extract": "Linux developer Sasha Levin plans to submit in-tree AI-agent skills for kernel workflows, including patch tagging, stable backports, bug-fix discovery, commit messages and KUnit tests.",
+    "image": "https://www.phoronix.net/image.php?id=2026&image=linux_ai_agent_skills_1_med",
+    "link": "https://www.phoronix.com/news/Linux-AI-Agent-Skills-Ready",
+    "category": "Technology",
+    "published": "2026-11-26T15:55:00-05:00"
+  },
+  {
+    "title": "Amid All The AI Generated Patches & Bug Reports, Linux Gains Another Network Maintainer",
+    "source": "Phoronix",
+    "extract": "Willem de Bruijn has been promoted to an additional mainline Linux networking maintainer, formally joining the subsystem's core maintainers after years maintaining networking components.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Linux-Another-Net-Maintainer",
+    "category": "Technology",
+    "published": "2026-11-26T15:31:00-05:00"
+  },
+  {
+    "title": "Microsoft: Hackers in China, N Korea using ARTEX AI tool to break into global tech systems",
+    "source": "The Register",
+    "extract": "Microsoft warns that China- and North Korea-linked attackers are using ARTEX, an agentic offensive framework that automates familiar intrusion techniques and can breach weak defenses rapidly.",
+    "image": null,
+    "link": "https://www.theregister.com/security/2026/11/26/microsoft-hackers-in-china-n-korea-using-artex-ai-tool-to-break-into-global-tech-systems/5312433",
+    "category": "Technology",
+    "published": "2026-11-26T19:04:00Z"
+  },
+  {
+    "title": "One More Than GT40: The Ford GT41 Le Mans Hypercar Is Finally Here",
+    "source": "Road & Track",
+    "extract": "Ford has unveiled its 2027 Le Mans Hypercar, the GT41, with an in-house-developed naturally aspirated 5.4-litre V8 based on production engines; its final race livery will follow closer to the WEC season.",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/a60ef04f-e79b-4775-bf8a-9cc1aa9388aa.png?crop=1xw%3A0.896xh%3B0xw%2C0xh&resize=980%3A%2A",
+    "link": "https://www.roadandtrack.com/news/a74532696/ford-gt41-le-mans-race-car-reveal/",
+    "category": "Automotive",
+    "published": "2026-11-26T13:00:00-05:00"
+  },
+  {
+    "title": "Ubuntu 27.04 Snapshot 1 Released For Testing",
+    "source": "Phoronix",
+    "extract": "Canonical has published the first monthly Ubuntu 27.04 'Tenacious T-Rex' snapshot for testing, providing an early development image ahead of the planned April 2027 release.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/Ubuntu-27.04-Snapshot-1",
+    "category": "Technology",
+    "published": "2026-11-26T12:21:00-05:00"
+  },
+  {
+    "title": "The Jaeger-LeCoultre Reverso Classic Monoface Small Seconds in a New Mid-Size Gold Case",
+    "source": "Monochrome Watches",
+    "extract": "Jaeger-LeCoultre adds a mid-size 18k pink-gold case to the Reverso Classic Monoface Small Seconds, pairing 1931-inspired proportions with a hand-wound calibre 822 and a textured silver dial.",
+    "image": "https://monochrome-watches.com/app/uploads/2026/11/Jaeger-LeCoultre-Reverso-Classic-Monoface-Small-Seconds-Pink-Gold-New-Size-2026-reference-Q3862520-1.jpg",
+    "link": "https://monochrome-watches.com/jaeger-lecoultre-reverso-classic-monoface-small-seconds-in-a-new-mid-size-gold-case-q3862520-introducing-price/",
+    "category": "Watches",
+    "published": "2026-11-26T17:05:47Z"
+  },
+  {
+    "title": "Linux 7.4 Delivers Some Performance Gains For Intel Panther Lake's Arc B390 Graphics",
+    "source": "Phoronix",
+    "extract": "Phoronix benchmarks show Linux 7.4 improving Intel Panther Lake Arc B390 graphics performance in several OpenGL and Vulkan tests, with gains varying by workload.",
+    "image": "https://www.phoronix.net/image.php?id=dell-xps-14-panther-lake&image=dell_xps14_1_med",
+    "link": "https://www.phoronix.com/news/Linux-7.4-Arc-B390-Performance",
+    "category": "Technology",
+    "published": "2026-11-26T11:40:00-05:00"
+  },
+  {
+    "title": "DXVK 3.2 Released With Present Timing Support",
+    "source": "Phoronix",
+    "extract": "DXVK 3.2 adds Vulkan present-timing support for steadier frame pacing in fullscreen games, alongside VRAM eviction, D3D11 upload improvements and game fixes.",
+    "image": null,
+    "link": "https://www.phoronix.com/news/DXVK-3.2-Released",
+    "category": "Technology",
+    "published": "2026-11-26T11:07:00-05:00"
+  },
+  {
+    "title": "Wyoming uranium operation shuts down after cyberattack",
+    "source": "The Register",
+    "extract": "Peninsula Energy says a cyberattack affected plant and wellfield control systems at its Wyoming uranium operation, forcing a shutdown with no restart date yet.",
+    "image": null,
+    "link": "https://www.theregister.com/security/2026/11/26/wyoming-uranium-operation-shuts-down-after-cyberattack/5312323",
+    "category": "Technology",
+    "published": "2026-11-26T14:02:00Z"
+  },
+  {
+    "title": "A Hands-On Introduction To The Twisted And Infinite Anoma A2",
+    "source": "Fratello Watches",
+    "extract": "Anoma's second wearable sculpture uses a twisted, Möbius-inspired stainless-steel case and a 4mm faceted sapphire crystal, with a hand-wound La Joux-Perret D101 movement and 50-hour power reserve.",
+    "image": null,
+    "link": "https://www.fratellowatches.com/hands-on-anoma-a2/",
+    "category": "Watches",
+    "published": "2026-11-26T14:00:32Z"
+  },
+  {
+    "title": "Brush 0.5 Passing 96+% Of Upstream Test Suite For Bash Shell Written In Rust",
+    "source": "Phoronix",
+    "extract": "The Rust-written Bash/POSIX-compatible shell now passes more than 96% of the upstream bash-completion test suite, with over 3,600 end-to-end tests and improved pipelines, jobs and Windows binaries.",
+    "image": "https://www.phoronix.net/image.php?id=2026&image=brush",
+    "link": "https://www.phoronix.com/news/Brush-0.5-Released",
+    "category": "Technology",
+    "published": "2026-11-26T08:21:00-05:00"
+  },
+  {
+    "title": "Microsoft hotpatches hotpatch that could crash Windows Server 2025",
+    "source": "The Register",
+    "extract": "Microsoft issued a corrective hotpatch for a Windows Server 2025 update that could crash systems when IPv6 routes expired; the correction does not require a restart.",
+    "image": null,
+    "link": "https://www.theregister.com/os-platforms/2026/11/26/microsoft-hotpatches-hotpatch-that-could-crash-windows-server-2025/5312301",
+    "category": "Technology",
+    "published": "2026-11-26T12:27:00Z"
+  },
+  {
+    "title": "Hackers help themselves to 1Password's source code and customer data",
+    "source": "The Register",
+    "extract": "1Password says an intruder planted malicious code in backend services and accessed source code and customer data; the company says customer passwords remain safe.",
+    "image": null,
+    "link": "https://www.theregister.com/security/2026/11/26/hackers-help-themselves-to-1passwords-source-code-and-customer-data/5312317",
+    "category": "Technology",
+    "published": "2026-11-26T11:02:00Z"
+  },
+  {
+    "title": "45°C inlets just killed the chiller. Most people haven't noticed yet",
+    "source": "The Register",
+    "extract": "A Supercomputing 2026 report examines how 45°C data-centre inlet-temperature designs could eliminate conventional chillers and reshape cooling infrastructure for high-density computing.",
+    "image": null,
+    "link": "https://www.theregister.com/hpc/2026/11/26/45c-inlets-just-killed-the-chiller-most-people-havent-noticed-yet/5311831",
+    "category": "Technology",
+    "published": "2026-11-26T10:15:00Z"
+  },
+  {
+    "title": "UK Home Office waved through border system without a working fix for bad data",
+    "source": "The Register",
+    "extract": "The ICO reprimanded the Home Office over its border data system, citing inaccurate records that risked wrongful detention and a temporary correction process that took more than a year to arrive.",
+    "image": null,
+    "link": "https://www.theregister.com/security/2026/11/26/uk-home-office-waved-through-border-system-without-a-working-fix-for-bad-data/5312162",
+    "category": "Technology",
+    "published": "2026-11-26T09:30:00Z"
+  },
+  {
+    "title": "UK & Ireland film cinema release dates: latest updates for 2026",
+    "source": "Screen Daily",
+    "extract": "Screen Daily's updated UK and Ireland release calendar covers the 27 November cinema slate, including Disney's animated fantasy Hexed and other new genre releases.",
+    "image": null,
+    "link": "https://www.screendaily.com/news/uk-ireland-film-cinema-release-dates-latest-updates-for-2026/5211864.article",
     "category": "Entertainment",
-    "published": "2026-11-25T08:00:00Z"
+    "published": "2026-11-26T06:12:00Z"
+  },
+  {
+    "title": "Acura Integra Type S goes on sale in Japan from 18 December",
+    "source": "MotorGrail",
+    "extract": "Acura's 320hp turbocharged Integra Type S reaches Japan on 18 December as the marque's first officially sold model there; it keeps the US-spec left-hand-drive layout and six-speed manual.",
+    "image": "https://motorgrail.com/assets/img/articles/acura-integra-type-s-goes-on-sale-in-japan-from-18-december-1600.webp",
+    "link": "https://motorgrail.com/news/acura-integra-type-s-goes-on-sale-in-japan-from-18-december/",
+    "category": "Automotive",
+    "published": "2026-11-26T13:15:00+11:00"
+  },
+  {
+    "title": "Mazda bosses: Beloved MX-5 is no longer essential to the brand",
+    "source": "WhichCar",
+    "extract": "Mazda UK executives say the MX-5 is less central to the brand than it once was, even as the fifth-generation roadster remains in development; the company still targets a sub-1,000kg car with a naturally aspirated petrol engine and manual option, while considering electrification.",
+    "image": "https://media.whichcar.com.au/uploads/2026/03/Mazda-MX-5-Roadster-GT-38-2880x1920.jpeg",
+    "link": "https://www.whichcar.com.au/news/mazda-mx-5-no-longer-essential-to-brand-bosses",
+    "category": "Automotive",
+    "published": "2026-11-26T11:08:00+11:00"
+  },
+  {
+    "title": "Patrick Radden Keefe’s London Falling named Waterstones book of the year",
+    "source": "The Guardian",
+    "extract": "Keefe's investigation into the death of Zac Brettler wins Waterstones' overall Book of the Year; Yáng Shuāng-zǐ's Taiwan Travelogue takes fiction book of the year, while Is This a Plum? wins children's book of the year.",
+    "image": "https://i.guim.co.uk/img/media/57211361d63b75554de53c3c74f80426be74e3d5/0_3689_8742_6994/master/8742.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/books/2026/nov/26/patrick-radden-keefes-london-falling-named-waterstones-book-of-the-year",
+    "category": "Books",
+    "published": "2026-11-25T19:01:00-05:00"
+  },
+  {
+    "title": "Huawei and crew tout homegrown EDA tools to overcome China’s fab deficit",
+    "source": "The Register",
+    "extract": "Huawei and partners are promoting homegrown electronic-design-automation tools focused on 3D packaging and multi-node chip assemblies as China works to overcome its semiconductor manufacturing constraints.",
+    "image": null,
+    "link": "https://www.theregister.com/systems/2026/11/25/huawei-and-crew-tout-homegrown-eda-tools-to-overcome-chinas-fab-deficit/5312205",
+    "category": "Technology",
+    "published": "2026-11-25T18:02:00Z"
+  },
+  {
+    "title": "Microsoft's NTLM security changes trip up third-party logins",
+    "source": "The Register",
+    "extract": "Microsoft's tightened NTLM security changes are causing third-party login integrations to fail where implementations rely on older or incompatible authentication behavior.",
+    "image": null,
+    "link": "https://www.theregister.com/security/2026/11/25/microsofts-ntlm-security-changes-trip-up-third-party-logins/5312085",
+    "category": "Technology",
+    "published": "2026-11-25T17:01:00Z"
+  },
+  {
+    "title": "Introducing the Hanhart 417 C Panna Flyback",
+    "source": "Worn & Wound",
+    "extract": "Worn & Wound introduces the 417 C Panna Flyback, a new vintage-inspired addition to Hanhart's historic pilot-chronograph line.",
+    "image": null,
+    "link": "https://wornandwound.com/introducing-the-hanhart-417-c-panna-flyback/",
+    "category": "Watches",
+    "published": "2026-11-25T17:00:01Z"
+  },
+  {
+    "title": "The Unimatic × Massena Lab Ghost Collection Explores The Effectiveness Of Monochromatic Camouflage",
+    "source": "Fratello Watches",
+    "extract": "The Ghost duo brings desert-sand and navy monochrome treatments to Unimatic's 36mm Modello Cinque, with 300m water resistance, Cerakote finishes and a protected Seiko VH31A quartz movement.",
+    "image": null,
+    "link": "https://www.fratellowatches.com/unimatic-x-massena-lab-ghost-collection/",
+    "category": "Watches",
+    "published": "2026-11-25T15:00:31Z"
+  },
+  {
+    "title": "The Fox review – talking animals are the least weird thing in this delightfully peculiar comedy",
+    "source": "The Guardian",
+    "extract": "Dario Russo's offbeat Australian fantasy-comedy mixes Brothers Grimm fairytale strangeness with talking animals; Olivia Colman voices the fox and Sam Neill the magpie, with a UK and Ireland digital release set for 11 January.",
+    "image": "https://i.guim.co.uk/img/media/e21a84bf3bbf66126fb4accf87d1d07186b86dfc/610_0_5865_4694/master/5865.jpg?crop=none&dpr=1&s=none&width=465",
+    "link": "https://www.theguardian.com/film/2026/nov/26/the-fox-australian-movie-review-olivia-colman-sam-neill-dario-russo-emily-browning-jai-courtney",
+    "category": "Entertainment",
+    "published": "2026-11-25T15:00:00+01:00"
+  },
+  {
+    "title": "PDF magazine: REV'n'GE 187 (Italian/English)",
+    "source": "Amiga News",
+    "extract": "Issue 187 of the retro-gaming magazine is available in English and Italian, comparing classic games across platforms and featuring Amiga reviews of Grand Slam and the Supra 28 Turbo accelerator.",
+    "image": null,
+    "link": "https://www.amiga-news.de/en/news/AN-2026-11-00154-EN.html",
+    "category": "Retro Computing",
+    "published": "2026-11-25T12:14:00+01:00"
+  },
+  {
+    "title": "Introducing Swatch Offers Winter Whimsy With The MoonSwatch Mission to Earthphase Silver Snowflake",
+    "source": "Hodinkee",
+    "extract": "Swatch's latest limited MoonSwatch pairs a black Bioceramic case with a silver-engraved, individually unique snowflake on its patented Earthphase display; it goes on sale worldwide on 27 November.",
+    "image": "https://hodinkee.imgix.net/uploads/images/1795597280-43ddd0759d944dc087a3b1064a42da21/fa4c2f0b531aa6691ec348520175dcb3?auto=format&fit=max&fm=jpg&ixlib=rails-1.1.0&q=55&usm=12&w=1400",
+    "link": "https://www.hodinkee.com/articles/swatch-offers-winter-whimsy-with-the-moonswatch-mission-to-earthphase-silver-snowflake",
+    "category": "Watches",
+    "published": "2026-11-25T04:10:16-05:00"
   }
 ]
